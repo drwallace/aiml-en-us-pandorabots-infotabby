@@ -19,7 +19,7 @@
 
 <category> 
 <pattern>WHAT TIME IS IT</pattern> 
-<template>The current time in our library's location is <date locale="en_US" timezone="-5" format="%I:%M %p"/>
+<template>The current time in our library's location is <date locale="en_US" timezone="-6" format="%I:%M %p"/>
 </template> 
 </category>   
 
