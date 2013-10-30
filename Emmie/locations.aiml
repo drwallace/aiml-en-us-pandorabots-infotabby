@@ -1,0 +1,1573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<!--Copyright 2011-2012 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+
+<!--BRANCH INFO-->
+
+<category>
+<pattern>BRNCHS</pattern>
+<template>I'm often asked about our branches. What would you like to know about our Branches? 
+<think>
+<set name="topic">BRANCHES</set>
+</think>
+</template>
+</category>
+
+<topic name="BRANCHES">
+<category>
+<pattern>_</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="message">no match</set>
+<condition name="answr">
+
+<li value="ADDRESS"><set name="message">locations</set></li>
+<li value="* ADDRESS"><set name="message">locations</set></li>
+<li value="ADDRESS *"><set name="message">locations</set></li>
+<li value="* ADDRESS *"><set name="message">locations</set></li>
+
+<li value="DIRECTIONS"><set name="message">locations</set></li>
+<li value="* DIRECTIONS"><set name="message">locations</set></li>
+<li value="DIRECTIONS *"><set name="message">locations</set></li>
+<li value="* DIRECTIONS *"><set name="message">locations</set></li>
+
+<li value="DIRECTIONS TO LIBRARY"><set name="message">locations</set></li>
+<li value="* DIRECTIONS TO LIBRARY"><set name="message">locations</set></li>
+<li value="DIRECTIONS TO * LIBRARY"><set name="message">locations</set></li>
+<li value="DIRECTIONS TO LIBRARY *"><set name="message">locations</set></li>
+<li value="* DIRECTIONS TO * LIBRARY"><set name="message">locations</set></li>
+<li value="DIRECTIONS TO * LIBRARY *"><set name="message">locations</set></li>
+<li value="* DIRECTIONS TO * LIBRARY *"><set name="message">locations</set></li>
+
+<li value="GET TO"><set name="message">locations</set></li>
+<li value="* GET TO"><set name="message">locations</set></li>
+<li value="GET TO *"><set name="message">locations</set></li>
+<li value="* GET TO *"><set name="message">locations</set></li>
+
+<li value="GET TO LIBRARY"><set name="message">locations</set></li>
+<li value="* GET TO LIBRARY"><set name="message">locations</set></li>
+<li value="GET TO * LIBRARY"><set name="message">locations</set></li>
+<li value="GET TO LIBRARY *"><set name="message">locations</set></li>
+<li value="* GET TO * LIBRARY"><set name="message">locations</set></li>
+<li value="GET TO * LIBRARY *"><set name="message">locations</set></li>
+<li value="* GET TO * LIBRARY *"><set name="message">locations</set></li>
+
+<li value="LOCATED"><set name="message">locations</set></li>
+<li value="* LOCATED"><set name="message">locations</set></li>
+<li value="LOCATED *"><set name="message">locations</set></li>
+<li value="* LOCATED *"><set name="message">locations</set></li>
+
+<li value="LOCATION"><set name="message">locations</set></li>
+<li value="* LOCATION"><set name="message">locations</set></li>
+<li value="LOCATION *"><set name="message">locations</set></li>
+<li value="* LOCATION *"><set name="message">locations</set></li>
+
+<li value="MAP"><set name="message">locations</set></li>
+<li value="* MAP"><set name="message">locations</set></li>
+<li value="MAP *"><set name="message">locations</set></li>
+<li value="* MAP *"><set name="message">locations</set></li>
+
+<li value="MAPS"><set name="message">locations</set></li>
+<li value="* MAPS"><set name="message">locations</set></li>
+<li value="MAPS *"><set name="message">locations</set></li>
+<li value="* MAPS *"><set name="message">locations</set></li>
+
+<li value="WHERE LIBRARY"><set name="message">locations</set></li>
+<li value="* WHERE LIBRARY"><set name="message">locations</set></li>
+<li value="WHERE * LIBRARY"><set name="message">locations</set></li>
+<li value="WHERE LIBRARY *"><set name="message">locations</set></li>
+<li value="* WHERE * LIBRARY"><set name="message">locations</set></li>
+<li value="WHERE * LIBRARY *"><set name="message">locations</set></li>
+<li value="* WHERE * LIBRARY *"><set name="message">locations</set></li>
+
+<li value="ADDRESS HEADLANDS"><set name="message">hdls location</set></li>
+<li value="* ADDRESS HEADLANDS"><set name="message">hdls location</set></li>
+<li value="ADDRESS * HEADLANDS"><set name="message">hdls location</set></li>
+<li value="ADDRESS HEADLANDS *"><set name="message">hdls location</set></li>
+<li value="* ADDRESS * HEADLANDS"><set name="message">hdls location</set></li>
+<li value="ADDRESS * HEADLANDS *"><set name="message">hdls location</set></li>
+<li value="* ADDRESS * HEADLANDS *"><set name="message">hdls location</set></li>
+
+<li value="DIRECTIONS HEADLANDS"><set name="message">hdls location</set></li>
+<li value="* DIRECTIONS HEADLANDS"><set name="message">hdls location</set></li>
+<li value="DIRECTIONS * HEADLANDS"><set name="message">hdls location</set></li>
+<li value="DIRECTIONS HEADLANDS *"><set name="message">hdls location</set></li>
+<li value="* DIRECTIONS * HEADLANDS"><set name="message">hdls location</set></li>
+<li value="DIRECTIONS * HEADLANDS *"><set name="message">hdls location</set></li>
+<li value="* DIRECTIONS * HEADLANDS *"><set name="message">hdls location</set></li>
+
+<li value="GET TO HEADLANDS"><set name="message">hdls location</set></li>
+<li value="* GET TO HEADLANDS"><set name="message">hdls location</set></li>
+<li value="GET TO * HEADLANDS"><set name="message">hdls location</set></li>
+<li value="GET TO HEADLANDS *"><set name="message">hdls location</set></li>
+<li value="* GET TO * HEADLANDS"><set name="message">hdls location</set></li>
+<li value="GET TO * HEADLANDS *"><set name="message">hdls location</set></li>
+<li value="* GET TO * HEADLANDS *"><set name="message">hdls location</set></li>
+
+<li value="WHERE HEADLANDS"><set name="message">hdls location</set></li>
+<li value="* WHERE HEADLANDS"><set name="message">hdls location</set></li>
+<li value="WHERE * HEADLANDS"><set name="message">hdls location</set></li>
+<li value="WHERE HEADLANDS *"><set name="message">hdls location</set></li>
+<li value="* WHERE * HEADLANDS"><set name="message">hdls location</set></li>
+<li value="WHERE * HEADLANDS *"><set name="message">hdls location</set></li>
+<li value="* WHERE * HEADLANDS *"><set name="message">hdls location</set></li>
+
+<li value="ADDRESS MAIN"><set name="message">main location</set></li>
+<li value="* ADDRESS MAIN"><set name="message">main location</set></li>
+<li value="ADDRESS * MAIN"><set name="message">main location</set></li>
+<li value="ADDRESS MAIN *"><set name="message">main location</set></li>
+<li value="* ADDRESS * MAIN"><set name="message">main location</set></li>
+<li value="ADDRESS * MAIN *"><set name="message">main location</set></li>
+<li value="* ADDRESS * MAIN *"><set name="message">main location</set></li>
+
+<li value="DIRECTIONS MAIN"><set name="message">main location</set></li>
+<li value="* DIRECTIONS MAIN"><set name="message">main location</set></li>
+<li value="DIRECTIONS * MAIN"><set name="message">main location</set></li>
+<li value="DIRECTIONS MAIN *"><set name="message">main location</set></li>
+<li value="* DIRECTIONS * MAIN"><set name="message">main location</set></li>
+<li value="DIRECTIONS * MAIN *"><set name="message">main location</set></li>
+<li value="* DIRECTIONS * MAIN *"><set name="message">main location</set></li>
+
+<li value="GET TO MAIN"><set name="message">main location</set></li>
+<li value="* GET TO MAIN"><set name="message">main location</set></li>
+<li value="GET TO * MAIN"><set name="message">main location</set></li>
+<li value="GET TO MAIN *"><set name="message">main location</set></li>
+<li value="* GET TO * MAIN"><set name="message">main location</set></li>
+<li value="GET TO * MAIN *"><set name="message">main location</set></li>
+<li value="* GET TO * MAIN *"><set name="message">main location</set></li>
+
+<li value="WHERE MAIN"><set name="message">main location</set></li>
+<li value="* WHERE MAIN"><set name="message">main location</set></li>
+<li value="WHERE * MAIN"><set name="message">main location</set></li>
+<li value="WHERE MAIN *"><set name="message">main location</set></li>
+<li value="* WHERE * MAIN"><set name="message">main location</set></li>
+<li value="WHERE * MAIN *"><set name="message">main location</set></li>
+<li value="* WHERE * MAIN *"><set name="message">main location</set></li>
+
+<li value="ADDRESS LAKE"><set name="message">mol location</set></li>
+<li value="* ADDRESS LAKE"><set name="message">mol location</set></li>
+<li value="ADDRESS * LAKE"><set name="message">mol location</set></li>
+<li value="ADDRESS LAKE *"><set name="message">mol location</set></li>
+<li value="* ADDRESS * LAKE"><set name="message">mol location</set></li>
+<li value="ADDRESS * LAKE *"><set name="message">mol location</set></li>
+<li value="* ADDRESS * LAKE *"><set name="message">mol location</set></li>
+
+<li value="DIRECTIONS LAKE"><set name="message">mol location</set></li>
+<li value="* DIRECTIONS LAKE"><set name="message">mol location</set></li>
+<li value="DIRECTIONS * LAKE"><set name="message">mol location</set></li>
+<li value="DIRECTIONS LAKE *"><set name="message">mol location</set></li>
+<li value="* DIRECTIONS * LAKE"><set name="message">mol location</set></li>
+<li value="DIRECTIONS * LAKE *"><set name="message">mol location</set></li>
+<li value="* DIRECTIONS * LAKE *"><set name="message">mol location</set></li>
+
+<li value="GET TO LAKE"><set name="message">mol location</set></li>
+<li value="* GET TO LAKE"><set name="message">mol location</set></li>
+<li value="GET TO * LAKE"><set name="message">mol location</set></li>
+<li value="GET TO LAKE *"><set name="message">mol location</set></li>
+<li value="* GET TO * LAKE"><set name="message">mol location</set></li>
+<li value="GET TO * LAKE *"><set name="message">mol location</set></li>
+<li value="* GET TO * LAKE *"><set name="message">mol location</set></li>
+
+<li value="WHERE LAKE"><set name="message">mol location</set></li>
+<li value="* WHERE LAKE"><set name="message">mol location</set></li>
+<li value="WHERE * LAKE"><set name="message">mol location</set></li>
+<li value="WHERE LAKE *"><set name="message">mol location</set></li>
+<li value="* WHERE * LAKE"><set name="message">mol location</set></li>
+<li value="WHERE * LAKE *"><set name="message">mol location</set></li>
+<li value="* WHERE * LAKE *"><set name="message">mol location</set></li>
+
+<li value="ADDRESS MOL"><set name="message">mol location</set></li>
+<li value="* ADDRESS MOL"><set name="message">mol location</set></li>
+<li value="ADDRESS * MOL"><set name="message">mol location</set></li>
+<li value="ADDRESS MOL *"><set name="message">mol location</set></li>
+<li value="* ADDRESS * MOL"><set name="message">mol location</set></li>
+<li value="ADDRESS * MOL *"><set name="message">mol location</set></li>
+<li value="* ADDRESS * MOL *"><set name="message">mol location</set></li>
+
+<li value="DIRECTIONS MOL"><set name="message">mol location</set></li>
+<li value="* DIRECTIONS MOL"><set name="message">mol location</set></li>
+<li value="DIRECTIONS * MOL"><set name="message">mol location</set></li>
+<li value="DIRECTIONS MOL *"><set name="message">mol location</set></li>
+<li value="* DIRECTIONS * MOL"><set name="message">mol location</set></li>
+<li value="DIRECTIONS * MOL *"><set name="message">mol location</set></li>
+<li value="* DIRECTIONS * MOL *"><set name="message">mol location</set></li>
+
+<li value="GET TO MOL"><set name="message">mol location</set></li>
+<li value="* GET TO MOL"><set name="message">mol location</set></li>
+<li value="GET TO * MOL"><set name="message">mol location</set></li>
+<li value="GET TO MOL *"><set name="message">mol location</set></li>
+<li value="* GET TO * MOL"><set name="message">mol location</set></li>
+<li value="GET TO * MOL *"><set name="message">mol location</set></li>
+<li value="* GET TO * MOL *"><set name="message">mol location</set></li>
+
+<li value="WHERE MOL"><set name="message">mol location</set></li>
+<li value="* WHERE MOL"><set name="message">mol location</set></li>
+<li value="WHERE * MOL"><set name="message">mol location</set></li>
+<li value="WHERE MOL *"><set name="message">mol location</set></li>
+<li value="* WHERE * MOL"><set name="message">mol location</set></li>
+<li value="WHERE * MOL *"><set name="message">mol location</set></li>
+<li value="* WHERE * MOL *"><set name="message">mol location</set></li>
+
+<li value="MANAGER LAKE"><set name="message">mol mgr</set></li>
+<li value="* MANAGER LAKE"><set name="message">mol mgr</set></li>
+<li value="MANAGER * LAKE"><set name="message">mol mgr</set></li>
+<li value="MANAGER LAKE *"><set name="message">mol mgr</set></li>
+<li value="* MANAGER * LAKE"><set name="message">mol mgr</set></li>
+<li value="MANAGER * LAKE *"><set name="message">mol mgr</set></li>
+<li value="* MANAGER * LAKE *"><set name="message">mol mgr</set></li>
+
+<li value="NUMBER"><set name="message">libphone</set></li>
+<li value="* NUMBER"><set name="message">libphone</set></li>
+<li value="NUMBER *"><set name="message">libphone</set></li>
+<li value="* NUMBER *"><set name="message">libphone</set></li>
+
+<li value="PHONE"><set name="message">libphone</set></li>
+<li value="* PHONE"><set name="message">libphone</set></li>
+<li value="PHONE *"><set name="message">libphone</set></li>
+<li value="* PHONE *"><set name="message">libphone</set></li>
+
+<li value="CALL LAKE"><set name="message">mol phone</set></li>
+<li value="* CALL LAKE"><set name="message">mol phone</set></li>
+<li value="CALL * LAKE"><set name="message">mol phone</set></li>
+<li value="CALL LAKE *"><set name="message">mol phone</set></li>
+<li value="* CALL * LAKE"><set name="message">mol phone</set></li>
+<li value="CALL * LAKE *"><set name="message">mol phone</set></li>
+<li value="* CALL * LAKE *"><set name="message">mol phone</set></li>
+
+<li value="NUMBER LAKE"><set name="message">mol phone</set></li>
+<li value="* NUMBER LAKE"><set name="message">mol phone</set></li>
+<li value="NUMBER * LAKE"><set name="message">mol phone</set></li>
+<li value="NUMBER LAKE *"><set name="message">mol phone</set></li>
+<li value="* NUMBER * LAKE"><set name="message">mol phone</set></li>
+<li value="NUMBER * LAKE *"><set name="message">mol phone</set></li>
+<li value="* NUMBER * LAKE *"><set name="message">mol phone</set></li>
+
+<li value="PHONE LAKE"><set name="message">mol phone</set></li>
+<li value="* PHONE LAKE"><set name="message">mol phone</set></li>
+<li value="PHONE * LAKE"><set name="message">mol phone</set></li>
+<li value="PHONE LAKE *"><set name="message">mol phone</set></li>
+<li value="* PHONE * LAKE"><set name="message">mol phone</set></li>
+<li value="PHONE * LAKE *"><set name="message">mol phone</set></li>
+<li value="* PHONE * LAKE *"><set name="message">mol phone</set></li>
+
+<li value="DROP OFF"><set name="message">returns</set></li>
+<li value="* DROP OFF"><set name="message">returns</set></li>
+<li value="DROP * OFF"><set name="message">returns</set></li>
+<li value="DROP OFF *"><set name="message">returns</set></li>
+<li value="* DROP * OFF"><set name="message">returns</set></li>
+<li value="DROP * OFF *"><set name="message">returns</set></li>
+<li value="* DROP OFF *"><set name="message">returns</set></li>
+<li value="* DROP * OFF *"><set name="message">returns</set></li>
+
+<li value="DROPPED OFF"><set name="message">returns</set></li>
+<li value="* DROPPED OFF"><set name="message">returns</set></li>
+<li value="DROPPED * OFF"><set name="message">returns</set></li>
+<li value="DROPPED OFF *"><set name="message">returns</set></li>
+<li value="* DROPPED * OFF"><set name="message">returns</set></li>
+<li value="DROPPED * OFF *"><set name="message">returns</set></li>
+<li value="* DROPPED OFF *"><set name="message">returns</set></li>
+<li value="* DROPPED * OFF *"><set name="message">returns</set></li>
+
+<li value="RETURN"><set name="message">returns</set></li>
+<li value="* RETURN"><set name="message">returns</set></li>
+<li value="RETURN *"><set name="message">returns</set></li>
+<li value="* RETURN *"><set name="message">returns</set></li>
+
+<li value="RETURNING"><set name="message">returns</set></li>
+<li value="* RETURNING"><set name="message">returns</set></li>
+<li value="RETURNING *"><set name="message">returns</set></li>
+<li value="* RETURNING *"><set name="message">returns</set></li>
+
+<li value="RETURNS"><set name="message">returns</set></li>
+<li value="* RETURNS"><set name="message">returns</set></li>
+<li value="RETURNS *"><set name="message">returns</set></li>
+<li value="* RETURNS *"><set name="message">returns</set></li>
+
+<li value="HOURS"><set name="message">returns</set></li>
+<li value="* HOURS"><set name="message">returns</set></li>
+<li value="HOURS *"><set name="message">returns</set></li>
+<li value="* HOURS *"><set name="message">returns</set></li>
+
+<li value="CLOSE"><set name="message">returns</set></li>
+<li value="* CLOSE"><set name="message">returns</set></li>
+<li value="CLOSE *"><set name="message">returns</set></li>
+<li value="* CLOSE *"><set name="message">returns</set></li>
+
+<li value="CLOSED"><set name="message">returns</set></li>
+<li value="* CLOSED"><set name="message">returns</set></li>
+<li value="CLOSED *"><set name="message">returns</set></li>
+<li value="* CLOSED *"><set name="message">returns</set></li>
+
+<li value="OPEN"><set name="message">returns</set></li>
+<li value="* OPEN"><set name="message">returns</set></li>
+<li value="OPEN *"><set name="message">returns</set></li>
+<li value="* OPEN *"><set name="message">returns</set></li>
+
+<li value="OPENED"><set name="message">returns</set></li>
+<li value="* OPENED"><set name="message">returns</set></li>
+<li value="OPENED *"><set name="message">returns</set></li>
+<li value="* OPENED *"><set name="message">returns</set></li>
+
+<li value="READ HOUSE"><set name="message">read house</set></li>
+<li value="* READ HOUSE"><set name="message">read house</set></li>
+<li value="READ HOUSE *"><set name="message">read house</set></li>
+<li value="* READ HOUSE *"><set name="message">read house</set></li>
+
+<li value="READHOUSE"><set name="message">read house</set></li>
+<li value="* READHOUSE"><set name="message">read house</set></li>
+<li value="READHOUSE *"><set name="message">read house</set></li>
+<li value="* READHOUSE *"><set name="message">read house</set></li>
+
+<li value="REED HOUSE"><set name="message">read house</set></li>
+<li value="* REED HOUSE"><set name="message">read house</set></li>
+<li value="REED HOUSE *"><set name="message">read house</set></li>
+<li value="* REED HOUSE *"><set name="message">read house</set></li>
+
+<li value="REEDHOUSE"><set name="message">read house</set></li>
+<li value="* REEDHOUSE"><set name="message">read house</set></li>
+<li value="REEDHOUSE *"><set name="message">read house</set></li>
+<li value="* REEDHOUSE *"><set name="message">read house</set></li>
+
+</condition>
+<think><set name="topic"></set></think>
+</think>
+ 
+<condition name="message">
+<li value="no match"><set name="topic"></set><srai>NOMATCH</srai></li>
+
+<li value="locations"><srai>LIBLOC</srai></li>
+<li value="hdls location"><srai>HDLSLOC</srai></li>
+<li value="main location"><srai>MAINLOC</srai></li>
+<li value="mol location"><srai>LAKELOC</srai></li>
+<li value="mol mgr"><srai>MOLMGR</srai></li>
+<li value="libphone"><srai>LIBPHONE</srai></li>
+<li value="mol phone"><srai>MOLPHONE</srai></li>
+
+<li value="returns">You may return any of our items to any of our locations.</li>
+
+<li value="branchhrs"><srai>BRNCHHRS</srai></li>
+<li value="read house"><srai>READHSE</srai></li>
+
+</condition>
+</template>
+</category>
+</topic> 
+
+
+<category>
+<pattern>BRANCHLOCS</pattern>
+<template>We have two branches. <srai>HDLSLOC</srai>
+<srai>LAKELOC</srai> You may return any of our items to any of our locations.
+</template>
+</category>
+
+<category>
+<pattern>BRANCH</pattern>
+<template><srai>BRNCHS</srai>
+</template>
+</category>
+
+<category>
+<pattern>* BRANCH</pattern>
+<template><srai>BRNCHS</srai>
+</template>
+</category>
+
+<category>
+<pattern>BRANCH *</pattern>
+<template><srai>BRNCHS</srai>
+</template>
+</category>
+
+<category>
+<pattern>* BRANCH *</pattern>
+<template><srai>BRNCHS</srai>
+</template>
+</category>
+
+<category>
+<pattern>BRANCHES</pattern>
+<template><srai>BRNCHS</srai>
+</template>
+</category>
+
+<category>
+<pattern>* BRANCHES</pattern>
+<template><srai>BRNCHS</srai>
+</template>
+</category>
+
+<category>
+<pattern>BRANCHES *</pattern>
+<template><srai>BRNCHS</srai>
+</template>
+</category>
+
+<category>
+<pattern>* BRANCHES *</pattern>
+<template><srai>BRNCHS</srai>
+</template>
+</category>
+
+<!--BRANCH HOURS-->
+
+
+<!--LIB ADDRESSES-->
+
+<category>
+<pattern> * GET TO * </pattern>
+<template><srai>DIRECTIONS <star index="2"/></srai></template>
+</category>
+
+<category>
+<pattern>GET TO * </pattern>
+<template><srai>DIRECTIONS <star/></srai></template>
+</category>
+
+<category>
+<pattern>DIRECTIONS TO * </pattern>
+<template><srai>DIRECTIONS <star/></srai></template>
+</category>
+
+<category>
+<pattern>* DIRECTIONS TO * </pattern>
+<template><srai>DIRECTIONS <star index="2"/></srai></template>
+</category>
+
+<category>
+<pattern>MENTORDIR</pattern>
+<template>You can find maps of Mentor Ohio <a href="http://cityofmentor.com/interactive-map/" target="_blank"><b>on this page</b></a>
+</template>
+</category>
+
+<category>
+<pattern>DIRECTIONS MENTOR</pattern>
+<template><srai>MENTORDIR</srai></template>
+</category>
+
+<category>
+<pattern>DIRECTIONS CITY OF MENTOR</pattern>
+<template><srai>MENTORDIR</srai></template>
+</category>
+
+<category>
+<pattern>DIRECTIONS MENTOR OHIO</pattern>
+<template><srai>MENTORDIR</srai></template>
+</category>
+
+<category>
+<pattern>DIRECTION TO MPL</pattern>
+<template><srai>MENTORDIR</srai></template>
+</category>
+
+<!--THE LIBRARY MAIN-->
+
+<category>
+<pattern>DIRECTIONS MPL</pattern>
+<template><srai>MAINDIR</srai></template>
+</category>
+
+<category>
+<pattern>DIRECTIONS THE LIBRARY</pattern>
+<template><srai>MAINDIR</srai></template>
+</category>
+
+<category>
+<pattern>DIRECTIONS MAIN</pattern>
+<template><srai>MAINDIR</srai></template>
+</category>
+
+<category>
+<pattern>DIRECTIONS YOUR MAIN LIBRARY</pattern>
+<template><srai>MAINDIR</srai></template>
+</category>
+
+<category>
+<pattern>DIRECTIONS THE MAIN LIBRARY</pattern>
+<template><srai>MAINDIR</srai></template>
+</category>
+
+<category>
+<pattern>DIRECTIONS MAIN LIBRARY</pattern>
+<template><srai>MAINDIR</srai></template>
+</category>
+
+<category>
+<pattern>DIRECTIONS MAIN</pattern>
+<template><srai>MAINDIR</srai></template>
+</category>
+
+<category>
+<pattern>DIRECTIONS MENTOR LIBRARY</pattern>
+<template><srai>MAINDIR</srai></template>
+</category>
+
+<category>
+<pattern>DIRECTIONS  MENTOR PUBLIC LIBRARY</pattern>
+<template><srai>MAINDIR</srai></template>
+</category>
+
+<category>
+<pattern>DIRECTIONS THE MENTOR PUBLIC LIBRARY</pattern>
+<template><srai>MAINDIR</srai></template>
+</category>
+
+<!--HEADLANDS-->
+
+<category>
+<pattern>DIRECTIONS HEADLANDS</pattern>
+<template><srai>HEADLANDSDIR</srai>
+</template>
+</category>
+
+<category>
+<pattern>DIRECTIONS HEADLANDS</pattern>
+<template><srai>HEADLANDSDIR</srai>
+</template>
+</category>
+
+<category>
+<pattern>DIRECTIONS YOUR HEADLANDS LIBRARY</pattern>
+<template><srai>HEADLANDSDIR</srai>
+</template>
+</category>
+
+<category>
+<pattern>DIRECTIONS YOUR HEADLANDS BRANCH LIBRARY</pattern>
+<template><srai>HEADLANDSDIR</srai>
+</template>
+</category>
+
+<category>
+<pattern>DIRECTIONS YOUR HEADLANDS BRANCH </pattern>
+<template><srai>HEADLANDSDIR</srai>
+</template>
+</category>
+
+<category>
+<pattern>DIRECTIONS THE HEADLANDS LIBRARY</pattern>
+<template><srai>HEADLANDSDIR</srai>
+</template>
+</category>
+
+<category>
+<pattern>DIRECTIONS HEADLANDS LIBRARY</pattern>
+<template><srai>HEADLANDSDIR</srai>
+</template>
+</category>
+
+<category>
+<pattern>DIRECTIONS THE HEADLANDS BRANCH</pattern>
+<template><srai>HEADLANDSDIR</srai>
+</template>
+</category>
+
+<category>
+<pattern>DIRECTIONS THE HEADLANDS BRANCH LIBRARY</pattern>
+<template><srai>HEADLANDSDIR</srai>
+</template>
+</category>
+
+<category>
+<pattern>DIRECTIONS  MENTOR LIBRARY HEADLANDS</pattern>
+<template><srai>HEADLANDSDIR</srai>
+</template>
+</category>
+
+<category>
+<pattern>DIRECTIONS MENTOR PUBLIC LIBRARY HEADLANDS BRANCH</pattern>
+<template><srai>HEADLANDSDIR</srai>
+</template>
+</category>
+
+<category>
+<pattern>DIRECTIONS YOUR HEADLANDS LIBRARY</pattern>
+<template><srai>HEADLANDSDIR</srai>
+</template>
+</category>
+
+<!--MOL BRANCH-->
+
+<category>
+<pattern>DIRECTIONS LAKE</pattern>
+<template><srai>LAKEDIR</srai>
+</template>
+</category>
+
+<category>
+<pattern>DIRECTIONS  MOL</pattern>
+<template><srai>LAKEDIR</srai>
+</template>
+</category>
+
+<category>
+<pattern>DIRECTIONS MENTOR ON THE LAKE</pattern>
+<template><srai>LAKEDIR</srai>
+</template>
+</category>
+
+<category>
+<pattern>DIRECTIONS LAKE BRANCH</pattern>
+<template><srai>LAKEDIR</srai>
+</template>
+</category>
+
+<category>
+<pattern>DIRECTIONS MOL BRANCH</pattern>
+<template><srai>LAKEDIR</srai>
+</template>
+</category>
+
+<category>
+<pattern>DIRECTIONS MENTOR ON THE LAKE BRANCH</pattern>
+<template><srai>LAKEDIR</srai>
+</template>
+</category>
+
+<category>
+<pattern>DIRECTIONS THE LAKE BRANCH</pattern>
+<template><srai>LAKEDIR</srai>
+</template>
+</category>
+
+<category>
+<pattern>DIRECTIONS THE MOL BRANCH</pattern>
+<template><srai>LAKEDIR</srai>
+</template>
+</category>
+
+<category>
+<pattern>DIRECTIONS THE MENTOR ON THE LAKE BRANCH</pattern>
+<template><srai>LAKEDIR</srai>
+</template>
+</category>
+
+<category>
+<pattern>DIRECTIONS THE LAKE BRANCH LIBRARY</pattern>
+<template><srai>LAKEDIR</srai>
+</template>
+</category>
+
+<category>
+<pattern>DIRECTIONS  THE MOL BRANCH LIBRARY</pattern>
+<template><srai>LAKEDIR</srai>
+</template>
+</category>
+
+<category>
+<pattern>DIRECTIONS THE MENTOR ON THE LAKE BRANCH LIBRARY</pattern>
+<template><srai>LAKEDIR</srai>
+</template>
+</category>
+
+<category>
+<pattern>DIRECTIONS YOUR LAKE BRANCH</pattern>
+<template><srai>LAKEDIR</srai>
+</template>
+</category>
+
+<category>
+<pattern>DIRECTIONS YOUR MOL BRANCH</pattern>
+<template><srai>LAKEDIR</srai>
+</template>
+</category>
+
+<category>
+<pattern>DIRECTIONS YOUR MENTOR ON THE LAKE BRANCH</pattern>
+<template><srai>LAKEDIR</srai>
+</template>
+</category>
+
+<category>
+<pattern>DIRECTIONS YOUR LAKE BRANCH LIBRARY</pattern>
+<template><srai>LAKEDIR</srai>
+</template>
+</category>
+
+<category>
+<pattern>DIRECTIONS YOUR MOL BRANCH LIBRARY</pattern>
+<template><srai>LAKEDIR</srai>
+</template>
+</category>
+
+<category>
+<pattern>DIRECTIONS YOUR MENTOR ON THE LAKE BRANCH LIBRARY</pattern>
+<template><srai>LAKEDIR</srai>
+</template>
+</category>
+
+<category>
+<pattern>DIRECTIONS YOUR BRANCHES</pattern>
+<template><srai>LAKEDIR</srai>
+</template>
+</category>
+
+<category>
+<pattern>DIRECTIONS THE BRANCHES</pattern>
+<template><srai>LAKEDIR</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHERE * HEADLANDS</pattern>
+<template><srai>HDLSLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHERE * HEADLANDS *</pattern>
+<template><srai>HDLSLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* TO * HEADLANDS</pattern>
+<template><srai>HDLSLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* TO * HEADLANDS *</pattern>
+<template><srai>HDLSLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* FOR * HEADLANDS</pattern>
+<template><srai>HDLSLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* FOR * HEADLANDS *</pattern>
+<template><srai>HDLSLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>HEADLANDS * ADDRESS</pattern>
+<template><srai>HDLSLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>HEADLANDS * ADDRESS *</pattern>
+<template><srai>HDLSLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* HEADLANDS * ADDRESS</pattern>
+<template><srai>HDLSLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* HEADLANDS * ADDRESS *</pattern>
+<template><srai>HDLSLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>ADDRESS * HEADLANDS</pattern>
+<template><srai>HDLSLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>ADDRESS * HEADLANDS *</pattern>
+<template><srai>HDLSLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* ADDRESS * HEADLANDS</pattern>
+<template><srai>HDLSLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* ADDRESS * HEADLANDS *</pattern>
+<template><srai>HDLSLOC</srai>
+</template>
+</category>
+
+<!--MOL-->
+
+<category>
+<pattern>WHERE * LAKE</pattern>
+<template><srai>LAKELOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHERE * LAKE *</pattern>
+<template><srai>LAKELOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* TO * LAKE</pattern>
+<template><srai>LAKELOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* TO * LAKE *</pattern>
+<template><srai>LAKELOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>LAKE * ADDRESS</pattern>
+<template><srai>LAKELOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>LAKE * ADDRESS *</pattern>
+<template><srai>LAKELOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* LAKE * ADDRESS</pattern>
+<template><srai>LAKELOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* LAKE * ADDRESS *</pattern>
+<template><srai>LAKELOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>ADDRESS * LAKE</pattern>
+<template><srai>LAKELOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>ADDRESS * LAKE *</pattern>
+<template><srai>LAKELOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* ADDRESS * LAKE</pattern>
+<template><srai>LAKELOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* ADDRESS * LAKE *</pattern>
+<template><srai>LAKELOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHERE * MOL</pattern>
+<template><srai>LAKELOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHERE * MOL *</pattern>
+<template><srai>LAKELOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* TO * MOL</pattern>
+<template><srai>LAKELOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* TO * MOL *</pattern>
+<template><srai>LAKELOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>MOL * ADDRESS</pattern>
+<template><srai>LAKELOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>MOL * ADDRESS *</pattern>
+<template><srai>LAKELOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* MOL * ADDRESS</pattern>
+<template><srai>LAKELOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* MOL * ADDRESS *</pattern>
+<template><srai>LAKELOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>ADDRESS * MOL</pattern>
+<template><srai>LAKELOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>ADDRESS * MOL *</pattern>
+<template><srai>LAKELOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* ADDRESS * MOL</pattern>
+<template><srai>LAKELOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* ADDRESS * MOL *</pattern>
+<template><srai>LAKELOC</srai>
+</template>
+</category>
+
+<!--MAINLOC-->
+
+<category>
+<pattern>MAIN BRANCH</pattern>
+<template><srai>MAINLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* MAIN BRANCH</pattern>
+<template><srai>MAINLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>MAIN BRANCH *</pattern>
+<template><srai>MAINLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* MAIN BRANCH *</pattern>
+<template><srai>MAINLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHERE * MAIN</pattern>
+<template><srai>MAINLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHERE * MAIN *</pattern>
+<template><srai>MAINLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* TO * MAIN</pattern>
+<template><srai>MAINLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* TO * MAIN *</pattern>
+<template><srai>MAINLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>MAIN * ADDRESS</pattern>
+<template><srai>MAINLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>MAIN * ADDRESS *</pattern>
+<template><srai>MAINLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* MAIN * ADDRESS</pattern>
+<template><srai>MAINLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* MAIN * ADDRESS *</pattern>
+<template><srai>MAINLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>ADDRESS * MAIN</pattern>
+<template><srai>MAINLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>ADDRESS * MAIN *</pattern>
+<template><srai>MAINLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* ADDRESS * MAIN</pattern>
+<template><srai>MAINLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* ADDRESS * MAIN *</pattern>
+<template><srai>MAINLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHERE * LIBRARY</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHERE * LIBRARY *</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>LIBRARY * ADDRESS</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>LIBRARY * ADDRESS *</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* LIBRARY * ADDRESS</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* LIBRARY * ADDRESS *</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>ADDRESS * LIBRARY</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>ADDRESS * LIBRARY *</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* ADDRESS * LIBRARY</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* ADDRESS * LIBRARY *</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<!--LIBRARY located-->
+
+<category>
+<pattern>LIBRARY LOCATED</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* LIBRARY LOCATED</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>LIBRARY * LOCATED</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>LIBRARY LOCATED *</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* LIBRARY * LOCATED</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>LIBRARY * LOCATED *</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* LIBRARY * LOCATED *</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>LIBRARY LOCATION</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* LIBRARY LOCATION</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>LIBRARY * LOCATION</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>LIBRARY LOCATION *</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* LIBRARY * LOCATION</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>LIBRARY * LOCATION *</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* LIBRARY * LOCATION *</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>LIBRARY LOCATIONS</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* LIBRARY LOCATIONS</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>LIBRARY * LOCATIONS</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>LIBLOCATIONS *</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* LIBRARY * LOCATIONS</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>LIBRARY * LOCATIONS *</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* LIBRARY * LOCATIONS *</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>LOCATION LIBRARY</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* LOCATION LIBRARY</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>LOCATION * LIBRARY</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>LOCATION LIBRARY *</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* LOCATION * LIBRARY</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>LOCATION * LIBRARY *</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* LOCATION * LIBRARY *</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>LOCATIONS LIBRARY</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* LOCATIONS LIBRARY</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>LOCATIONS * LIBRARY</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>LOCATIONS LIBRARY *</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* LOCATIONS * LIBRARY</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>LOCATIONS * LIBRARY *</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<category>
+<pattern>* LOCATIONS * LIBRARY *</pattern>
+<template><srai>LIBLOC</srai>
+</template>
+</category>
+
+<!--READ HOUSE-->
+
+<category>
+<pattern>READ HOUSE</pattern>
+<template><srai>READHSE</srai></template>
+</category>
+
+<category>
+<pattern>_  READ HOUSE</pattern>
+<template><srai>READHSE</srai></template>
+</category>
+
+<category>
+<pattern>_  READ HOUSE *</pattern>
+<template><srai>READHSE</srai></template>
+</category>
+
+<category>
+<pattern>READ HOUSE *</pattern>
+<template><srai>READHSE</srai></template>
+</category>
+
+<category>
+<pattern>REED HOUSE</pattern>
+<template><srai>READHSE</srai></template>
+</category>
+
+<category>
+<pattern>_  REED HOUSE</pattern>
+<template><srai>READHSE</srai></template>
+</category>
+
+<category>
+<pattern>_  REED HOUSE *</pattern>
+<template><srai>READHSE</srai></template>
+</category>
+
+<category>
+<pattern>REED HOUSE *</pattern>
+<template><srai>READHSE</srai></template>
+</category>
+
+<category>
+<pattern>READHOUSE</pattern>
+<template><srai>READHSE</srai></template>
+</category>
+
+<category>
+<pattern>_  READHOUSE</pattern>
+<template><srai>READHSE</srai></template>
+</category>
+
+<category>
+<pattern>_  READHOUSE *</pattern>
+<template><srai>READHSE</srai></template>
+</category>
+
+<category>
+<pattern>READHOUSE *</pattern>
+<template><srai>READHSE</srai></template>
+</category>
+
+<category>
+<pattern>_  READ HOUSE HAUNTED</pattern>
+<template><srai>RHGHOST</srai></template>
+</category>
+
+<category>
+<pattern>_  READ HOUSE * HAUNTED</pattern>
+<template><srai>RHGHOST</srai></template>
+</category>
+
+<category>
+<pattern>_  READ HOUSE HAUNTED *</pattern>
+<template><srai>RHGHOST</srai></template>
+</category>
+
+<category>
+<pattern>_  READ HOUSE * HAUNTED *</pattern>
+<template><srai>RHGHOST</srai></template>
+</category>
+
+<category>
+<pattern>_ GHOST *  READ HOUSE</pattern>
+<template><srai>RHGHOST</srai></template>
+</category>
+
+<category>
+<pattern>_ GHOSTS *  READ HOUSE</pattern>
+<template><srai>RHGHOST</srai></template>
+</category>
+
+<category>
+<pattern>_  READ HOUSE * GHOST</pattern>
+<template><srai>RHGHOST</srai></template>
+</category>
+
+<category>
+<pattern>_  READ HOUSE GHOST *</pattern>
+<template><srai>RHGHOST</srai></template>
+</category>
+
+<category>
+<pattern>_  READ HOUSE * GHOST *</pattern>
+<template><srai>RHGHOST</srai></template>
+</category>
+
+<category>
+<pattern>_  READ HOUSE * GHOSTS</pattern>
+<template><srai>RHGHOST</srai></template>
+</category>
+
+<category>
+<pattern>_  READ HOUSE GHOSTS *</pattern>
+<template><srai>RHGHOST</srai></template>
+</category>
+
+<category>
+<pattern>_  READ HOUSE * GHOSTS *</pattern>
+<template><srai>RHGHOST</srai></template>
+</category>
+
+<category>
+<pattern>_ SPIRIT *  READ HOUSE</pattern>
+<template><srai>RHGHOST</srai></template>
+</category>
+
+<category>
+<pattern>_ SPIRITS *  READ HOUSE</pattern>
+<template><srai>RHGHOST</srai></template>
+</category>
+
+<category>
+<pattern>_  READ HOUSE * SPIRIT</pattern>
+<template><srai>RHGHOST</srai></template>
+</category>
+
+<category>
+<pattern>_  READ HOUSE SPIRIT *</pattern>
+<template><srai>RHGHOST</srai></template>
+</category>
+
+<category>
+<pattern>_  READ HOUSE * SPIRIT *</pattern>
+<template><srai>RHGHOST</srai></template>
+</category>
+
+<category>
+<pattern>_  READ HOUSE * SPIRITS</pattern>
+<template><srai>RHGHOST</srai></template>
+</category>
+
+<category>
+<pattern>_  READ HOUSE SPIRITS *</pattern>
+<template><srai>RHGHOST</srai></template>
+</category>
+
+<category>
+<pattern>_  READ HOUSE * SPIRITS *</pattern>
+<template><srai>RHGHOST</srai></template>
+</category>
+
+<!--phone number-->
+
+<category>
+<pattern>PHONE NUMBER</pattern>
+<template><srai>LIBPHONE</srai></template>
+</category>
+
+<category>
+<pattern>* PHONE NUMBER</pattern>
+<template><srai>LIBPHONE</srai></template>
+</category>
+
+
+<category>
+<pattern>TELEPHONE NUMBER</pattern>
+<template><srai>LIBPHONE</srai></template>
+</category>
+
+<category>
+<pattern>* TELEPHONE NUMBER</pattern>
+<template><srai>LIBPHONE</srai></template>
+</category>
+
+<category>
+<pattern>* TELEPHONE NUMBER *</pattern>
+<template><srai>LIBPHONE</srai></template>
+</category>
+
+<category>
+<pattern>TELEPHONE NUMBER *</pattern>
+<template><srai>LIBPHONE</srai></template>
+</category>
+
+<!--call you-->
+
+<category>
+<pattern>CALL YOU</pattern>
+<template><srai>LIBPHONE</srai></template>
+</category>
+
+<category>
+<pattern>* CALL YOU</pattern>
+<template><srai>LIBPHONE</srai></template>
+</category>
+
+<category>
+  <pattern>WHERE * LIBRARY</pattern>
+<template><srai>LIBLOC</srai></template>
+</category>
+
+<category>
+  <pattern>WHERE * LIBRARY *</pattern>
+<template><srai>LIBLOC</srai></template>
+</category>
+
+<category>
+  <pattern>* WHERE * LIBRARY *</pattern>
+<template><srai>LIBLOC</srai></template>
+</category>
+
+<category>
+<pattern>WHERE IS MPL</pattern>
+<template><srai>LIBLOC</srai></template>
+</category>
+
+<category>
+<pattern>WHERE IS MPL *</pattern>
+<template><srai>LIBLOC</srai></template>
+</category>
+
+<category>
+<pattern>* WHERE IS MPL *</pattern>
+<template><srai>LIBLOC</srai></template>
+</category>
+
+<category>
+<pattern>* GET TO * LIBRARY</pattern>
+<template><srai>LIBLOC</srai></template>
+</category>
+
+<category>
+<pattern>* GET TO * LIBRARY *</pattern>
+<template><srai>LIBLOC</srai></template>
+</category>
+
+</aiml>

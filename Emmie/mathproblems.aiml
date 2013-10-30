@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<!--Copyright 2011 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+
+<category>
+<pattern>EQUATION</pattern>
+<template>Please enter your equation.</template>
+</category>
+
+<category>
+<pattern>* EQUATION</pattern>
+<template>Please enter your equation.</template>
+</category>
+
+<category>
+<pattern>EQUATION *</pattern>
+<template>Please enter your equation.</template>
+</category>
+
+<category>
+<pattern>* EQUATION *</pattern>
+<template>Please enter your equation.</template>
+</category>
+
+<category>
+<pattern>EQUATIONS</pattern>
+<template>Please enter your equation.</template>
+</category>
+
+<category>
+<pattern>* EQUATIONS</pattern>
+<template>Please enter your equation.</template>
+</category>
+
+<category>
+<pattern>EQUATIONS *</pattern>
+<template>Please enter your equation.</template>
+</category>
+
+<category>
+<pattern>* EQUATIONS *</pattern>
+<template>Please enter your equation.</template>
+</category>
+
+<category>
+<pattern>FORMULA</pattern>
+<template>Please enter your formula.</template>
+</category>
+
+<category>
+<pattern>* FORMULA</pattern>
+<template>Please enter your formula.</template>
+</category>
+
+<category>
+<pattern>FORMULA *</pattern>
+<template>Please enter your formula.</template>
+</category>
+
+<category>
+<pattern>* FORMULA *</pattern>
+<template>Please enter your formula.</template>
+</category>
+
+<category>
+<pattern>FORMULAS</pattern>
+<template>Please enter your formula.</template>
+</category>
+
+<category>
+<pattern>* FORMULAS</pattern>
+<template>Please enter your formula.</template>
+</category>
+
+<category>
+<pattern>FORMULAS *</pattern>
+<template>Please enter your formula.</template>
+</category>
+
+<category>
+<pattern>* FORMULAS *</pattern>
+<template>Please enter your formula.</template>
+</category>
+
+<category>
+<pattern>MATH PROBLEM</pattern>
+<template>Please enter your math problem.</template>
+</category>
+
+<category>
+<pattern>_ MATH PROBLEM</pattern>
+<template>Please enter your math problem.</template>
+</category>
+
+<category>
+<pattern>MATH PROBLEM *</pattern>
+<template>Please enter your math problem.</template>
+</category>
+
+<category>
+<pattern>_ MATH PROBLEM *</pattern>
+<template>Please enter your math problem.</template>
+</category>
+
+<category>
+<pattern>MATH PROBLEMS</pattern>
+<template>Please enter your math problem.</template>
+</category>
+
+<category>
+<pattern>_ MATH PROBLEMS</pattern>
+<template>Please enter your math problem.</template>
+</category>
+
+<category>
+<pattern>MATH PROBLEMS *</pattern>
+<template>Please enter your math problem.</template>
+</category>
+
+<category>
+<pattern>_ MATH PROBLEMS *</pattern>
+<template>Please enter your math problem.</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>PLEASE ENTER YOUR EQUATION</that>
+<template>
+Let me check Wolfram Alpha. Wolfram Alpha can evaluate and solve many mathematical formulas and equations.
+If you don't see the results, please turn off your pop-up blocker.  
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">wolframalpha</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>PLEASE ENTER YOUR FORMULA</that>
+<template>
+Let me check Wolfram Alpha. Wolfram Alpha can evaluate and solve many mathematical formulas and equations.
+If you don't see the results, please turn off your pop-up blocker.  
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">wolframalpha</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>PLEASE ENTER YOUR MATH PROBLEM</that>
+<template>
+Let me check Wolfram Alpha. Wolfram Alpha can evaluate and solve many mathematical formulas and equations.
+If you don't see the results, please turn off your pop-up blocker.  
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">wolframalpha</set>
+</think>
+</template>
+</category>V
+
+</aiml>

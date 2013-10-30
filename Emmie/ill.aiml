@@ -1,0 +1,1031 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<!--Copyright 2011-2012 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+
+
+
+<category>
+<pattern>* reserve * from another library </pattern>
+<template>If it's something in our collection, but at another branch, just place your hold as usual. If it's something that isn't in out collection, try looking in <a href="http://ohpir.westervillelibrary.org/" target="_blank"><b>SearchOhio</b></a>
+or in <a href="http://olc1.ohiolink.edu/search~S0/" target="_blank"><b>OhioLINK</b></a>. 
+Once you've found your item, just place your request as usual. Most OhioLINK and SearchOhio items arrive within five business days.</template>
+</category>
+
+<category>
+<pattern>* LIVE IN * FROM MENTOR * </pattern>
+<template><srai>INLIBLN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>CAN * REQUEST * NOT LISTED * LIBRARY</pattern>
+<template><srai>INLIBLN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>RESERVE * NOT IN SYSTEM</pattern>
+<template><srai>INLIBLN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>* RESERVE * NOT IN SYSTEM</pattern>
+<template><srai>INLIBLN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>RESERVE * NOT IN * LIBRARY</pattern>
+<template><srai>INLIBLN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>* RESERVE * NOT IN * LIBRARY</pattern>
+<template><srai>INLIBLN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>RESERVE * NOT IN * LIBRARY *</pattern>
+<template><srai>INLIBLN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>* RESERVE * NOT IN * LIBRARY *</pattern>
+<template><srai>INLIBLN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>HOW * REQUEST * NOT LISTED * LIBRARY</pattern>
+<template><srai>INLIBLN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>CAN * REQUEST * NOT IN YOUR *</pattern>
+<template><srai>INLIBLN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>HOW * REQUEST * NOT IN YOUR *</pattern>
+<template><srai>INLIBLN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>CAN * REQUEST * NOT IN THE *</pattern>
+<template><srai>INLIBLN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>HOW * REQUEST * NOT IN THE *</pattern>
+<template><srai>INLIBLN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>* BORROW * OTHER LIBRARIES </pattern>
+<template><srai>INLIBLN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>* BORROW * ANOTHER LIBRARY </pattern>
+<template><srai>INLIBLN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>* BORROW * OTHER LIBRARIES *</pattern>
+<template><srai>INLIBLN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>* BORROW * ANOTHER LIBRARY *</pattern>
+<template><srai>INLIBLN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>* BORROWING * OTHER LIBRARIES </pattern>
+<template><srai>INLIBLN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>* BORROWING * ANOTHER LIBRARY </pattern>
+<template><srai>INLIBLN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>* BORROWING * OTHER LIBRARIES *</pattern>
+<template><srai>INLIBLN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>* BORROWING * ANOTHER LIBRARY *</pattern>
+<template><srai>INLIBLN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>* REQUEST * OTHER LIBRARIES </pattern>
+<template><srai>INLIBLN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>* REQUEST * ANOTHER LIBRARY </pattern>
+<template><srai>INLIBLN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>* REQUEST * OTHER LIBRARIES *</pattern>
+<template><srai>INLIBLN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>* REQUEST * ANOTHER LIBRARY *</pattern>
+<template><srai>INLIBLN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>* REQUESTS * OTHER LIBRARIES </pattern>
+<template><srai>INLIBLN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>* REQUESTS * ANOTHER LIBRARY </pattern>
+<template><srai>INLIBLN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>* REQUESTS * OTHER LIBRARIES *</pattern>
+<template><srai>INLIBLN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>* REQUESTS * ANOTHER LIBRARY *</pattern>
+<template><srai>INLIBLN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>* ORDER * OTHER LIBRARIES </pattern>
+<template><srai>INLIBLN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>* ORDER * ANOTHER LIBRARY </pattern>
+<template><srai>INLIBLN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>* ORDER * OTHER LIBRARIES *</pattern>
+<template><srai>INLIBLN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>* ORDER * ANOTHER LIBRARY *</pattern>
+<template><srai>INLIBLN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>* ILL</pattern>
+<template><srai>INLIBLN</srai></template>
+</category>
+
+<category>
+<pattern>* ILL *</pattern>
+<template><srai>INLIBLN</srai></template>
+</category>
+
+<category>
+<pattern>ILL *</pattern>
+<template><srai>INLIBLN</srai></template>
+</category>
+
+<category>
+<pattern>ILLS</pattern>
+<template><srai>INLIBLN</srai></template>
+</category>
+
+<category>
+<pattern>* ILLS</pattern>
+<template><srai>INLIBLN</srai></template>
+</category>
+
+<category>
+<pattern>* ILLS *</pattern>
+<template><srai>INLIBLN</srai></template>
+</category>
+
+<category>
+<pattern>ILLS *</pattern>
+<template><srai>INLIBLN</srai></template>
+</category>
+
+<category>
+<pattern>INTERLIBRARY LOAN</pattern>
+<template><srai>INLIBLN</srai></template>
+</category>
+
+<category>
+<pattern>* INTERLIBRARY LOAN</pattern>
+<template><srai>INLIBLN</srai></template>
+</category>
+
+<category>
+<pattern>* INTERLIBRARY LOAN *</pattern>
+<template><srai>INLIBLN</srai></template>
+</category>
+
+<category>
+<pattern>INTERLIBRARY LOAN *</pattern>
+<template><srai>INLIBLN</srai></template>
+</category>
+
+<category>
+<pattern>INTERLIBRARY LOANS</pattern>
+<template><srai>INLIBLN</srai></template>
+</category>
+
+<category>
+<pattern>* INTERLIBRARY LOANS</pattern>
+<template><srai>INLIBLN</srai></template>
+</category>
+
+<category>
+<pattern>* INTERLIBRARY LOANS *</pattern>
+<template><srai>INLIBLN</srai></template>
+</category>
+
+<category>
+<pattern>INTERLIBRARY LOANS *</pattern>
+<template><srai>INLIBLN</srai></template>
+</category>
+
+<category>
+<pattern>INTER LIBRARY LOAN</pattern>
+<template><srai>INLIBLN</srai></template>
+</category>
+
+<category>
+<pattern>* INTER LIBRARY LOAN</pattern>
+<template><srai>INLIBLN</srai></template>
+</category>
+
+<category>
+<pattern>* INTER LIBRARY LOAN *</pattern>
+<template><srai>INLIBLN</srai></template>
+</category>
+
+<category>
+<pattern>INTER LIBRARY LOAN *</pattern>
+<template><srai>INLIBLN</srai></template>
+</category>
+
+<category>
+<pattern>INTER LIBRARY LOANS</pattern>
+<template><srai>INLIBLN</srai></template>
+</category>
+
+<category>
+<pattern>* INTER LIBRARY LOANS</pattern>
+<template><srai>INLIBLN</srai></template>
+</category>
+
+<category>
+<pattern>* INTER LIBRARY LOANS *</pattern>
+<template><srai>INLIBLN</srai></template>
+</category>
+
+<category>
+<pattern>INTER LIBRARY LOANS *</pattern>
+<template><srai>INLIBLN</srai></template>
+</category>
+
+<category>
+<pattern>* OBTAIN * OUTSIDE * COLLECTION</pattern>
+<template><srai>INLIBLN</srai></template>
+</category>
+
+<category>
+<pattern>* LIBRARY OBTAIN * OUTISDE * COLLECTION</pattern>
+<template><srai>INLIBLN</srai></template>
+</category>
+ 
+<category>
+<pattern>* LIBRARY OBTAIN * DO NOT HAVE * COLLECTION</pattern>
+<template><srai>INLIBLN</srai></template>
+</category>
+
+<!--SEARCH OTHER LIBS-->
+
+<category>
+<pattern>SEARCH * LIBRARIES</pattern>
+<template><srai>INLIBLN</srai><br/>
+<srai>NOGOSO</srai>
+</template>
+</category>
+
+<category>
+<pattern>SEARCH * LIBRARY</pattern>
+<template><srai>INLIBLN</srai><br/>
+<srai>NOGOSO</srai>
+</template>
+</category>
+
+<category>
+<pattern>* SEARCH * LIBRARIES</pattern>
+<template><srai>INLIBLN</srai><br/>
+<srai>NOGOSO</srai>
+</template>
+</category>
+
+<category>
+<pattern>* SEARCH * LIBRARY</pattern>
+<template><srai>INLIBLN</srai><br/>
+<srai>NOGOSO</srai>
+</template>
+</category>
+
+<category>
+<pattern>* SEARCH * LIBRARIES *</pattern>
+<template><srai>INLIBLN</srai><br/>
+<srai>NOGOSO</srai>
+</template>
+</category>
+
+<category>
+<pattern>* SEARCH * LIBRARY *</pattern>
+<template><srai>INLIBLN</srai><br/>
+<srai>NOGOSO</srai>
+</template>
+</category>
+
+<category>
+<pattern>* SEARCH * LIBRARY'S *</pattern>
+<template><srai>INLIBLN</srai><br/>
+<srai>NOGOSO</srai>
+</template>
+</category>
+
+<!--CLEVNET-->
+
+<category>
+<pattern>* CLEVNET</pattern>
+<template><srai>CLEVNET</srai></template>
+</category>
+
+<category>
+<pattern>* CLEVNET *</pattern>
+<template><srai>CLEVNET</srai></template>
+</category>
+
+<category>
+<pattern>CLEVNET *</pattern>
+<template><srai>CLEVNET</srai></template>
+</category>
+
+<category>
+<pattern>CLEVENET</pattern>
+<template><srai>CLEVNET</srai></template>
+</category>
+
+<category>
+<pattern>* CLEVENET</pattern>
+<template><srai>CLEVNET</srai></template>
+</category>
+
+<category>
+<pattern>* CLEVENET *</pattern>
+<template><srai>CLEVNET</srai></template>
+</category>
+
+<category>
+<pattern>CLEVENET *</pattern>
+<template><srai>CLEVNET</srai></template>
+</category>
+
+<!--OHIOLINK-->
+
+<category>
+<pattern>OHIO LINK</pattern>
+<template><srai>OHLNK</srai></template>
+</category>
+
+<category>
+<pattern>* OHIO LINK</pattern>
+<template><srai>OHLNK</srai></template>
+</category>
+
+<category>
+<pattern>OHIO LINK *</pattern>
+<template><srai>OHLNK</srai></template>
+</category>
+
+<category>
+<pattern>* OHIO LINK *</pattern>
+<template><srai>OHLNK</srai></template>
+</category>
+
+<category>
+<pattern>OHIOLINK</pattern>
+<template><srai>OHLNK</srai></template>
+</category>
+
+<category>
+<pattern>* OHIOLINK</pattern>
+<template><srai>OHLNK</srai></template>
+</category>
+
+<category>
+<pattern>OHIOLINK *</pattern>
+<template><srai>OHLNK</srai></template>
+</category>
+  
+<category>
+<pattern>* OHIOLINK *</pattern>
+<template><srai>OHLNK</srai></template>
+</category>
+  
+<!--OHIOLINK LOAN PERIOD INFO-->
+
+<category>
+<pattern>LOAN * OHIO LINK</pattern>
+<template><srai>OHLNKLNPRDS</srai></template>
+</category>
+
+<category>
+<pattern>LOAN  * OHIO LINK *</pattern>
+<template><srai>OHLNKLNPRDS</srai></template>
+</category>
+
+<category>
+<pattern>* LOAN  * OHIO LINK</pattern>
+<template><srai>OHLNKLNPRDS</srai></template>
+</category>
+
+<category>
+<pattern>* LOAN * OHIO LINK *</pattern>
+<template><srai>OHLNKLNPRDS</srai></template>
+</category>
+
+<category>
+<pattern>LOAN * OHIOLINK</pattern>
+<template><srai>OHLNKLNPRDS</srai></template>
+</category>
+
+<category>
+<pattern>LOAN  * OHIOLINK *</pattern>
+<template><srai>OHLNKLNPRDS</srai></template>
+</category>
+
+<category>
+<pattern>* LOAN  * OHIOLINK</pattern>
+<template><srai>OHLNKLNPRDS</srai></template>
+</category>
+
+<category>
+<pattern>* LOAN * OHIOLINK *</pattern>
+<template><srai>OHLNKLNPRDS</srai></template>
+</category>
+
+<category>
+<pattern>HOW LONG * OHIOLINK</pattern>
+<template><srai>SO LOAN PERIODS</srai></template>
+</category>
+
+<category>
+<pattern>HOW LONG * OHIOLINK *</pattern>
+<template><srai>SO LOAN PERIODS</srai></template>
+</category>
+
+<category>
+<pattern>HOW LONG * OHIO LINK</pattern>
+<template><srai>SO LOAN PERIODS</srai></template>
+</category>
+
+<category>
+<pattern>HOW LONG * OHIO LINK *</pattern>
+<template><srai>SO LOAN PERIODS</srai></template>
+</category>
+
+<category>
+<pattern>HOW LONG * ILL *</pattern>
+<template>
+<srai>HWLNGOL</srai>
+</template>
+</category>
+
+<category>
+<pattern>HOW LONG * OHIOLINK</pattern>
+<template>
+<srai>HWLNGOL</srai>
+</template>
+</category>
+
+<category>
+<pattern>HOW LONG * OHIOLINK *</pattern>
+<template>
+<srai>HWLNGOL</srai>
+</template>
+</category>
+
+<!--OHIOLINK CATALOG-->
+
+<category>
+<pattern>OHIOLINK CATALOG</pattern>
+<template><srai>OLCAT</srai></template>
+</category>
+
+<category>
+<pattern>* OHIOLINK CATALOG</pattern>
+<template><srai>OLCAT</srai></template>
+</category>
+
+<category>
+<pattern>* OHIOLINK CATALOG *</pattern>
+<template><srai>OLCAT</srai></template>
+</category>
+
+<category>
+<pattern>OHIOLINK CATALOG *</pattern>
+<template><srai>OLCAT</srai></template>
+</category>
+
+<category>
+<pattern>OHIO LINK CATALOG</pattern>
+<template><srai>OLCAT</srai></template>
+</category>
+
+<category>
+<pattern>* OHIO LINK CATALOG</pattern>
+<template><srai>OLCAT</srai></template>
+</category>
+
+<category>
+<pattern>* OHIO LINK CATALOG *</pattern>
+<template><srai>OLCAT</srai></template>
+</category>
+
+<category>
+<pattern>OHIO LINK CATALOG *</pattern>
+<template><srai>OLCAT</srai></template>
+</category>
+
+<category>
+<pattern>WHAT * OHIOLINK</pattern>
+<template><srai>OHIOLINK</srai></template>
+</category>
+
+<category>
+<pattern>* WHAT * OHIOLINK *</pattern>
+<template><srai>OHIOLINK</srai></template>
+</category>
+
+<category>
+<pattern>WHAT * OHIOLINK *</pattern>
+<template><srai>OHIOLINK</srai></template>
+</category>
+
+<category>
+<pattern>WHAT * OHIO LINK</pattern>
+<template><srai>OHIOLINK</srai></template>
+</category>
+
+<category>
+<pattern>* WHAT * OHIO LINK</pattern>
+<template><srai>OHIOLINK</srai></template>
+</category>
+
+<category>
+<pattern>* WHAT * OHIO LINK *</pattern>
+<template><srai>OHIOLINK</srai></template>
+</category>
+
+<category>
+<pattern>WHAT * OHIO LINK *</pattern>
+<template><srai>OHIOLINK</srai></template>
+</category>
+
+<category>
+<pattern>SEARCH OHIO</pattern>
+<template><srai>SRCHOH</srai></template>
+</category>
+
+<category>
+<pattern>* SEARCH OHIO</pattern>
+<template><srai>SRCHOH</srai></template>
+</category>
+
+<category>
+<pattern>SEARCH OHIO *</pattern>
+<template><srai>SRCHOH</srai></template>
+</category>
+
+<category>
+<pattern>* SEARCH OHIO *</pattern>
+<template><srai>SRCHOH</srai></template>
+</category>
+
+<category>
+<pattern>SEARCHOHIO</pattern>
+<template><srai>SRCHOH</srai></template>
+</category>
+
+<category>
+<pattern>* SEARCHOHIO</pattern>
+<template><srai>SRCHOH</srai></template>
+</category>
+
+<category>
+<pattern>SEARCHOHIO *</pattern>
+<template><srai>SRCHOH</srai></template>
+</category>
+  
+<category>
+<pattern>* SEARCHOHIO *</pattern>
+<template><srai>SRCHOH</srai></template>
+</category>
+
+<category>
+<pattern>LOAN * SEARCH OHIO</pattern>
+<template><srai>SOLNPRDS</srai></template>
+</category>
+
+<category>
+<pattern>LOAN  * SEARCH OHIO *</pattern>
+<template><srai>SOLNPRDS</srai></template>
+</category>
+
+<category>
+<pattern>* LOAN  * SEARCH OHIO</pattern>
+<template><srai>SOLNPRDS</srai></template>
+</category>
+
+<category>
+<pattern>* LOAN * SEARCH OHIO *</pattern>
+<template><srai>SOLNPRDS</srai></template>
+</category>
+
+<category>
+<pattern>LOAN * SEARCHOHIO</pattern>
+<template><srai>SOLNPRDS</srai></template>
+</category>
+
+<category>
+<pattern>LOAN  * SEARCHOHIO *</pattern>
+<template><srai>SOLNPRDS</srai></template>
+</category>
+
+<category>
+<pattern>* LOAN  * SEARCHOHIO</pattern>
+<template><srai>SOLNPRDS</srai></template>
+</category>
+
+<category>
+<pattern>* LOAN * SEARCHOHIO *</pattern>
+<template><srai>SOLNPRDS</srai></template>
+</category>
+
+<category>
+<pattern>HOW LONG * SEARCHOHIO</pattern>
+<template><srai>SO LOAN PERIODS</srai></template>
+</category>
+
+<category>
+<pattern>HOW LONG * SEARCHOHIO *</pattern>
+<template><srai>SO LOAN PERIODS</srai></template>
+</category>
+
+<category>
+<pattern>HOW LONG * SEARCH OHIO</pattern>
+<template><srai>SO LOAN PERIODS</srai></template>
+</category>
+
+<category>
+<pattern>HOW LONG * SEARCH OHIO *</pattern>
+<template><srai>SO LOAN PERIODS</srai></template>
+</category>
+
+<category>
+<pattern>HOW LONG * ILL * </pattern>
+<template><srai>ILLETA</srai></template>
+</category>
+
+<category>
+<pattern>HOW LONG * TO GET * SEARCHOHIO</pattern>
+<template><srai>ILLETA</srai></template>
+</category>
+
+<category>
+<pattern>HOW LONG * TAKE FOR * SEARCHOHIO</pattern>
+<template><srai>ILLETA</srai></template>
+</category>
+
+<category>
+<pattern>HOW LONG * TAKE FOR * SEARCH OHIO</pattern>
+<template><srai>ILLETA</srai></template>
+</category>
+
+<category>
+<pattern>HOW LONG * WAIT * SEARCHOHIO</pattern>
+<template><srai>ILLETA</srai></template>
+</category>
+
+<category>
+<pattern>HOW LONG *  WAIT* SEARCH OHIO</pattern>
+<template><srai>ILLETA</srai></template>
+</category>
+
+<category>
+<pattern>IF YOU DO NOT HAVE *</pattern>
+<template><srai>MPLNOGO</srai></template>
+</category>
+
+<category>
+<pattern>* IF YOU DO NOT HAVE *</pattern>
+<template><srai>MPLNOGO</srai></template>
+</category>
+
+<category>
+<pattern>IF * LIBRARY DOES NOT HAVE  *</pattern>
+<template><srai>MPLNOGO</srai></template>
+</category>
+
+<category>
+<pattern>* IF * LIBRARY DOES NOT HAVE  *</pattern>
+<template><srai>MPLNOGO</srai></template>
+</category>
+
+<category>
+<pattern>SEARCHOHIO CATALOG</pattern>
+<template><srai>SOCAT</srai></template>
+</category>
+
+<category>
+<pattern>* SEARCHOHIO CATALOG</pattern>
+<template><srai>SOCAT</srai></template>
+</category>
+
+<category>
+<pattern>* SEARCHOHIO CATALOG *</pattern>
+<template><srai>SOCAT</srai></template>
+</category>
+
+<category>
+<pattern>SEARCHOHIO CATALOG *</pattern>
+<template><srai>SOCAT</srai></template>
+</category>
+
+<category>
+<pattern>SEARCH OHIO CATALOG</pattern>
+<template><srai>SOCAT</srai></template>
+</category>
+
+<category>
+<pattern>* SEARCH OHIO CATALOG</pattern>
+<template><srai>SOCAT</srai></template>
+</category>
+
+<category>
+<pattern>* SEARCH OHIO CATALOG *</pattern>
+<template><srai>SOCAT</srai></template>
+</category>
+
+<category>
+<pattern>SEARCH OHIO CATALOG *</pattern>
+<template><srai>SOCAT</srai></template>
+</category>
+
+<category>
+<pattern>* SEARCHOHIO</pattern>
+<template><srai>SEARCHOHIO</srai></template>
+</category>
+
+<category>
+<pattern>SEARCHOHIO *</pattern>
+<template><srai>SEARCHOHIO</srai></template>
+</category>
+
+<category>
+<pattern>* SEARCHOHIO *</pattern>
+<template><srai>SEARCHOHIO</srai></template>
+</category>
+
+<category>
+<pattern>SEARCHOHIO WIKI</pattern>
+<template><srai>SOWIKI</srai></template>
+</category>
+
+<category>
+<pattern>_ SEARCHOHIO WIKI</pattern>
+<template><srai>SOWIKI</srai></template>
+</category>
+
+<category>
+<pattern>_ SEARCHOHIO WIKI *</pattern>
+<template><srai>SOWIKI</srai></template>
+</category>
+
+<category>
+<pattern>SEARCHOHIO WIKI *</pattern>
+<template><srai>SOWIKI</srai></template>
+</category>
+
+<category>
+<pattern>SEARCH OHIO WIKI</pattern>
+<template><srai>SOWIKI</srai></template>
+</category>
+
+<category>
+<pattern>_ SEARCH OHIO WIKI</pattern>
+<template><srai>SOWIKI</srai></template>
+</category>
+
+<category>
+<pattern>_ SEARCH OHIO WIKI *</pattern>
+<template><srai>SOWIKI</srai></template>
+</category>
+
+<category>
+<pattern>SEARCH OHIO WIKI *</pattern>
+<template><srai>SOWIKI</srai></template>
+</category>
+
+<category>
+<pattern>WORLDCAT</pattern>
+<template><srai>WRLDCAT</srai></template>
+</category>
+
+<category>
+<pattern>* WORLDCAT</pattern>
+<template><srai>WRLDCAT</srai></template>
+</category>
+
+<category>
+<pattern>* WORLDCAT *</pattern>
+<template><srai>WRLDCAT</srai></template>
+</category>
+
+<category>
+<pattern>WORLDCAT *</pattern>
+<template><srai>WRLDCAT</srai></template>
+</category>
+
+<category>
+<pattern>WORLD CAT</pattern>
+<template><srai>WRLDCAT</srai></template>
+</category>
+
+<category>
+<pattern>* WORLD CAT</pattern>
+<template><srai>WRLDCAT</srai></template>
+</category>
+
+<category>
+<pattern>* WORLD CAT *</pattern>
+<template><srai>WRLDCAT</srai></template>
+</category>
+
+<category>
+<pattern>WORLD CAT *</pattern>
+<template><srai>WRLDCAT</srai></template>
+</category>
+
+<category>
+<pattern>_ OHIOLINK DOES NOT HAVE *</pattern>
+<template><srai>NOGOSO</srai></template>
+</category>
+
+<category>
+<pattern>_ OHIOLINK DOES NOT HAVE *</pattern>
+<template><srai>NOGOSO</srai></template>
+</category>
+
+<category>
+<pattern>_ NOT IN OHIOLINK</pattern>
+<template><srai>NOGOSO</srai></template>
+</category>
+
+<category>
+<pattern>_ NOT IN OHIOLINK *</pattern>
+<template><srai>NOGOSO</srai></template>
+</category>
+
+<category>
+<pattern>_ NOT IN * OHIOLINK *</pattern>
+<template><srai>NOGOSO</srai></template>
+</category>
+
+<category>
+<pattern>_ OHIO LINK DOES NOT HAVE *</pattern>
+<template><srai>NOGOSO</srai></template>
+</category>
+
+<category>
+<pattern>_ OHIO LINK DOES NOT HAVE *</pattern>
+<template><srai>NOGOSO</srai></template>
+</category>
+
+<category>
+<pattern>_ NOT IN OHIO LINK</pattern>
+<template><srai>NOGOSO</srai></template>
+</category>
+
+<category>
+<pattern>_ NOT IN OHIO LINK *</pattern>
+<template><srai>NOGOSO</srai></template>
+</category>
+
+<category>
+<pattern>_ NOT IN * OHIO LINK *</pattern>
+<template><srai>NOGOSO</srai></template>
+</category>
+
+<category>
+<pattern>_ SEARCHOHIO DOES NOT HAVE *</pattern>
+<template><srai>NOGOSO</srai></template>
+</category>
+
+<category>
+<pattern>_ SEARCHOHIO DOES NOT HAVE *</pattern>
+<template><srai>NOGOSO</srai></template>
+</category>
+
+<category>
+<pattern>_ NOT IN SEARCHOHIO</pattern>
+<template><srai>NOGOSO</srai></template>
+</category>
+
+<category>
+<pattern>_ NOT IN SEARCHOHIO *</pattern>
+<template><srai>NOGOSO</srai></template>
+</category>
+
+<category>
+<pattern>_ NOT IN * SEARCHOHIO *</pattern>
+<template><srai>NOGOSO</srai></template>
+</category>
+
+<category>
+<pattern>_ SEARCH OHIO DOES NOT HAVE *</pattern>
+<template><srai>NOGOSO</srai></template>
+</category>
+
+<category>
+<pattern>_ SEARCH OHIO DOES NOT HAVE *</pattern>
+<template><srai>NOGOSO</srai></template>
+</category>
+
+<category>
+<pattern>_ NOT IN SEARCH OHIO</pattern>
+<template><srai>NOGOSO</srai></template>
+</category>
+
+<category>
+<pattern>_ NOT IN SEARCH OHIO *</pattern>
+<template><srai>NOGOSO</srai></template>
+</category>
+
+<category>
+<pattern>_ NOT IN * SEARCH OHIO *</pattern>
+<template><srai>NOGOSO</srai></template>
+</category>
+
+</aiml>

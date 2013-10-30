@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<!--Copyright 2011-2012 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+  
+  
+  
+<category>
+<pattern>CARD</pattern>
+<template><srai>CRD</srai></template>
+</category>
+
+<category>
+<pattern>CARDS</pattern>
+<template><srai>CRD</srai></template>
+</category>
+
+<category>
+<pattern>LIBRARY CARD</pattern>
+<template><srai>CRD</srai></template>
+</category>
+
+<category>
+<pattern>LIBRARY CARDS</pattern>
+<template><srai>CRD</srai></template>
+</category>
+
+<category>
+<pattern>CRD</pattern>
+<template>
+<think>
+<set name="topic">LIBCRDS</set>
+</think>
+<random>
+<li>What would you like to know about library cards?</li>
+<li>What is your question about library cards?</li>
+<li>What can I tell you about library cards?</li>
+</random>
+</template>
+</category>
+
+<topic name="LIBCRDS">
+<category>
+<pattern>_</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">LIBCRDS2</set>
+</think>
+<srai>LIBCRDS2</srai></template>
+</category>
+</topic>
+
+<category>
+<pattern>* CARD</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">LIBCRDS2</set>
+</think>
+<srai>LIBCRDS2</srai></template>
+</category>
+
+<category>
+<pattern>CARD *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">LIBCRDS2</set>
+</think>
+<srai>LIBCRDS2</srai></template>
+</category>
+
+<category>
+<pattern>* CARD *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">LIBCRDS2</set>
+</think>
+<srai>LIBCRDS2</srai></template>
+</category>
+
+<category>
+<pattern>* CARDS</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">LIBCRDS2</set>
+</think>
+<srai>LIBCRDS2</srai></template>
+</category>
+
+<category>
+<pattern>CARDS *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">LIBCRDS2</set>
+</think>
+<srai>LIBCRDS2</srai></template>
+</category>
+
+<category>
+<pattern>* CARDS *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">LIBCRDS2</set>
+</think>
+<srai>LIBCRDS2</srai></template>
+</category>
+
+<category>
+<pattern>* LIBRARY CARD</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">LIBCRDS2</set>
+</think>
+<srai>LIBCRDS2</srai></template>
+</category>
+
+<category>
+<pattern>LIBRARY CARD *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">LIBCRDS2</set>
+</think>
+<srai>LIBCRDS2</srai></template>
+</category>
+
+<category>
+<pattern>* LIBRARY CARD *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">LIBCRDS2</set>
+</think>
+<srai>LIBCRDS2</srai></template>
+</category>
+
+<category>
+<pattern>* LIBRARY CARDS</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">LIBCRDS2</set>
+</think>
+<srai>LIBCRDS2</srai></template>
+</category>
+
+<category>
+<pattern>LIBRARY CARDS *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">LIBCRDS2</set>
+</think>
+<srai>LIBCRDS2</srai></template>
+</category>
+
+<category>
+<pattern>* LIBRARY CARDS *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">LIBCRDS2</set>
+</think>
+<srai>LIBCRDS2</srai></template>
+</category>
+
+<topic name="LIBCRDS2">
+<category>
+<pattern>LIBCRDS2</pattern>
+<template>
+<think>
+<get name="answr"/>
+<set name="message">no match</set>
+<condition name="answr">
+
+<li value="STOP"><set name="message">stop</set></li>
+
+<li value="APPLY ONLINE"><set name="message">online registration</set></li>
+<li value="APPLY * ONLINE"><set name="message">online registration</set></li>
+<li value="* APPLY ONLINE"><set name="message">online registration</set></li>
+<li value="* APPLY * ONLINE"><set name="message">online registration</set></li>
+<li value="APPLY ONLINE *"><set name="message">online registration</set></li>
+<li value="APPLY * ONLINE *"><set name="message">online registration</set></li>
+<li value="* APPLY ONLINE *"><set name="message">online registration</set></li>
+<li value="* APPLY * ONLINE *"><set name="message">online registration</set></li>
+
+<li value="APPLY"><set name="message">getcard</set></li>
+<li value="* APPLY"><set name="message">getcard</set></li>
+<li value="APPLY *"><set name="message">getcard</set></li>
+<li value="* APPLY *"><set name="message">getcard</set></li>
+
+<li value="ONLINE APPLICATION"><set name="message">online registration</set></li>
+<li value="ONLINE * APPLICATION"><set name="message">online registration</set></li>
+<li value="* ONLINE APPLICATION"><set name="message">online registration</set></li>
+<li value="* ONLINE * APPLICATION"><set name="message">online registration</set></li>
+<li value="ONLINE APPLICATION *"><set name="message">online registration</set></li>
+<li value="ONLINE * APPLICATION *"><set name="message">online registration</set></li>
+<li value="* ONLINE APPLICATION *"><set name="message">online registration</set></li>
+<li value="* ONLINE * APPLICATION *"><set name="message">online registration</set></li>
+
+<li value="APPLICATION"><set name="message">getcard</set></li>
+<li value="* APPLICATION"><set name="message">getcard</set></li>
+<li value="APPLICATION *"><set name="message">getcard</set></li>
+<li value="* APPLICATION *"><set name="message">getcard</set></li>
+
+<li value="CREATE"><set name="message">getcard</set></li>
+<li value="* CREATE"><set name="message">getcard</set></li>
+<li value="CREATE *"><set name="message">getcard</set></li>
+<li value="* CREATE *"><set name="message">getcard</set></li>
+
+<li value="CREATING"><set name="message">getcard</set></li>
+<li value="* CREATING"><set name="message">getcard</set></li>
+<li value="CREATING *"><set name="message">getcard</set></li>
+<li value="* CREATING *"><set name="message">getcard</set></li>
+
+<li value="GET ONLINE"><set name="message">online registration</set></li>
+<li value="GET * ONLINE"><set name="message">online registration</set></li>
+<li value="* GET ONLINE"><set name="message">online registration</set></li>
+<li value="* GET * ONLINE"><set name="message">online registration</set></li>
+<li value="GET ONLINE *"><set name="message">online registration</set></li>
+<li value="GET * ONLINE *"><set name="message">online registration</set></li>
+<li value="* GET ONLINE *"><set name="message">online registration</set></li>
+<li value="* GET * ONLINE *"><set name="message">online registration</set></li>
+
+<li value="GET"><set name="message">getcard</set></li>
+<li value="* GET"><set name="message">getcard</set></li>
+<li value="GET *"><set name="message">getcard</set></li>
+<li value="* GET *"><set name="message">getcard</set></li>
+
+<li value="GETTING"><set name="message">getcard</set></li>
+<li value="* GETTING"><set name="message">getcard</set></li>
+<li value="GETTING *"><set name="message">getcard</set></li>
+<li value="* GETTING *"><set name="message">getcard</set></li>
+
+<li value="MEMBER"><set name="message">getcard</set></li>
+<li value="* MEMBER"><set name="message">getcard</set></li>
+<li value="MEMBER *"><set name="message">getcard</set></li>
+<li value="* MEMBER *"><set name="message">getcard</set></li>
+
+<li value="MEMBERSHIP"><set name="message">getcard</set></li>
+<li value="* MEMBERSHIP"><set name="message">getcard</set></li>
+<li value="MEMBERSHIP *"><set name="message">getcard</set></li>
+<li value="* MEMBERSHIP *"><set name="message">getcard</set></li>
+
+<li value="OPEN ONLINE"><set name="message">online registration</set></li>
+<li value="OPEN * ONLINE"><set name="message">online registration</set></li>
+<li value="* OPEN ONLINE"><set name="message">online registration</set></li>
+<li value="* OPEN * ONLINE"><set name="message">online registration</set></li>
+<li value="OPEN ONLINE *"><set name="message">online registration</set></li>
+<li value="OPEN * ONLINE *"><set name="message">online registration</set></li>
+<li value="* OPEN ONLINE *"><set name="message">online registration</set></li>
+<li value="* OPEN * ONLINE *"><set name="message">online registration</set></li>
+
+<li value="OPEN"><set name="message">getcard</set></li>
+<li value="* OPEN"><set name="message">getcard</set></li>
+<li value="OPEN *"><set name="message">getcard</set></li>
+<li value="* OPEN *"><set name="message">getcard</set></li>
+
+<li value="OPENING"><set name="message">getcard</set></li>
+<li value="* OPENING"><set name="message">getcard</set></li>
+<li value="OPENING *"><set name="message">getcard</set></li>
+<li value="* OPENING *"><set name="message">getcard</set></li>
+
+<li value="SET UP"><set name="message">getcard</set></li>
+<li value="* SET UP"><set name="message">getcard</set></li>
+<li value="SET UP *"><set name="message">getcard</set></li>
+<li value="* SET UP *"><set name="message">getcard</set></li>
+
+<li value="SETTING UP"><set name="message">getcard</set></li>
+<li value="* SETTING UP"><set name="message">getcard</set></li>
+<li value="SETTING UP *"><set name="message">getcard</set></li>
+<li value="* SETTING UP *"><set name="message">getcard</set></li>
+
+<li value="SIGN UP"><set name="message">getcard</set></li>
+<li value="* SIGN UP"><set name="message">getcard</set></li>
+<li value="SIGN UP *"><set name="message">getcard</set></li>
+<li value="* SIGN UP *"><set name="message">getcard</set></li>
+
+<li value="SIGNING UP"><set name="message">getcard</set></li>
+<li value="* SIGNING UP"><set name="message">getcard</set></li>
+<li value="SIGNING UP *"><set name="message">getcard</set></li>
+<li value="* SIGNING UP *"><set name="message">getcard</set></li>
+
+<li value="START"><set name="message">getcard</set></li>
+<li value="* START"><set name="message">getcard</set></li>
+<li value="START *"><set name="message">getcard</set></li>
+<li value="* START *"><set name="message">getcard</set></li>
+
+<li value="STARTING"><set name="message">getcard</set></li>
+<li value="* STARTING"><set name="message">getcard</set></li>
+<li value="STARTING *"><set name="message">getcard</set></li>
+<li value="* STARTING *"><set name="message">getcard</set></li>
+
+<li value="STARTING"><set name="message">getcard</set></li>
+<li value="* STARTING"><set name="message">getcard</set></li>
+<li value="STARTING *"><set name="message">getcard</set></li>
+<li value="* STARTING *"><set name="message">getcard</set></li>
+
+<li value="LINK"><set name="message">linking accounts</set></li>
+<li value="* LINK"><set name="message">linking accounts</set></li>
+<li value="LINK *"><set name="message">linking accounts</set></li>
+<li value="* LINK *"><set name="message">linking accounts</set></li>
+
+<li value="LINKED"><set name="message">linking accounts</set></li>
+<li value="* LINKED"><set name="message">linking accounts</set></li>
+<li value="LINKED *"><set name="message">linking accounts</set></li>
+<li value="* LINKED *"><set name="message">linking accounts</set></li>
+
+<li value="LINKING"><set name="message">linking accounts</set></li>
+<li value="* LINKING"><set name="message">linking accounts</set></li>
+<li value="LINKING *"><set name="message">linking accounts</set></li>
+<li value="* LINKING *"><set name="message">linking accounts</set></li>
+
+<li value="ONLINE"><set name="message">online registration</set></li>
+<li value="* ONLINE"><set name="message">online registration</set></li>
+<li value="ONLINE *"><set name="message">online registration</set></li>
+<li value="* ONLINE *"><set name="message">online registration</set></li>
+
+<li value="ON LINE"><set name="message">online registration</set></li>
+<li value="* ON LINE"><set name="message">online registration</set></li>
+<li value="ON LINE *"><set name="message">online registration</set></li>
+<li value="* ON LINE *"><set name="message">online registration</set></li>
+
+<li value="TEMP"><set name="message">online registration</set></li>
+<li value="* TEMP"><set name="message">online registration</set></li>
+<li value="TEMP *"><set name="message">online registration</set></li>
+<li value="* TEMP *"><set name="message">online registration</set></li>
+
+<li value="TEMPORARY"><set name="message">online registration</set></li>
+<li value="* TEMPORARY"><set name="message">online registration</set></li>
+<li value="TEMPORARY *"><set name="message">online registration</set></li>
+<li value="* TEMPORARY *"><set name="message">online registration</set></li>
+
+<li value="CHARGE"><set name="message">card cost</set></li>
+<li value="* CHARGE"><set name="message">card cost</set></li>
+<li value="CHARGE *"><set name="message">card cost</set></li>
+<li value="* CHARGE *"><set name="message">card cost</set></li>
+
+<li value="COST"><set name="message">card cost</set></li>
+<li value="* COST"><set name="message">card cost</set></li>
+<li value="COST *"><set name="message">card cost</set></li>
+<li value="* COST *"><set name="message">card cost</set></li>
+
+<li value="HOW MUCH"><set name="message">card cost</set></li>
+<li value="* HOW MUCH"><set name="message">card cost</set></li>
+<li value="HOW MUCH *"><set name="message">card cost</set></li>
+<li value="* HOW MUCH *"><set name="message">card cost</set></li>
+
+<li value="ANOTHER"><set name="message">replacement card</set></li>
+<li value="* ANOTHER"><set name="message">replacement card</set></li>
+<li value="ANOTHER *"><set name="message">replacement card</set></li>
+<li value="* ANOTHER *"><set name="message">replacement card</set></li>
+
+<li value="NEW"><set name="message">replacement card</set></li>
+<li value="* NEW"><set name="message">replacement card</set></li>
+<li value="NEW *"><set name="message">replacement card</set></li>
+<li value="* NEW *"><set name="message">replacement card</set></li>
+
+<li value="REPLACE"><set name="message">replacement card</set></li>
+<li value="* REPLACE"><set name="message">replacement card</set></li>
+<li value="REPLACE *"><set name="message">replacement card</set></li>
+<li value="* REPLACE *"><set name="message">replacement card</set></li>
+
+<li value="REPLACEMENT"><set name="message">replacement card</set></li>
+<li value="* REPLACEMENT"><set name="message">replacement card</set></li>
+<li value="REPLACEMENT *"><set name="message">replacement card</set></li>
+<li value="* REPLACEMENT *"><set name="message">replacement card</set></li>
+
+<li value="REPLACING"><set name="message">replacement card</set></li>
+<li value="* REPLACING"><set name="message">replacement card</set></li>
+<li value="REPLACING *"><set name="message">replacement card</set></li>
+<li value="* REPLACING *"><set name="message">replacement card</set></li>
+
+<li value="ACTIVE"><set name="message">card expiration</set></li>
+<li value="* ACTIVE"><set name="message">card expiration</set></li>
+<li value="ACTIVE *"><set name="message">card expiration</set></li>
+<li value="* ACTIVE *"><set name="message">card expiration</set></li>
+
+<li value="EXPIRATION"><set name="message">card expiration</set></li>
+<li value="* EXPIRATION"><set name="message">card expiration</set></li>
+<li value="EXPIRATION *"><set name="message">card expiration</set></li>
+<li value="* EXPIRATION *"><set name="message">card expiration</set></li>
+
+<li value="EXPIRE"><set name="message">card expiration</set></li>
+<li value="* EXPIRE"><set name="message">card expiration</set></li>
+<li value="EXPIRE *"><set name="message">card expiration</set></li>
+<li value="* EXPIRE *"><set name="message">card expiration</set></li>
+
+<li value="EXPIRED"><set name="message">card expiration</set></li>
+<li value="* EXPIRED"><set name="message">card expiration</set></li>
+<li value="EXPIRED *"><set name="message">card expiration</set></li>
+<li value="* EXPIRED *"><set name="message">card expiration</set></li>
+
+<li value="EXPIRES"><set name="message">card expiration</set></li>
+<li value="* EXPIRES"><set name="message">card expiration</set></li>
+<li value="EXPIRES *"><set name="message">card expiration</set></li>
+<li value="* EXPIRES *"><set name="message">card expiration</set></li>
+
+<li value="GOOD"><set name="message">card expiration</set></li>
+<li value="* GOOD"><set name="message">card expiration</set></li>
+<li value="GOOD *"><set name="message">card expiration</set></li>
+<li value="* GOOD *"><set name="message">card expiration</set></li>
+
+<li value="OLD"><set name="message">card expiration</set></li>
+<li value="* OLD"><set name="message">card expiration</set></li>
+<li value="OLD *"><set name="message">card expiration</set></li>
+<li value="* OLD *"><set name="message">card expiration</set></li>
+
+<li value="VALID"><set name="message">card expiration</set></li>
+<li value="* VALID"><set name="message">card expiration</set></li>
+<li value="VALID *"><set name="message">card expiration</set></li>
+<li value="* VALID *"><set name="message">card expiration</set></li>
+
+<li value="WORK"><set name="message">card expiration</set></li>
+<li value="* WORK"><set name="message">card expiration</set></li>
+<li value="WORK *"><set name="message">card expiration</set></li>
+<li value="* WORK *"><set name="message">card expiration</set></li>
+
+<li value="WORKS"><set name="message">card expiration</set></li>
+<li value="* WORKS"><set name="message">card expiration</set></li>
+<li value="WORKS *"><set name="message">card expiration</set></li>
+<li value="* WORKS *"><set name="message">card expiration</set></li>
+
+<li value="WORKING"><set name="message">card expiration</set></li>
+<li value="* WORKING"><set name="message">card expiration</set></li>
+<li value="WORKING *"><set name="message">card expiration</set></li>
+<li value="* WORKING *"><set name="message">card expiration</set></li>
+
+<li value="BARCODE"><set name="message">barcode</set></li>
+<li value="* BARCODE"><set name="message">barcode</set></li>
+<li value="BARCODE *"><set name="message">barcode</set></li>
+<li value="* BARCODE *"><set name="message">barcode</set></li>
+
+<li value="BARCODES"><set name="message">barcode</set></li>
+<li value="* BARCODES"><set name="message">barcode</set></li>
+<li value="BARCODES *"><set name="message">barcode</set></li>
+<li value="* BARCODES *"><set name="message">barcode</set></li>
+
+<li value="BAR CODE"><set name="message">barcode</set></li>
+<li value="* BAR CODE"><set name="message">barcode</set></li>
+<li value="BAR CODE *"><set name="message">barcode</set></li>
+<li value="* BAR CODE *"><set name="message">barcode</set></li>
+
+<li value="BAR CODES"><set name="message">barcode</set></li>
+<li value="* BAR CODES"><set name="message">barcode</set></li>
+<li value="BAR CODES *"><set name="message">barcode</set></li>
+<li value="* BAR CODES *"><set name="message">barcode</set></li>
+
+<li value="CHILD"><set name="message">kidscard</set></li>
+<li value="* CHILD"><set name="message">kidscard</set></li>
+<li value="CHILD *"><set name="message">kidscard</set></li>
+<li value="* CHILD *"><set name="message">kidscard</set></li>
+
+<li value="CHILD S"><set name="message">kidscard</set></li>
+<li value="* CHILD S"><set name="message">kidscard</set></li>
+<li value="CHILD S *"><set name="message">kidscard</set></li>
+<li value="* CHILD S *"><set name="message">kidscard</set></li>
+
+<li value="CHILDREN"><set name="message">kidscard</set></li>
+<li value="* CHILDREN"><set name="message">kidscard</set></li>
+<li value="CHILDREN *"><set name="message">kidscard</set></li>
+<li value="* CHILDREN *"><set name="message">kidscard</set></li>
+
+<li value="CHILDREN S"><set name="message">kidscard</set></li>
+<li value="* CHILDREN S"><set name="message">kidscard</set></li>
+<li value="CHILDREN S *"><set name="message">kidscard</set></li>
+<li value="* CHILDREN S *"><set name="message">kidscard</set></li>
+
+<li value="KID"><set name="message">kidscard</set></li>
+<li value="* KID"><set name="message">kidscard</set></li>
+<li value="KID *"><set name="message">kidscard</set></li>
+<li value="* KID *"><set name="message">kidscard</set></li>
+
+<li value="KID S"><set name="message">kidscard</set></li>
+<li value="* KID S"><set name="message">kidscard</set></li>
+<li value="KID S *"><set name="message">kidscard</set></li>
+<li value="* KID S *"><set name="message">kidscard</set></li>
+
+<li value="CANNOT FIND"><set name="message">lostcards</set></li>
+<li value="* CANNOT FIND"><set name="message">lostcards</set></li>
+<li value="CANNOT FIND *"><set name="message">lostcards</set></li>
+<li value="* CANNOT FIND *"><set name="message">lostcards</set></li>
+
+<li value="LOSE"><set name="message">lostcards</set></li>
+<li value="* LOSE"><set name="message">lostcards</set></li>
+<li value="LOSE *"><set name="message">lostcards</set></li>
+<li value="* LOSE *"><set name="message">lostcards</set></li>
+
+<li value="LOSES"><set name="message">lostcards</set></li>
+<li value="* LOSES"><set name="message">lostcards</set></li>
+<li value="LOSES *"><set name="message">lostcards</set></li>
+<li value="* LOSES *"><set name="message">lostcards</set></li>
+
+<li value="LOST"><set name="message">lostcards</set></li>
+<li value="* LOST"><set name="message">lostcards</set></li>
+<li value="LOST *"><set name="message">lostcards</set></li>
+<li value="* LOST *"><set name="message">lostcards</set></li>
+
+<li value="MISSING"><set name="message">lostcards</set></li>
+<li value="* MISSING"><set name="message">lostcards</set></li>
+<li value="MISSING *"><set name="message">lostcards</set></li>
+<li value="* MISSING *"><set name="message">lostcards</set></li>
+
+<li value="NOT FIND"><set name="message">lostcards</set></li>
+<li value="* NOT FIND"><set name="message">lostcards</set></li>
+<li value="NOT FIND *"><set name="message">lostcards</set></li>
+<li value="* NOT FIND *"><set name="message">lostcards</set></li>
+
+<li value="STEAL"><set name="message">lostcards</set></li>
+<li value="* STEAL"><set name="message">lostcards</set></li>
+<li value="STEAL *"><set name="message">lostcards</set></li>
+<li value="* STEAL *"><set name="message">lostcards</set></li>
+
+<li value="STEALS"><set name="message">lostcards</set></li>
+<li value="* STEALS"><set name="message">lostcards</set></li>
+<li value="STEALS *"><set name="message">lostcards</set></li>
+<li value="* STEALS *"><set name="message">lostcards</set></li>
+
+<li value="STOLEN"><set name="message">lostcards</set></li>
+<li value="* STOLEN"><set name="message">lostcards</set></li>
+<li value="STOLEN *"><set name="message">lostcards</set></li>
+<li value="* STOLEN *"><set name="message">lostcards</set></li>
+
+<li value="FORGET"><set name="message">forgotcard</set></li>
+<li value="* FORGET"><set name="message">forgotcard</set></li>
+<li value="FORGET *"><set name="message">forgotcard</set></li>
+<li value="* FORGET *"><set name="message">forgotcard</set></li>
+
+<li value="FORGOT"><set name="message">forgotcard</set></li>
+<li value="* FORGOT"><set name="message">forgotcard</set></li>
+<li value="FORGOT *"><set name="message">forgotcard</set></li>
+<li value="* FORGOT *"><set name="message">forgotcard</set></li>
+
+<li value="NOT HAVE"><set name="message">forgotcard</set></li>
+<li value="* NOT HAVE"><set name="message">forgotcard</set></li>
+<li value="NOT HAVE *"><set name="message">forgotcard</set></li>
+<li value="* NOT HAVE *"><set name="message">forgotcard</set></li>
+
+<li value="WITHOUT"><set name="message">forgotcard</set></li>
+<li value="* WITHOUT"><set name="message">forgotcard</set></li>
+<li value="WITHOUT *"><set name="message">forgotcard</set></li>
+<li value="* WITHOUT *"><set name="message">forgotcard</set></li>
+
+<li value="WITH OUT"><set name="message">forgotcard</set></li>
+<li value="* WITH OUT"><set name="message">forgotcard</set></li>
+<li value="WITH OUT *"><set name="message">forgotcard</set></li>
+<li value="* WITH OUT *"><set name="message">forgotcard</set></li>
+
+<li value="TEACHER"><set name="message">teachercards</set></li>
+<li value="* TEACHER"><set name="message">teachercards</set></li>
+<li value="TEACHER *"><set name="message">teachercards</set></li>
+<li value="* TEACHER *"><set name="message">teachercards</set></li>
+
+<li value="TEACHERS"><set name="message">teachercards</set></li>
+<li value="* TEACHERS"><set name="message">teachercards</set></li>
+<li value="TEACHERS *"><set name="message">teachercards</set></li>
+<li value="* TEACHERS *"><set name="message">teachercards</set></li>
+
+<li value="TEACHER S"><set name="message">teachercards</set></li>
+<li value="* TEACHER S"><set name="message">teachercards</set></li>
+<li value="TEACHER S *"><set name="message">teachercards</set></li>
+<li value="* TEACHER S *"><set name="message">teachercards</set></li>
+
+<li value="REMEMBER"><set name="message">autocomplete</set></li>
+<li value="* REMEMBER"><set name="message">autocomplete</set></li>
+<li value="REMEMBER *"><set name="message">autocomplete</set></li>
+<li value="* REMEMBER *"><set name="message">autocomplete</set></li>
+
+<li value="REMEMBERS"><set name="message">autocomplete</set></li>
+<li value="* REMEMBERS"><set name="message">autocomplete</set></li>
+<li value="REMEMBERS *"><set name="message">autocomplete</set></li>
+<li value="* REMEMBERS *"><set name="message">autocomplete</set></li>
+
+<li value="REMEMBERED"><set name="message">autocomplete</set></li>
+<li value="* REMEMBERED"><set name="message">autocomplete</set></li>
+<li value="REMEMBERED *"><set name="message">autocomplete</set></li>
+<li value="* REMEMBERED *"><set name="message">autocomplete</set></li>
+
+<li value="RETAIN"><set name="message">autocomplete</set></li>
+<li value="* RETAIN"><set name="message">autocomplete</set></li>
+<li value="RETAIN *"><set name="message">autocomplete</set></li>
+<li value="* RETAIN *"><set name="message">autocomplete</set></li>
+
+<li value="RETAINS"><set name="message">autocomplete</set></li>
+<li value="* RETAINS"><set name="message">autocomplete</set></li>
+<li value="RETAINS *"><set name="message">autocomplete</set></li>
+<li value="* RETAINS *"><set name="message">autocomplete</set></li>
+
+<li value="RETAINED"><set name="message">autocomplete</set></li>
+<li value="* RETAINED"><set name="message">autocomplete</set></li>
+<li value="RETAINED *"><set name="message">autocomplete</set></li>
+<li value="* RETAINED *"><set name="message">autocomplete</set></li>
+
+<li value="SAVE"><set name="message">autocomplete</set></li>
+<li value="* SAVE"><set name="message">autocomplete</set></li>
+<li value="SAVE *"><set name="message">autocomplete</set></li>
+<li value="* SAVE *"><set name="message">autocomplete</set></li>
+
+<li value="SAVED"><set name="message">autocomplete</set></li>
+<li value="* SAVED"><set name="message">autocomplete</set></li>
+<li value="SAVED *"><set name="message">autocomplete</set></li>
+<li value="* SAVED *"><set name="message">autocomplete</set></li>
+
+<li value="SAVES"><set name="message">autocomplete</set></li>
+<li value="* SAVES"><set name="message">autocomplete</set></li>
+<li value="SAVES *"><set name="message">autocomplete</set></li>
+<li value="* SAVES *"><set name="message">autocomplete</set></li>
+
+<li value="SHARE"><set name="message">sharedcards</set></li>
+<li value="* SHARE"><set name="message">sharedcards</set></li>
+<li value="SHARE *"><set name="message">sharedcards</set></li>
+<li value="* SHARE *"><set name="message">sharedcards</set></li>
+
+<li value="SHARED"><set name="message">sharedcards</set></li>
+<li value="* SHARED"><set name="message">sharedcards</set></li>
+<li value="SHARED *"><set name="message">sharedcards</set></li>
+<li value="* SHARED *"><set name="message">sharedcards</set></li>
+
+<li value="SHARES"><set name="message">sharedcards</set></li>
+<li value="* SHARES"><set name="message">sharedcards</set></li>
+<li value="SHARES *"><set name="message">sharedcards</set></li>
+<li value="* SHARES *"><set name="message">sharedcards</set></li>
+
+<li value="TAB"><set name="message">apptab</set></li>
+<li value="* TAB"><set name="message">apptab</set></li>
+<li value="TAB *"><set name="message">apptab</set></li>
+<li value="* TAB *"><set name="message">apptab</set></li>
+
+<li value="LIVE"><set name="message">nonresident</set></li>
+<li value="* LIVE"><set name="message">nonresident</set></li>
+<li value="LIVE *"><set name="message">nonresident</set></li>
+<li value="* LIVE *"><set name="message">nonresident</set></li>
+
+<li value="LIVES"><set name="message">nonresident</set></li>
+<li value="* LIVES"><set name="message">nonresident</set></li>
+<li value="LIVES *"><set name="message">nonresident</set></li>
+<li value="* LIVES *"><set name="message">nonresident</set></li>
+
+<li value="OUTSIDE"><set name="message">nonresident</set></li>
+<li value="* OUTSIDE"><set name="message">nonresident</set></li>
+<li value="OUTSIDE *"><set name="message">nonresident</set></li>
+<li value="* OUTSIDE *"><set name="message">nonresident</set></li>
+
+<li value="OUT SIDE"><set name="message">nonresident</set></li>
+<li value="* OUT SIDE"><set name="message">nonresident</set></li>
+<li value="OUT SIDE *"><set name="message">nonresident</set></li>
+<li value="* OUT SIDE *"><set name="message">nonresident</set></li>
+
+<li value="RESIDE"><set name="message">nonresident</set></li>
+<li value="* RESIDE"><set name="message">nonresident</set></li>
+<li value="RESIDE *"><set name="message">nonresident</set></li>
+<li value="* RESIDE *"><set name="message">nonresident</set></li>
+
+<li value="RESIDENT"><set name="message">nonresident</set></li>
+<li value="* RESIDENT"><set name="message">nonresident</set></li>
+<li value="RESIDENT *"><set name="message">nonresident</set></li>
+<li value="* RESIDENT *"><set name="message">nonresident</set></li>
+
+<li value="CLEVELAND"><set name="message">nonmplcards</set></li>
+<li value="* CLEVELAND"><set name="message">nonmplcards</set></li>
+<li value="CLEVELAND *"><set name="message">nonmplcards</set></li>
+<li value="* CLEVELAND *"><set name="message">nonmplcards</set></li>
+
+<li value="CLEVENET"><set name="message">nonmplcards</set></li>
+<li value="* CLEVENET"><set name="message">nonmplcards</set></li>
+<li value="CLEVENET *"><set name="message">nonmplcards</set></li>
+<li value="* CLEVENET *"><set name="message">nonmplcards</set></li>
+
+<li value="CPL"><set name="message">nonmplcards</set></li>
+<li value="* CPL"><set name="message">nonmplcards</set></li>
+<li value="CPL *"><set name="message">nonmplcards</set></li>
+<li value="* CPL *"><set name="message">nonmplcards</set></li>
+
+<li value="CUYAHOGA"><set name="message">nonmplcards</set></li>
+<li value="* CUYAHOGA"><set name="message">nonmplcards</set></li>
+<li value="CUYAHOGA *"><set name="message">nonmplcards</set></li>
+<li value="* CUYAHOGA *"><set name="message">nonmplcards</set></li>
+
+<li value="GREATER"><set name="message">nonmplcards</set></li>
+<li value="* GREATER"><set name="message">nonmplcards</set></li>
+<li value="GREATER *"><set name="message">nonmplcards</set></li>
+<li value="* GREATER *"><set name="message">nonmplcards</set></li>
+
+<li value="MORLEY"><set name="message">nonmplcards</set></li>
+<li value="* MORLEY"><set name="message">nonmplcards</set></li>
+<li value="MORLEY *"><set name="message">nonmplcards</set></li>
+<li value="* MORLEY *"><set name="message">nonmplcards</set></li>
+
+<li value="WILLOUGHBY"><set name="message">nonmplcards</set></li>
+<li value="* WILLOUGHBY"><set name="message">nonmplcards</set></li>
+<li value="WILLOUGHBY *"><set name="message">nonmplcards</set></li>
+<li value="* WILLOUGHBY *"><set name="message">nonmplcards</set></li>
+
+<li value="ACCOUNT INFO"><set name="message">change card info</set></li>
+<li value="* ACCOUNT INFO"><set name="message">change card info</set></li>
+<li value="ACCOUNT INFO *"><set name="message">change card info</set></li>
+<li value="* ACCOUNT INFO *"><set name="message">change card info</set></li>
+
+<li value="ACCOUNT INFORMATION"><set name="message">change card info</set></li>
+<li value="* ACCOUNT INFORMATION"><set name="message">change card info</set></li>
+<li value="ACCOUNT INFORMATION *"><set name="message">change card info</set></li>
+<li value="* ACCOUNT INFORMATION *"><set name="message">change card info</set></li>
+
+<li value="CHANGE"><set name="message">change card info</set></li>
+<li value="* CHANGE"><set name="message">change card info</set></li>
+<li value="CHANGE *"><set name="message">change card info</set></li>
+<li value="* CHANGE *"><set name="message">change card info</set></li>
+
+<li value="CHANGED"><set name="message">change card info</set></li>
+<li value="* CHANGED"><set name="message">change card info</set></li>
+<li value="CHANGED *"><set name="message">change card info</set></li>
+<li value="* CHANGED *"><set name="message">change card info</set></li>
+
+<li value="CHANGES"><set name="message">change card info</set></li>
+<li value="* CHANGES"><set name="message">change card info</set></li>
+<li value="CHANGES *"><set name="message">change card info</set></li>
+<li value="* CHANGES *"><set name="message">change card info</set></li>
+
+<li value="CHANGING"><set name="message">change card info</set></li>
+<li value="* CHANGING"><set name="message">change card info</set></li>
+<li value="CHANGING *"><set name="message">change card info</set></li>
+<li value="* CHANGING *"><set name="message">change card info</set></li>
+
+<li value="EDIT"><set name="message">change card info</set></li>
+<li value="* EDIT"><set name="message">change card info</set></li>
+<li value="EDIT *"><set name="message">change card info</set></li>
+<li value="* EDIT *"><set name="message">change card info</set></li>
+
+<li value="EDITING"><set name="message">change card info</set></li>
+<li value="* EDITING"><set name="message">change card info</set></li>
+<li value="EDITING *"><set name="message">change card info</set></li>
+<li value="* EDITING *"><set name="message">change card info</set></li>
+
+<li value="MY INFO"><set name="message">change card info</set></li>
+<li value="* MY INFO"><set name="message">change card info</set></li>
+<li value="MY INFO *"><set name="message">change card info</set></li>
+<li value="* MY INFO *"><set name="message">change card info</set></li>
+
+<li value="MY INFORMATION"><set name="message">change card info</set></li>
+<li value="* MY INFORMATION"><set name="message">change card info</set></li>
+<li value="MY INFORMATION *"><set name="message">change card info</set></li>
+<li value="* MY INFORMATION *"><set name="message">change card info</set></li>
+
+<li value="UPDATE"><set name="message">change card info</set></li>
+<li value="* UPDATE"><set name="message">change card info</set></li>
+<li value="UPDATE *"><set name="message">change card info</set></li>
+<li value="* UPDATE *"><set name="message">change card info</set></li>
+
+<li value="UPDATED"><set name="message">change card info</set></li>
+<li value="* UPDATED"><set name="message">change card info</set></li>
+<li value="UPDATED *"><set name="message">change card info</set></li>
+<li value="* UPDATED *"><set name="message">change card info</set></li>
+
+<li value="UPDATING"><set name="message">change card info</set></li>
+<li value="* UPDATING"><set name="message">change card info</set></li>
+<li value="UPDATING *"><set name="message">change card info</set></li>
+<li value="* UPDATING *"><set name="message">change card info</set></li>
+
+<li value="RENEW * ON MY *"><set name="message">uselinkedacct</set></li>
+<li value="* RENEW * ON MY *"><set name="message">uselinkedacct</set></li>
+
+</condition>
+<think><set name="topic"></set></think>
+</think>
+<condition name="message">
+
+<li value="stop"><set name="topic"></set>O.K. I'll stop.</li>
+
+<li value="no match">I'm not sure what you're asking. Please call the library at 440.255.8811 during regular business hours for assistance.</li>
+
+<li value="getcard"><srai>GTCRD</srai></li>
+
+<li value="linking cards"><srai>LNKDACCTS</srai></li>
+
+<li value="online registration"><srai>OLREG</srai></li>
+
+<li value="cost"><srai>CRDCOST</srai></li>
+
+<li value="replacement card"><srai>NEWCRD</srai></li>
+
+<li value="card expiration"><srai>EXPACCT</srai></li>
+
+<li value="barcode"><srai>BCODE</srai></li>
+
+<li value="kidscard"><srai>kidscrd</srai></li>
+
+<li value="lostcards"><srai>lostcrd</srai></li>
+ 
+<li value="forgotcard"><srai>COWOCRD</srai></li>
+
+<li value="teachercards"><srai>TCRDS</srai></li>
+  
+<li value="autocomplete"><srai>AUTCOMP</srai></li>
+
+<li value="sharedcards"><srai></srai></li>
+
+<li value="apptab"><srai>APPTAB</srai></li>
+
+<li value="nonresident"><srai>NONMENT</srai></li>
+
+<li value="nonmplcards"><srai>NONMPLCRD</srai></li>
+
+<li value="change card info"><srai>XACCTINFO</srai></li>
+
+<li value="uselinkedacct"><srai>USELNKDCRD</srai></li>
+</condition>
+</template>
+</category>
+</topic>
+
+
+
+
+
+</aiml>

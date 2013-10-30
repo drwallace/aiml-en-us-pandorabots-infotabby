@@ -1,0 +1,1537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<!--Copyright 2011 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+
+
+<category>
+<pattern>HLDS</pattern>
+<template>
+I'm often asked about placing holds and requesting items. 
+<random>
+<li>What would you like to know about holds?</li>
+<li>What is your question about holds?</li>
+<li>What can I tell you about holds?</li>
+</random>
+<think>
+<set name="topic">HLDS</set>
+</think>
+</template>
+</category>
+
+<topic name="HLDS">
+<category>
+<pattern>_</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">HOLDQ2</set>
+</think>
+<srai>HOLDQ2</srai></template>
+</category>
+</topic>
+
+<category>
+<pattern>HOLD</pattern>
+<template>
+<srai>HLDS</srai>
+</template>
+</category>
+
+<category>
+<pattern>HOLDS</pattern>
+<template>
+<srai>HLDS</srai>
+</template>
+</category>
+
+<category>
+<pattern>RESERVE</pattern>
+<template>
+<srai>HLDS</srai>
+</template>
+</category>
+
+<category>
+<pattern>RESERVES</pattern>
+<template>
+<srai>HLDS</srai>
+</template>
+</category>
+
+<category>
+<pattern>REQUEST</pattern>
+<template>
+<srai>HLDS</srai>
+</template>
+</category>
+
+<category>
+<pattern>REQUESTS</pattern>
+<template>
+<srai>HLDS</srai>
+</template>
+</category>
+
+<category>
+<pattern>* HOLD</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">HLDS2</set>
+</think>
+<srai>HOLDQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>HOLD *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">HLDS2</set>
+</think>
+<srai>HOLDQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* HOLD *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">HLDS2</set>
+</think>
+<srai>HOLDQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* HOLDS</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">HLDS2</set>
+</think>
+<srai>HOLDQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>HOLDS *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">HLDS2</set>
+</think>
+<srai>HOLDQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* HOLDS *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">HLDS2</set>
+</think>
+<srai>HOLDQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* HOLDING</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">HLDS2</set>
+</think>
+<srai>HOLDQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>HOLDING *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">HLDS2</set>
+</think>
+<srai>HOLDQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* HOLDING *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">HLDS2</set>
+</think>
+<srai>HOLDQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>HOW * HOLD</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">HLDS2</set>
+</think>
+<srai>HOLDQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* HOW * HOLD</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">HLDS2</set>
+</think>
+<srai>HOLDQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>HOW * HOLD *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">HLDS2</set>
+</think>
+<srai>HOLDQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* HOW * HOLD *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/><star index="3"/></set>
+<set name="topic">HLDS2</set>
+</think>
+<srai>HOLDQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>HOW * HOLDS</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">HLDS2</set>
+</think>
+<srai>HOLDQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* HOW * HOLDS</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">HLDS2</set>
+</think>
+<srai>HOLDQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>HOW * HOLDS *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">HLDS2</set>
+</think>
+<srai>HOLDQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* HOW * HOLDS *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/><star index="3"/></set>
+<set name="topic">HLDS2</set>
+</think>
+<srai>HOLDQ2</srai>
+</template>
+</category>
+
+
+<category>
+<pattern>* RESERVE</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">HLDS2</set>
+</think>
+<srai>HOLDQ2</srai>
+</template>
+</category>
+
+
+<category>
+<pattern>RESERVE *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">HLDS2</set>
+</think>
+<srai>HOLDQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* RESERVE *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">HLDS2</set>
+</think>
+<srai>HOLDQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>HOW * RESERVE *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">HLDS2</set>
+</think>
+<srai>HOLDQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* RESERVES</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">HLDS2</set>
+</think>
+<srai>HOLDQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>HOW * RESERVES</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">HLDS2</set>
+</think>
+<srai>HOLDQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>RESERVES *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">HLDS2</set>
+</think>
+<srai>HOLDQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* RESERVES *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">HLDS2</set>
+</think>
+<srai>HOLDQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>HOW * RESERVES *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">HLDS2</set>
+</think>
+<srai>HOLDQ2</srai>
+</template>
+</category>
+
+
+<category>
+<pattern>* REQUEST</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">HLDS2</set>
+</think>
+<srai>HOLDQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>REQUEST *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">HLDS2</set>
+</think>
+<srai>HOLDQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* REQUEST *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">HLDS2</set>
+</think>
+<srai>HOLDQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>HOW * REQUEST *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">HLDS2</set>
+</think>
+<srai>HOLDQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* REQUESTS</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">HLDS2</set>
+</think>
+<srai>HOLDQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>REQUESTS *</pattern>
+<template>
+<think>
+<set name="answr"><star index="2"/></set>
+<set name="topic">HLDS2</set>
+</think>
+<srai>HOLDQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* REQUESTS *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">HLDS2</set>
+</think>
+<srai>HOLDQ2</srai>
+</template>
+</category>
+
+<topic name="HLDS2">
+<category>
+<pattern>HOLDQ2</pattern>
+<template>
+<think>
+<get name="answr"/>
+<set name="message">no match</set>
+<condition name="answr">
+
+<li value="STOP"><set name="message">stop</set></li>
+
+<li value="HOW"><set name="message">placeholds</set></li>
+<li value="* HOW"><set name="message">placeholds</set></li>
+<li value="HOW *"><set name="message">placeholds</set></li>
+<li value="* HOW *"><set name="message">placeholds</set></li>
+
+<li value="ONLINE"><set name="message">placeholds</set></li>
+<li value="* ONLINE"><set name="message">placeholds</set></li>
+<li value="ONLINE *"><set name="message">placeholds</set></li>
+<li value="* ONLINE *"><set name="message">placeholds</set></li>
+
+<li value="ON LINE"><set name="message">placeholds</set></li>
+<li value="* ON LINE"><set name="message">placeholds</set></li>
+<li value="ON LINE *"><set name="message">placeholds</set></li>
+<li value="* ON LINE *"><set name="message">placeholds</set></li>
+
+<li value="PLACE"><set name="message">placeholds</set></li>
+<li value="* PLACE"><set name="message">placeholds</set></li>
+<li value="PLACE *"><set name="message">placeholds</set></li>
+<li value="* PLACE *"><set name="message">placeholds</set></li>
+
+<li value="PLACING"><set name="message">placeholds</set></li>
+<li value="* PLACING"><set name="message">placeholds</set></li>
+<li value="PLACING *"><set name="message">placeholds</set></li>
+<li value="* PLACING *"><set name="message">placeholds</set></li>
+
+<li value="PUT"><set name="message">placeholds</set></li>
+<li value="* PUT"><set name="message">placeholds</set></li>
+<li value="PUT *"><set name="message">placeholds</set></li>
+<li value="* PUT *"><set name="message">placeholds</set></li>
+
+<li value="PUTTING"><set name="message">placeholds</set></li>
+<li value="* PUTTING"><set name="message">placeholds</set></li>
+<li value="PUTTING *"><set name="message">placeholds</set></li>
+<li value="* PUTTING *"><set name="message">placeholds</set></li>
+
+<li value="BUTTON"><set name="message">request button</set></li>
+<li value="* BUTTON"><set name="message">request button</set></li>
+<li value="BUTTON *"><set name="message">request button</set></li>
+<li value="* BUTTON *"><set name="message">request button</set></li>
+
+<li value="WAIT"><set name="message">delivery time</set></li>
+<li value="* WAIT"><set name="message">delivery time</set></li>
+<li value="WAIT *"><set name="message">delivery time</set></li>
+<li value="* WAIT *"><set name="message">delivery time</set></li>
+
+<li value="HOW LONG"><set name="message">delivery time</set></li>
+<li value="* HOW LONG"><set name="message">delivery time</set></li>
+<li value="HOW LONG *"><set name="message">delivery time</set></li>
+<li value="* HOW LONG *"><set name="message">delivery time</set></li>
+
+<li value="LONG"><set name="message">too long</set></li>
+<li value="* LONG"><set name="message">too long</set></li>
+<li value="LONG *"><set name="message">too long</set></li>
+<li value="* LONG *"><set name="message">too long</set></li>
+
+<li value="WAITING"><set name="message">too long</set></li>
+<li value="* WAITING"><set name="message">too long</set></li>
+<li value="WAITING *"><set name="message">too long</set></li>
+<li value="* WAITING *"><set name="message">too long</set></li>
+
+<li value="WAITING LIST"><set name="message">waiting list</set></li>
+<li value="* WAITING LIST"><set name="message">waiting list</set></li>
+<li value="WAITING LIST *"><set name="message">waiting list</set></li>
+<li value="* WAITING LIST *"><set name="message">waiting list</set></li>
+
+<li value="CANCEL * TRANSIT"><set name="message">cancel in transit</set></li>
+<li value="* CANCEL * TRANSIT"><set name="message">cancel in transit</set></li>
+<li value="CANCEL * TRANSIT *"><set name="message">cancel in transit</set></li>
+<li value="* CANCEL * TRANSIT *"><set name="message">cancel in transit</set></li>
+
+<li value="CANCELLING * TRANSIT"><set name="message">cancel in transit</set></li>
+<li value="* CANCELLING * TRANSIT"><set name="message">cancel in transit</set></li>
+<li value="CANCELLING * TRANSIT *"><set name="message">cancel in transit</set></li>
+<li value="* CANCELLING * TRANSIT *"><set name="message">cancel in transit</set></li>
+
+<li value="TRANSIT * CANCEL"><set name="message">cancel in transit</set></li>
+<li value="* TRANSIT * CANCEL"><set name="message">cancel in transit</set></li>
+<li value="TRANSIT * CANCEL *"><set name="message">cancel in transit</set></li>
+<li value="* TRANSIT * CANCEL *"><set name="message">cancel in transit</set></li>
+
+<li value="TRANSIT * CANCELLED"><set name="message">cancel in transit</set></li>
+<li value="* TRANSIT * CANCELLED"><set name="message">cancel in transit</set></li>
+<li value="TRANSIT * CANCELLED *"><set name="message">cancel in transit</set></li>
+<li value="* TRANSIT * CANCELLED *"><set name="message">cancel in transit</set></li>
+
+<li value="NOT FILLED BY"><set name="message">not filled by date</set></li>
+<li value="* NOT FILLED BY"><set name="message">not filled by date</set></li>
+<li value="NOT FILLED BY *"><set name="message">not filled by date</set></li>
+<li value="* NOT FILLED BY *"><set name="message">not filled by date</set></li>
+
+<li value="* CHANGE DATE * HOLD"><set name="message">not filled by date</set></li>
+<li value="* CHANGE * DATE * HOLD"><set name="message">not filled by date</set></li>
+<li value="* CHANGE DATE * HOLD *"><set name="message">not filled by date</set></li>
+<li value="* CHANGE * DATE * HOLD *"><set name="message">not filled by date</set></li>
+<li value="* CHANGE DATE * HOLDS"><set name="message">not filled by date</set></li>
+<li value="* CHANGE * DATE * HOLDS"><set name="message">not filled by date</set></li>
+<li value="* CHANGE DATE * HOLDS *"><set name="message">not filled by date</set></li>
+<li value="* CHANGE * DATE * HOLDS *"><set name="message">not filled by date</set></li>
+
+<li value="CANNOT ADD"><set name="message">hold limit</set></li>
+<li value="* CANNOT ADD"><set name="message">hold limit</set></li>
+<li value="CANNOT ADD *"><set name="message">hold limit</set></li>
+<li value="* CANNOT ADD *"><set name="message">hold limit</set></li>
+
+<li value="HOLD FOR ME"><set name="message">hold for me</set></li>
+<li value="* HOLD FOR ME"><set name="message">hold for me</set></li>
+<li value="HOLD FOR ME *"><set name="message">hold for me</set></li>
+<li value="* HOLD FOR ME *"><set name="message">hold for me</set></li>
+
+<li value="HOLD * FOR ME"><set name="message">hold for me</set></li>
+<li value="* HOLD * FOR ME"><set name="message">hold for me</set></li>
+<li value="HOLD * FOR ME *"><set name="message">hold for me</set></li>
+<li value="* HOLD * FOR ME *"><set name="message">hold for me</set></li>
+
+<li value="REQUEST FOR ME"><set name="message">hold for me</set></li>
+<li value="* REQUEST FOR ME"><set name="message">hold for me</set></li>
+<li value="REQUEST FOR ME *"><set name="message">hold for me</set></li>
+<li value="* REQUEST FOR ME *"><set name="message">hold for me</set></li>
+
+<li value="REQUEST * FOR ME"><set name="message">hold for me</set></li>
+<li value="* REQUEST * FOR ME"><set name="message">hold for me</set></li>
+<li value="REQUEST * FOR ME *"><set name="message">hold for me</set></li>
+<li value="* REQUEST * FOR ME *"><set name="message">hold for me</set></li>
+
+<li value="RESERVE FOR ME"><set name="message">hold for me</set></li>
+<li value="* RESERVE FOR ME"><set name="message">hold for me</set></li>
+<li value="RESERVE FOR ME *"><set name="message">hold for me</set></li>
+<li value="* RESERVE FOR ME *"><set name="message">hold for me</set></li>
+
+<li value="RESERVE * FOR ME"><set name="message">hold for me</set></li>
+<li value="* RESERVE * FOR ME"><set name="message">hold for me</set></li>
+<li value="RESERVE * FOR ME *"><set name="message">hold for me</set></li>
+<li value="* RESERVE * FOR ME *"><set name="message">hold for me</set></li>
+
+<li value="CHANGE PICKUP"><set name="message">change pick up location</set></li>
+<li value="* CHANGE PICKUP"><set name="message">change pick up location</set></li>
+<li value="CHANGE * PICKUP"><set name="message">change pick up location</set></li>
+<li value="CHANGE PICKUP *"><set name="message">change pick up location</set></li>
+<li value="* CHANGE * PICKUP"><set name="message">change pick up location</set></li>
+<li value="CHANGE * PICKUP *"><set name="message">change pick up location</set></li>
+<li value="* CHANGE PICKUP *"><set name="message">change pick up location</set></li>
+<li value="* CHANGE * PICKUP *"><set name="message">change pick up location</set></li>
+
+<li value="CHANGE * UP"><set name="message">change pick up location</set></li>
+<li value="* CHANGE * UP"><set name="message">change pick up location</set></li>
+<li value="CHANGE * UP *"><set name="message">change pick up location</set></li>
+<li value="* CHANGE * UP *"><set name="message">change pick up location</set></li>
+
+<li value="BRANCH"><set name="message">branch</set></li>
+<li value="* BRANCH"><set name="message">branch</set></li>
+<li value="BRANCH *"><set name="message">branch</set></li>
+<li value="* BRANCH *"><set name="message">branch</set></li>
+
+<li value="BRANCHES"><set name="message">branch</set></li>
+<li value="* BRANCHES"><set name="message">branch</set></li>
+<li value="BRANCHES *"><set name="message">branch</set></li>
+<li value="* BRANCHES *"><set name="message">branch</set></li>
+
+<li value="LOCATION"><set name="message">branch</set></li>
+<li value="* LOCATION"><set name="message">branch</set></li>
+<li value="LOCATION *"><set name="message">branch</set></li>
+<li value="* LOCATION *"><set name="message">branch</set></li>
+
+<li value="LOCATIONS"><set name="message">branch</set></li>
+<li value="* LOCATIONS"><set name="message">branch</set></li>
+<li value="LOCATIONS *"><set name="message">branch</set></li>
+<li value="* LOCATIONS *"><set name="message">branch</set></li>
+
+<li value="NEW"><set name="message">too hot</set></li>
+<li value="* NEW"><set name="message">too hot</set></li>
+<li value="NEW *"><set name="message">too hot</set></li>
+<li value="* NEW *"><set name="message">too hot</set></li>
+
+<li value="HOT"><set name="message">too hot</set></li>
+<li value="* HOT"><set name="message">too hot</set></li>
+<li value="HOT *"><set name="message">too hot</set></li>
+<li value="* HOT *"><set name="message">too hot</set></li>
+
+<li value="IPAD"><set name="message">ipad holds</set></li>
+<li value="* IPAD"><set name="message">ipad holds</set></li>
+<li value="IPAD *"><set name="message">ipad holds</set></li>
+<li value="* IPAD *"><set name="message">ipad holds</set></li>
+
+<li value="IPADS"><set name="message">ipad holds</set></li>
+<li value="* IPADS"><set name="message">ipad holds</set></li>
+<li value="IPADS *"><set name="message">ipad holds</set></li>
+<li value="* IPADS *"><set name="message">ipad holds</set></li>
+
+<li value="I PAD"><set name="message">ipad holds</set></li>
+<li value="* I PAD"><set name="message">ipad holds</set></li>
+<li value="I PAD *"><set name="message">ipad holds</set></li>
+<li value="* I PAD *"><set name="message">ipad holds</set></li>
+
+<li value="I PADS"><set name="message">ipad holds</set></li>
+<li value="* I PADS"><set name="message">ipad holds</set></li>
+<li value="I PADS *"><set name="message">ipad holds</set></li>
+<li value="* I PADS *"><set name="message">ipad holds</set></li>
+
+<li value="STATUS"><set name="message">hold status</set></li>
+<li value="* STATUS"><set name="message">hold status</set></li>
+<li value="STATUS *"><set name="message">hold status</set></li>
+<li value="* STATUS *"><set name="message">hold status</set></li>
+
+<li value="HOW LONG * IN TRANSIT"><set name="message">transit time</set></li>
+<li value="* HOW LONG * IN TRANSIT"><set name="message">transit time</set></li>
+<li value="HOW LONG * IN TRANSIT *"><set name="message">transit time</set></li>
+<li value="* HOW LONG * IN TRANSIT *"><set name="message">transit time</set></li>
+
+<li value="PLACE HOLD"><set name="message">place hold</set></li>
+<li value="* PLACE HOLD"><set name="message">place hold</set></li>
+<li value="PLACE HOLD *"><set name="message">place hold</set></li>
+<li value="* PLACE HOLD *"><set name="message">place hold</set></li>
+
+<li value="CANCEL"><set name="message">cancel hold</set></li>
+<li value="* CANCEL"><set name="message">cancel hold</set></li>
+<li value="CANCEL *"><set name="message">cancel hold</set></li>
+<li value="* CANCEL *"><set name="message">cancel hold</set></li>
+
+<li value="CANCELLING"><set name="message">cancel hold</set></li>
+<li value="* CANCELLING"><set name="message">cancel hold</set></li>
+<li value="CANCELLING *"><set name="message">cancel hold</set></li>
+<li value="* CANCELLING *"><set name="message">cancel hold</set></li>
+
+<li value="CHECK"><set name="message">hold status</set></li>
+<li value="* CHECK"><set name="message">hold status</set></li>
+<li value="CHECK *"><set name="message">hold status</set></li>
+<li value="* CHECK *"><set name="message">hold status</set></li>
+
+<li value="IN"><set name="message">hold status</set></li>
+<li value="* IN"><set name="message">hold status</set></li>
+<li value="IN *"><set name="message">hold status</set></li>
+<li value="* IN *"><set name="message">hold status</set></li>
+
+<li value="READY"><set name="message">hold status</set></li>
+<li value="* READY"><set name="message">hold status</set></li>
+<li value="READY *"><set name="message">hold status</set></li>
+<li value="* READY *"><set name="message">hold status</set></li>
+
+<li value="* WHEN * GET *"><set name="message">hold status</set></li>
+
+<li value="CD"><set name="message">media holds2</set></li>
+<li value="* CD"><set name="message">media holds2</set></li>
+<li value="CD *"><set name="message">media holds2</set></li>
+<li value="* CD *"><set name="message">media holds2</set></li>
+
+<li value="CDS"><set name="message">media holds2</set></li>
+<li value="* CDS"><set name="message">media holds2</set></li>
+<li value="CDS *"><set name="message">media holds2</set></li>
+<li value="* CDS *"><set name="message">media holds2</set></li>
+
+<li value="DVD"><set name="message">media holds2</set></li>
+<li value="* DVD"><set name="message">media holds2</set></li>
+<li value="DVD *"><set name="message">media holds2</set></li>
+<li value="* DVD *"><set name="message">media holds2</set></li>
+
+<li value="DVDS"><set name="message">media holds2</set></li>
+<li value="* DVDS"><set name="message">media holds2</set></li>
+<li value="DVDS *"><set name="message">media holds2</set></li>
+<li value="* DVDS *"><set name="message">media holds2</set></li>
+
+<li value="MEDIA"><set name="message">media holds2</set></li>
+<li value="* MEDIA"><set name="message">media holds2</set></li>
+<li value="MEDIA *"><set name="message">media holds2</set></li>
+<li value="* MEDIA *"><set name="message">media holds2</set></li>
+
+<li value="MOVIE"><set name="message">media holds2</set></li>
+<li value="* MOVIE"><set name="message">media holds2</set></li>
+<li value="MOVIE *"><set name="message">media holds2</set></li>
+<li value="* MOVIE *"><set name="message">media holds2</set></li>
+
+<li value="MOVIES"><set name="message">media holds2</set></li>
+<li value="* MOVIES"><set name="message">media holds2</set></li>
+<li value="MOVIES *"><set name="message">media holds2</set></li>
+<li value="* MOVIES *"><set name="message">media holds2</set></li>
+
+<li value="SEARCHOHIO"><set name="message">search ohio holds</set></li>
+<li value="* SEARCHOHIO"><set name="message">search ohio holds</set></li>
+<li value="SEARCHOHIO *"><set name="message">search ohio holds</set></li>
+<li value="* SEARCHOHIO *"><set name="message">search ohio holds</set></li>
+
+<li value="SEARCH OHIO"><set name="message">search ohio holds</set></li>
+<li value="* SEARCH OHIO"><set name="message">search ohio holds</set></li>
+<li value="SEARCH OHIO *"><set name="message">search ohio holds</set></li>
+<li value="* SEARCH OHIO *"><set name="message">search ohio holds</set></li>
+
+<li value="BACK"><set name="message">pick up time</set></li>
+<li value="* BACK"><set name="message">pick up time</set></li>
+<li value="BACK *"><set name="message">pick up time</set></li>
+<li value="* BACK *"><set name="message">pick up time</set></li>
+
+<li value="HOLDSHELF"><set name="message">pick up time</set></li>
+<li value="* HOLDSHELF"><set name="message">pick up time</set></li>
+<li value="HOLDSHELF *"><set name="message">pick up time</set></li>
+<li value="* HOLDSHELF *"><set name="message">pick up time</set></li>
+
+<li value="SHELF"><set name="message">pick up time</set></li>
+<li value="* SHELF"><set name="message">pick up time</set></li>
+<li value="SHELF *"><set name="message">pick up time</set></li>
+<li value="* SHELF *"><set name="message">pick up time</set></li>
+
+<li value="LONG * GET"><set name="message">pick up time</set></li>
+<li value="* LONG * GET"><set name="message">pick up time</set></li>
+<li value="LONG * GET *"><set name="message">pick up time</set></li>
+<li value="* LONG * GET *"><set name="message">pick up time</set></li>
+
+<li value="LONG * KEEP"><set name="message">pick up time</set></li>
+<li value="* LONG * KEEP"><set name="message">pick up time</set></li>
+<li value="LONG * KEEP *"><set name="message">pick up time</set></li>
+<li value="* LONG * KEEP *"><set name="message">pick up time</set></li>
+
+<li value="LONG * PICKUP"><set name="message">pick up time</set></li>
+<li value="* LONG * PICKUP"><set name="message">pick up time</set></li>
+<li value="LONG * PICKUP *"><set name="message">pick up time</set></li>
+<li value="* LONG * PICKUP *"><set name="message">pick up time</set></li>
+
+<li value="LONG * UP"><set name="message">pick up time</set></li>
+<li value="* LONG * UP"><set name="message">pick up time</set></li>
+<li value="LONG * UP *"><set name="message">pick up time</set></li>
+<li value="* LONG * UP *"><set name="message">pick up time</set></li>
+
+<li value="TIME * GET"><set name="message">pick up time</set></li>
+<li value="* TIME * GET"><set name="message">pick up time</set></li>
+<li value="TIME * GET *"><set name="message">pick up time</set></li>
+<li value="* TIME * GET *"><set name="message">pick up time</set></li>
+
+<li value="TIME * KEEP"><set name="message">pick up time</set></li>
+<li value="* TIME * KEEP"><set name="message">pick up time</set></li>
+<li value="TIME * KEEP *"><set name="message">pick up time</set></li>
+<li value="* TIME * KEEP *"><set name="message">pick up time</set></li>
+
+<li value="TIME * PICKUP"><set name="message">pick up time</set></li>
+<li value="* TIME * PICKUP"><set name="message">pick up time</set></li>
+<li value="TIME * PICKUP *"><set name="message">pick up time</set></li>
+<li value="* TIME * PICKUP *"><set name="message">pick up time</set></li>
+
+<li value="TIME * UP"><set name="message">pick up time</set></li>
+<li value="* TIME * UP"><set name="message">pick up time</set></li>
+<li value="TIME * UP *"><set name="message">pick up time</set></li>
+<li value="* TIME * UP *"><set name="message">pick up time</set></li>
+
+<li value="FREEZE"><set name="message">freezing holds</set></li>
+<li value="* FREEZE"><set name="message">freezing holds</set></li>
+<li value="FREEZE *"><set name="message">freezing holds</set></li>
+<li value="* FREEZE *"><set name="message">freezing holds</set></li>
+
+<li value="FREEZING"><set name="message">freezing holds</set></li>
+<li value="* FREEZING"><set name="message">freezing holds</set></li>
+<li value="FREEZING *"><set name="message">freezing holds</set></li>
+<li value="* FREEZING *"><set name="message">freezing holds</set></li>
+
+<li value="FROZEN"><set name="message">freezing holds</set></li>
+<li value="* FROZEN"><set name="message">freezing holds</set></li>
+<li value="FROZEN *"><set name="message">freezing holds</set></li>
+<li value="* FROZEN *"><set name="message">freezing holds</set></li>
+
+<li value="UNFREEZE"><set name="message">thaw holds</set></li>
+<li value="* UNFREEZE"><set name="message">thaw holds</set></li>
+<li value="UNFREEZE *"><set name="message">thaw holds</set></li>
+<li value="* UNFREEZE *"><set name="message">thaw holds</set></li>
+
+<li value="UNFREEZING"><set name="message">thaw holds</set></li>
+<li value="* UNFREEZING"><set name="message">thaw holds</set></li>
+<li value="UNFREEZING *"><set name="message">thaw holds</set></li>
+<li value="* UNFREEZING *"><set name="message">thaw holds</set></li>
+
+<li value="THAW"><set name="message">thaw holds</set></li>
+<li value="* THAW"><set name="message">thaw holds</set></li>
+<li value="THAW *"><set name="message">thaw holds</set></li>
+<li value="* THAW *"><set name="message">thaw holds</set></li>
+
+<li value="THAWING"><set name="message">thaw holds</set></li>
+<li value="* THAWING"><set name="message">thaw holds</set></li>
+<li value="THAWING *"><set name="message">thaw holds</set></li>
+<li value="* THAWING *"><set name="message">thaw holds</set></li>
+
+<li value="THAWING"><set name="message">where are the holds</set></li>
+<li value="* THAWING"><set name="message">where are the holds</set></li>
+<li value="THAWING *"><set name="message">where are the holds</set></li>
+<li value="* THAWING *"><set name="message">where are the holds</set></li>
+
+<li value="WHERE"><set name="message">where are the holds</set></li>
+<li value="* WHERE"><set name="message">where are the holds</set></li>
+<li value="WHERE *"><set name="message">where are the holds</set></li>
+<li value="* WHERE *"><set name="message">where are the holds</set></li>
+
+<li value="MANY"><set name="message">max holds</set></li>
+<li value="* MANY"><set name="message">max holds</set></li>
+<li value="MANY *"><set name="message">max holds</set></li>
+<li value="* MANY *"><set name="message">max holds</set></li>
+
+<li value="NUMBER"><set name="message">max holds</set></li>
+<li value="* NUMBER"><set name="message">max holds</set></li>
+<li value="NUMBER *"><set name="message">max holds</set></li>
+<li value="* NUMBER *"><set name="message">max holds</set></li>
+
+<li value="GO THRU"><set name="message">placed ok</set></li>
+<li value="* GO THRU"><set name="message">placed ok</set></li>
+<li value="GO THRU *"><set name="message">placed ok</set></li>
+<li value="* GO THRU *"><set name="message">placed ok</set></li>
+
+<li value="GO THROUGH"><set name="message">placed ok</set></li>
+<li value="* GO THROUGH"><set name="message">placed ok</set></li>
+<li value="GO THROUGH *"><set name="message">placed ok</set></li>
+<li value="* GO THROUGH *"><set name="message">placed ok</set></li>
+
+<li value="SUCCESSFUL"><set name="message">placed ok</set></li>
+<li value="* SUCCESSFUL"><set name="message">placed ok</set></li>
+<li value="SUCCESSFUL *"><set name="message">placed ok</set></li>
+<li value="* SUCCESSFUL *"><set name="message">placed ok</set></li>
+
+<li value="SUCCESSFULLY"><set name="message">placed ok</set></li>
+<li value="* SUCCESSFULLY"><set name="message">placed ok</set></li>
+<li value="SUCCESSFULLY *"><set name="message">placed ok</set></li>
+<li value="* SUCCESSFULLY *"><set name="message">placed ok</set></li>
+
+<li value="WENT THRU"><set name="message">placed ok</set></li>
+<li value="* WENT THRU"><set name="message">placed ok</set></li>
+<li value="WENT THRU *"><set name="message">placed ok</set></li>
+<li value="* WENT THRU *"><set name="message">placed ok</set></li>
+
+<li value="WENT THROUGH"><set name="message">placed ok</set></li>
+<li value="* WENT THROUGH"><set name="message">placed ok</set></li>
+<li value="WENT THROUGH *"><set name="message">placed ok</set></li>
+<li value="* WENT THROUGH *"><set name="message">placed ok</set></li>
+
+<li value="ON HOLDSHELF"><set name="message">on holdshelf status</set></li>
+<li value="* ON HOLDSHELF"><set name="message">on holdshelf status</set></li>
+<li value="ON HOLDSHELF *"><set name="message">on holdshelf status</set></li>
+<li value="* ON HOLDSHELF *"><set name="message">on holdshelf status</set></li>
+
+<li value="DATE"><set name="message">hold expiration date</set></li>
+<li value="* DATE"><set name="message">hold expiration date</set></li>
+<li value="DATE *"><set name="message">hold expiration date</set></li>
+<li value="* DATE *"><set name="message">hold expiration date</set></li>
+
+<li value="CANNOT"><set name="message">hold fail</set></li>
+<li value="* CANNOT"><set name="message">hold fail</set></li>
+<li value="CANNOT *"><set name="message">hold fail</set></li>
+<li value="* CANNOT *"><set name="message">hold fail</set></li>
+
+<li value="NOT"><set name="message">hold fail</set></li>
+<li value="* NOT"><set name="message">hold fail</set></li>
+<li value="NOT *"><set name="message">hold fail</set></li>
+<li value="* NOT *"><set name="message">hold fail</set></li>
+
+<li value="VACATION"><set name="message">vacation</set></li>
+<li value="* VACATION"><set name="message">vacation</set></li>
+<li value="VACATION *"><set name="message">vacation</set></li>
+<li value="* VACATION *"><set name="message">vacation</set></li>
+
+<li value="HIGH"><set name="message">mhs</set></li>
+<li value="* HIGH"><set name="message">mhs</set></li>
+<li value="HIGH *"><set name="message">mhs</set></li>
+<li value="* HIGH *"><set name="message">mhs</set></li>
+
+<li value="MHS"><set name="message">mhs</set></li>
+<li value="* MHS"><set name="message">mhs</set></li>
+<li value="MHS *"><set name="message">mhs</set></li>
+<li value="* MHS *"><set name="message">mhs</set></li>
+
+<li value="CALL"><set name="message">notices</set></li>
+<li value="* CALL"><set name="message">notices</set></li>
+<li value="CALL *"><set name="message">notices</set></li>
+<li value="* CALL *"><set name="message">notices</set></li>
+
+<li value="CALLED"><set name="message">notices</set></li>
+<li value="* CALLED"><set name="message">notices</set></li>
+<li value="CALLED *"><set name="message">notices</set></li>
+<li value="* CALLED *"><set name="message">notices</set></li>
+
+<li value="CALLS"><set name="message">notices</set></li>
+<li value="* CALLS"><set name="message">notices</set></li>
+<li value="CALLS *"><set name="message">notices</set></li>
+<li value="* CALLS *"><set name="message">notices</set></li>
+
+<li value="EMAIL"><set name="message">notices</set></li>
+<li value="* EMAIL"><set name="message">notices</set></li>
+<li value="EMAIL *"><set name="message">notices</set></li>
+<li value="* EMAIL *"><set name="message">notices</set></li>
+
+<li value="EMAILS"><set name="message">notices</set></li>
+<li value="* EMAILS"><set name="message">notices</set></li>
+<li value="EMAILS *"><set name="message">notices</set></li>
+<li value="* EMAILS *"><set name="message">notices</set></li>
+
+<li value="NOTICE"><set name="message">notices</set></li>
+<li value="* NOTICE"><set name="message">notices</set></li>
+<li value="NOTICE *"><set name="message">notices</set></li>
+<li value="* NOTICE *"><set name="message">notices</set></li>
+
+<li value="NOTICES"><set name="message">notices</set></li>
+<li value="* NOTICES"><set name="message">notices</set></li>
+<li value="NOTICES *"><set name="message">notices</set></li>
+<li value="* NOTICES *"><set name="message">notices</set></li>
+
+<li value="NOTIFICATION"><set name="message">notices</set></li>
+<li value="* NOTIFICATION"><set name="message">notices</set></li>
+<li value="NOTIFICATION *"><set name="message">notices</set></li>
+<li value="* NOTIFICATION *"><set name="message">notices</set></li>
+
+<li value="NOTIFICATIONS"><set name="message">notices</set></li>
+<li value="* NOTIFICATIONS"><set name="message">notices</set></li>
+<li value="NOTIFICATIONS *"><set name="message">notices</set></li>
+<li value="* NOTIFICATIONS *"><set name="message">notices</set></li>
+
+<li value="PHONE"><set name="message">notices</set></li>
+<li value="* PHONE"><set name="message">notices</set></li>
+<li value="PHONE *"><set name="message">notices</set></li>
+<li value="* PHONE *"><set name="message">notices</set></li>
+
+<li value="TEXT"><set name="message">notices</set></li>
+<li value="* TEXT"><set name="message">notices</set></li>
+<li value="TEXT *"><set name="message">notices</set></li>
+<li value="* TEXT *"><set name="message">notices</set></li>
+
+<li value="TEXTS"><set name="message">notices</set></li>
+<li value="* TEXTS"><set name="message">notices</set></li>
+<li value="TEXTS *"><set name="message">notices</set></li>
+<li value="* TEXTS *"><set name="message">notices</set></li>
+
+<li value="FUTURE"><set name="message">future releases</set></li>
+<li value="* FUTURE"><set name="message">future releases</set></li>
+<li value="FUTURE *"><set name="message">future releases</set></li>
+<li value="* FUTURE *"><set name="message">future releases</set></li>
+
+<li value="RELEASED"><set name="message">future releases</set></li>
+<li value="* RELEASED"><set name="message">future releases</set></li>
+<li value="RELEASED *"><set name="message">future releases</set></li>
+<li value="* RELEASED *"><set name="message">future releases</set></li>
+
+<li value="LAPTOP"><set name="message">laptop holds</set></li>
+<li value="* LAPTOP"><set name="message">laptop holds</set></li>
+<li value="LAPTOP *"><set name="message">laptop holds</set></li>
+<li value="* LAPTOP *"><set name="message">laptop holds</set></li>
+
+<li value="LAPTOPS"><set name="message">laptop holds</set></li>
+<li value="* LAPTOPS"><set name="message">laptop holds</set></li>
+<li value="LAPTOPS *"><set name="message">laptop holds</set></li>
+<li value="* LAPTOPS *"><set name="message">laptop holds</set></li>
+
+<li value="LAP TOP"><set name="message">laptop holds</set></li>
+<li value="* LAP TOP"><set name="message">laptop holds</set></li>
+<li value="LAP TOP *"><set name="message">laptop holds</set></li>
+<li value="* LAP TOP *"><set name="message">laptop holds</set></li>
+
+<li value="LAP TOPS"><set name="message">laptop holds</set></li>
+<li value="* LAP TOPS"><set name="message">laptop holds</set></li>
+<li value="LAP TOPS *"><set name="message">laptop holds</set></li>
+<li value="* LAP TOPS *"><set name="message">laptop holds</set></li>
+
+<li value="CHECKED OUT"><set name="message">hold item out</set></li>
+<li value="* CHECKED OUT"><set name="message">hold item out</set></li>
+<li value="CHECKED OUT *"><set name="message">hold item out</set></li>
+<li value="* CHECKED OUT *"><set name="message">hold item out</set></li>
+
+<li value="WHAT DOES * OF * HOLDS MEAN"><set name="message">x of y</set></li>
+
+<li value="TEACHER * OHIOLINK"><set name="message">tcard ill</set></li>
+<li value="* TEACHER * OHIOLINK"><set name="message">tcard ill</set></li>
+<li value="TEACHER * OHIOLINK *"><set name="message">tcard ill</set></li>
+<li value="* TEACHER * OHIOLINK *"><set name="message">tcard ill</set></li>
+
+<li value="TEACHER * OHIO LINK"><set name="message">tcard ill</set></li>
+<li value="* TEACHER * OHIO LINK"><set name="message">tcard ill</set></li>
+<li value="TEACHER * OHIO LINK *"><set name="message">tcard ill</set></li>
+<li value="* TEACHER * OHIO LINK *"><set name="message">tcard ill</set></li>
+
+<li value="TEACHER * SEARCHOHIO"><set name="message">tcard ill</set></li>
+<li value="* TEACHER * SEARCHOHIO"><set name="message">tcard ill</set></li>
+<li value="TEACHER * SEARCHOHIO *"><set name="message">tcard ill</set></li>
+<li value="* TEACHER * SEARCHOHIO *"><set name="message">tcard ill</set></li>
+
+<li value="TEACHER * SEARCH OHIO"><set name="message">tcard ill</set></li>
+<li value="* TEACHER * SEARCH OHIO"><set name="message">tcard ill</set></li>
+<li value="TEACHER * SEARCH OHIO *"><set name="message">tcard ill</set></li>
+<li value="* TEACHER * SEARCH OHIO *"><set name="message">tcard ill</set></li>
+
+<li value="TEACHERS * OHIOLINK"><set name="message">tcard ill</set></li>
+<li value="* TEACHERS * OHIOLINK"><set name="message">tcard ill</set></li>
+<li value="TEACHERS * OHIOLINK *"><set name="message">tcard ill</set></li>
+<li value="* TEACHERS * OHIOLINK *"><set name="message">tcard ill</set></li>
+
+<li value="TEACHERS * OHIO LINK"><set name="message">tcard ill</set></li>
+<li value="* TEACHERS * OHIO LINK"><set name="message">tcard ill</set></li>
+<li value="TEACHERS * OHIO LINK *"><set name="message">tcard ill</set></li>
+<li value="* TEACHERS * OHIO LINK *"><set name="message">tcard ill</set></li>
+
+<li value="TEACHERS * SEARCHOHIO"><set name="message">tcard ill</set></li>
+<li value="* TEACHERS * SEARCHOHIO"><set name="message">tcard ill</set></li>
+<li value="TEACHERS * SEARCHOHIO *"><set name="message">tcard ill</set></li>
+<li value="* TEACHERS * SEARCHOHIO *"><set name="message">tcard ill</set></li>
+
+<li value="TEACHERS * SEARCH OHIO"><set name="message">tcard ill</set></li>
+<li value="* TEACHERS * SEARCH OHIO"><set name="message">tcard ill</set></li>
+<li value="TEACHERS * SEARCH OHIO *"><set name="message">tcard ill</set></li>
+<li value="* TEACHERS * SEARCH OHIO *"><set name="message">tcard ill</set></li>
+
+<li value="TEACHER S * OHIOLINK"><set name="message">tcard ill</set></li>
+<li value="* TEACHER S * OHIOLINK"><set name="message">tcard ill</set></li>
+<li value="TEACHER S * OHIOLINK *"><set name="message">tcard ill</set></li>
+<li value="* TEACHER S * OHIOLINK *"><set name="message">tcard ill</set></li>
+
+<li value="TEACHER S * OHIO LINK"><set name="message">tcard ill</set></li>
+<li value="* TEACHER S * OHIO LINK"><set name="message">tcard ill</set></li>
+<li value="TEACHER S * OHIO LINK *"><set name="message">tcard ill</set></li>
+<li value="* TEACHER S * OHIO LINK *"><set name="message">tcard ill</set></li>
+
+<li value="TEACHER S * SEARCHOHIO"><set name="message">tcard ill</set></li>
+<li value="* TEACHER S * SEARCHOHIO"><set name="message">tcard ill</set></li>
+<li value="TEACHER S * SEARCHOHIO *"><set name="message">tcard ill</set></li>
+<li value="* TEACHER S * SEARCHOHIO *"><set name="message">tcard ill</set></li>
+
+<li value="TEACHER S * SEARCH OHIO"><set name="message">tcard ill</set></li>
+<li value="* TEACHER S * SEARCH OHIO"><set name="message">tcard ill</set></li>
+<li value="TEACHER S * SEARCH OHIO *"><set name="message">tcard ill</set></li>
+<li value="* TEACHER S * SEARCH OHIO *"><set name="message">tcard ill</set></li>
+
+<li value="OHIOLINK * TEACHER"><set name="message">tcard ill</set></li>
+<li value="* OHIOLINK * TEACHER"><set name="message">tcard ill</set></li>
+<li value="OHIOLINK * TEACHER *"><set name="message">tcard ill</set></li>
+<li value="* OHIOLINK * TEACHER *"><set name="message">tcard ill</set></li>
+
+<li value="OHIO LINK * TEACHER"><set name="message">tcard ill</set></li>
+<li value="* OHIO LINK * TEACHER"><set name="message">tcard ill</set></li>
+<li value="OHIO LINK * TEACHER *"><set name="message">tcard ill</set></li>
+<li value="* OHIO LINK * TEACHER *"><set name="message">tcard ill</set></li>
+
+<li value="SEARCHOHIO * TEACHER"><set name="message">tcard ill</set></li>
+<li value="* SEARCHOHIO * TEACHER"><set name="message">tcard ill</set></li>
+<li value="SEARCHOHIO * TEACHER *"><set name="message">tcard ill</set></li>
+<li value="* SEARCHOHIO * TEACHER *"><set name="message">tcard ill</set></li>
+
+<li value="SEARCH OHIO * TEACHER"><set name="message">tcard ill</set></li>
+<li value="* SEARCH OHIO * TEACHER"><set name="message">tcard ill</set></li>
+<li value="SEARCH OHIO * TEACHER *"><set name="message">tcard ill</set></li>
+<li value="* SEARCH OHIO * TEACHER *"><set name="message">tcard ill</set></li>
+
+<li value="TEACHER * ANOTHER"><set name="message">tcard ill</set></li>
+<li value="* TEACHER * ANOTHER"><set name="message">tcard ill</set></li>
+<li value="TEACHER * ANOTHER *"><set name="message">tcard ill</set></li>
+<li value="* TEACHER * ANOTHER *"><set name="message">tcard ill</set></li>
+
+<li value="TEACHER * OTHER"><set name="message">tcard ill</set></li>
+<li value="* TEACHER * OTHER"><set name="message">tcard ill</set></li>
+<li value="TEACHER * OTHER *"><set name="message">tcard ill</set></li>
+<li value="* TEACHER * OTHER *"><set name="message">tcard ill</set></li>
+
+<li value="TEACHERS * ANOTHER"><set name="message">tcard ill</set></li>
+<li value="* TEACHERS * ANOTHER"><set name="message">tcard ill</set></li>
+<li value="TEACHERS * ANOTHER *"><set name="message">tcard ill</set></li>
+<li value="* TEACHERS * ANOTHER *"><set name="message">tcard ill</set></li>
+
+<li value="TEACHERS * OTHER"><set name="message">tcard ill</set></li>
+<li value="* TEACHERS * OTHER"><set name="message">tcard ill</set></li>
+<li value="TEACHERS * OTHER *"><set name="message">tcard ill</set></li>
+<li value="* TEACHERS * OTHER *"><set name="message">tcard ill</set></li>
+
+<li value="TEACHER S * ANOTHER"><set name="message">tcard ill</set></li>
+<li value="* TEACHER S * ANOTHER"><set name="message">tcard ill</set></li>
+<li value="TEACHER S * ANOTHER *"><set name="message">tcard ill</set></li>
+<li value="* TEACHER S * ANOTHER *"><set name="message">tcard ill</set></li>
+
+<li value="TEACHER S * OTHER"><set name="message">tcard ill</set></li>
+<li value="* TEACHER S * OTHER"><set name="message">tcard ill</set></li>
+<li value="TEACHER S * OTHER *"><set name="message">tcard ill</set></li>
+<li value="* TEACHER S * OTHER *"><set name="message">tcard ill</set></li>
+
+<li value="MAXIMUM"><set name="message">maxholds</set></li>
+<li value="* MAXIMUM"><set name="message">maxholds</set></li>
+<li value="MAXIMUM *"><set name="message">maxholds</set></li>
+<li value="* MAXIMUM *"><set name="message">maxholds</set></li>
+
+<li value="ADD ITEM"><set name="message">purchreq</set></li>
+<li value="* ADD ITEM"><set name="message">purchreq</set></li>
+<li value="ADD ITEM *"><set name="message">purchreq</set></li>
+<li value="* ADD ITEM *"><set name="message">purchreq</set></li>
+
+<li value="ADD ITEMS"><set name="message">purchreq</set></li>
+<li value="* ADD ITEMS"><set name="message">purchreq</set></li>
+<li value="ADD ITEMS *"><set name="message">purchreq</set></li>
+<li value="* ADD ITEMS *"><set name="message">purchreq</set></li>
+
+<li value="BUY ITEM"><set name="message">purchreq</set></li>
+<li value="* BUY ITEM"><set name="message">purchreq</set></li>
+<li value="BUY ITEM *"><set name="message">purchreq</set></li>
+<li value="* BUY ITEM *"><set name="message">purchreq</set></li>
+
+<li value="BUY ITEMS"><set name="message">purchreq</set></li>
+<li value="* BUY ITEMS"><set name="message">purchreq</set></li>
+<li value="BUY ITEMS *"><set name="message">purchreq</set></li>
+<li value="* BUY ITEMS *"><set name="message">purchreq</set></li>
+
+<li value="VERIFICATION"><set name="message">verify holds</set></li>
+<li value="* VERIFICATION"><set name="message">verify holds</set></li>
+<li value="VERIFICATION *"><set name="message">verify holds</set></li>
+<li value="* VERIFICATION *"><set name="message">verify holds</set></li>
+
+<li value="VERIFY"><set name="message">verify holds</set></li>
+<li value="* VERIFY"><set name="message">verify holds</set></li>
+<li value="VERIFY *"><set name="message">verify holds</set></li>
+<li value="* VERIFY *"><set name="message">verify holds</set></li>
+
+<li value="VERIFYING"><set name="message">verify holds</set></li>
+<li value="* VERIFYING"><set name="message">verify holds</set></li>
+<li value="VERIFYING *"><set name="message">verify holds</set></li>
+<li value="* VERIFYING *"><set name="message">verify holds</set></li>
+
+<li value="CANNOT ADD"><set name="message">cannot add holds</set></li>
+<li value="* CANNOT ADD"><set name="message">cannot add holds</set></li>
+<li value="CANNOT ADD *"><set name="message">cannot add holds</set></li>
+<li value="* CANNOT ADD *"><set name="message">cannot add holds</set></li>
+
+<li value="NOT ADD"><set name="message">cannot add holds</set></li>
+<li value="* NOT ADD"><set name="message">cannot add holds</set></li>
+<li value="NOT ADD *"><set name="message">cannot add holds</set></li>
+<li value="* NOT ADD *"><set name="message">cannot add holds</set></li>
+
+<li value="ANOTHER BRANCH"><set name="message">item at another location</set></li>
+<li value="* ANOTHER BRANCH"><set name="message">item at another location</set></li>
+<li value="ANOTHER * BRANCH"><set name="message">item at another location</set></li>
+<li value="ANOTHER BRANCH *"><set name="message">item at another location</set></li>
+<li value="* ANOTHER * BRANCH"><set name="message">item at another location</set></li>
+<li value="ANOTHER * BRANCH *"><set name="message">item at another location</set></li>
+<li value="* ANOTHER BRANCH *"><set name="message">item at another location</set></li>
+<li value="* ANOTHER * BRANCH *"><set name="message">item at another location</set></li>
+
+<li value="ANOTHER BRANCHES"><set name="message">item at another location</set></li>
+<li value="* ANOTHER BRANCHES"><set name="message">item at another location</set></li>
+<li value="ANOTHER * BRANCHES"><set name="message">item at another location</set></li>
+<li value="ANOTHER BRANCHES *"><set name="message">item at another location</set></li>
+<li value="* ANOTHER * BRANCHES"><set name="message">item at another location</set></li>
+<li value="ANOTHER * BRANCHES *"><set name="message">item at another location</set></li>
+<li value="* ANOTHER BRANCHES *"><set name="message">item at another location</set></li>
+<li value="* ANOTHER * BRANCHES *"><set name="message">item at another location</set></li>
+
+<li value="ANOTHER LOCATION"><set name="message">item at another location</set></li>
+<li value="* ANOTHER LOCATION"><set name="message">item at another location</set></li>
+<li value="ANOTHER * LOCATION"><set name="message">item at another location</set></li>
+<li value="ANOTHER LOCATION *"><set name="message">item at another location</set></li>
+<li value="* ANOTHER * LOCATION"><set name="message">item at another location</set></li>
+<li value="ANOTHER * LOCATION *"><set name="message">item at another location</set></li>
+<li value="* ANOTHER LOCATION *"><set name="message">item at another location</set></li>
+<li value="* ANOTHER * LOCATION *"><set name="message">item at another location</set></li>
+
+<li value="ANOTHER LOCATIONS"><set name="message">item at another location</set></li>
+<li value="* ANOTHER LOCATIONS"><set name="message">item at another location</set></li>
+<li value="ANOTHER * LOCATIONS"><set name="message">item at another location</set></li>
+<li value="ANOTHER LOCATIONS *"><set name="message">item at another location</set></li>
+<li value="* ANOTHER * LOCATIONS"><set name="message">item at another location</set></li>
+<li value="ANOTHER * LOCATIONS *"><set name="message">item at another location</set></li>
+<li value="* ANOTHER LOCATIONS *"><set name="message">item at another location</set></li>
+<li value="* ANOTHER * LOCATIONS *"><set name="message">item at another location</set></li>
+
+<li value="DIFFERENT BRANCH"><set name="message">item at another location</set></li>
+<li value="* DIFFERENT BRANCH"><set name="message">item at another location</set></li>
+<li value="DIFFERENT * BRANCH"><set name="message">item at another location</set></li>
+<li value="DIFFERENT BRANCH *"><set name="message">item at another location</set></li>
+<li value="* DIFFERENT * BRANCH"><set name="message">item at another location</set></li>
+<li value="DIFFERENT * BRANCH *"><set name="message">item at another location</set></li>
+<li value="* DIFFERENT BRANCH *"><set name="message">item at another location</set></li>
+<li value="* DIFFERENT * BRANCH *"><set name="message">item at another location</set></li>
+
+<li value="DIFFERENT BRANCHES"><set name="message">item at another location</set></li>
+<li value="* DIFFERENT BRANCHES"><set name="message">item at another location</set></li>
+<li value="DIFFERENT * BRANCHES"><set name="message">item at another location</set></li>
+<li value="DIFFERENT BRANCHES *"><set name="message">item at another location</set></li>
+<li value="* DIFFERENT * BRANCHES"><set name="message">item at another location</set></li>
+<li value="DIFFERENT * BRANCHES *"><set name="message">item at another location</set></li>
+<li value="* DIFFERENT BRANCHES *"><set name="message">item at another location</set></li>
+<li value="* DIFFERENT * BRANCHES *"><set name="message">item at another location</set></li>
+
+<li value="DIFFERENT LOCATION"><set name="message">item at another location</set></li>
+<li value="* DIFFERENT LOCATION"><set name="message">item at another location</set></li>
+<li value="DIFFERENT * LOCATION"><set name="message">item at another location</set></li>
+<li value="DIFFERENT LOCATION *"><set name="message">item at another location</set></li>
+<li value="* DIFFERENT * LOCATION"><set name="message">item at another location</set></li>
+<li value="DIFFERENT * LOCATION *"><set name="message">item at another location</set></li>
+<li value="* DIFFERENT LOCATION *"><set name="message">item at another location</set></li>
+<li value="* DIFFERENT * LOCATION *"><set name="message">item at another location</set></li>
+
+<li value="DIFFERENT LOCATIONS"><set name="message">item at another location</set></li>
+<li value="* DIFFERENT LOCATIONS"><set name="message">item at another location</set></li>
+<li value="DIFFERENT * LOCATIONS"><set name="message">item at another location</set></li>
+<li value="DIFFERENT LOCATIONS *"><set name="message">item at another location</set></li>
+<li value="* DIFFERENT * LOCATIONS"><set name="message">item at another location</set></li>
+<li value="DIFFERENT * LOCATIONS *"><set name="message">item at another location</set></li>
+<li value="* DIFFERENT LOCATIONS *"><set name="message">item at another location</set></li>
+<li value="* DIFFERENT * LOCATIONS *"><set name="message">item at another location</set></li>
+
+<li value="OTHER BRANCH"><set name="message">item at another location</set></li>
+<li value="* OTHER BRANCH"><set name="message">item at another location</set></li>
+<li value="OTHER * BRANCH"><set name="message">item at another location</set></li>
+<li value="OTHER BRANCH *"><set name="message">item at another location</set></li>
+<li value="* OTHER * BRANCH"><set name="message">item at another location</set></li>
+<li value="OTHER * BRANCH *"><set name="message">item at another location</set></li>
+<li value="* OTHER BRANCH *"><set name="message">item at another location</set></li>
+<li value="* OTHER * BRANCH *"><set name="message">item at another location</set></li>
+
+<li value="OTHER BRANCHES"><set name="message">item at another location</set></li>
+<li value="* OTHER BRANCHES"><set name="message">item at another location</set></li>
+<li value="OTHER * BRANCHES"><set name="message">item at another location</set></li>
+<li value="OTHER BRANCHES *"><set name="message">item at another location</set></li>
+<li value="* OTHER * BRANCHES"><set name="message">item at another location</set></li>
+<li value="OTHER * BRANCHES *"><set name="message">item at another location</set></li>
+<li value="* OTHER BRANCHES *"><set name="message">item at another location</set></li>
+<li value="* OTHER * BRANCHES *"><set name="message">item at another location</set></li>
+
+<li value="OTHER LOCATION"><set name="message">item at another location</set></li>
+<li value="* OTHER LOCATION"><set name="message">item at another location</set></li>
+<li value="OTHER * LOCATION"><set name="message">item at another location</set></li>
+<li value="OTHER LOCATION *"><set name="message">item at another location</set></li>
+<li value="* OTHER * LOCATION"><set name="message">item at another location</set></li>
+<li value="OTHER * LOCATION *"><set name="message">item at another location</set></li>
+<li value="* OTHER LOCATION *"><set name="message">item at another location</set></li>
+<li value="* OTHER * LOCATION *"><set name="message">item at another location</set></li>
+
+<li value="OTHER LOCATIONS"><set name="message">item at another location</set></li>
+<li value="* OTHER LOCATIONS"><set name="message">item at another location</set></li>
+<li value="OTHER * LOCATIONS"><set name="message">item at another location</set></li>
+<li value="OTHER LOCATIONS *"><set name="message">item at another location</set></li>
+<li value="* OTHER * LOCATIONS"><set name="message">item at another location</set></li>
+<li value="OTHER * LOCATIONS *"><set name="message">item at another location</set></li>
+<li value="* OTHER LOCATIONS *"><set name="message">item at another location</set></li>
+<li value="* OTHER * LOCATIONS *"><set name="message">item at another location</set></li>
+
+<li value="ANOTHER LIBRARY"><set name="message">item at another library</set></li>
+<li value="* ANOTHER LIBRARY"><set name="message">item at another library</set></li>
+<li value="ANOTHER * LIBRARY"><set name="message">item at another library</set></li>
+<li value="ANOTHER LIBRARY *"><set name="message">item at another library</set></li>
+<li value="* ANOTHER * LIBRARY"><set name="message">item at another library</set></li>
+<li value="ANOTHER * LIBRARY *"><set name="message">item at another library</set></li>
+<li value="* ANOTHER LIBRARY *"><set name="message">item at another library</set></li>
+<li value="* ANOTHER * LIBRARY *"><set name="message">item at another library</set></li>
+
+<li value="ANOTHER LIBRARIES"><set name="message">item at another library</set></li>
+<li value="* ANOTHER LIBRARIES"><set name="message">item at another library</set></li>
+<li value="ANOTHER * LIBRARIES"><set name="message">item at another library</set></li>
+<li value="ANOTHER LIBRARIES *"><set name="message">item at another library</set></li>
+<li value="* ANOTHER * LIBRARIES"><set name="message">item at another library</set></li>
+<li value="ANOTHER * LIBRARIES *"><set name="message">item at another library</set></li>
+<li value="* ANOTHER LIBRARIES *"><set name="message">item at another library</set></li>
+<li value="* ANOTHER * LIBRARIES *"><set name="message">item at another library</set></li>
+
+<li value="ANOTHER SYSTEM"><set name="message">item at another library</set></li>
+<li value="* ANOTHER SYSTEM"><set name="message">item at another library</set></li>
+<li value="ANOTHER * SYSTEM"><set name="message">item at another library</set></li>
+<li value="ANOTHER SYSTEM *"><set name="message">item at another library</set></li>
+<li value="* ANOTHER * SYSTEM"><set name="message">item at another library</set></li>
+<li value="ANOTHER * SYSTEM *"><set name="message">item at another library</set></li>
+<li value="* ANOTHER SYSTEM *"><set name="message">item at another library</set></li>
+<li value="* ANOTHER * SYSTEM *"><set name="message">item at another library</set></li>
+
+<li value="ANOTHER SYSTEMS"><set name="message">item at another library</set></li>
+<li value="* ANOTHER SYSTEMS"><set name="message">item at another library</set></li>
+<li value="ANOTHER * SYSTEMS"><set name="message">item at another library</set></li>
+<li value="ANOTHER SYSTEMS *"><set name="message">item at another library</set></li>
+<li value="* ANOTHER * SYSTEMS"><set name="message">item at another library</set></li>
+<li value="ANOTHER * SYSTEMS *"><set name="message">item at another library</set></li>
+<li value="* ANOTHER SYSTEMS *"><set name="message">item at another library</set></li>
+<li value="* ANOTHER * SYSTEMS *"><set name="message">item at another library</set></li>
+
+<li value="DIFFERENT LIBRARY"><set name="message">item at another library</set></li>
+<li value="* DIFFERENT LIBRARY"><set name="message">item at another library</set></li>
+<li value="DIFFERENT * LIBRARY"><set name="message">item at another library</set></li>
+<li value="DIFFERENT LIBRARY *"><set name="message">item at another library</set></li>
+<li value="* DIFFERENT * LIBRARY"><set name="message">item at another library</set></li>
+<li value="DIFFERENT * LIBRARY *"><set name="message">item at another library</set></li>
+<li value="* DIFFERENT LIBRARY *"><set name="message">item at another library</set></li>
+<li value="* DIFFERENT * LIBRARY *"><set name="message">item at another library</set></li>
+
+<li value="DIFFERENT LIBRARIES"><set name="message">item at another library</set></li>
+<li value="* DIFFERENT LIBRARIES"><set name="message">item at another library</set></li>
+<li value="DIFFERENT * LIBRARIES"><set name="message">item at another library</set></li>
+<li value="DIFFERENT LIBRARIES *"><set name="message">item at another library</set></li>
+<li value="* DIFFERENT * LIBRARIES"><set name="message">item at another library</set></li>
+<li value="DIFFERENT * LIBRARIES *"><set name="message">item at another library</set></li>
+<li value="* DIFFERENT LIBRARIES *"><set name="message">item at another library</set></li>
+<li value="* DIFFERENT * LIBRARIES *"><set name="message">item at another library</set></li>
+
+<li value="DIFFERENT SYSTEM"><set name="message">item at another library</set></li>
+<li value="* DIFFERENT SYSTEM"><set name="message">item at another library</set></li>
+<li value="DIFFERENT * SYSTEM"><set name="message">item at another library</set></li>
+<li value="DIFFERENT SYSTEM *"><set name="message">item at another library</set></li>
+<li value="* DIFFERENT * SYSTEM"><set name="message">item at another library</set></li>
+<li value="DIFFERENT * SYSTEM *"><set name="message">item at another library</set></li>
+<li value="* DIFFERENT SYSTEM *"><set name="message">item at another library</set></li>
+<li value="* DIFFERENT * SYSTEM *"><set name="message">item at another library</set></li>
+
+<li value="DIFFERENT SYSTEMS"><set name="message">item at another library</set></li>
+<li value="* DIFFERENT SYSTEMS"><set name="message">item at another library</set></li>
+<li value="DIFFERENT * SYSTEMS"><set name="message">item at another library</set></li>
+<li value="DIFFERENT SYSTEMS *"><set name="message">item at another library</set></li>
+<li value="* DIFFERENT * SYSTEMS"><set name="message">item at another library</set></li>
+<li value="DIFFERENT * SYSTEMS *"><set name="message">item at another library</set></li>
+<li value="* DIFFERENT SYSTEMS *"><set name="message">item at another library</set></li>
+<li value="* DIFFERENT * SYSTEMS *"><set name="message">item at another library</set></li>
+
+<li value="OTHER LIBRARY"><set name="message">item at another library</set></li>
+<li value="* OTHER LIBRARY"><set name="message">item at another library</set></li>
+<li value="OTHER * LIBRARY"><set name="message">item at another library</set></li>
+<li value="OTHER LIBRARY *"><set name="message">item at another library</set></li>
+<li value="* OTHER * LIBRARY"><set name="message">item at another library</set></li>
+<li value="OTHER * LIBRARY *"><set name="message">item at another library</set></li>
+<li value="* OTHER LIBRARY *"><set name="message">item at another library</set></li>
+<li value="* OTHER * LIBRARY *"><set name="message">item at another library</set></li>
+
+<li value="OTHER LIBRARIES"><set name="message">item at another library</set></li>
+<li value="* OTHER LIBRARIES"><set name="message">item at another library</set></li>
+<li value="OTHER * LIBRARIES"><set name="message">item at another library</set></li>
+<li value="OTHER LIBRARIES *"><set name="message">item at another library</set></li>
+<li value="* OTHER * LIBRARIES"><set name="message">item at another library</set></li>
+<li value="OTHER * LIBRARIES *"><set name="message">item at another library</set></li>
+<li value="* OTHER LIBRARIES *"><set name="message">item at another library</set></li>
+<li value="* OTHER * LIBRARIES *"><set name="message">item at another library</set></li>
+
+<li value="OTHER SYSTEM"><set name="message">item at another library</set></li>
+<li value="* OTHER SYSTEM"><set name="message">item at another library</set></li>
+<li value="OTHER * SYSTEM"><set name="message">item at another library</set></li>
+<li value="OTHER SYSTEM *"><set name="message">item at another library</set></li>
+<li value="* OTHER * SYSTEM"><set name="message">item at another library</set></li>
+<li value="OTHER * SYSTEM *"><set name="message">item at another library</set></li>
+<li value="* OTHER SYSTEM *"><set name="message">item at another library</set></li>
+<li value="* OTHER * SYSTEM *"><set name="message">item at another library</set></li>
+
+<li value="OTHER SYSTEMS"><set name="message">item at another library</set></li>
+<li value="* OTHER SYSTEMS"><set name="message">item at another library</set></li>
+<li value="OTHER * SYSTEMS"><set name="message">item at another library</set></li>
+<li value="OTHER SYSTEMS *"><set name="message">item at another library</set></li>
+<li value="* OTHER * SYSTEMS"><set name="message">item at another library</set></li>
+<li value="OTHER * SYSTEMS *"><set name="message">item at another library</set></li>
+<li value="* OTHER SYSTEMS *"><set name="message">item at another library</set></li>
+<li value="* OTHER * SYSTEMS *"><set name="message">item at another library</set></li>
+
+<li value="COMPUTER"><set name="message">computer sign up</set></li>
+<li value="* COMPUTER"><set name="message">computer sign up</set></li>
+<li value="COMPUTER *"><set name="message">computer sign up</set></li>
+<li value="* COMPUTER *"><set name="message">computer sign up</set></li>
+
+<li value="COMPUTERS"><set name="message">computer sign up</set></li>
+<li value="* COMPUTERS"><set name="message">computer sign up</set></li>
+<li value="COMPUTERS *"><set name="message">computer sign up</set></li>
+<li value="* COMPUTERS *"><set name="message">computer sign up</set></li>
+
+<li value="INTERNET"><set name="message">computer sign up</set></li>
+<li value="* INTERNET"><set name="message">computer sign up</set></li>
+<li value="INTERNET *"><set name="message">computer sign up</set></li>
+<li value="* INTERNET *"><set name="message">computer sign up</set></li>
+
+<li value="PC"><set name="message">computer sign up</set></li>
+<li value="* PC"><set name="message">computer sign up</set></li>
+<li value="PC *"><set name="message">computer sign up</set></li>
+<li value="* PC *"><set name="message">computer sign up</set></li>
+
+<li value="PCS"><set name="message">computer sign up</set></li>
+<li value="* PCS"><set name="message">computer sign up</set></li>
+<li value="PCS *"><set name="message">computer sign up</set></li>
+<li value="* PCS *"><set name="message">computer sign up</set></li>
+
+
+
+
+
+
+
+
+<li value="KINDLE"><set name="message">hold kindle</set></li>
+<li value="* KINDLE"><set name="message">hold kindle</set></li>
+<li value="KINDLE *"><set name="message">hold kindle</set></li>
+<li value="* KINDLE *"><set name="message">hold kindle</set></li>
+
+<li value="KINDLES"><set name="message">hold kindle</set></li>
+<li value="* KINDLES"><set name="message">hold kindle</set></li>
+<li value="KINDLES *"><set name="message">hold kindle</set></li>
+<li value="* KINDLES *"><set name="message">hold kindle</set></li>
+
+
+
+
+
+<li value="NOOK"><set name="message">hold nook</set></li>
+<li value="* NOOK"><set name="message">hold nook</set></li>
+<li value="NOOK *"><set name="message">hold nook</set></li>
+<li value="* NOOK *"><set name="message">hold nook</set></li>
+
+<li value="NOOKS"><set name="message">hold nook</set></li>
+<li value="* NOOKS"><set name="message">hold nook</set></li>
+<li value="NOOKS *"><set name="message">hold nook</set></li>
+<li value="* NOOKS *"><set name="message">hold nook</set></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</condition>
+<think><set name="topic"></set></think>
+</think>
+
+<condition name="message">
+
+<li value="stop"><set name="topic"></set>O.K. I'll stop.</li>
+
+<li value="no match">I'm not sure what you're asking. Please call the library at 440.255.8811 during regular business hours for assistance.</li>
+
+<li value="placeholds"><srai>PLACEHLDS</srai></li>
+<li value="request button"><srai>REQBUT</srai></li>
+<li value="delivery time"><srai>READY2PU</srai></li>
+<li value="too long"><srai>HOLDWAIT</srai></li>
+<li value="waiting list"><srai>WAITLST</srai></li>
+<li value="cancel in transit"><srai>CNCLINTRANS</srai></li>
+<li value="not filled by date"><srai>NOTFBY</srai></li>
+<li value="hold limit"><srai>TOTHOLDS</srai></li>
+<li value="hold for me"><srai>MPLACEH</srai></li>
+<li value="branch"><srai>HLDBRANCHITEMS</srai></li>
+<li value="too hot"><srai>HLD2HOTS</srai></li>
+<li value="ipad holds"><srai>HLDIPDS</srai></li>
+<li value="hold status"><srai>HLDSTATUS</srai></li>
+<li value="transit time"><srai>TRANSTIME</srai></li>
+<li value="place hold"><srai>PHSTATUS</srai></li>
+<li value="cancel hold"><srai>XHOLDS</srai></li>
+<li value="hold status"><srai>FNDHOLDS</srai></li>
+<li value="change pick up location"><srai>CHPULOC</srai></li>
+<li value="media holds2"><srai>MEDIAHLDS2</srai></li>
+<li value="search ohio holds"><srai>SOHLDS</srai></li>
+<li value="pick up time"><srai>PUTIME</srai></li>
+<li value="freezing holds"><srai>FRZHLDS</srai></li>
+<li value="thaw holds"><srai>THAWHLDS</srai></li>
+<li value="where are the holds"><srai>HLDLOCS</srai></li>
+<li value="max holds"><srai>HLDTOTS</srai></li>
+<li value="placed ok"><srai>HLDSUCCESS</srai></li>
+<li value="on holdshelf status"><srai>HLDSHLFSTATUS</srai></li>
+<li value="hold expiration date"><srai>HLDEXPDATE</srai></li>
+<li value="hold fail"><srai>HLDFAIL</srai></li>
+<li value="vacation"><srai>VACHLDS</srai></li>
+<li value="mhs"><srai>MHSPU</srai></li>
+<li value="notices"><srai>HLDNOTS</srai></li>
+<li value="future releases"><srai>PREREL</srai></li>
+<li value="laptop holds"><srai>LPTPHLDS</srai></li>
+<li value="hold item out"><srai>HLDCO</srai></li>
+<li value="x of y"><srai>XOFYHLDS</srai></li>
+<li value="tcard ill"><srai>TCRDHLDS</srai></li>
+<li value="maxholds"><srai>MAXHLDS</srai></li>
+<li value="purchreq"><srai>PRCHREQ</srai></li>
+<li value="verify holds"><srai>HLDSUCCESS</srai></li>
+<li value="cannot add holds"><srai>XADDTLHLDS</srai></li>
+<li value="item at another location"><srai>OTHERLOC</srai></li>
+<li value="item at another library"><srai>ILLHLDS</srai></li>
+<li value="computer sign up"><srai>COMPSU</srai></li>
+<li value="hold kindle"><srai>HLDKINDLES</srai></li>
+<li value="hold nook"><srai>HLDNOOKS</srai></li>
+
+</condition>
+</template>
+</category>
+</topic>
+
+
+</aiml>

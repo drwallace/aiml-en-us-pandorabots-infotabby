@@ -1,0 +1,2010 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<!--Copyright 2011 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+
+<!--MEDIA-->
+
+<category>
+<pattern>* MEDIA</pattern>
+<template><srai>MEDIA</srai></template>
+</category>
+
+<category>
+<pattern>* MEDIA *</pattern>
+<template><srai>MEDIA</srai></template>
+</category>
+
+<category>
+<pattern>MEDIA *</pattern>
+<template><srai>MEDIA</srai></template>
+</category>
+
+<!--audiobooks-->
+
+<category>
+  <pattern>AUDIOBOOKS</pattern>
+  <template><srai>AUDBKS</srai> 
+ </template>
+</category>
+
+<category>
+  <pattern>* AUDIOBOOKS </pattern>
+  <template><srai>AUDBKS</srai> 
+ </template>
+</category>
+
+<category>
+  <pattern>* AUDIOBOOKS *</pattern>
+  <template><srai>AUDBKS</srai> 
+ </template>
+</category>
+
+<category>
+  <pattern>AUDIOBOOKS *</pattern>
+  <template><srai>AUDBKS</srai> 
+ </template>
+</category>
+
+<category>
+  <pattern>AUDIOBOOK</pattern>
+  <template><srai>AUDBKS</srai> 
+ </template>
+</category>
+
+<category>
+  <pattern>* AUDIOBOOK</pattern>
+  <template><srai>AUDBKS</srai> 
+ </template>
+</category>
+
+<category>
+  <pattern>* AUDIOBOOK *</pattern>
+  <template><srai>AUDBKS</srai> 
+ </template>
+</category>
+
+<category>
+  <pattern>AUDIOBOOK *</pattern>
+  <template><srai>AUDBKS</srai> 
+ </template>
+</category>
+
+<category>
+  <pattern>* AUDIO BOOKS</pattern>
+  <template><srai>AUDBKS</srai> 
+ </template>
+</category>
+
+<category>
+  <pattern>* AUDIO BOOKS *</pattern>
+  <template><srai>AUDBKS</srai> 
+ </template>
+</category>
+
+<category>
+  <pattern>AUDIO BOOKS *</pattern>
+  <template><srai>AUDBKS</srai> 
+ </template>
+</category>
+
+<category>
+  <pattern>AUDIO BOOK</pattern>
+  <template><srai>AUDBKS</srai> 
+ </template>
+</category>
+
+<category>
+  <pattern>* AUDIO BOOK</pattern>
+  <template><srai>AUDBKS</srai> 
+ </template>
+</category>
+
+<category>
+  <pattern>* AUDIO BOOK *</pattern>
+  <template><srai>AUDBKS</srai> 
+ </template>
+</category>
+
+<category>
+  <pattern>AUDIO BOOK *</pattern>
+  <template><srai>AUDBKS</srai> 
+ </template>
+</category>
+
+<category>
+  <pattern>BOOKS ON CD</pattern>
+  <template><srai>AUDBKS</srai> 
+ </template>
+</category>
+
+<category>
+  <pattern>* BOOKS ON CD</pattern>
+  <template><srai>AUDBKS</srai> 
+ </template>
+</category>
+
+<category>
+  <pattern>* BOOKS ON CD *</pattern>
+  <template><srai>AUDBKS</srai> 
+ </template>
+</category>
+
+<category>
+  <pattern>BOOKS ON CD *</pattern>
+  <template><srai>AUDBKS</srai> 
+ </template>
+</category>
+
+<category>
+  <pattern>BOOK ON CD</pattern>
+  <template><srai>AUDBKS</srai> 
+ </template>
+</category>
+
+<category>
+  <pattern>* BOOK ON CD</pattern>
+  <template><srai>AUDBKS</srai> 
+ </template>
+</category>
+
+<category>
+  <pattern>* BOOK ON CD *</pattern>
+  <template><srai>AUDBKS</srai> 
+ </template>
+</category>
+
+<category>
+  <pattern>BOOK ON CD *</pattern>
+  <template><srai>AUDBKS</srai> 
+ </template>
+</category>
+
+<category>
+  <pattern>SPOKEN RECORDS</pattern>
+  <template><srai>AUDBKS</srai> 
+ </template>
+</category>
+
+<category>
+  <pattern>* SPOKEN RECORDS</pattern>
+  <template><srai>AUDBKS</srai> 
+ </template>
+</category>
+
+<category>
+  <pattern>* SPOKEN RECORDS *</pattern>
+  <template><srai>AUDBKS</srai> 
+ </template>
+</category>
+
+<category>
+  <pattern>SPOKEN RECORDS *</pattern>
+  <template><srai>AUDBKS</srai> 
+ </template>
+</category>
+
+<category>
+  <pattern>SPOKEN RECORD</pattern>
+  <template><srai>AUDBKS</srai> 
+ </template>
+</category>
+
+<category>
+  <pattern>* SPOKEN RECORD</pattern>
+  <template><srai>AUDBKS</srai> 
+ </template>
+</category>
+
+<category>
+  <pattern>* SPOKEN RECORD *</pattern>
+  <template><srai>AUDBKS</srai> 
+ </template>
+</category>
+
+<category>
+  <pattern>SPOKEN RECORD *</pattern>
+  <template><srai>AUDBKS</srai> 
+ </template>
+</category>
+
+<!--book kits-->
+
+<category>
+  <pattern>KITS</pattern>
+<template><srai>BKDISCKTS</srai>
+ </template>
+</category>
+
+<category>
+  <pattern>* KITS</pattern>
+<template><srai>BKDISCKTS</srai>
+ </template>
+</category>
+
+<category>
+  <pattern>KIT</pattern>
+<template><srai>BKDISCKTS</srai>
+ </template>
+</category>
+
+<category>
+  <pattern>* KIT</pattern>
+<template><srai>BKDISCKTS</srai>
+ </template>
+</category>
+
+<category>
+  <pattern>BOOK CLUB BOOKS</pattern>
+<template><srai>BKDISCKTS</srai>
+ </template>
+</category>
+
+<category>
+  <pattern>* BOOK CLUB BOOKS</pattern>
+<template><srai>BKDISCKTS</srai>
+ </template>
+</category>
+
+<category>
+  <pattern>BOOK CLUB BOOKS *</pattern>
+<template><srai>BKDISCKTS</srai>
+ </template>
+</category>
+
+<category>
+  <pattern>* BOOK CLUB BOOKS *</pattern>
+<template><srai>BKDISCKTS</srai>
+ </template>
+</category>
+
+<category>
+  <pattern>BOOKS IN A BAG</pattern>
+<template><srai>BKDISCKTS</srai>
+ </template>
+</category>
+
+<category>
+  <pattern>* BOOKS IN A BAG</pattern>
+<template><srai>BKDISCKTS</srai>
+ </template>
+</category>
+
+<category>
+  <pattern>BOOKS IN A BAG *</pattern>
+<template><srai>BKDISCKTS</srai>
+ </template>
+</category>
+
+<category>
+  <pattern>* BOOKS IN A BAG *</pattern>
+<template><srai>BKDISCKTS</srai>
+ </template>
+</category>
+
+<category>
+  <pattern>BOOKS IN BAGS</pattern>
+<template><srai>BKDISCKTS</srai>
+ </template>
+</category>
+
+<category>
+  <pattern>* BOOKS IN BAGS</pattern>
+<template><srai>BKDISCKTS</srai>
+ </template>
+</category>
+
+<category>
+  <pattern>BOOKS IN BAGS *</pattern>
+<template><srai>BKDISCKTS</srai>
+ </template>
+</category>
+
+<category>
+  <pattern>* BOOKS IN BAGS *</pattern>
+<template><srai>BKDISCKTS</srai>
+ </template>
+</category>
+
+<category>
+  <pattern>BOOK CLUB BAGS</pattern>
+<template><srai>BKDISCKTS</srai>
+ </template>
+</category>
+
+<category>
+  <pattern>* BOOK CLUB BAGS</pattern>
+<template><srai>BKDISCKTS</srai>
+ </template>
+</category>
+
+<category>
+  <pattern>BOOK CLUB BAGS *</pattern>
+<template><srai>BKDISCKTS</srai>
+ </template>
+</category>
+
+<category>
+  <pattern>* BOOK CLUB BAGS *</pattern>
+<template><srai>BKDISCKTS</srai>
+ </template>
+</category>
+
+<category>
+  <pattern>* MULTIPLE COPIES *</pattern>
+<template><srai>BKDISCKTS</srai>
+ </template>
+</category>
+
+<!--blu-ray-->
+
+<category>
+  <pattern>BLU RAY</pattern>
+   <template><srai>BLRY</srai></template>
+</category>
+
+<category>
+  <pattern>* BLU RAY</pattern>
+  <template><srai>BLRY</srai></template>
+</category>
+
+<category>
+  <pattern>* BLU RAY *</pattern>
+  <template><srai>BLRY</srai></template>
+</category>
+
+<category>
+  <pattern>BLU RAY *</pattern>
+  <template><srai>BLRY</srai></template>
+</category>
+
+<category>
+  <pattern>BLU RAYS</pattern>
+  <template><srai>BLRY</srai></template>
+</category>
+
+<category>
+  <pattern>* BLU RAYS</pattern>
+  <template><srai>BLRY</srai></template>
+</category>
+
+<category>
+  <pattern>* BLU RAYS *</pattern>
+  <template><srai>BLRY</srai></template>
+</category>
+
+<category>
+  <pattern>BLU RAYS *</pattern>
+  <template><srai>BLRY</srai></template>
+</category>
+
+
+<category>
+  <pattern>BLURAY</pattern>
+  <template><srai>BLRY</srai></template>
+</category>
+
+<category>
+  <pattern>* BLURAY</pattern>
+  <template><srai>BLRY</srai></template>
+</category>
+
+<category>
+  <pattern>* BLURAY *</pattern>
+  <template><srai>BLRY</srai></template>
+</category>
+
+<category>
+  <pattern>BLURAY *</pattern>
+  <template><srai>BLRY</srai></template>
+</category>
+
+<category>
+  <pattern>BLUERAY</pattern>
+  <template><srai>BLRY</srai></template>
+</category>
+
+<category>
+  <pattern>* BLUERAY</pattern>
+  <template><srai>BLRY</srai></template>
+</category>
+
+<category>
+  <pattern>* BLUERAY *</pattern>
+  <template><srai>BLRY</srai></template>
+</category>
+
+<category>
+  <pattern>BLUERAY *</pattern>
+  <template><srai>BLRY</srai></template>
+</category>
+
+<category>
+  <pattern>BLURAYS</pattern>
+  <template><srai>BLRY</srai></template>
+</category>
+
+<category>
+  <pattern>* BLURAYS</pattern>
+  <template><srai>BLRY</srai></template>
+</category>
+
+<category>
+  <pattern>* BLURAYS *</pattern>
+  <template><srai>BLRY</srai></template>
+</category>
+
+<category>
+  <pattern>BLURAYS *</pattern>
+  <template><srai>BLRY</srai></template>
+</category>
+
+<category>
+  <pattern>BLUERAYS</pattern>
+  <template><srai>BLRY</srai></template>
+</category>
+
+<category>
+  <pattern>* BLUERAYS</pattern>
+  <template><srai>BLRY</srai></template>
+</category>
+
+<category>
+  <pattern>* BLUERAYS *</pattern>
+  <template><srai>BLRY</srai></template>
+</category>
+
+<category>
+  <pattern>BLUERAYS *</pattern>
+  <template><srai>BLRY</srai></template>
+</category>
+
+<category>
+  <pattern>BLUE RAY</pattern>
+  <template><srai>BLRY</srai></template>
+</category>
+
+<category>
+  <pattern>* BLUE RAY</pattern>
+  <template><srai>BLRY</srai></template>
+</category>
+
+<category>
+  <pattern>BLUE RAY *</pattern>
+  <template><srai>BLRY</srai></template>
+</category>
+
+<category>
+  <pattern>* BLUE RAY *</pattern>
+  <template><srai>BLRY</srai></template>
+</category>
+
+<category>
+  <pattern>CRISS CROSS</pattern>
+ <template><srai>HNSDIR</srai></template>
+</category>
+
+<category>
+  <pattern>* CRISS CROSS</pattern>
+  <template><srai>HNSDIR</srai></template>
+</category>
+
+<category>
+  <pattern>* CRISS CROSS *</pattern>
+  <template><srai>HNSDIR</srai></template>
+</category>
+
+<category>
+  <pattern>CRISS CROSS *</pattern>
+  <template><srai>HNSDIR</srai></template>
+</category>
+
+<category>
+  <pattern>HAINES DIRECTORY</pattern>
+  <template><srai>HNSDIR</srai></template>
+</category>
+
+<category>
+  <pattern>* HAINES DIRECTORY</pattern>
+  <template><srai>HNSDIR</srai></template>
+</category>
+
+<category>
+  <pattern>* HAINES DIRECTORY *</pattern>
+  <template><srai>HNSDIR</srai></template>
+</category>
+
+<category>
+  <pattern>HAINES DIRECTORY *</pattern>
+  <template><srai>HNSDIR</srai></template>
+</category>
+
+<category>
+  <pattern>HAINES DIRECTORIES</pattern>
+  <template><srai>HNSDIR</srai></template>
+</category>
+
+<category>
+  <pattern>* HAINES DIRECTORIES</pattern>
+  <template><srai>HNSDIR</srai></template>
+</category>
+
+<category>
+  <pattern>* HAINES DIRECTORIES *</pattern>
+  <template><srai>HNSDIR</srai></template></category>
+
+<category>
+  <pattern>HAINES DIRECTORIES *</pattern>
+  <template><srai>HNSDIR</srai></template>
+</category>
+
+<!--MAGAZINES-->
+
+<category>
+  <pattern>MAGAZINE</pattern>
+  <template><srai>MGZNS</srai></template>
+</category>
+
+<category>
+  <pattern>* MAGAZINE</pattern>
+  <template><srai>MGZNS</srai></template>
+</category>
+
+<category>
+  <pattern>MAGAZINE *</pattern>
+  <template><srai>MGZNS</srai></template>
+</category>
+
+<category>
+  <pattern>* MAGAZINE *</pattern>
+  <template><srai>MGZNS</srai></template>
+</category>
+
+<category>
+  <pattern>MAGAZINES</pattern>
+  <template><srai>MGZNS</srai></template>
+</category>
+
+<category>
+  <pattern>* MAGAZINES</pattern>
+  <template><srai>MGZNS</srai></template>
+</category>
+
+<category>
+  <pattern>MAGAZINES *</pattern>
+  <template><srai>MGZNS</srai></template>
+</category>
+
+<category>
+  <pattern>* MAGAZINES *</pattern>
+  <template><srai>MGZNS</srai></template>
+</category>
+
+<!--MICROFORMS-->
+
+<category>
+  <pattern>MICROFORM</pattern>
+  <template><srai>MCROFRM</srai></template>
+</category>
+
+<category>
+  <pattern>* MICROFORM</pattern>
+  <template><srai>MCROFRM</srai></template>
+</category>
+
+<category>
+  <pattern>* MICROFORM *</pattern>
+  <template><srai>MCROFRM</srai></template>
+</category>
+
+<category>
+  <pattern>MICROFORM *</pattern>
+  <template><srai>MCROFRM</srai></template>
+</category>
+
+<category>
+  <pattern>MICROFORMS</pattern>
+  <template><srai>MCROFRM</srai></template>
+</category>
+
+<category>
+  <pattern>* MICROFORMS</pattern>
+  <template><srai>MCROFRM</srai></template>
+</category>
+
+<category>
+  <pattern>* MICROFORMS *</pattern>
+  <template><srai>MCROFRM</srai></template>
+</category>
+
+<category>
+  <pattern>MICROFORMS *</pattern>
+  <template><srai>MCROFRM</srai></template>
+</category>
+
+<category>
+  <pattern>MICROFILM</pattern>
+  <template><srai>MCROFRM</srai></template>
+</category>
+
+<category>
+  <pattern>* MICROFILM</pattern>
+  <template><srai>MCROFRM</srai></template>
+</category>
+
+<category>
+  <pattern>* MICROFILM *</pattern>
+  <template><srai>MCROFRM</srai></template>
+</category>
+
+<category>
+  <pattern>MICROFILM *</pattern>
+  <template><srai>MCROFRM</srai></template>
+</category>
+
+<category>
+  <pattern>MICROFILMS</pattern>
+  <template><srai>MCROFRM</srai></template>
+</category>
+
+<category>
+  <pattern>* MICROFILMS</pattern>
+  <template><srai>MCROFRM</srai></template>
+</category>
+
+<category>
+  <pattern>* MICROFILMS *</pattern>
+  <template><srai>MCROFRM</srai></template>
+</category>
+
+<category>
+  <pattern>MICROFILMS *</pattern>
+  <template><srai>MCROFRM</srai></template>
+</category>
+
+<category>
+  <pattern>MICROFICHE</pattern>
+  <template><srai>MCROFRM</srai></template>
+</category>
+
+<category>
+  <pattern>* MICROFICHE</pattern>
+  <template><srai>MCROFRM</srai></template>
+</category>
+
+<category>
+  <pattern>* MICROFICHE *</pattern>
+  <template><srai>MCROFRM</srai></template>
+</category>
+
+<category>
+  <pattern>MICROFICHE *</pattern>
+  <template><srai>MCROFRM</srai></template>
+</category>
+
+<!--newspaper holdings-->
+
+<category>
+<pattern>NEWS HERALD</pattern>
+<template><srai>LCNH</srai></template>
+</category>
+
+<category>
+<pattern>* NEWS HERALD</pattern>
+<template><srai>LCNH</srai></template>
+</category>
+
+<category>
+<pattern>NEWS HERALD *</pattern>
+<template><srai>LCNH</srai></template>
+</category>
+
+<category>
+<pattern>* NEWS HERALD *</pattern>
+<template><srai>LCNH</srai></template>
+</category>
+
+<category>
+<pattern>LAKE COUNTY NEWS HERALD</pattern>
+<template><srai>LCNH</srai></template>
+</category>
+
+<category>
+<pattern>* LAKE COUNTY NEWS HERALD</pattern>
+<template><srai>LCNH</srai></template>
+</category>
+
+<category>
+<pattern>LAKE COUNTY NEWS HERALD *</pattern>
+<template><srai>LCNH</srai></template>
+</category>
+
+<category>
+<pattern>* LAKE COUNTY NEWS HERALD *</pattern>
+<template><srai>LCNH</srai></template>
+</category>
+
+<category>
+<pattern>NEWSHERALD</pattern>
+<template><srai>LCNH</srai></template>
+</category>
+
+<category>
+<pattern>* NEWSHERALD</pattern>
+<template><srai>LCNH</srai></template>
+</category>
+
+<category>
+<pattern>* NEWSHERALD *</pattern>
+<template><srai>LCNH</srai></template>
+</category>
+
+<category>
+  <pattern>NEWSPAPERS</pattern>
+  <template><srai>NWSPRS</srai></template>
+</category>
+
+<category>
+  <pattern>* NEWSPAPERS</pattern>
+  <template><srai>NWSPRS</srai></template>
+</category>
+
+<category>
+  <pattern>NEWSPAPERS *</pattern>
+  <template><srai>NWSPRS</srai></template>
+</category>
+
+<category>
+  <pattern>* NEWSPAPERS *</pattern>
+  <template><srai>NWSPRS</srai></template>
+</category>
+
+<category>
+  <pattern>NEWSPAPER</pattern>
+  <template><srai>NWSPRS</srai></template>
+</category>
+
+<category>
+  <pattern>* NEWSPAPER</pattern>
+  <template><srai>NWSPRS</srai></template>
+</category>
+
+<category>
+  <pattern>NEWSPAPER *</pattern>
+  <template><srai>NWSPRS</srai></template>
+</category>
+
+<category>
+  <pattern>* NEWSPAPER *</pattern>
+  <template><srai>NWSPRS</srai></template>
+</category>
+
+
+
+<category>
+  <pattern>LOCAL PAPERS</pattern>
+  <template><srai>NWSPRS</srai></template>
+</category>
+
+<category>
+  <pattern>* LOCAL PAPERS</pattern>
+  <template><srai>NWSPRS</srai></template>
+</category>
+
+<category>
+  <pattern>* LOCAL PAPERS *</pattern>
+  <template><srai>NWSPRS</srai></template>
+</category>
+
+<!--PLAYAWAY VIEW-->
+
+<category>
+<pattern>PLAYAWAY VIEW</pattern>
+<template><srai>PLWYVW</srai></template>
+</category>
+
+<category>
+<pattern>* PLAYAWAY VIEW</pattern>
+<template><srai>PLWYVW</srai></template>
+</category>
+
+<category>
+<pattern>PLAYAWAY VIEW *</pattern>
+<template><srai>PLWYVW</srai></template>
+</category>
+
+<category>
+<pattern>* PLAYAWAY VIEW *</pattern>
+<template><srai>PLWYVW</srai></template>
+</category>
+
+<category>
+<pattern>PLAYAWAY VIEWS</pattern>
+<template><srai>PLWYVW</srai></template>
+</category>
+
+<category>
+<pattern>* PLAYAWAY VIEWS</pattern>
+<template><srai>PLWYVW</srai></template>
+</category>
+
+<category>
+<pattern>PLAYAWAY VIEWS *</pattern>
+<template><srai>PLWYVW</srai></template>
+</category>
+
+<category>
+<pattern>* PLAYAWAY VIEWS *</pattern>
+<template><srai>PLWYVW</srai></template>
+</category>
+
+<category>
+<pattern>PLAYAWAY</pattern>
+<template><srai>PLWYVW</srai></template>
+</category>
+
+<category>
+<pattern>* PLAYAWAY</pattern>
+<template><srai>PLWYVW</srai></template>
+</category>
+
+<category>
+<pattern>PLAYAWAY *</pattern>
+<template><srai>PLWYVW</srai></template>
+</category>
+
+<category>
+<pattern>* PLAYAWAY *</pattern>
+<template><srai>PLWYVW</srai></template>
+</category>
+
+<category>
+<pattern>PLAYAWAYS</pattern>
+<template><srai>PLWYVW</srai></template>
+</category>
+
+<category>
+<pattern>* PLAYAWAYS</pattern>
+<template><srai>PLWYVW</srai></template>
+</category>
+
+<category>
+<pattern>PLAYAWAYS *</pattern>
+<template><srai>PLWYVW</srai></template>
+</category>
+
+<category>
+<pattern>* PLAYAWAYS *</pattern>
+<template><srai>PLWYVW</srai></template>
+</category>
+
+<!--PHONEBOOKS-->
+
+<category>
+  <pattern>PHONE BOOK</pattern>
+  <template><srai>PHNBKS</srai></template>
+</category>
+
+<category>
+  <pattern>* PHONE BOOK</pattern>
+  <template><srai>PHNBKS</srai></template>
+</category>
+
+<category>
+  <pattern>* PHONE BOOK *</pattern>
+  <template><srai>PHNBKS</srai></template>
+</category>
+
+<category>
+  <pattern>PHONE BOOK *</pattern>
+  <template><srai>PHNBKS</srai></template>
+</category>
+
+<category>
+  <pattern>PHONE BOOKS</pattern>
+  <template><srai>PHNBKS</srai></template>
+</category>
+
+<category>
+  <pattern>* PHONE BOOKS</pattern>
+  <template><srai>PHNBKS</srai></template>
+</category>
+
+<category>
+  <pattern>* PHONE BOOKS *</pattern>
+  <template><srai>PHNBKS</srai></template>
+</category>
+
+<category>
+  <pattern>PHONE BOOKS *</pattern>
+  <template><srai>PHNBKS</srai></template>
+</category>
+
+<category>
+  <pattern>REFERENCE BOOK</pattern>
+  <template><srai>REFBKS</srai></template>
+</category>
+
+<category>
+  <pattern>* REFERENCE BOOK</pattern>
+  <template><srai>REFBKS</srai></template>
+</category>
+
+<category>
+  <pattern>* REFERENCE BOOK *</pattern>
+  <template><srai>REFBKS</srai></template>
+</category>
+
+<category>
+  <pattern>REFERENCE BOOK *</pattern>
+  <template><srai>REFBKS</srai></template>
+</category>
+
+<category>
+  <pattern>REFERENCE BOOKS</pattern>
+  <template><srai>REFBKS</srai></template>
+</category>
+
+<category>
+  <pattern>* REFERENCE BOOKS</pattern>
+  <template><srai>REFBKS</srai></template>
+</category>
+
+<category>
+  <pattern>* REFERENCE BOOKS *</pattern>
+  <template><srai>REFBKS</srai></template>
+</category>
+
+<category>
+  <pattern>REFERENCE BOOKS *</pattern>
+  <template><srai>REFBKS</srai></template>
+</category>
+
+<!--software-->
+
+<category>
+<pattern>SOFTWARE</pattern>
+<template><srai>SFTWR</srai></template>
+</category>
+
+<category>
+<pattern> * SOFTWARE</pattern>
+<template><srai>SFTWR</srai></template>
+</category>
+
+<category>
+<pattern>SOFTWARE *</pattern>
+<template><srai>SFTWR</srai></template>
+</category>
+
+<category>
+<pattern> * SOFTWARE *</pattern>
+<template><srai>SFTWR</srai></template>
+</category>
+
+<category>
+  <pattern>* WII</pattern>
+  <template><srai>WII</srai></template>
+</category>
+
+<category>
+  <pattern>* WII GAME</pattern>
+  <template><srai>WII</srai></template>
+</category>
+
+<category>
+  <pattern>* WII GAMES</pattern>
+  <template><srai>WII</srai></template>
+</category>
+
+
+<category>
+  <pattern>WII GAME</pattern>
+  <template><srai>WII</srai></template>
+</category>
+
+<category>
+  <pattern>WII GAMES</pattern>
+  <template><srai>WII</srai></template>
+</category>
+
+<category>
+  <pattern>VIDEO GAMES</pattern>
+<template><srai>WII</srai></template>
+</category>
+
+<category>
+  <pattern>* VIDEO GAMES</pattern>
+<template><srai>WII</srai></template>
+</category>
+
+<category>
+  <pattern>* VIDEO GAMES *</pattern>
+<template><srai>WII</srai></template>
+</category>
+
+<category>
+  <pattern>VIDEO GAMES *</pattern>
+<template><srai>WII</srai></template>
+</category>
+
+<category>
+  <pattern>VIDEO GAME</pattern>
+<template><srai>WII</srai></template>
+</category>
+
+<category>
+  <pattern>* VIDEO GAME</pattern>
+<template><srai>WII</srai></template>
+</category>
+
+<category>
+  <pattern>* VIDEO GAME *</pattern>
+<template><srai>WII</srai></template>
+</category>
+
+<category>
+  <pattern>VIDEO GAME *</pattern>
+<template><srai>WII</srai></template>
+</category>
+
+<category>
+  <pattern>XBOX</pattern>
+ <template><srai>WII</srai></template>
+</category>
+
+<category>
+  <pattern>* XBOX</pattern>
+  <template><srai>WII</srai></template>
+</category>
+
+<category>
+  <pattern>* XBOX *</pattern>
+  <template><srai>WII</srai></template>
+</category>
+
+<category>
+  <pattern>XBOX *</pattern>
+ <template><srai>WII</srai></template>
+</category>
+
+<category>
+  <pattern>PLAY STATION</pattern>
+  <template><srai>WII</srai></template>
+</category>
+
+<category>
+  <pattern>* PLAY STATION</pattern>
+  <template><srai>WII</srai></template>
+</category>
+
+<category>
+  <pattern>* PLAY STATION *</pattern>
+ <template><srai>WII</srai></template>
+</category>
+
+<category>
+  <pattern>PLAY STATION *</pattern>
+  <template><srai>WII</srai></template>
+</category>
+
+<category>
+  <pattern>PS2</pattern>
+  <template><srai>WII</srai></template>
+</category>
+
+<category>
+  <pattern>* PS2</pattern>
+ <template><srai>WII</srai></template>
+</category>
+
+<category>
+  <pattern>* PS2 *</pattern>
+  <template><srai>WII</srai></template>
+</category>
+
+<category>
+  <pattern>PS2 *</pattern>
+ <template><srai>WII</srai></template>
+</category>
+
+<category>
+  <pattern>PS3</pattern>
+  <template><srai>WII</srai></template>
+</category>
+
+<category>
+  <pattern>* PS3</pattern>
+  <template><srai>WII</srai></template>
+</category>
+
+<category>
+  <pattern>* PS3 *</pattern>
+  <template><srai>WII</srai></template>
+</category>
+
+<category>
+  <pattern>PS3 *</pattern>
+  <template><srai>WII</srai></template>
+</category>
+
+<category>
+  <pattern>ROSETTA</pattern>
+  <template><srai>RSTTA</srai></template>
+</category>
+
+<category>
+  <pattern>* ROSETTA</pattern>
+  <template><srai>RSTTA</srai></template>
+</category>
+
+<category>
+  <pattern>* ROSETTA *</pattern>
+  <template><srai>RSTTA</srai></template>
+</category>
+
+<category>
+  <pattern>ROSETTA *</pattern>
+  <template><srai>RSTTA</srai></template>
+</category>
+
+
+<category>
+  <pattern>X BOX</pattern>
+  <template><srai>WII</srai></template>
+</category>
+
+<category>
+  <pattern>* X BOX</pattern>
+  <template><srai>WII</srai></template>
+</category>
+
+<category>
+  <pattern>* X BOX *</pattern>
+  <template><srai>WII</srai></template>
+</category>
+
+<category>
+  <pattern>X BOX *</pattern>
+ <template><srai>WII</srai></template>
+</category>
+
+<category>
+  <pattern>* VHS</pattern>
+  <template><srai>VHS</srai></template>
+</category>
+
+<category>
+  <pattern>* VHS *</pattern>
+  <template><srai>VHS</srai></template>
+</category>
+
+<category>
+  <pattern>VHS *</pattern>
+  <template><srai>VHS</srai></template>
+</category>
+
+<category>
+  <pattern>VIDEO TAPES</pattern>
+   <template><srai>VHS</srai></template>
+</category>
+
+<category>
+  <pattern>* VIDEO TAPES</pattern>
+   <template><srai>VHS</srai></template>
+</category>
+
+<category>
+  <pattern>* VIDEO TAPES *</pattern>
+    <template><srai>VHS</srai></template>
+</category>
+
+<category>
+  <pattern>VIDEO TAPES *</pattern>
+    <template><srai>VHS</srai></template>
+</category>
+
+<category>
+  <pattern>OLD VIDEOS</pattern>
+   <template><srai>VHS</srai></template>
+</category>
+
+<category>
+  <pattern>* OLD VIDEOS</pattern>
+   <template><srai>VHS</srai></template>
+</category>
+
+<category>
+  <pattern>* OLD VIDEOS *</pattern>
+    <template><srai>VHS</srai></template>
+</category>
+
+<category>
+  <pattern>OLD VIDEOS *</pattern>
+    <template><srai>VHS</srai></template>
+</category>
+
+<category>
+  <pattern>VCR</pattern>
+   <template><srai>VHS</srai></template>
+</category>
+
+<category>
+  <pattern>* VCR</pattern>
+    <template><srai>VHS</srai></template>
+</category>
+
+<category>
+  <pattern>* VCR *</pattern>
+    <template><srai>VHS</srai></template>
+</category>
+
+<category>
+  <pattern>VCR *</pattern>
+    <template><srai>VHS</srai></template>
+</category>
+
+<!--list of all dvds-->
+
+<category>
+<pattern>DVDS LIST</pattern>
+<template><srai>LSTDVDS</srai></template>
+</category>
+
+<category>
+<pattern>* DVDS LIST</pattern>
+<template><srai>LSTDVDS</srai></template>
+</category>
+
+<category>
+<pattern>DVDS * LIST</pattern>
+<template><srai>LSTDVDS</srai></template>
+</category>
+
+<category>
+<pattern>DVDS LIST *</pattern>
+<template><srai>LSTDVDS</srai></template>
+</category>
+
+<category>
+<pattern>* DVDS * LIST</pattern>
+<template><srai>LSTDVDS</srai></template>
+</category>
+
+<category>
+<pattern>DVDS * LIST *</pattern>
+<template><srai>LSTDVDS</srai></template>
+</category>
+
+<category>
+<pattern>* DVDS * LIST *</pattern>
+<template><srai>LSTDVDS</srai></template>
+</category>
+
+<category>
+<pattern>LIST DVD</pattern>
+<template><srai>LSTDVDS</srai></template>
+</category>
+
+<category>
+<pattern>* LIST DVD</pattern>
+<template><srai>LSTDVDS</srai></template>
+</category>
+
+<category>
+<pattern>LIST * DVD</pattern>
+<template><srai>LSTDVDS</srai></template>
+</category>
+
+<category>
+<pattern>LIST DVD *</pattern>
+<template><srai>LSTDVDS</srai></template>
+</category>
+
+<category>
+<pattern>* LIST * DVD</pattern>
+<template><srai>LSTDVDS</srai></template>
+</category>
+
+<category>
+<pattern>LIST * DVD *</pattern>
+<template><srai>LSTDVDS</srai></template>
+</category>
+
+<category>
+<pattern>* LIST DVD *</pattern>
+<template><srai>LSTDVDS</srai></template>
+</category>
+
+<category>
+<pattern>* LIST * DVD *</pattern>
+<template><srai>LSTDVDS</srai></template>
+</category>
+
+<category>
+<pattern>LIST DVDS</pattern>
+<template><srai>LSTDVDS</srai></template>
+</category>
+
+<category>
+<pattern>* LIST DVDS</pattern>
+<template><srai>LSTDVDS</srai></template>
+</category>
+
+<category>
+<pattern>LIST * DVDS</pattern>
+<template><srai>LSTDVDS</srai></template>
+</category>
+
+<category>
+<pattern>LIST DVDS *</pattern>
+<template><srai>LSTDVDS</srai></template>
+</category>
+
+<category>
+<pattern>* LIST * DVDS</pattern>
+<template><srai>LSTDVDS</srai></template>
+</category>
+
+<category>
+<pattern>LIST * DVDS *</pattern>
+<template><srai>LSTDVDS</srai></template>
+</category>
+
+<category>
+<pattern>* LIST DVDS *</pattern>
+<template><srai>LSTDVDS</srai></template>
+</category>
+
+<category>
+<pattern>* LIST * DVDS *</pattern>
+<template><srai>LSTDVDS</srai></template>
+</category>
+
+<!--unlock-->
+
+<category>
+<pattern>UNLOCK *</pattern>
+<template><srai>LCKDDVD</srai></template>
+</category>
+
+<category>
+<pattern>* UNLOCK *</pattern>
+<template><srai>LCKDDVD</srai></template>
+</category>
+
+<category>
+<pattern>UNLOCK</pattern>
+<template><srai>LCKDDVD</srai></template>
+</category>
+
+<category>
+<pattern>* LOCKED </pattern>
+<template><srai>LCKDDVD</srai></template>
+</category>
+
+<category>
+<pattern>* LOCKED *</pattern>
+<template><srai>LCKDDVD</srai></template>
+</category>
+
+<category>
+<pattern>LOCKED *</pattern>
+<template><srai>LCKDDVD</srai>
+</template>
+</category>
+
+<!--OPEN DVD CASES-->
+
+<category>
+<pattern>OPEN * DVD CASE</pattern>
+<template>
+<srai>LCKDDVD</srai>
+</template>
+</category>
+
+<category>
+<pattern>* OPEN * DVD CASE</pattern>
+<template>
+<srai>LCKDDVD</srai>
+</template>
+</category>
+
+<category>
+<pattern>* OPEN * DVD CASE *</pattern>
+<template>
+<srai>LCKDDVD</srai>
+</template>
+</category>
+
+<category>
+<pattern>OPEN DVD CASES</pattern>
+<template>
+<srai>LCKDDVD</srai>
+</template>
+</category>
+
+<category>
+<pattern>* OPEN DVD CASES</pattern>
+<template>
+<srai>LCKDDVD</srai>
+</template>
+</category>
+
+<category>
+<pattern>* OPEN DVD CASES *</pattern>
+<template>
+<srai>LCKDDVD</srai>
+</template>
+</category>
+
+<category>
+<pattern>DVD * LOCK *</pattern>
+<template>
+<srai>LCKDDVD</srai>
+</template>
+</category>
+
+<category>
+<pattern>*  DVD * LOCK *</pattern>
+<template>
+<srai>LCKDDVD</srai>
+</template>
+</category>
+
+<category>
+<pattern>*  DVDS * LOCK *</pattern>
+<template>
+<srai>LCKDDVD</srai>
+</template>
+</category>
+
+<category>
+<pattern>DVD * LOCKED</pattern>
+<template>
+<srai>LCKDDVD</srai>
+</template>
+</category>
+
+<category>
+<pattern>* DVD * LOCKED</pattern>
+<template>
+<srai>LCKDDVD</srai>
+</template>
+</category>
+
+
+<category>
+<pattern>*  DVD * LOCKED *</pattern>
+<template>
+<srai>LCKDDVD</srai>
+</template>
+</category>
+
+<category>
+<pattern>*  DVDS * LOCKED *</pattern>
+<template>
+<srai>LCKDDVD</srai>
+</template>
+</category>
+
+<!--where are the movies-->
+
+<category>
+<pattern>MOVIE SECTION</pattern>
+<template><srai>MEDRM</srai></template>
+</category>
+
+<category>
+<pattern>* MOVIE SECTION</pattern>
+<template><srai>MEDRM</srai></template>
+</category>
+
+<category>
+<pattern>MOVIE SHELVES</pattern>
+<template><srai>MEDRM</srai></template>
+</category>
+
+<category>
+<pattern>* MOVIE SHELVES</pattern>
+<template><srai>MEDRM</srai></template>
+</category>
+
+<category>
+<pattern>DVD SECTION</pattern>
+<template><srai>MEDRM</srai></template>
+</category>
+
+<category>
+<pattern>* DVD SECTION</pattern>
+<template><srai>MEDRM</srai></template>
+</category>
+
+<category>
+<pattern>DVD SHELVES</pattern>
+<template><srai>MEDRM</srai></template>
+</category>
+
+<category>
+<pattern>* DVD SHELVES</pattern>
+<template><srai>MEDRM</srai></template>
+</category>
+
+<category>
+<pattern>OLD MAGAZINE</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>* OLD MAGAZINE</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>OLD MAGAZINES</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>* OLD MAGAZINES</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>BACK ISSUE</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>* BACK ISSUE</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>BACK ISSUES</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>* BACK ISSUES</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>OLD ISSUE</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>* OLD ISSUE</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>OLD ISSUES</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>* OLD ISSUES</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>PAST ISSUE</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>* PAST ISSUE</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>PAST ISSUES</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>* PAST ISSUES</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>BACK ISSUE * MAGAZINE</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>* BACK ISSUE * MAGAZINE</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>BACK ISSUES * MAGAZINES</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>* BACK ISSUES * MAGAZINES</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>OLD ISSUE * MAGAZINE</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>* OLD ISSUE * MAGAZINE</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>OLD ISSUES * MAGAZINES</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>* OLD ISSUES * MAGAZINES</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+
+<category>
+<pattern>PAST ISSUE * MAGAZINE</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>* PAST ISSUE * MAGAZINE</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>PAST ISSUES * MAGAZINES</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>* PAST ISSUES * MAGAZINES</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>OLD COPY</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>* OLD COPY</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>OLD COPIES</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>* OLD COPIES</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>OLD COPIES * MAGAZINE</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>* OLD COPIES * MAGAZINE</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>OLD COPIES * MAGAZINES</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>* OLD COPIES * MAGAZINES</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>COPY * OLD MAGAZINE</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>* COPY * OLD MAGAZINE</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>COPIES * OLD MAGAZINES</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>* COPIES * OLD MAGAZINES</pattern>
+<template><srai>OLDMAGS</srai></template>
+</category>
+
+<category>
+<pattern>WHERE * DVDS</pattern>
+<template><srai>MEDRM</srai></template>
+</category>
+
+<!--TEXTBOOKS-->
+
+<category>
+<pattern>TEXTBOOK</pattern>
+<template><srai>TXTBKS</srai></template>
+</category>
+
+<category>
+<pattern>* TEXTBOOK</pattern>
+<template><srai>TXTBKS</srai></template>
+</category>
+
+<category>
+<pattern>TEXTBOOK *</pattern>
+<template><srai>TXTBKS</srai></template>
+</category>
+
+<category>
+<pattern>* TEXTBOOK *</pattern>
+<template><srai>TXTBKS</srai></template>
+</category>
+
+
+<category>
+<pattern>TEXTBOOKS</pattern>
+<template><srai>TXTBKS</srai></template>
+</category>
+
+<category>
+<pattern>* TEXTBOOKS</pattern>
+<template><srai>TXTBKS</srai></template>
+</category>
+
+<category>
+<pattern>TEXTBOOKS *</pattern>
+<template><srai>TXTBKS</srai></template>
+</category>
+
+<category>
+<pattern>* TEXTBOOKS *</pattern>
+<template><srai>TXTBKS</srai></template>
+</category>
+
+<!--YEARBOOKS-->
+
+<category>
+<pattern>YEARBOOK</pattern>
+<template><srai>YRBKS</srai>
+</template>
+</category>
+
+<category>
+<pattern>* YEARBOOK</pattern>
+<template><srai>YRBKS</srai></template>
+</category>
+
+<category>
+<pattern>* YEARBOOK *</pattern>
+<template><srai>YRBKS</srai></template>
+</category>
+
+<category>
+<pattern>YEARBOOK *</pattern>
+<template><srai>YRBKS</srai></template>
+</category>
+
+<category>
+<pattern>YEARBOOKS</pattern>
+<template><srai>YRBKS</srai></template>
+</category>
+
+<category>
+<pattern>* YEARBOOKS</pattern>
+<template><srai>YRBKS</srai></template>
+</category>
+
+<category>
+<pattern>* YEARBOOKS *</pattern>
+<template><srai>YRBKS</srai></template>
+</category>
+
+<category>
+<pattern>YEARBOOKS *</pattern>
+<template><srai>YRBKS</srai></template>
+</category>
+
+<category>
+<pattern>CLASS BOOK</pattern>
+<template><srai>YRBKS</srai></template>
+</category>
+
+<category>
+<pattern>* CLASS BOOK</pattern>
+<template><srai>YRBKS</srai></template>
+</category>
+
+<category>
+<pattern>* CLASS BOOK *</pattern>
+<template><srai>YRBKS</srai></template>
+</category>
+
+<category>
+<pattern>CLASS BOOK *</pattern>
+<template><srai>YRBKS</srai></template>
+</category>
+
+<category>
+<pattern>CLASS BOOKS</pattern>
+<template><srai>YRBKS</srai></template>
+</category>
+
+<category>
+<pattern>* CLASS BOOKS</pattern>
+<template><srai>YRBKS</srai></template>
+</category>
+
+<category>
+<pattern>* CLASS BOOKS *</pattern>
+<template><srai>YRBKS</srai></template>
+</category>
+
+<category>
+<pattern>CLASS BOOKS *</pattern>
+<template><srai>YRBKS</srai></template>
+</category>
+
+<category>
+<pattern>VIRTUAL ITEM</pattern>
+<template><srai>VIRTITEMS</srai></template>
+</category>
+
+<category>
+<pattern>* VIRTUAL ITEM</pattern>
+<template><srai>VIRTITEMS</srai></template>
+</category>
+
+<category>
+<pattern>VIRTUAL ITEM *</pattern>
+<template><srai>VIRTITEMS</srai></template>
+</category>
+
+<category>
+<pattern>* VIRTUAL ITEM *</pattern>
+<template><srai>VIRTITEMS</srai></template>
+</category>
+
+<category>
+<pattern>VIRTUAL ITEMS</pattern>
+<template><srai>VIRTITEMS</srai></template>
+</category>
+
+<category>
+<pattern>* VIRTUAL ITEMS</pattern>
+<template><srai>VIRTITEMS</srai></template>
+</category>
+
+<category>
+<pattern>VIRTUAL ITEMS *</pattern>
+<template><srai>VIRTITEMS</srai></template>
+</category>
+
+<category>
+<pattern>* VIRTUAL ITEMS *</pattern>
+<template><srai>VIRTITEMS</srai></template>
+</category>
+
+<!-- FIC VS NONFIC DVD-->
+
+<category>
+<pattern>FICTION DVD</pattern>
+<template><srai>FICDVD</srai></template>
+</category>
+
+<category>
+<pattern>FICTION DVDS</pattern>
+<template><srai>FICDVD</srai></template>
+</category>
+
+<category>
+<pattern>* FICTION DVD</pattern>
+<template><srai>FICDVD</srai></template>
+</category>
+
+<category>
+<pattern>* FICTION DVDS</pattern>
+<template><srai>FICDVD</srai></template>
+</category>
+
+<category>
+<pattern>* FICTION * DVD</pattern>
+<template><srai>FICDVD</srai></template>
+</category>
+
+<category>
+<pattern>* FICTION * DVDS</pattern>
+<template><srai>FICDVD</srai></template>
+</category>
+
+<category>
+<pattern>NONFICTION DVD</pattern>
+<template><srai>FICDVD</srai></template>
+</category>
+
+<category>
+<pattern>NONFICTION DVDS</pattern>
+<template><srai>FICDVD</srai></template>
+</category>
+
+<category>
+<pattern>* NONFICTION DVD</pattern>
+<template><srai>FICDVD</srai></template>
+</category>
+
+<category>
+<pattern>* NONFICTION DVDS</pattern>
+<template><srai>FICDVD</srai></template>
+</category>
+
+<category>
+<pattern>* NONFICTION * DVD</pattern>
+<template><srai>FICDVD</srai></template>
+</category>
+
+<category>
+<pattern>* NONFICTION * DVDS</pattern>
+<template><srai>FICDVD</srai></template>
+</category>
+
+<category>
+<pattern>NON FICTION DVD</pattern>
+<template><srai>FICDVD</srai></template>
+</category>
+
+<category>
+<pattern>NON FICTION DVDS</pattern>
+<template><srai>FICDVD</srai></template>
+</category>
+
+<category>
+<pattern>* NON FICTION DVD</pattern>
+<template><srai>FICDVD</srai></template>
+</category>
+
+<category>
+<pattern>* NON FICTION DVDS</pattern>
+<template><srai>FICDVD</srai></template>
+</category>
+
+<category>
+<pattern>* NON FICTION * DVD</pattern>
+<template><srai>FICDVD</srai></template>
+</category>
+
+<category>
+<pattern>* NON FICTION * DVDS</pattern>
+<template><srai>FICDVD</srai></template>
+</category>
+
+</aiml>

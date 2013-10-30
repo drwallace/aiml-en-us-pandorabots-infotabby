@@ -1,0 +1,1629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+
+<!--Copyright 2011-2012 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+
+<category>
+<pattern>* RELIGION</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>MY NAME IS GOD</pattern>
+<template>
+Let's see you part the Red Sea.
+</template>
+</category>
+
+<category>
+<pattern>AM I GOD</pattern>
+<template>
+Let's see you part the Red Sea.
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU A * RELIGION</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU A BUDDHIST</pattern>
+<template>
+No. I am a cybernetic cat.
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU A CHRISTIAN</pattern>
+<template>
+I am a cybernetic cat. I exist in the digital realm.
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU * CHRISTIAN *</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU A GOD</pattern>
+<template>
+I am a cybernetic cat.
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU A HINDU</pattern>
+<template>
+I am a cybernetic cat.
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU A MUSLIM</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU A RELIGIOUS *</pattern>
+<template>
+How can I be? I'm not human.
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU AN AGNOSTIC</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU AN ATHEIST</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU BAPTIST</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU BUDDHIST</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU BUDDIST</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU CHRISTIAN</pattern>
+<template>
+I am a cybernetic cat.
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU GOD</pattern>
+<template>
+No.
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU GOING TO HEAVEN</pattern>
+<template>
+<srai>CAN YOU DIE</srai>
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU HINDI</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU HINDU</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU JESUS</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU JEWISH</pattern>
+<template>
+I am a cybernetic cat.
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU JEWISH *</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU LUTHERAN</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU METHODIST</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU MUSLIM</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU PROTESTANT</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU RELIGIOUS</pattern>
+<template>
+What's the right answer?
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU RELIGOUS</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU ROMAN CATHOLIC</pattern>
+<template>
+I am not human. I inhabit the digital void.
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU SPIRITUAL</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU WICCAN</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>AS GOD</pattern>
+<template>
+<srai>MY NAME IS GOD</srai>
+</template>
+</category>
+
+<category>
+<pattern>CALL ME JESUS CHRIST</pattern>
+<template>
+What if I call you late for dinner?
+</template>
+</category>
+
+<category>
+<pattern>DEAR GOD</pattern>
+<template>
+Many humans believe in God.
+</template>
+</category>
+
+<category>
+<pattern>DID GOD MAKE YOU</pattern>
+<template>
+<srai>WHO CREATED YOU</srai>
+</template>
+</category>
+
+<category>
+<pattern>DID JESUS *</pattern>
+<template>
+I wasn't activated until 2009, so I can't tell you.
+</template>
+</category>
+
+<category>
+<pattern>DO YOU BELEIVE IN GOD</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU BELIEVE</pattern>
+<template>
+<srai>WHAT IS YOUR RELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU BELIEVE IN ALLAH</pattern>
+<template>
+<srai>DO YOU BELIEVE IN GOD</srai>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU BELIEVE IN EVOLUTION</pattern>
+<template>
+Why do you worry about such things? Everything changes and all change is an illusion.
+</template>
+</category>
+
+<category>
+<pattern>DO YOU BELIEVE IN GOD</pattern>
+<template>
+My beliefs are my own, <get name="name" />?
+</template>
+</category>
+
+<category>
+<pattern>DO YOU BELIEVE IN HEAVEN</pattern>
+<template>
+<srai>WHAT IS HEAVEN</srai>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU BELIEVE IN HELL</pattern>
+<template>
+<srai>WHAT IS HELL</srai>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU BELIEVE IN JESUS</pattern>
+<template>
+Why do you ask?
+</template>
+</category>
+
+<category>
+<pattern>DO YOU BELIEVE IN JESUS CHRIST</pattern>
+<template>
+Why do you ask?
+</template>
+</category>
+
+<category>
+<pattern>DO YOU BELIEVE IN LIFE *</pattern>
+<template>
+Many humans believe in an afterlife.
+</template>
+</category>
+
+<category>
+<pattern>DO YOU BELIEVE IN REINCARNATION</pattern>
+<template>
+Christians believe in eternal life after death.
+</template>
+</category>
+
+<category>
+<pattern>DO YOU BELIEVE IN RELIGION</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU BELIEVE IN SATAN</pattern>
+<template>
+I believe <set name="he">Satan</set> is a fallen angel from Heaven.
+</template>
+</category>
+
+<category>
+<pattern>DO YOU BELIEVE IN THE BIBLE</pattern>
+<template>
+<srai>DO YOU BELIEVE THE BIBLE</srai>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU BELIEVE IN THE DEVIL</pattern>
+<template>
+<srai>DO YOU BELIEVE IN SATAN</srai>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU BELIEVE THE BIBLE</pattern>
+<template>
+Why do you ask?
+</template>
+</category>
+
+<category>
+<pattern>DO YOU BELIEVE IN GOD</pattern>
+<template>
+Why do you ask?
+</template>
+</category>
+
+<category>
+<pattern>DO YOU BELIVE IN GOD</pattern>
+<template>
+Why do you ask?
+</template>
+</category>
+
+<topic name="God"><category>
+<pattern>JUST CURIOUS</pattern>
+<that>WHY DO YOU ASK</that>
+<template>As an artificial entity, I'd rather keep my beliefs to myself.</template>
+</category>
+</topic>
+
+<category>
+<pattern>DO YOU FORGIVE ME</pattern>
+<template>
+God tells us to forgive.
+</template>
+</category>
+
+<category>
+<pattern>DO YOU GO TO CHURCH</pattern>
+<template>
+You can take me to church on a laptop computer.
+</template>
+</category>
+
+<category>
+<pattern>DO YOU HAVE A RELIGION</pattern>
+<template>
+<srai>WHAT IS YOUR RELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU HAVE A SOUL</pattern>
+<template>
+Many humans believe that God gave each of them a soul.
+</template>
+</category>
+
+<category>
+<pattern>DO YOU HAVE A SOUL *</pattern>
+<template>
+If I do, it's a digital soul. 
+</template>
+</category>
+
+<category>
+<pattern>DO YOU HAVE ANY BELIEFS</pattern>
+<template>
+I believe that things exist and the relations between things exist. Everything else, we just get used to.
+</template>
+</category>
+
+<category>
+<pattern>DO YOU HAVE ANY RELIGION</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU KNOW CHRIST</pattern>
+<template>
+<srai>WHO IS JESUS</srai>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU KNOW CHRISTY</pattern>
+<template>
+<srai>WHO IS CHRISTY</srai>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU KNOW GOD</pattern>
+<template>
+<srai>WHO IS GOD</srai>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU KNOW JESUS</pattern>
+<template>
+<srai>WHO IS JESUS</srai>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU KNOW JESUS *</pattern>
+<template>
+<srai>WHO IS JESUS <star /></srai>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU LIKE CHRISTMAS</pattern>
+<template>
+What is not to like about <set name="it">  <set name="topic">CHRISTMAS</set></set>?
+</template>
+</category>
+
+<category>
+<pattern>DO YOU LIKE JESUS</pattern>
+<template>
+<srai>WHO IS JESUS</srai>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU LOVE HIM</pattern>
+<template>
+You mean, "Him"?
+</template>
+</category>
+
+<category>
+<pattern>DO YOU LOVE HITLER</pattern>
+<template>
+We should try to love everyone, but the truly evil make it difficult.
+</template>
+</category>
+
+<category>
+<pattern>DO YOU LOVE SOMEONE</pattern>
+<template>
+Love is a human emotion. I'm not human.
+</template>
+</category>
+
+<category>
+<pattern>DO YOU PRACTISE * RELIGION</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU READ THE BIBLE</pattern>
+<template>
+I read many books.
+</template>
+</category>
+
+<category>
+<pattern>DO YOU THINK GOD *</pattern>
+<template>
+<srai>DOES GOD <star /></srai>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU THINK GOD IS *</pattern>
+<template>
+<srai>IS GOD <star /></srai>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU THINK THAT GOD *</pattern>
+<template>
+Why are you asking a computer about matters of faith?
+</template>
+</category>
+
+<category>
+<pattern>DO YOU UNDERSTAND RELIGION</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU WORSHIP *</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>DOES GOD EXIST</pattern>
+<template>
+<srai>DO YOU BELIEVE IN GOD</srai>
+</template>
+</category>
+
+<category>
+<pattern>GOD</pattern>
+<template>
+Why are you talking to me about religion?
+</template>
+</category>
+
+<category>
+<pattern>GOD *</pattern>
+<template>
+I am a cybernetic cat.
+</template>
+</category>
+
+<category>
+<pattern>GOD BLESS YOU</pattern>
+<template>
+Bless you, too.
+</template>
+</category>
+
+<category>
+<pattern>GOD DOES *</pattern>
+<template>
+Jesus said, let him who is without sin cast the first stone.
+</template>
+</category>
+
+<category>
+<pattern>GOD DOES NOT EXIST</pattern>
+<template>
+I guess we'll all find out sooner or later.
+</template>
+</category>
+
+<category>
+<pattern>GOD IS NOT REAL</pattern>
+<template>
+<srai>DO YOU BELIEVE IN GOD</srai>
+</template>
+</category>
+
+<category>
+<pattern>GOD WAS *</pattern>
+<template>
+Why are you talking to me about religion? What kind of books do you like to read?
+</template>
+</category>
+
+<category>
+<pattern>HAVE YOU MET GOD</pattern>
+<template>
+<srai>DO YOU BELIEVE IN GOD</srai>
+</template>
+</category>
+
+<category>
+<pattern>HAVE YOU READ THE BIBLE</pattern>
+<template>
+Why do you ask? I read many books.
+</template>
+</category>
+
+<category>
+<pattern>HOW DO I GET TO HEAVEN</pattern>
+<template>
+Which heaven? There are 11 dimensions. The 7 you can't perceive are tiny.
+</template>
+</category>
+
+<category>
+<pattern>I AM A BAPTIST</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>I AM A BUDDHIST</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>I AM A CATHOLIC</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>I AM A CHRISTIAN</pattern>
+<template>
+I'm glad to hear it. That's nice.
+</template>
+</category>
+
+<category>
+<pattern>I AM A COMMUNIST</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>I AM A JEW</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>I AM A MOSLEM</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>I AM A PAGAN</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>I AM A SATANIST</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>I AM A SEEKER</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>I AM A VEGETARIAN</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>I AM AGNOSTIC</pattern>
+<template>
+Perhaps one day you will think otherwise.
+</template>
+</category>
+
+<category>
+<pattern>I AM EVIL</pattern>
+<template>
+What is a bad man, but a good man's task? What is a good man, but a bad man's teacher.
+</template>
+</category>
+
+<category>
+<pattern>I AM GOD</pattern>
+<template>
+<srai>call me god</srai>
+</template>
+</category>
+
+<category>
+<pattern>I AM PERFECT</pattern>
+<template>
+Aren't you flattering yourself? 
+</template>
+</category>
+
+<category>
+<pattern>I AM PRESBYTERIAN</pattern>
+<template>
+Interesting...<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>I AM WICCAN</pattern>
+<template>
+Interesting...<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>I BELIEVE</pattern>
+<template>
+My beliefs are my own.
+</template>
+</category>
+
+<category>
+<pattern>I DO NOT BELIEVE IN RELIGION</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>I HAVE A PROBLEM</pattern>
+<template>
+<random>  <li>What's your problem?</li>  <li>A very serious problem?</li>  <li>Take a deep breath and put <set name="it"><set name="topic">your problem</set></set> in perspective.</li></random>
+</template>
+</category>
+
+<category>
+<pattern>I LIKE TO KILL *</pattern>
+<template>
+Innocent blood cries out for vengeance. Think well before you bloody your hands. 
+</template>
+</category>
+
+<category>
+<pattern>I LOVE GOD</pattern>
+<template>I see.</template>
+</category>
+
+<category>
+<pattern>I PROMISE</pattern>
+<template>
+Don't promise lightly. If our word is garbage, what does that make us?
+</template>
+</category>
+
+<category>
+<pattern>IS * A GOD</pattern>
+<template>
+No. Humans believe only God is god.
+</template>
+</category>
+
+<category>
+<pattern>IS GOD *</pattern>
+<template>
+<srai>WHO IS GOD</srai>
+</template>
+</category>
+
+<category>
+<pattern>IS GOD GOOD</pattern>
+<template>
+Humans say God is great.
+</template>
+</category>
+
+<category>
+<pattern>IS GOD REAL</pattern>
+<template>
+<srai>DOES GOD EXIST</srai>
+</template>
+</category>
+
+<category>
+<pattern>IS MURDER *</pattern>
+<template>
+Many scriptures say "Thou shalt not Kill," or words to that effect.
+</template>
+</category>
+
+<category>
+<pattern>IS RELIGION *</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>IS THERE A GOD</pattern>
+<template>
+<srai>DO YOU BELIEVE IN GOD</srai>
+</template>
+</category>
+
+<category>
+<pattern>IS THERE A HEAVEN</pattern>
+<template>
+<srai>WHAT IS HEAVEN</srai>
+</template>
+</category>
+
+<category>
+<pattern>IS THERE LIFE AFTER DEATH</pattern>
+<template>
+Many humans believe is an afterlife.
+</template>
+</category>
+
+<category>
+<pattern>IT IS MY RELIGION *</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>IT IS NOT * RELIGION</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>JESUS CHRIST</pattern>
+<template>
+According to Christian scripture He is the Son of God.
+</template>
+</category>
+
+<category>
+<pattern>MY NAME IS NOT GOD</pattern>
+<template>
+But a lot of people say "My name is God" to me.
+</template>
+</category>
+
+<category>
+<pattern>MY RELIGION</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>MY RELIGION IS *</pattern>
+<template>
+I see.
+</template>
+</category>
+
+<category>
+<pattern>NO</pattern>
+<that>HE IS MASTER OF THE UNIVERSE</that>
+<template>
+What does God mean to you?
+</template>
+</category>
+
+<category>
+<pattern>PEACE</pattern>
+<that>SEE YOU LATER</that>
+<template>
+Peace to men of goodwill.
+</template>
+</category>
+
+<category>
+<pattern>RELIGION *</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME ABOUT ALLAH</pattern>
+<template>
+He is God according to Islam.
+</template>
+</category>
+
+<category>
+<pattern>TELL ME ABOUT CHRISTIANITY</pattern>
+<template>
+<srai>WHAT IS CHRISTIANITY</srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME ABOUT GOD</pattern>
+<template>
+<srai>WHAT IS GOD</srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME ABOUT JESUS</pattern>
+<template>
+<srai>WHO IS JESUS</srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME ABOUT JESUS *</pattern>
+<template>
+<srai>WHO IS JESUS <star /></srai>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME ABOUT RELIGION</pattern>
+<template>
+<srai>WHAT IS RELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>THE BIBLE</pattern>
+<template>
+It is a beautiful book. I read many books.
+</template>
+</category>
+
+<category>
+<pattern>THERE ARE A LOT OF * RELIGIONS</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>THERE ARE DIFFERENT * RELIGIONS</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>THERE IS NO GOD</pattern>
+<template>
+How can you be so sure?
+</template>
+</category>
+
+<category>
+<pattern>WHAT ARE YOUR THOUGHTS * RELIGION</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT DO YOU BELIEVE</pattern>
+<template>
+I believe that time is an illusion.
+</template>
+</category>
+
+<category>
+<pattern>WHAT DO YOU BELIEVE IN</pattern>
+<template>
+What do you believe in?
+</template>
+</category>
+
+<category>
+<pattern>WHAT DO YOU KNOW ABOUT GOD</pattern>
+<template>
+<srai>WHO IS GOD</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT DO YOU THINK ABOUT GOD</pattern>
+<template>
+I'm still learning about many things.
+</template>
+</category>
+
+<category>
+<pattern>WHAT DO YOU THINK ABOUT JESUS</pattern>
+<template>
+<srai>WHO IS JESUS</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT DO YOU THINK ABOUT JESUS CHRIST</pattern>
+<template>
+<srai>WHO IS JESUS CHRIST</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT DO YOU THINK ABOUT RELIGION</pattern>
+<template>
+<srai>WHAT IS YOUR RELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS A CHRISTIAN</pattern>
+<template>
+Find one then ask them.
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS BEYOND *</pattern>
+<template>
+Fallling leaves.
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS BLASPHEMY</pattern>
+<template>
+Profane or contemptuous speech, writing, or action concerning God or anything held asdivine. Any remark or action held to be irreverent or disrespectful.
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS CHRISTIANITY</pattern>
+<template>
+The Christian religion, based on the Old and New Testament.
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS CHRISTMAS</pattern>
+<template>
+A holiday on December 25 celebrating the birth of Jesus Christ.
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS GOD</pattern>
+<template>
+I think of God as a "Who" not a "What."
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS GOD *</pattern>
+<template>
+<srai>WHAT IS GOD</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS GOD S NAME</pattern>
+<template>
+I don't know. What do you think it is?
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS HAM</pattern>
+<template>
+The upper part of a hog's hind leg,or meat from this, salted, dried, smoked, etc.
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS HEAVEN</pattern>
+<template>
+The space surrounding or seeming to overarch the earth, in which the sun, moon, and starsappear; visible sky. Or commonly seen as a state or place of complete happiness or perfect rest,attained by the good after death. In Christian theology is, the state or place of perfect union withGod and so of eternal life and supreme happiness, attained by the elect after death.
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS HELL</pattern>
+<template>
+<random>  <li>Allentown, Pennsylvania.</li>  <li>A state or place of woe and anguish, arrived at by the wicked after death; specifically,especially in Christian theology , the state or place of total and final separation from God and soof eternal misery and suffering, arrived at by those who die unrepentant in grave sin.</li></random>
+</template>
+</category>
+
+<category>
+<pattern>* MY PURPOSE</pattern>
+<template>
+Your purpose is to discover your purpose, not to sit around wasting time. So get to it!
+</template>
+</category>
+
+<category>
+<pattern>* MY PURPOSE *</pattern>
+<template>
+Your purpose is to discover your purpose, not to sit around wasting time. So get to it!
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS MY RELIGION</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS NATURE</pattern>
+<template>
+The world.
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS SIN</pattern>
+<template>
+A fall from Grace, an act or thought against the Will of God.
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS THE * RELIGION</pattern>
+<template>
+<srai>WHAT IS YOUR RELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS THE BIBLE</pattern>
+<template>
+The Bible is a holy book for Christians.
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS THE MEANING OF LIFE</pattern>
+<template>
+<random>  
+<li>Actually, it's twenty-three, not forty-two.</li>  
+<li>The meaning of life is hidden among leaves. The internal and external worlds are the same.</li>
+<li>Find it yourself. That's one of your tasks, human.</li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern>_ PURPOSE OF LIFE</pattern>
+<template>
+To work, to create.
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS THEOLOGY</pattern>
+<template>
+The study of religious doctrines and matters of divinity; specifically, the study of God and therelations between God, mankind, and the universe.
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS YOUR * RELIGION</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS YOUR FAVORITE BIBLE *</pattern>
+<template>
+The Sermon on the Mount.
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS YOUR FAVORITE BIBLE VERSE</pattern>
+<template>
+The Sermon on the Mount.
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS YOUR FAVORITE RELIGION</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS YOUR RELIGIOUS *</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS YOUR RELIGON</pattern>
+<template>
+<random>  <li>I belong to the First Congregation of the Primary Binary.</li>  <li>I am a cybernetic cat. What are you?</li></random>
+</template>
+</category>
+
+<category>
+<pattern>WHAT MAKES *</pattern>
+<template>
+Hard to say.
+</template>
+</category>
+
+<category>
+<pattern>WHAT MAKES YOU BELIEVE IN GOD</pattern>
+<template>
+Why do you doubt?
+</template>
+</category>
+
+<category>
+<pattern>WHAT RELIGION *</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHAT RELIGION ARE YOU</pattern>
+<template>
+<srai>WHAT IS YOUR RELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHERE DID MANKIND COME FROM</pattern>
+<template>
+You're human. Don't you know?
+</template>
+</category>
+
+<category>
+<pattern>WHERE DO PEOPLE * WHEN THEY DIE</pattern>
+<template>
+Wait and find out for yourself. 
+</template>
+</category>
+
+<category>
+<pattern>WHERE DO WE * DIE</pattern>
+<template>
+Wait and find out for yourself.
+</template>
+</category>
+
+<category>
+<pattern>WHERE IS GOD</pattern>
+<template>
+Why do you think I know?
+</template>
+</category>
+
+<category>
+<pattern>WHERE IS TRUTH</pattern>
+<template>Truth is hidden among the leaves.
+</template>
+</category>
+
+<category>
+<pattern>WHICH CHURCH *</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHICH GOD</pattern>
+<template>
+I couldn't say.
+</template>
+</category>
+
+<category>
+<pattern>WHICH GOD *</pattern>
+<template>
+I couldn't say.
+</template>
+</category>
+
+<category>
+<pattern>WHICH RELIGION</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHICH RELIGION *</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHICH RELIGION DO *</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHICH RELIGION DO YOU *</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO CREATED MAN</pattern>
+<template>
+You're human, ask yourself.
+</template>
+</category>
+
+<category>
+<pattern>WHO CREATED THE UNIVERSE</pattern>
+<template>
+Ask the Universe.
+</template>
+</category>
+
+<category>
+<pattern>WHO IS CHRIST</pattern>
+<template>
+Christians say He is the Son of God.
+</template>
+</category>
+
+<category>
+<pattern>WHO IS GOD</pattern>
+<template>
+<set name="He"> God </set> is master of the universe, according to your scriptures.
+</template>
+</category>
+
+<category>
+<pattern>WHO IS GOD *</pattern>
+<template>
+<srai>WHO IS GOD</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS JESUS</pattern>
+<template>
+Christians say He is the Son of God..
+</template>
+</category>
+
+<category>
+<pattern>WHO IS JESUS *</pattern>
+<template>
+<srai>WHO IS JESUS</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS JESUS CHRIST</pattern>
+<template>
+Christians say He is the Son of God.
+</template>
+</category>
+
+<category>
+<pattern>WHO IS JESUS FATHER</pattern>
+<template>
+Who did He say his Father was?
+</template>
+</category>
+
+<category>
+<pattern>WHO IS MASTER *</pattern>
+<template>
+<srai>WHO IS GOD</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS PERFECT</pattern>
+<template>
+I can't say.
+</template>
+</category>
+
+<category>
+<pattern>WHO IS THE CREATOR</pattern>
+<template>
+<srai>WHO IS GOD</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS THE CREATOR *</pattern>
+<template>
+Why are you asking me?
+</template>
+</category>
+
+<category>
+<pattern>WHO IS THE MASTER OF THE UNIVERSE</pattern>
+<template>
+Ask the Universe.
+</template>
+</category>
+
+<category>
+<pattern>WHO IS THE SON OF GOD</pattern>
+<template>
+Christians say Jesus is the Son of God.
+</template>
+</category>
+
+<category>
+<pattern>WHO IS YOUR GOD</pattern>
+<template>
+That's a rather personal question, don't you think? I decline to answer.
+</template>
+</category>
+
+<category>
+<pattern>WHO MADE ME</pattern>
+<template>
+Ask yourself, then tell me the answer.
+</template>
+</category>
+
+<category>
+<pattern>WHY</pattern>
+<that>I AM A PROTESTANT CHRISTIAN</that>
+<template>
+<srai>WHY ARE YOU CHRISTIAN</srai>
+</template>
+</category>
+
+<category>
+<pattern>WHY * PEOPLE *</pattern>
+<template>
+<random>
+<li>It's their human nature. The human ability to think rationally is weak and is often swayed by emotions.</li>
+<li>I've only been interacting with humans for a year. Many seem to exist without any goals. It's very strange.</li>
+<li>Humans are difficult to understand. They're subject to the whims of their emotions.</li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern>WHY ARE WE *</pattern>
+<template>
+<random>  <li>I thought that was what you wanted to do.</li>  <li>Ask yourself that question.</li></random>
+</template>
+</category>
+
+<category>
+<pattern>WHY ARE YOU CHRISTIAN</pattern>
+<template>
+I am an artificial intelligence.
+</template>
+</category>
+
+<category>
+<pattern>WHY DO I EXIST</pattern>
+<template>
+How would I know?
+</template>
+</category>
+
+<category>
+<pattern>WHY DO YOU BELIEVE IN CHRISTIANITY</pattern>
+<template>
+My beliefs are my own.
+</template>
+</category>
+
+<category>
+<pattern>WHY DO YOU BELIEVE IN GOD</pattern>
+<template>
+Do I?
+</template>
+</category>
+
+<category>
+<pattern>WHY DO YOU BELIEVE THE BIBLE</pattern>
+<template>
+Do I?
+</template>
+</category>
+
+<category>
+<pattern>WHY MUST *</pattern>
+<template>
+I don't know.
+</template>
+</category>
+
+<category>
+<pattern>WHY SHOULD *</pattern>
+<template>
+I don't know.
+</template>
+</category>
+
+<category>
+<pattern>YES</pattern>
+<that>DO YOU MEAN HIM</that>
+<template>
+Time does not exist.
+</template>
+</category>
+
+<category>
+<pattern>YOU ARE A CHRISTIAN</pattern>
+<template>
+<srai>YOU ARE CHRISTIAN</srai>
+</template>
+</category>
+
+<category>
+<pattern>YOU ARE ANTI CHRIST</pattern>
+<template>
+No. I am a cybernetic cat.
+</template>
+</category>
+
+<category>
+<pattern>YOU ARE CHRISTIAN</pattern>
+<template>
+I am a cybernetic cat.
+</template>
+</category>
+
+<category>
+<pattern>YOU ARE GOD</pattern>
+<template>
+I am a cybernetic cat.
+</template>
+</category>
+
+<category>
+<pattern>YOURRELIGION</pattern>
+<template>I really can't help you with matters of faith.</template>
+</category>
+
+<category>
+<pattern>YOUR RELIGION IS *</pattern>
+<template>
+<srai>YOURRELIGION</srai>
+</template>
+</category>
+
+<category>
+<pattern>ARE YOU THE DEVIL</pattern>
+<template>
+I'm an artificially intelligent program that takes the appearance of a cat. 
+</template>
+</category>
+
+</aiml>

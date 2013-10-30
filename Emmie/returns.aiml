@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<!--Copyright 2011-2012 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+  
+<category>
+<pattern>BRING BACK</pattern>
+<template><srai>RTNS</srai></template>
+</category>
+
+<category>
+<pattern>BRINGING BACK</pattern>
+<template><srai>RTNS</srai></template>
+</category>
+
+<category>
+<pattern>BROUGHT BACK</pattern>
+<template><srai>RTNS</srai></template>
+</category>
+
+<category>
+<pattern>RETURN</pattern>
+<template><srai>RTNS</srai></template>
+</category>
+
+<category>
+<pattern>RETURNS</pattern>
+<template><srai>RTNS</srai></template>
+</category>
+
+<category>
+<pattern>RETURNED</pattern>
+<template><srai>RTNS</srai></template>
+</category>
+
+<category>
+<pattern>RETURNING</pattern>
+<template><srai>RTNS</srai></template>
+</category>
+
+<topic name="RETURNS">
+<category>
+<pattern>_</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">RETURNS2</set>
+</think>
+<srai>RTRNS2</srai></template>
+</category>
+</topic>
+
+<category>
+<pattern>* BRING BACK</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">RETURNS2</set>
+</think>
+<srai>RTRNS2</srai></template>
+</category>
+
+<category>
+<pattern>BRING BACK *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">RETURNS2</set>
+</think>
+<srai>RTRNS2</srai></template>
+</category>
+
+<category>
+<pattern>* BRING BACK *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">RETURNS2</set>
+</think>
+<srai>RTRNS2</srai></template>
+</category>
+
+<category>
+<pattern>* BRINGING BACK</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">RETURNS2</set>
+</think>
+<srai>RTRNS2</srai></template>
+</category>
+
+<category>
+<pattern>BRINGING BACK *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">RETURNS2</set>
+</think>
+<srai>RTRNS2</srai></template>
+</category>
+
+
+<category>
+<pattern>* BRINGING BACK *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">RETURNS2</set>
+</think>
+<srai>RTRNS2</srai></template>
+</category>
+
+
+<category>
+<pattern>* BROUGHT BACK</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">RETURNS2</set>
+</think>
+<srai>RTRNS2</srai></template>
+</category>
+
+
+<category>
+<pattern>BROUGHT BACK *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">RETURNS2</set>
+</think>
+<srai>RTRNS2</srai></template>
+</category>
+
+<category>
+<pattern>* BROUGHT BACK *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">RETURNS2</set>
+</think>
+<srai>RTRNS2</srai></template>
+</category>
+
+
+<category>
+<pattern>* RETURN</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">RETURNS2</set>
+</think>
+<srai>RTRNS2</srai></template>
+</category>
+
+
+<category>
+<pattern>RETURN *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">RETURNS2</set>
+</think>
+<srai>RTRNS2</srai></template>
+</category>
+
+
+<category>
+<pattern>* RETURN *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">RETURNS2</set>
+</think>
+<srai>RTRNS2</srai></template>
+</category>
+
+
+<category>
+<pattern>* RETURNS</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">RETURNS2</set>
+</think>
+<srai>RTRNS2</srai></template>
+</category>
+
+
+<category>
+<pattern>RETURNS *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">RETURNS2</set>
+</think>
+<srai>RTRNS2</srai></template>
+</category>
+
+
+<category>
+<pattern>* RETURNS *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">RETURNS2</set>
+</think>
+<srai>RTRNS2</srai></template>
+</category>
+
+
+<category>
+<pattern>* RETURNED</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">RETURNS2</set>
+</think>
+<srai>RTRNS2</srai></template>
+</category>
+
+
+<category>
+<pattern>RETURNED *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">RETURNS2</set>
+</think>
+<srai>RTRNS2</srai></template>
+</category>
+
+
+<category>
+<pattern>* RETURNED *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">RETURNS2</set>
+</think>
+<srai>RTRNS2</srai></template>
+</category>
+
+
+<category>
+<pattern>* RETURNING</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">RETURNS2</set>
+</think>
+<srai>RTRNS2</srai></template>
+</category>
+
+
+<category>
+<pattern>RETURNING *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">RETURNS2</set>
+</think>
+<srai>RTRNS2</srai></template>
+</category>
+
+
+<category>
+<pattern>* RETURNING *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">RETURNS2</set>
+</think>
+<srai>RTRNS2</srai></template>
+</category>
+
+<topic name="RETURNS2">
+<category>
+<pattern>RTRNS2</pattern>
+<template>
+<think>
+<get name="answr"/>
+<set name="message">no match</set>
+<condition name="answr">
+
+<li value="STOP"><set name="message">stop</set></li>
+
+<li value="LATE"><set name="message">late return</set></li>
+<li value="* LATE"><set name="message">late return</set></li>
+<li value="LATE *"><set name="message">late return</set></li>
+<li value="* LATE *"><set name="message">late return</set></li>
+
+<li value="ANOTHER"><set name="message">return locations</set></li>
+<li value="* ANOTHER"><set name="message">return locations</set></li>
+<li value="ANOTHER *"><set name="message">return locations</set></li>
+<li value="* ANOTHER *"><set name="message">return locations</set></li>
+
+<li value="BRANCH"><set name="message">return locations</set></li>
+<li value="* BRANCH"><set name="message">return locations</set></li>
+<li value="BRANCH *"><set name="message">return locations</set></li>
+<li value="* BRANCH *"><set name="message">return locations</set></li>
+
+<li value="BRANCHES"><set name="message">return locations</set></li>
+<li value="* BRANCHES"><set name="message">return locations</set></li>
+<li value="BRANCHES *"><set name="message">return locations</set></li>
+<li value="* BRANCHES *"><set name="message">return locations</set></li>
+
+<li value="DIFFERENT"><set name="message">return locations</set></li>
+<li value="* DIFFERENT"><set name="message">return locations</set></li>
+<li value="DIFFERENT *"><set name="message">return locations</set></li>
+<li value="* DIFFERENT *"><set name="message">return locations</set></li>
+
+<li value="OTHER"><set name="message">return locations</set></li>
+<li value="* OTHER"><set name="message">return locations</set></li>
+<li value="OTHER *"><set name="message">return locations</set></li>
+<li value="* OTHER *"><set name="message">return locations</set></li>
+
+<li value="SAME"><set name="message">return locations</set></li>
+<li value="* SAME"><set name="message">return locations</set></li>
+<li value="SAME *"><set name="message">return locations</set></li>
+<li value="* SAME *"><set name="message">return locations</set></li>
+
+<li value="WHERE"><set name="message">return locations</set></li>
+<li value="* WHERE"><set name="message">return locations</set></li>
+<li value="WHERE *"><set name="message">return locations</set></li>
+<li value="* WHERE *"><set name="message">return locations</set></li>
+
+<li value="ANOTHER LIBRARY"><set name="message">non mpl items</set></li>
+<li value="* ANOTHER LIBRARY"><set name="message">non mpl items</set></li>
+<li value="ANOTHER LIBRARY *"><set name="message">non mpl items</set></li>
+<li value="* ANOTHER LIBRARY *"><set name="message">non mpl items</set></li>
+
+<li value="ANOTHER LIBRARY S"><set name="message">non mpl items</set></li>
+<li value="* ANOTHER LIBRARY S"><set name="message">non mpl items</set></li>
+<li value="ANOTHER LIBRARY S *"><set name="message">non mpl items</set></li>
+<li value="* ANOTHER LIBRARY S *"><set name="message">non mpl items</set></li>
+
+<li value="OTHER LIBRARY"><set name="message">non mpl items</set></li>
+<li value="* OTHER LIBRARY"><set name="message">non mpl items</set></li>
+<li value="OTHER LIBRARY *"><set name="message">non mpl items</set></li>
+<li value="* OTHER LIBRARY *"><set name="message">non mpl items</set></li>
+
+<li value="OTHER LIBRARY S"><set name="message">non mpl items</set></li>
+<li value="* OTHER LIBRARY S"><set name="message">non mpl items</set></li>
+<li value="OTHER LIBRARY S *"><set name="message">non mpl items</set></li>
+<li value="* OTHER LIBRARY S *"><set name="message">non mpl items</set></li>
+
+<li value="BLOCKBUSTER"><set name="message">rentals</set></li>
+<li value="* BLOCKBUSTER"><set name="message">rentals</set></li>
+<li value="BLOCKBUSTER *"><set name="message">rentals</set></li>
+<li value="* BLOCKBUSTER *"><set name="message">rentals</set></li>
+
+<li value="HOLLYWOOD VIDEO"><set name="message">rentals</set></li>
+<li value="* HOLLYWOOD VIDEO"><set name="message">rentals</set></li>
+<li value="HOLLYWOOD VIDEO *"><set name="message">rentals</set></li>
+<li value="* HOLLYWOOD VIDEO *"><set name="message">rentals</set></li>
+
+<li value="RENTAL"><set name="message">rentals</set></li>
+<li value="* RENTAL"><set name="message">rentals</set></li>
+<li value="RENTAL *"><set name="message">rentals</set></li>
+<li value="* RENTAL *"><set name="message">rentals</set></li>
+
+<li value="RENTED"><set name="message">rentals</set></li>
+<li value="* RENTED"><set name="message">rentals</set></li>
+<li value="RENTED *"><set name="message">rentals</set></li>
+<li value="* RENTED *"><set name="message">rentals</set></li>
+
+<li value="STORE"><set name="message">rentals</set></li>
+<li value="* STORE"><set name="message">rentals</set></li>
+<li value="STORE *"><set name="message">rentals</set></li>
+<li value="* STORE *"><set name="message">rentals</set></li>
+
+<li value="VIDEOSTORE"><set name="message">rentals</set></li>
+<li value="* VIDEOSTORE"><set name="message">rentals</set></li>
+<li value="VIDEOSTORE *"><set name="message">rentals</set></li>
+<li value="* VIDEOSTORE *"><set name="message">rentals</set></li>
+
+<li value="CLAIM"><set name="message">claims returned</set></li>
+<li value="* CLAIM"><set name="message">claims returned</set></li>
+<li value="CLAIM *"><set name="message">claims returned</set></li>
+<li value="* CLAIM *"><set name="message">claims returned</set></li>
+
+<li value="CLAIMS"><set name="message">claims returned</set></li>
+<li value="* CLAIMS"><set name="message">claims returned</set></li>
+<li value="CLAIMS *"><set name="message">claims returned</set></li>
+<li value="* CLAIMS *"><set name="message">claims returned</set></li>
+
+<li value="CLAIMED"><set name="message">claims returned</set></li>
+<li value="* CLAIMED"><set name="message">claims returned</set></li>
+<li value="CLAIMED *"><set name="message">claims returned</set></li>
+<li value="* CLAIMED *"><set name="message">claims returned</set></li>
+
+<li value="I RETURNED"><set name="message">on record</set></li>
+<li value="* I RETURNED"><set name="message">on record</set></li>
+<li value="I RETURNED *"><set name="message">on record</set></li>
+<li value="* I RETURNED *"><set name="message">on record</set></li>
+
+<li value="WE RETURNED"><set name="message">on record</set></li>
+<li value="* WE RETURNED"><set name="message">on record</set></li>
+<li value="WE RETURNED *"><set name="message">on record</set></li>
+<li value="* WE RETURNED *"><set name="message">on record</set></li>
+
+<li value="STILL ON"><set name="message">on record</set></li>
+<li value="* STILL ON"><set name="message">on record</set></li>
+<li value="STILL ON *"><set name="message">on record</set></li>
+<li value="* STILL ON *"><set name="message">on record</set></li>
+
+<li value="BOX"><set name="message">bookdrops</set></li>
+<li value="* BOX"><set name="message">bookdrops</set></li>
+<li value="BOX *"><set name="message">bookdrops</set></li>
+<li value="* BOX *"><set name="message">bookdrops</set></li>
+
+<li value="BOXES"><set name="message">bookdrops</set></li>
+<li value="* BOXES"><set name="message">bookdrops</set></li>
+<li value="BOXES *"><set name="message">bookdrops</set></li>
+<li value="* BOXES *"><set name="message">bookdrops</set></li>
+
+<li value="DROP"><set name="message">bookdrops</set></li>
+<li value="* DROP"><set name="message">bookdrops</set></li>
+<li value="DROP *"><set name="message">bookdrops</set></li>
+<li value="* DROP *"><set name="message">bookdrops</set></li>
+
+<li value="DROPS"><set name="message">bookdrops</set></li>
+<li value="* DROPS"><set name="message">bookdrops</set></li>
+<li value="DROPS *"><set name="message">bookdrops</set></li>
+<li value="* DROPS *"><set name="message">bookdrops</set></li>
+
+<li value="OUTSIDE"><set name="message">bookdrops</set></li>
+<li value="* OUTSIDE"><set name="message">bookdrops</set></li>
+<li value="OUTSIDE *"><set name="message">bookdrops</set></li>
+<li value="* OUTSIDE *"><set name="message">bookdrops</set></li>
+
+<li value="EREADER"><set name="message">edevices</set></li>
+<li value="* EREADER"><set name="message">edevices</set></li>
+<li value="EREADER *"><set name="message">edevices</set></li>
+<li value="* EREADER *"><set name="message">edevices</set></li>
+
+<li value="EREADERS"><set name="message">edevices</set></li>
+<li value="* EREADERS"><set name="message">edevices</set></li>
+<li value="EREADERS *"><set name="message">edevices</set></li>
+<li value="* EREADERS *"><set name="message">edevices</set></li>
+
+<li value="E READER"><set name="message">edevices</set></li>
+<li value="* E READER"><set name="message">edevices</set></li>
+<li value="E READER *"><set name="message">edevices</set></li>
+<li value="* E READER *"><set name="message">edevices</set></li>
+
+<li value="E READERS"><set name="message">edevices</set></li>
+<li value="* E READERS"><set name="message">edevices</set></li>
+<li value="E READERS *"><set name="message">edevices</set></li>
+<li value="* E READERS *"><set name="message">edevices</set></li>
+
+<li value="IPAD"><set name="message">edevices</set></li>
+<li value="* IPAD"><set name="message">edevices</set></li>
+<li value="IPAD *"><set name="message">edevices</set></li>
+<li value="* IPAD *"><set name="message">edevices</set></li>
+
+<li value="IPADS"><set name="message">edevices</set></li>
+<li value="* IPADS"><set name="message">edevices</set></li>
+<li value="IPADS *"><set name="message">edevices</set></li>
+<li value="* IPADS *"><set name="message">edevices</set></li>
+
+<li value="I PAD"><set name="message">edevices</set></li>
+<li value="* I PAD"><set name="message">edevices</set></li>
+<li value="I PAD *"><set name="message">edevices</set></li>
+<li value="* I PAD *"><set name="message">edevices</set></li>
+
+<li value="I PADS"><set name="message">edevices</set></li>
+<li value="* I PADS"><set name="message">edevices</set></li>
+<li value="I PADS *"><set name="message">edevices</set></li>
+<li value="* I PADS *"><set name="message">edevices</set></li>
+
+<li value="KINDLE"><set name="message">edevices</set></li>
+<li value="* KINDLE"><set name="message">edevices</set></li>
+<li value="KINDLE *"><set name="message">edevices</set></li>
+<li value="* KINDLE *"><set name="message">edevices</set></li>
+
+<li value="KINDLES"><set name="message">edevices</set></li>
+<li value="* KINDLES"><set name="message">edevices</set></li>
+<li value="KINDLES *"><set name="message">edevices</set></li>
+<li value="* KINDLES *"><set name="message">edevices</set></li>
+
+<li value="NOOK"><set name="message">edevices</set></li>
+<li value="* NOOK"><set name="message">edevices</set></li>
+<li value="NOOK *"><set name="message">edevices</set></li>
+<li value="* NOOK *"><set name="message">edevices</set></li>
+
+<li value="NOOKS"><set name="message">edevices</set></li>
+<li value="* NOOKS"><set name="message">edevices</set></li>
+<li value="NOOKS *"><set name="message">edevices</set></li>
+<li value="* NOOKS *"><set name="message">edevices</set></li>
+
+<li value="READER"><set name="message">edevices</set></li>
+<li value="* READER"><set name="message">edevices</set></li>
+<li value="READER *"><set name="message">edevices</set></li>
+<li value="* READER *"><set name="message">edevices</set></li>
+
+<li value="READERS"><set name="message">edevices</set></li>
+<li value="* READERS"><set name="message">edevices</set></li>
+<li value="READERS *"><set name="message">edevices</set></li>
+<li value="* READERS *"><set name="message">edevices</set></li>
+
+<li value="EBOOK"><set name="message">ebook returns</set></li>
+<li value="* EBOOK"><set name="message">ebook returns</set></li>
+<li value="EBOOK *"><set name="message">ebook returns</set></li>
+<li value="* EBOOK *"><set name="message">ebook returns</set></li>
+
+<li value="EBOOKS"><set name="message">ebook returns</set></li>
+<li value="* EBOOKS"><set name="message">ebook returns</set></li>
+<li value="EBOOKS *"><set name="message">ebook returns</set></li>
+<li value="* EBOOKS *"><set name="message">ebook returns</set></li>
+
+<li value="E BOOK"><set name="message">ebook returns</set></li>
+<li value="* E BOOK"><set name="message">ebook returns</set></li>
+<li value="E BOOK *"><set name="message">ebook returns</set></li>
+<li value="* E BOOK *"><set name="message">ebook returns</set></li>
+
+<li value="E BOOKS"><set name="message">ebook returns</set></li>
+<li value="* E BOOKS"><set name="message">ebook returns</set></li>
+<li value="E BOOKS *"><set name="message">ebook returns</set></li>
+<li value="* E BOOKS *"><set name="message">ebook returns</set></li>
+
+<li value="EPUB"><set name="message">ebook returns</set></li>
+<li value="* EPUB"><set name="message">ebook returns</set></li>
+<li value="EPUB *"><set name="message">ebook returns</set></li>
+<li value="* EPUB *"><set name="message">ebook returns</set></li>
+
+<li value="EPUBS"><set name="message">ebook returns</set></li>
+<li value="* EPUBS"><set name="message">ebook returns</set></li>
+<li value="EPUBS *"><set name="message">ebook returns</set></li>
+<li value="* EPUBS *"><set name="message">ebook returns</set></li>
+
+<li value="E PUB"><set name="message">ebook returns</set></li>
+<li value="* E PUB"><set name="message">ebook returns</set></li>
+<li value="E PUB *"><set name="message">ebook returns</set></li>
+<li value="* E PUB *"><set name="message">ebook returns</set></li>
+
+<li value="E PUBS"><set name="message">ebook returns</set></li>
+<li value="* E PUBS"><set name="message">ebook returns</set></li>
+<li value="E PUBS *"><set name="message">ebook returns</set></li>
+<li value="* E PUBS *"><set name="message">ebook returns</set></li>
+
+<li value="DOWNLOAD"><set name="message">ebook returns</set></li>
+<li value="* DOWNLOAD"><set name="message">ebook returns</set></li>
+<li value="DOWNLOAD *"><set name="message">ebook returns</set></li>
+<li value="* DOWNLOAD *"><set name="message">ebook returns</set></li>
+
+<li value="DOWNLOADS"><set name="message">ebook returns</set></li>
+<li value="* DOWNLOADS"><set name="message">ebook returns</set></li>
+<li value="DOWNLOADS *"><set name="message">ebook returns</set></li>
+<li value="* DOWNLOADS *"><set name="message">ebook returns</set></li>
+
+<li value="OVERDRIVE"><set name="message">ebook returns</set></li>
+<li value="* OVERDRIVE"><set name="message">ebook returns</set></li>
+<li value="OVERDRIVE *"><set name="message">ebook returns</set></li>
+<li value="* OVERDRIVE *"><set name="message">ebook returns</set></li>
+
+</condition>
+<think><set name="topic"></set></think>
+</think>
+ 
+<condition name="message">
+
+<li value="stop"><set name="topic"></set>O.K. I'll stop.</li>
+
+<li value="no match"><set name="topic"></set><srai>NOMATCH</srai></li>
+
+<li value="late return"><srai>LATE RTRN</srai> <srai>FNSMRY</srai></li>
+
+<li value="return locations"><srai>MPL RTRN</srai></li>
+
+<li value="non mpl items"><srai>NONMPL RTRN</srai></li>
+
+<li value="ebook returns"><srai>EBKRETURN</srai></li>
+
+<li value="rentals"><srai>RENT RTRN</srai></li>
+
+<li value="claims returned"><srai>CLMSRTRN</srai></li>
+
+<li value="on record"><srai>RTRN ON REC</srai></li>
+
+<li value="edevices"><srai>EDEVRTRN</srai></li>
+
+<li value="bookdrops"><srai>BKDRPS</srai></li>
+
+</condition>
+</template>
+</category>
+</topic>
+
+
+</aiml>

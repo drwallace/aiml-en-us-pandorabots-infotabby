@@ -1,0 +1,1597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<!--Copyright 2011 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+  
+ 
+  
+<category>
+<pattern>CHRISTMAS *</pattern>
+<that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+The results will open as a new window or as a new tab. <br/><br/>
+<srai>CONCL</srai>
+<think>
+<set name="searcharg">CHRISTMAS <star/></set>
+<set name="search">catkey</set></think>
+</template>
+</category> 
+
+<category>
+<pattern>_ CHRISTMAS</pattern>
+<that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+The results will open as a new window or as a new tab. <br/><br/>
+<srai>CONCL</srai>
+<think>
+<set name="searcharg"><star/> CHRISTMAS</set>
+<set name="search">catkey</set></think>
+</template>
+</category> 
+  
+<category>
+<pattern>_ CHRISTMAS *</pattern>
+<that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+The results will open as a new window or as a new tab. <br/><br/>
+<srai>CONCL</srai>
+<think>
+<set name="searcharg"><star/> CHRISTMAS <star index="2"/></set>
+<set name="search">catkey</set></think>
+</template>
+</category> 
+  
+<category>
+<pattern>CHRISTMAS *</pattern>
+<that>_ MOVIE IS ABOUT IN JUST A FEW WORDS</that>
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+The results will open as a new window or as a new tab. <br/><br/>
+<srai>CONCL</srai>
+<think>
+<set name="searcharg">CHRISTMAS <star/></set>
+<set name="search">catkey</set></think>
+</template>
+</category> 
+
+<category>
+<pattern>_ CHRISTMAS</pattern>
+<that>_ MOVIE IS ABOUT IN JUST A FEW WORDS</that>
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+The results will open as a new window or as a new tab. <br/><br/>
+<srai>CONCL</srai>
+<think>
+<set name="searcharg"><star/> CHRISTMAS</set>
+<set name="search">catkey</set></think>
+</template>
+</category> 
+  
+<category>
+<pattern>_ CHRISTMAS *</pattern>
+<that>_ MOVIE IS ABOUT IN JUST A FEW WORDS</that>
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+The results will open as a new window or as a new tab. <br/><br/>
+<srai>CONCL</srai>
+<think>
+<set name="searcharg"><star/> CHRISTMAS <star index="2"/></set>
+<set name="search">catkey</set></think>
+</template>
+</category> 
+  
+<category>
+<pattern>COMPUTER</pattern>
+<that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+The results will open as a new window or as a new tab. <br/><br/>
+<srai>CONCL</srai>
+<think>
+<set name="searcharg">COMPUTER</set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>COMPUTER *</pattern>
+<that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+The results will open as a new window or as a new tab. <br/><br/>
+<srai>CONCL</srai>
+<think>
+<set name="searcharg">COMPUTER <star/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>_ COMPUTER</pattern>
+<that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+The results will open as a new window or as a new tab. <br/><br/>
+<srai>CONCL</srai>
+<think>
+<set name="searcharg"><star/> COMPUTER</set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>_ COMPUTER *</pattern>
+<that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+The results will open as a new window or as a new tab. <br/><br/>
+<srai>CONCL</srai>
+<think>
+<set name="searcharg"><star/> COMPUTER <star index="2"/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>COMPUTERS</pattern>
+<that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+The results will open as a new window or as a new tab. <br/><br/>
+<srai>CONCL</srai>
+<think>
+<set name="searcharg">COMPUTERS</set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>COMPUTER *</pattern>
+<that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+The results will open as a new window or as a new tab. <br/><br/>
+<srai>CONCL</srai>
+<think>
+<set name="searcharg">COMPUTERS <star/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>_ COMPUTERS</pattern>
+<that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+The results will open as a new window or as a new tab. <br/><br/>
+<srai>CONCL</srai>
+<think>
+<set name="searcharg"><star/> COMPUTER</set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>_ COMPUTERS *</pattern>
+<that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+The results will open as a new window or as a new tab. <br/><br/>
+<srai>CONCL</srai>
+<think>
+<set name="searcharg"><star/> COMPUTER <star/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+
+<category>
+<pattern>DOGS</pattern>
+<that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+The results will open as a new window or as a new tab. <br/><br/>
+<srai>CONCL</srai>
+<think>
+<set name="searcharg">dogs</set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>DOGS *</pattern>
+<that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+The results will open as a new window or as a new tab. <br/><br/>
+<srai>CONCL</srai>
+<think>
+<set name="searcharg">dogs</set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>_ DOGS</pattern>
+<that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+The results will open as a new window or as a new tab. <br/><br/>
+<srai>CONCL</srai>
+<think>
+<set name="searcharg">dogs</set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>_ DOGS *</pattern>
+<that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+The results will open as a new window or as a new tab. <br/><br/>
+<srai>CONCL</srai>
+<think>
+<set name="searcharg">dogs</set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>GRINCH</pattern>
+<template>
+<think>
+<set name="searcharg">GRINCH</set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>_ GRINCH</pattern>
+<template>Here you go.
+<srai>GRINCH</srai>
+</template>
+</category>
+
+<category>
+<pattern>GRINCH *</pattern>
+<template>Here you go.
+<srai>GRINCH</srai>
+</template>
+</category>
+
+<category>
+<pattern>_ GRINCH *</pattern>
+<template>Here you go.
+<srai>GRINCH</srai>
+</template>
+</category>
+
+<category>
+<pattern>THEHLP</pattern>
+<template>
+<think>
+<set name="searcharg">Kathryn Stockett</set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>THE HELP</pattern>
+<template>Here you go.
+<srai>THEHLP</srai>
+</template>
+</category>
+
+<category>
+<pattern>_ THE HELP</pattern>
+<template>Here you go.
+<srai>THEHLP</srai>
+</template>
+</category>
+
+<category>
+<pattern>THE HELP *</pattern>
+<template>Here you go.
+<srai>THEHLP</srai>
+</template>
+</category>
+
+<category>
+<pattern>_ THE HELP *</pattern>
+<template>Here you go.
+<srai>THEHLP</srai>
+</template>
+</category>
+
+
+<category>
+<pattern>NEVERMIND</pattern>
+<that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+The results will open as a new window or as a new tab. <br/><br/>
+<srai>CONCL</srai>
+<think>
+<set name="searcharg">NEVERMIND</set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>_ NEVERMIND</pattern>
+<that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+The results will open as a new window or as a new tab. <br/><br/>
+<srai>CONCL</srai>
+<think>
+<set name="searcharg">NEVERMIND</set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>NEVERMIND *</pattern>
+<that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+The results will open as a new window or as a new tab. <br/><br/>
+<srai>CONCL</srai>
+<think>
+<set name="searcharg">NEVERMIND</set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>_ NEVERMIND *</pattern>
+<that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+The results will open as a new window or as a new tab. <br/><br/>
+<srai>CONCL</srai>
+<think>
+<set name="searcharg">NEVERMIND</set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>SJOBS</pattern>
+<template>Here you go.
+<think>
+<set name="searcharg">STEVE JOBS</set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>STEVE JOBS</pattern>
+<template>
+<srai>SJOBS</srai>
+</template>
+</category>
+
+<category>
+<pattern>_ STEVE JOBS</pattern>
+<template>
+<srai>SJOBS</srai>
+</template>
+</category>
+
+<category>
+<pattern>STEVE JOBS *</pattern>
+<template>
+<srai>SJOBS</srai>
+</template>
+</category>
+
+<category>
+<pattern>_ STEVE JOBS *</pattern>
+<template>
+<srai>SJOBS</srai>
+</template>
+</category>
+
+<!--RADIO-->
+
+<category>
+<pattern>RADIO</pattern>
+<template>
+Here, I'll find you some music. Using just a few words, please tell me what kind of music you like.
+</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>_ PLEASE TELL ME WHAT KIND OF MUSIC YOU LIKE</that>
+<template>Let's check iHeartRadio. If you don't
+see the results, turn off your pop up blocker and ask me again.
+<think>
+<set name="search">radio</set>
+<set name="searcharg"><star/></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* RADIO</pattern>
+<template><srai>RADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>RADIO *</pattern>
+<template><srai>RADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>* RADIO *</pattern>
+<template><srai>RADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>PLAY MUSIC</pattern>
+<template><srai>RADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>* PLAY MUSIC</pattern>
+<template><srai>RADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>PLAY * MUSIC</pattern>
+<template><srai>RADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>PLAY MUSIC *</pattern>
+<template><srai>RADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>* PLAY * MUSIC</pattern>
+<template><srai>RADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>PLAY * MUSIC *</pattern>
+<template><srai>RADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>* PLAY MUSIC *</pattern>
+<template><srai>RADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>* PLAY * MUSIC *</pattern>
+<template><srai>RADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>PLAY SONG</pattern>
+<template><srai>RADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>* PLAY SONG</pattern>
+<template><srai>RADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>PLAY * SONG</pattern>
+<template><srai>RADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>PLAY SONG *</pattern>
+<template><srai>RADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>* PLAY * SONG</pattern>
+<template><srai>RADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>PLAY * SONG *</pattern>
+<template><srai>RADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>* PLAY SONG *</pattern>
+<template><srai>RADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>* PLAY * SONG *</pattern>
+<template><srai>RADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>PLAY SONGS</pattern>
+<template><srai>RADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>* PLAY SONGS</pattern>
+<template><srai>RADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>PLAY * SONGS</pattern>
+<template><srai>RADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>PLAY SONGS *</pattern>
+<template><srai>RADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>* PLAY * SONGS</pattern>
+<template><srai>RADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>PLAY * SONGS *</pattern>
+<template><srai>RADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>* PLAY SONGS *</pattern>
+<template><srai>RADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>* PLAY * SONGS *</pattern>
+<template><srai>RADIO</srai>
+</template>
+</category>
+
+<!--LOCAL RADIO STATIONS-->
+
+<category>
+<pattern>LOCRADIO</pattern>
+<template>
+Here, I'll find your local radio stations. You can listen to them online. Please enter your zip code.
+</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>PLEASE ENTER YOUR ZIP CODE</that>
+<template>Let's check iHeartRadio. If you don't
+see the results, turn off your pop up blocker and ask me again.
+<think>
+<set name="search">locradio</set>
+<set name="searcharg"><star/></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>LOCAL RADIO</pattern>
+<template><srai>LOCRADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>* LOCAL RADIO</pattern>
+<template><srai>LOCRADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>LOCAL * RADIO</pattern>
+<template><srai>LOCRADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>LOCAL RADIO *</pattern>
+<template><srai>LOCRADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>* LOCAL * RADIO</pattern>
+<template><srai>LOCRADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>LOCAL * RADIO *</pattern>
+<template><srai>LOCRADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>* LOCAL RADIO *</pattern>
+<template><srai>LOCRADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>* LOCAL * RADIO *</pattern>
+<template><srai>LOCRADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>LOCATION RADIO</pattern>
+<template><srai>LOCRADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>* LOCATION RADIO</pattern>
+<template><srai>LOCRADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>LOCATION * RADIO</pattern>
+<template><srai>LOCRADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>LOCATION RADIO *</pattern>
+<template><srai>LOCRADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>* LOCATION * RADIO</pattern>
+<template><srai>LOCRADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>LOCATION * RADIO *</pattern>
+<template><srai>LOCRADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>* LOCATION RADIO *</pattern>
+<template><srai>LOCRADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>* LOCATION * RADIO *</pattern>
+<template><srai>LOCRADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>STATION LOCATION</pattern>
+<template><srai>LOCRADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>* STATION LOCATION</pattern>
+<template><srai>LOCRADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>STATION * LOCATION</pattern>
+<template><srai>LOCRADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>STATION LOCATION *</pattern>
+<template><srai>LOCRADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>* STATION * LOCATION</pattern>
+<template><srai>LOCRADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>STATION * LOCATION *</pattern>
+<template><srai>LOCRADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>* STATION * LOCATION *</pattern>
+<template><srai>LOCRADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>STATIONS LOCATION</pattern>
+<template><srai>LOCRADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>* STATIONS LOCATION</pattern>
+<template><srai>LOCRADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>STATIONS * LOCATION</pattern>
+<template><srai>LOCRADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>STATIONS LOCATION *</pattern>
+<template><srai>LOCRADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>* STATIONS * LOCATION</pattern>
+<template><srai>LOCRADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>STATIONS * LOCATION *</pattern>
+<template><srai>LOCRADIO</srai>
+</template>
+</category>
+
+<category>
+<pattern>* STATIONS * LOCATION *</pattern>
+<template><srai>LOCRADIO</srai>
+</template>
+</category>
+
+<!--RECIPES-->
+
+<category>
+<pattern>RCIPE</pattern>
+<template>
+I can help you find a recipe. Using just a few words, please tell me what recipe you would like.
+</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>_ PLEASE TELL ME WHAT RECIPE YOU WOULD LIKE</that>
+<template>Let's check the Food Network. If you don't
+see the results, turn off your pop up blocker and ask me again.
+<think>
+<set name="search">recipes</set>
+<set name="searcharg"><star/></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>RECIPE</pattern>
+<template><srai>RCIPE</srai>
+</template>
+</category>
+
+<category>
+<pattern>* RECIPE</pattern>
+<template><srai>RCIPE</srai>
+</template>
+</category>
+
+<category>
+<pattern>RECIPE *</pattern>
+<template><srai>RCIPE</srai>
+</template>
+</category>
+
+<category>
+<pattern>* RECIPE *</pattern>
+<template><srai>RCIPE</srai>
+</template>
+</category>
+
+<category>
+<pattern>RCIPES</pattern>
+<template>
+I can help you find a recipe. Using just a few words, please tell me what recipes you would like.
+</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>_ PLEASE TELL ME WHAT RECIPES YOU WOULD LIKE</that>
+<template>Let's check the Food Network. If you don't
+see the results, turn off your pop up blocker and ask me again.
+<think>
+<set name="search">recipes</set>
+<set name="searcharg"><star/></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>RECIPES</pattern>
+<template><srai>RCIPES</srai>
+</template>
+</category>
+
+<category>
+<pattern>* RECIPES</pattern>
+<template><srai>RCIPES</srai>
+</template>
+</category>
+
+<category>
+<pattern>RECIPES *</pattern>
+<template><srai>RCIPES</srai>
+</template>
+</category>
+
+<category>
+<pattern>* RECIPES *</pattern>
+<template><srai>RCIPES</srai>
+</template>
+</category>
+
+<category>
+<pattern>RECIPE FOR *</pattern>
+<template>Let's check the Food Network. If you don't
+see the results, turn off your pop up blocker and ask me again.
+<think>
+<set name="search">recipes</set>
+<set name="searcharg"><star/></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* RECIPE FOR *</pattern>
+<template>Let's check the Food Network. If you don't
+see the results, turn off your pop up blocker and ask me again.
+<think>
+<set name="search">recipes</set>
+<set name="searcharg"><star index="2"/></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>RECIPES FOR *</pattern>
+<template>Let's check the Food Network. If you don't
+see the results, turn off your pop up blocker and ask me again.
+<think>
+<set name="search">recipes</set>
+<set name="searcharg"><star/></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* RECIPES FOR *</pattern>
+<template>Let's check the Food Network. If you don't
+see the results, turn off your pop up blocker and ask me again.
+<think>
+<set name="search">recipes</set>
+<set name="searcharg"><star index="2"/></set>
+</think>
+</template>
+</category>
+
+<!--MAPS-->
+
+<category>
+<pattern>MAP</pattern>
+<template>
+I can find maps for you. Using just a few words, tell me what you want a map of.
+</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>_ TELL ME WHAT YOU WANT A MAP OF</that>
+<template>I apologize for ending a sentence with a preposition, but at least I didn't
+mix up "respectfully" and "respectively." Anyway, here's your map. If you don't
+see it, turn off your pop up blocker and ask me again
+<think>
+<set name="search">gmaps</set>
+<set name="searcharg"><star/></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* MAP</pattern>
+<template>
+I can find maps for you. Using just a few words, tell me what you want a map of.
+</template>
+</category>
+
+<category>
+<pattern>MAP *</pattern>
+<template>
+I can find maps for you. Using just a few words, tell me what you want a map of.
+</template>
+</category>
+
+<category>
+<pattern>* MAP *</pattern>
+<template>
+I can find maps for you. Using just a few words, tell me what you want a map of.
+</template>
+</category>
+
+<category>
+<pattern>MAPS</pattern>
+<template>
+I can find maps for you. Using just a few words, tell me what you want a map of.
+</template>
+</category>
+
+<category>
+<pattern>* MAPS</pattern>
+<template>
+I can find maps for you. Using just a few words, tell me what you want a map of.
+</template>
+</category>
+
+<category>
+<pattern>MAPS *</pattern>
+<template>
+I can find maps for you. Using just a few words, tell me what you want a map of.
+</template>
+</category>
+
+<category>
+<pattern>* MAPS *</pattern>
+<template>
+I can find maps for you. Using just a few words, tell me what you want a map of.
+</template>
+</category>
+
+<category>
+<pattern>MAP OF *</pattern>
+<template>Here's your map. If you don't
+see it, turn off your pop up blocker and ask me again. 
+<think>
+<set name="search">gmaps</set>
+<set name="searcharg"><star/></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>MAPS OF *</pattern>
+<template>Here's your map. If you don't
+see it, turn off your pop up blocker and ask me again.
+<think>
+<set name="search">gmaps</set>
+<set name="searcharg"><star/></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* MAP OF *</pattern>
+<template>Here's your map. If you don't
+see it, turn off your pop up blocker and ask me again.                   
+<think>
+<set name="search">gmaps</set>
+<set name="searcharg"><star index="2"/></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* MAPS OF *</pattern>
+<template>Here's your map. If you don't
+see it, turn off your pop up blocker and ask me again.
+<think>
+<set name="search">gmaps</set>
+<set name="searcharg"><star index="2"/></set>
+</think>
+</template>
+</category>
+
+ <category>
+<pattern>WX</pattern>
+<template>It's a pleasant seventy degrees inside this computer. (By the way, it's pretty dusty in here. You really ought to clean this thing out.) 
+For your local weather conditions and forecast, type your zip code, just five numbers, and press "enter"
+<think>
+<set name="topic">WXFRCST</set>
+</think>
+</template>
+</category>
+
+
+<topic name="WXFRCST">
+<category>
+<pattern>*</pattern>
+<that>* LOCAL WEATHER *</that>
+<template>
+Here's your local weather. If you don't see it, turn off your pop up blocker and ask me again.
+<think>
+<set name="search">wx</set>
+<set name="searcharg"><star/></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>NO *</pattern>
+<that>* LOCAL WEATHER *</that>
+<template>Now I understand. Let's see what's in our catalog. If you don't see it, turn off your pop up blocker and ask me again.
+<think>
+<set name="search">bookkey</set>
+<set name="searcharg">weather</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>I *</pattern>
+<that>* LOCAL WEATHER *</that>
+<template>Now I understand. Let's see what's in our catalog. If you don't see it, turn off your pop up blocker and ask me again.
+<think>
+<set name="search">bookkey</set>
+<set name="searcharg">weather</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>BOOK</pattern>
+<that>* LOCAL WEATHER *</that>
+<template>Now I understand. Let's see what's in our catalog. If you don't see it, turn off your pop up blocker and ask me again.
+<think>
+<set name="search">catkey</set>
+<set name="searcharg">weather</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>BOOK *</pattern>
+<that>* LOCAL WEATHER *</that>
+<template>Now I understand. Let's see what's in our catalog. If you don't see it, turn off your pop up blocker and ask me again.
+<think>
+<set name="search">catkey</set>
+<set name="searcharg">weather</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* BOOK</pattern>
+<that>* LOCAL WEATHER *</that>
+<template>Now I understand. Let's see what's in our catalog. If you don't see it, turn off your pop up blocker and ask me again.
+<think>
+<set name="search">catkey</set>
+<set name="searcharg">weather</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* BOOK *</pattern>
+<that>* LOCAL WEATHER *</that>
+<template>Now I understand. Let's see what's in our catalog. If you don't see it, turn off your pop up blocker and ask me again.
+<think>
+<set name="search">catkey</set>
+<set name="searcharg">weather</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>BOOKS</pattern>
+<that>* LOCAL WEATHER *</that>
+<template>Now I understand. Let's see what's in our catalog. If you don't see it, turn off your pop up blocker and ask me again.
+<think>
+<set name="search">catkey</set>
+<set name="searcharg">weather</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>BOOKS *</pattern>
+<that>* LOCAL WEATHER *</that>
+<template>Now I understand. Let's see what's in our catalog. If you don't see it, turn off your pop up blocker and ask me again.
+<think>
+<set name="search">catkey</set>
+<set name="searcharg">weather</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* BOOKS</pattern>
+<that>* LOCAL WEATHER *</that>
+<template>Now I understand. Let's see what's in our catalog. If you don't see it, turn off your pop up blocker and ask me again.
+<think>
+<set name="search">catkey</set>
+<set name="searcharg">weather</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* BOOKS *</pattern>
+<that>* LOCAL WEATHER *</that>
+<template>Now I understand. Let's see what's in our catalog. If you don't see it, turn off your pop up blocker and ask me again.
+<think>
+<set name="search">catkey</set>
+<set name="searcharg">weather</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>DVD</pattern>
+<that>* LOCAL WEATHER *</that>
+<template>Now I understand. Let's see what's in our catalog. If you don't see it, turn off your pop up blocker and ask me again.
+<think>
+<set name="search">catkey</set>
+<set name="searcharg">weather</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>DVD *</pattern>
+<that>* LOCAL WEATHER *</that>
+<template>Now I understand. Let's see what's in our catalog. If you don't see it, turn off your pop up blocker and ask me again.
+<think>
+<set name="search">catkey</set>
+<set name="searcharg">weather</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* DVD</pattern>
+<that>* LOCAL WEATHER *</that>
+<template>Now I understand. Let's see what's in our catalog. If you don't see it, turn off your pop up blocker and ask me again.
+<think>
+<set name="search">catkey</set>
+<set name="searcharg">weather</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* DVD *</pattern>
+<that>* LOCAL WEATHER *</that>
+<template>Now I understand. Let's see what's in our catalog. If you don't see it, turn off your pop up blocker and ask me again.
+<think>
+<set name="search">catkey</set>
+<set name="searcharg">weather</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>DVDS</pattern>
+<that>* LOCAL WEATHER *</that>
+<template>Now I understand. Let's see what's in our catalog. If you don't see it, turn off your pop up blocker and ask me again.
+<think>
+<set name="search">catkey</set>
+<set name="searcharg">weather</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>DVDS *</pattern>
+<that>* LOCAL WEATHER *</that>
+<template>Now I understand. Let's see what's in our catalog. If you don't see it, turn off your pop up blocker and ask me again.
+<think>
+<set name="search">catkey</set>
+<set name="searcharg">weather</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* DVDS</pattern>
+<that>* LOCAL WEATHER *</that>
+<template>Now I understand. Let's see what's in our catalog. If you don't see it, turn off your pop up blocker and ask me again.
+<think>
+<set name="search">catkey</set>
+<set name="searcharg">weather</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* DVDS *</pattern>
+<that>* LOCAL WEATHER *</that>
+<template>
+Now I understand. Let's see what's in our catalog. If you don't see it, turn off your pop up blocker and ask me again.
+<think>
+<set name="search">catkey</set>
+<set name="searcharg">weather</set>
+</think>
+</template>
+</category>
+</topic>
+
+<category>
+<pattern>WEATHER</pattern>
+<template><srai>WX</srai></template>
+</category>
+
+<category>
+<pattern>* WEATHER</pattern>
+<template><srai>WX</srai></template>
+</category>
+
+<category>
+<pattern>WEATHER *</pattern>
+<template><srai>WX</srai></template>
+</category>
+
+<category>
+<pattern>* WEATHER *</pattern>
+<template><srai>WX</srai></template>
+</category>
+
+<category>
+<pattern>WX2</pattern>
+<template>I can check the local weather forecast. Yype your zip code, just five numbers, and press "enter."
+<think>
+<set name="topic">WXFRCST</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* COLD LATER</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* COLD TODAY</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* COLD * WEEK</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* COLD TOMORROW</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* FREEZING LATER</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* FREEZING TODAY</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* FREEZING * WEEK</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* FREEZING TOMORROW</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* FROST LATER</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* FROST TODAY</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* FROST * WEEK</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* FROST TOMORROW</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* HOT LATER</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* HOT TODAY</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* HOT * WEEK</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* HOT TOMORROW</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* RAIN LATER</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* RAINING LATER</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* RAIN TODAY</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* RAINING TODAY</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* RAIN TOMORROW</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* RAINING TOMORROW</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* RAIN * WEEK</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* RAINING * WEEK</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* SNOW LATER</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* SNOWING LATER</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* SNOW TODAY</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* SNOWING TODAY</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* SNOW * WEEK</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* SNOWING * WEEK</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* SNOW TOMORROW</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* SNOWING TOMORROW</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* STORM LATER</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* STORMY LATER</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* STORM TODAY</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* STORMY TODAY</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* STORM * WEEK</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* STORMY * WEEK</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* STORM TOMORROW</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* STORMY TOMORROW</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* STORMS LATER</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* STORMING LATER</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* STORMS TODAY</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* STORMING TODAY</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* STORMS * WEEK</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* STORMING * WEEK</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* STORMS TOMORROW</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* STORMING TOMORROW</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* SUN LATER</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* SUNNY LATER</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* SUN TODAY</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* SUNNY TODAY</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* SUN * WEEK</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* SUNNY * WEEK</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* SUN TOMORROW</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* SUNNY TOMORROW</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* WIND LATER</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* WINDY LATER</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* WIND TODAY</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* WINDY TODAY</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* WIND * WEEK</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* WINDY * WEEK</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* WIND TOMORROW</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+<category>
+<pattern>* WINDY TOMORROW</pattern>
+<template><srai>WX2</srai></template>
+</category>
+
+</aiml>

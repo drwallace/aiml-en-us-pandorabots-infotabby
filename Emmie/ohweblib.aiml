@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<!--Copyright 2011-2012 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+
+  
+<category>
+<pattern>OWL</pattern> 
+<template>
+I'm opening the Ohio Web Library which contains a variety of magazine and journal articles to help you.   You may also want to check with a librarian during our regular hours of business, or, if you need an immediate answer try <a href="http://www.knowitnow.org/" target="_blank" ><b>Know it Now</b></a>, which is available 24 hours a day.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">ohweblib</set>
+</think>
+</template>
+</category>  
+  
+<category>
+<pattern>OHIO WEB LIBRARY</pattern> 
+<template><srai>OWL</srai></template>
+</category>
+
+<category>
+<pattern>* OHIO WEB LIBRARY</pattern> 
+<template><srai>OWL</srai></template>
+</category>
+
+<category>
+<pattern>OHIO WEB LIBRARY *</pattern> 
+<template><srai>OWL</srai></template>
+</category>
+
+<category>
+<pattern>* OHIO WEB LIBRARY *</pattern> 
+<template><srai>OWL</srai></template>
+</category>
+
+
+<category>
+<pattern>ASK OHIO WEB LIBRARY *</pattern> 
+<template>
+I'm opening a link to The Ohio Web Library which contains a variety of magazine and journal articles to help you.  If you don't see the results, please turn off your pop-up blocker.  You may also want to check with a librarian during our regular hours of business, or, if you need an immediate answer try <a href="http://www.knowitnow.org/" target="_blank" ><b>Know it Now</b></a>, which is available 24 hours a day.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">ohweblib</set>
+</think>
+</template>
+</category>
+
+
+<category>
+<pattern>* ASK OHIO WEB LIBRARY *</pattern> 
+<template>
+I'm opening a link to The Ohio Web Library which contains a variety of magazine and journal articles to help you.  If you don't see the results, please turn off your pop-up blocker.  You may also want to check with a librarian during our regular hours of business, or, if you need an immediate answer try <a href="http://www.knowitnow.org/" target="_blank" ><b>Know it Now</b></a>, which is available 24 hours a day.
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">ohweblib</set>
+</think>
+</template>
+</category>
+ 
+<category>
+<pattern>CAN OHIO WEB LIBRARY TELL ME *</pattern> 
+<template>
+I'm opening a link to The Ohio Web Library which contains a variety of magazine and journal articles to help you.  If you don't see the results, please turn off your pop-up blocker.  You may also want to check with a librarian during our regular hours of business, or, if you need an immediate answer try <a href="http://www.knowitnow.org/" target="_blank" ><b>Know it Now</b></a>, which is available 24 hours a day.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">ohweblib</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>CAN OHIO WEB LIBRARY ANSWER THIS QUESTION *</pattern> 
+<template>
+I'm opening a link to The Ohio Web Library which contains a variety of magazine and journal articles to help you.  If you don't see the results, please turn off your pop-up blocker.  You may also want to check with a librarian during our regular hours of business, or, if you need an immediate answer try <a href="http://www.knowitnow.org/" target="_blank" ><b>Know it Now</b></a>, which is available 24 hours a day.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">ohweblib</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>ASK OHIO WEB LIBRARY ABOUT *</pattern> 
+<template>
+I'm opening a link to The Ohio Web Library which contains a variety of magazine and journal articles to help you.  If you don't see the results, please turn off your pop-up blocker.  You may also want to check with a librarian during our regular hours of business, or, if you need an immediate answer try <a href="http://www.knowitnow.org/" target="_blank" ><b>Know it Now</b></a>, which is available 24 hours a day.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">ohweblib</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* ASK OHIO WEB LIBRARY ABOUT *</pattern> 
+<template>
+I'm opening a link to The Ohio Web Library which contains a variety of magazine and journal articles to help you.  If you don't see the results, please turn off your pop-up blocker.  You may also want to check with a librarian during our regular hours of business, or, if you need an immediate answer try <a href="http://www.knowitnow.org/" target="_blank" ><b>Know it Now</b></a>, which is available 24 hours a day.
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">ohweblib</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* OHIO WEB LIBRARY TELL ME ABOUT *</pattern> 
+<template>
+I'm opening a link to The Ohio Web Library which contains a variety of magazine and journal articles to help you.  If you don't see the results, please turn off your pop-up blocker.  You may also want to check with a librarian during our regular hours of business, or, if you need an immediate answer try <a href="http://www.knowitnow.org/" target="_blank" ><b>Know it Now</b></a>, which is available 24 hours a day.
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">ohweblib</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>ASK OHIO WEB LIBRARY for *</pattern> 
+<template>
+I'm opening a link to The Ohio Web Library which contains a variety of magazine and journal articles to help you.  If you don't see the results, please turn off your pop-up blocker.  You may also want to check with a librarian during our regular hours of business, or, if you need an immediate answer try <a href="http://www.knowitnow.org/" target="_blank" ><b>Know it Now</b></a>, which is available 24 hours a day.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">ohweblib</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* ASK OHIO WEB LIBRARY for *</pattern> 
+<template>
+I'm opening a link to The Ohio Web Library which contains a variety of magazine and journal articles to help you.  If you don't see the results, please turn off your pop-up blocker.  You may also want to check with a librarian during our regular hours of business, or, if you need an immediate answer try <a href="http://www.knowitnow.org/" target="_blank" ><b>Know it Now</b></a>, which is available 24 hours a day.
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">ohweblib</set>
+</think>
+</template>
+</category>
+ 
+<category>
+<pattern>SEARCH OHIO WEB LIBRARY for *</pattern> 
+<template>
+I'm opening a link to The Ohio Web Library which contains a variety of magazine and journal articles to help you.  If you don't see the results, please turn off your pop-up blocker.  You may also want to check with a librarian during our regular hours of business, or, if you need an immediate answer try <a href="http://www.knowitnow.org/" target="_blank" ><b>Know it Now</b></a>, which is available 24 hours a day.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">ohweblib</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* SEARCH OHIO WEB LIBRARY for *</pattern> 
+<template>
+I'm opening a link to The Ohio Web Library which contains a variety of magazine and journal articles to help you.  If you don't see the results, please turn off your pop-up blocker.  You may also want to check with a librarian during our regular hours of business, or, if you need an immediate answer try <a href="http://www.knowitnow.org/" target="_blank" ><b>Know it Now</b></a>, which is available 24 hours a day.
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">ohweblib</set>
+</think>
+</template>
+</category>
+
+<!--journal articles-->
+
+<category>
+<pattern>ARTICLE ABOUT *</pattern>
+<template>
+I'm opening a link to The Ohio Web Library which contains a variety of magazine and journal articles to help you.  If you don't see the results, please turn off your pop-up blocker.  You may also want to check with a librarian during our regular hours of business, or, if you need an immediate answer try <a href="http://www.knowitnow.org/" target="_blank" ><b>Know it Now</b></a>, which is available 24 hours a day.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">ohweblib</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>ARTICLES ABOUT *</pattern>
+<template>
+I'm opening a link to The Ohio Web Library which contains a variety of magazine and journal articles to help you.  If you don't see the results, please turn off your pop-up blocker.  You may also want to check with a librarian during our regular hours of business, or, if you need an immediate answer try <a href="http://www.knowitnow.org/" target="_blank" ><b>Know it Now</b></a>, which is available 24 hours a day.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">ohweblib</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>ARTICLE ON *</pattern>
+<template>
+I'm opening a link to The Ohio Web Library which contains a variety of magazine and journal articles to help you.  If you don't see the results, please turn off your pop-up blocker.  You may also want to check with a librarian during our regular hours of business, or, if you need an immediate answer try <a href="http://www.knowitnow.org/" target="_blank" ><b>Know it Now</b></a>, which is available 24 hours a day.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">ohweblib</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>ARTICLES ON *</pattern>
+<template>
+I'm opening a link to The Ohio Web Library which contains a variety of magazine and journal articles to help you.  If you don't see the results, please turn off your pop-up blocker.  You may also want to check with a librarian during our regular hours of business, or, if you need an immediate answer try <a href="http://www.knowitnow.org/" target="_blank" ><b>Know it Now</b></a>, which is available 24 hours a day.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">ohweblib</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>_ ARTICLE ABOUT *</pattern>
+<template>
+I'm opening a link to The Ohio Web Library which contains a variety of magazine and journal articles to help you.  If you don't see the results, please turn off your pop-up blocker.  You may also want to check with a librarian during our regular hours of business, or, if you need an immediate answer try <a href="http://www.knowitnow.org/" target="_blank" ><b>Know it Now</b></a>, which is available 24 hours a day.
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">ohweblib</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>_ ARTICLES ABOUT *</pattern>
+<template>
+I'm opening a link to The Ohio Web Library which contains a variety of magazine and journal articles to help you.  If you don't see the results, please turn off your pop-up blocker.  You may also want to check with a librarian during our regular hours of business, or, if you need an immediate answer try <a href="http://www.knowitnow.org/" target="_blank" ><b>Know it Now</b></a>, which is available 24 hours a day.
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">ohweblib</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>_ ARTICLE ON *</pattern>
+<template>
+I'm opening a link to The Ohio Web Library which contains a variety of magazine and journal articles to help you.  If you don't see the results, please turn off your pop-up blocker.  You may also want to check with a librarian during our regular hours of business, or, if you need an immediate answer try <a href="http://www.knowitnow.org/" target="_blank" ><b>Know it Now</b></a>, which is available 24 hours a day.
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">ohweblib</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>_ ARTICLES ON *</pattern>
+<template>
+I'm opening a link to The Ohio Web Library which contains a variety of magazine and journal articles to help you.  If you don't see the results, please turn off your pop-up blocker.  You may also want to check with a librarian during our regular hours of business, or, if you need an immediate answer try <a href="http://www.knowitnow.org/" target="_blank" ><b>Know it Now</b></a>, which is available 24 hours a day.
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">ohweblib</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>_ ARTICLE</pattern>
+<template> <srai>ARTICLE</srai></template>
+</category>
+
+<category>
+<pattern>_ ARTICLES</pattern>
+<template> <srai>ARTICLES</srai></template>
+</category>
+
+<category>
+<pattern>ARTICLE</pattern>
+<template>I can help you find articles, please enter your topic.</template>
+</category>
+
+<category>
+<pattern>ARTICLES</pattern>
+<template>I can help you find articles, please enter your topic.</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>I can help you find articles please enter your topic</that>
+<template>
+I'm opening a link to The Ohio Web Library which contains a variety of magazine and journal articles to help you.  If you don't see the results, please turn off your pop-up blocker.  You may also want to check with a librarian during our regular hours of business, or, if you need an immediate answer try <a href="http://www.knowitnow.org/" target="_blank" ><b>Know it Now</b></a>, which is available 24 hours a day.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">ohweblib</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>I can help you find articles please enter your topic</that>
+<template>
+I'm opening a link to The Ohio Web Library which contains a variety of magazine and journal articles to help you.  If you don't see the results, please turn off your pop-up blocker.  You may also want to check with a librarian during our regular hours of business, or, if you need an immediate answer try <a href="http://www.knowitnow.org/" target="_blank" ><b>Know it Now</b></a>, which is available 24 hours a day.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">ohweblib</set>
+</think>
+</template>
+</category>
+
+<!--OBITS-->
+ 
+<category>
+<pattern>OBITUARY</pattern>
+<template>Please enter the name.</template>
+</category>
+
+<category>
+<pattern>OBITUARIES</pattern>
+<template>Please enter the name.</template>
+</category>
+
+<category>
+<pattern>OBIT</pattern>
+<template>Please enter the name.</template>
+</category>
+
+<category>
+<pattern>OBITS</pattern>
+<template>Please enter the name.</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>PLEASE ENTER THE NAME</that>
+<template>
+I'm sending this inquiry to The Ohio Web Library which includes obituaries.  If you don't see the results, please turn off your pop-up blocker.  You may also want to check with a librarian during our regular hours of business.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">ohweblibobit</set>
+</think>
+</template>
+</category>
+  
+<category>
+<pattern>OBITUARY FOR *</pattern> 
+<template>
+I'm sending this inquiry to The Ohio Web Library which includes obituaries.  If you don't see the results, please turn off your pop-up blocker.  You may also want to check with a librarian during our regular hours of business.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">ohweblibobit</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* OBITUARY</pattern> 
+<template>
+I'm sending this inquiry to The Ohio Web Library which includes obituaries.  If you don't see the results, please turn off your pop-up blocker.  You may also want to check with a librarian during our regular hours of business.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">ohweblibobit</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>I AM LOOKING FOR THE OBITUARY FOR *</pattern> 
+<template>
+I'm sending this inquiry to The Ohio Web Library which includes obituaries.  If you don't see the results, please turn off your pop-up blocker.  You may also want to check with a librarian during our regular hours of business.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">ohweblibobit</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>FIND THE OBITUARY FOR *</pattern> 
+<template>
+I'm sending this inquiry to The Ohio Web Library which includes obituaries.  If you don't see the results, please turn off your pop-up blocker.  You may also want to check with a librarian during our regular hours of business.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">ohweblibobit</set>
+</think>
+</template>
+</category>
+
+<!--
+<category>
+<pattern>TELL ME EMMA *</pattern> 
+<template>
+I'm sending this inquiry to The Ohio Web Library.  If you don't see the results, please turn off your pop-up blocker.  You may also want to check with a librarian during our regular hours of business.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">ohweblib</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>EMMA TELL ME ABOUT *</pattern> 
+<template>
+I'm sending this inquiry to The Ohio Web Library.  If you don't see the results, please turn off your pop-up blocker.  You may also want to check with a librarian during our regular hours of business.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">ohweblib</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>TELL ME ABOUT *</pattern> 
+<template>
+I'm sending this inquiry to The Ohio Web Library.  If you don't see the results, please turn off your pop-up blocker.  You may also want to check with a librarian during our regular hours of business.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">ohweblib</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>CAN YOU TELL ME ABOUT *</pattern> 
+<template>
+I'm sending this inquiry to The Ohio Web Library.  If you don't see the results, please turn off your pop-up blocker.  You may also want to check with a librarian during our regular hours of business.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">ohweblib</set>
+</think>
+</template>
+</category>
+-->
+
+</aiml>

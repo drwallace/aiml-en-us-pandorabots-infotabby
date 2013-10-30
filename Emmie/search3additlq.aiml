@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<!--Copyright 2011-2012 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+  
+<!--ANOTHER QUESTION-->
+
+<category>
+<pattern>ANOTHER QUESTION</pattern>
+<template><srai>NEWQST</srai>
+<think>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* ANOTHER QUESTION</pattern>
+<template><srai>NEWQST</srai>
+<think>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>ANOTHER * QUESTION</pattern>
+<template><srai>NEWQST</srai>
+<think>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>ANOTHER QUESTION *</pattern>
+<template><srai>NEWQST</srai>
+<think>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* ANOTHER * QUESTION</pattern>
+<template><srai>NEWQST</srai>
+<think>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>ANOTHER * QUESTION *</pattern>
+<template><srai>NEWQST</srai>
+<think>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* ANOTHER QUESTION *</pattern>
+<template><srai>NEWQST</srai>
+<think>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* ANOTHER * QUESTION *</pattern>
+<template><srai>NEWQST</srai>
+<think>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+
+<!--NEW QUESTION-->
+
+<category>
+<pattern>NEW QUESTION</pattern>
+<template><srai>NEWQST</srai>
+<think>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* NEW QUESTION</pattern>
+<template><srai>NEWQST</srai>
+<think>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>NEW * QUESTION</pattern>
+<template><srai>NEWQST</srai>
+<think>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>NEW QUESTION *</pattern>
+<template><srai>NEWQST</srai>
+<think>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* NEW * QUESTION</pattern>
+<template><srai>NEWQST</srai>
+<think>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>NEW * QUESTION *</pattern>
+<template><srai>NEWQST</srai>
+<think>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* NEW QUESTION *</pattern>
+<template><srai>NEWQST</srai>
+<think>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* NEW * QUESTION *</pattern>
+<template><srai>NEWQST</srai>
+<think>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>RESET</pattern>
+<template><srai>NEWQST2</srai>
+<think>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* RESET</pattern>
+<template><srai>NEWQST2</srai>
+<think>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>RESET *</pattern>
+<template><srai>NEWQST2</srai>
+<think>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* RESET *</pattern>
+<template><srai>NEWQST2</srai>
+<think>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>RESTART</pattern>
+<template><srai>NEWQST2</srai>
+<think>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* RESTART</pattern>
+<template><srai>NEWQST2</srai>
+<think>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>RESTART *</pattern>
+<template><srai>NEWQST2</srai>
+<think>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* RESTART *</pattern>
+<template><srai>NEWQST2</srai>
+<think>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>START OVER</pattern>
+<template><srai>NEWQST2</srai>
+<think>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* START OVER</pattern>
+<template><srai>NEWQST2</srai>
+<think>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>START OVER *</pattern>
+<template><srai>NEWQST2</srai>
+<think>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* START OVER *</pattern>
+<template><srai>NEWQST2</srai>
+<think>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>NEWQST</pattern>
+<template>
+<random>
+<li>Very Good! What is your question?</li>
+<li>You're more than welcome to ask another question. What would you like to know?</li>
+</random>
+<think>
+<set name="topic">SRCH</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>NEWQST2</pattern>
+<template>
+<random>
+<li>O.K. Let's start over. What is your question?</li>
+<li>Let's start again fresh. What would you like to know?</li>
+</random>
+<think>
+<set name="topic">SRCH</set>
+</think>
+</template>
+</category>
+
+<!--DO NOT SEE RESULTS-->
+
+<category>
+<pattern>DSR</pattern>
+<that>* ASK ME AGAIN</that>
+<template>
+Is your pop up blocker off? Let's see what we found.
+<think>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>DO NOT * ANSWER</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>DO NOT * ANSWER *</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>_ DO NOT * ANSWER</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>_ DO NOT * ANSWER *</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>DO NOT * ANSWERS</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>DO NOT * ANSWERS *</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>_ DO NOT * ANSWERS</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>_ DO NOT * ANSWERS *</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>DO NOT * RESULT</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>DO NOT * RESULT *</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>_ DO NOT * RESULT</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>_ DO NOT * RESULT *</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>DO NOT * RESULTS</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>DO NOT * RESULTS *</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>_ DO NOT * RESULTS</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>_ DO NOT * RESULTS *</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>DO NOT * SEARCH</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>DO NOT * SEARCH *</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>_ DO NOT * SEARCH</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>_ DO NOT * SEARCH *</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>WHERE * ANSWER</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>WHERE * ANSWER *</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>_ WHERE * ANSWER</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>_ WHERE * ANSWER *</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>WHERE * ANSWERS</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>WHERE * ANSWERS *</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>_ WHERE * ANSWERS</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>_ WHERE * ANSWERS *</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>WHERE * RESULT</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>WHERE * RESULT *</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>_ WHERE * RESULT</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>_ WHERE * RESULT *</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>WHERE * RESULTS</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>WHERE * RESULTS *</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>_ WHERE * RESULTS</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>_ WHERE * RESULTS *</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>WHERE * SEARCH</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>WHERE * SEARCH *</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>_ WHERE * SEARCH</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>_ WHERE * SEARCH *</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>_ REOPEN</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>_ REOPEN *</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>DID YOU FIND *</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+<category>
+<pattern>WERE YOU * FIND *</pattern>
+<template><srai>DSR</srai></template>
+</category>
+
+</aiml>  

@@ -1,0 +1,1382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<!--Copyright 2011-2012 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+  
+<category>
+<pattern>EBOOK</pattern>
+<template><srai>EBKS</srai></template>
+</category>  
+ 
+<category>
+<pattern>EBOOKS</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>E BOOK</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>E BOOKS</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>ELECTRONIC BOOKS</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>EMEDIA</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>E MEDIA</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<!--DIGITAL EDS-->
+
+<category>
+<pattern>DIGITAL EDITION</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>* DIGITAL EDITION</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>DIGITAL EDITION *</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>* DIGITAL EDITION *</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>DIGITAL EDITIONS</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>DIGITAL EDITIONS *</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<!--E READER-->
+
+<category>
+<pattern>E READER BOOKS</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>EREADER BOOKS</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>NOOKBOOKS</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>NOOK BOOKS</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>ONLINE BOOK</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>ONLINE BOOKS</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>* BOOKS * DOWNLOAD * E READER</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>* BOOKS * DOWNLOAD * E READERS</pattern>
+<template><srai>EBKS</srai></template>
+</category>  
+  
+<category>
+<pattern>OVERDRIVE</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>OVER DRIVE</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<topic name="EBKS">
+<category>
+<pattern>_</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai></template>
+</category>
+</topic>
+
+<category>
+<pattern>* EBOOK</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* EBOOK *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>EBOOK *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>EBOOKS *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* EBOOKS</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* EBOOKS *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* E BOOK</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>E BOOK *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* E BOOK *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* E BOOKS</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>E BOOKS *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* E BOOKS *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* ELECTRONIC BOOKS</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>ELECTRONIC BOOKS *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* ELECTRONIC BOOKS *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* EMEDIA</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>EMEDIA *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* EMEDIA *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* E MEDIA</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>E MEDIA *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* E MEDIA *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* E READER BOOKS</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>E READER BOOKS *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* E READER BOOKS *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+
+<category>
+<pattern>* EREADER BOOKS</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>EREADER BOOKS *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* EREADER BOOKS *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* NOOKBOOKS</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>NOOKBOOKS *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* NOOKBOOKS *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* NOOK BOOKS</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>NOOK BOOKS *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* NOOK BOOKS *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* ONLINE BOOK</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>ONLINE BOOK *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* ONLINE BOOK *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* ONLINE BOOKS</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>ONLINE BOOKS *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* ONLINE BOOKS *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* OVERDRIVE</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>OVERDRIVE *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* OVERDRIVE *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* OVER DRIVE</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>OVER DRIVE *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* OVER DRIVE *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">EBKS2</set>
+</think>
+<srai>EBKS2</srai>
+</template>
+</category>
+
+<topic name="EBKS2">
+<category>
+<pattern>EBKS2</pattern>
+<template>
+<think>
+<get name="answr"/>
+<set name="message">no match</set>
+<condition name="answr">
+
+<li value="STOP"><set name="message">stop</set></li>
+
+<li value="GET"><set name="message">general</set></li>
+<li value="* GET"><set name="message">general</set></li>
+<li value="GET *"><set name="message">general</set></li>
+<li value="* GET *"><set name="message">general</set></li>
+
+<li value="ADOBE"><set name="message">adobe de</set></li>
+<li value="* ADOBE"><set name="message">adobe de</set></li>
+<li value="ADOBE *"><set name="message">adobe de</set></li>
+<li value="* ADOBE *"><set name="message">adobe de</set></li>
+
+<li value="HELP"><set name="message">general help</set></li>
+<li value="* HELP"><set name="message">general help</set></li>
+<li value="HELP *"><set name="message">general help</set></li>
+<li value="* HELP *"><set name="message">general help</set></li>
+
+<li value="HELP IPAD"><set name="message">ipad help</set></li>
+<li value="* HELP IPAD"><set name="message">ipad help</set></li>
+<li value="HELP * IPAD"><set name="message">ipad help</set></li>
+<li value="HELP IPAD *"><set name="message">ipad help</set></li>
+<li value="* HELP * IPAD"><set name="message">ipad help</set></li>
+<li value="HELP * IPAD *"><set name="message">ipad help</set></li>
+<li value="* HELP IPAD *"><set name="message">ipad help</set></li>
+<li value="* HELP * IPAD *"><set name="message">ipad help</set></li>
+
+<li value="HELP IPADS"><set name="message">ipad help</set></li>
+<li value="* HELP IPADS"><set name="message">ipad help</set></li>
+<li value="HELP * IPADS"><set name="message">ipad help</set></li>
+<li value="HELP IPADS *"><set name="message">ipad help</set></li>
+<li value="* HELP * IPADS"><set name="message">ipad help</set></li>
+<li value="HELP * IPADS *"><set name="message">ipad help</set></li>
+<li value="* HELP IPADS *"><set name="message">ipad help</set></li>
+<li value="* HELP * IPADS *"><set name="message">ipad help</set></li>
+
+<li value="HELP I PAD"><set name="message">ipad help</set></li>
+<li value="* HELP I PAD"><set name="message">ipad help</set></li>
+<li value="HELP * I PAD"><set name="message">ipad help</set></li>
+<li value="HELP I PAD *"><set name="message">ipad help</set></li>
+<li value="* HELP * I PAD"><set name="message">ipad help</set></li>
+<li value="HELP * I PAD *"><set name="message">ipad help</set></li>
+<li value="* HELP I PAD *"><set name="message">ipad help</set></li>
+<li value="* HELP * I PAD *"><set name="message">ipad help</set></li>
+
+<li value="HELP I PADS"><set name="message">ipad help</set></li>
+<li value="* HELP I PADS"><set name="message">ipad help</set></li>
+<li value="HELP * I PADS"><set name="message">ipad help</set></li>
+<li value="HELP I PADS *"><set name="message">ipad help</set></li>
+<li value="* HELP * I PADS"><set name="message">ipad help</set></li>
+<li value="HELP * I PADS *"><set name="message">ipad help</set></li>
+<li value="* HELP I PADS *"><set name="message">ipad help</set></li>
+<li value="* HELP * I PADS *"><set name="message">ipad help</set></li>
+
+<li value="HELP KINDLE"><set name="message">kindle help</set></li>
+<li value="* HELP KINDLE"><set name="message">kindle help</set></li>
+<li value="HELP * KINDLE"><set name="message">kindle help</set></li>
+<li value="HELP KINDLE *"><set name="message">kindle help</set></li>
+<li value="* HELP * KINDLE"><set name="message">kindle help</set></li>
+<li value="HELP * KINDLE *"><set name="message">kindle help</set></li>
+<li value="* HELP KINDLE *"><set name="message">kindle help</set></li>
+<li value="* HELP * KINDLE *"><set name="message">kindle help</set></li>
+
+<li value="HELP KINDLES"><set name="message">kindle help</set></li>
+<li value="* HELP KINDLES"><set name="message">kindle help</set></li>
+<li value="HELP * KINDLES"><set name="message">kindle help</set></li>
+<li value="HELP KINDLES *"><set name="message">kindle help</set></li>
+<li value="* HELP * KINDLES"><set name="message">kindle help</set></li>
+<li value="HELP * KINDLES *"><set name="message">kindle help</set></li>
+<li value="* HELP KINDLES *"><set name="message">kindle help</set></li>
+<li value="* HELP * KINDLES *"><set name="message">kindle help</set></li>
+
+<li value="HELP NOOK"><set name="message">nook help</set></li>
+<li value="* HELP NOOK"><set name="message">nook help</set></li>
+<li value="HELP * NOOK"><set name="message">nook help</set></li>
+<li value="HELP NOOK *"><set name="message">nook help</set></li>
+<li value="* HELP * NOOK"><set name="message">nook help</set></li>
+<li value="HELP * NOOK *"><set name="message">nook help</set></li>
+<li value="* HELP NOOK *"><set name="message">nook help</set></li>
+<li value="* HELP * NOOK *"><set name="message">nook help</set></li>
+
+<li value="HELP NOOKS"><set name="message">nook help</set></li>
+<li value="* HELP NOOKS"><set name="message">nook help</set></li>
+<li value="HELP * NOOKS"><set name="message">nook help</set></li>
+<li value="HELP NOOKS *"><set name="message">nook help</set></li>
+<li value="* HELP * NOOKS"><set name="message">nook help</set></li>
+<li value="HELP * NOOKS *"><set name="message">nook help</set></li>
+<li value="* HELP NOOKS *"><set name="message">nook help</set></li>
+<li value="* HELP * NOOKS *"><set name="message">nook help</set></li>
+
+<li value="IPAD HELP"><set name="message">ipad help</set></li>
+<li value="* IPAD HELP"><set name="message">ipad help</set></li>
+<li value="IPAD * HELP"><set name="message">ipad help</set></li>
+<li value="IPAD HELP *"><set name="message">ipad help</set></li>
+<li value="* IPAD * HELP"><set name="message">ipad help</set></li>
+<li value="IPAD * HELP *"><set name="message">ipad help</set></li>
+<li value="* IPAD HELP *"><set name="message">ipad help</set></li>
+<li value="* IPAD * HELP *"><set name="message">ipad help</set></li>
+
+<li value="I PAD HELP"><set name="message">ipad help</set></li>
+<li value="* I PAD HELP"><set name="message">ipad help</set></li>
+<li value="I PAD * HELP"><set name="message">ipad help</set></li>
+<li value="I PAD HELP *"><set name="message">ipad help</set></li>
+<li value="* I PAD * HELP"><set name="message">ipad help</set></li>
+<li value="I PAD * HELP *"><set name="message">ipad help</set></li>
+<li value="* I PAD HELP *"><set name="message">ipad help</set></li>
+<li value="* I PAD * HELP *"><set name="message">ipad help</set></li>
+
+<li value="KINDLE HELP"><set name="message">kindle help</set></li>
+<li value="* KINDLE HELP"><set name="message">kindle help</set></li>
+<li value="KINDLE * HELP"><set name="message">kindle help</set></li>
+<li value="KINDLE HELP *"><set name="message">kindle help</set></li>
+<li value="* KINDLE * HELP"><set name="message">kindle help</set></li>
+<li value="KINDLE * HELP *"><set name="message">kindle help</set></li>
+<li value="* KINDLE HELP *"><set name="message">kindle help</set></li>
+<li value="* KINDLE * HELP *"><set name="message">kindle help</set></li>
+
+<li value="NOOK HELP"><set name="message">nook help</set></li>
+<li value="* NOOK HELP"><set name="message">nook help</set></li>
+<li value="NOOK * HELP"><set name="message">nook help</set></li>
+<li value="NOOK HELP *"><set name="message">nook help</set></li>
+<li value="* NOOK * HELP"><set name="message">nook help</set></li>
+<li value="NOOK * HELP *"><set name="message">nook help</set></li>
+<li value="* NOOK HELP *"><set name="message">nook help</set></li>
+<li value="* NOOK * HELP *"><set name="message">nook help</set></li>
+
+<li value="COMPATIBLE"><set name="message">compatible devices</set></li>
+<li value="* COMPATIBLE"><set name="message">compatible devices</set></li>
+<li value="COMPATIBLE *"><set name="message">compatible devices</set></li>
+<li value="* COMPATIBLE *"><set name="message">compatible devices</set></li>
+
+<li value="DEVICE"><set name="message">compatible devices</set></li>
+<li value="* DEVICE"><set name="message">compatible devices</set></li>
+<li value="DEVICE *"><set name="message">compatible devices</set></li>
+<li value="* DEVICE *"><set name="message">compatible devices</set></li>
+
+<li value="DEVICES"><set name="message">compatible devices</set></li>
+<li value="* DEVICES"><set name="message">compatible devices</set></li>
+<li value="DEVICES *"><set name="message">compatible devices</set></li>
+<li value="* DEVICES *"><set name="message">compatible devices</set></li>
+
+<li value="EREADER WORK"><set name="message">compatible devices</set></li>
+<li value="* EREADER WORK"><set name="message">compatible devices</set></li>
+<li value="EREADER * WORK"><set name="message">compatible devices</set></li>
+<li value="EREADER WORK *"><set name="message">compatible devices</set></li>
+<li value="* EREADER * WORK"><set name="message">compatible devices</set></li>
+<li value="EREADER * WORK *"><set name="message">compatible devices</set></li>
+<li value="* EREADER WORK *"><set name="message">compatible devices</set></li>
+<li value="* EREADER * WORK *"><set name="message">compatible devices</set></li>
+
+<li value="E READER WORK"><set name="message">compatible devices</set></li>
+<li value="* E READER WORK"><set name="message">compatible devices</set></li>
+<li value="E READER * WORK"><set name="message">compatible devices</set></li>
+<li value="E READER WORK *"><set name="message">compatible devices</set></li>
+<li value="* E READER * WORK"><set name="message">compatible devices</set></li>
+<li value="E READER * WORK *"><set name="message">compatible devices</set></li>
+<li value="* E READER WORK *"><set name="message">compatible devices</set></li>
+<li value="* E READER * WORK *"><set name="message">compatible devices</set></li>
+
+<li value="EREADER WORKS"><set name="message">compatible devices</set></li>
+<li value="* EREADER WORKS"><set name="message">compatible devices</set></li>
+<li value="EREADER * WORKS"><set name="message">compatible devices</set></li>
+<li value="EREADER WORKS *"><set name="message">compatible devices</set></li>
+<li value="* EREADER * WORKS"><set name="message">compatible devices</set></li>
+<li value="EREADER * WORKS *"><set name="message">compatible devices</set></li>
+<li value="* EREADER WORKS *"><set name="message">compatible devices</set></li>
+<li value="* EREADER * WORKS *"><set name="message">compatible devices</set></li>
+
+<li value="E READER WORKS"><set name="message">compatible devices</set></li>
+<li value="* E READER WORKS"><set name="message">compatible devices</set></li>
+<li value="E READER * WORKS"><set name="message">compatible devices</set></li>
+<li value="E READER WORKS *"><set name="message">compatible devices</set></li>
+<li value="* E READER * WORKS"><set name="message">compatible devices</set></li>
+<li value="E READER * WORKS *"><set name="message">compatible devices</set></li>
+<li value="* E READER WORKS *"><set name="message">compatible devices</set></li>
+<li value="* E READER * WORKS *"><set name="message">compatible devices</set></li>
+
+<li value="EREADERS WORK"><set name="message">compatible devices</set></li>
+<li value="* EREADERS WORK"><set name="message">compatible devices</set></li>
+<li value="EREADERS * WORK"><set name="message">compatible devices</set></li>
+<li value="EREADERS WORK *"><set name="message">compatible devices</set></li>
+<li value="* EREADERS * WORK"><set name="message">compatible devices</set></li>
+<li value="EREADERS * WORK *"><set name="message">compatible devices</set></li>
+<li value="* EREADERS WORK *"><set name="message">compatible devices</set></li>
+<li value="* EREADERS * WORK *"><set name="message">compatible devices</set></li>
+
+<li value="E READERS WORK"><set name="message">compatible devices</set></li>
+<li value="* E READERS WORK"><set name="message">compatible devices</set></li>
+<li value="E READERS * WORK"><set name="message">compatible devices</set></li>
+<li value="E READERS WORK *"><set name="message">compatible devices</set></li>
+<li value="* E READERS * WORK"><set name="message">compatible devices</set></li>
+<li value="E READERS * WORK *"><set name="message">compatible devices</set></li>
+<li value="* E READERS WORK *"><set name="message">compatible devices</set></li>
+<li value="* E READERS * WORK *"><set name="message">compatible devices</set></li>
+
+<li value="EREADERS WORKS"><set name="message">compatible devices</set></li>
+<li value="* EREADERS WORKS"><set name="message">compatible devices</set></li>
+<li value="EREADERS * WORKS"><set name="message">compatible devices</set></li>
+<li value="EREADERS WORKS *"><set name="message">compatible devices</set></li>
+<li value="* EREADERS * WORKS"><set name="message">compatible devices</set></li>
+<li value="EREADERS * WORKS *"><set name="message">compatible devices</set></li>
+<li value="* EREADERS WORKS *"><set name="message">compatible devices</set></li>
+<li value="* EREADERS * WORKS *"><set name="message">compatible devices</set></li>
+
+<li value="E READERS WORKS"><set name="message">compatible devices</set></li>
+<li value="* E READERS WORKS"><set name="message">compatible devices</set></li>
+<li value="E READERS * WORKS"><set name="message">compatible devices</set></li>
+<li value="E READERS WORKS *"><set name="message">compatible devices</set></li>
+<li value="* E READERS * WORKS"><set name="message">compatible devices</set></li>
+<li value="E READERS * WORKS *"><set name="message">compatible devices</set></li>
+<li value="* E READERS WORKS *"><set name="message">compatible devices</set></li>
+<li value="* E READERS * WORKS *"><set name="message">compatible devices</set></li>
+
+<li value="DEMO"><set name="message">demos</set></li>
+<li value="* DEMO"><set name="message">demos</set></li>
+<li value="DEMO *"><set name="message">demos</set></li>
+<li value="* DEMO *"><set name="message">demos</set></li>
+
+<li value="DEMOS"><set name="message">demos</set></li>
+<li value="* DEMOS"><set name="message">demos</set></li>
+<li value="DEMOS *"><set name="message">demos</set></li>
+<li value="* DEMOS *"><set name="message">demos</set></li>
+
+<li value="TUTORIAL"><set name="message">demos</set></li>
+<li value="* TUTORIAL"><set name="message">demos</set></li>
+<li value="TUTORIAL *"><set name="message">demos</set></li>
+<li value="* TUTORIAL *"><set name="message">demos</set></li>
+
+<li value="TUTORIALS"><set name="message">demos</set></li>
+<li value="* TUTORIALS"><set name="message">demos</set></li>
+<li value="TUTORIALS *"><set name="message">demos</set></li>
+<li value="* TUTORIALS *"><set name="message">demos</set></li>
+
+<li value="RETURN"><set name="message">returning ebooks</set></li>
+<li value="* RETURN"><set name="message">returning ebooks</set></li>
+<li value="RETURN *"><set name="message">returning ebooks</set></li>
+<li value="* RETURN *"><set name="message">returning ebooks</set></li>
+
+<li value="RETURNING"><set name="message">returning ebooks</set></li>
+<li value="* RETURNING"><set name="message">returning ebooks</set></li>
+<li value="RETURNING *"><set name="message">returning ebooks</set></li>
+<li value="* RETURNING *"><set name="message">returning ebooks</set></li>
+
+<li value="RENEW"><set name="message">renewing ebooks</set></li>
+<li value="* RENEW"><set name="message">renewing ebooks</set></li>
+<li value="RENEW *"><set name="message">renewing ebooks</set></li>
+<li value="* RENEW *"><set name="message">renewing ebooks</set></li>
+
+<li value="RENEWAL"><set name="message">renewing ebooks</set></li>
+<li value="* RENEWAL"><set name="message">renewing ebooks</set></li>
+<li value="RENEWAL *"><set name="message">renewing ebooks</set></li>
+<li value="* RENEWAL *"><set name="message">renewing ebooks</set></li>
+
+<li value="RENEWALS"><set name="message">renewing ebooks</set></li>
+<li value="* RENEWALS"><set name="message">renewing ebooks</set></li>
+<li value="RENEWALS *"><set name="message">renewing ebooks</set></li>
+<li value="* RENEWALS *"><set name="message">renewing ebooks</set></li>
+
+<li value="RENEWED"><set name="message">renewing ebooks</set></li>
+<li value="* RENEWED"><set name="message">renewing ebooks</set></li>
+<li value="RENEWED *"><set name="message">renewing ebooks</set></li>
+<li value="* RENEWED *"><set name="message">renewing ebooks</set></li>
+
+<li value="RENEWING"><set name="message">renewing ebooks</set></li>
+<li value="* RENEWING"><set name="message">renewing ebooks</set></li>
+<li value="RENEWING *"><set name="message">renewing ebooks</set></li>
+<li value="* RENEWING *"><set name="message">renewing ebooks</set></li>
+
+<li value="FIND"><set name="message">ebook search</set></li>
+<li value="* FIND"><set name="message">ebook search</set></li>
+<li value="FIND *"><set name="message">ebook search</set></li>
+<li value="* FIND *"><set name="message">ebook search</set></li>
+
+<li value="FINDING"><set name="message">ebook search</set></li>
+<li value="* FINDING"><set name="message">ebook search</set></li>
+<li value="FINDING *"><set name="message">ebook search</set></li>
+<li value="* FINDING *"><set name="message">ebook search</set></li>
+
+<li value="SEARCH"><set name="message">ebook search</set></li>
+<li value="* SEARCH"><set name="message">ebook search</set></li>
+<li value="SEARCH *"><set name="message">ebook search</set></li>
+<li value="* SEARCH *"><set name="message">ebook search</set></li>
+
+<li value="SEARCHES"><set name="message">ebook search</set></li>
+<li value="* SEARCHES"><set name="message">ebook search</set></li>
+<li value="SEARCHES *"><set name="message">ebook search</set></li>
+<li value="* SEARCHES *"><set name="message">ebook search</set></li>
+
+<li value="SEARCHING"><set name="message">ebook search</set></li>
+<li value="* SEARCHING"><set name="message">ebook search</set></li>
+<li value="SEARCHING *"><set name="message">ebook search</set></li>
+<li value="* SEARCHING *"><set name="message">ebook search</set></li>
+
+<li value="LIST"><set name="message">list of ebooks</set></li>
+<li value="* LIST"><set name="message">list of ebooks</set></li>
+<li value="LIST *"><set name="message">list of ebooks</set></li>
+<li value="* LIST *"><set name="message">list of ebooks</set></li>
+
+<li value="LISTED"><set name="message">list of ebooks</set></li>
+<li value="* LISTED"><set name="message">list of ebooks</set></li>
+<li value="LISTED *"><set name="message">list of ebooks</set></li>
+<li value="* LISTED *"><set name="message">list of ebooks</set></li>
+
+<li value="LISTING"><set name="message">list of ebooks</set></li>
+<li value="* LISTING"><set name="message">list of ebooks</set></li>
+<li value="LISTING *"><set name="message">list of ebooks</set></li>
+<li value="* LISTING *"><set name="message">list of ebooks</set></li>
+
+<li value="LISTS"><set name="message">list of ebooks</set></li>
+<li value="* LISTS"><set name="message">list of ebooks</set></li>
+<li value="LISTS *"><set name="message">list of ebooks</set></li>
+<li value="* LISTS *"><set name="message">list of ebooks</set></li>
+
+<li value="FREE"><set name="message">free ebooks</set></li>
+<li value="* FREE"><set name="message">free ebooks</set></li>
+<li value="FREE *"><set name="message">free ebooks</set></li>
+<li value="* FREE *"><set name="message">free ebooks</set></li>
+
+<li value="OPEN LIBRARY"><set name="message">ol ebooks</set></li>
+<li value="* OPEN LIBRARY"><set name="message">ol ebooks</set></li>
+<li value="OPEN LIBRARY *"><set name="message">ol ebooks</set></li>
+<li value="* OPEN LIBRARY *"><set name="message">ol ebooks</set></li>
+
+<li value="PUBLIC DOMAIN"><set name="message">free ebooks</set></li>
+<li value="* PUBLIC DOMAIN"><set name="message">free ebooks</set></li>
+<li value="PUBLIC DOMAIN *"><set name="message">free ebooks</set></li>
+<li value="* PUBLIC DOMAIN *"><set name="message">free ebooks</set></li>
+
+<li value="IPAD"><set name="message">ipad</set></li>
+<li value="* IPAD"><set name="message">ipad</set></li>
+<li value="IPAD *"><set name="message">ipad</set></li>
+<li value="* IPAD *"><set name="message">ipad</set></li>
+
+<li value="IPADS"><set name="message">ipad</set></li>
+<li value="* IPADS"><set name="message">ipad</set></li>
+<li value="IPADS *"><set name="message">ipad</set></li>
+<li value="* IPADS *"><set name="message">ipad</set></li>
+
+<li value="I PAD"><set name="message">ipad</set></li>
+<li value="* I PAD"><set name="message">ipad</set></li>
+<li value="I PAD *"><set name="message">ipad</set></li>
+<li value="* I PAD *"><set name="message">ipad</set></li>
+
+<li value="I PADS"><set name="message">ipad</set></li>
+<li value="* I PADS"><set name="message">ipad</set></li>
+<li value="I PADS *"><set name="message">ipad</set></li>
+<li value="* I PADS *"><set name="message">ipad</set></li>
+
+<li value="KINDLE"><set name="message">kindle</set></li>
+<li value="* KINDLE"><set name="message">kindle</set></li>
+<li value="KINDLE *"><set name="message">kindle</set></li>
+<li value="* KINDLE *"><set name="message">kindle</set></li>
+
+<li value="KINDLES"><set name="message">kindle</set></li>
+<li value="* KINDLES"><set name="message">kindle</set></li>
+<li value="KINDLES *"><set name="message">kindle</set></li>
+<li value="* KINDLES *"><set name="message">kindle</set></li>
+
+<li value="NOOK"><set name="message">nook</set></li>
+<li value="* NOOK"><set name="message">nook</set></li>
+<li value="NOOK *"><set name="message">nook</set></li>
+<li value="* NOOK *"><set name="message">nook</set></li>
+
+<li value="NOOKS"><set name="message">nook</set></li>
+<li value="* NOOKS"><set name="message">nook</set></li>
+<li value="NOOKS *"><set name="message">nook</set></li>
+<li value="* NOOKS *"><set name="message">nook</set></li>
+
+<li value="READY * DOWNLOAD"><set name="message">ebook ready</set></li>
+<li value="* READY * DOWNLOAD"><set name="message">ebook ready</set></li>
+<li value="READY * DOWNLOAD *"><set name="message">ebook ready</set></li>
+<li value="* READY * DOWNLOAD *"><set name="message">ebook ready</set></li>
+
+<li value="AUDIO"><set name="message">downloadable media</set></li>
+<li value="* AUDIO"><set name="message">downloadable media</set></li>
+<li value="AUDIO *"><set name="message">downloadable media</set></li>
+<li value="* AUDIO *"><set name="message">downloadable media</set></li>
+
+<li value="AUDIOS"><set name="message">downloadable media</set></li>
+<li value="* AUDIOS"><set name="message">downloadable media</set></li>
+<li value="AUDIOS *"><set name="message">downloadable media</set></li>
+<li value="* AUDIOS *"><set name="message">downloadable media</set></li>
+
+<li value="AUDIOBOOK"><set name="message">downloadable media</set></li>
+<li value="* AUDIOBOOK"><set name="message">downloadable media</set></li>
+<li value="AUDIOBOOK *"><set name="message">downloadable media</set></li>
+<li value="* AUDIOBOOK *"><set name="message">downloadable media</set></li>
+
+<li value="AUDIOBOOKS"><set name="message">downloadable media</set></li>
+<li value="* AUDIOBOOKS"><set name="message">downloadable media</set></li>
+<li value="AUDIOBOOKS *"><set name="message">downloadable media</set></li>
+<li value="* AUDIOBOOKS *"><set name="message">downloadable media</set></li>
+
+<li value="AUDIO BOOK"><set name="message">downloadable media</set></li>
+<li value="* AUDIO BOOK"><set name="message">downloadable media</set></li>
+<li value="AUDIO BOOK *"><set name="message">downloadable media</set></li>
+<li value="* AUDIO BOOK *"><set name="message">downloadable media</set></li>
+
+<li value="AUDIO BOOKS"><set name="message">downloadable media</set></li>
+<li value="* AUDIO BOOKS"><set name="message">downloadable media</set></li>
+<li value="AUDIO BOOKS *"><set name="message">downloadable media</set></li>
+<li value="* AUDIO BOOKS *"><set name="message">downloadable media</set></li>
+
+<li value="EMEDIA"><set name="message">downloadable media</set></li>
+<li value="* EMEDIA"><set name="message">downloadable media</set></li>
+<li value="EMEDIA *"><set name="message">downloadable media</set></li>
+<li value="* EMEDIA *"><set name="message">downloadable media</set></li>
+
+<li value="E MEDIA"><set name="message">downloadable media</set></li>
+<li value="* E MEDIA"><set name="message">downloadable media</set></li>
+<li value="E MEDIA *"><set name="message">downloadable media</set></li>
+<li value="* E MEDIA *"><set name="message">downloadable media</set></li>
+
+<li value="MEDIA"><set name="message">downloadable media</set></li>
+<li value="* MEDIA"><set name="message">downloadable media</set></li>
+<li value="MEDIA *"><set name="message">downloadable media</set></li>
+<li value="* MEDIA *"><set name="message">downloadable media</set></li>
+
+<li value="MP3"><set name="message">downloadable media</set></li>
+<li value="* MP3"><set name="message">downloadable media</set></li>
+<li value="MP3 *"><set name="message">downloadable media</set></li>
+<li value="* MP3 *"><set name="message">downloadable media</set></li>
+
+
+<li value="HOW LONG"><set name="message">edev loan periods</set></li>
+<li value="* HOW LONG"><set name="message">edev loan periods</set></li>
+<li value="HOW LONG *"><set name="message">edev loan periods</set></li>
+<li value="* HOW LONG *"><set name="message">edev loan periods</set></li>
+
+<li value="LOAN PERIOD"><set name="message">edev loan periods</set></li>
+<li value="* LOAN PERIOD"><set name="message">edev loan periods</set></li>
+<li value="LOAN PERIOD *"><set name="message">edev loan periods</set></li>
+<li value="* LOAN PERIOD *"><set name="message">edev loan periods</set></li>
+
+<li value="LOAN PERIODS"><set name="message">edev loan periods</set></li>
+<li value="* LOAN PERIODS"><set name="message">edev loan periods</set></li>
+<li value="LOAN PERIODS *"><set name="message">edev loan periods</set></li>
+<li value="* LOAN PERIODS *"><set name="message">edev loan periods</set></li>
+
+<li value="HOW LONG IPAD"><set name="message">ipad loan periods</set></li>
+<li value="HOW LONG * IPAD"><set name="message">ipad loan periods</set></li>
+<li value="HOW LONG IPAD *"><set name="message">ipad loan periods</set></li>
+<li value="* HOW LONG * IPAD"><set name="message">ipad loan periods</set></li>
+<li value="HOW LONG * IPAD *"><set name="message">ipad loan periods</set></li>
+<li value="* HOW LONG * IPAD *"><set name="message">ipad loan periods</set></li>
+
+<li value="HOW LONG IPADS"><set name="message">ipad loan periods</set></li>
+<li value="HOW LONG * IPADS"><set name="message">ipad loan periods</set></li>
+<li value="HOW LONG IPADS *"><set name="message">ipad loan periods</set></li>
+<li value="* HOW LONG * IPADS"><set name="message">ipad loan periods</set></li>
+<li value="HOW LONG * IPADS *"><set name="message">ipad loan periods</set></li>
+<li value="* HOW LONG * IPADS *"><set name="message">ipad loan periods</set></li>
+
+<li value="IPAD LOAN PERIOD"><set name="message">ipad loan periods</set></li>
+<li value="* IPAD LOAN PERIOD"><set name="message">ipad loan periods</set></li>
+<li value="IPAD * LOAN PERIOD"><set name="message">ipad loan periods</set></li>
+<li value="IPAD LOAN PERIOD *"><set name="message">ipad loan periods</set></li>
+<li value="* IPAD * LOAN PERIOD"><set name="message">ipad loan periods</set></li>
+<li value="IPAD * LOAN PERIOD *"><set name="message">ipad loan periods</set></li>
+<li value="* IPAD * LOAN PERIOD *"><set name="message">ipad loan periods</set></li>
+
+<li value="IPAD LOAN PERIODS"><set name="message">ipad loan periods</set></li>
+<li value="* IPAD LOAN PERIODS"><set name="message">ipad loan periods</set></li>
+<li value="IPAD * LOAN PERIODS"><set name="message">ipad loan periods</set></li>
+<li value="IPAD LOAN PERIODS *"><set name="message">ipad loan periods</set></li>
+<li value="* IPAD * LOAN PERIODS"><set name="message">ipad loan periods</set></li>
+<li value="IPAD * LOAN PERIODS *"><set name="message">ipad loan periods</set></li>
+<li value="* IPAD * LOAN PERIODS *"><set name="message">ipad loan periods</set></li>
+
+<li value="LOAN PERIOD IPAD"><set name="message">ipad loan periods</set></li>
+<li value="* LOAN PERIOD IPAD"><set name="message">ipad loan periods</set></li>
+<li value="LOAN PERIOD * IPAD"><set name="message">ipad loan periods</set></li>
+<li value="LOAN PERIOD IPAD *"><set name="message">ipad loan periods</set></li>
+<li value="* LOAN PERIOD * IPAD "><set name="message">ipad loan periods</set></li>
+<li value="LOAN PERIOD * IPAD *"><set name="message">ipad loan periods</set></li>
+<li value="* LOAN PERIOD * IPAD *"><set name="message">ipad loan periods</set></li>
+
+<li value="LOAN PERIOD IPADS"><set name="message">ipad loan periods</set></li>
+<li value="* LOAN PERIOD IPADS"><set name="message">ipad loan periods</set></li>
+<li value="LOAN PERIOD * IPADS"><set name="message">ipad loan periods</set></li>
+<li value="LOAN PERIOD IPADS *"><set name="message">ipad loan periods</set></li>
+<li value="* LOAN PERIOD * IPADS "><set name="message">ipad loan periods</set></li>
+<li value="LOAN PERIOD * IPADS *"><set name="message">ipad loan periods</set></li>
+<li value="* LOAN PERIOD * IPADS *"><set name="message">ipad loan periods</set></li>
+
+<li value="LOAN PERIODS IPAD"><set name="message">ipad loan periods</set></li>
+<li value="* LOAN PERIODS IPAD"><set name="message">ipad loan periods</set></li>
+<li value="LOAN PERIODS * IPAD"><set name="message">ipad loan periods</set></li>
+<li value="LOAN PERIODS IPAD *"><set name="message">ipad loan periods</set></li>
+<li value="* LOAN PERIODS * IPAD "><set name="message">ipad loan periods</set></li>
+<li value="LOAN PERIODS * IPAD *"><set name="message">ipad loan periods</set></li>
+<li value="* LOAN PERIODS * IPAD *"><set name="message">ipad loan periods</set></li>
+
+<li value="LOAN PERIODS IPADS"><set name="message">ipad loan periods</set></li>
+<li value="* LOAN PERIODS IPADS"><set name="message">ipad loan periods</set></li>
+<li value="LOAN PERIODS * IPADS"><set name="message">ipad loan periods</set></li>
+<li value="LOAN PERIODS IPADS *"><set name="message">ipad loan periods</set></li>
+<li value="* LOAN PERIODS * IPADS "><set name="message">ipad loan periods</set></li>
+<li value="LOAN PERIODS * IPADS *"><set name="message">ipad loan periods</set></li>
+<li value="* LOAN PERIODS * IPADS *"><set name="message">ipad loan periods</set></li>
+
+<li value="HOW LONG KINDLE"><set name="message">kindle loan periods</set></li>
+<li value="HOW LONG * KINDLE"><set name="message">kindle loan periods</set></li>
+<li value="HOW LONG KINDLE *"><set name="message">kindle loan periods</set></li>
+<li value="* HOW LONG * KINDLE"><set name="message">kindle loan periods</set></li>
+<li value="HOW LONG * KINDLE *"><set name="message">kindle loan periods</set></li>
+<li value="* HOW LONG * KINDLE *"><set name="message">kindle loan periods</set></li>
+
+<li value="HOW LONG KINDLES"><set name="message">kindle loan periods</set></li>
+<li value="HOW LONG * KINDLES"><set name="message">kindle loan periods</set></li>
+<li value="HOW LONG KINDLES *"><set name="message">kindle loan periods</set></li>
+<li value="* HOW LONG * KINDLES"><set name="message">kindle loan periods</set></li>
+<li value="HOW LONG * KINDLES *"><set name="message">kindle loan periods</set></li>
+<li value="* HOW LONG * KINDLES *"><set name="message">kindle loan periods</set></li>
+
+<li value="KINDLE LOAN PERIOD"><set name="message">kindle loan periods</set></li>
+<li value="* KINDLE LOAN PERIOD"><set name="message">kindle loan periods</set></li>
+<li value="KINDLE * LOAN PERIOD"><set name="message">kindle loan periods</set></li>
+<li value="KINDLE LOAN PERIOD *"><set name="message">kindle loan periods</set></li>
+<li value="* KINDLE * LOAN PERIOD"><set name="message">kindle loan periods</set></li>
+<li value="KINDLE * LOAN PERIOD *"><set name="message">kindle loan periods</set></li>
+<li value="* KINDLE * LOAN PERIOD *"><set name="message">kindle loan periods</set></li>
+
+<li value="KINDLE LOAN PERIODS"><set name="message">kindle loan periods</set></li>
+<li value="* KINDLE LOAN PERIODS"><set name="message">kindle loan periods</set></li>
+<li value="KINDLE * LOAN PERIODS"><set name="message">kindle loan periods</set></li>
+<li value="KINDLE LOAN PERIODS *"><set name="message">kindle loan periods</set></li>
+<li value="* KINDLE * LOAN PERIODS"><set name="message">kindle loan periods</set></li>
+<li value="KINDLE * LOAN PERIODS *"><set name="message">kindle loan periods</set></li>
+<li value="* KINDLE * LOAN PERIODS *"><set name="message">kindle loan periods</set></li>
+
+<li value="LOAN PERIOD KINDLE"><set name="message">kindle loan periods</set></li>
+<li value="* LOAN PERIOD KINDLE"><set name="message">kindle loan periods</set></li>
+<li value="LOAN PERIOD * KINDLE"><set name="message">kindle loan periods</set></li>
+<li value="LOAN PERIOD KINDLE *"><set name="message">kindle loan periods</set></li>
+<li value="* LOAN PERIOD * KINDLE "><set name="message">kindle loan periods</set></li>
+<li value="LOAN PERIOD * KINDLE *"><set name="message">kindle loan periods</set></li>
+<li value="* LOAN PERIOD * KINDLE *"><set name="message">kindle loan periods</set></li>
+
+<li value="LOAN PERIOD KINDLES"><set name="message">kindle loan periods</set></li>
+<li value="* LOAN PERIOD KINDLES"><set name="message">kindle loan periods</set></li>
+<li value="LOAN PERIOD * KINDLES"><set name="message">kindle loan periods</set></li>
+<li value="LOAN PERIOD KINDLES *"><set name="message">kindle loan periods</set></li>
+<li value="* LOAN PERIOD * KINDLES "><set name="message">kindle loan periods</set></li>
+<li value="LOAN PERIOD * KINDLES *"><set name="message">kindle loan periods</set></li>
+<li value="* LOAN PERIOD * KINDLES *"><set name="message">kindle loan periods</set></li>
+
+<li value="LOAN PERIODS KINDLE"><set name="message">kindle loan periods</set></li>
+<li value="* LOAN PERIODS KINDLE"><set name="message">kindle loan periods</set></li>
+<li value="LOAN PERIODS * KINDLE"><set name="message">kindle loan periods</set></li>
+<li value="LOAN PERIODS KINDLE *"><set name="message">kindle loan periods</set></li>
+<li value="* LOAN PERIODS * KINDLE "><set name="message">kindle loan periods</set></li>
+<li value="LOAN PERIODS * KINDLE *"><set name="message">kindle loan periods</set></li>
+<li value="* LOAN PERIODS * KINDLE *"><set name="message">kindle loan periods</set></li>
+
+<li value="LOAN PERIODS KINDLES"><set name="message">kindle loan periods</set></li>
+<li value="* LOAN PERIODS KINDLES"><set name="message">kindle loan periods</set></li>
+<li value="LOAN PERIODS * KINDLES"><set name="message">kindle loan periods</set></li>
+<li value="LOAN PERIODS KINDLES *"><set name="message">kindle loan periods</set></li>
+<li value="* LOAN PERIODS * KINDLES "><set name="message">kindle loan periods</set></li>
+<li value="LOAN PERIODS * KINDLES *"><set name="message">kindle loan periods</set></li>
+<li value="* LOAN PERIODS * KINDLES *"><set name="message">kindle loan periods</set></li>
+
+<li value="FINE"><set name="message">fines</set></li>
+<li value="* FINE"><set name="message">fines</set></li>
+<li value="FINE *"><set name="message">fines</set></li>
+<li value="* FINE *"><set name="message">fines</set></li>
+
+<li value="FINED"><set name="message">fines</set></li>
+<li value="* FINED"><set name="message">fines</set></li>
+<li value="FINED *"><set name="message">fines</set></li>
+<li value="* FINED *"><set name="message">fines</set></li>
+
+<li value="FINES"><set name="message">fines</set></li>
+<li value="* FINES"><set name="message">fines</set></li>
+<li value="FINES *"><set name="message">fines</set></li>
+<li value="* FINES *"><set name="message">fines</set></li>
+
+<li value="FEE"><set name="message">fines</set></li>
+<li value="* FEE"><set name="message">fines</set></li>
+<li value="FEE *"><set name="message">fines</set></li>
+<li value="* FEE *"><set name="message">fines</set></li>
+
+<li value="FEES"><set name="message">fines</set></li>
+<li value="* FEES"><set name="message">fines</set></li>
+<li value="FEES *"><set name="message">fines</set></li>
+<li value="* FEES *"><set name="message">fines</set></li>
+
+<li value="CHARGE"><set name="message">fines</set></li>
+<li value="* CHARGE"><set name="message">fines</set></li>
+<li value="CHARGE *"><set name="message">fines</set></li>
+<li value="* CHARGE *"><set name="message">fines</set></li>
+
+<li value="CHARGES"><set name="message">fines</set></li>
+<li value="* CHARGES"><set name="message">fines</set></li>
+<li value="CHARGES *"><set name="message">fines</set></li>
+<li value="* CHARGES *"><set name="message">fines</set></li>
+
+<li value="BREAK"><set name="message">damage replace</set></li>
+<li value="* BREAK"><set name="message">damage replace</set></li>
+<li value="BREAK *"><set name="message">damage replace</set></li>
+<li value="* BREAK *"><set name="message">damage replace</set></li>
+
+<li value="BREAKS"><set name="message">damage replace</set></li>
+<li value="* BREAKS"><set name="message">damage replace</set></li>
+<li value="BREAKS *"><set name="message">damage replace</set></li>
+<li value="* BREAKS *"><set name="message">damage replace</set></li>
+
+<li value="BROKEN"><set name="message">damage replace</set></li>
+<li value="* BROKEN"><set name="message">damage replace</set></li>
+<li value="BROKEN *"><set name="message">damage replace</set></li>
+<li value="* BROKEN *"><set name="message">damage replace</set></li>
+
+<li value="DAMAGE"><set name="message">damage replace</set></li>
+<li value="* DAMAGE"><set name="message">damage replace</set></li>
+<li value="DAMAGE *"><set name="message">damage replace</set></li>
+<li value="* DAMAGE *"><set name="message">damage replace</set></li>
+
+<li value="DAMAGED"><set name="message">damage replace</set></li>
+<li value="* DAMAGED"><set name="message">damage replace</set></li>
+<li value="DAMAGED *"><set name="message">damage replace</set></li>
+<li value="* DAMAGED *"><set name="message">damage replace</set></li>
+
+<li value="DAMAGES"><set name="message">damage replace</set></li>
+<li value="* DAMAGES"><set name="message">damage replace</set></li>
+<li value="DAMAGES *"><set name="message">damage replace</set></li>
+<li value="* DAMAGES *"><set name="message">damage replace</set></li>
+
+<li value="LOSE"><set name="message">damage replace</set></li>
+<li value="* LOSE"><set name="message">damage replace</set></li>
+<li value="LOSE *"><set name="message">damage replace</set></li>
+<li value="* LOSE *"><set name="message">damage replace</set></li>
+
+<li value="LOSES"><set name="message">damage replace</set></li>
+<li value="* LOSES"><set name="message">damage replace</set></li>
+<li value="LOSES *"><set name="message">damage replace</set></li>
+<li value="* LOSES *"><set name="message">damage replace</set></li>
+
+<li value="LOST"><set name="message">damage replace</set></li>
+<li value="* LOST"><set name="message">damage replace</set></li>
+<li value="LOST *"><set name="message">damage replace</set></li>
+<li value="* LOST *"><set name="message">damage replace</set></li>
+
+<li value="REPLACE"><set name="message">damage replace</set></li>
+<li value="* REPLACE"><set name="message">damage replace</set></li>
+<li value="REPLACE *"><set name="message">damage replace</set></li>
+<li value="* REPLACE *"><set name="message">damage replace</set></li>
+
+<li value="REPLACEMENT"><set name="message">damage replace</set></li>
+<li value="* REPLACEMENT"><set name="message">damage replace</set></li>
+<li value="REPLACEMENT *"><set name="message">damage replace</set></li>
+<li value="* REPLACEMENT *"><set name="message">damage replace</set></li>
+
+<li value="STEAL"><set name="message">damage replace</set></li>
+<li value="* STEAL"><set name="message">damage replace</set></li>
+<li value="STEAL *"><set name="message">damage replace</set></li>
+<li value="* STEAL *"><set name="message">damage replace</set></li>
+
+<li value="STEALS"><set name="message">damage replace</set></li>
+<li value="* STEALS"><set name="message">damage replace</set></li>
+<li value="STEALS *"><set name="message">damage replace</set></li>
+<li value="* STEALS *"><set name="message">damage replace</set></li>
+
+<li value="STOLEN"><set name="message">damage replace</set></li>
+<li value="* STOLEN"><set name="message">damage replace</set></li>
+<li value="STOLEN *"><set name="message">damage replace</set></li>
+<li value="* STOLEN *"><set name="message">damage replace</set></li>
+
+
+
+</condition>
+<think><set name="topic"></set></think>
+</think>
+
+<condition name="message">
+
+<li value="stop"><set name="topic"></set>O.K. I'll stop.</li>
+
+<li value="no match">O.K. If you need any further assistance, please call the library at 440.255.8811 during regular business hours.</li>
+<li value="general"><srai>EBKS</srai></li>
+<li value="adobe de"><srai>ADEHELP</srai></li>
+
+<li value="help"><srai>ODHELP</srai></li>
+
+<li value="compatible devices"><srai>COMPATDEVS</srai></li>
+
+<li value="demos"><srai>ODDEMOS</srai></li>
+
+<li value="returning ebooks"><srai>EBKRETURN</srai></li>
+  
+<li value="ebook search"><srai>SRCHEBKS</srai></li>
+
+<li value="list of ebooks"><srai>EBKLIST</srai></li>
+
+<li value="free"><srai>FREE EBKS</srai></li>
+
+<li value="ipad help"><srai>DWN IPDS</srai></li>
+
+<li value="kindle help"><srai>DWN KINDL</srai></li>
+
+<li value="nook help"><srai>DWN NKS</srai></li>
+
+<li value="ipad"><srai>GENINFO IPDS</srai></li>
+
+<li value="kindle"><srai>GENINFO KINDL</srai></li>
+
+<li value="nook"><srai>GENINFO NKS</srai></li>
+ 
+<li value="ebook ready"><srai>EBKS READY</srai></li>
+
+<li value="downloadable media"><srai>DWN MEDIA</srai></li>
+
+<li value="ol ebooks"><srai>OPNLIB</srai></li>
+
+<li value="odipad"><srai>DWN IPDS</srai></li>
+
+<li value="odkindle"><srai>DWN KINDL</srai></li>
+
+<li value="odnook"><srai>DWN NKS</srai></li>
+
+<li value="damage replace"><srai>EDEV WRECK</srai></li>
+
+
+</condition>
+</template>
+</category>
+</topic>
+
+</aiml>  

@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<!--Copyright 2011-2012 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+  
+<!--SORT HOLD OR PURCH REQ-->
+
+<category>
+<pattern>ORDITEM</pattern>
+<template>Are you asking us to purchase an item?</template>
+</category>
+
+<category>
+<pattern>YES</pattern>
+<that>* ASKING US TO PURCHASE *</that>
+<template><srai>PREORDER</srai></template>
+</category>
+
+<category>
+<pattern>YES *</pattern>
+<that>* ASKING US TO PURCHASE *</that>
+<template><srai>PREORDER</srai></template>
+</category>
+
+<category>
+<pattern>* YES</pattern>
+<that>* ASKING US TO PURCHASE *</that>
+<template><srai>PREORDER</srai></template>
+</category>
+
+<category>
+<pattern>* YES *</pattern>
+<that>* ASKING US TO PURCHASE *</that>
+<template><srai>PREORDER</srai></template>
+</category>
+
+<category>
+<pattern>NO</pattern>
+<that>* ASKING US TO PURCHASE *</that>
+<template>OK. <srai>PLACEHOLD</srai></template>
+</category>
+
+<category>
+<pattern>* NO</pattern>
+<that>* ASKING US TO PURCHASE *</that>
+<template>OK. <srai>PLACEHOLD</srai></template>
+</category>
+
+<category>
+<pattern>NO *</pattern>
+<that>* ASKING US TO PURCHASE *</that>
+<template>OK. <srai>PLACEHOLD</srai></template>
+</category>
+
+<category>
+<pattern>* NO *</pattern>
+<that>* ASKING US TO PURCHASE *</that>
+<template>OK. <srai>PLACEHOLD</srai></template>
+</category>
+
+<category>
+<pattern>ORDER BOOK</pattern>
+<template><srai>ORDITEM</srai></template>
+</category>
+
+<category>
+<pattern>ORDER BOOKS</pattern>
+<template><srai>ORDITEM</srai></template>
+</category>
+
+<category>
+<pattern>ORDER CD</pattern>
+<template><srai>ORDITEM</srai></template>
+</category>
+
+<category>
+<pattern>ORDER CDS</pattern>
+<template><srai>ORDITEM</srai></template>
+</category>
+
+<category>
+<pattern>ORDER DVD</pattern>
+<template><srai>ORDITEM</srai></template>
+</category>
+
+<category>
+<pattern>ORDER DVDS</pattern>
+<template><srai>ORDITEM</srai></template>
+</category>
+
+<!--acquisition reqs-->
+
+<category>
+<pattern>PRCHREQ</pattern>
+<template>
+Just so I understand, please answer "yes" or "no." Would you like to suggest an item for the library to purchase?
+</template>
+</category>
+
+<category>
+<pattern>YES</pattern>
+<that>_ LIBRARY TO PURCHASE</that>
+<template>
+Tell me about the item you're suggesting we purchase. Please enter your library card number and the author, title, or other information for the item.
+<think>
+<set name="topic">PRCHREQ</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>NO</pattern>
+<that>_ LIBRARY TO PURCHASE</that>
+<template>
+O.K. It sounds like you're asking me to recommend a book you might enjoy. What do you like to read?
+</template>
+</category>
+
+<topic name="PRCHREQ">
+<category>
+<pattern>*</pattern>
+<that>PLEASE ENTER * INFORMATION FOR THE ITEM</that>
+<template><srai>PREQCONF</srai></template>
+</category>
+
+<category>
+<pattern> MYSTERY </pattern>
+<that>PLEASE ENTER * INFORMATION FOR THE ITEM</that>
+<template><srai>PREQCONF</srai></template>
+</category>
+
+<category>
+<pattern>_ MYSTERY </pattern>
+<that>PLEASE ENTER * INFORMATION FOR THE ITEM</that>
+<template><srai>PREQCONF</srai></template>
+</category>
+
+<category>
+<pattern> MYSTERY *</pattern>
+<that>PLEASE ENTER * INFORMATION FOR THE ITEM</that>
+<template><srai>PREQCONF</srai></template>
+</category>
+
+<category>
+<pattern>_ MYSTERY *</pattern>
+<that>PLEASE ENTER * INFORMATION FOR THE ITEM</that>
+<template><srai>PREQCONF</srai></template>
+</category>
+
+<category>
+<pattern> MYSTERIES </pattern>
+<that>PLEASE ENTER * INFORMATION FOR THE ITEM</that>
+<template><srai>PREQCONF</srai></template>
+</category>
+
+<category>
+<pattern>_ MYSTERIES </pattern>
+<that>PLEASE ENTER * INFORMATION FOR THE ITEM</that>
+<template><srai>PREQCONF</srai></template>
+</category>
+
+<category>
+<pattern> MYSTERIES *</pattern>
+<that>PLEASE ENTER * INFORMATION FOR THE ITEM</that>
+<template><srai>PREQCONF</srai></template>
+</category>
+
+<category>
+<pattern>_ MYSTERIES *</pattern>
+<that>PLEASE ENTER * INFORMATION FOR THE ITEM</that>
+<template><srai>PREQCONF</srai></template>
+</category>
+
+<category>
+<pattern>PREQCONF</pattern>
+<template>Thanks. I'll see that the selectors receive this information. The ordering and acquisition process usually takes about 
+a month. Please check the status of this request then.
+<think>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+</topic>
+
+<category>
+<pattern>REQUEST * BUY</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>_ REQUEST * BUY</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>REQUEST * PURCHASE</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>_ REQUEST * PURCHASE</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>REQUEST TITLE</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>SUGGEST BOOK</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* SUGGEST BOOK</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>SUGGEST * BOOK</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>SUGGEST BOOK *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* SUGGEST * BOOK</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>SUGGEST * BOOK *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* SUGGEST BOOK *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* SUGGEST * BOOK *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>SUGGEST BOOKS</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* SUGGEST BOOKS</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>SUGGEST * BOOKS</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>SUGGEST BOOKS *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* SUGGEST * BOOKS</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>SUGGEST * BOOKS *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* SUGGEST BOOKS *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* SUGGEST * BOOKS *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>SUGGEST * BUY</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>SUGGEST * BUY *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>_ SUGGEST * BUY</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>_ SUGGEST * BUY *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>SUGGEST ITEM</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* SUGGEST ITEM</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>SUGGEST * ITEM</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>SUGGEST ITEM *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* SUGGEST * ITEM</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>SUGGEST * ITEM *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* SUGGEST ITEM *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* SUGGEST * ITEM *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>SUGGEST ITEMS</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* SUGGEST ITEMS</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>SUGGEST * ITEMS</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>SUGGEST ITEMS *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* SUGGEST * ITEMS</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>SUGGEST * ITEMS *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* SUGGEST ITEMS *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* SUGGEST * ITEMS *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>SUGGEST * PURCHASE</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>_ SUGGEST * PURCHASE</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>_ SUGGEST * PURCHASE *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>RECOMMEND * PURCHASE</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>RECOMMEND * PURCHASE *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>_ RECOMMEND * PURCHASE</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>_ RECOMMEND * PURCHASE *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>SUGGEST TITLE</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>>
+
+<category>
+<pattern>CAN *  ORDER *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>WHEN * ORDER *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>CAN * BUY *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>CAN * BUY A COPY OF *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>CAN * PURCHASE *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>PREORDER</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* PREORDER</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* PREORDER *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>PREORDER *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>PREORDERS</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* PREORDERS</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* PREORDERS *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>PREORDERS *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>PURCHASE REQUEST</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* PURCHASE REQUEST</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>PURCHASE REQUESTS</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* PURCHASE REQUESTS</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* PURCHASE REQUESTS *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* REQUEST * GET  *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* REQUEST * GETS  *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* REQUEST * BUY  *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>NEW ACQUISITIONS REQUEST</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* REQUEST * NEW ACQUISTION *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* REQUEST * NEW ACQUISTION</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern> REQUEST * NEW ACQUISTION</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>ASK * LIBRARY * GET *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* ASK * LIBRARY * GET *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>ASKING * LIBRARY * GET *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* ASKING * LIBRARY * GET *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+  <pattern>* RECOMMEND * PURCHASED</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+  <pattern>* RECOMMEND * PURCHASE</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+  <pattern>* RECOMMEND * PURCHASED *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+  <pattern>* RECOMMEND * PURCHASE *</pattern>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>YES</pattern>
+<that>WOULD YOU LIKE TO MAKE A PURCHASE REQUEST</that>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>YES *</pattern>
+<that>WOULD YOU LIKE TO MAKE A PURCHASE REQUEST</that>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* YES</pattern>
+<that>WOULD YOU LIKE TO MAKE A PURCHASE REQUEST</that>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* YES *</pattern>
+<that>WOULD YOU LIKE TO MAKE A PURCHASE REQUEST</that>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>OK</pattern>
+<that>WOULD YOU LIKE TO MAKE A PURCHASE REQUEST</that>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>OK *</pattern>
+<that>WOULD YOU LIKE TO MAKE A PURCHASE REQUEST</that>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* OK</pattern>
+<that>WOULD YOU LIKE TO MAKE A PURCHASE REQUEST</that>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* OK *</pattern>
+<that>WOULD YOU LIKE TO MAKE A PURCHASE REQUEST</that>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>O K</pattern>
+<that>WOULD YOU LIKE TO MAKE A PURCHASE REQUEST</that>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>O K *</pattern>
+<that>WOULD YOU LIKE TO MAKE A PURCHASE REQUEST</that>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* O K</pattern>
+<that>WOULD YOU LIKE TO MAKE A PURCHASE REQUEST</that>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* O K *</pattern>
+<that>WOULD YOU LIKE TO MAKE A PURCHASE REQUEST</that>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>SURE</pattern>
+<that>WOULD YOU LIKE TO MAKE A PURCHASE REQUEST</that>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>SURE *</pattern>
+<that>WOULD YOU LIKE TO MAKE A PURCHASE REQUEST</that>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* SURE</pattern>
+<that>WOULD YOU LIKE TO MAKE A PURCHASE REQUEST</that>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+<category>
+<pattern>* SURE *</pattern>
+<that>WOULD YOU LIKE TO MAKE A PURCHASE REQUEST</that>
+<template><srai>PRCHREQ</srai></template>
+</category>
+
+
+</aiml>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<!--Copyright 2011-2012 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+
+
+<category>
+  <pattern>I LOST *</pattern>
+  <template>
+   <think>
+<set name="answr"><star/></set>
+<set name="topic">LOST4EVER</set>
+</think>
+<srai>LST4EVER</srai>
+ </template>
+</category>
+
+<topic name="LOST4EVER">
+<category>
+<pattern>LST4EVER</pattern>
+<template>
+<think>
+<get name="answr"/>
+<set name="message">no match</set>
+<condition name="answr">
+
+<li value="STOP"><set name="message">stop</set></li>
+
+<li value="BOOK"><set name="message">lost book</set></li>
+<li value="* BOOK"><set name="message">lost book</set></li>
+<li value="BOOK *"><set name="message">lost book</set></li>
+<li value="* BOOK *"><set name="message">lost book</set></li>
+
+<li value="BOOKS"><set name="message">lost book</set></li>
+<li value="* BOOKS"><set name="message">lost book</set></li>
+<li value="BOOKS *"><set name="message">lost book</set></li>
+<li value="* BOOKS *"><set name="message">lost book</set></li>
+
+<li value="CARD"><set name="message">lost card</set></li>
+<li value="* CARD"><set name="message">lost card</set></li>
+<li value="CARD *"><set name="message">lost card</set></li>
+<li value="* CARD *"><set name="message">lost card</set></li>
+
+<li value="CARDS"><set name="message">lost card</set></li>
+<li value="* CARDS"><set name="message">lost card</set></li>
+<li value="CARDS *"><set name="message">lost card</set></li>
+<li value="* CARDS *"><set name="message">lost card</set></li>
+
+<li value="CD"><set name="message">lost cd</set></li>
+<li value="* CD"><set name="message">lost cd</set></li>
+<li value="CD *"><set name="message">lost cd</set></li>
+<li value="* CD *"><set name="message">lost cd</set></li>
+
+<li value="CDS"><set name="message">lost cd</set></li>
+<li value="* CDS"><set name="message">lost cd</set></li>
+<li value="CDS *"><set name="message">lost cd</set></li>
+<li value="* CDS *"><set name="message">lost cd</set></li>
+
+<li value="DVD"><set name="message">lost dvd</set></li>
+<li value="* DVD"><set name="message">lost dvd</set></li>
+<li value="DVD *"><set name="message">lost dvd</set></li>
+<li value="* DVD *"><set name="message">lost dvd</set></li>
+
+<li value="DVDS"><set name="message">lost dvd</set></li>
+<li value="* DVDS"><set name="message">lost dvd</set></li>
+<li value="DVDS *"><set name="message">lost dvd</set></li>
+<li value="* DVDS *"><set name="message">lost dvd</set></li>
+
+<li value="MIND"><set name="message">lost mind</set></li>
+<li value="* MIND"><set name="message">lost mind</set></li>
+<li value="MIND *"><set name="message">lost mind</set></li>
+<li value="* MIND *"><set name="message">lost mind</set></li>
+
+<li value="MOVIE"><set name="message">lost dvd</set></li>
+<li value="* MOVIE"><set name="message">lost dvd</set></li>
+<li value="MOVIE *"><set name="message">lost dvd</set></li>
+<li value="* MOVIE *"><set name="message">lost dvd</set></li>
+
+<li value="MOVIES"><set name="message">lost dvd</set></li>
+<li value="* MOVIES"><set name="message">lost dvd</set></li>
+<li value="MOVIES *"><set name="message">lost dvd</set></li>
+<li value="* MOVIES *"><set name="message">lost dvd</set></li>
+
+
+
+</condition>
+<think><set name="topic"></set></think>
+</think>
+ 
+<condition name="message">
+
+<li value="stop"><set name="topic"></set>O.K. I'll stop.</li>
+
+<li value="no match">All of our locations have lost and founds. Please call the location where you lost this.</li>
+
+<li value="lost book"><srai>LOSTITM</srai></li>
+<li value="lost card"><srai>LOSTCRD</srai></li>
+<li value="lost cd"><srai>LOSTITM</srai></li>
+<li value="lost dvd"><srai>LOSTITM</srai></li>
+<li value="lost mind"><srai>LOSTMIND</srai></li>
+
+</condition>
+</template>
+</category>
+</topic> 
+
+</aiml>

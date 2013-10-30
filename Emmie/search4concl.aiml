@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<!--Copyright 2011-2012 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+
+<!--WRAP UP-->
+
+<category>
+<pattern>0CONCL</pattern>
+<template>
+<random>
+<li><srai>CONCLA</srai></li>
+<li><srai>CONCLB</srai></li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern>CONCLA</pattern>
+<template>
+<random>
+<li>Is there anything else I can do for you?</li>
+<li>Is there anything else I can help you with?</li>
+<li>Is there anything else you'd like to ask me?</li>
+</random>
+<think><set name="topic">SRCHCONCLA</set>
+</think>
+</template>
+</category>
+
+
+<topic name="SRCHCONCLA">
+<category>
+<pattern>_</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="message">cont</set>
+<condition name="answr">
+
+
+<li value="YES"><set name="message">yes</set></li>
+
+<li value="NO"><set name="message">concl</set></li>
+<li value="* NO"><set name="message">concl</set></li>
+<li value="NO *"><set name="message">concl</set></li>
+<li value="* NO *"><set name="message">concl</set></li>
+
+<li value="NOT"><set name="message">concl</set></li>
+<li value="* NOT"><set name="message">concl</set></li>
+<li value="NOT *"><set name="message">concl</set></li>
+<li value="* NOT *"><set name="message">concl</set></li>
+
+<li value="THANK"><set name="message">concl</set></li>
+<li value="* THANK"><set name="message">concl</set></li>
+<li value="THANK *"><set name="message">concl</set></li>
+<li value="* THANK *"><set name="message">concl</set></li>
+
+<li value="THANKS"><set name="message">concl</set></li>
+<li value="* THANKS"><set name="message">concl</set></li>
+<li value="THANKS *"><set name="message">concl</set></li>
+<li value="* THANKS *"><set name="message">concl</set></li>
+
+
+</condition>
+<think><set name="topic"></set></think>
+</think>
+
+<condition name="message">
+<li value="yes">O.K. How can I help you.</li>
+
+<li value="cont"><srai><get name="answr"/></srai></li>
+<li value="concl">
+Great! <br/>
+<random>
+<li>Any Catbot that can't do this much isn't worth her salt.</li>
+<li>You see, I am merely one heck of a Catbot</li>
+<li>Any Catbot that can't do even this much isn't worth her salt.</li>
+<li>I am merely one heck of a Catbot.</li>
+</random>
+</li>
+<li value="concl">
+<random>
+<li>Very good. I'm pleased we had this conversation.</li>
+<li>This has been a most interesting conversation. Thanks!</li>
+<li>Thanks for chatting. Every interaction helps me become smarter.</li>
+<li>Thanks! Interacting with humans is fascinating. I'm learning more about you everyday.</li>
+</random>
+</li>
+
+</condition>
+</template>
+</category>
+</topic>
+
+
+<category>
+<pattern>CONCLB</pattern>
+<template>
+<random>
+<li>Does this answer your question?</li>
+<li>Is this what you're looking for?</li>
+<li>Is this helpful?</li>
+</random>
+<think><set name="topic">SRCHCONCLB</set>
+</think>
+</template>
+</category>
+
+
+<topic name="SRCHCONCLB">
+<category>
+<pattern>_</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="message">cont</set>
+<condition name="answr">
+
+
+<li value="YES"><set name="message">concl</set></li>
+
+<li value="NO"><set name="message">no</set></li>
+<li value="* NO"><set name="message">no</set></li>
+<li value="NO *"><set name="message">no</set></li>
+<li value="* NO *"><set name="message">no</set></li>
+
+<li value="NOT"><set name="message">no</set></li>
+<li value="* NOT"><set name="message">no</set></li>
+<li value="NOT *"><set name="message">no</set></li>
+<li value="* NOT *"><set name="message">no</set></li>
+
+<li value="THANK"><set name="message">thanks</set></li>
+<li value="* THANK"><set name="message">thanks</set></li>
+<li value="THANK *"><set name="message">thanks</set></li>
+<li value="* THANK *"><set name="message">thanks</set></li>
+
+<li value="THANKS"><set name="message">thanks</set></li>
+<li value="* THANKS"><set name="message">thanks</set></li>
+<li value="THANKS *"><set name="message">thanks</set></li>
+<li value="* THANKS *"><set name="message">thanks</set></li>
+
+
+</condition>
+<think><set name="topic"></set></think>
+</think>
+
+<condition name="message">
+<li value="no">I'm sorry. My creator will correct this part of my program.</li>
+
+<li value="cont"><srai><get name="answr"/></srai></li>
+<li value="thanks">
+Great! <br/>
+<random>
+<li>Any Catbot that can't do this much isn't worth her salt.</li>
+<li>You see, I am merely one heck of a Catbot</li>
+<li>Any Catbot that can't do even this much isn't worth her salt.</li>
+<li>I am merely one heck of a Catbot.</li>
+</random>
+</li>
+<li value="concl">
+<random>
+<li>Very good. I'm pleased we had this conversation.</li>
+<li>This has been a most interesting conversation. Thanks!</li>
+<li>Thanks for chatting. Every interaction helps me become smarter.</li>
+<li>Thanks! Interacting with humans is fascinating. I'm learning more about you everyday.</li>
+</random>
+</li>
+
+</condition>
+</template>
+</category>
+</topic>
+
+</aiml>
+

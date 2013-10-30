@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<!--Copyright 2011-2012 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+
+<category>
+<pattern>TEEN BOOK CLUB</pattern>
+<template><srai>TNBKCLB</srai></template>
+</category>
+
+<category>
+<pattern>TEEN BOOK CLUBS</pattern>
+<template><srai>TNBKCLB</srai></template>
+</category>
+
+<category>
+<pattern>_ TEEN * CLUB</pattern>
+<template><srai>TNBKCLB</srai></template>
+</category>
+
+<category>
+<pattern>_ TEEN * CLUBS</pattern>
+<template><srai>TNBKCLB</srai></template>
+</category>
+
+<!--
+<category>
+<pattern>TEEN PROGRAMS</pattern>
+<template><srai>TNPRGRMS</srai></template>
+</category>
+
+<category>
+<pattern>_ TEEN PROGRAMS</pattern>
+<template><srai>TNPRGRMS</srai></template>
+</category>
+
+<category>
+<pattern>TEEN PROGRAMS *</pattern>
+<template><srai>TNPRGRMS</srai></template>
+</category>
+
+<category>
+<pattern>_ TEEN PROGRAMS * </pattern>
+<template><srai>TNPRGRMS</srai></template>
+</category>
+
+<category>
+<pattern>PROGRAM * TEENS</pattern>
+<template><srai>TNPRGRMS</srai></template>
+</category>
+
+<category>
+<pattern>_ PROGRAM * TEENS</pattern>
+<template><srai>TNPRGRMS</srai></template>
+</category>
+
+<category>
+<pattern>PROGRAM * TEENS *</pattern>
+<template><srai>TNPRGRMS</srai></template>
+</category>
+
+<category>
+<pattern>_ PROGRAM * TEENS * </pattern>
+<template><srai>TNPRGRMS</srai></template>
+</category>
+
+<category>
+<pattern>PROGRAMS * TEENS</pattern>
+<template><srai>TNPRGRMS</srai></template>
+</category>
+
+<category>
+<pattern>_ PROGRAMS * TEENS</pattern>
+<template><srai>TNPRGRMS</srai></template>
+</category>
+
+<category>
+<pattern>PROGRAMS * TEENS *</pattern>
+<template><srai>TNPRGRMS</srai></template>
+</category>
+
+<category>
+<pattern>_ PROGRAMS * TEENS * </pattern>
+<template><srai>TNPRGRMS</srai></template>
+</category>
+-->
+
+<category>
+<pattern>TEEN S DEPARTMENT</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>* TEEN S DEPARTMENT</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>* TEEN S DEPARTMENT *</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>TEEN S DEPARTMENT *</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>TEENS DEPARTMENT</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>* TEENS DEPARTMENT</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>* TEENS DEPARTMENT *</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>TEENS DEPARTMENT *</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>TEENS SECTION</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>* TEENS SECTION</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>* TEENS SECTION *</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>TEENS SECTION *</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>TEEN S SECTION</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>* TEEN S SECTION</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>* TEEN S SECTION *</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>TEEN S SECTION *</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>* TEEN S SERVICES</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>* TEEN S SERVICES *</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>TEEN S SERVICES *</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>TEENS SERVICES</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>* TEENS SERVICES</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>* TEENS SERVICES *</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>TEENS SERVICES *</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>TEEN DEPARTMENT</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>* TEEN DEPARTMENT</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>* TEEN DEPARTMENT *</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>TEEN DEPARTMENT *</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+
+<category>
+<pattern>TEEN SECTION</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>* TEEN SECTION</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>* TEEN SECTION *</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>TEEN SECTION *</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>YA DEPARTMENT</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>* YA DEPARTMENT</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>* YA DEPARTMENT *</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>YA DEPARTMENT *</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>YA SECTION</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>* YA SECTION</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>* YA SECTION *</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+<category>
+<pattern>YA SECTION *</pattern>
+<template><srai>TNSDEPT</srai></template>
+</category>
+
+</aiml>

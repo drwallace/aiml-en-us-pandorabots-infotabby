@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<!--Copyright 2011-2012 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+  
+<!--COMMENT-->
+
+<category>
+<pattern>COMMENTFORM</pattern>
+<template>You can use <a href="" target="_blank"><b>this form</b></a> or you can tell me your comment or complaint.</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>_ TELL ME YOUR COMMENT OR COMPLAINT</that>
+<template>Thank you. You wrote: <b>"<star/>"</b>. I'll see that this gets to the correct person.
+Please enter your contact information, an email address or phone number so we can follow up on this.
+</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>_ SO WE CAN FOLLOW UP ON THIS</that>
+<template>Thank you. You entered: <b>"<star/>"</b>. Someone from the Library will
+be in touch with you.
+</template>
+</category>
+
+<!--SUGGESTIONS-->
+
+<category>
+<pattern>SGGST</pattern>
+<template>Just so I understand, is this a suggestion for an item you'd like the library to purchase, or an idea to help us to improve our services?
+<think>
+<set name="topic">SUGGEST</set>
+</think>
+</template>
+</category>
+
+<topic name="SUGGEST">
+<category>
+<pattern>_</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="message">service suggestion</set>
+<condition name="answr">
+
+<li value="ADD"><set name="message">purchase suggestion</set></li>
+<li value="* ADD"><set name="message">purchase suggestion</set></li>
+<li value="ADD *"><set name="message">purchase suggestion</set></li>
+<li value="* ADD *"><set name="message">purchase suggestion</set></li>
+
+<li value="ADDED"><set name="message">purchase suggestion</set></li>
+<li value="* ADDED"><set name="message">purchase suggestion</set></li>
+<li value="ADDED *"><set name="message">purchase suggestion</set></li>
+<li value="* ADDED *"><set name="message">purchase suggestion</set></li>
+
+<li value="BOOK"><set name="message">purchase suggestion</set></li>
+<li value="* BOOK"><set name="message">purchase suggestion</set></li>
+<li value="BOOK *"><set name="message">purchase suggestion</set></li>
+<li value="* BOOK *"><set name="message">purchase suggestion</set></li>
+
+<li value="BOOKS"><set name="message">purchase suggestion</set></li>
+<li value="* BOOKS"><set name="message">purchase suggestion</set></li>
+<li value="BOOKS *"><set name="message">purchase suggestion</set></li>
+<li value="* BOOKS *"><set name="message">purchase suggestion</set></li>
+
+<li value="CD"><set name="message">purchase suggestion</set></li>
+<li value="* CD"><set name="message">purchase suggestion</set></li>
+<li value="CD *"><set name="message">purchase suggestion</set></li>
+<li value="* CD *"><set name="message">purchase suggestion</set></li>
+
+<li value="CDS"><set name="message">purchase suggestion</set></li>
+<li value="* CDS"><set name="message">purchase suggestion</set></li>
+<li value="CDS *"><set name="message">purchase suggestion</set></li>
+<li value="* CDS *"><set name="message">purchase suggestion</set></li>
+
+<li value="DVD"><set name="message">purchase suggestion</set></li>
+<li value="* DVD"><set name="message">purchase suggestion</set></li>
+<li value="DVD *"><set name="message">purchase suggestion</set></li>
+<li value="* DVD *"><set name="message">purchase suggestion</set></li>
+
+<li value="DVDS"><set name="message">purchase suggestion</set></li>
+<li value="* DVDS"><set name="message">purchase suggestion</set></li>
+<li value="DVDS *"><set name="message">purchase suggestion</set></li>
+<li value="* DVDS *"><set name="message">purchase suggestion</set></li>
+
+<li value="EBOOK"><set name="message">purchase suggestion</set></li>
+<li value="* EBOOK"><set name="message">purchase suggestion</set></li>
+<li value="EBOOK *"><set name="message">purchase suggestion</set></li>
+<li value="* EBOOK *"><set name="message">purchase suggestion</set></li>
+
+<li value="EBOOKS"><set name="message">purchase suggestion</set></li>
+<li value="* EBOOKS"><set name="message">purchase suggestion</set></li>
+<li value="EBOOKS *"><set name="message">purchase suggestion</set></li>
+<li value="* EBOOKS *"><set name="message">purchase suggestion</set></li>
+
+<li value="E BOOK"><set name="message">purchase suggestion</set></li>
+<li value="* E BOOK"><set name="message">purchase suggestion</set></li>
+<li value="E BOOK *"><set name="message">purchase suggestion</set></li>
+<li value="* E BOOK *"><set name="message">purchase suggestion</set></li>
+
+<li value="E BOOKS"><set name="message">purchase suggestion</set></li>
+<li value="* E BOOKS"><set name="message">purchase suggestion</set></li>
+<li value="E BOOKS *"><set name="message">purchase suggestion</set></li>
+<li value="* E BOOKS *"><set name="message">purchase suggestion</set></li>
+
+<li value="GAME"><set name="message">purchase suggestion</set></li>
+<li value="* GAME"><set name="message">purchase suggestion</set></li>
+<li value="GAME *"><set name="message">purchase suggestion</set></li>
+<li value="* GAME *"><set name="message">purchase suggestion</set></li>
+
+<li value="GAMES"><set name="message">purchase suggestion</set></li>
+<li value="* GAMES"><set name="message">purchase suggestion</set></li>
+<li value="GAMES *"><set name="message">purchase suggestion</set></li>
+<li value="* GAMES *"><set name="message">purchase suggestion</set></li>
+
+<li value="MOVIE"><set name="message">purchase suggestion</set></li>
+<li value="* MOVIE"><set name="message">purchase suggestion</set></li>
+<li value="MOVIE *"><set name="message">purchase suggestion</set></li>
+<li value="* MOVIE *"><set name="message">purchase suggestion</set></li>
+
+<li value="MOVIES"><set name="message">purchase suggestion</set></li>
+<li value="* MOVIES"><set name="message">purchase suggestion</set></li>
+<li value="MOVIES *"><set name="message">purchase suggestion</set></li>
+<li value="* MOVIES *"><set name="message">purchase suggestion</set></li>
+
+<li value="MUSIC"><set name="message">purchase suggestion</set></li>
+<li value="* MUSIC"><set name="message">purchase suggestion</set></li>
+<li value="MUSIC *"><set name="message">purchase suggestion</set></li>
+<li value="* MUSIC *"><set name="message">purchase suggestion</set></li>
+
+<li value="SOUND TRACK"><set name="message">purchase suggestion</set></li>
+<li value="* SOUND TRACK"><set name="message">purchase suggestion</set></li>
+<li value="SOUND TRACK *"><set name="message">purchase suggestion</set></li>
+<li value="* SOUND TRACK *"><set name="message">purchase suggestion</set></li>
+
+<li value="SOUND TRACKS"><set name="message">purchase suggestion</set></li>
+<li value="* SOUND TRACKS"><set name="message">purchase suggestion</set></li>
+<li value="SOUND TRACKS *"><set name="message">purchase suggestion</set></li>
+<li value="* SOUND TRACKS *"><set name="message">purchase suggestion</set></li>
+
+<li value="BUY"><set name="message">purchase suggestion</set></li>
+<li value="* BUY"><set name="message">purchase suggestion</set></li>
+<li value="BUY *"><set name="message">purchase suggestion</set></li>
+<li value="* BUY *"><set name="message">purchase suggestion</set></li>
+
+<li value="COPY"><set name="message">purchase suggestion</set></li>
+<li value="* COPY"><set name="message">purchase suggestion</set></li>
+<li value="COPY *"><set name="message">purchase suggestion</set></li>
+<li value="* COPY *"><set name="message">purchase suggestion</set></li>
+
+<li value="COPIES"><set name="message">purchase suggestion</set></li>
+<li value="* COPIES"><set name="message">purchase suggestion</set></li>
+<li value="COPIES *"><set name="message">purchase suggestion</set></li>
+<li value="* COPIES *"><set name="message">purchase suggestion</set></li>
+
+<li value="GET"><set name="message">purchase suggestion</set></li>
+<li value="* GET"><set name="message">purchase suggestion</set></li>
+<li value="GET *"><set name="message">purchase suggestion</set></li>
+<li value="* GET *"><set name="message">purchase suggestion</set></li>
+
+<li value="ORDER"><set name="message">purchase suggestion</set></li>
+<li value="* ORDER"><set name="message">purchase suggestion</set></li>
+<li value="ORDER *"><set name="message">purchase suggestion</set></li>
+<li value="* ORDER *"><set name="message">purchase suggestion</set></li>
+
+<li value="PURCHASE"><set name="message">purchase suggestion</set></li>
+<li value="* PURCHASE"><set name="message">purchase suggestion</set></li>
+<li value="PURCHASE *"><set name="message">purchase suggestion</set></li>
+<li value="* PURCHASE *"><set name="message">purchase suggestion</set></li>
+
+</condition>
+<think><set name="topic"></set></think>
+</think>
+ 
+<condition name="message">
+
+<li value="purchase suggestion"><srai>PRCHSGGST</srai></li>
+<li value="service suggestion"><srai>SRVCSGGST</srai></li>
+</condition>
+</template>
+</category>
+</topic>
+
+<category>
+<pattern>PRCHSGGST</pattern>
+<template>
+Tell me about the item. Please enter your library card number and the author, title, or other information for the item.
+<think>
+<set name="topic">PRCHSGGST</set>
+</think>
+</template>
+</category>
+
+
+<topic name="PRCHSGGST">
+<category>
+<pattern>*</pattern>
+<that>PLEASE ENTER * INFORMATION FOR THE ITEM</that>
+<template><srai>PSGGSTCONF</srai></template>
+</category>
+
+<category>
+<pattern> MYSTERY </pattern>
+<that>PLEASE ENTER * INFORMATION FOR THE ITEM</that>
+<template><srai>PSGGSTCONF</srai></template>
+</category>
+
+<category>
+<pattern>_ MYSTERY </pattern>
+<that>PLEASE ENTER * INFORMATION FOR THE ITEM</that>
+<template><srai>PSGGSTCONF</srai></template>
+</category>
+
+<category>
+<pattern> MYSTERY *</pattern>
+<that>PLEASE ENTER * INFORMATION FOR THE ITEM</that>
+<template><srai>PSGGSTCONF</srai></template>
+</category>
+
+<category>
+<pattern>_ MYSTERY *</pattern>
+<that>PLEASE ENTER * INFORMATION FOR THE ITEM</that>
+<template><srai>PSGGSTCONF</srai></template>
+</category>
+
+<category>
+<pattern> MYSTERIES </pattern>
+<that>PLEASE ENTER * INFORMATION FOR THE ITEM</that>
+<template><srai>PSGGSTCONF</srai></template>
+</category>
+
+<category>
+<pattern>_ MYSTERIES </pattern>
+<that>PLEASE ENTER * INFORMATION FOR THE ITEM</that>
+<template><srai>PSGGSTCONF</srai></template>
+</category>
+
+<category>
+<pattern> MYSTERIES *</pattern>
+<that>PLEASE ENTER * INFORMATION FOR THE ITEM</that>
+<template><srai>PSGGSTCONF</srai></template>
+</category>
+
+<category>
+<pattern>_ MYSTERIES *</pattern>
+<that>PLEASE ENTER * INFORMATION FOR THE ITEM</that>
+<template><srai>PSGGSTCONF</srai></template>
+</category>
+
+<category>
+<pattern>PSGGSTCONF</pattern>
+<template>Thanks. I'll see that the selectors receive this information. The ordering and acquisition process usually takes about 
+a month. Please check the status of this request then.
+<think>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+</topic>
+
+<!--SERVICE SUGGESTION-->
+
+<category>
+<pattern>SRVCSGGST</pattern>
+<template>
+Tell me your suggestion.
+<think>
+<set name="topic">SRVCSGGST</set>
+</think>
+</template>
+</category>
+
+<topic name="SRVCSGGST">
+<category>
+<pattern>*</pattern>
+<template><srai>SRVCSGGSTCONF</srai></template>
+</category>
+
+<category>
+<pattern>SRVCSGGSTCONF</pattern>
+<template>Thank you. You wrote: <b>"<star/>"</b>. I'll see that this gets to the correct person.
+Please enter your contact information, an email address or phone number so we can follow up.
+<think>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>_ SO WE CAN FOLLOW UP</that>
+<template>Thank you. You entered: <b>"<star/>"</b>. Someone from the Library will
+be in touch with you shortly.
+</template>
+</category>
+</topic>
+
+</aiml>

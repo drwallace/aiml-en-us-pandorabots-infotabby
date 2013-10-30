@@ -1,0 +1,924 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<!--Copyright 2011-2012 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+  
+<category>
+  <pattern>CHILD</pattern>
+   <template>
+   <srai>KDSSRVCS</srai>
+   </template>
+</category>  
+
+<category>
+  <pattern>CHILDS</pattern>
+   <template>
+   <srai>KDSSRVCS</srai>
+   </template>
+</category>  
+
+<category>
+  <pattern>CHILD S</pattern>
+   <template>
+   <srai>KDSSRVCS</srai>
+   </template>
+</category>  
+
+<category>
+  <pattern>CHILDREN</pattern>
+   <template>
+   <srai>KDSSRVCS</srai>
+   </template>
+</category>
+
+
+<category>
+  <pattern>CHILDRENS</pattern>
+   <template>
+   <srai>KDSSRVCS</srai>
+   </template>
+</category>
+
+<category>
+  <pattern>CHILDREN S</pattern>
+   <template>
+   <srai>KDSSRVCS</srai>
+   </template>
+</category>
+
+<category>
+  <pattern>KID</pattern>
+   <template>
+   <srai>KDSSRVCS</srai>
+   </template>
+</category>
+
+<category>
+  <pattern>KIDS</pattern>
+   <template>
+   <srai>KDSSRVCS</srai>
+   </template>
+</category>
+
+<category>
+  <pattern>KID S</pattern>
+   <template>
+   <srai>KDSSRVCS</srai>
+   </template>
+</category>
+
+<category>
+  <pattern>KDSSRVCS</pattern>
+  <template>Children's Services are one of the most important areas of our operation.
+<br/>
+  What would you like to know about our Children's programs or events?
+  <think>
+  <set name="topic">KIDSDEPT</set>
+</think>
+</template>
+</category>
+
+<topic name="KIDSDEPT">
+<category>
+<pattern>_</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">KIDSDEPT2</set>
+</think>
+<srai>KIDSDEPT2</srai></template>
+</category>
+</topic>
+ 
+<category>
+  <pattern>* CHILD</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">KIDSDEPT2</set>
+</think>
+<srai>KIDSDEPT2</srai></template>
+</category>
+
+<category>
+  <pattern>CHILD *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">KIDSDEPT2</set>
+</think>
+<srai>KIDSDEPT2</srai></template>
+</category>
+
+<category>
+  <pattern>* CHILD *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">KIDSDEPT2</set>
+</think>
+<srai>KIDSDEPT2</srai></template>
+</category>
+
+<category>
+  <pattern>* CHILDS</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">KIDSDEPT2</set>
+</think>
+<srai>KIDSDEPT2</srai></template>
+</category>
+
+<category>
+  <pattern>CHILDS *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">KIDSDEPT2</set>
+</think>
+<srai>KIDSDEPT2</srai></template>
+</category>
+
+<category>
+  <pattern>* CHILDS *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">KIDSDEPT2</set>
+</think>
+<srai>KIDSDEPT2</srai></template>
+</category>
+
+<category>
+  <pattern>* CHILD S</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">KIDSDEPT2</set>
+</think>
+<srai>KIDSDEPT2</srai></template>
+</category>
+
+<category>
+  <pattern>CHILD S *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">KIDSDEPT2</set>
+</think>
+<srai>KIDSDEPT2</srai></template>
+</category>
+
+<category>
+  <pattern>* CHILD S *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">KIDSDEPT2</set>
+</think>
+<srai>KIDSDEPT2</srai></template>
+</category>
+
+<category>
+  <pattern>* CHILDREN</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">KIDSDEPT2</set>
+</think>
+<srai>KIDSDEPT2</srai></template>
+</category>
+
+<category>
+  <pattern>CHILDREN *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">KIDSDEPT2</set>
+</think>
+<srai>KIDSDEPT2</srai></template>
+</category>
+
+<category>
+  <pattern>* CHILDREN *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">KIDSDEPT2</set>
+</think>
+<srai>KIDSDEPT2</srai></template>
+</category>
+
+<category>
+  <pattern>* CHILDRENS</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">KIDSDEPT2</set>
+</think>
+<srai>KIDSDEPT2</srai></template>
+</category>
+
+<category>
+  <pattern>CHILDRENS *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">KIDSDEPT2</set>
+</think>
+<srai>KIDSDEPT2</srai></template>
+</category>
+
+<category>
+  <pattern>* CHILDRENS *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">KIDSDEPT2</set>
+</think>
+<srai>KIDSDEPT2</srai></template>
+</category>
+
+<category>
+  <pattern>* CHILDREN S</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">KIDSDEPT2</set>
+</think>
+<srai>KIDSDEPT2</srai></template>
+</category>
+
+<category>
+  <pattern>CHILDREN S *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">KIDSDEPT2</set>
+</think>
+<srai>KIDSDEPT2</srai></template>
+</category>
+
+<category>
+  <pattern>* CHILDREN S *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">KIDSDEPT2</set>
+</think>
+<srai>KIDSDEPT2</srai></template>
+</category>
+
+<category>
+  <pattern>* KID</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">KIDSDEPT2</set>
+</think>
+<srai>KIDSDEPT2</srai></template>
+</category>
+
+<category>
+  <pattern>KID *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">KIDSDEPT2</set>
+</think>
+<srai>KIDSDEPT2</srai></template>
+</category>
+
+<category>
+  <pattern>* KID *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">KIDSDEPT2</set>
+</think>
+<srai>KIDSDEPT2</srai></template>
+</category>
+
+<category>
+  <pattern>* KIDS</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">KIDSDEPT2</set>
+</think>
+<srai>KIDSDEPT2</srai></template>
+</category>
+
+<category>
+  <pattern>KIDS *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">KIDSDEPT2</set>
+</think>
+<srai>KIDSDEPT2</srai></template>
+</category>
+
+<category>
+  <pattern>* KIDS *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">KIDSDEPT2</set>
+</think>
+<srai>KIDSDEPT2</srai></template>
+</category>
+
+<category>
+  <pattern>* KID S</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">KIDSDEPT2</set>
+</think>
+<srai>KIDSDEPT2</srai></template>
+</category>
+
+<category>
+  <pattern>KID S *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">KIDSDEPT2</set>
+</think>
+<srai>KIDSDEPT2</srai></template>
+</category>
+
+<category>
+  <pattern>* KID S *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">KIDSDEPT2</set>
+</think>
+<srai>KIDSDEPT2</srai></template>
+</category>
+
+<topic name="KIDSDEPT2">
+<category>
+<pattern>KIDSDEPT2</pattern>
+<template>
+<think>
+<get name="answr"/>
+<set name="message">no match</set>
+<condition name="answr">
+
+<li value="STOP"><set name="message">stop</set></li>
+
+<li value="AREA"><set name="message">dept</set></li>
+<li value="* AREA"><set name="message">dept</set></li>
+<li value="AREA *"><set name="message">dept</set></li>
+<li value="* AREA *"><set name="message">dept</set></li>
+
+<li value="DEPT"><set name="message">dept</set></li>
+<li value="* DEPT"><set name="message">dept</set></li>
+<li value="DEPT *"><set name="message">dept</set></li>
+<li value="* DEPT *"><set name="message">dept</set></li>
+
+<li value="DEPARTMENT"><set name="message">dept</set></li>
+<li value="* DEPARTMENT"><set name="message">dept</set></li>
+<li value="DEPARTMENT *"><set name="message">dept</set></li>
+<li value="* DEPARTMENT *"><set name="message">dept</set></li>
+
+<li value="SECTION"><set name="message">dept</set></li>
+<li value="* SECTION"><set name="message">dept</set></li>
+<li value="SECTION *"><set name="message">dept</set></li>
+<li value="* SECTION *"><set name="message">dept</set></li>
+
+<li value="CLASS"><set name="message">programs</set></li>
+<li value="* CLASS"><set name="message">programs</set></li>
+<li value="CLASS *"><set name="message">programs</set></li>
+<li value="* CLASS *"><set name="message">programs</set></li>
+
+<li value="CLASSES"><set name="message">programs</set></li>
+<li value="* CLASSES"><set name="message">programs</set></li>
+<li value="CLASSES *"><set name="message">programs</set></li>
+<li value="* CLASSES *"><set name="message">programs</set></li>
+
+<li value="ACTIVITY"><set name="message">programs</set></li>
+<li value="* ACTIVITY"><set name="message">programs</set></li>
+<li value="ACTIVITY *"><set name="message">programs</set></li>
+<li value="* ACTIVITY *"><set name="message">programs</set></li>
+
+<li value="ACTIVITIES"><set name="message">programs</set></li>
+<li value="* ACTIVITIES"><set name="message">programs</set></li>
+<li value="ACTIVITIES *"><set name="message">programs</set></li>
+<li value="* ACTIVITIES *"><set name="message">programs</set></li>
+
+<li value="EVENT"><set name="message">programs</set></li>
+<li value="* EVENT"><set name="message">programs</set></li>
+<li value="EVENT *"><set name="message">programs</set></li>
+<li value="* EVENT *"><set name="message">programs</set></li>
+
+<li value="EVENTS"><set name="message">programs</set></li>
+<li value="* EVENTS"><set name="message">programs</set></li>
+<li value="EVENTS *"><set name="message">programs</set></li>
+<li value="* EVENTS *"><set name="message">programs</set></li>
+
+<li value="PROGRAM"><set name="message">programs</set></li>
+<li value="* PROGRAM"><set name="message">programs</set></li>
+<li value="PROGRAM *"><set name="message">programs</set></li>
+<li value="* PROGRAM *"><set name="message">programs</set></li>
+
+<li value="PROGRAMMING"><set name="message">programs</set></li>
+<li value="* PROGRAMMING"><set name="message">programs</set></li>
+<li value="PROGRAMMING *"><set name="message">programs</set></li>
+<li value="* PROGRAMMING *"><set name="message">programs</set></li>
+
+<li value="PROGRAMS"><set name="message">programs</set></li>
+<li value="* PROGRAMS"><set name="message">programs</set></li>
+<li value="PROGRAMS *"><set name="message">programs</set></li>
+<li value="* PROGRAMS *"><set name="message">programs</set></li>
+
+<li value="STORYHOUR"><set name="message">programs</set></li>
+<li value="* STORYHOUR"><set name="message">programs</set></li>
+<li value="STORYHOUR *"><set name="message">programs</set></li>
+<li value="* STORYHOUR *"><set name="message">programs</set></li>
+
+<li value="STORY HOUR"><set name="message">programs</set></li>
+<li value="* STORY HOUR"><set name="message">programs</set></li>
+<li value="STORY HOUR *"><set name="message">programs</set></li>
+<li value="* STORY HOUR *"><set name="message">programs</set></li>
+
+<li value="STORYHOURS"><set name="message">programs</set></li>
+<li value="* STORYHOURS"><set name="message">programs</set></li>
+<li value="STORYHOURS *"><set name="message">programs</set></li>
+<li value="* STORYHOURS *"><set name="message">programs</set></li>
+
+<li value="STORY HOURS"><set name="message">programs</set></li>
+<li value="* STORY HOURS"><set name="message">programs</set></li>
+<li value="STORY HOURS *"><set name="message">programs</set></li>
+<li value="* STORY HOURS *"><set name="message">programs</set></li>
+
+<li value="STORYTIME"><set name="message">programs</set></li>
+<li value="* STORYTIME"><set name="message">programs</set></li>
+<li value="STORYTIME *"><set name="message">programs</set></li>
+<li value="* STORYTIME *"><set name="message">programs</set></li>
+
+<li value="STORY TIME"><set name="message">programs</set></li>
+<li value="* STORY TIME"><set name="message">programs</set></li>
+<li value="STORY TIME *"><set name="message">programs</set></li>
+<li value="* STORY TIME *"><set name="message">programs</set></li>
+
+<li value="STORYTIMES"><set name="message">programs</set></li>
+<li value="* STORYTIMES"><set name="message">programs</set></li>
+<li value="STORYTIMES *"><set name="message">programs</set></li>
+<li value="* STORYTIMES *"><set name="message">programs</set></li>
+
+<li value="STORY TIMES"><set name="message">programs</set></li>
+<li value="* STORY TIMES"><set name="message">programs</set></li>
+<li value="STORY TIMES *"><set name="message">programs</set></li>
+<li value="* STORY TIMES *"><set name="message">programs</set></li>
+
+<li value="DOG"><set name="message">paws to read</set></li>
+<li value="* DOG"><set name="message">paws to read</set></li>
+<li value="DOG *"><set name="message">paws to read</set></li>
+<li value="* DOG *"><set name="message">paws to read</set></li>
+
+<li value="DOGS"><set name="message">paws to read</set></li>
+<li value="* DOGS"><set name="message">paws to read</set></li>
+<li value="DOGS *"><set name="message">paws to read</set></li>
+<li value="* DOGS *"><set name="message">paws to read</set></li>
+
+<li value="PAW"><set name="message">paws to read</set></li>
+<li value="* PAW"><set name="message">paws to read</set></li>
+<li value="PAW *"><set name="message">paws to read</set></li>
+<li value="* PAW *"><set name="message">paws to read</set></li>
+
+<li value="PAWS"><set name="message">paws to read</set></li>
+<li value="* PAWS"><set name="message">paws to read</set></li>
+<li value="PAWS *"><set name="message">paws to read</set></li>
+<li value="* PAWS *"><set name="message">paws to read</set></li>
+
+<li value="TIDDLYWINKS"><set name="message">tiddlywinks</set></li>
+<li value="* TIDDLYWINKS"><set name="message">tiddlywinks</set></li>
+<li value="TIDDLYWINKS *"><set name="message">tiddlywinks</set></li>
+<li value="* TIDDLYWINKS *"><set name="message">tiddlywinks</set></li>
+
+<li value="TIDDLEYWINKS"><set name="message">tiddlywinks</set></li>
+<li value="* TIDDLEYWINKS"><set name="message">tiddlywinks</set></li>
+<li value="TIDDLEYWINKS *"><set name="message">tiddlywinks</set></li>
+<li value="* TIDDLEYWINKS *"><set name="message">tiddlywinks</set></li>
+
+<li value="TIDDLY WINKS"><set name="message">tiddlywinks</set></li>
+<li value="* TIDDLY WINKS"><set name="message">tiddlywinks</set></li>
+<li value="TIDDLY WINKS *"><set name="message">tiddlywinks</set></li>
+<li value="* TIDDLY WINKS *"><set name="message">tiddlywinks</set></li>
+
+<li value="TIDDLEY WINKS"><set name="message">tiddlywinks</set></li>
+<li value="* TIDDLEY WINKS"><set name="message">tiddlywinks</set></li>
+<li value="TIDDLEY WINKS *"><set name="message">tiddlywinks</set></li>
+<li value="* TIDDLEY WINKS *"><set name="message">tiddlywinks</set></li>
+
+<li value="CONTEST"><set name="message">kids contests</set></li>
+<li value="* CONTEST"><set name="message">kids contests</set></li>
+<li value="CONTEST *"><set name="message">kids contests</set></li>
+<li value="* CONTEST *"><set name="message">kids contests</set></li>
+
+<li value="CONTESTS"><set name="message">kids contests</set></li>
+<li value="* CONTESTS"><set name="message">kids contests</set></li>
+<li value="CONTESTS *"><set name="message">kids contests</set></li>
+<li value="* CONTESTS *"><set name="message">kids contests</set></li>
+
+<li value="READING"><set name="message">srp</set></li>
+<li value="* READING"><set name="message">srp</set></li>
+<li value="READING *"><set name="message">srp</set></li>
+<li value="* READING *"><set name="message">srp</set></li>
+
+<li value="SRP"><set name="message">srp</set></li>
+<li value="* SRP"><set name="message">srp</set></li>
+<li value="SRP *"><set name="message">srp</set></li>
+<li value="* SRP *"><set name="message">srp</set></li>
+
+<li value="SUMMER"><set name="message">srp</set></li>
+<li value="* SUMMER"><set name="message">srp</set></li>
+<li value="SUMMER *"><set name="message">srp</set></li>
+<li value="* SUMMER *"><set name="message">srp</set></li>
+
+<li value="THEATER"><set name="message">theater</set></li>
+<li value="* THEATER"><set name="message">theater</set></li>
+<li value="THEATER *"><set name="message">theater</set></li>
+<li value="* THEATER *"><set name="message">theater</set></li>
+
+<li value="THEATRE"><set name="message">theater</set></li>
+<li value="* THEATRE"><set name="message">theater</set></li>
+<li value="THEATRE *"><set name="message">theater</set></li>
+<li value="* THEATRE *"><set name="message">theater</set></li>
+
+<li value="HOMESCHOOL"><set name="message">homeschool</set></li>
+<li value="* HOMESCHOOL"><set name="message">homeschool</set></li>
+<li value="HOMESCHOOL *"><set name="message">homeschool</set></li>
+<li value="* HOMESCHOOL *"><set name="message">homeschool</set></li>
+
+<li value="HOMESCHOOLER"><set name="message">homeschool</set></li>
+<li value="* HOMESCHOOLER"><set name="message">homeschool</set></li>
+<li value="HOMESCHOOLER *"><set name="message">homeschool</set></li>
+<li value="* HOMESCHOOLER *"><set name="message">homeschool</set></li>
+
+<li value="HOMESCHOOLERS"><set name="message">homeschool</set></li>
+<li value="* HOMESCHOOLERS"><set name="message">homeschool</set></li>
+<li value="HOMESCHOOLERS *"><set name="message">homeschool</set></li>
+<li value="* HOMESCHOOLERS *"><set name="message">homeschool</set></li>
+
+<li value="HOMESCHOOLING"><set name="message">homeschool</set></li>
+<li value="* HOMESCHOOLING"><set name="message">homeschool</set></li>
+<li value="HOMESCHOOLING *"><set name="message">homeschool</set></li>
+<li value="* HOMESCHOOLING *"><set name="message">homeschool</set></li>
+
+<li value="HOME SCHOOL"><set name="message">homeschool</set></li>
+<li value="* HOME SCHOOL"><set name="message">homeschool</set></li>
+<li value="HOME SCHOOL *"><set name="message">homeschool</set></li>
+<li value="* HOME SCHOOL *"><set name="message">homeschool</set></li>
+
+<li value="HOME SCHOOLER"><set name="message">homeschool</set></li>
+<li value="* HOME SCHOOLER"><set name="message">homeschool</set></li>
+<li value="HOME SCHOOLER *"><set name="message">homeschool</set></li>
+<li value="* HOME SCHOOLER *"><set name="message">homeschool</set></li>
+
+<li value="HOME SCHOOLERS"><set name="message">homeschool</set></li>
+<li value="* HOME SCHOOLERS"><set name="message">homeschool</set></li>
+<li value="HOME SCHOOLERS *"><set name="message">homeschool</set></li>
+<li value="* HOME SCHOOLERS *"><set name="message">homeschool</set></li>
+
+<li value="HOME SCHOOLING"><set name="message">homeschool</set></li>
+<li value="* HOME SCHOOLING"><set name="message">homeschool</set></li>
+<li value="HOME SCHOOLING *"><set name="message">homeschool</set></li>
+<li value="* HOME SCHOOLING *"><set name="message">homeschool</set></li>
+
+<li value="HOMEWORK"><set name="message">homework</set></li>
+<li value="* HOMEWORK"><set name="message">homework</set></li>
+<li value="HOMEWORK *"><set name="message">homework</set></li>
+<li value="* HOMEWORK *"><set name="message">homework</set></li>
+
+<li value="HOME WORK"><set name="message">homework</set></li>
+<li value="* HOME WORK"><set name="message">homework</set></li>
+<li value="HOME WORK *"><set name="message">homework</set></li>
+<li value="* HOME WORK *"><set name="message">homework</set></li>
+
+<li value="AUDIOBOOK"><set name="message">media location</set></li>
+<li value="* AUDIOBOOK"><set name="message">media location</set></li>
+<li value="AUDIOBOOK *"><set name="message">media location</set></li>
+<li value="* AUDIOBOOK *"><set name="message">media location</set></li>
+
+<li value="AUDIOBOOKS"><set name="message">media location</set></li>
+<li value="* AUDIOBOOKS"><set name="message">media location</set></li>
+<li value="AUDIOBOOKS *"><set name="message">media location</set></li>
+<li value="* AUDIOBOOKS *"><set name="message">media location</set></li>
+
+<li value="AUDIO BOOK"><set name="message">media location</set></li>
+<li value="* AUDIO BOOK"><set name="message">media location</set></li>
+<li value="AUDIO BOOK *"><set name="message">media location</set></li>
+<li value="* AUDIO BOOK *"><set name="message">media location</set></li>
+
+<li value="AUDIO BOOKS"><set name="message">media location</set></li>
+<li value="* AUDIO BOOKS"><set name="message">media location</set></li>
+<li value="AUDIO BOOKS *"><set name="message">media location</set></li>
+<li value="* AUDIO BOOKS *"><set name="message">media location</set></li>
+
+<li value="CD"><set name="message">media location</set></li>
+<li value="* CD"><set name="message">media location</set></li>
+<li value="CD *"><set name="message">media location</set></li>
+<li value="* CD *"><set name="message">media location</set></li>
+
+<li value="CDS"><set name="message">media location</set></li>
+<li value="* CDS"><set name="message">media location</set></li>
+<li value="CDS *"><set name="message">media location</set></li>
+<li value="* CDS *"><set name="message">media location</set></li>
+
+<li value="DVD"><set name="message">media location</set></li>
+<li value="* DVD"><set name="message">media location</set></li>
+<li value="DVD *"><set name="message">media location</set></li>
+<li value="* DVD *"><set name="message">media location</set></li>
+
+<li value="DVDS"><set name="message">media location</set></li>
+<li value="* DVDS"><set name="message">media location</set></li>
+<li value="DVDS *"><set name="message">media location</set></li>
+<li value="* DVDS *"><set name="message">media location</set></li>
+
+<li value="MEDIA"><set name="message">media location</set></li>
+<li value="* MEDIA"><set name="message">media location</set></li>
+<li value="MEDIA *"><set name="message">media location</set></li>
+<li value="* MEDIA *"><set name="message">media location</set></li>
+
+<li value="MOVIE"><set name="message">media location</set></li>
+<li value="* MOVIE"><set name="message">media location</set></li>
+<li value="MOVIE *"><set name="message">media location</set></li>
+<li value="* MOVIE *"><set name="message">media location</set></li>
+
+<li value="MOVIES"><set name="message">media location</set></li>
+<li value="* MOVIES"><set name="message">media location</set></li>
+<li value="MOVIES *"><set name="message">media location</set></li>
+<li value="* MOVIES *"><set name="message">media location</set></li>
+
+<li value="MUSIC"><set name="message">media location</set></li>
+<li value="* MUSIC"><set name="message">media location</set></li>
+<li value="MUSIC *"><set name="message">media location</set></li>
+<li value="* MUSIC *"><set name="message">media location</set></li>
+
+<li value="PICTURE"><set name="message">picture books</set></li>
+<li value="* PICTURE"><set name="message">picture books</set></li>
+<li value="PICTURE *"><set name="message">picture books</set></li>
+<li value="* PICTURE *"><set name="message">picture books</set></li>
+
+<li value="AR"><set name="message">ar lists</set></li>
+<li value="* AR"><set name="message">ar lists</set></li>
+<li value="AR *"><set name="message">ar lists</set></li>
+<li value="* AR *"><set name="message">ar lists</set></li>
+
+<li value="ACCELERATED"><set name="message">ar lists</set></li>
+<li value="* ACCELERATED"><set name="message">ar lists</set></li>
+<li value="ACCELERATED *"><set name="message">ar lists</set></li>
+<li value="* ACCELERATED *"><set name="message">ar lists</set></li>
+
+<li value="ADVANCED READER"><set name="message">ar lists</set></li>
+<li value="* ADVANCED READER"><set name="message">ar lists</set></li>
+<li value="ADVANCED READER *"><set name="message">ar lists</set></li>
+<li value="* ADVANCED READER *"><set name="message">ar lists</set></li>
+
+<li value="ADVANCED READERS"><set name="message">ar lists</set></li>
+<li value="* ADVANCED READERS"><set name="message">ar lists</set></li>
+<li value="ADVANCED READERS *"><set name="message">ar lists</set></li>
+<li value="* ADVANCED READERS *"><set name="message">ar lists</set></li>
+
+<li value="ADVANCED READER S"><set name="message">ar lists</set></li>
+<li value="* ADVANCED READER S"><set name="message">ar lists</set></li>
+<li value="ADVANCED READER S *"><set name="message">ar lists</set></li>
+<li value="* ADVANCED READER S *"><set name="message">ar lists</set></li>
+
+<li value="LIST"><set name="message">ar lists</set></li>
+<li value="* LIST"><set name="message">ar lists</set></li>
+<li value="LIST *"><set name="message">ar lists</set></li>
+<li value="* LIST *"><set name="message">ar lists</set></li>
+
+<li value="LISTS"><set name="message">ar lists</set></li>
+<li value="* LISTS"><set name="message">ar lists</set></li>
+<li value="LISTS *"><set name="message">ar lists</set></li>
+<li value="* LISTS *"><set name="message">ar lists</set></li>
+
+<li value="CLASSROOM"><set name="message">teaching resources</set></li>
+<li value="* CLASSROOM"><set name="message">teaching resources</set></li>
+<li value="CLASSROOM *"><set name="message">teaching resources</set></li>
+<li value="* CLASSROOM *"><set name="message">teaching resources</set></li>
+
+<li value="CLASS ROOM"><set name="message">teaching resources</set></li>
+<li value="* CLASS ROOM"><set name="message">teaching resources</set></li>
+<li value="CLASS ROOM *"><set name="message">teaching resources</set></li>
+<li value="* CLASS ROOM *"><set name="message">teaching resources</set></li>
+
+<li value="HELP * TEACHER"><set name="message">teaching resources</set></li>
+<li value="* HELP * TEACHER"><set name="message">teaching resources</set></li>
+<li value="HELP * TEACHER *"><set name="message">teaching resources</set></li>
+<li value="* HELP * TEACHER *"><set name="message">teaching resources</set></li>
+
+<li value="HELP * TEACHERS"><set name="message">teaching resources</set></li>
+<li value="* HELP * TEACHERS"><set name="message">teaching resources</set></li>
+<li value="HELP * TEACHERS *"><set name="message">teaching resources</set></li>
+<li value="* HELP * TEACHERS *"><set name="message">teaching resources</set></li>
+
+<li value="HELP * TEACHER S"><set name="message">teaching resources</set></li>
+<li value="* HELP * TEACHER S"><set name="message">teaching resources</set></li>
+<li value="HELP * TEACHER S *"><set name="message">teaching resources</set></li>
+<li value="* HELP * TEACHER S *"><set name="message">teaching resources</set></li>
+
+<li value="HELP * TEACHING"><set name="message">teaching resources</set></li>
+<li value="* HELP * TEACHING"><set name="message">teaching resources</set></li>
+<li value="HELP * TEACHING *"><set name="message">teaching resources</set></li>
+<li value="* HELP * TEACHING *"><set name="message">teaching resources</set></li>
+
+<li value="LESSON PLAN"><set name="message">teaching resources</set></li>
+<li value="* LESSON PLAN"><set name="message">teaching resources</set></li>
+<li value="LESSON PLAN *"><set name="message">teaching resources</set></li>
+<li value="* LESSON PLAN *"><set name="message">teaching resources</set></li>
+
+<li value="LESSON PLANS"><set name="message">teaching resources</set></li>
+<li value="* LESSON PLANS"><set name="message">teaching resources</set></li>
+<li value="LESSON PLANS *"><set name="message">teaching resources</set></li>
+<li value="* LESSON PLANS *"><set name="message">teaching resources</set></li>
+
+<li value="LINKS * TEACHER"><set name="message">teaching resources</set></li>
+<li value="* LINKS * TEACHER"><set name="message">teaching resources</set></li>
+<li value="LINKS * TEACHER *"><set name="message">teaching resources</set></li>
+<li value="* LINKS * TEACHER *"><set name="message">teaching resources</set></li>
+
+<li value="LINKS * TEACHERS"><set name="message">teaching resources</set></li>
+<li value="* LINKS * TEACHERS"><set name="message">teaching resources</set></li>
+<li value="LINKS * TEACHERS *"><set name="message">teaching resources</set></li>
+<li value="* LINKS * TEACHERS *"><set name="message">teaching resources</set></li>
+
+<li value="LINKS * TEACHER S"><set name="message">teaching resources</set></li>
+<li value="* LINKS * TEACHER S"><set name="message">teaching resources</set></li>
+<li value="LINKS * TEACHER S *"><set name="message">teaching resources</set></li>
+<li value="* LINKS * TEACHER S *"><set name="message">teaching resources</set></li>
+
+<li value="LINKS * TEACHING"><set name="message">teaching resources</set></li>
+<li value="* LINKS * TEACHING"><set name="message">teaching resources</set></li>
+<li value="LINKS * TEACHING *"><set name="message">teaching resources</set></li>
+<li value="* LINKS * TEACHING *"><set name="message">teaching resources</set></li>
+
+<li value="TEACHING LINKS"><set name="message">teaching resources</set></li>
+<li value="* TEACHING LINKS"><set name="message">teaching resources</set></li>
+<li value="TEACHING LINKS *"><set name="message">teaching resources</set></li>
+<li value="* TEACHING LINKS *"><set name="message">teaching resources</set></li>
+
+<li value="TEACHER LINKS"><set name="message">teaching resources</set></li>
+<li value="* TEACHER LINKS"><set name="message">teaching resources</set></li>
+<li value="TEACHER LINKS *"><set name="message">teaching resources</set></li>
+<li value="* TEACHER LINKS *"><set name="message">teaching resources</set></li>
+
+<li value="TEACHERS LINKS"><set name="message">teaching resources</set></li>
+<li value="* TEACHERS LINKS"><set name="message">teaching resources</set></li>
+<li value="TEACHERS LINKS *"><set name="message">teaching resources</set></li>
+<li value="* TEACHERS LINKS *"><set name="message">teaching resources</set></li>
+
+<li value="TEACHER S LINKS"><set name="message">teaching resources</set></li>
+<li value="* TEACHER S LINKS"><set name="message">teaching resources</set></li>
+<li value="TEACHER S LINKS *"><set name="message">teaching resources</set></li>
+<li value="* TEACHER S LINKS *"><set name="message">teaching resources</set></li>
+
+<li value="TEACHING LINKS"><set name="message">teaching resources</set></li>
+<li value="* TEACHING LINKS"><set name="message">teaching resources</set></li>
+<li value="TEACHING LINKS *"><set name="message">teaching resources</set></li>
+<li value="* TEACHING LINKS *"><set name="message">teaching resources</set></li>
+
+<li value="TEACHING RESOURCES"><set name="message">teaching resources</set></li>
+<li value="* TEACHING RESOURCES"><set name="message">teaching resources</set></li>
+<li value="TEACHING RESOURCES *"><set name="message">teaching resources</set></li>
+<li value="* TEACHING RESOURCES *"><set name="message">teaching resources</set></li>
+
+<li value="TEACHER RESOURCES"><set name="message">teaching resources</set></li>
+<li value="* TEACHER RESOURCES"><set name="message">teaching resources</set></li>
+<li value="TEACHER RESOURCES *"><set name="message">teaching resources</set></li>
+<li value="* TEACHER RESOURCES *"><set name="message">teaching resources</set></li>
+
+<li value="TEACHERS RESOURCES"><set name="message">teaching resources</set></li>
+<li value="* TEACHERS RESOURCES"><set name="message">teaching resources</set></li>
+<li value="TEACHERS RESOURCES *"><set name="message">teaching resources</set></li>
+<li value="* TEACHERS RESOURCES *"><set name="message">teaching resources</set></li>
+
+<li value="TEACHER S RESOURCES"><set name="message">teaching resources</set></li>
+<li value="* TEACHER S RESOURCES"><set name="message">teaching resources</set></li>
+<li value="TEACHER S RESOURCES *"><set name="message">teaching resources</set></li>
+<li value="* TEACHER S RESOURCES *"><set name="message">teaching resources</set></li>
+
+<li value="TEACHING RESOURCES"><set name="message">teaching resources</set></li>
+<li value="* TEACHING RESOURCES"><set name="message">teaching resources</set></li>
+<li value="TEACHING RESOURCES *"><set name="message">teaching resources</set></li>
+<li value="* TEACHING RESOURCES *"><set name="message">teaching resources</set></li>
+
+<li value="TEEN"><set name="message">ya</set></li>
+<li value="* TEEN"><set name="message">ya</set></li>
+<li value="TEEN *"><set name="message">ya</set></li>
+<li value="* TEEN *"><set name="message">ya</set></li>
+
+<li value="TEENS"><set name="message">ya</set></li>
+<li value="* TEENS"><set name="message">ya</set></li>
+<li value="TEENS *"><set name="message">ya</set></li>
+<li value="* TEENS *"><set name="message">ya</set></li>
+
+<li value="YA"><set name="message">ya</set></li>
+<li value="* YA"><set name="message">ya</set></li>
+<li value="YA *"><set name="message">ya</set></li>
+<li value="* YA *"><set name="message">ya</set></li>
+
+<li value="UNACCOMPANIED"><set name="message">unattended children</set></li>
+<li value="* UNACCOMPANIED"><set name="message">unattended children</set></li>
+<li value="UNACCOMPANIED *"><set name="message">unattended children</set></li>
+<li value="* UNACCOMPANIED *"><set name="message">unattended children</set></li>
+
+<li value="UNATTENDED"><set name="message">unattended children</set></li>
+<li value="* UNATTENDED"><set name="message">unattended children</set></li>
+<li value="UNATTENDED *"><set name="message">unattended children</set></li>
+<li value="* UNATTENDED *"><set name="message">unattended children</set></li>
+
+<li value="WITHOUT PARENT"><set name="message">unattended children</set></li>
+<li value="* WITHOUT PARENT"><set name="message">unattended children</set></li>
+<li value="WITHOUT * PARENT"><set name="message">unattended children</set></li>
+<li value="WITHOUT PARENT *"><set name="message">unattended children</set></li>
+<li value="* WITHOUT * PARENT"><set name="message">unattended children</set></li>
+<li value="WITHOUT * PARENT *"><set name="message">unattended children</set></li>
+<li value="* WITHOUT PARENT *"><set name="message">unattended children</set></li>
+<li value="* WITHOUT * PARENT *"><set name="message">unattended children</set></li>
+
+<li value="WITHOUT PARENTS"><set name="message">unattended children</set></li>
+<li value="* WITHOUT PARENTS"><set name="message">unattended children</set></li>
+<li value="WITHOUT * PARENTS"><set name="message">unattended children</set></li>
+<li value="WITHOUT PARENTS *"><set name="message">unattended children</set></li>
+<li value="* WITHOUT * PARENTS"><set name="message">unattended children</set></li>
+<li value="WITHOUT * PARENTS *"><set name="message">unattended children</set></li>
+<li value="* WITHOUT PARENTS *"><set name="message">unattended children</set></li>
+<li value="* WITHOUT * PARENTS *"><set name="message">unattended children</set></li>
+
+</condition>
+<think><set name="topic"></set></think>
+</think>
+
+<condition name="message">
+
+<li value="stop"><set name="topic"></set>O.K. I'll stop.</li>
+
+<li value="no match"><set name="topic"></set><srai>NOMATCH</srai></li>
+
+<li value="dept"><srai>CHDEPT</srai></li>
+
+<li value="programs"><srai>STRYTM</srai></li>
+
+<li value="paws to read"><srai>P2R</srai></li>
+  
+<li value="tiddlywinks"><srai>TDDLY</srai></li>
+
+<li value="kids contests">CHCONTESTS</li>
+
+<li value="srp"><srai>SRP</srai></li>
+
+<li value="theater"><srai>CHTHEATER</srai></li>
+
+<li value="homeschool"><srai>HMSCHL</srai></li>
+
+<li value="homework"><srai>HMWRK</srai></li>
+ 
+<li value="media location"><srai>CHMEDIA</srai></li>
+
+<li value="picture books"><srai>CHMATS</srai></li>
+
+<li value="ar list"><srai>ARLST</srai></li>
+
+<li value="teaching resources"><srai>TCHRSRC</srai></li>
+
+<li value="ya"><srai>YAMAIN</srai></li>
+
+<li value="unattended children"><srai>UNATTKIDS</srai></li>
+
+</condition>
+</template>
+</category>
+</topic>
+
+
+
+
+
+
+
+
+
+
+</aiml>

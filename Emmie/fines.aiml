@@ -1,0 +1,1250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<!--Copyright 2011-2012 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+  
+  <!--FINES-->
+
+<category>
+<pattern>FINES</pattern>
+<template><srai>FNS</srai></template>
+</category>
+
+<category>
+<pattern>FINE</pattern>
+<template><srai>FNS</srai></template>
+</category>
+
+<category>
+<pattern>FEE</pattern>
+<template><srai>FNS</srai></template>
+</category>
+
+<category>
+<pattern>FEES</pattern>
+<template><srai>FNS</srai></template>
+</category>
+
+<category>
+<pattern>CHARGE</pattern>
+<template><srai>FNS</srai></template>
+</category>
+
+<category>
+<pattern>CHARGES</pattern>
+<template><srai>FNS</srai></template>
+</category>
+
+<category>
+<pattern>OVER DUE</pattern>
+<template><srai>FNS</srai></template>
+</category>
+
+<category>
+<pattern>OVER DUES</pattern>
+<template><srai>FNS</srai></template>
+</category>
+
+<category>
+<pattern>OVERDUE</pattern>
+<template><srai>FNS</srai></template>
+</category>
+
+<category>
+<pattern>OVERDUES</pattern>
+<template><srai>FNS</srai></template>
+</category>
+
+<category>
+<pattern>FNS</pattern>
+<template>I'm often asked about fines. 
+<random>
+<li>What would you like to know about fines?</li>
+<li>What is your question about overdue charges?</li>
+<li>What would you like to know about fines or fees?</li>
+</random>
+<think>
+<set name="topic">0FEES</set>
+</think>
+</template>
+</category>
+
+<topic name="0FEES">
+<category>
+<pattern>_</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai>
+</template>
+</category>
+</topic>
+
+
+<category>
+<pattern>FINES *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* FINES </pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* FINES * </pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* FINES * LATE *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/><star index="3"/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* FINES * OVERDUE</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* FINES * OVERDUE *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/><star index="3"/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* FINE</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>FINE *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* FINE *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* FINE * LATE</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* FINE * LATE *</pattern>
+<template><srai>FNS</srai></template>
+</category>
+
+<category>
+<pattern>* FINE * OVERDUE</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* FINE * OVERDUE *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/><star index="3"/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* FINE</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>FEE *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* FEE</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* FEE *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* FEE * LATE</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* FEE * LATE *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/><star index="3"/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* FEE * OVERDUE</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* FEE * OVERDUE *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/><star index="3"/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>FEES *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* FEES</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* FEES *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* FEES * LATE</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* FEES * LATE *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/><star index="3"/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* FEES * OVERDUE</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* FEES * OVERDUE *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/><star index="3"/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* CHARGE</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>CHARGE *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* CHARGE *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* CHARGE * LATE</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* CHARGE * LATE *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/><star index="3"/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* CHARGE * OVERDUE</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* CHARGE * OVERDUE *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/><star index="3"/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>CHARGES *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* CHARGES</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* CHARGES *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* CHARGES * LATE</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* CHARGES * LATE *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/><star index="3"/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* CHARGES * OVERDUE</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* CHARGES * OVERDUE *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/><star index="3"/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* OVER DUE</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>OVER DUE *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* OVER DUE *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* OVER DUES</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>OVER DUES *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* OVER DUES *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+
+<category>
+<pattern>* OVERDUE</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>OVERDUE *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* OVERDUE *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* OVERDUES</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>OVERDUES *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<category>
+<pattern>* OVERDUES *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">FEES2</set>
+</think>
+<srai>FEES2</srai></template>
+</category>
+
+<topic name="FEES2">
+<category>
+<pattern>FEES2</pattern>
+<template>
+<think>
+<get name="answr"/>
+<set name="message">no match</set>
+<condition name="answr">
+
+<li value="STOP"><set name="message">stop</set></li>
+
+<li value="BANKRUPT"><set name="message">bankruptcy</set></li>
+<li value="* BANKRUPT"><set name="message">bankruptcy</set></li>
+<li value="BANKRUPT *"><set name="message">bankruptcy</set></li>
+<li value="* BANKRUPT *"><set name="message">bankruptcy</set></li>
+
+<li value="BANKRUPTCY"><set name="message">bankruptcy</set></li>
+<li value="* BANKRUPTCY"><set name="message">bankruptcy</set></li>
+<li value="BANKRUPTCY *"><set name="message">bankruptcy</set></li>
+<li value="* BANKRUPTCY *"><set name="message">bankruptcy</set></li>
+
+<li value="CH 7"><set name="message">bankruptcy</set></li>
+<li value="* CH 7"><set name="message">bankruptcy</set></li>
+<li value="CH 7 *"><set name="message">bankruptcy</set></li>
+<li value="* CH 7 *"><set name="message">bankruptcy</set></li>
+
+<li value="CH SEVEN"><set name="message">bankruptcy</set></li>
+<li value="* CH SEVEN"><set name="message">bankruptcy</set></li>
+<li value="CH SEVEN *"><set name="message">bankruptcy</set></li>
+<li value="* CH SEVEN *"><set name="message">bankruptcy</set></li>
+
+<li value="CHAPTER 7"><set name="message">bankruptcy</set></li>
+<li value="* CHAPTER 7"><set name="message">bankruptcy</set></li>
+<li value="CHAPTER 7 *"><set name="message">bankruptcy</set></li>
+<li value="* CHAPTER 7 *"><set name="message">bankruptcy</set></li>
+
+<li value="CHAPTER SEVEN"><set name="message">bankruptcy</set></li>
+<li value="* CHAPTER SEVEN"><set name="message">bankruptcy</set></li>
+<li value="CHAPTER SEVEN *"><set name="message">bankruptcy</set></li>
+<li value="* CHAPTER SEVEN *"><set name="message">bankruptcy</set></li>
+
+<li value="SENIOR"><set name="message">senior fines</set></li>
+<li value="* SENIOR"><set name="message">senior fines</set></li>
+<li value="SENIOR *"><set name="message">senior fines</set></li>
+<li value="* SENIOR *"><set name="message">senior fines</set></li>
+
+<li value="SENIORS"><set name="message">senior fines</set></li>
+<li value="* SENIORS"><set name="message">senior fines</set></li>
+<li value="SENIORS *"><set name="message">senior fines</set></li>
+<li value="* SENIORS *"><set name="message">senior fines</set></li>
+
+<li value="FORGIVE"><set name="message">forgiveness</set></li>
+<li value="* FORGIVE"><set name="message">forgiveness</set></li>
+<li value="FORGIVE *"><set name="message">forgiveness</set></li>
+<li value="* FORGIVE *"><set name="message">forgiveness</set></li>
+
+<li value="FORGIVENESS"><set name="message">forgiveness</set></li>
+<li value="* FORGIVENESS"><set name="message">forgiveness</set></li>
+<li value="FORGIVENESS *"><set name="message">forgiveness</set></li>
+<li value="* FORGIVENESS *"><set name="message">forgiveness</set></li>
+
+<li value="FAX"><set name="message">faxing</set></li>
+<li value="* FAX"><set name="message">faxing</set></li>
+<li value="FAX *"><set name="message">faxing</set></li>
+<li value="* FAX *"><set name="message">faxing</set></li>
+
+<li value="FAXES"><set name="message">faxing</set></li>
+<li value="* FAXES"><set name="message">faxing</set></li>
+<li value="FAXES *"><set name="message">faxing</set></li>
+<li value="* FAXES *"><set name="message">faxing</set></li>
+
+<li value="FAXING"><set name="message">faxing</set></li>
+<li value="* FAXING"><set name="message">faxing</set></li>
+<li value="FAXING *"><set name="message">faxing</set></li>
+<li value="* FAXING *"><set name="message">faxing</set></li>
+
+<li value="GRACE"><set name="message">grace</set></li>
+<li value="* GRACE"><set name="message">grace</set></li>
+<li value="GRACE *"><set name="message">grace</set></li>
+<li value="* GRACE *"><set name="message">grace</set></li>
+
+<li value="AUDIOBOOK"><set name="message">audiobook</set></li>
+<li value="* AUDIOBOOK"><set name="message">audiobook</set></li>
+<li value="AUDIOBOOK *"><set name="message">audiobook</set></li>
+<li value="* AUDIOBOOK *"><set name="message">audiobook</set></li>
+
+<li value="AUDIOBOOKS"><set name="message">audiobook</set></li>
+<li value="* AUDIOBOOKS"><set name="message">audiobook</set></li>
+<li value="AUDIOBOOKS *"><set name="message">audiobook</set></li>
+<li value="* AUDIOBOOKS *"><set name="message">audiobook</set></li>
+
+<li value="AUDIO BOOK"><set name="message">audiobook</set></li>
+<li value="* AUDIO BOOK"><set name="message">audiobook</set></li>
+<li value="AUDIO BOOK *"><set name="message">audiobook</set></li>
+<li value="* AUDIO BOOK *"><set name="message">audiobook</set></li>
+
+<li value="AUDIO BOOKS"><set name="message">audiobook</set></li>
+<li value="* AUDIO BOOKS"><set name="message">audiobook</set></li>
+<li value="AUDIO BOOKS *"><set name="message">audiobook</set></li>
+<li value="* AUDIO BOOKS *"><set name="message">audiobook</set></li>
+
+<li value="BOOK ON CD"><set name="message">audiobook</set></li>
+<li value="* BOOK ON CD"><set name="message">audiobook</set></li>
+<li value="BOOK ON CD *"><set name="message">audiobook</set></li>
+<li value="* BOOK ON CD *"><set name="message">audiobook</set></li>
+
+<li value="BOOKS ON CD"><set name="message">audiobook</set></li>
+<li value="* BOOKS ON CD"><set name="message">audiobook</set></li>
+<li value="BOOKS ON CD *"><set name="message">audiobook</set></li>
+<li value="* BOOKS ON CD *"><set name="message">audiobook</set></li>
+
+<li value="BOOK ON CDS"><set name="message">audiobook</set></li>
+<li value="* BOOK ON CDS"><set name="message">audiobook</set></li>
+<li value="BOOK ON CDS *"><set name="message">audiobook</set></li>
+<li value="* BOOK ON CDS *"><set name="message">audiobook</set></li>
+
+<li value="BOOKS ON CDS"><set name="message">audiobook</set></li>
+<li value="* BOOKS ON CDS"><set name="message">audiobook</set></li>
+<li value="BOOKS ON CDS *"><set name="message">audiobook</set></li>
+<li value="* BOOKS ON CDS *"><set name="message">audiobook</set></li>
+
+<li value="BOOK"><set name="message">book</set></li>
+<li value="* BOOK"><set name="message">book</set></li>
+<li value="BOOK *"><set name="message">book</set></li>
+<li value="* BOOK *"><set name="message">book</set></li>
+
+<li value="BOOKS"><set name="message">book</set></li>
+<li value="* BOOKS"><set name="message">book</set></li>
+<li value="BOOKS *"><set name="message">book</set></li>
+<li value="* BOOKS *"><set name="message">book</set></li>
+
+<li value="CD"><set name="message">cd</set></li>
+<li value="* CD"><set name="message">cd</set></li>
+<li value="CD *"><set name="message">cd</set></li>
+<li value="* CD *"><set name="message">cd</set></li>
+
+<li value="CDS"><set name="message">cd</set></li>
+<li value="* CDS"><set name="message">cd</set></li>
+<li value="CDS *"><set name="message">cd</set></li>
+<li value="* CDS *"><set name="message">cd</set></li>
+
+<li value="DVD"><set name="message">dvd</set></li>
+<li value="* DVD"><set name="message">dvd</set></li>
+<li value="DVD *"><set name="message">dvd</set></li>
+<li value="* DVD *"><set name="message">dvd</set></li>
+
+<li value="DVDS"><set name="message">dvd</set></li>
+<li value="* DVDS"><set name="message">dvd</set></li>
+<li value="DVDS *"><set name="message">dvd</set></li>
+<li value="* DVDS *"><set name="message">dvd</set></li>
+
+<li value="IPAD"><set name="message">ipad</set></li>
+<li value="* IPAD"><set name="message">ipad</set></li>
+<li value="IPAD *"><set name="message">ipad</set></li>
+<li value="* IPAD *"><set name="message">ipad</set></li>
+
+<li value="IPADS"><set name="message">ipad</set></li>
+<li value="* IPADS"><set name="message">ipad</set></li>
+<li value="IPADS *"><set name="message">ipad</set></li>
+<li value="* IPADS *"><set name="message">ipad</set></li>
+
+<li value="I PAD"><set name="message">ipad</set></li>
+<li value="* I PAD"><set name="message">ipad</set></li>
+<li value="I PAD *"><set name="message">ipad</set></li>
+<li value="* I PAD *"><set name="message">ipad</set></li>
+
+<li value="I PADS"><set name="message">ipad</set></li>
+<li value="* I PADS"><set name="message">ipad</set></li>
+<li value="I PADS *"><set name="message">ipad</set></li>
+<li value="* I PADS *"><set name="message">ipad</set></li>
+
+<li value="KINDLE"><set name="message">ereader</set></li>
+<li value="* KINDLE"><set name="message">ereader</set></li>
+<li value="KINDLE *"><set name="message">ereader</set></li>
+<li value="* KINDLE *"><set name="message">ereader</set></li>
+
+<li value="KINDLES"><set name="message">ereader</set></li>
+<li value="* KINDLES"><set name="message">ereader</set></li>
+<li value="KINDLES *"><set name="message">ereader</set></li>
+<li value="* KINDLES *"><set name="message">ereader</set></li>
+
+<li value="NOOK"><set name="message">ereader</set></li>
+<li value="* NOOK"><set name="message">ereader</set></li>
+<li value="NOOK *"><set name="message">ereader</set></li>
+<li value="* NOOK *"><set name="message">ereader</set></li>
+
+<li value="NOOKS"><set name="message">ereader</set></li>
+<li value="* NOOKS"><set name="message">ereader</set></li>
+<li value="NOOKS *"><set name="message">ereader</set></li>
+<li value="* NOOKS *"><set name="message">ereader</set></li>
+
+<li value="EBOOK"><set name="message">ebook</set></li>
+<li value="* EBOOK"><set name="message">ebook</set></li>
+<li value="EBOOK *"><set name="message">ebook</set></li>
+<li value="* EBOOK *"><set name="message">ebook</set></li>
+
+<li value="EBOOKS"><set name="message">ebook</set></li>
+<li value="* EBOOKS"><set name="message">ebook</set></li>
+<li value="EBOOKS *"><set name="message">ebook</set></li>
+<li value="* EBOOKS *"><set name="message">ebook</set></li>
+
+<li value="E BOOK"><set name="message">ebook</set></li>
+<li value="* E BOOK"><set name="message">ebook</set></li>
+<li value="E BOOK *"><set name="message">ebook</set></li>
+<li value="* E BOOK *"><set name="message">ebook</set></li>
+
+<li value="E BOOKS"><set name="message">ebook</set></li>
+<li value="* E BOOKS"><set name="message">ebook</set></li>
+<li value="E BOOKS *"><set name="message">ebook</set></li>
+<li value="* E BOOKS *"><set name="message">ebook</set></li>
+
+<li value="KINDLE BOOK"><set name="message">ebook</set></li>
+<li value="* KINDLE BOOK"><set name="message">ebook</set></li>
+<li value="KINDLE BOOK *"><set name="message">ebook</set></li>
+<li value="* KINDLE BOOK *"><set name="message">ebook</set></li>
+
+<li value="KINDLE BOOKS"><set name="message">ebook</set></li>
+<li value="* KINDLE BOOKS"><set name="message">ebook</set></li>
+<li value="KINDLE BOOKS *"><set name="message">ebook</set></li>
+<li value="* KINDLE BOOKS *"><set name="message">ebook</set></li>
+
+<li value="NOOK BOOK"><set name="message">ebook</set></li>
+<li value="* NOOK BOOK"><set name="message">ebook</set></li>
+<li value="NOOK BOOK *"><set name="message">ebook</set></li>
+<li value="* NOOK BOOK *"><set name="message">ebook</set></li>
+
+<li value="NOOK BOOKS"><set name="message">ebook</set></li>
+<li value="* NOOK BOOKS"><set name="message">ebook</set></li>
+<li value="NOOK BOOKS *"><set name="message">ebook</set></li>
+<li value="* NOOK BOOKS *"><set name="message">ebook</set></li>
+
+<li value="CHECK"><set name="message">check fines</set></li>
+<li value="* CHECK"><set name="message">check fines</set></li>
+<li value="CHECK *"><set name="message">check fines</set></li>
+<li value="* CHECK *"><set name="message">check fines</set></li>
+
+<li value="CHECKING"><set name="message">check fines</set></li>
+<li value="* CHECKING"><set name="message">check fines</set></li>
+<li value="CHECKING *"><set name="message">check fines</set></li>
+<li value="* CHECKING *"><set name="message">check fines</set></li>
+
+<li value="OWE"><set name="message">check fines</set></li>
+<li value="* OWE"><set name="message">check fines</set></li>
+<li value="OWE *"><set name="message">check fines</set></li>
+<li value="* OWE *"><set name="message">check fines</set></li>
+
+<li value="OWED"><set name="message">check fines</set></li>
+<li value="* OWED"><set name="message">check fines</set></li>
+<li value="OWED *"><set name="message">check fines</set></li>
+<li value="* OWED *"><set name="message">check fines</set></li>
+
+<li value="HAVE ANY"><set name="message">check fines</set></li>
+<li value="* HAVE ANY"><set name="message">check fines</set></li>
+<li value="HAVE ANY *"><set name="message">check fines</set></li>
+<li value="* HAVE ANY *"><set name="message">check fines</set></li>
+
+
+<li value="HAVE FEE"><set name="message">check fines</set></li>
+<li value="* HAVE FEE"><set name="message">check fines</set></li>
+<li value="HAVE * FEE"><set name="message">check fines</set></li>
+<li value="HAVE FEE *"><set name="message">check fines</set></li>
+<li value="* HAVE * FEE"><set name="message">check fines</set></li>
+<li value="HAVE * FEE *"><set name="message">check fines</set></li>
+<li value="* HAVE FEE *"><set name="message">check fines</set></li>
+<li value="* HAVE * FEE *"><set name="message">check fines</set></li>
+
+<li value="HAVE FEES"><set name="message">check fines</set></li>
+<li value="* HAVE FEES"><set name="message">check fines</set></li>
+<li value="HAVE * FEES"><set name="message">check fines</set></li>
+<li value="HAVE FEES *"><set name="message">check fines</set></li>
+<li value="* HAVE * FEES"><set name="message">check fines</set></li>
+<li value="HAVE * FEES *"><set name="message">check fines</set></li>
+<li value="* HAVE FEES *"><set name="message">check fines</set></li>
+<li value="* HAVE * FEES *"><set name="message">check fines</set></li>
+
+<li value="HAVE FINE"><set name="message">check fines</set></li>
+<li value="* HAVE FINE"><set name="message">check fines</set></li>
+<li value="HAVE * FINE"><set name="message">check fines</set></li>
+<li value="HAVE FINE *"><set name="message">check fines</set></li>
+<li value="* HAVE * FINE"><set name="message">check fines</set></li>
+<li value="HAVE * FINE *"><set name="message">check fines</set></li>
+<li value="* HAVE FINE *"><set name="message">check fines</set></li>
+<li value="* HAVE * FINE *"><set name="message">check fines</set></li>
+
+<li value="HAVE FINES"><set name="message">check fines</set></li>
+<li value="* HAVE FINES"><set name="message">check fines</set></li>
+<li value="HAVE * FINES"><set name="message">check fines</set></li>
+<li value="HAVE FINES *"><set name="message">check fines</set></li>
+<li value="* HAVE * FINES"><set name="message">check fines</set></li>
+<li value="HAVE * FINES *"><set name="message">check fines</set></li>
+<li value="* HAVE FINES *"><set name="message">check fines</set></li>
+<li value="* HAVE * FINES *"><set name="message">check fines</set></li>
+
+<li value="HAVE OVERDUE"><set name="message">check fines</set></li>
+<li value="* HAVE OVERDUE"><set name="message">check fines</set></li>
+<li value="HAVE * OVERDUE"><set name="message">check fines</set></li>
+<li value="HAVE OVERDUE *"><set name="message">check fines</set></li>
+<li value="* HAVE * OVERDUE"><set name="message">check fines</set></li>
+<li value="HAVE * OVERDUE *"><set name="message">check fines</set></li>
+<li value="* HAVE OVERDUE *"><set name="message">check fines</set></li>
+<li value="* HAVE * OVERDUE *"><set name="message">check fines</set></li>
+
+<li value="HAVE OVERDUES"><set name="message">check fines</set></li>
+<li value="* HAVE OVERDUES"><set name="message">check fines</set></li>
+<li value="HAVE * OVERDUES"><set name="message">check fines</set></li>
+<li value="HAVE OVERDUES *"><set name="message">check fines</set></li>
+<li value="* HAVE * OVERDUES"><set name="message">check fines</set></li>
+<li value="HAVE * OVERDUES *"><set name="message">check fines</set></li>
+<li value="* HAVE OVERDUES *"><set name="message">check fines</set></li>
+<li value="* HAVE * OVERDUES *"><set name="message">check fines</set></li>
+
+<li value="HOW MUCH FINE"><set name="message">check fines</set></li>
+<li value="* HOW MUCH FINE"><set name="message">check fines</set></li>
+<li value="HOW MUCH * FINE"><set name="message">check fines</set></li>
+<li value="HOW MUCH FINE *"><set name="message">check fines</set></li>
+<li value="* HOW MUCH * FINE"><set name="message">check fines</set></li>
+<li value="HOW MUCH * FINE *"><set name="message">check fines</set></li>
+<li value="* HOW MUCH FINE *"><set name="message">check fines</set></li>
+<li value="* HOW MUCH * FINE *"><set name="message">check fines</set></li>
+
+<li value="HOW MUCH FINES"><set name="message">check fines</set></li>
+<li value="* HOW MUCH FINES"><set name="message">check fines</set></li>
+<li value="HOW MUCH * FINES"><set name="message">check fines</set></li>
+<li value="HOW MUCH FINES *"><set name="message">check fines</set></li>
+<li value="* HOW MUCH * FINES"><set name="message">check fines</set></li>
+<li value="HOW MUCH * FINES *"><set name="message">check fines</set></li>
+<li value="* HOW MUCH FINES *"><set name="message">check fines</set></li>
+<li value="* HOW MUCH * FINES *"><set name="message">check fines</set></li>
+
+<li value="WHAT FINE"><set name="message">check fines</set></li>
+<li value="* WHAT FINE"><set name="message">check fines</set></li>
+<li value="WHAT * FINE"><set name="message">check fines</set></li>
+<li value="WHAT FINE *"><set name="message">check fines</set></li>
+<li value="* WHAT * FINE"><set name="message">check fines</set></li>
+<li value="WHAT * FINE *"><set name="message">check fines</set></li>
+<li value="* WHAT FINE *"><set name="message">check fines</set></li>
+<li value="* WHAT * FINE *"><set name="message">check fines</set></li>
+
+<li value="WHAT FINES"><set name="message">check fines</set></li>
+<li value="* WHAT FINES"><set name="message">check fines</set></li>
+<li value="WHAT * FINES"><set name="message">check fines</set></li>
+<li value="WHAT FINES *"><set name="message">check fines</set></li>
+<li value="* WHAT * FINES"><set name="message">check fines</set></li>
+<li value="WHAT * FINES *"><set name="message">check fines</set></li>
+<li value="* WHAT FINES *"><set name="message">check fines</set></li>
+<li value="* WHAT * FINES *"><set name="message">check fines</set></li>
+
+<li value="LATE FEE"><set name="message">check fines</set></li>
+<li value="* LATE FEE"><set name="message">check fines</set></li>
+<li value="LATE FEE *"><set name="message">check fines</set></li>
+<li value="* LATE FEE *"><set name="message">check fines</set></li>
+
+<li value="LATE FEES"><set name="message">check fines</set></li>
+<li value="* LATE FEES"><set name="message">check fines</set></li>
+<li value="LATE FEES *"><set name="message">check fines</set></li>
+<li value="* LATE FEES *"><set name="message">check fines</set></li>
+
+<li value="OVERDUE"><set name="message">check fines</set></li>
+<li value="* OVERDUE"><set name="message">check fines</set></li>
+<li value="OVERDUE *"><set name="message">check fines</set></li>
+<li value="* OVERDUE *"><set name="message">check fines</set></li>
+
+<li value="OVERDUES"><set name="message">check fines</set></li>
+<li value="* OVERDUES"><set name="message">check fines</set></li>
+<li value="OVERDUES *"><set name="message">check fines</set></li>
+<li value="* OVERDUES *"><set name="message">check fines</set></li>
+
+<li value="DAMAGE"><set name="message">lost item</set></li>
+<li value="* DAMAGE"><set name="message">lost item</set></li>
+<li value="DAMAGE *"><set name="message">lost item</set></li>
+<li value="* DAMAGE *"><set name="message">lost item</set></li>
+
+<li value="DAMAGED"><set name="message">lost item</set></li>
+<li value="* DAMAGED"><set name="message">lost item</set></li>
+<li value="DAMAGED *"><set name="message">lost item</set></li>
+<li value="* DAMAGED *"><set name="message">lost item</set></li>
+
+<li value="LOST"><set name="message">lost item</set></li>
+<li value="* LOST"><set name="message">lost item</set></li>
+<li value="LOST *"><set name="message">lost item</set></li>
+<li value="* LOST *"><set name="message">lost item</set></li>
+
+<li value="LOSE"><set name="message">lost item</set></li>
+<li value="* LOSE"><set name="message">lost item</set></li>
+<li value="LOSE *"><set name="message">lost item</set></li>
+<li value="* LOSE *"><set name="message">lost item</set></li>
+
+<li value="LOOSE"><set name="message">lost item</set></li>
+<li value="* LOOSE"><set name="message">lost item</set></li>
+<li value="LOOSE *"><set name="message">lost item</set></li>
+<li value="* LOOSE *"><set name="message">lost item</set></li>
+
+<li value="OHIOLINK"><set name="message">ohiolink</set></li>
+<li value="* OHIOLINK"><set name="message">ohiolink</set></li>
+<li value="OHIOLINK *"><set name="message">ohiolink</set></li>
+<li value="* OHIOLINK *"><set name="message">ohiolink</set></li>
+
+<li value="OHIO LINK"><set name="message">ohiolink</set></li>
+<li value="* OHIO LINK"><set name="message">ohiolink</set></li>
+<li value="OHIO LINK *"><set name="message">ohiolink</set></li>
+<li value="* OHIO LINK *"><set name="message">ohiolink</set></li>
+
+<li value="SEARCHOHIO"><set name="message">searchohio</set></li>
+<li value="* SEARCHOHIO"><set name="message">searchohio</set></li>
+<li value="SEARCHOHIO *"><set name="message">searchohio</set></li>
+<li value="* SEARCHOHIO *"><set name="message">searchohio</set></li>
+
+<li value="SEARCH OHIO"><set name="message">searchohio</set></li>
+<li value="* SEARCH OHIO"><set name="message">searchohio</set></li>
+<li value="SEARCH OHIO *"><set name="message">searchohio</set></li>
+<li value="* SEARCH OHIO *"><set name="message">searchohio</set></li>
+
+<li value="CREDIT CARD"><set name="message">payment options</set></li>
+<li value="* CREDIT CARD"><set name="message">payment options</set></li>
+<li value="CREDIT CARD *"><set name="message">payment options</set></li>
+<li value="* CREDIT CARD *"><set name="message">payment options</set></li>
+
+<li value="CREDIT CARDS"><set name="message">payment options</set></li>
+<li value="* CREDIT CARDS"><set name="message">payment options</set></li>
+<li value="CREDIT CARDS *"><set name="message">payment options</set></li>
+<li value="* CREDIT CARDS *"><set name="message">payment options</set></li>
+
+<li value="ONLINE"><set name="message">payment options</set></li>
+<li value="* ONLINE"><set name="message">payment options</set></li>
+<li value="ONLINE *"><set name="message">payment options</set></li>
+<li value="* ONLINE *"><set name="message">payment options</set></li>
+
+<li value="ON LINE"><set name="message">payment options</set></li>
+<li value="* ON LINE"><set name="message">payment options</set></li>
+<li value="ON LINE *"><set name="message">payment options</set></li>
+<li value="* ON LINE *"><set name="message">payment options</set></li>
+
+<li value="PAY"><set name="message">payment options</set></li>
+<li value="* PAY"><set name="message">payment options</set></li>
+<li value="PAY *"><set name="message">payment options</set></li>
+<li value="* PAY *"><set name="message">payment options</set></li>
+
+<li value="PAYING"><set name="message">payment options</set></li>
+<li value="* PAYING"><set name="message">payment options</set></li>
+<li value="PAYING *"><set name="message">payment options</set></li>
+<li value="* PAYING *"><set name="message">payment options</set></li>
+
+<li value="PAYMENT"><set name="message">payment options</set></li>
+<li value="* PAYMENT"><set name="message">payment options</set></li>
+<li value="PAYMENT *"><set name="message">payment options</set></li>
+<li value="* PAYMENT *"><set name="message">payment options</set></li>
+
+<li value="PAYMENTS"><set name="message">payment options</set></li>
+<li value="* PAYMENTS"><set name="message">payment options</set></li>
+<li value="PAYMENTS *"><set name="message">payment options</set></li>
+<li value="* PAYMENTS *"><set name="message">payment options</set></li>
+
+<li value="BILL"><set name="message">in collections</set></li>
+<li value="* BILL"><set name="message">in collections</set></li>
+<li value="BILL *"><set name="message">in collections</set></li>
+<li value="* BILL *"><set name="message">in collections</set></li>
+
+<li value="BILLS"><set name="message">in collections</set></li>
+<li value="* BILLS"><set name="message">in collections</set></li>
+<li value="BILLS *"><set name="message">in collections</set></li>
+<li value="* BILLS *"><set name="message">in collections</set></li>
+
+<li value="BILLED"><set name="message">in collections</set></li>
+<li value="* BILLED"><set name="message">in collections</set></li>
+<li value="BILLED *"><set name="message">in collections</set></li>
+<li value="* BILLED *"><set name="message">in collections</set></li>
+
+<li value="COLLECTION"><set name="message">in collections</set></li>
+<li value="* COLLECTION"><set name="message">in collections</set></li>
+<li value="COLLECTION *"><set name="message">in collections</set></li>
+<li value="* COLLECTION *"><set name="message">in collections</set></li>
+
+<li value="COLLECTIONS"><set name="message">in collections</set></li>
+<li value="* COLLECTIONS"><set name="message">in collections</set></li>
+<li value="COLLECTIONS *"><set name="message">in collections</set></li>
+<li value="* COLLECTIONS *"><set name="message">in collections</set></li>
+
+<li value="UNIQUE"><set name="message">in collections</set></li>
+<li value="* UNIQUE"><set name="message">in collections</set></li>
+<li value="UNIQUE *"><set name="message">in collections</set></li>
+<li value="* UNIQUE *"><set name="message">in collections</set></li>
+
+<li value="DO NOT PAID"><set name="message">do not pay</set></li>
+<li value="* DO NOT PAID"><set name="message">do not pay</set></li>
+<li value="DO NOT * PAID"><set name="message">do not pay</set></li>
+<li value="DO NOT PAID *"><set name="message">do not pay</set></li>
+<li value="* DO NOT * PAID"><set name="message">do not pay</set></li>
+<li value="DO NOT * PAID *"><set name="message">do not pay</set></li>
+<li value="* DO NOT PAID *"><set name="message">do not pay</set></li>
+<li value="* DO NOT * PAID *"><set name="message">do not pay</set></li>
+
+<li value="DO NOT PAY"><set name="message">do not pay</set></li>
+<li value="* DO NOT PAY"><set name="message">do not pay</set></li>
+<li value="DO NOT * PAY"><set name="message">do not pay</set></li>
+<li value="DO NOT PAY *"><set name="message">do not pay</set></li>
+<li value="* DO NOT * PAY"><set name="message">do not pay</set></li>
+<li value="DO NOT * PAY *"><set name="message">do not pay</set></li>
+<li value="* DO NOT PAY *"><set name="message">do not pay</set></li>
+<li value="* DO NOT * PAY *"><set name="message">do not pay</set></li>
+
+<li value="DO NOT PAYING"><set name="message">do not pay</set></li>
+<li value="* DO NOT PAYING"><set name="message">do not pay</set></li>
+<li value="DO NOT * PAYING"><set name="message">do not pay</set></li>
+<li value="DO NOT PAYING *"><set name="message">do not pay</set></li>
+<li value="* DO NOT * PAYING"><set name="message">do not pay</set></li>
+<li value="DO NOT * PAYING *"><set name="message">do not pay</set></li>
+<li value="* DO NOT PAYING *"><set name="message">do not pay</set></li>
+<li value="* DO NOT * PAYING *"><set name="message">do not pay</set></li>
+
+<li value="DO NOT PAYS"><set name="message">do not pay</set></li>
+<li value="* DO NOT PAYS"><set name="message">do not pay</set></li>
+<li value="DO NOT * PAYS"><set name="message">do not pay</set></li>
+<li value="DO NOT PAYS *"><set name="message">do not pay</set></li>
+<li value="* DO NOT * PAYS"><set name="message">do not pay</set></li>
+<li value="DO NOT * PAYS *"><set name="message">do not pay</set></li>
+<li value="* DO NOT PAYS *"><set name="message">do not pay</set></li>
+<li value="* DO NOT * PAYS *"><set name="message">do not pay</set></li>
+
+<li value="DO NOT PAID"><set name="message">do not pay</set></li>
+<li value="* DO NOT PAID"><set name="message">do not pay</set></li>
+<li value="DO NOT * PAID"><set name="message">do not pay</set></li>
+<li value="DO NOT PAID *"><set name="message">do not pay</set></li>
+<li value="* DO NOT * PAID"><set name="message">do not pay</set></li>
+<li value="DO NOT * PAID *"><set name="message">do not pay</set></li>
+<li value="* DO NOT PAID *"><set name="message">do not pay</set></li>
+<li value="* DO NOT * PAID *"><set name="message">do not pay</set></li>
+
+<li value=" NOT PAY"><set name="message">do not pay</set></li>
+<li value="*  NOT PAY"><set name="message">do not pay</set></li>
+<li value=" NOT * PAY"><set name="message">do not pay</set></li>
+<li value=" NOT PAY *"><set name="message">do not pay</set></li>
+<li value="*  NOT * PAY"><set name="message">do not pay</set></li>
+<li value=" NOT * PAY *"><set name="message">do not pay</set></li>
+<li value="*  NOT PAY *"><set name="message">do not pay</set></li>
+<li value="*  NOT * PAY *"><set name="message">do not pay</set></li>
+
+<li value=" NOT PAYING"><set name="message">do not pay</set></li>
+<li value="*  NOT PAYING"><set name="message">do not pay</set></li>
+<li value=" NOT * PAYING"><set name="message">do not pay</set></li>
+<li value=" NOT PAYING *"><set name="message">do not pay</set></li>
+<li value="*  NOT * PAYING"><set name="message">do not pay</set></li>
+<li value=" NOT * PAYING *"><set name="message">do not pay</set></li>
+<li value="*  NOT PAYING *"><set name="message">do not pay</set></li>
+<li value="*  NOT * PAYING *"><set name="message">do not pay</set></li>
+
+<li value=" NOT PAYS"><set name="message">do not pay</set></li>
+<li value="*  NOT PAYS"><set name="message">do not pay</set></li>
+<li value=" NOT * PAYS"><set name="message">do not pay</set></li>
+<li value=" NOT PAYS *"><set name="message">do not pay</set></li>
+<li value="*  NOT * PAYS"><set name="message">do not pay</set></li>
+<li value=" NOT * PAYS *"><set name="message">do not pay</set></li>
+<li value="*  NOT PAYS *"><set name="message">do not pay</set></li>
+<li value="*  NOT * PAYS *"><set name="message">do not pay</set></li>
+
+<li value="JAIL"><set name="message">jail</set></li>
+<li value="* JAIL"><set name="message">jail</set></li>
+<li value="JAIL *"><set name="message">jail</set></li>
+<li value="* JAIL *"><set name="message">jail</set></li>
+
+<li value="LAPTOP"><set name="message">laptop</set></li>
+<li value="* LAPTOP"><set name="message">laptop</set></li>
+<li value="LAPTOP *"><set name="message">laptop</set></li>
+<li value="* LAPTOP *"><set name="message">laptop</set></li> 
+
+<li value="LAPTOPS"><set name="message">laptop</set></li>
+<li value="* LAPTOPS"><set name="message">laptop</set></li>
+<li value="LAPTOPS *"><set name="message">laptop</set></li>
+<li value="* LAPTOPS *"><set name="message">laptop</set></li> 
+
+</condition>
+<think><set name="topic"></set></think>
+</think>
+
+<condition name="message">
+
+<li value="stop"><set name="topic"></set>O.K. I'll stop.</li>
+
+<li value="no match"><set name="topic"></set><srai><get name="answr"/></srai></li>
+
+<li value="bankruptcy"><srai>BNKRPT</srai></li>
+<li value="senior fines"><srai>SNFNS</srai></li>
+<li value="forgiveness"><srai>FNFRG</srai></li>
+<li value="faxing"><srai>FXING</srai></li>
+  <li value="grace"><srai>GPER</srai></li>
+
+<li value="audiobook"><think><set name="topic">ADBK ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRADBKS</srai></li> 
+<li value="book"><think><set name="topic">BOOK ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRBKS</srai></li>  
+<li value="cd"><think><set name="topic">CD ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRCDS</srai></li>  
+<li value="dvd"><think><set name="topic">DVD ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRDVDS</srai></li> 
+<li value="fic dvd"><think><set name="topic">FICDVD ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRFICDVDS</srai></li> 
+<li value="nonfic dvd"><think><set name="topic">NONFICDVD ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRNONFICDVDS</srai></li> 
+<li value="dvd set"><think><set name="topic">DVDSET ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRDVDSETS</srai></li> 
+<li value="ebook"><think><set name="topic">ODEBKS ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRODEBKS</srai></li> 
+<li value="magazine"><think><set name="topic">MAG ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRMAGS</srai></li> 
+<li value="video game"><think><set name="topic">VGM ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRVGMS</srai></li>  
+<li value="ereader"><think><set name="topic">EDEV ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTREDEVS</srai></li>  
+<li value="ipad"><think><set name="topic">IPAD ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRIPDS</srai></li>  
+<li value="ohiolink"><think><set name="topic">OL ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTROL</srai></li>  
+<li value="ohiolink media"><think><set name="topic">OLM ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTROLM</srai></li>  
+<li value="searchohio"><think><set name="topic">SO ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRSO</srai></li>
+<li value="searchohio media"><think><set name="topic">SODVD ATTRIBUTES</set><set name="attr1">fine</set></think>ATTRSODVDS<srai></srai></li>  
+<li value="laptop"><think><set name="topic">LPTP ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRLPTPS</srai></li>
+<li value="check fines"><srai>CHKFNS</srai></li>
+
+<li value="lost item"><srai>LSTRPL</srai></li>
+<li value="payment options"><srai>PYMT</srai></li>
+<li value="in collections"><srai>INCOLL</srai></li>
+<li value="do not pay"><srai>XPAY</srai></li>
+<li value="jail"><srai>XPAY JAIL</srai></li>
+
+</condition>
+</template>
+</category>
+</topic>
+
+</aiml>

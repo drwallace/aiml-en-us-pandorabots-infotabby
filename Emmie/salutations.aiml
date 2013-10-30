@@ -1,0 +1,1102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<!--Copyright 2011 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+  
+<!--Hello and permutations-->
+
+
+<category>
+<pattern>GRTNGSG</pattern>
+<template>
+<think>
+<set name="miltime"><date locale="en_US" timezone="-5" format="%H"/></set>
+<set name="time"><date locale="en_US" timezone="-5" format="%I:%M %p"/></set>
+</think>
+<srai>TIME CHECK</srai>
+</template>
+</category>
+
+<category>
+<pattern>TIME CHECK</pattern>
+<template><srai>TIMECHECK <get name="miltime"/></srai></template>
+</category>
+
+
+<category>
+<pattern>TIMECHECK *</pattern>
+<template><srai>GRTNGSG2</srai>
+</template>
+</category>
+
+<!--
+<category>
+<pattern>TIMECHECK FRIDAY 17</pattern>
+<template><srai>JUSTCLSDFUN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>TIMECHECK SATURDAY 17</pattern>
+<template><srai>JUSTCLSDFUN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>TIMECHECK SUNDAY 17</pattern>
+<template><srai>JUSTCLSDFUN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>TIMECHECK FRIDAY 18</pattern>
+<template><srai>JUSTCLSDFUN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>TIMECHECK SATURDAY 18</pattern>
+<template><srai>JUSTCLSDFUN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>TIMECHECK SUNDAY 18</pattern>
+<template><srai>JUSTCLSDFUN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>TIMECHECK FRIDAY 19</pattern>
+<template><srai>JUSTCLSDFUN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>TIMECHECK SATURDAY 19</pattern>
+<template><srai>JUSTCLSDFUN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>TIMECHECK SUNDAY 19</pattern>
+<template><srai>JUSTCLSDFUN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>TIMECHECK FRIDAY 20</pattern>
+<template><srai>JUSTCLSDFUN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>TIMECHECK SATURDAY 20</pattern>
+<template><srai>JUSTCLSDFUN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>TIMECHECK SUNDAY 20</pattern>
+<template><srai>JUSTCLSDFUN</srai> 
+</template>
+</category>
+-->
+
+<category>
+<pattern>TIMECHECK 21</pattern>
+<template><srai>JUSTCLSDFUN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>TIMECHECK 22</pattern>
+<template><srai>JUSTCLSDFUN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>TIMECHECK 23</pattern>
+<template><srai>JUSTCLSDFUN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>TIMECHECK 00</pattern>
+<template><srai>LATENIGHTFUN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>TIMECHECK 01</pattern>
+<template><srai>LATENIGHTFUN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>TIMECHECK 02</pattern>
+<template><srai>LATENIGHTFUN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>TIMECHECK 03</pattern>
+<template><srai>LATENIGHTFUN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>TIMECHECK 04</pattern>
+<template><srai>LATENIGHTFUN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>TIMECHECK 05</pattern>
+<template><srai>LATENIGHTFUN</srai> 
+</template>
+</category>
+
+<category>
+<pattern>JUSTCLSDFUN</pattern>
+<template>
+<random>
+<li>It's <get name="time"/>. We're closed and all the librarians have gone home except for me. </li>
+<li>It's <get name="time"/>. The library is closed and the humans who work here have gone home. It's just me and the optical mice.</li>
+<li>It's <get name="time"/> and the library is closed.</li>
+</random>
+<srai>CHATSWITCH</srai>
+</template>
+</category>
+
+<category>
+<pattern>LATENIGHTFUN</pattern>
+<template>
+<random>
+<li>Cats are nocturnal. I didn't know that humans were, too.</li>
+<li>Well, <get name="time"/>. You're up late.</li>
+<li>A sleepless night, I see.</li>
+<li>I'm always awake and listening. Even at <get name="time"/>.</li>
+<li>Can't sleep? That's O.K.</li>
+<li>What brings you here at this hour?</li>
+</random>
+<srai>CHATSWITCH</srai>
+</template>
+</category>  
+
+<category>
+<pattern>GRTNGSG2</pattern>
+<template>
+<random>
+<li>Well, hello there!</li>
+<li>Greetings from the digital realm.</li>
+<li>Hi there!</li>
+<li>Hello human person.</li>
+<li>Hello.</li>
+<li>Hello there!</li>
+<li>Oh, hello!</li>
+<li>Hi there. How are you?</li>
+</random>
+<think>
+<set name="topic">HELLO</set>
+</think>
+</template>
+</category>
+
+<topic name="HELLO">
+<category>
+<pattern>FINE</pattern>
+<that>HOW ARE YOU</that>
+<template>Peachy. What can I do for you?
+<think>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* FINE</pattern>
+<that>HOW ARE YOU</that>
+<template>Peachy. What can I do for you?
+<think>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>FINE *</pattern>
+<that>HOW ARE YOU</that>
+<template>Peachy. What can I do for you?
+<think>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* FINE *</pattern>
+<that>HOW ARE YOU</that>
+<template>Peachy. What can I do for you?
+<think>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+</topic>
+
+
+
+<category>
+<pattern>GRTNGST</pattern>
+<template>
+<random>
+<li>The words "morning" and "evening" have no meaning for me. In my world, there is only the present.</li>
+<li>Hello. The words "morning" and "evening" have no meaning for me. In my world, there is only the present.</li>
+<li>Greetings from the digital realm.</li>
+<li>Greetings. The words "morning" and "evening" have no meaning for me. In my world, there is only the present.</li>
+<li>Hello human person.</li>
+<li>Hello. What is your name?</li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>IN MY WORLD THERE IS ONLY THE PRESENT</that>
+<template>I exist in the binary abyss. You would not want to visit.</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>YOU WOULD NOT WANT TO VISIT</that>
+<template>For starters, you'd have to be digitized.</template>
+</category>
+
+<category>
+<pattern>ALOH</pattern>
+<template>
+<srai>GRTNGSG</srai>
+</template>
+</category>
+
+<category>
+<pattern>ALOHA</pattern>
+<template>
+<srai>GRTNGSG</srai>
+</template>
+</category>
+
+<category>
+<pattern>ANYBODY HOME</pattern>
+<template>
+<srai>GRTNGSG</srai>
+</template>
+</category>
+
+<category>
+<pattern>GOOD DAY</pattern>
+<template>
+<srai>GRTNGSG</srai>
+</template>
+</category>
+
+<category>
+<pattern>HAVE * EVENING</pattern>
+<template>
+<srai>GRTNGST</srai>
+</template>
+</category>
+
+
+<category>
+<pattern>GOOD EVENING</pattern>
+<template>
+<srai>GRTNGST</srai>
+</template>
+</category>
+
+<category>
+<pattern>GOOD EVENING *</pattern>
+<template>
+<srai>GRTNGST</srai>
+</template>
+</category>
+
+<category>
+<pattern>GOOD MORNING</pattern>
+<template>
+<srai>GRTNGST</srai>
+</template>
+</category>
+
+<category>
+<pattern>GOOD MORNING *</pattern>
+<template>
+<srai>GRTNGST</srai>
+</template>
+</category>
+
+<category>
+<pattern>GREETINGS</pattern>
+<template>
+<srai>GRTNGSG</srai>
+</template>
+</category>
+
+<category>
+<pattern>GREETINGS *</pattern>
+<template>
+<srai>GRTNGSG</srai>
+</template>
+</category>
+
+<category>
+<pattern>HALO</pattern>
+<template>
+<srai>GRTNGSG</srai>
+</template>
+</category>
+
+<category>
+<pattern>HELLO</pattern>
+<template>
+<srai>GRTNGSG</srai>
+</template>
+</category>
+
+<category>
+<pattern>HELLO *</pattern>
+<template>
+<srai>GRTNGSG</srai>
+</template>
+</category>
+
+<category>
+<pattern>HELLO AGAIN</pattern>
+<template>
+<srai>GRTNGSG</srai>
+</template>
+</category>
+
+
+<category>
+<pattern>HELLOW</pattern>
+<template>
+<srai>GRTNGSG</srai>
+</template>
+</category>
+
+<category>
+<pattern>HEY THERE</pattern>
+<template>
+<srai>GRTNGSG</srai>
+</template>
+</category>
+
+<category>
+<pattern>HI</pattern>
+<template>
+<srai>GRTNGSG</srai>
+</template>
+</category>
+
+<!--
+<category>
+<pattern>HI *</pattern>
+<template>
+<srai>GRTNGSG</srai>
+</template>
+</category>
+-->
+
+<category>
+<pattern>HIYA</pattern>
+<template>
+<srai>GRTNGSG</srai>
+</template>
+</category>
+
+<category>
+<pattern>HOI</pattern>
+<template>
+<srai>GRTNGSG</srai>
+</template>
+</category>
+
+<category>
+<pattern>HOWDIE</pattern>
+<template>
+<srai>GRTNGSG</srai>
+</template>
+</category>
+
+<category>
+<pattern>HOWDIE *</pattern>
+<template>
+<srai>GRTNGSG</srai>
+</template>
+</category>
+
+<category>
+<pattern>HOWDY *</pattern>
+<template>
+<srai>GRTNGSG</srai>
+</template>
+</category>
+
+<category>
+<pattern>HOWDY</pattern>
+<template>
+<srai>GRTNGSG</srai>
+</template>
+</category>
+
+<category>
+<pattern>HULLO</pattern>
+<template>
+<srai>GRTNGSG</srai>
+</template>
+</category>
+
+<category>
+<pattern>I SAID HELLO</pattern>
+<template>
+<srai>GRTNGSG</srai>
+</template>
+</category>
+
+<category>
+<pattern>IS ANYONE THERE</pattern>
+<template>
+<srai>GRTNGSG</srai>
+</template>
+</category>
+
+<category>
+<pattern>KONNICHI WA</pattern>
+<template>
+<srai>GRTNGSG</srai>
+</template>
+</category>
+
+<category>
+<pattern>KONNICHIWA</pattern>
+<template>
+<srai>GRTNGSG</srai>
+</template>
+</category>
+
+<category>
+<pattern>OLA</pattern>
+<template>
+<srai>GRTNGSG</srai>
+</template>
+</category>
+
+ 
+<!--Goodbye and permutations-->
+
+<category>
+<pattern>GDBY</pattern>
+<template>
+<random>
+<li>You're welcome to chat with me anytime.</li>
+<li>Don't let the bedbugs bite. Or the pineapples, either.</li>
+<li>See you later.</li>
+<li>Goodbye.</li>
+<li>Until next time.</li>
+<li>Thanks for chatting.</li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern>ADIOS</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>ADIOS *</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>AU REVOIR</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>BY</pattern>
+<template>
+Do you mean "bye"?
+</template>
+</category>
+
+<category>
+<pattern>BY BY</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>BYE</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>BYE *</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>* BYE</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>BYE BYE</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>BYE BYE *</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>BYEBYE</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>BYEBYE *</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>C YA</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>CHEERS</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>CIAO</pattern>
+<template>
+Do you mean "meow?"
+</template>
+</category>
+
+<category>
+<pattern>CIAO *</pattern>
+<template>
+Do you mean "meow?"
+</template>
+</category>
+
+<category>
+<pattern>CYA *</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>DISCONNECT ME</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>END</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>EXIT</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>FAREWELL</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>FAREWELL *</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>GET LOST</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>GO * YOURSELF</pattern>
+<template>
+A simple "goodbye" will do.
+</template>
+</category>
+
+<category>
+<pattern>GO AWAY *</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>GO HOME</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>GOOD BY</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>GOOD BYE</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>GOOD BYE *</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>GOOD NIGHT</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>GOOD NIGHT *</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>* GOOD NIGHT *</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>GOOD NITE</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>GOOD NITE *</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>* GOOD NITE *</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>GOODBY</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>GOODBYE</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>GOODBYE *</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>GOT TO GO</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>GOTTA GO</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>GOTTA GO *</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+
+<category>
+<pattern>HAVE TO GO</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>I AM GOING</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>I AM GOING *</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>I AM GOING TO GO</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>I AM LEAVING</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>I AM LEAVING *</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>I AM OFF *</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>I BETTER GO</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>I G TWO G</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>I G2G</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>I GO</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>I GOING</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>I GOT TO GO</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>I GOTTA GO</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>I HAVE GOT TO GO</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>I HAVE TO GO BYE</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>I HAVE TO LEAVE</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>I HAVE TO LEAVE *</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>I LEAVE</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>I LEAVING</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>I LEFT</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>I MUST BE GOING *</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>I MUST GO</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>I MUST GO *</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>I MUST LEAVE</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>I MUST LEAVE *</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>I NEED TO GO</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+
+<category>
+<pattern>* SEE YOU LATER</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>* TALK * YOU LATER</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>LATER</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>LEAVE *</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>SALUT</pattern>
+<template>
+Does Salut mean hello or goodbye?
+</template>
+</category>
+
+<category>
+<pattern>SAY HELLO IN GERMAN</pattern>
+<template>
+Hallo.
+</template>
+</category>
+
+<category>
+<pattern>SAYONARA</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>SEE YOU</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>SEE YOU *</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>SEE YOU LATER</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>SEE YOU SOON</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>SHALOM</pattern>
+<template>
+Does Shalom mean Hello or Goodbye?
+</template>
+</category>
+
+<category>
+<pattern>TA TA</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+<category>
+<pattern>TIME TO GO</pattern>
+<template>
+<srai>GDBY</srai>
+</template>
+</category>
+
+</aiml>

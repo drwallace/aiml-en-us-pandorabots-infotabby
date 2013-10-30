@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<!--Copyright 2011-2012 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+  
+<category>
+<pattern>CALL *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="attr1">phone number</set>
+<set name="topic">STAFF SORT</set>
+</think>
+<srai>STAFFSORT1</srai>
+</template>
+</category>  
+
+<category>
+<pattern>* CALL</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="attr1">phone number</set>
+<set name="topic">STAFF SORT</set>
+</think>
+<srai>STAFFSORT1</srai>
+</template>
+</category>  
+
+<category>
+<pattern>* CALL *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="attr1">phone number</set>
+<set name="topic">STAFF SORT</set>
+</think>
+<srai>STAFFSORT1</srai>
+</template>
+</category>    
+
+<category>
+<pattern>CONTACT *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="attr1">contact</set>
+<set name="topic">STAFF SORT</set>
+</think>
+<srai>STAFFSORT1</srai>
+</template>
+</category>  
+
+<category>
+<pattern>* CONTACT</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="attr1">contact</set>
+<set name="topic">STAFF SORT</set>
+</think>
+<srai>STAFFSORT1</srai>
+</template>
+</category>  
+
+<category>
+<pattern>* CONTACT *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="attr1">contact</set>
+<set name="topic">STAFF SORT</set>
+</think>
+<srai>STAFFSORT1</srai>
+</template>
+</category>  
+
+<category>
+<pattern>CONTACTING *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="attr1">contact</set>
+<set name="topic">STAFF SORT</set>
+</think>
+<srai>STAFFSORT1</srai>
+</template>
+</category>  
+
+<category>
+<pattern>* CONTACTING</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="attr1">contact</set>
+<set name="topic">STAFF SORT</set>
+</think>
+<srai>STAFFSORT1</srai>
+</template>
+</category>  
+
+<category>
+<pattern>* CONTACTING *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="attr1">contact</set>
+<set name="topic">STAFF SORT</set>
+</think>
+<srai>STAFFSORT1</srai>
+</template>
+</category>  
+
+<category>
+<pattern>EXTENSION *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="attr1">extension</set>
+<set name="topic">STAFF SORT</set>
+</think>
+<srai>STAFFSORT1</srai>
+</template>
+</category>  
+
+<category>
+<pattern>* EXTENSION</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="attr1">extension</set>
+<set name="topic">STAFF SORT</set>
+</think>
+<srai>STAFFSORT1</srai>
+</template>
+</category>  
+
+<category>
+<pattern>* EXTENSION *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="attr1">extension</set>
+<set name="topic">STAFF SORT</set>
+</think>
+<srai>STAFFSORT1</srai>
+</template>
+</category> 
+
+<category>
+<pattern>PHONE *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="attr1">phone number</set>
+<set name="topic">STAFF SORT</set>
+</think>
+<srai>STAFFSORT1</srai>
+</template>
+</category>  
+
+<category>
+<pattern>* PHONE</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="attr1">phone number</set>
+<set name="topic">STAFF SORT</set>
+</think>
+<srai>STAFFSORT1</srai>
+</template>
+</category>  
+
+<category>
+<pattern>* PHONE *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="attr1">phone number</set>
+<set name="topic">STAFF SORT</set>
+</think>
+<srai>STAFFSORT1</srai>
+</template>
+</category>  
+  
+<category>
+<pattern>EMAIL *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="attr1">email</set>
+<set name="topic">STAFF SORT</set>
+</think>
+<srai>STAFFSORT1</srai>
+</template>
+</category>  
+
+<category>
+<pattern>* EMAIL</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="attr1">email</set>
+<set name="topic">STAFF SORT</set>
+</think>
+<srai>STAFFSORT1</srai>
+</template>
+</category>  
+
+<category>
+<pattern>* EMAIL *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="attr1">email</set>
+<set name="topic">STAFF SORT</set>
+</think>
+<srai>STAFFSORT1</srai>
+</template>
+</category>  
+
+<category>
+<pattern>FAX NUMBER *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="attr1">fax number</set>
+<set name="topic">STAFF SORT</set>
+</think>
+<srai>STAFFSORT1</srai>
+</template>
+</category>  
+
+<category>
+<pattern>* FAX NUMBER</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="attr1">fax number</set>
+<set name="topic">STAFF SORT</set>
+</think>
+<srai>STAFFSORT1</srai>
+</template>
+</category>  
+
+<category>
+<pattern>* FAX NUMBER *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="attr1">fax number</set>
+<set name="topic">STAFF SORT</set>
+</think>
+<srai>STAFFSORT1</srai>
+</template>
+</category>  
+
+<category>
+<pattern>WHO IS *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="attr1">position</set>
+<set name="topic">STAFF SORT</set>
+</think>
+<srai>STAFFSORT1</srai>
+</template>
+</category>  
+
+<category>
+<pattern>* WHO IS *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="attr1">position</set>
+<set name="topic">STAFF SORT</set>
+</think>
+<srai>STAFFSORT1</srai>
+</template>
+</category>  
+
+<category>
+<pattern>* WHO * IS</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="attr1">position</set>
+<set name="topic">STAFF SORT</set>
+</think>
+<srai>STAFFSORT1</srai>
+</template>
+</category> 
+
+<category>
+<pattern>* WHO * IS *</pattern>
+<template>
+<think>
+<set name="answr"><star index="2"/><star index="3"/></set>
+<set name="attr1">position</set>
+<set name="topic">STAFF SORT</set>
+</think>
+<srai>STAFFSORT1</srai>
+</template>
+</category> 
+  
+<topic name="STAFF SORT">
+<category>
+<pattern>STAFFSORT1</pattern>
+<template>
+<think>
+<get name="answr"/>
+<set name="message">no match</set>
+<condition name="answr">
+
+<li value="STOP"><set name="message">stop</set></li>
+
+<li value="HEADLANDS"><set name="message">mplhdls</set></li>
+<li value="* HEADLANDS"><set name="message">mplhdls</set></li>
+<li value="HEADLANDS *"><set name="message">mplhdls</set></li>
+<li value="* HEADLANDS *"><set name="message">mplhdls</set></li> 
+
+<li value="LAKE"><set name="message">mplmol</set></li>
+<li value="* LAKE"><set name="message">mplmol</set></li>
+<li value="LAKE *"><set name="message">mplmol</set></li>
+<li value="* LAKE *"><set name="message">mplmol</set></li> 
+
+<li value="MAIN"><set name="message">mplmain</set></li>
+<li value="* MAIN"><set name="message">mplmain</set></li>
+<li value="MAIN *"><set name="message">mplmain</set></li>
+<li value="* MAIN *"><set name="message">mplmain</set></li>  
+
+<li value="MOL"><set name="message">mplmol</set></li>
+<li value="* MOL"><set name="message">mplmol</set></li>
+<li value="MOL *"><set name="message">mplmol</set></li>
+<li value="* MOL *"><set name="message">mplmol</set></li>
+
+<li value="ACQUISITIONS"><set name="message">dept ts</set></li>
+<li value="* ACQUISITIONS"><set name="message">dept ts</set></li>
+<li value="ACQUISITIONS *"><set name="message">dept ts</set></li>
+<li value="* ACQUISITIONS *"><set name="message">dept ts</set></li>
+
+<li value="ADMIN"><set name="message">dept admin</set></li>
+<li value="* ADMIN"><set name="message">dept admin</set></li>
+<li value="ADMIN *"><set name="message">dept admin</set></li>
+<li value="* ADMIN *"><set name="message">dept admin</set></li>
+
+<li value="ADMINISTRATION"><set name="message">dept admin</set></li>
+<li value="* ADMINISTRATION"><set name="message">dept admin</set></li>
+<li value="ADMINISTRATION *"><set name="message">dept admin</set></li>
+<li value="* ADMINISTRATION *"><set name="message">dept admin</set></li>
+
+<li value="BUILDING"><set name="message">dept bldg</set></li>
+<li value="* BUILDING"><set name="message">dept bldg</set></li>
+<li value="BUILDING *"><set name="message">dept bldg</set></li>
+<li value="* BUILDING *"><set name="message">dept bldg</set></li>
+
+<li value="CHILDRENS"><set name="message">dept childrens</set></li>
+<li value="* CHILDRENS"><set name="message">dept childrens</set></li>
+<li value="CHILDRENS *"><set name="message">dept childrens</set></li>
+<li value="* CHILDRENS *"><set name="message">dept childrens</set></li>
+
+<li value="CHILDREN S"><set name="message">dept childrens</set></li>
+<li value="* CHILDREN S"><set name="message">dept childrens</set></li>
+<li value="CHILDREN S *"><set name="message">dept childrens</set></li>
+<li value="* CHILDREN S *"><set name="message">dept childrens</set></li>
+
+<li value="CIRC"><set name="message">dept circ</set></li>
+<li value="* CIRC"><set name="message">dept circ</set></li>
+<li value="CIRC *"><set name="message">dept circ</set></li>
+<li value="* CIRC *"><set name="message">dept circ</set></li>
+
+<li value="CIRCULATION"><set name="message">dept circ</set></li>
+<li value="* CIRCULATION"><set name="message">dept circ</set></li>
+<li value="CIRCULATION *"><set name="message">dept circ</set></li>
+<li value="* CIRCULATION *"><set name="message">dept circ</set></li>
+
+<li value="FINANCE"><set name="message">dept fisc</set></li>
+<li value="* FINANCE"><set name="message">dept fisc</set></li>
+<li value="FINANCE *"><set name="message">dept fisc</set></li>
+<li value="* FINANCE *"><set name="message">dept fisc</set></li>
+
+<li value="HR"><set name="message">dept hr</set></li>
+<li value="* HR"><set name="message">dept hr</set></li>
+<li value="HR *"><set name="message">dept hr</set></li>
+<li value="* HR *"><set name="message">dept hr</set></li>
+
+<li value="HUMAN RESOURCES"><set name="message">dept hr</set></li>
+<li value="* HUMAN RESOURCES"><set name="message">dept hr</set></li>
+<li value="HUMAN RESOURCES *"><set name="message">dept hr</set></li>
+<li value="* HUMAN RESOURCES *"><set name="message">dept hr</set></li>
+
+<li value="INFORMATION SERVICES"><set name="message">dept ref</set></li>
+<li value="* INFORMATION SERVICES"><set name="message">dept ref</set></li>
+<li value="INFORMATION SERVICES *"><set name="message">dept ref</set></li>
+<li value="* INFORMATION SERVICES *"><set name="message">dept ref</set></li>
+
+<li value="IT"><set name="message">dept it</set></li>
+<li value="* IT"><set name="message">dept it</set></li>
+<li value="IT *"><set name="message">dept it</set></li>
+<li value="* IT *"><set name="message">dept it</set></li>
+
+<li value="REF"><set name="message">dept ref</set></li>
+<li value="* REF"><set name="message">dept ref</set></li>
+<li value="REF *"><set name="message">dept ref</set></li>
+<li value="* REF *"><set name="message">dept ref</set></li>
+
+<li value="REFERENCE"><set name="message">dept ref</set></li>
+<li value="* REFERENCE"><set name="message">dept ref</set></li>
+<li value="REFERENCE *"><set name="message">dept ref</set></li>
+<li value="* REFERENCE *"><set name="message">dept ref</set></li>
+
+<li value="TECH SERVICES"><set name="message">dept ts</set></li>
+<li value="* TECH SERVICES"><set name="message">dept ts</set></li>
+<li value="TECH SERVICES *"><set name="message">dept ts</set></li>
+<li value="* TECH SERVICES *"><set name="message">dept ts</set></li>
+
+<li value="AMANDA DENSMORE"><set name="message">adensmore</set></li>
+<li value="* AMANDA DENSMORE"><set name="message">adensmore</set></li>
+<li value="AMANDA DENSMORE *"><set name="message">adensmore</set></li>
+<li value="* AMANDA DENSMORE *"><set name="message">adensmore</set></li>  
+
+<li value="AMANDA DENSMORE S"><set name="message">adensmore</set></li>
+<li value="* AMANDA DENSMORE S"><set name="message">adensmore</set></li>
+<li value="AMANDA DENSMORE S *"><set name="message">adensmore</set></li>
+<li value="* AMANDA DENSMORE S *"><set name="message">adensmore</set></li> 
+
+<li value="AMANDA"><set name="message">adensmore</set></li>
+<li value="* AMANDA"><set name="message">adensmore</set></li>
+<li value="AMANDA *"><set name="message">adensmore</set></li>
+<li value="* AMANDA *"><set name="message">adensmore</set></li>  
+
+<li value="AMANDA S"><set name="message">adensmore</set></li>
+<li value="* AMANDA S"><set name="message">adensmore</set></li>
+<li value="AMANDA S *"><set name="message">adensmore</set></li>
+<li value="* AMANDA S *"><set name="message">adensmore</set></li> 
+
+<li value="KIM SIDORICK"><set name="message">ksidorick</set></li>
+<li value="* KIM SIDORICK"><set name="message">ksidorick</set></li>
+<li value="KIM SIDORICK *"><set name="message">ksidorick</set></li>
+<li value="* KIM SIDORICK *"><set name="message">ksidorick</set></li>  
+
+<li value="KIM SIDORICK S"><set name="message">ksidorick</set></li>
+<li value="* KIM SIDORICK S"><set name="message">ksidorick</set></li>
+<li value="KIM SIDORICK S *"><set name="message">ksidorick</set></li>
+<li value="* KIM SIDORICK S *"><set name="message">ksidorick</set></li> 
+
+<li value="KIM"><set name="message">ksidorick</set></li>
+<li value="* KIM"><set name="message">ksidorick</set></li>
+<li value="KIM *"><set name="message">ksidorick</set></li>
+<li value="* KIM *"><set name="message">ksidorick</set></li>  
+
+<li value="KIM S"><set name="message">ksidorick</set></li>
+<li value="* KIM S"><set name="message">ksidorick</set></li>
+<li value="KIM S *"><set name="message">ksidorick</set></li>
+<li value="* KIM S *"><set name="message">ksidorick</set></li> 
+
+<li value="MARLENE PELYHES"><set name="message">mpelyhes</set></li>
+<li value="* MARLENE PELYHES"><set name="message">mpelyhes</set></li>
+<li value="MARLENE PELYHES *"><set name="message">mpelyhes</set></li>
+<li value="* MARLENE PELYHES *"><set name="message">mpelyhes</set></li>  
+
+<li value="MARLENE PELYHES S"><set name="message">mpelyhes</set></li>
+<li value="* MARLENE PELYHES S"><set name="message">mpelyhes</set></li>
+<li value="MARLENE PELYHES S *"><set name="message">mpelyhes</set></li>
+<li value="* MARLENE PELYHES S *"><set name="message">mpelyhes</set></li> 
+
+<li value="MARLENE"><set name="message">mpelyhes</set></li>
+<li value="* MARLENE"><set name="message">mpelyhes</set></li>
+<li value="MARLENE *"><set name="message">mpelyhes</set></li>
+<li value="* MARLENE *"><set name="message">mpelyhes</set></li>  
+
+<li value="MARLENE S"><set name="message">mpelyhes</set></li>
+<li value="* MARLENE S"><set name="message">mpelyhes</set></li>
+<li value="MARLENE S *"><set name="message">mpelyhes</set></li>
+<li value="* MARLENE S *"><set name="message">mpelyhes</set></li> 
+
+<li value="BARBARA HAUER"><set name="message">bhauer</set></li>
+<li value="* BARBARA HAUER"><set name="message">bhauer</set></li>
+<li value="BARBARA HAUER *"><set name="message">bhauer</set></li>
+<li value="* BARBARA HAUER *"><set name="message">bhauer</set></li>  
+
+<li value="BARBARA HAUER S"><set name="message">bhauer</set></li>
+<li value="* BARBARA HAUER S"><set name="message">bhauer</set></li>
+<li value="BARBARA HAUER S *"><set name="message">bhauer</set></li>
+<li value="* BARBARA HAUER S *"><set name="message">bhauer</set></li> 
+
+<li value="BARBARA"><set name="message">bhauer</set></li>
+<li value="* BARBARA"><set name="message">bhauer</set></li>
+<li value="BARBARA *"><set name="message">bhauer</set></li>
+<li value="* BARBARA *"><set name="message">bhauer</set></li>  
+
+<li value="BARBARA S"><set name="message">bhauer</set></li>
+<li value="* BARBARA S"><set name="message">bhauer</set></li>
+<li value="BARBARA S *"><set name="message">bhauer</set></li>
+<li value="* BARBARA S *"><set name="message">bhauer</set></li> 
+
+<li value="BARB HAUER"><set name="message">bhauer</set></li>
+<li value="* BARB HAUER"><set name="message">bhauer</set></li>
+<li value="BARB HAUER *"><set name="message">bhauer</set></li>
+<li value="* BARB HAUER *"><set name="message">bhauer</set></li>  
+
+<li value="BARB HAUER S"><set name="message">bhauer</set></li>
+<li value="* BARB HAUER S"><set name="message">bhauer</set></li>
+<li value="BARB HAUER S *"><set name="message">bhauer</set></li>
+<li value="* BARB HAUER S *"><set name="message">bhauer</set></li> 
+
+<li value="BARB"><set name="message">bhauer</set></li>
+<li value="* BARB"><set name="message">bhauer</set></li>
+<li value="BARB *"><set name="message">bhauer</set></li>
+<li value="* BARB *"><set name="message">bhauer</set></li>  
+
+<li value="BARB S"><set name="message">bhauer</set></li>
+<li value="* BARB S"><set name="message">bhauer</set></li>
+<li value="BARB S *"><set name="message">bhauer</set></li>
+<li value="* BARB S *"><set name="message">bhauer</set></li> 
+
+<li value="GREG PRESKE"><set name="message">gpreske</set></li>
+<li value="* GREG PRESKE"><set name="message">gpreske</set></li>
+<li value="GREG PRESKE *"><set name="message">gpreske</set></li>
+<li value="* GREG PRESKE *"><set name="message">gpreske</set></li>  
+
+<li value="GREG PRESKE S"><set name="message">gpreske</set></li>
+<li value="* GREG PRESKE S"><set name="message">gpreske</set></li>
+<li value="GREG PRESKE S *"><set name="message">gpreske</set></li>
+<li value="* GREG PRESKE S *"><set name="message">gpreske</set></li> 
+
+<li value="GREG"><set name="message">gpreske</set></li>
+<li value="* GREG"><set name="message">gpreske</set></li>
+<li value="GREG *"><set name="message">gpreske</set></li>
+<li value="* GREG *"><set name="message">gpreske</set></li>  
+
+<li value="GREG S"><set name="message">gpreske</set></li>
+<li value="* GREG S"><set name="message">gpreske</set></li>
+<li value="GREG S *"><set name="message">gpreske</set></li>
+<li value="* GREG S *"><set name="message">gpreske</set></li> 
+
+<li value="LYNN HAWKINS"><set name="message">lhawkins</set></li>
+<li value="* LYNN HAWKINS"><set name="message">lhawkins</set></li>
+<li value="LYNN HAWKINS *"><set name="message">lhawkins</set></li>
+<li value="* LYNN HAWKINS *"><set name="message">lhawkins</set></li>  
+
+<li value="LYNN HAWKINS S"><set name="message">lhawkins</set></li>
+<li value="* LYNN HAWKINS S"><set name="message">lhawkins</set></li>
+<li value="LYNN HAWKINS S *"><set name="message">lhawkins</set></li>
+<li value="* LYNN HAWKINS S *"><set name="message">lhawkins</set></li>  
+
+<li value="LYNN"><set name="message">lhawkins</set></li>
+<li value="* LYNN"><set name="message">lhawkins</set></li>
+<li value="LYNN *"><set name="message">lhawkins</set></li>
+<li value="* LYNN *"><set name="message">lhawkins</set></li>  
+
+<li value="LYNN S"><set name="message">lhawkins</set></li>
+<li value="* LYNN S"><set name="message">lhawkins</set></li>
+<li value="LYNN S *"><set name="message">lhawkins</set></li>
+<li value="* LYNN S *"><set name="message">lhawkins</set></li> 
+
+<li value="DIRECTOR"><set name="message">lhawkins</set></li>
+<li value="* DIRECTOR"><set name="message">lhawkins</set></li>
+<li value="DIRECTOR *"><set name="message">lhawkins</set></li>
+<li value="* DIRECTOR *"><set name="message">lhawkins</set></li> 
+
+<li value="LIBRARY MANAGER"><set name="message">lhawkins</set></li>
+<li value="* LIBRARY MANAGER"><set name="message">lhawkins</set></li>
+<li value="LIBRARY MANAGER *"><set name="message">lhawkins</set></li>
+<li value="* LIBRARY MANAGER *"><set name="message">lhawkins</set></li> 
+
+<li value="COLLEEN SNYDER"><set name="message">csnyder</set></li>
+<li value="* COLLEEN SNYDER"><set name="message">csnyder</set></li>
+<li value="COLLEEN SNYDER *"><set name="message">csnyder</set></li>
+<li value="* COLLEEN SNYDER *"><set name="message">csnyder</set></li>  
+
+<li value="COLLEEN SNYDER S"><set name="message">csnyder</set></li>
+<li value="* COLLEEN SNYDER S"><set name="message">csnyder</set></li>
+<li value="COLLEEN SNYDER S *"><set name="message">csnyder</set></li>
+<li value="* COLLEEN SNYDER S *"><set name="message">csnyder</set></li> 
+
+<li value="COLLEEN"><set name="message">csnyder</set></li>
+<li value="* COLLEEN"><set name="message">csnyder</set></li>
+<li value="COLLEEN *"><set name="message">csnyder</set></li>
+<li value="* COLLEEN *"><set name="message">csnyder</set></li>  
+
+<li value="COLLEEN S"><set name="message">csnyder</set></li>
+<li value="* COLLEEN S"><set name="message">csnyder</set></li>
+<li value="COLLEEN S *"><set name="message">csnyder</set></li>
+<li value="* COLLEEN S *"><set name="message">csnyder</set></li> 
+
+<li value="FISCAL OFFICER"><set name="message">csnyder</set></li>
+<li value="* FISCAL OFFICER"><set name="message">csnyder</set></li>
+<li value="FISCAL OFFICER *"><set name="message">csnyder</set></li>
+<li value="* FISCAL OFFICER *"><set name="message">csnyder</set></li> 
+
+<li value="GAIL BOROVIC"><set name="message">gborovic</set></li>
+<li value="* GAIL BOROVIC"><set name="message">gborovic</set></li>
+<li value="GAIL BOROVIC *"><set name="message">gborovic</set></li>
+<li value="* GAIL BOROVIC *"><set name="message">gborovic</set></li>  
+
+<li value="GAIL BOROVIC S"><set name="message">gborovic</set></li>
+<li value="* GAIL BOROVIC S"><set name="message">gborovic</set></li>
+<li value="GAIL BOROVIC S *"><set name="message">gborovic</set></li>
+<li value="* GAIL BOROVIC S *"><set name="message">gborovic</set></li> 
+
+<li value="GAIL"><set name="message">gborovic</set></li>
+<li value="* GAIL"><set name="message">gborovic</set></li>
+<li value="GAIL *"><set name="message">gborovic</set></li>
+<li value="* GAIL *"><set name="message">gborovic</set></li>  
+
+<li value="GAIL S"><set name="message">gborovic</set></li>
+<li value="* GAIL S"><set name="message">gborovic</set></li>
+<li value="GAIL S *"><set name="message">gborovic</set></li>
+<li value="* GAIL S *"><set name="message">gborovic</set></li> 
+
+<li value="PAM ROSE"><set name="message">prose</set></li>
+<li value="* PAM ROSE"><set name="message">prose</set></li>
+<li value="PAM ROSE *"><set name="message">prose</set></li>
+<li value="* PAM ROSE *"><set name="message">prose</set></li>  
+
+<li value="PAM ROSE S"><set name="message">prose</set></li>
+<li value="* PAM ROSE S"><set name="message">prose</set></li>
+<li value="PAM ROSE S *"><set name="message">prose</set></li>
+<li value="* PAM ROSE S *"><set name="message">prose</set></li> 
+
+<li value="PAM"><set name="message">prose</set></li>
+<li value="* PAM"><set name="message">prose</set></li>
+<li value="PAM *"><set name="message">prose</set></li>
+<li value="* PAM *"><set name="message">prose</set></li>  
+
+<li value="PAM S"><set name="message">prose</set></li>
+<li value="* PAM S"><set name="message">prose</set></li>
+<li value="PAM S *"><set name="message">prose</set></li>
+<li value="* PAM S *"><set name="message">prose</set></li> 
+
+<li value="LAKE MANAGER"><set name="message">prose</set></li>
+<li value="* LAKE MANAGER"><set name="message">prose</set></li>
+<li value="LAKE * MANAGER"><set name="message">prose</set></li>
+<li value="LAKE MANAGER *"><set name="message">prose</set></li>
+<li value="* LAKE * MANAGER"><set name="message">prose</set></li>
+<li value="LAKE * MANAGER *"><set name="message">prose</set></li>
+<li value="* LAKE MANAGER *"><set name="message">prose</set></li> 
+<li value="* LAKE * MANAGER *"><set name="message">prose</set></li> 
+
+<li value="LAKE MANAGER S"><set name="message">prose</set></li>
+<li value="* LAKE MANAGER S"><set name="message">prose</set></li>
+<li value="LAKE * MANAGER S"><set name="message">prose</set></li>
+<li value="LAKE MANAGER S *"><set name="message">prose</set></li>
+<li value="* LAKE * MANAGER S"><set name="message">prose</set></li>
+<li value="LAKE * MANAGER S *"><set name="message">prose</set></li>
+<li value="* LAKE MANAGER S *"><set name="message">prose</set></li> 
+<li value="* LAKE * MANAGER S *"><set name="message">prose</set></li> 
+
+<li value="MANAGER LAKE"><set name="message">prose</set></li>
+<li value="* MANAGER LAKE"><set name="message">prose</set></li>
+<li value="MANAGER * LAKE"><set name="message">prose</set></li>
+<li value="MANAGER LAKE *"><set name="message">prose</set></li>
+<li value="* MANAGER * LAKE"><set name="message">prose</set></li>
+<li value="MANAGER * LAKE *"><set name="message">prose</set></li>
+<li value="* MANAGER LAKE *"><set name="message">prose</set></li> 
+<li value="* MANAGER * LAKE *"><set name="message">prose</set></li> 
+
+<li value="MANAGES LAKE"><set name="message">prose</set></li>
+<li value="* MANAGES LAKE"><set name="message">prose</set></li>
+<li value="MANAGES * LAKE"><set name="message">prose</set></li>
+<li value="MANAGES LAKE *"><set name="message">prose</set></li>
+<li value="* MANAGES * LAKE"><set name="message">prose</set></li>
+<li value="MANAGES * LAKE *"><set name="message">prose</set></li>
+<li value="* MANAGES LAKE *"><set name="message">prose</set></li> 
+<li value="* MANAGES * LAKE *"><set name="message">prose</set></li> 
+
+<li value="DENISE WRIGHT"><set name="message">dwright</set></li>
+<li value="* DENISE WRIGHT"><set name="message">dwright</set></li>
+<li value="DENISE WRIGHT *"><set name="message">dwright</set></li>
+<li value="* DENISE WRIGHT *"><set name="message">dwright</set></li>  
+
+<li value="DENISE WRIGHT S"><set name="message">dwright</set></li>
+<li value="* DENISE WRIGHT S"><set name="message">dwright</set></li>
+<li value="DENISE WRIGHT S *"><set name="message">dwright</set></li>
+<li value="* DENISE WRIGHT S *"><set name="message">dwright</set></li> 
+
+<li value="DENISE"><set name="message">dwright</set></li>
+<li value="* DENISE"><set name="message">dwright</set></li>
+<li value="DENISE *"><set name="message">dwright</set></li>
+<li value="* DENISE *"><set name="message">dwright</set></li>  
+
+<li value="DENISE S"><set name="message">dwright</set></li>
+<li value="* DENISE S"><set name="message">dwright</set></li>
+<li value="DENISE S *"><set name="message">dwright</set></li>
+<li value="* DENISE S *"><set name="message">dwright</set></li> 
+
+<li value="DARLENE WORKMAN"><set name="message">dworkman</set></li>
+<li value="* DARLENE WORKMAN"><set name="message">dworkman</set></li>
+<li value="DARLENE WORKMAN *"><set name="message">dworkman</set></li>
+<li value="* DARLENE WORKMAN *"><set name="message">dworkman</set></li>  
+
+<li value="DARLENE WORKMAN S"><set name="message">dworkman</set></li>
+<li value="* DARLENE WORKMAN S"><set name="message">dworkman</set></li>
+<li value="DARLENE WORKMAN S *"><set name="message">dworkman</set></li>
+<li value="* DARLENE WORKMAN S *"><set name="message">dworkman</set></li> 
+
+<li value="DARLENE"><set name="message">dworkman</set></li>
+<li value="* DARLENE"><set name="message">dworkman</set></li>
+<li value="DARLENE *"><set name="message">dworkman</set></li>
+<li value="* DARLENE *"><set name="message">dworkman</set></li>  
+
+<li value="DARLENE S"><set name="message">dworkman</set></li>
+<li value="* DARLENE S"><set name="message">dworkman</set></li>
+<li value="DARLENE S *"><set name="message">dworkman</set></li>
+<li value="* DARLENE S *"><set name="message">dworkman</set></li> 
+
+<li value="HEADLANDS MANAGER"><set name="message">dworkman</set></li>
+<li value="* HEADLANDS MANAGER"><set name="message">dworkman</set></li>
+<li value="HEADLANDS * MANAGER"><set name="message">dworkman</set></li>
+<li value="HEADLANDS MANAGER *"><set name="message">dworkman</set></li>
+<li value="* HEADLANDS * MANAGER"><set name="message">dworkman</set></li>
+<li value="HEADLANDS * MANAGER *"><set name="message">dworkman</set></li>
+<li value="* HEADLANDS MANAGER *"><set name="message">dworkman</set></li> 
+<li value="* HEADLANDS * MANAGER *"><set name="message">dworkman</set></li> 
+
+<li value="HEADLANDS MANAGER S"><set name="message">dworkman</set></li>
+<li value="* HEADLANDS MANAGER S"><set name="message">dworkman</set></li>
+<li value="HEADLANDS * MANAGER S"><set name="message">dworkman</set></li>
+<li value="HEADLANDS MANAGER S *"><set name="message">dworkman</set></li>
+<li value="* HEADLANDS * MANAGER S"><set name="message">dworkman</set></li>
+<li value="HEADLANDS * MANAGER S *"><set name="message">dworkman</set></li>
+<li value="* HEADLANDS MANAGER S *"><set name="message">dworkman</set></li> 
+<li value="* HEADLANDS * MANAGER S *"><set name="message">dworkman</set></li> 
+
+<li value="MANAGER HEADLANDS"><set name="message">dworkman</set></li>
+<li value="* MANAGER HEADLANDS"><set name="message">dworkman</set></li>
+<li value="MANAGER * HEADLANDS"><set name="message">dworkman</set></li>
+<li value="MANAGER HEADLANDS *"><set name="message">dworkman</set></li>
+<li value="* MANAGER * HEADLANDS"><set name="message">dworkman</set></li>
+<li value="MANAGER * HEADLANDS *"><set name="message">dworkman</set></li>
+<li value="* MANAGER HEADLANDS *"><set name="message">dworkman</set></li> 
+<li value="* MANAGER * HEADLANDS *"><set name="message">dworkman</set></li> 
+
+<li value="MANAGES HEADLANDS"><set name="message">dworkman</set></li>
+<li value="* MANAGES HEADLANDS"><set name="message">dworkman</set></li>
+<li value="MANAGES * HEADLANDS"><set name="message">dworkman</set></li>
+<li value="MANAGES HEADLANDS *"><set name="message">dworkman</set></li>
+<li value="* MANAGES * HEADLANDS"><set name="message">dworkman</set></li>
+<li value="MANAGES * HEADLANDS *"><set name="message">dworkman</set></li>
+<li value="* MANAGES HEADLANDS *"><set name="message">dworkman</set></li> 
+<li value="* MANAGES * HEADLANDS *"><set name="message">dworkman</set></li> 
+
+<li value="DAVID NEWYEAR"><set name="message">dnewyear</set></li>
+<li value="* DAVID NEWYEAR"><set name="message">dnewyear</set></li>
+<li value="DAVID NEWYEAR *"><set name="message">dnewyear</set></li>
+<li value="* DAVID NEWYEAR *"><set name="message">dnewyear</set></li>  
+
+<li value="DAVID NEWYEAR S"><set name="message">dnewyear</set></li>
+<li value="* DAVID NEWYEAR S"><set name="message">dnewyear</set></li>
+<li value="DAVID NEWYEAR S *"><set name="message">dnewyear</set></li>
+<li value="* DAVID NEWYEAR S *"><set name="message">dnewyear</set></li> 
+
+<li value="DAVID"><set name="message">dnewyear</set></li>
+<li value="* DAVID"><set name="message">dnewyear</set></li>
+<li value="DAVID *"><set name="message">dnewyear</set></li>
+<li value="* DAVID *"><set name="message">dnewyear</set></li>  
+
+<li value="DAVID S"><set name="message">dnewyear</set></li>
+<li value="* DAVID S"><set name="message">dnewyear</set></li>
+<li value="DAVID S *"><set name="message">dnewyear</set></li>
+<li value="* DAVID S *"><set name="message">dnewyear</set></li> 
+
+<li value="CREATOR"><set name="message">dnewyear</set></li>
+<li value="* CREATOR"><set name="message">dnewyear</set></li>
+<li value="CREATOR *"><set name="message">dnewyear</set></li>
+<li value="* CREATOR *"><set name="message">dnewyear</set></li>
+
+<li value="BUILT YOU"><set name="message">dnewyear</set></li>
+<li value="* BUILT YOU"><set name="message">dnewyear</set></li>
+<li value="BUILT YOU *"><set name="message">dnewyear</set></li>
+<li value="* BUILT YOU *"><set name="message">dnewyear</set></li>  
+
+<li value="CREATED YOU"><set name="message">dnewyear</set></li>
+<li value="* CREATED YOU"><set name="message">dnewyear</set></li>
+<li value="CREATED YOU *"><set name="message">dnewyear</set></li>
+<li value="* CREATED YOU *"><set name="message">dnewyear</set></li>  
+
+<li value="MADE YOU"><set name="message">dnewyear</set></li>
+<li value="* MADE YOU"><set name="message">dnewyear</set></li>
+<li value="MADE YOU *"><set name="message">dnewyear</set></li>
+<li value="* MADE YOU *"><set name="message">dnewyear</set></li> 
+ 
+</condition>
+</think>
+
+<condition name="message">
+
+<li value="no match"><think><set name="topic"><get name="staff attr"/></set></think><srai>STAFFSORT2</srai></li>  
+
+<li value="stop"><set name="topic"></set>O.K. I'll stop.</li>  
+
+<li value="mplhdls"><think><set name="topic">HDLS ATTRIBUTES</set></think><srai>HDLS ATT</srai></li> 
+<li value="mplmain"><think><set name="topic">MAIN ATTRIBUTES</set></think><srai>MAIN ATT</srai></li> 
+<li value="mplmol"><think><set name="topic">LAKE ATTRIBUTES</set></think><srai>LAKE ATT</srai></li> 
+
+<li value="dept admin"><think><set name="topic">ADMIN ATTRIBUTES</set></think><srai>ADMIN ATT</srai></li> 
+<li value="dept bldg"><think><set name="topic">BLDG ATTRIBUTES</set></think><srai>BLDG ATT</srai></li> 
+<li value="dept childrens"><think><set name="topic">CHILDRENS ATTRIBUTES</set></think><srai>CHILDRENS ATT</srai></li> 
+<li value="dept circ"><think><set name="topic">CIRC ATTRIBUTES</set></think><srai>CIRC ATT</srai></li> 
+<li value="dept fisc"><think><set name="topic">FINANCE ATTRIBUTES</set></think><srai>FINANCE ATT</srai></li> 
+<li value="dept hr"><think><set name="topic">HR ATTRIBUTES</set></think><srai>HR ATT</srai></li> 
+<li value="dept it"><think><set name="topic">IT ATTRIBUTES</set></think><srai>IT ATT</srai></li> 
+<li value="dept ref"><think><set name="topic">REF ATTRIBUTES</set></think><srai>REF ATT</srai></li> 
+<li value="dept ts"><think><set name="topic">TS ATTRIBUTES</set></think><srai>TS ATT</srai></li> 
+
+<li value="adensmore"><think><set name="topic">AD ATTRIBUTES</set></think><srai>AD ATT</srai></li> 
+<li value="ksidorick"><think><set name="topic">KS ATTRIBUTES</set></think><srai>KS ATT</srai></li> 
+<li value="mpelyhes"><think><set name="topic">MP ATTRIBUTES</set></think><srai>MP ATT</srai></li> 
+<li value="bhauer"><think><set name="topic">BH ATTRIBUTES</set></think><srai>BH ATT</srai></li> 
+<li value="gpreske"><think><set name="topic">GP ATTRIBUTES</set></think><srai>GP ATT</srai></li> 
+<li value="lhawkins"><think><set name="topic">LH ATTRIBUTES</set></think><srai>LH ATT</srai></li>
+<li value="csnyder"><think><set name="topic">CS ATTRIBUTES</set></think><srai>CS ATT</srai></li>
+<li value="gborovic"><think><set name="topic">GB ATTRIBUTES</set></think><srai>GB ATT</srai></li>
+<li value="prose"><think><set name="topic">PR ATTRIBUTES</set></think><srai>PR ATT</srai></li>
+<li value="dwright"><think><set name="topic">DWR ATTRIBUTES</set></think><srai>DWR ATT</srai></li>
+<li value="dworkman"><think><set name="topic">DW ATTRIBUTES</set></think><srai>DW ATT</srai></li>
+<li value="dnewyear"><think><set name="topic">DN ATTRIBUTES</set></think><srai>DN ATT</srai></li>
+
+</condition>
+</template>
+</category>
+</topic>  
+    
+  
+</aiml>  

@@ -1,0 +1,1079 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<!--Copyright 2011-2012 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+  
+<category>
+<pattern>ACCOUNT</pattern>
+<template><srai>ACCT</srai></template>
+</category>
+
+<category>
+<pattern>ACCOUNTS</pattern>
+<template><srai>ACCT</srai></template>
+</category>
+
+<category>
+<pattern>ACCT</pattern>
+<template>
+<think>
+<set name="topic">ACCTQ</set>
+</think>
+I'm often asked about accounts. What is your question about library accounts?
+</template>
+</category>
+
+<topic name="ACCTQ">
+<category>
+<pattern>_</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">ACCTQ2</set>
+</think>
+<srai>ACCTQ2</srai></template>
+</category>
+</topic>
+
+<category>
+<pattern>* ACCOUNT</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">ACCTQ2</set>
+</think>
+<srai>ACCTQ2</srai></template>
+</category>
+
+<category>
+<pattern>OPEN * ACCOUNT</pattern>
+<template>
+<think>
+<set name="answr">OPEN</set>
+<set name="topic">ACCTQ2</set>
+</think>
+<srai>ACCTQ2</srai></template>
+</category>
+
+<category>
+<pattern>* OPEN * ACCOUNT</pattern>
+<template>
+<think>
+<set name="answr">OPEN</set>
+<set name="topic">ACCTQ2</set>
+</think>
+<srai>ACCTQ2</srai></template>
+</category>
+
+<category>
+<pattern>OPENING * ACCOUNT</pattern>
+<template>
+<think>
+<set name="answr">OPEN</set>
+<set name="topic">ACCTQ2</set>
+</think>
+<srai>ACCTQ2</srai></template>
+</category>
+
+<category>
+<pattern>* OPENING * ACCOUNT</pattern>
+<template>
+<think>
+<set name="answr">OPEN</set>
+<set name="topic">ACCTQ2</set>
+</think>
+<srai>ACCTQ2</srai></template>
+</category>
+
+<category>
+<pattern>ACCOUNT *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">ACCTQ2</set>
+</think>
+<srai>ACCTQ2</srai></template>
+</category>
+
+<category>
+<pattern>* ACCOUNT *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">ACCTQ2</set>
+</think>
+<srai>ACCTQ2</srai></template>
+</category>
+
+<category>
+<pattern>* ACCOUNTS</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">ACCTQ2</set>
+</think>
+<srai>ACCTQ2</srai></template>
+</category>
+
+<category>
+<pattern>ACCOUNTS *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">ACCTQ2</set>
+</think>
+<srai>ACCTQ2</srai></template>
+</category>
+
+<category>
+<pattern>* ACCOUNTS *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">ACCTQ2</set>
+</think>
+<srai>ACCTQ2</srai></template>
+</category>
+
+<topic name="ACCTQ2">
+<category>
+<pattern>ACCTQ2</pattern>
+<template>
+<think>
+<get name="answr"/>
+<set name="message">no match</set>
+<condition name="answr">
+
+<li value="STOP"><set name="message">stop</set></li>
+
+<li value="ABOUT"><set name="message">aboutaccts</set></li>
+<li value="* ABOUT"><set name="message">aboutaccts</set></li>
+<li value="ABOUT *"><set name="message">aboutaccts</set></li>
+<li value="* ABOUT *"><set name="message">aboutaccts</set></li>
+
+<li value="BAG"><set name="message">bag</set></li>
+<li value="* BAG"><set name="message">bag</set></li>
+<li value="BAG *"><set name="message">bag</set></li>
+<li value="* BAG *"><set name="message">bag</set></li>
+
+<li value="APPLY ONLINE"><set name="message">online registration</set></li>
+<li value="APPLY * ONLINE"><set name="message">online registration</set></li>
+<li value="* APPLY ONLINE"><set name="message">online registration</set></li>
+<li value="* APPLY * ONLINE"><set name="message">online registration</set></li>
+<li value="APPLY ONLINE *"><set name="message">online registration</set></li>
+<li value="APPLY * ONLINE *"><set name="message">online registration</set></li>
+<li value="* APPLY ONLINE *"><set name="message">online registration</set></li>
+<li value="* APPLY * ONLINE *"><set name="message">online registration</set></li>
+
+<li value="APPLY"><set name="message">getcard</set></li>
+<li value="* APPLY"><set name="message">getcard</set></li>
+<li value="APPLY *"><set name="message">getcard</set></li>
+<li value="* APPLY *"><set name="message">getcard</set></li>
+
+<li value="ONLINE APPLICATION"><set name="message">online registration</set></li>
+<li value="ONLINE * APPLICATION"><set name="message">online registration</set></li>
+<li value="* ONLINE APPLICATION"><set name="message">online registration</set></li>
+<li value="* ONLINE * APPLICATION"><set name="message">online registration</set></li>
+<li value="ONLINE APPLICATION *"><set name="message">online registration</set></li>
+<li value="ONLINE * APPLICATION *"><set name="message">online registration</set></li>
+<li value="* ONLINE APPLICATION *"><set name="message">online registration</set></li>
+<li value="* ONLINE * APPLICATION *"><set name="message">online registration</set></li>
+
+<li value="APPLICATION"><set name="message">getcard</set></li>
+<li value="* APPLICATION"><set name="message">getcard</set></li>
+<li value="APPLICATION *"><set name="message">getcard</set></li>
+<li value="* APPLICATION *"><set name="message">getcard</set></li>
+
+<li value="CREATE"><set name="message">getcard</set></li>
+<li value="* CREATE"><set name="message">getcard</set></li>
+<li value="CREATE *"><set name="message">getcard</set></li>
+<li value="* CREATE *"><set name="message">getcard</set></li>
+
+<li value="CREATING"><set name="message">getcard</set></li>
+<li value="* CREATING"><set name="message">getcard</set></li>
+<li value="CREATING *"><set name="message">getcard</set></li>
+<li value="* CREATING *"><set name="message">getcard</set></li>
+
+<li value="GET ONLINE"><set name="message">online registration</set></li>
+<li value="GET * ONLINE"><set name="message">online registration</set></li>
+<li value="* GET ONLINE"><set name="message">online registration</set></li>
+<li value="* GET * ONLINE"><set name="message">online registration</set></li>
+<li value="GET ONLINE *"><set name="message">online registration</set></li>
+<li value="GET * ONLINE *"><set name="message">online registration</set></li>
+<li value="* GET ONLINE *"><set name="message">online registration</set></li>
+<li value="* GET * ONLINE *"><set name="message">online registration</set></li>
+
+<li value="GET"><set name="message">getcard</set></li>
+<li value="* GET"><set name="message">getcard</set></li>
+<li value="GET *"><set name="message">getcard</set></li>
+<li value="* GET *"><set name="message">getcard</set></li>
+
+<li value="GETTING"><set name="message">getcard</set></li>
+<li value="* GETTING"><set name="message">getcard</set></li>
+<li value="GETTING *"><set name="message">getcard</set></li>
+<li value="* GETTING *"><set name="message">getcard</set></li>
+
+<li value="MEMBER"><set name="message">getcard</set></li>
+<li value="* MEMBER"><set name="message">getcard</set></li>
+<li value="MEMBER *"><set name="message">getcard</set></li>
+<li value="* MEMBER *"><set name="message">getcard</set></li>
+
+<li value="MEMBERSHIP"><set name="message">getcard</set></li>
+<li value="* MEMBERSHIP"><set name="message">getcard</set></li>
+<li value="MEMBERSHIP *"><set name="message">getcard</set></li>
+<li value="* MEMBERSHIP *"><set name="message">getcard</set></li>
+
+<li value="OPEN ONLINE"><set name="message">online registration</set></li>
+<li value="OPEN * ONLINE"><set name="message">online registration</set></li>
+<li value="* OPEN ONLINE"><set name="message">online registration</set></li>
+<li value="* OPEN * ONLINE"><set name="message">online registration</set></li>
+<li value="OPEN ONLINE *"><set name="message">online registration</set></li>
+<li value="OPEN * ONLINE *"><set name="message">online registration</set></li>
+<li value="* OPEN ONLINE *"><set name="message">online registration</set></li>
+<li value="* OPEN * ONLINE *"><set name="message">online registration</set></li>
+
+<li value="OPEN"><set name="message">getcard</set></li>
+<li value="* OPEN"><set name="message">getcard</set></li>
+<li value="OPEN *"><set name="message">getcard</set></li>
+<li value="* OPEN *"><set name="message">getcard</set></li>
+
+<li value="OPENING"><set name="message">getcard</set></li>
+<li value="* OPENING"><set name="message">getcard</set></li>
+<li value="OPENING *"><set name="message">getcard</set></li>
+<li value="* OPENING *"><set name="message">getcard</set></li>
+
+<li value="SET UP"><set name="message">getcard</set></li>
+<li value="* SET UP"><set name="message">getcard</set></li>
+<li value="SET UP *"><set name="message">getcard</set></li>
+<li value="* SET UP *"><set name="message">getcard</set></li>
+
+<li value="SETTING UP"><set name="message">getcard</set></li>
+<li value="* SETTING UP"><set name="message">getcard</set></li>
+<li value="SETTING UP *"><set name="message">getcard</set></li>
+<li value="* SETTING UP *"><set name="message">getcard</set></li>
+
+<li value="SIGN UP"><set name="message">getcard</set></li>
+<li value="* SIGN UP"><set name="message">getcard</set></li>
+<li value="SIGN UP *"><set name="message">getcard</set></li>
+<li value="* SIGN UP *"><set name="message">getcard</set></li>
+
+<li value="SIGNING UP"><set name="message">getcard</set></li>
+<li value="* SIGNING UP"><set name="message">getcard</set></li>
+<li value="SIGNING UP *"><set name="message">getcard</set></li>
+<li value="* SIGNING UP *"><set name="message">getcard</set></li>
+
+<li value="START"><set name="message">getcard</set></li>
+<li value="* START"><set name="message">getcard</set></li>
+<li value="START *"><set name="message">getcard</set></li>
+<li value="* START *"><set name="message">getcard</set></li>
+
+<li value="STARTING"><set name="message">getcard</set></li>
+<li value="* STARTING"><set name="message">getcard</set></li>
+<li value="STARTING *"><set name="message">getcard</set></li>
+<li value="* STARTING *"><set name="message">getcard</set></li>
+
+<li value="LOG"><set name="message">login</set></li>
+<li value="* LOG"><set name="message">login</set></li>
+<li value="LOG *"><set name="message">login</set></li>
+<li value="* LOG *"><set name="message">login</set></li>
+
+<li value="LOGIN"><set name="message">login</set></li>
+<li value="* LOGIN"><set name="message">login</set></li>
+<li value="LOGIN *"><set name="message">login</set></li>
+<li value="* LOGIN *"><set name="message">login</set></li>
+
+<li value="LOGGING"><set name="message">login</set></li>
+<li value="* LOGGING"><set name="message">login</set></li>
+<li value="LOGGING *"><set name="message">login</set></li>
+<li value="* LOGGING *"><set name="message">login</set></li>
+
+<li value="OUT"><set name="message">itemsout</set></li>
+<li value="* OUT"><set name="message">itemsout</set></li>
+<li value="OUT *"><set name="message">itemsout</set></li>
+<li value="* OUT *"><set name="message">itemsout</set></li>
+
+<li value="LINK"><set name="message">linking accounts</set></li>
+<li value="* LINK"><set name="message">linking accounts</set></li>
+<li value="LINK *"><set name="message">linking accounts</set></li>
+<li value="* LINK *"><set name="message">linking accounts</set></li>
+
+<li value="LINKED"><set name="message">linking accounts</set></li>
+<li value="* LINKED"><set name="message">linking accounts</set></li>
+<li value="LINKED *"><set name="message">linking accounts</set></li>
+<li value="* LINKED *"><set name="message">linking accounts</set></li>
+
+<li value="LINKING"><set name="message">linking accounts</set></li>
+<li value="* LINKING"><set name="message">linking accounts</set></li>
+<li value="LINKING *"><set name="message">linking accounts</set></li>
+<li value="* LINKING *"><set name="message">linking accounts</set></li>
+
+<li value="SHARE"><set name="message">shared accounts</set></li>
+<li value="* SHARE"><set name="message">shared accounts</set></li>
+<li value="SHARE *"><set name="message">shared accounts</set></li>
+<li value="* SHARE *"><set name="message">shared accounts</set></li>
+
+<li value="SHARED"><set name="message">shared accounts</set></li>
+<li value="* SHARED"><set name="message">shared accounts</set></li>
+<li value="SHARED *"><set name="message">shared accounts</set></li>
+<li value="* SHARED *"><set name="message">shared accounts</set></li>
+
+<li value="SHARING"><set name="message">shared accounts</set></li>
+<li value="* SHARING"><set name="message">shared accounts</set></li>
+<li value="SHARING *"><set name="message">shared accounts</set></li>
+<li value="* SHARING *"><set name="message">shared accounts</set></li>
+
+<li value="NOT ACCESS"><set name="message">account fail</set></li>
+<li value="* NOT ACCESS"><set name="message">account fail</set></li>
+<li value="NOT * ACCESS"><set name="message">account fail</set></li>
+<li value="NOT ACCESS *"><set name="message">account fail</set></li>
+<li value="* NOT * ACCESS"><set name="message">account fail</set></li>
+<li value="NOT * ACCESS *"><set name="message">account fail</set></li>
+<li value="* NOT ACCESS *"><set name="message">account fail</set></li>
+<li value="* NOT * ACCESS *"><set name="message">account fail</set></li>
+
+<li value="NOT ACCESSING"><set name="message">account fail</set></li>
+<li value="* NOT ACCESSING"><set name="message">account fail</set></li>
+<li value="NOT * ACCESSING"><set name="message">account fail</set></li>
+<li value="NOT ACCESSING *"><set name="message">account fail</set></li>
+<li value="* NOT * ACCESSING"><set name="message">account fail</set></li>
+<li value="NOT * ACCESSING *"><set name="message">account fail</set></li>
+<li value="* NOT ACCESSING *"><set name="message">account fail</set></li>
+<li value="* NOT * ACCESSING *"><set name="message">account fail</set></li>
+
+<li value="NOT LOG"><set name="message">account fail</set></li>
+<li value="* NOT LOG"><set name="message">account fail</set></li>
+<li value="NOT * LOG"><set name="message">account fail</set></li>
+<li value="NOT LOG *"><set name="message">account fail</set></li>
+<li value="* NOT * LOG"><set name="message">account fail</set></li>
+<li value="NOT * LOG *"><set name="message">account fail</set></li>
+<li value="* NOT LOG *"><set name="message">account fail</set></li>
+<li value="* NOT * LOG *"><set name="message">account fail</set></li>
+
+<li value="NOT LOGGING"><set name="message">account fail</set></li>
+<li value="* NOT LOGGING"><set name="message">account fail</set></li>
+<li value="NOT * LOGGING"><set name="message">account fail</set></li>
+<li value="NOT LOGGING *"><set name="message">account fail</set></li>
+<li value="* NOT * LOGGING"><set name="message">account fail</set></li>
+<li value="NOT * LOGGING *"><set name="message">account fail</set></li>
+<li value="* NOT LOGGING *"><set name="message">account fail</set></li>
+<li value="* NOT * LOGGING *"><set name="message">account fail</set></li>
+
+<li value="NOT WORK"><set name="message">account fail</set></li>
+<li value="* NOT WORK"><set name="message">account fail</set></li>
+<li value="NOT * WORK"><set name="message">account fail</set></li>
+<li value="NOT WORK *"><set name="message">account fail</set></li>
+<li value="* NOT * WORK"><set name="message">account fail</set></li>
+<li value="NOT * WORK *"><set name="message">account fail</set></li>
+<li value="* NOT WORK *"><set name="message">account fail</set></li>
+<li value="* NOT * WORK *"><set name="message">account fail</set></li>
+
+<li value="NOT WORKING"><set name="message">account fail</set></li>
+<li value="* NOT WORKING"><set name="message">account fail</set></li>
+<li value="NOT * WORKING"><set name="message">account fail</set></li>
+<li value="NOT WORKING *"><set name="message">account fail</set></li>
+<li value="* NOT * WORKING"><set name="message">account fail</set></li>
+<li value="NOT * WORKING *"><set name="message">account fail</set></li>
+<li value="* NOT WORKING *"><set name="message">account fail</set></li>
+<li value="* NOT * WORKING *"><set name="message">account fail</set></li>
+
+<li value="TROUBLE"><set name="message">account fail</set></li>
+<li value="* TROUBLE"><set name="message">account fail</set></li>
+<li value="TROUBLE *"><set name="message">account fail</set></li>
+<li value="* TROUBLE *"><set name="message">account fail</set></li>
+
+<li value="RECORD * USE"><set name="message">record in use</set></li>
+<li value="* RECORD * USE"><set name="message">record in use</set></li>
+<li value="RECORD * USE *"><set name="message">record in use</set></li>
+<li value="* RECORD * USE *"><set name="message">record in use</set></li>
+
+<li value="RECORDS * USE"><set name="message">record in use</set></li>
+<li value="* RECORDS * USE"><set name="message">record in use</set></li>
+<li value="RECORDS * USE *"><set name="message">record in use</set></li>
+<li value="* RECORDS * USE *"><set name="message">record in use</set></li>
+
+<li value="WITHOUT * NUMBER"><set name="message">no number</set></li>
+<li value="* WITHOUT * NUMBER"><set name="message">no number</set></li>
+<li value="WITHOUT * NUMBER *"><set name="message">no number</set></li>
+<li value="* WITHOUT * NUMBER *"><set name="message">no number</set></li>
+
+<li value="NOT * NUMBER"><set name="message">no number</set></li>
+<li value="* NOT * NUMBER"><set name="message">no number</set></li>
+<li value="NOT * NUMBER *"><set name="message">no number</set></li>
+<li value="* NOT * NUMBER *"><set name="message">no number</set></li>
+
+<li value="LOOK NUMBER"><set name="message">no number</set></li>
+<li value="* LOOK NUMBER"><set name="message">no number</set></li>
+<li value="LOOK * NUMBER"><set name="message">no number</set></li>
+<li value="LOOK NUMBER *"><set name="message">no number</set></li>
+<li value="* LOOK * NUMBER"><set name="message">no number</set></li>
+<li value="LOOK * NUMBER *"><set name="message">no number</set></li>
+<li value="* LOOK NUMBER *"><set name="message">no number</set></li>
+<li value="* LOOK * NUMBER *"><set name="message">no number</set></li>
+
+<li value="TELL NUMBER"><set name="message">no number</set></li>
+<li value="* TELL NUMBER"><set name="message">no number</set></li>
+<li value="TELL * NUMBER"><set name="message">no number</set></li>
+<li value="TELL NUMBER *"><set name="message">no number</set></li>
+<li value="* TELL * NUMBER"><set name="message">no number</set></li>
+<li value="TELL * NUMBER *"><set name="message">no number</set></li>
+<li value="* TELL NUMBER *"><set name="message">no number</set></li>
+<li value="* TELL * NUMBER *"><set name="message">no number</set></li>
+
+<li value="NUMBER UP"><set name="message">no number</set></li>
+<li value="* NUMBER UP"><set name="message">no number</set></li>
+<li value="NUMBER * UP"><set name="message">no number</set></li>
+<li value="NUMBER UP *"><set name="message">no number</set></li>
+<li value="* NUMBER * UP"><set name="message">no number</set></li>
+<li value="NUMBER * UP *"><set name="message">no number</set></li>
+<li value="* NUMBER UP *"><set name="message">no number</set></li>
+<li value="* NUMBER * UP *"><set name="message">no number</set></li>
+
+<li value="WITHOUT * ACCOUNT"><set name="message">no number</set></li>
+<li value="* WITHOUT * ACCOUNT"><set name="message">no number</set></li>
+<li value="WITHOUT * ACCOUNT *"><set name="message">no number</set></li>
+<li value="* WITHOUT * ACCOUNT *"><set name="message">no number</set></li>
+
+<li value="NOT * ACCOUNT"><set name="message">no number</set></li>
+<li value="* NOT * ACCOUNT"><set name="message">no number</set></li>
+<li value="NOT * ACCOUNT *"><set name="message">no number</set></li>
+<li value="* NOT * ACCOUNT *"><set name="message">no number</set></li>
+
+<li value="LOOK ACCOUNT"><set name="message">no number</set></li>
+<li value="* LOOK ACCOUNT"><set name="message">no number</set></li>
+<li value="LOOK * ACCOUNT"><set name="message">no number</set></li>
+<li value="LOOK ACCOUNT *"><set name="message">no number</set></li>
+<li value="* LOOK * ACCOUNT"><set name="message">no number</set></li>
+<li value="LOOK * ACCOUNT *"><set name="message">no number</set></li>
+<li value="* LOOK ACCOUNT *"><set name="message">no number</set></li>
+<li value="* LOOK * ACCOUNT *"><set name="message">no number</set></li>
+
+<li value="TELL ACCOUNT"><set name="message">no number</set></li>
+<li value="* TELL ACCOUNT"><set name="message">no number</set></li>
+<li value="TELL * ACCOUNT"><set name="message">no number</set></li>
+<li value="TELL ACCOUNT *"><set name="message">no number</set></li>
+<li value="* TELL * ACCOUNT"><set name="message">no number</set></li>
+<li value="TELL * ACCOUNT *"><set name="message">no number</set></li>
+<li value="* TELL ACCOUNT *"><set name="message">no number</set></li>
+<li value="* TELL * ACCOUNT *"><set name="message">no number</set></li>
+
+<li value="ACCOUNT UP"><set name="message">no number</set></li>
+<li value="* ACCOUNT UP"><set name="message">no number</set></li>
+<li value="ACCOUNT * UP"><set name="message">no number</set></li>
+<li value="ACCOUNT UP *"><set name="message">no number</set></li>
+<li value="* ACCOUNT * UP"><set name="message">no number</set></li>
+<li value="ACCOUNT * UP *"><set name="message">no number</set></li>
+<li value="* ACCOUNT UP *"><set name="message">no number</set></li>
+<li value="* ACCOUNT * UP *"><set name="message">no number</set></li>
+
+<li value="CHARGE"><set name="message">check fines</set></li>
+<li value="* CHARGE"><set name="message">check fines</set></li>
+<li value="CHARGE *"><set name="message">check fines</set></li>
+<li value="* CHARGE *"><set name="message">check fines</set></li>
+
+<li value="CHARGED"><set name="message">check fines</set></li>
+<li value="* CHARGED"><set name="message">check fines</set></li>
+<li value="CHARGED *"><set name="message">check fines</set></li>
+<li value="* CHARGED *"><set name="message">check fines</set></li>
+
+<li value="CHARGES"><set name="message">check fines</set></li>
+<li value="* CHARGES"><set name="message">check fines</set></li>
+<li value="CHARGES *"><set name="message">check fines</set></li>
+<li value="* CHARGES *"><set name="message">check fines</set></li>
+
+<li value="FEE"><set name="message">check fines</set></li>
+<li value="* FEE"><set name="message">check fines</set></li>
+<li value="FEE *"><set name="message">check fines</set></li>
+<li value="* FEE *"><set name="message">check fines</set></li>
+
+<li value="FEES"><set name="message">check fines</set></li>
+<li value="* FEES"><set name="message">check fines</set></li>
+<li value="FEES *"><set name="message">check fines</set></li>
+<li value="* FEES *"><set name="message">check fines</set></li>
+
+<li value="FINE"><set name="message">check fines</set></li>
+<li value="* FINE"><set name="message">check fines</set></li>
+<li value="FINE *"><set name="message">check fines</set></li>
+<li value="* FINE *"><set name="message">check fines</set></li>
+
+<li value="FINES"><set name="message">check fines</set></li>
+<li value="* FINES"><set name="message">check fines</set></li>
+<li value="FINES *"><set name="message">check fines</set></li>
+<li value="* FINES *"><set name="message">check fines</set></li>
+
+<li value="OWE"><set name="message">check fines</set></li>
+<li value="* OWE"><set name="message">check fines</set></li>
+<li value="OWE *"><set name="message">check fines</set></li>
+<li value="* OWE *"><set name="message">check fines</set></li>
+
+<li value="OWED"><set name="message">check fines</set></li>
+<li value="* OWED"><set name="message">check fines</set></li>
+<li value="OWED *"><set name="message">check fines</set></li>
+<li value="* OWED *"><set name="message">check fines</set></li>
+
+<li value="INVALD"><set name="message">invalid</set></li>
+<li value="* INVALD"><set name="message">invalid</set></li>
+<li value="INVALD *"><set name="message">invalid</set></li>
+<li value="* INVALD *"><set name="message">invalid</set></li>
+
+<li value="GOOD STANDING"><set name="message">good standing</set></li>
+<li value="* GOOD STANDING"><set name="message">good standing</set></li>
+<li value="GOOD STANDING *"><set name="message">good standing</set></li>
+<li value="* GOOD STANDING *"><set name="message">good standing</set></li>
+
+<li value="IN USE BY SYSTEM"><set name="message">in use by system</set></li>
+<li value="* IN USE BY SYSTEM"><set name="message">in use by system</set></li>
+<li value="IN USE BY SYSTEM *"><set name="message">in use by system</set></li>
+<li value="* IN USE BY SYSTEM *"><set name="message">in use by system</set></li>
+
+<li value="MY ACCOUNT"><set name="message">my account</set></li>
+<li value="* MY ACCOUNT"><set name="message">my account</set></li>
+<li value="MY ACCOUNT *"><set name="message">my account</set></li>
+<li value="* MY ACCOUNT *"><set name="message">my account</set></li>
+
+<li value="NOT EMAIL"><set name="message">notice fail</set></li>
+<li value="* NOT EMAIL"><set name="message">notice fail</set></li>
+<li value="NOT * EMAIL"><set name="message">notice fail</set></li>
+<li value="NOT EMAIL *"><set name="message">notice fail</set></li>
+<li value="* NOT * EMAIL"><set name="message">notice fail</set></li>
+<li value="NOT * EMAIL *"><set name="message">notice fail</set></li>
+<li value="* NOT EMAIL *"><set name="message">notice fail</set></li>
+<li value="* NOT * EMAIL *"><set name="message">notice fail</set></li>
+
+<li value="NOT EMAILS"><set name="message">notice fail</set></li>
+<li value="* NOT EMAILS"><set name="message">notice fail</set></li>
+<li value="NOT * EMAILS"><set name="message">notice fail</set></li>
+<li value="NOT EMAILS *"><set name="message">notice fail</set></li>
+<li value="* NOT * EMAILS"><set name="message">notice fail</set></li>
+<li value="NOT * EMAILS *"><set name="message">notice fail</set></li>
+<li value="* NOT EMAILS *"><set name="message">notice fail</set></li>
+<li value="* NOT * EMAILS *"><set name="message">notice fail</set></li>
+
+<li value="NOT E MAIL"><set name="message">notice fail</set></li>
+<li value="* NOT E MAIL"><set name="message">notice fail</set></li>
+<li value="NOT * E MAIL"><set name="message">notice fail</set></li>
+<li value="NOT E MAIL *"><set name="message">notice fail</set></li>
+<li value="* NOT * E MAIL"><set name="message">notice fail</set></li>
+<li value="NOT * E MAIL *"><set name="message">notice fail</set></li>
+<li value="* NOT E MAIL *"><set name="message">notice fail</set></li>
+<li value="* NOT * E MAIL *"><set name="message">notice fail</set></li>
+
+<li value="NOT E MAILS"><set name="message">notice fail</set></li>
+<li value="* NOT E MAILS"><set name="message">notice fail</set></li>
+<li value="NOT * E MAILS"><set name="message">notice fail</set></li>
+<li value="NOT E MAILS *"><set name="message">notice fail</set></li>
+<li value="* NOT * E MAILS"><set name="message">notice fail</set></li>
+<li value="NOT * E MAILS *"><set name="message">notice fail</set></li>
+<li value="* NOT E MAILS *"><set name="message">notice fail</set></li>
+<li value="* NOT * E MAILS *"><set name="message">notice fail</set></li>
+
+<li value="NOT NOTICE"><set name="message">notice fail</set></li>
+<li value="* NOT NOTICE"><set name="message">notice fail</set></li>
+<li value="NOT * NOTICE"><set name="message">notice fail</set></li>
+<li value="NOT NOTICE *"><set name="message">notice fail</set></li>
+<li value="* NOT * NOTICE"><set name="message">notice fail</set></li>
+<li value="NOT * NOTICE *"><set name="message">notice fail</set></li>
+<li value="* NOT NOTICE *"><set name="message">notice fail</set></li>
+<li value="* NOT * NOTICE *"><set name="message">notice fail</set></li>
+
+<li value="NOT NOTICES"><set name="message">notice fail</set></li>
+<li value="* NOT NOTICES"><set name="message">notice fail</set></li>
+<li value="NOT * NOTICES"><set name="message">notice fail</set></li>
+<li value="NOT NOTICES *"><set name="message">notice fail</set></li>
+<li value="* NOT * NOTICES"><set name="message">notice fail</set></li>
+<li value="NOT * NOTICES *"><set name="message">notice fail</set></li>
+<li value="* NOT NOTICES *"><set name="message">notice fail</set></li>
+<li value="* NOT * NOTICES *"><set name="message">notice fail</set></li>
+
+<li value="CONFIDENTIAL"><set name="message">confidentiality</set></li>
+<li value="* CONFIDENTIAL"><set name="message">confidentiality</set></li>
+<li value="CONFIDENTIAL *"><set name="message">confidentiality</set></li>
+<li value="* CONFIDENTIAL *"><set name="message">confidentiality</set></li>
+
+<li value="CONFIDENTIALITY"><set name="message">confidentiality</set></li>
+<li value="* CONFIDENTIALITY"><set name="message">confidentiality</set></li>
+<li value="CONFIDENTIALITY *"><set name="message">confidentiality</set></li>
+<li value="* CONFIDENTIALITY *"><set name="message">confidentiality</set></li>
+
+<li value="SECRET"><set name="message">confidentiality</set></li>
+<li value="* SECRET"><set name="message">confidentiality</set></li>
+<li value="SECRET *"><set name="message">confidentiality</set></li>
+<li value="* SECRET *"><set name="message">confidentiality</set></li>
+
+<li value="SECURE"><set name="message">confidentiality</set></li>
+<li value="* SECURE"><set name="message">confidentiality</set></li>
+<li value="SECURE *"><set name="message">confidentiality</set></li>
+<li value="* SECURE *"><set name="message">confidentiality</set></li>
+
+<li value="SECURED"><set name="message">confidentiality</set></li>
+<li value="* SECURED"><set name="message">confidentiality</set></li>
+<li value="SECURED *"><set name="message">confidentiality</set></li>
+<li value="* SECURED *"><set name="message">confidentiality</set></li>
+
+<li value="SPAM"><set name="message">spam</set></li>
+<li value="* SPAM"><set name="message">spam</set></li>
+<li value="SPAM *"><set name="message">spam</set></li>
+<li value="* SPAM *"><set name="message">spam</set></li>
+
+<li value="WHITE LIST"><set name="message">spam</set></li>
+<li value="* WHITE LIST"><set name="message">spam</set></li>
+<li value="WHITE LIST *"><set name="message">spam</set></li>
+<li value="* WHITE LIST *"><set name="message">spam</set></li>
+
+<li value="WHITE LISTED"><set name="message">spam</set></li>
+<li value="* WHITE LISTED"><set name="message">spam</set></li>
+<li value="WHITE LISTED *"><set name="message">spam</set></li>
+<li value="* WHITE LISTED *"><set name="message">spam</set></li>
+
+<li value="WHITE LISTING"><set name="message">spam</set></li>
+<li value="* WHITE LISTING"><set name="message">spam</set></li>
+<li value="WHITE LISTING *"><set name="message">spam</set></li>
+<li value="* WHITE LISTING *"><set name="message">spam</set></li>
+
+<li value="TEXT"><set name="message">texts</set></li>
+<li value="* TEXT"><set name="message">texts</set></li>
+<li value="TEXT *"><set name="message">texts</set></li>
+<li value="* TEXT *"><set name="message">texts</set></li>
+
+<li value="TEXTED"><set name="message">texts</set></li>
+<li value="* TEXTED"><set name="message">texts</set></li>
+<li value="TEXTED *"><set name="message">texts</set></li>
+<li value="* TEXTED *"><set name="message">texts</set></li>
+
+<li value="TEXTS"><set name="message">texts</set></li>
+<li value="* TEXTS"><set name="message">texts</set></li>
+<li value="TEXTS *"><set name="message">texts</set></li>
+<li value="* TEXTS *"><set name="message">texts</set></li>
+
+<li value="EMAIL"><set name="message">email alerts</set></li>
+<li value="* EMAIL"><set name="message">email alerts</set></li>
+<li value="EMAIL *"><set name="message">email alerts</set></li>
+<li value="* EMAIL *"><set name="message">email alerts</set></li>
+
+<li value="EMAILED"><set name="message">email alerts</set></li>
+<li value="* EMAILED"><set name="message">email alerts</set></li>
+<li value="EMAILED *"><set name="message">email alerts</set></li>
+<li value="* EMAILED *"><set name="message">email alerts</set></li>
+
+<li value="EMAILS"><set name="message">email alerts</set></li>
+<li value="* EMAILS"><set name="message">email alerts</set></li>
+<li value="EMAILS *"><set name="message">email alerts</set></li>
+<li value="* EMAILS *"><set name="message">email alerts</set></li>
+
+<li value="E MAIL"><set name="message">email alerts</set></li>
+<li value="* E MAIL"><set name="message">email alerts</set></li>
+<li value="E MAIL *"><set name="message">email alerts</set></li>
+<li value="* E MAIL *"><set name="message">email alerts</set></li>
+
+<li value="E MAILED"><set name="message">email alerts</set></li>
+<li value="* E MAILED"><set name="message">email alerts</set></li>
+<li value="E MAILED *"><set name="message">email alerts</set></li>
+<li value="* E MAILED *"><set name="message">email alerts</set></li>
+
+<li value="E MAILS"><set name="message">email alerts</set></li>
+<li value="* E MAILS"><set name="message">email alerts</set></li>
+<li value="E MAILS *"><set name="message">email alerts</set></li>
+<li value="* E MAILS *"><set name="message">email alerts</set></li>
+
+<li value="PRINT LIST"><set name="message">print lists</set></li>
+<li value="* PRINT LIST"><set name="message">print lists</set></li>
+<li value="PRINT * LIST"><set name="message">print lists</set></li>
+<li value="PRINT LIST *"><set name="message">print lists</set></li>
+<li value="* PRINT * LIST"><set name="message">print lists</set></li>
+<li value="PRINT * LIST *"><set name="message">print lists</set></li>
+<li value="* PRINT LIST *"><set name="message">print lists</set></li>
+<li value="* PRINT * LIST *"><set name="message">print lists</set></li>
+
+<li value="PRINT LISTS"><set name="message">print lists</set></li>
+<li value="* PRINT LISTS"><set name="message">print lists</set></li>
+<li value="PRINT * LISTS"><set name="message">print lists</set></li>
+<li value="PRINT LISTS *"><set name="message">print lists</set></li>
+<li value="* PRINT * LISTS"><set name="message">print lists</set></li>
+<li value="PRINT * LISTS *"><set name="message">print lists</set></li>
+<li value="* PRINT LISTS *"><set name="message">print lists</set></li>
+<li value="* PRINT * LISTS *"><set name="message">print lists</set></li>
+
+<li value="PRINTING LIST"><set name="message">print lists</set></li>
+<li value="* PRINTING LIST"><set name="message">print lists</set></li>
+<li value="PRINTING * LIST"><set name="message">print lists</set></li>
+<li value="PRINTING LIST *"><set name="message">print lists</set></li>
+<li value="* PRINTING * LIST"><set name="message">print lists</set></li>
+<li value="PRINTING * LIST *"><set name="message">print lists</set></li>
+<li value="* PRINTING LIST *"><set name="message">print lists</set></li>
+<li value="* PRINTING * LIST *"><set name="message">print lists</set></li>
+
+<li value="PRINTING LISTS"><set name="message">print lists</set></li>
+<li value="* PRINTING LISTS"><set name="message">print lists</set></li>
+<li value="PRINTING * LISTS"><set name="message">print lists</set></li>
+<li value="PRINTING LISTS *"><set name="message">print lists</set></li>
+<li value="* PRINTING * LISTS"><set name="message">print lists</set></li>
+<li value="PRINTING * LISTS *"><set name="message">print lists</set></li>
+<li value="* PRINTING LISTS *"><set name="message">print lists</set></li>
+<li value="* PRINTING * LISTS *"><set name="message">print lists</set></li>
+
+<li value="ACCOUNT INFO"><set name="message">change account info</set></li>
+<li value="* ACCOUNT INFO"><set name="message">change account info</set></li>
+<li value="ACCOUNT INFO *"><set name="message">change account info</set></li>
+<li value="* ACCOUNT INFO *"><set name="message">change account info</set></li>
+
+<li value="ACCOUNT INFORMATION"><set name="message">change account info</set></li>
+<li value="* ACCOUNT INFORMATION"><set name="message">change account info</set></li>
+<li value="ACCOUNT INFORMATION *"><set name="message">change account info</set></li>
+<li value="* ACCOUNT INFORMATION *"><set name="message">change account info</set></li>
+
+<li value="CHANGE"><set name="message">change account info</set></li>
+<li value="* CHANGE"><set name="message">change account info</set></li>
+<li value="CHANGE *"><set name="message">change account info</set></li>
+<li value="* CHANGE *"><set name="message">change account info</set></li>
+
+<li value="CHANGED"><set name="message">change account info</set></li>
+<li value="* CHANGED"><set name="message">change account info</set></li>
+<li value="CHANGED *"><set name="message">change account info</set></li>
+<li value="* CHANGED *"><set name="message">change account info</set></li>
+
+<li value="CHANGES"><set name="message">change account info</set></li>
+<li value="* CHANGES"><set name="message">change account info</set></li>
+<li value="CHANGES *"><set name="message">change account info</set></li>
+<li value="* CHANGES *"><set name="message">change account info</set></li>
+
+<li value="CHANGING"><set name="message">change account info</set></li>
+<li value="* CHANGING"><set name="message">change account info</set></li>
+<li value="CHANGING *"><set name="message">change account info</set></li>
+<li value="* CHANGING *"><set name="message">change account info</set></li>
+
+<li value="EDIT"><set name="message">change account info</set></li>
+<li value="* EDIT"><set name="message">change account info</set></li>
+<li value="EDIT *"><set name="message">change account info</set></li>
+<li value="* EDIT *"><set name="message">change account info</set></li>
+
+<li value="EDITED"><set name="message">change account info</set></li>
+<li value="* EDITED"><set name="message">change account info</set></li>
+<li value="EDITED *"><set name="message">change account info</set></li>
+<li value="* EDITED *"><set name="message">change account info</set></li>
+
+<li value="MY INFO"><set name="message">change account info</set></li>
+<li value="* MY INFO"><set name="message">change account info</set></li>
+<li value="MY INFO *"><set name="message">change account info</set></li>
+<li value="* MY INFO *"><set name="message">change account info</set></li>
+
+<li value="MY INFORMATION"><set name="message">change account info</set></li>
+<li value="* MY INFORMATION"><set name="message">change account info</set></li>
+<li value="MY INFORMATION *"><set name="message">change account info</set></li>
+<li value="* MY INFORMATION *"><set name="message">change account info</set></li>
+
+<li value="UPDATE"><set name="message">change account info</set></li>
+<li value="* UPDATE"><set name="message">change account info</set></li>
+<li value="UPDATE *"><set name="message">change account info</set></li>
+<li value="* UPDATE *"><set name="message">change account info</set></li>
+
+<li value="UPDATED"><set name="message">change account info</set></li>
+<li value="* UPDATED"><set name="message">change account info</set></li>
+<li value="UPDATED *"><set name="message">change account info</set></li>
+<li value="* UPDATED *"><set name="message">change account info</set></li>
+
+<li value="UPDATING"><set name="message">change account info</set></li>
+<li value="* UPDATING"><set name="message">change account info</set></li>
+<li value="UPDATING *"><set name="message">change account info</set></li>
+<li value="* UPDATING *"><set name="message">change account info</set></li>
+
+<li value="HISTORY"><set name="message">reading history</set></li>
+<li value="* HISTORY"><set name="message">reading history</set></li>
+<li value="HISTORY *"><set name="message">reading history</set></li>
+<li value="* HISTORY *"><set name="message">reading history</set></li>
+
+<li value="RECALL"><set name="message">reading history</set></li>
+<li value="* RECALL"><set name="message">reading history</set></li>
+<li value="RECALL *"><set name="message">reading history</set></li>
+<li value="* RECALL *"><set name="message">reading history</set></li>
+
+<li value="LOOK UP * OUT"><set name="message">reading history</set></li>
+<li value="* LOOK UP * OUT"><set name="message">reading history</set></li>
+<li value="LOOK UP * OUT *"><set name="message">reading history</set></li>
+<li value="* LOOK UP * OUT *"><set name="message">reading history</set></li>
+
+<li value="LOOK UP * READ"><set name="message">reading history</set></li>
+<li value="* LOOK UP * READ"><set name="message">reading history</set></li>
+<li value="LOOK UP * READ *"><set name="message">reading history</set></li>
+<li value="* LOOK UP * READ *"><set name="message">reading history</set></li>
+
+<li value="LOOK UP * REQUESTED"><set name="message">reading history</set></li>
+<li value="* LOOK UP * REQUESTED"><set name="message">reading history</set></li>
+<li value="LOOK UP * REQUESTED *"><set name="message">reading history</set></li>
+<li value="* LOOK UP * REQUESTED *"><set name="message">reading history</set></li>
+
+<li value="RECORD * OUT"><set name="message">reading history</set></li>
+<li value="* RECORD * OUT"><set name="message">reading history</set></li>
+<li value="RECORD * OUT *"><set name="message">reading history</set></li>
+<li value="* RECORD * OUT *"><set name="message">reading history</set></li>
+
+<li value="RECORD * READ"><set name="message">reading history</set></li>
+<li value="* RECORD * READ"><set name="message">reading history</set></li>
+<li value="RECORD * READ *"><set name="message">reading history</set></li>
+<li value="* RECORD * READ *"><set name="message">reading history</set></li>
+
+<li value="RECORD * REQUESTED"><set name="message">reading history</set></li>
+<li value="* RECORD * REQUESTED"><set name="message">reading history</set></li>
+<li value="RECORD * REQUESTED *"><set name="message">reading history</set></li>
+<li value="* RECORD * REQUESTED *"><set name="message">reading history</set></li>
+
+<li value="DUE"><set name="message">due</set></li>
+<li value="* DUE"><set name="message">due</set></li>
+<li value="DUE *"><set name="message">due</set></li>
+<li value="* DUE *"><set name="message">due</set></li>
+
+<li value="CAN * TAKE OUT *"><set name="message">take out or not</set></li>
+<li value="CAN * TAKE * OUT"><set name="message">take out or not</set></li>
+<li value="* CAN * TAKE OUT *"><set name="message">take out or not</set></li>
+<li value="* CAN * TAKE * OUT *"><set name="message">take out or not</set></li>
+<li value="CAN * CHECK OUT *"><set name="message">take out or not</set></li>
+<li value="CAN * CHECK * OUT"><set name="message">take out or not</set></li>
+<li value="* CAN * CHECK * OUT *"><set name="message">take out or not</set></li>
+
+<li value="MY"><set name="message">my stuff</set></li>
+<li value="* MY"><set name="message">my stuff</set></li>
+<li value="MY *"><set name="message">my stuff</set></li>
+<li value="* MY *"><set name="message">my stuff</set></li>
+
+<li value="LOG OFF"><set name="message">my stuff</set></li>
+<li value="* LOG OFF"><set name="message">my stuff</set></li>
+<li value="LOG OFF *"><set name="message">my stuff</set></li>
+<li value="* LOG OFF *"><set name="message">my stuff</set></li>
+
+<li value="LOG OUT"><set name="message">my stuff</set></li>
+<li value="* LOG OUT"><set name="message">my stuff</set></li>
+<li value="LOG OUT *"><set name="message">my stuff</set></li>
+<li value="* LOG OUT *"><set name="message">my stuff</set></li>
+
+<li value="CREATING LIST"><set name="message">create list</set></li>
+<li value="* CREATING LIST"><set name="message">create list</set></li>
+<li value="CREATING * LIST"><set name="message">create list</set></li>
+<li value="CREATING LIST *"><set name="message">create list</set></li>
+<li value="* CREATING * LIST"><set name="message">create list</set></li>
+<li value="CREATING * LIST *"><set name="message">create list</set></li>
+<li value="* CREATING LIST *"><set name="message">create list</set></li>
+<li value="* CREATING * LIST *"><set name="message">create list</set></li>
+
+<li value="CREATING LISTS"><set name="message">create list</set></li>
+<li value="* CREATING LISTS"><set name="message">create list</set></li>
+<li value="CREATING * LISTS"><set name="message">create list</set></li>
+<li value="CREATING LISTS *"><set name="message">create list</set></li>
+<li value="* CREATING * LISTS"><set name="message">create list</set></li>
+<li value="CREATING * LISTS *"><set name="message">create list</set></li>
+<li value="* CREATING LISTS *"><set name="message">create list</set></li>
+<li value="* CREATING * LISTS *"><set name="message">create list</set></li>
+
+<li value="MAKE LIST"><set name="message">create list</set></li>
+<li value="* MAKE LIST"><set name="message">create list</set></li>
+<li value="MAKE * LIST"><set name="message">create list</set></li>
+<li value="MAKE LIST *"><set name="message">create list</set></li>
+<li value="* MAKE * LIST"><set name="message">create list</set></li>
+<li value="MAKE * LIST *"><set name="message">create list</set></li>
+<li value="* MAKE LIST *"><set name="message">create list</set></li>
+<li value="* MAKE * LIST *"><set name="message">create list</set></li>
+
+<li value="MAKE LISTS"><set name="message">create list</set></li>
+<li value="* MAKE LISTS"><set name="message">create list</set></li>
+<li value="MAKE * LISTS"><set name="message">create list</set></li>
+<li value="MAKE LISTS *"><set name="message">create list</set></li>
+<li value="* MAKE * LISTS"><set name="message">create list</set></li>
+<li value="MAKE * LISTS *"><set name="message">create list</set></li>
+<li value="* MAKE LISTS *"><set name="message">create list</set></li>
+<li value="* MAKE * LISTS *"><set name="message">create list</set></li>
+
+<li value="MAKING LIST"><set name="message">create list</set></li>
+<li value="* MAKING LIST"><set name="message">create list</set></li>
+<li value="MAKING * LIST"><set name="message">create list</set></li>
+<li value="MAKING LIST *"><set name="message">create list</set></li>
+<li value="* MAKING * LIST"><set name="message">create list</set></li>
+<li value="MAKING * LIST *"><set name="message">create list</set></li>
+<li value="* MAKING LIST *"><set name="message">create list</set></li>
+<li value="* MAKING * LIST *"><set name="message">create list</set></li>
+
+<li value="MAKING LISTS"><set name="message">create list</set></li>
+<li value="* MAKING LISTS"><set name="message">create list</set></li>
+<li value="MAKING * LISTS"><set name="message">create list</set></li>
+<li value="MAKING LISTS *"><set name="message">create list</set></li>
+<li value="* MAKING * LISTS"><set name="message">create list</set></li>
+<li value="MAKING * LISTS *"><set name="message">create list</set></li>
+<li value="* MAKING LISTS *"><set name="message">create list</set></li>
+<li value="* MAKING * LISTS *"><set name="message">create list</set></li>
+
+<li value="RATE"><set name="message">rating</set></li>
+<li value="* RATE"><set name="message">rating</set></li>
+<li value="RATE *"><set name="message">rating</set></li>
+<li value="* RATE *"><set name="message">rating</set></li>
+
+<li value="RATING"><set name="message">rating</set></li>
+<li value="* RATING"><set name="message">rating</set></li>
+<li value="RATING *"><set name="message">rating</set></li>
+<li value="* RATING *"><set name="message">rating</set></li>
+
+<li value="PREFERRED"><set name="message">save search</set></li>
+<li value="* PREFERRED"><set name="message">save search</set></li>
+<li value="PREFERRED *"><set name="message">save search</set></li>
+<li value="* PREFERRED *"><set name="message">save search</set></li>
+
+<li value="ACTIVE"><set name="message">account expiration</set></li>
+<li value="* ACTIVE"><set name="message">account expiration</set></li>
+<li value="ACTIVE *"><set name="message">account expiration</set></li>
+<li value="* ACTIVE *"><set name="message">account expiration</set></li>
+
+<li value="EXPIRATION"><set name="message">account expiration</set></li>
+<li value="* EXPIRATION"><set name="message">account expiration</set></li>
+<li value="EXPIRATION *"><set name="message">account expiration</set></li>
+<li value="* EXPIRATION *"><set name="message">account expiration</set></li>
+
+<li value="EXPIRE"><set name="message">account expiration</set></li>
+<li value="* EXPIRE"><set name="message">account expiration</set></li>
+<li value="EXPIRE *"><set name="message">account expiration</set></li>
+<li value="* EXPIRE *"><set name="message">account expiration</set></li>
+
+<li value="EXPIRED"><set name="message">account expiration</set></li>
+<li value="* EXPIRED"><set name="message">account expiration</set></li>
+<li value="EXPIRED *"><set name="message">account expiration</set></li>
+<li value="* EXPIRED *"><set name="message">account expiration</set></li>
+
+<li value="EXPIRES"><set name="message">account expiration</set></li>
+<li value="* EXPIRES"><set name="message">account expiration</set></li>
+<li value="EXPIRES *"><set name="message">account expiration</set></li>
+<li value="* EXPIRES *"><set name="message">account expiration</set></li>
+
+<li value="GOOD"><set name="message">account expiration</set></li>
+<li value="* GOOD"><set name="message">account expiration</set></li>
+<li value="GOOD *"><set name="message">account expiration</set></li>
+<li value="* GOOD *"><set name="message">account expiration</set></li>
+
+<li value="OLD"><set name="message">account expiration</set></li>
+<li value="* OLD"><set name="message">account expiration</set></li>
+<li value="OLD *"><set name="message">account expiration</set></li>
+<li value="* OLD *"><set name="message">account expiration</set></li>
+
+<li value="VALID"><set name="message">account expiration</set></li>
+<li value="* VALID"><set name="message">account expiration</set></li>
+<li value="VALID *"><set name="message">account expiration</set></li>
+<li value="* VALID *"><set name="message">account expiration</set></li>
+
+<li value="WORK"><set name="message">account expiration</set></li>
+<li value="* WORK"><set name="message">account expiration</set></li>
+<li value="WORK *"><set name="message">account expiration</set></li>
+<li value="* WORK *"><set name="message">account expiration</set></li>
+
+<li value="WORKS"><set name="message">account expiration</set></li>
+<li value="* WORKS"><set name="message">account expiration</set></li>
+<li value="WORKS *"><set name="message">account expiration</set></li>
+<li value="* WORKS *"><set name="message">account expiration</set></li>
+
+<li value="WORKING"><set name="message">account expiration</set></li>
+<li value="* WORKING"><set name="message">account expiration</set></li>
+<li value="WORKING *"><set name="message">account expiration</set></li>
+<li value="* WORKING *"><set name="message">account expiration</set></li>
+
+<li value="ONLINE"><set name="message">online registration</set></li>
+<li value="* ONLINE"><set name="message">online registration</set></li>
+<li value="ONLINE *"><set name="message">online registration</set></li>
+<li value="* ONLINE *"><set name="message">online registration</set></li>
+
+<li value="ON LINE"><set name="message">online registration</set></li>
+<li value="* ON LINE"><set name="message">online registration</set></li>
+<li value="ON LINE *"><set name="message">online registration</set></li>
+<li value="* ON LINE *"><set name="message">online registration</set></li>
+
+<li value="TEMP"><set name="message">online registration</set></li>
+<li value="* TEMP"><set name="message">online registration</set></li>
+<li value="TEMP *"><set name="message">online registration</set></li>
+<li value="* TEMP *"><set name="message">online registration</set></li>
+
+<li value="TEMPORARY"><set name="message">online registration</set></li>
+<li value="* TEMPORARY"><set name="message">online registration</set></li>
+<li value="TEMPORARY *"><set name="message">online registration</set></li>
+<li value="* TEMPORARY *"><set name="message">online registration</set></li>
+
+</condition>
+<think><set name="topic"></set></think>
+</think>
+
+<condition name="message">
+
+<li value="stop"><set name="topic"></set>O.K. I'll stop.</li>
+
+<li value="no match">I'm not sure what you're asking. Please call the library at 440.255.8811 during regular business hours for assistance.</li>
+
+<li value="aboutaccts"><srai>ABOUTACCTS</srai></li>
+
+<li value="bag"><srai>BG</srai></li>
+
+<li value="getcard"><srai>GTCRD</srai></li>
+
+<li value="online registration"><srai>OLREG</srai></li>
+
+<li value="login"><srai>ACCTLOGIN</srai></li>
+
+<li value="itemsout"><srai>CHKDOUT</srai></li>
+
+<li value="linking accounts"><srai>LNKDACCTS</srai></li>
+
+<li value="shared accounts"><srai>SHRDACCTS</srai></li>
+
+<li value="account expiration"><srai>EXPACCT</srai></li>
+
+<li value="account fail"><srai>ACCTFAIL</srai></li>
+<li value="record in use"><srai>RECINUSE</srai></li>
+
+<li value="no number"><srai>NOACCT</srai></li>
+<li value="check fines"><srai>CHKFNS</srai></li>
+<li value="invalid"><srai>INVALIDBC</srai></li>
+
+<li value="good standing"><srai>GOODST</srai></li>
+
+<li value="in use by system"><srai>RECINUSE</srai></li>
+  
+<li value="my account"><srai>AYACCT</srai></li>
+
+<li value="notice fail"><srai>NOTFAIL</srai></li>
+  
+<li value="confidentiality"><srai>CONFID</srai></li>
+
+<li value="spam"><srai>SPM</srai></li>
+
+<li value="texts"><srai>TXTNOT</srai></li>
+  
+<li value="email alerts"><srai>EMAILNOT</srai></li>
+  
+<li value="print lists"><srai>PRNTLSTS</srai></li>
+<li value="change account info"><srai>XACCTINFO</srai></li>
+<li value="reading history"><srai>RHIST</srai></li>
+
+<li value="due"><srai>WHTDUE</srai></li>
+<li value="check out or not"><srai>CANCO</srai></li>
+
+<li value="my stuff"><srai>ITMSONACCT</srai></li>
+
+<li value="log off"><srai>LGOFF</srai></li>
+
+<li value="create list"><srai>CLST</srai></li>
+
+<li value="rating"><srai>RTNGS</srai></li>
+
+<li value="save search"><srai>SVSRCH</srai></li>
+
+<li value="online registration"><srai></srai></li>
+
+<li value="account expiration"><srai></srai></li>
+
+</condition>
+</template>
+</category>
+</topic>
+</aiml>

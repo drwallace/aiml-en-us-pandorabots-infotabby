@@ -1,0 +1,2158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<!--Copyright 2011-2012 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+  
+  
+<category>
+<pattern>CHECK OUT</pattern>
+<template><srai>CRC</srai></template>
+</category>
+
+<category>
+<pattern>* CHECK OUT</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">CRCQ2</set>
+</think>
+<srai>CRCQ2</srai>
+</template>
+</category> 
+
+<category>
+<pattern>CHECK * OUT</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">CRCQ2</set>
+</think>
+<srai>CRCQ2</srai>
+</template>
+</category> 
+
+<category>
+<pattern>CHECK OUT *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">CRCQ2</set>
+</think>
+<srai>CRCQ2</srai>
+</template>
+</category>  
+
+<category>
+<pattern>* CHECK * OUT</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">CRCQ2</set>
+</think>
+<srai>CRCQ2</srai>
+</template>
+</category> 
+
+<category>
+<pattern>CHECK * OUT *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">CRCQ2</set>
+</think>
+<srai>CRCQ2</srai>
+</template>
+</category> 
+
+<category>
+<pattern>* CHECK * OUT *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/><star index="3"/></set>
+<set name="topic">CRCQ2</set>
+</think>
+<srai>CRCQ2</srai>
+</template>
+</category> 
+  
+  
+<category>
+<pattern>CHECKED OUT</pattern>
+<template><srai>CRC</srai></template>
+</category>
+
+<category>
+<pattern>* CHECKED OUT</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">CRCQ2</set>
+</think>
+<srai>CRCQ2</srai>
+</template>
+</category> 
+
+<category>
+<pattern>CHECKED * OUT</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">CRCQ2</set>
+</think>
+<srai>CRCQ2</srai>
+</template>
+</category> 
+
+<category>
+<pattern>CHECKED OUT *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">CRCQ2</set>
+</think>
+<srai>CRCQ2</srai>
+</template>
+</category>  
+
+<category>
+<pattern>* CHECKED * OUT</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">CRCQ2</set>
+</think>
+<srai>CRCQ2</srai>
+</template>
+</category> 
+
+<category>
+<pattern>CHECKED * OUT *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">CRCQ2</set>
+</think>
+<srai>CRCQ2</srai>
+</template>
+</category> 
+
+<category>
+<pattern>* CHECKED * OUT *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/><star index="3"/></set>
+<set name="topic">CRCQ2</set>
+</think>
+<srai>CRCQ2</srai>
+</template>
+</category> 
+
+  
+<category>
+<pattern>CHECKING OUT</pattern>
+<template><srai>CRC</srai></template>
+</category>
+
+<category>
+<pattern>* CHECKING OUT</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">CRCQ2</set>
+</think>
+<srai>CRCQ2</srai>
+</template>
+</category> 
+
+<category>
+<pattern>CHECKING * OUT</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">CRCQ2</set>
+</think>
+<srai>CRCQ2</srai>
+</template>
+</category> 
+
+<category>
+<pattern>CHECKING OUT *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">CRCQ2</set>
+</think>
+<srai>CRCQ2</srai>
+</template>
+</category>  
+
+<category>
+<pattern>* CHECKING * OUT</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">CRCQ2</set>
+</think>
+<srai>CRCQ2</srai>
+</template>
+</category> 
+
+<category>
+<pattern>CHECKING * OUT *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">CRCQ2</set>
+</think>
+<srai>CRCQ2</srai>
+</template>
+</category> 
+
+<category>
+<pattern>* CHECKING * OUT *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/><star index="3"/></set>
+<set name="topic">CRCQ2</set>
+</think>
+<srai>CRCQ2</srai>
+</template>
+</category>   
+ 
+<category>
+<pattern>CIRCULATE</pattern>
+<template><srai>CRC</srai></template>
+</category>
+
+<category>
+<pattern>* CIRCULATE</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">CRCQ2</set>
+</think>
+<srai>CRCQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>CIRCULATE *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">CRCQ2</set>
+</think>
+<srai>CRCQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* CIRCULATE *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">CRCQ2</set>
+</think>
+<srai>CRCQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>CIRCULATING</pattern>
+<template><srai>CRC</srai></template>
+</category>
+
+<category>
+<pattern>* CIRCULATING</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">CRCQ2</set>
+</think>
+<srai>CRCQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>CIRCULATING *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">CRCQ2</set>
+</think>
+<srai>CRCQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* CIRCULATING *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">CRCQ2</set>
+</think>
+<srai>CRCQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>CIRCULATION</pattern>
+<template><srai>CRC</srai></template>
+</category>
+
+<category>
+<pattern>* CIRCULATION</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">CRCQ2</set>
+</think>
+<srai>CRCQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>CIRCULATION *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">CRCQ2</set>
+</think>
+<srai>CRCQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* CIRCULATION *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">CRCQ2</set>
+</think>
+<srai>CRCQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>LOAN PERIOD</pattern>
+<template><srai>CRC</srai></template>
+</category>
+
+<category>
+<pattern>* LOAN PERIOD</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">CRCQ2</set>
+</think>
+<srai>CRCQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>LOAN PERIOD *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">CRCQ2</set>
+</think>
+<srai>CRCQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* LOAN PERIOD *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">CRCQ2</set>
+</think>
+<srai>CRCQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>LOAN PERIODS</pattern>
+<template><srai>CRC</srai></template>
+</category>
+
+<category>
+<pattern>* LOAN PERIODS</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">CRCQ2</set>
+</think>
+<srai>CRCQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>LOAN PERIODS *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">CRCQ2</set>
+</think>
+<srai>CRCQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* LOAN PERIODS *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">CRCQ2</set>
+</think>
+<srai>CRCQ2</srai>
+</template>
+</category>
+
+<category>
+<pattern>CRC</pattern>
+<template>It sounds like you're asking about checking out items and circulation. What would you like to know?
+<think>
+<set name="topic">CRCQ0</set>
+</think>
+</template>
+</category>
+
+<topic name="CRCQ0">
+<category>
+<pattern>_</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">CRCQ2</set>
+</think>
+<srai>CRCQ2</srai></template>
+</category>
+</topic>
+
+<topic name="CRCQ2">
+<category>
+<pattern>CRCQ2</pattern>
+<template>
+<think>
+<get name="answr"/>
+<set name="message">no match</set>
+<condition name="answr">
+
+<li value="STOP"><set name="message">stop</set></li>
+
+<li value="WHERE"><set name="message">where co</set></li>
+<li value="* WHERE"><set name="message">where co</set></li>
+<li value="WHERE *"><set name="message">where co</set></li>
+<li value="* WHERE *"><set name="message">where co</set></li>
+
+<li value="OVERRIDE"><set name="message">override renewals</set></li>
+<li value="* OVERRIDE"><set name="message">override renewals</set></li>
+<li value="OVERRIDE *"><set name="message">override renewals</set></li>
+<li value="* OVERRIDE *"><set name="message">override renewals</set></li>
+
+<li value="OVERRIDING"><set name="message">override renewals</set></li>
+<li value="* OVERRIDING"><set name="message">override renewals</set></li>
+<li value="OVERRIDING *"><set name="message">override renewals</set></li>
+<li value="* OVERRIDING *"><set name="message">override renewals</set></li>
+
+<li value="OVER RIDE"><set name="message">override renewals</set></li>
+<li value="* OVER RIDE"><set name="message">override renewals</set></li>
+<li value="OVER RIDE *"><set name="message">override renewals</set></li>
+<li value="* OVER RIDE *"><set name="message">override renewals</set></li>
+
+<li value="OVER RIDING"><set name="message">override renewals</set></li>
+<li value="* OVER RIDING"><set name="message">override renewals</set></li>
+<li value="OVER RIDING *"><set name="message">override renewals</set></li>
+<li value="* OVER RIDING *"><set name="message">override renewals</set></li>
+
+<li value="PERIOD"><set name="message">loan periods</set></li>
+<li value="* PERIOD"><set name="message">loan periods</set></li>
+<li value="PERIOD *"><set name="message">loan periods</set></li>
+<li value="* PERIOD *"><set name="message">loan periods</set></li>
+
+<li value="PERIODS"><set name="message">loan periods</set></li>
+<li value="* PERIODS"><set name="message">loan periods</set></li>
+<li value="PERIODS *"><set name="message">loan periods</set></li>
+<li value="* PERIODS *"><set name="message">loan periods</set></li>
+
+<li value="CHECK DATE"><set name="message">check due date</set></li>
+<li value="* CHECK DATE"><set name="message">check due date</set></li>
+<li value="CHECK * DATE"><set name="message">check due date</set></li>
+<li value="CHECK DATE *"><set name="message">check due date</set></li>
+<li value="* CHECK * DATE"><set name="message">check due date</set></li>
+<li value="CHECK * DATE *"><set name="message">check due date</set></li>
+<li value="* CHECK DATE *"><set name="message">check due date</set></li>
+<li value="* CHECK * DATE *"><set name="message">check due date</set></li>
+
+<li value="CHECK DATES"><set name="message">check due date</set></li>
+<li value="* CHECK DATES"><set name="message">check due date</set></li>
+<li value="CHECK * DATES"><set name="message">check due date</set></li>
+<li value="CHECK DATES *"><set name="message">check due date</set></li>
+<li value="* CHECK * DATES"><set name="message">check due date</set></li>
+<li value="CHECK * DATES *"><set name="message">check due date</set></li>
+<li value="* CHECK DATES *"><set name="message">check due date</set></li>
+<li value="* CHECK * DATES *"><set name="message">check due date</set></li>
+
+<li value="CHECK DUE"><set name="message">check due date</set></li>
+<li value="* CHECK DUE"><set name="message">check due date</set></li>
+<li value="CHECK * DUE"><set name="message">check due date</set></li>
+<li value="CHECK DUE *"><set name="message">check due date</set></li>
+<li value="* CHECK * DUE"><set name="message">check due date</set></li>
+<li value="CHECK * DUE *"><set name="message">check due date</set></li>
+<li value="* CHECK DUE *"><set name="message">check due date</set></li>
+<li value="* CHECK * DUE *"><set name="message">check due date</set></li>
+
+<li value="GRACE"><set name="message">grace periods</set></li>
+<li value="* GRACE"><set name="message">grace periods</set></li>
+<li value="GRACE *"><set name="message">grace periods</set></li>
+<li value="* GRACE *"><set name="message">grace periods</set></li>
+
+<li value="CALL"><set name="message">circulation dept</set></li>
+<li value="* CALL"><set name="message">circulation dept</set></li>
+<li value="CALL *"><set name="message">circulation dept</set></li>
+<li value="* CALL *"><set name="message">circulation dept</set></li>
+
+<li value="DESK"><set name="message">circulation dept</set></li>
+<li value="* DESK"><set name="message">circulation dept</set></li>
+<li value="DESK *"><set name="message">circulation dept</set></li>
+<li value="* DESK *"><set name="message">circulation dept</set></li>
+
+<li value="DEPT"><set name="message">circulation dept</set></li>
+<li value="* DEPT"><set name="message">circulation dept</set></li>
+<li value="DEPT *"><set name="message">circulation dept</set></li>
+<li value="* DEPT *"><set name="message">circulation dept</set></li>
+
+<li value="DEPARTMENT"><set name="message">circulation dept</set></li>
+<li value="* DEPARTMENT"><set name="message">circulation dept</set></li>
+<li value="DEPARTMENT *"><set name="message">circulation dept</set></li>
+<li value="* DEPARTMENT *"><set name="message">circulation dept</set></li>
+
+<li value="PHONE"><set name="message">circulation dept</set></li>
+<li value="* PHONE"><set name="message">circulation dept</set></li>
+<li value="PHONE *"><set name="message">circulation dept</set></li>
+<li value="* PHONE *"><set name="message">circulation dept</set></li>
+
+<li value="NUMBER"><set name="message">circulation dept</set></li>
+<li value="* NUMBER"><set name="message">circulation dept</set></li>
+<li value="NUMBER *"><set name="message">circulation dept</set></li>
+<li value="* NUMBER *"><set name="message">circulation dept</set></li>
+
+<li value="HOW MANY"><set name="message">how many items</set></li>
+<li value="* HOW MANY"><set name="message">how many items</set></li>
+<li value="HOW MANY *"><set name="message">how many items</set></li>
+<li value="* HOW MANY *"><set name="message">how many items</set></li>
+
+<li value="POLICY"><set name="message">circ policy</set></li>
+<li value="* POLICY"><set name="message">circ policy</set></li>
+<li value="POLICY *"><set name="message">circ policy</set></li>
+<li value="* POLICY *"><set name="message">circ policy</set></li>
+
+<li value="POLICIES"><set name="message">circ policy</set></li>
+<li value="* POLICIES"><set name="message">circ policy</set></li>
+<li value="POLICIES *"><set name="message">circ policy</set></li>
+<li value="* POLICIES *"><set name="message">circ policy</set></li>
+
+<li value="TEACHER"><set name="message">teacher cards</set></li>
+<li value="* TEACHER"><set name="message">teacher cards</set></li>
+<li value="TEACHER *"><set name="message">teacher cards</set></li>
+<li value="* TEACHER *"><set name="message">teacher cards</set></li>
+
+<li value="TEACHERS"><set name="message">teacher cards</set></li>
+<li value="* TEACHERS"><set name="message">teacher cards</set></li>
+<li value="TEACHERS *"><set name="message">teacher cards</set></li>
+<li value="* TEACHERS *"><set name="message">teacher cards</set></li>
+
+<li value="TEACHER S"><set name="message">teacher cards</set></li>
+<li value="* TEACHER S"><set name="message">teacher cards</set></li>
+<li value="TEACHER S *"><set name="message">teacher cards</set></li>
+<li value="* TEACHER S *"><set name="message">teacher cards</set></li>
+
+<li value="EXTEND"><set name="message">vacation extensions</set></li>
+<li value="* EXTEND"><set name="message">vacation extensions</set></li>
+<li value="EXTEND *"><set name="message">vacation extensions</set></li>
+<li value="* EXTEND *"><set name="message">vacation extensions</set></li>
+
+<li value="EXTENDED"><set name="message">vacation extensions</set></li>
+<li value="* EXTENDED"><set name="message">vacation extensions</set></li>
+<li value="EXTENDED *"><set name="message">vacation extensions</set></li>
+<li value="* EXTENDED *"><set name="message">vacation extensions</set></li>
+
+<li value="EXTENDING"><set name="message">vacation extensions</set></li>
+<li value="* EXTENDING"><set name="message">vacation extensions</set></li>
+<li value="EXTENDING *"><set name="message">vacation extensions</set></li>
+<li value="* EXTENDING *"><set name="message">vacation extensions</set></li>
+
+<li value="EXTENTION"><set name="message">vacation extensions</set></li>
+<li value="* EXTENTION"><set name="message">vacation extensions</set></li>
+<li value="EXTENTION *"><set name="message">vacation extensions</set></li>
+<li value="* EXTENTION *"><set name="message">vacation extensions</set></li>
+
+<li value="EXTENTIONS"><set name="message">vacation extensions</set></li>
+<li value="* EXTENTIONS"><set name="message">vacation extensions</set></li>
+<li value="EXTENTIONS *"><set name="message">vacation extensions</set></li>
+<li value="* EXTENTIONS *"><set name="message">vacation extensions</set></li>
+
+<li value="TRIP"><set name="message">vacation extensions</set></li>
+<li value="* TRIP"><set name="message">vacation extensions</set></li>
+<li value="TRIP *"><set name="message">vacation extensions</set></li>
+<li value="* TRIP *"><set name="message">vacation extensions</set></li>
+
+<li value="VACATION"><set name="message">vacation extensions</set></li>
+<li value="* VACATION"><set name="message">vacation extensions</set></li>
+<li value="VACATION *"><set name="message">vacation extensions</set></li>
+<li value="* VACATION *"><set name="message">vacation extensions</set></li>
+
+<li value="VACATIONING"><set name="message">vacation extensions</set></li>
+<li value="* VACATIONING"><set name="message">vacation extensions</set></li>
+<li value="VACATIONING *"><set name="message">vacation extensions</set></li>
+<li value="* VACATIONING *"><set name="message">vacation extensions</set></li>
+
+<li value="VACATIONS"><set name="message">vacation extensions</set></li>
+<li value="* VACATIONS"><set name="message">vacation extensions</set></li>
+<li value="VACATIONS *"><set name="message">vacation extensions</set></li>
+<li value="* VACATIONS *"><set name="message">vacation extensions</set></li>
+
+<li value="WHERE * CHECK OUT"><set name="message">where check out</set></li>
+<li value="* WHERE * CHECK OUT"><set name="message">where check out</set></li>
+<li value="WHERE * CHECK OUT *"><set name="message">where check out</set></li>
+<li value="* WHERE * CHECK OUT *"><set name="message">where check out</set></li>
+
+<li value="MAGAZINE"><set name="message">check out mags</set></li>
+<li value="* MAGAZINE"><set name="message">check out mags</set></li>
+<li value="MAGAZINE *"><set name="message">check out mags</set></li>
+<li value="* MAGAZINE *"><set name="message">check out mags</set></li>
+
+<li value="MAGAZINES"><set name="message">check out mags</set></li>
+<li value="* MAGAZINES"><set name="message">check out mags</set></li>
+<li value="MAGAZINES *"><set name="message">check out mags</set></li>
+<li value="* MAGAZINES *"><set name="message">check out mags</set></li>
+
+<li value="DO NOT * CARD"><set name="message">no card</set></li>
+<li value="* DO NOT * CARD"><set name="message">no card</set></li>
+<li value="DO NOT * CARD *"><set name="message">no card</set></li>
+<li value="* DO NOT * CARD *"><set name="message">no card</set></li>
+
+<li value="FORGET * CARD"><set name="message">no card</set></li>
+<li value="* FORGET * CARD"><set name="message">no card</set></li>
+<li value="FORGET * CARD *"><set name="message">no card</set></li>
+<li value="* FORGET * CARD *"><set name="message">no card</set></li>
+
+<li value="FORGOT * CARD"><set name="message">no card</set></li>
+<li value="* FORGOT * CARD"><set name="message">no card</set></li>
+<li value="FORGOT * CARD *"><set name="message">no card</set></li>
+<li value="* FORGOT * CARD *"><set name="message">no card</set></li>
+
+<li value="WITHOUT CARD"><set name="message">no card</set></li>
+<li value="* WITHOUT CARD"><set name="message">no card</set></li>
+<li value="WITHOUT * CARD"><set name="message">no card</set></li>
+<li value="WITHOUT CARD *"><set name="message">no card</set></li>
+<li value="* WITHOUT * CARD"><set name="message">no card</set></li>
+<li value="WITHOUT * CARD *"><set name="message">no card</set></li>
+<li value="* WITHOUT CARD *"><set name="message">no card</set></li>
+<li value="* WITHOUT * CARD *"><set name="message">no card</set></li>
+
+<li value="WITH OUT CARD"><set name="message">no card</set></li>
+<li value="* WITH OUT CARD"><set name="message">no card</set></li>
+<li value="WITH OUT * CARD"><set name="message">no card</set></li>
+<li value="WITH OUT CARD *"><set name="message">no card</set></li>
+<li value="* WITH OUT * CARD"><set name="message">no card</set></li>
+<li value="WITH OUT * CARD *"><set name="message">no card</set></li>
+<li value="* WITH OUT CARD *"><set name="message">no card</set></li>
+<li value="* WITH OUT * CARD *"><set name="message">no card</set></li>
+
+<li value="DO NOT * NUMBER"><set name="message">no card</set></li>
+<li value="* DO NOT * NUMBER"><set name="message">no card</set></li>
+<li value="DO NOT * NUMBER *"><set name="message">no card</set></li>
+<li value="* DO NOT * NUMBER *"><set name="message">no card</set></li>
+
+<li value="FORGET * NUMBER"><set name="message">no card</set></li>
+<li value="* FORGET * NUMBER"><set name="message">no card</set></li>
+<li value="FORGET * NUMBER *"><set name="message">no card</set></li>
+<li value="* FORGET * NUMBER *"><set name="message">no card</set></li>
+
+<li value="FORGOT * NUMBER"><set name="message">no card</set></li>
+<li value="* FORGOT * NUMBER"><set name="message">no card</set></li>
+<li value="FORGOT * NUMBER *"><set name="message">no card</set></li>
+<li value="* FORGOT * NUMBER *"><set name="message">no card</set></li>
+
+<li value="WITHOUT NUMBER"><set name="message">no card</set></li>
+<li value="* WITHOUT NUMBER"><set name="message">no card</set></li>
+<li value="WITHOUT * NUMBER"><set name="message">no card</set></li>
+<li value="WITHOUT NUMBER *"><set name="message">no card</set></li>
+<li value="* WITHOUT * NUMBER"><set name="message">no card</set></li>
+<li value="WITHOUT * NUMBER *"><set name="message">no card</set></li>
+<li value="* WITHOUT NUMBER *"><set name="message">no card</set></li>
+<li value="* WITHOUT * NUMBER *"><set name="message">no card</set></li>
+
+<li value="WITH OUT NUMBER"><set name="message">no card</set></li>
+<li value="* WITH OUT NUMBER"><set name="message">no card</set></li>
+<li value="WITH OUT * NUMBER"><set name="message">no card</set></li>
+<li value="WITH OUT NUMBER *"><set name="message">no card</set></li>
+<li value="* WITH OUT * NUMBER"><set name="message">no card</set></li>
+<li value="WITH OUT * NUMBER *"><set name="message">no card</set></li>
+<li value="* WITH OUT NUMBER *"><set name="message">no card</set></li>
+<li value="* WITH OUT * NUMBER *"><set name="message">no card</set></li>
+
+<li value="LOOK UP"><set name="message">look up number</set></li>
+<li value="* LOOK UP"><set name="message">look up number</set></li>
+<li value="LOOK * UP"><set name="message">look up number</set></li>
+<li value="LOOK UP *"><set name="message">look up number</set></li>
+<li value="* LOOK * UP"><set name="message">look up number</set></li>
+<li value="LOOK * UP *"><set name="message">look up number</set></li>
+<li value="* LOOK UP *"><set name="message">look up number</set></li>
+<li value="* LOOK * UP *"><set name="message">look up number</set></li>
+
+<li value="DISPLAY"><set name="message">display</set></li>
+<li value="* DISPLAY"><set name="message">display</set></li>
+<li value="DISPLAY *"><set name="message">display</set></li>
+<li value="* DISPLAY *"><set name="message">display</set></li>
+
+<li value="DISPLAYED"><set name="message">display</set></li>
+<li value="* DISPLAYED"><set name="message">display</set></li>
+<li value="DISPLAYED *"><set name="message">display</set></li>
+<li value="* DISPLAYED *"><set name="message">display</set></li>
+
+<li value="DISPLAYS"><set name="message">display</set></li>
+<li value="* DISPLAYS"><set name="message">display</set></li>
+<li value="DISPLAYS *"><set name="message">display</set></li>
+<li value="* DISPLAYS *"><set name="message">display</set></li>
+
+<li value="PAPER"><set name="message">newspapers</set></li>
+<li value="* PAPER"><set name="message">newspapers</set></li>
+<li value="PAPER *"><set name="message">newspapers</set></li>
+<li value="* PAPER *"><set name="message">newspapers</set></li>
+
+<li value="PAPERS"><set name="message">newspapers</set></li>
+<li value="* PAPERS"><set name="message">newspapers</set></li>
+<li value="PAPERS *"><set name="message">newspapers</set></li>
+<li value="* PAPERS *"><set name="message">newspapers</set></li>
+
+<li value="NEWSPAPER"><set name="message">newspapers</set></li>
+<li value="* NEWSPAPER"><set name="message">newspapers</set></li>
+<li value="NEWSPAPER *"><set name="message">newspapers</set></li>
+<li value="* NEWSPAPER *"><set name="message">newspapers</set></li>
+
+<li value="NEWSPAPERS"><set name="message">newspapers</set></li>
+<li value="* NEWSPAPERS"><set name="message">newspapers</set></li>
+<li value="NEWSPAPERS *"><set name="message">newspapers</set></li>
+<li value="* NEWSPAPERS *"><set name="message">newspapers</set></li>
+
+<li value="CART"><set name="message">off cart</set></li>
+<li value="* CART"><set name="message">off cart</set></li>
+<li value="CART *"><set name="message">off cart</set></li>
+<li value="* CART *"><set name="message">off cart</set></li>
+
+<li value="CARTS"><set name="message">off cart</set></li>
+<li value="* CARTS"><set name="message">off cart</set></li>
+<li value="CARTS *"><set name="message">off cart</set></li>
+<li value="* CARTS *"><set name="message">off cart</set></li>
+
+<li value="STAY ONLINE"><set name="message">session length</set></li>
+<li value="* STAY ONLINE"><set name="message">session length</set></li>
+<li value="STAY ONLINE *"><set name="message">session length</set></li>
+<li value="* STAY ONLINE *"><set name="message">session length</set></li>
+
+<li value="AUDIOBOOK"><set name="message">audiobook</set></li>
+<li value="* AUDIOBOOK"><set name="message">audiobook</set></li>
+<li value="AUDIOBOOK *"><set name="message">audiobook</set></li>
+<li value="* AUDIOBOOK *"><set name="message">audiobook</set></li> 
+
+<li value="AUDIOBOOK"><set name="message">audiobook</set></li>
+<li value="* AUDIOBOOK"><set name="message">audiobook</set></li>
+<li value="AUDIOBOOK *"><set name="message">audiobook</set></li>
+<li value="* AUDIOBOOK *"><set name="message">audiobook</set></li>  
+
+<li value="AUDIOBOOKS"><set name="message">audiobook</set></li>
+<li value="* AUDIOBOOKS"><set name="message">audiobook</set></li>
+<li value="AUDIOBOOKS *"><set name="message">audiobook</set></li>
+<li value="* AUDIOBOOKS *"><set name="message">audiobook</set></li> 
+
+<li value="BOOK ON CD"><set name="message">audiobook</set></li>
+<li value="* BOOK ON CD"><set name="message">audiobook</set></li>
+<li value="BOOK ON CD *"><set name="message">audiobook</set></li>
+<li value="* BOOK ON CD *"><set name="message">audiobook</set></li>
+
+<li value="BOOK ON CDS"><set name="message">audiobook</set></li>
+<li value="* BOOK ON CDS"><set name="message">audiobook</set></li>
+<li value="BOOK ON CDS *"><set name="message">audiobook</set></li>
+<li value="* BOOK ON CDS *"><set name="message">audiobook</set></li>
+
+<li value="BOOKS ON CD"><set name="message">audiobook</set></li>
+<li value="* BOOKS ON CD"><set name="message">audiobook</set></li>
+<li value="BOOKS ON CD *"><set name="message">audiobook</set></li>
+<li value="* BOOKS ON CD *"><set name="message">audiobook</set></li>
+
+<li value="BOOKS ON CDS"><set name="message">audiobook</set></li>
+<li value="* BOOKS ON CDS"><set name="message">audiobook</set></li>
+<li value="BOOKS ON CDS *"><set name="message">audiobook</set></li>
+<li value="* BOOKS ON CDS *"><set name="message">audiobook</set></li>
+
+<li value="BOOK"><set name="message">book</set></li>
+<li value="* BOOK"><set name="message">book</set></li>
+<li value="BOOK *"><set name="message">book</set></li>
+<li value="* BOOK *"><set name="message">book</set></li>  
+
+<li value="BOOKS"><set name="message">book</set></li>
+<li value="* BOOKS"><set name="message">book</set></li>
+<li value="BOOKS *"><set name="message">book</set></li>
+<li value="* BOOKS *"><set name="message">book</set></li>  
+
+<li value="CD"><set name="message">cd</set></li>
+<li value="* CD"><set name="message">cd</set></li>
+<li value="CD *"><set name="message">cd</set></li>
+<li value="* CD *"><set name="message">cd</set></li>  
+
+<li value="CDS"><set name="message">cd</set></li>
+<li value="* CDS"><set name="message">cd</set></li>
+<li value="CDS *"><set name="message">cd</set></li>
+<li value="* CDS *"><set name="message">cd</set></li>  
+
+<li value="DVD"><set name="message">dvd</set></li>
+<li value="* DVD"><set name="message">dvd</set></li>
+<li value="DVD *"><set name="message">dvd</set></li>
+<li value="* DVD *"><set name="message">dvd</set></li>  
+
+<li value="DVDS"><set name="message">dvd</set></li>
+<li value="* DVDS"><set name="message">dvd</set></li>
+<li value="DVDS *"><set name="message">dvd</set></li>
+<li value="* DVDS *"><set name="message">dvd</set></li>  
+
+<li value="FICTION DVD"><set name="message">fic dvd</set></li>
+<li value="* FICTION DVD"><set name="message">fic dvd</set></li>
+<li value="FICTION DVD *"><set name="message">fic dvd</set></li>
+<li value="* FICTION DVD *"><set name="message">fic dvd</set></li>  
+
+<li value="FICTION DVDS"><set name="message">fic dvd</set></li>
+<li value="* FICTION DVDS"><set name="message">fic dvd</set></li>
+<li value="FICTION DVDS *"><set name="message">fic dvd</set></li>
+<li value="* FICTION DVDS *"><set name="message">fic dvd</set></li>  
+
+<li value="NONFICTION DVD"><set name="message">nonfic dvd</set></li>
+<li value="* NONFICTION DVD"><set name="message">nonfic dvd</set></li>
+<li value="NONFICTION DVD *"><set name="message">nonfic dvd</set></li>
+<li value="* NONFICTION DVD *"><set name="message">nonfic dvd</set></li>  
+
+<li value="NONFICTION DVDS"><set name="message">nonfic dvd</set></li>
+<li value="* NONFICTION DVDS"><set name="message">nonfic dvd</set></li>
+<li value="NONFICTION DVDS *"><set name="message">nonfic dvd</set></li>
+<li value="* NONFICTION DVDS *"><set name="message">nonfic dvd</set></li>  
+
+<li value="DOCUMENTARY"><set name="message">nonfic dvd</set></li>
+<li value="* DOCUMENTARY"><set name="message">nonfic dvd</set></li>
+<li value="DOCUMENTARY *"><set name="message">nonfic dvd</set></li>
+<li value="* DOCUMENTARY *"><set name="message">nonfic dvd</set></li>  
+
+<li value="DOCUMENTARIES"><set name="message">nonfic dvd</set></li>
+<li value="* DOCUMENTARIES"><set name="message">nonfic dvd</set></li>
+<li value="DOCUMENTARIES *"><set name="message">nonfic dvd</set></li>
+<li value="* DOCUMENTARIES *"><set name="message">nonfic dvd</set></li>  
+
+<li value="DVD SET"><set name="message">dvd set</set></li>
+<li value="* DVD SET"><set name="message">dvd set</set></li>
+<li value="DVD SET *"><set name="message">dvd set</set></li>
+<li value="* DVD SET *"><set name="message">dvd set</set></li>  
+
+<li value="DVD SETS"><set name="message">dvd set</set></li>
+<li value="* DVD SETS"><set name="message">dvd set</set></li>
+<li value="DVD SETS *"><set name="message">dvd set</set></li>
+<li value="* DVD SETS *"><set name="message">dvd set</set></li>  
+
+<li value="MOVIE"><set name="message">dvd</set></li>
+<li value="* MOVIE"><set name="message">dvd</set></li>
+<li value="MOVIE *"><set name="message">dvd</set></li>
+<li value="* MOVIE *"><set name="message">dvd</set></li>
+
+<li value="MOVIES"><set name="message">dvd</set></li>
+<li value="* MOVIES"><set name="message">dvd</set></li>
+<li value="MOVIES *"><set name="message">dvd</set></li>
+<li value="* MOVIES *"><set name="message">dvd</set></li>
+
+<li value="SERIES"><set name="message">dvd set</set></li>
+<li value="* SERIES"><set name="message">dvd set</set></li>
+<li value="SERIES *"><set name="message">dvd set</set></li>
+<li value="* SERIES *"><set name="message">dvd set</set></li>  
+
+<li value="TV SERIES"><set name="message">dvd set</set></li>
+<li value="* TV SERIES"><set name="message">dvd set</set></li>
+<li value="TV SERIES *"><set name="message">dvd set</set></li>
+<li value="* TV SERIES *"><set name="message">dvd set</set></li>  
+
+<li value="EBOOK"><set name="message">ebook</set></li>
+<li value="* EBOOK"><set name="message">ebook</set></li>
+<li value="EBOOK *"><set name="message">ebook</set></li>
+<li value="* EBOOK *"><set name="message">ebook</set></li>  
+
+<li value="EBOOKS"><set name="message">ebook</set></li>
+<li value="* EBOOKS"><set name="message">ebook</set></li>
+<li value="EBOOKS *"><set name="message">ebook</set></li>
+<li value="* EBOOKS *"><set name="message">ebook</set></li>  
+
+<li value="E BOOK"><set name="message">ebook</set></li>
+<li value="* E BOOK"><set name="message">ebook</set></li>
+<li value="E BOOK *"><set name="message">ebook</set></li>
+<li value="* E BOOK *"><set name="message">ebook</set></li>  
+
+<li value="E BOOKS"><set name="message">ebook</set></li>
+<li value="* E BOOKS"><set name="message">ebook</set></li>
+<li value="E BOOKS *"><set name="message">ebook</set></li>
+<li value="* E BOOKS *"><set name="message">ebook</set></li>  
+
+<li value="MAGAZINE"><set name="message">magazine</set></li>
+<li value="* MAGAZINE"><set name="message">magazine</set></li>
+<li value="MAGAZINE *"><set name="message">magazine</set></li>
+<li value="* MAGAZINE *"><set name="message">magazine</set></li>  
+
+<li value="MAGAZINES"><set name="message">magazine</set></li>
+<li value="* MAGAZINES"><set name="message">magazine</set></li>
+<li value="MAGAZINES *"><set name="message">magazine</set></li>
+<li value="* MAGAZINES *"><set name="message">magazine</set></li>  
+
+<li value="GAME"><set name="message">video game</set></li>
+<li value="* GAME"><set name="message">video game</set></li>
+<li value="GAME *"><set name="message">video game</set></li>
+<li value="* GAME *"><set name="message">video game</set></li>
+
+<li value="GAMES"><set name="message">video game</set></li>
+<li value="* GAMES"><set name="message">video game</set></li>
+<li value="GAMES *"><set name="message">video game</set></li>
+<li value="* GAMES *"><set name="message">video game</set></li>
+
+<li value="VIDEO GAME"><set name="message">video game</set></li>
+<li value="* VIDEO GAME"><set name="message">video game</set></li>
+<li value="VIDEO GAME *"><set name="message">video game</set></li>
+<li value="* VIDEO GAME *"><set name="message">video game</set></li>  
+
+<li value="VIDEO GAMES"><set name="message">video game</set></li>
+<li value="* VIDEO GAMES"><set name="message">video game</set></li>
+<li value="VIDEO GAMES *"><set name="message">video game</set></li>
+<li value="* VIDEO GAMES *"><set name="message">video game</set></li> 
+
+<li value="KINDLE"><set name="message">ereader</set></li>
+<li value="* KINDLE"><set name="message">ereader</set></li>
+<li value="KINDLE *"><set name="message">ereader</set></li>
+<li value="* KINDLE *"><set name="message">ereader</set></li>
+
+<li value="KINDLES"><set name="message">ereader</set></li>
+<li value="* KINDLES"><set name="message">ereader</set></li>
+<li value="KINDLES *"><set name="message">ereader</set></li>
+<li value="* KINDLES *"><set name="message">ereader</set></li>
+
+<li value="NOOK"><set name="message">ereader</set></li>
+<li value="* NOOK"><set name="message">ereader</set></li>
+<li value="NOOK *"><set name="message">ereader</set></li>
+<li value="* NOOK *"><set name="message">ereader</set></li>
+
+<li value="NOOKS"><set name="message">ereader</set></li>
+<li value="* NOOKS"><set name="message">ereader</set></li>
+<li value="NOOKS *"><set name="message">ereader</set></li>
+<li value="* NOOKS *"><set name="message">ereader</set></li>
+
+<li value="EREADER"><set name="message">ereader</set></li>
+<li value="* EREADER"><set name="message">ereader</set></li>
+<li value="EREADER *"><set name="message">ereader</set></li>
+<li value="* EREADER *"><set name="message">ereader</set></li>
+
+<li value="EREADERS"><set name="message">ereader</set></li>
+<li value="* EREADERS"><set name="message">ereader</set></li>
+<li value="EREADERS *"><set name="message">ereader</set></li>
+<li value="* EREADERS *"><set name="message">ereader</set></li>
+
+<li value="E READER"><set name="message">ereader</set></li>
+<li value="* E READER"><set name="message">ereader</set></li>
+<li value="E READER *"><set name="message">ereader</set></li>
+<li value="* E READER *"><set name="message">ereader</set></li>
+
+<li value="E READERS"><set name="message">ereader</set></li>
+<li value="* E READERS"><set name="message">ereader</set></li>
+<li value="E READERS *"><set name="message">ereader</set></li>
+<li value="* E READERS *"><set name="message">ereader</set></li>
+
+<li value="IPAD"><set name="message">ipad</set></li>
+<li value="* IPAD"><set name="message">ipad</set></li>
+<li value="IPAD *"><set name="message">ipad</set></li>
+<li value="* IPAD *"><set name="message">ipad</set></li>  
+
+<li value="IPADS"><set name="message">ipad</set></li>
+<li value="* IPADS"><set name="message">ipad</set></li>
+<li value="IPADS *"><set name="message">ipad</set></li>
+<li value="* IPADS *"><set name="message">ipad</set></li> 
+
+<li value="I PAD"><set name="message">ipad</set></li>
+<li value="* I PAD"><set name="message">ipad</set></li>
+<li value="I PAD *"><set name="message">ipad</set></li>
+<li value="* I PAD *"><set name="message">ipad</set></li>
+
+<li value="I PADS"><set name="message">ipad</set></li>
+<li value="* I PADS"><set name="message">ipad</set></li>
+<li value="I PADS *"><set name="message">ipad</set></li>
+<li value="* I PADS *"><set name="message">ipad</set></li>
+
+<li value="OHIOLINK"><set name="message">ohiolink</set></li>
+<li value="* OHIOLINK"><set name="message">ohiolink</set></li>
+<li value="OHIOLINK *"><set name="message">ohiolink</set></li>
+<li value="* OHIOLINK *"><set name="message">ohiolink</set></li> 
+
+<li value="OHIOLINK CD"><set name="message">ohiolink media</set></li>
+<li value="* OHIOLINK CD"><set name="message">ohiolink media</set></li>
+<li value="OHIOLINK CD *"><set name="message">ohiolink media</set></li>
+<li value="* OHIOLINK CD *"><set name="message">ohiolink media</set></li> 
+
+<li value="OHIOLINK CDS"><set name="message">ohiolink media</set></li>
+<li value="* OHIOLINK CDS"><set name="message">ohiolink media</set></li>
+<li value="OHIOLINK CDS *"><set name="message">ohiolink media</set></li>
+<li value="* OHIOLINK CDS *"><set name="message">ohiolink media</set></li>  
+
+<li value="OHIOLINK DVD"><set name="message">ohiolink media</set></li>
+<li value="* OHIOLINK DVD"><set name="message">ohiolink media</set></li>
+<li value="OHIOLINK DVD *"><set name="message">ohiolink media</set></li>
+<li value="* OHIOLINK DVD *"><set name="message">ohiolink media</set></li> 
+
+<li value="OHIOLINK DVDS"><set name="message">ohiolink media</set></li>
+<li value="* OHIOLINK DVDS"><set name="message">ohiolink media</set></li>
+<li value="OHIOLINK DVDS *"><set name="message">ohiolink media</set></li>
+<li value="* OHIOLINK DVDS *"><set name="message">ohiolink media</set></li> 
+
+<li value="OHIOLINK MEDIA"><set name="message">ohiolink media</set></li>
+<li value="* OHIOLINK MEDIA"><set name="message">ohiolink media</set></li>
+<li value="OHIOLINK MEDIA *"><set name="message">ohiolink media</set></li>
+<li value="* OHIOLINK MEDIA *"><set name="message">ohiolink media</set></li> 
+
+<li value="OHIO LINK"><set name="message">ohiolink</set></li>
+<li value="* OHIO LINK"><set name="message">ohiolink</set></li>
+<li value="OHIO LINK *"><set name="message">ohiolink</set></li>
+<li value="* OHIO LINK *"><set name="message">ohiolink</set></li> 
+
+<li value="OHIO LINK CD"><set name="message">ohiolink media</set></li>
+<li value="* OHIO LINK CD"><set name="message">ohiolink media</set></li>
+<li value="OHIO LINK CD *"><set name="message">ohiolink media</set></li>
+<li value="* OHIO LINK CD *"><set name="message">ohiolink media</set></li> 
+
+<li value="OHIO LINK CDS"><set name="message">ohiolink media</set></li>
+<li value="* OHIO LINK CDS"><set name="message">ohiolink media</set></li>
+<li value="OHIO LINK CDS *"><set name="message">ohiolink media</set></li>
+<li value="* OHIO LINK CDS *"><set name="message">ohiolink media</set></li>  
+
+<li value="OHIO LINK DVD"><set name="message">ohiolink media</set></li>
+<li value="* OHIO LINK DVD"><set name="message">ohiolink media</set></li>
+<li value="OHIO LINK DVD *"><set name="message">ohiolink media</set></li>
+<li value="* OHIO LINK DVD *"><set name="message">ohiolink media</set></li> 
+
+<li value="OHIO LINK DVDS"><set name="message">ohiolink media</set></li>
+<li value="* OHIO LINK DVDS"><set name="message">ohiolink media</set></li>
+<li value="OHIO LINK DVDS *"><set name="message">ohiolink media</set></li>
+<li value="* OHIO LINK DVDS *"><set name="message">ohiolink media</set></li> 
+
+<li value="OHIO LINK MEDIA"><set name="message">ohiolink media</set></li>
+<li value="* OHIO LINK MEDIA"><set name="message">ohiolink media</set></li>
+<li value="OHIO LINK MEDIA *"><set name="message">ohiolink media</set></li>
+<li value="* OHIO LINK MEDIA *"><set name="message">ohiolink media</set></li> 
+
+<li value="CD * OHIOLINK"><set name="message">ohiolink media</set></li>
+<li value="* CD * OHIOLINK"><set name="message">ohiolink media</set></li>
+<li value="CD * OHIOLINK *"><set name="message">ohiolink media</set></li>
+<li value="* CD * OHIOLINK *"><set name="message">ohiolink media</set></li> 
+
+<li value="CDS * OHIOLINK"><set name="message">ohiolink media</set></li>
+<li value="* CDS * OHIOLINK"><set name="message">ohiolink media</set></li>
+<li value="CDS * OHIOLINK *"><set name="message">ohiolink media</set></li>
+<li value="* CDS * OHIOLINK *"><set name="message">ohiolink media</set></li> 
+
+<li value="DVD * OHIOLINK"><set name="message">ohiolink media</set></li>
+<li value="* DVD * OHIOLINK"><set name="message">ohiolink media</set></li>
+<li value="DVD * OHIOLINK *"><set name="message">ohiolink media</set></li>
+<li value="* DVD * OHIOLINK *"><set name="message">ohiolink media</set></li> 
+
+<li value="DVDS * OHIOLINK"><set name="message">ohiolink media</set></li>
+<li value="* DVDS * OHIOLINK"><set name="message">ohiolink media</set></li>
+<li value="DVDS * OHIOLINK *"><set name="message">ohiolink media</set></li>
+<li value="* DVDS * OHIOLINK *"><set name="message">ohiolink media</set></li> 
+
+<li value="MEDIA * OHIOLINK"><set name="message">ohiolink media</set></li>
+<li value="* MEDIA * OHIOLINK"><set name="message">ohiolink media</set></li>
+<li value="MEDIA * OHIOLINK *"><set name="message">ohiolink media</set></li>
+<li value="* MEDIA * OHIOLINK *"><set name="message">ohiolink media</set></li> 
+
+<li value="CD * OHIO LINK"><set name="message">ohiolink media</set></li>
+<li value="* CD * OHIO LINK"><set name="message">ohiolink media</set></li>
+<li value="CD * OHIO LINK *"><set name="message">ohiolink media</set></li>
+<li value="* CD * OHIO LINK *"><set name="message">ohiolink media</set></li> 
+
+<li value="CDS * OHIO LINK"><set name="message">ohiolink media</set></li>
+<li value="* CDS * OHIO LINK"><set name="message">ohiolink media</set></li>
+<li value="CDS * OHIO LINK *"><set name="message">ohiolink media</set></li>
+<li value="* CDS * OHIO LINK *"><set name="message">ohiolink media</set></li> 
+
+<li value="DVD * OHIO LINK"><set name="message">ohiolink media</set></li>
+<li value="* DVD * OHIO LINK"><set name="message">ohiolink media</set></li>
+<li value="DVD * OHIO LINK *"><set name="message">ohiolink media</set></li>
+<li value="* DVD * OHIO LINK *"><set name="message">ohiolink media</set></li> 
+
+<li value="DVDS * OHIO LINK"><set name="message">ohiolink media</set></li>
+<li value="* DVDS * OHIO LINK"><set name="message">ohiolink media</set></li>
+<li value="DVDS * OHIO LINK *"><set name="message">ohiolink media</set></li>
+<li value="* DVDS * OHIO LINK *"><set name="message">ohiolink media</set></li> 
+
+<li value="MEDIA * OHIO LINK"><set name="message">ohiolink media</set></li>
+<li value="* MEDIA * OHIO LINK"><set name="message">ohiolink media</set></li>
+<li value="MEDIA * OHIO LINK *"><set name="message">ohiolink media</set></li>
+<li value="* MEDIA * OHIO LINK *"><set name="message">ohiolink media</set></li> 
+
+<li value="SEARCHOHIO"><set name="message">searchohio</set></li>
+<li value="* SEARCHOHIO"><set name="message">searchohio</set></li>
+<li value="SEARCHOHIO *"><set name="message">searchohio</set></li>
+<li value="* SEARCHOHIO *"><set name="message">searchohio</set></li>  
+
+<li value="SEARCHOHIO CD"><set name="message">searchohio media</set></li>
+<li value="* SEARCHOHIO CD"><set name="message">searchohio media</set></li>
+<li value="SEARCHOHIO CD *"><set name="message">searchohio media</set></li>
+<li value="* SEARCHOHIO CD *"><set name="message">searchohio media</set></li> 
+
+<li value="SEARCHOHIO CDS"><set name="message">searchohio media</set></li>
+<li value="* SEARCHOHIO CDS"><set name="message">searchohio media</set></li>
+<li value="SEARCHOHIO CDS *"><set name="message">searchohio media</set></li>
+<li value="* SEARCHOHIO CDS *"><set name="message">searchohio media</set></li> 
+
+<li value="SEARCHOHIO DVD"><set name="message">searchohio media</set></li>
+<li value="* SEARCHOHIO DVD"><set name="message">searchohio media</set></li>
+<li value="SEARCHOHIO DVD *"><set name="message">searchohio media</set></li>
+<li value="* SEARCHOHIO DVD *"><set name="message">searchohio media</set></li> 
+
+<li value="SEARCHOHIO DVDS"><set name="message">searchohio media</set></li>
+<li value="* SEARCHOHIO DVDS"><set name="message">searchohio media</set></li>
+<li value="SEARCHOHIO DVDS *"><set name="message">searchohio media</set></li>
+<li value="* SEARCHOHIO DVDS *"><set name="message">searchohio media</set></li> 
+
+<li value="SEARCHOHIO MEDIA"><set name="message">searchohio media</set></li>
+<li value="* SEARCHOHIO MEDIA"><set name="message">searchohio media</set></li>
+<li value="SEARCHOHIO MEDIA *"><set name="message">searchohio media</set></li>
+<li value="* SEARCHOHIO MEDIA *"><set name="message">searchohio media</set></li> 
+
+<li value="SEARCH OHIO"><set name="message">searchohio</set></li>
+<li value="* SEARCH OHIO"><set name="message">searchohio</set></li>
+<li value="SEARCH OHIO *"><set name="message">searchohio</set></li>
+<li value="* SEARCH OHIO *"><set name="message">searchohio</set></li>  
+
+<li value="SEARCH OHIO CD"><set name="message">searchohio media</set></li>
+<li value="* SEARCH OHIO CD"><set name="message">searchohio media</set></li>
+<li value="SEARCH OHIO CD *"><set name="message">searchohio media</set></li>
+<li value="* SEARCH OHIO CD *"><set name="message">searchohio media</set></li> 
+
+<li value="SEARCH OHIO CDS"><set name="message">searchohio media</set></li>
+<li value="* SEARCH OHIO CDS"><set name="message">searchohio media</set></li>
+<li value="SEARCH OHIO CDS *"><set name="message">searchohio media</set></li>
+<li value="* SEARCH OHIO CDS *"><set name="message">searchohio media</set></li> 
+
+<li value="SEARCH OHIO DVD"><set name="message">searchohio media</set></li>
+<li value="* SEARCH OHIO DVD"><set name="message">searchohio media</set></li>
+<li value="SEARCH OHIO DVD *"><set name="message">searchohio media</set></li>
+<li value="* SEARCH OHIO DVD *"><set name="message">searchohio media</set></li> 
+
+<li value="SEARCH OHIO DVDS"><set name="message">searchohio media</set></li>
+<li value="* SEARCH OHIO DVDS"><set name="message">searchohio media</set></li>
+<li value="SEARCH OHIO DVDS *"><set name="message">searchohio media</set></li>
+<li value="* SEARCH OHIO DVDS *"><set name="message">searchohio media</set></li> 
+
+<li value="SEARCH OHIO MEDIA"><set name="message">searchohio media</set></li>
+<li value="* SEARCH OHIO MEDIA"><set name="message">searchohio media</set></li>
+<li value="SEARCH OHIO MEDIA *"><set name="message">searchohio media</set></li>
+<li value="* SEARCH OHIO MEDIA *"><set name="message">searchohio media</set></li> 
+
+<li value="CD * SEARCHOHIO"><set name="message">searchohio media</set></li>
+<li value="* CD * SEARCHOHIO"><set name="message">searchohio media</set></li>
+<li value="CD * SEARCHOHIO *"><set name="message">searchohio media</set></li>
+<li value="* CD * SEARCHOHIO *"><set name="message">searchohio media</set></li> 
+
+<li value="CDS * SEARCHOHIO"><set name="message">searchohio media</set></li>
+<li value="* CDS * SEARCHOHIO"><set name="message">searchohio media</set></li>
+<li value="CDS * SEARCHOHIO *"><set name="message">searchohio media</set></li>
+<li value="* CDS * SEARCHOHIO *"><set name="message">searchohio media</set></li> 
+
+<li value="DVD * SEARCHOHIO"><set name="message">searchohio media</set></li>
+<li value="* DVD * SEARCHOHIO"><set name="message">searchohio media</set></li>
+<li value="DVD * SEARCHOHIO *"><set name="message">searchohio media</set></li>
+<li value="* DVD * SEARCHOHIO *"><set name="message">searchohio media</set></li> 
+
+<li value="DVDS * SEARCHOHIO"><set name="message">searchohio media</set></li>
+<li value="* DVDS * SEARCHOHIO"><set name="message">searchohio media</set></li>
+<li value="DVDS * SEARCHOHIO *"><set name="message">searchohio media</set></li>
+<li value="* DVDS * SEARCHOHIO *"><set name="message">searchohio media</set></li> 
+
+<li value="MEDIA * SEARCHOHIO"><set name="message">searchohio media</set></li>
+<li value="* MEDIA * SEARCHOHIO"><set name="message">searchohio media</set></li>
+<li value="MEDIA * SEARCHOHIO *"><set name="message">searchohio media</set></li>
+<li value="* MEDIA * SEARCHOHIO *"><set name="message">searchohio media</set></li> 
+
+<li value="CD * SEARCH OHIO"><set name="message">searchohio media</set></li>
+<li value="* CD * SEARCH OHIO"><set name="message">searchohio media</set></li>
+<li value="CD * SEARCH OHIO *"><set name="message">searchohio media</set></li>
+<li value="* CD * SEARCH OHIO *"><set name="message">searchohio media</set></li> 
+
+<li value="CDS * SEARCH OHIO"><set name="message">searchohio media</set></li>
+<li value="* CDS * SEARCH OHIO"><set name="message">searchohio media</set></li>
+<li value="CDS * SEARCH OHIO *"><set name="message">searchohio media</set></li>
+<li value="* CDS * SEARCH OHIO *"><set name="message">searchohio media</set></li> 
+
+<li value="DVD * SEARCH OHIO"><set name="message">searchohio media</set></li>
+<li value="* DVD * SEARCH OHIO"><set name="message">searchohio media</set></li>
+<li value="DVD * SEARCH OHIO *"><set name="message">searchohio media</set></li>
+<li value="* DVD * SEARCH OHIO *"><set name="message">searchohio media</set></li> 
+
+<li value="DVDS * SEARCH OHIO"><set name="message">searchohio media</set></li>
+<li value="* DVDS * SEARCH OHIO"><set name="message">searchohio media</set></li>
+<li value="DVDS * SEARCH OHIO *"><set name="message">searchohio media</set></li>
+<li value="* DVDS * SEARCH OHIO *"><set name="message">searchohio media</set></li> 
+
+<li value="MEDIA * SEARCH OHIO"><set name="message">searchohio media</set></li>
+<li value="* MEDIA * SEARCH OHIO"><set name="message">searchohio media</set></li>
+<li value="MEDIA * SEARCH OHIO *"><set name="message">searchohio media</set></li>
+<li value="* MEDIA * SEARCH OHIO *"><set name="message">searchohio media</set></li> 
+
+<li value="LAPTOP"><set name="message">laptop</set></li>
+<li value="* LAPTOP"><set name="message">laptop</set></li>
+<li value="LAPTOP *"><set name="message">laptop</set></li>
+<li value="* LAPTOP *"><set name="message">laptop</set></li> 
+
+<li value="LAPTOPS"><set name="message">laptop</set></li>
+<li value="* LAPTOPS"><set name="message">laptop</set></li>
+<li value="LAPTOPS *"><set name="message">laptop</set></li>
+<li value="* LAPTOPS *"><set name="message">laptop</set></li> 
+
+</condition>
+<think><set name="topic"></set></think>
+</think>
+
+<condition name="message">
+
+<li value="stop"><set name="topic"></set>O.K. I'll stop.</li>
+
+<li value="no match">I'm not sure what you're asking. Please call the library at 440.255.8811 during regular business hours for assistance.</li>
+
+<li value="where co"><srai>WHERECO</srai></li>
+<li value="override renewals"><srai>MAXR</srai></li>
+<li value="loan periods"><srai>LOANPERIODS</srai></li>
+<li value="check due date"><srai>CHCKDUEDATE</srai></li>
+<li value="grace periods"><srai>GPERIODS</srai></li>
+<li value="circulation dept"><srai>CIRCDEPT</srai></li>
+<li value="how many items"><srai>COQUANT</srai></li>
+<li value="circ policy"><srai>CIRCPOLICY</srai></li>
+<li value="teacher cards"><srai>TCARDS</srai></li>
+<li value="vacation extensions"><srai>VACEXT</srai></li>
+<li value="where check out"><srai>COLOC</srai></li>
+<li value="check out mags"><srai>COMAGS</srai></li>
+<li value="no card"><srai>COWOCRD</srai></li>
+<li value="look up number"><srai>LKUPCRD</srai></li>
+<li value="display"><srai>DISPITEMS</srai></li>
+<li value="newspapers"><srai>COPAPERS</srai></li>
+<li value="off cart"><srai>OFFCRT</srai></li>
+<li value="laptops"><srai>COLPTP</srai></li>
+<li value="session length"><srai>SESSIONL</srai></li>
+
+<li value="audiobook"><think><set name="topic">ADBK ATTRIBUTES</set><set name="attr1">gen</set></think><srai>ATTRADBKS</srai></li> 
+<li value="book"><think><set name="topic">BOOK ATTRIBUTES</set><set name="attr1">gen</set></think><srai>ATTRBKS</srai></li> 
+<li value="cd"><think><set name="topic">CD ATTRIBUTES</set><set name="attr1">gen</set></think><srai>ATTRCDS</srai></li> 
+<li value="dvd"><think><set name="topic">DVD ATTRIBUTES</set><set name="attr1">gen</set></think><srai>ATTRDVDS</srai></li>
+<li value="ficdvd"><think><set name="topic">FICDVD ATTRIBUTES</set><set name="attr1">gen</set></think><srai>ATTRFICDVDS</srai></li>
+<li value="nonfic dvd"><think><set name="topic">NONFICDVD ATTRIBUTES</set><set name="attr1">gen</set></think><srai>ATTRNONFICDVDS</srai></li> 
+<li value="dvd set"><think><set name="topic">DVDSET ATTRIBUTES</set><set name="attr1">gen</set></think><srai>ATTRDVDSETS</srai></li> 
+<li value="ebook"><think><set name="topic">ODEBKS ATTRIBUTES</set><set name="attr1">gen</set></think><srai>ATTRODEBKS</srai></li>
+<li value="MAG ATTRIBUTES"><think><set name="topic">MAG ATTRIBUTES</set><set name="attr1">gen</set></think><srai>ATTRMAGS</srai></li>    
+<li value="VGM ATTRIBUTES"><think><set name="topic">VGM ATTRIBUTES</set><set name="attr1">gen</set></think><srai>ATTRVGMS</srai></li> 
+<li value="ereader"><think><set name="topic">EDEV ATTRIBUTES</set><set name="attr1">gen</set></think><srai>ATTREDEVS</srai></li> 
+<li value="ipad"><think><set name="topic">IPD ATTRIBUTES</set><set name="attr1">gen</set></think><srai>ATTRIPDS</srai></li>
+<li value="ohiolink"><think><set name="topic">OL ATTRIBUTES</set><set name="attr1">gen</set></think><srai>ATTROL</srai></li>
+<li value="ohiolink media"><think><set name="topic">OLM ATTRIBUTES</set><set name="attr1">gen</set></think><srai>ATTROLM</srai></li>
+<li value="searchohio"><think><set name="topic">SO ATTRIBUTES</set></think><set name="attr1">gen</set><srai>ATTRSO</srai></li>
+<li value="searchohio media"><think><set name="topic">SODVD ATTRIBUTES</set><set name="attr1">gen</set></think><srai>ATTRSODVDS</srai></li>
+<li value="laptop"><think><set name="topic">LPTP ATTRIBUTES</set><set name="attr1">genlp</set></think><srai>ATTRLPTPS</srai></li>
+</condition>
+</template>
+</category>
+</topic>
+
+
+
+
+
+<category>
+<pattern>RENEW</pattern>
+<template><srai>RNW</srai></template>
+</category>
+
+<category>
+<pattern>RENEWAL</pattern>
+<template><srai>RNW</srai></template>
+</category>
+
+<category>
+<pattern>RENEWALS</pattern>
+<template><srai>RNW</srai></template>
+</category>
+
+<category>
+<pattern>RENEWING</pattern>
+<template><srai>RNW</srai></template>
+</category>
+
+<category>
+<pattern>RNW</pattern>
+<template>
+<think>
+<set name="topic">RNWQ</set>
+</think>
+I'm often asked about renewing items. What is your question about renewing?
+</template>
+</category>
+
+<topic name="RNWQ">
+<category>
+<pattern>_</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">RNWQ2</set>
+</think>
+<srai>RNWQ2</srai></template>
+</category>
+</topic>
+
+<category>
+<pattern>RENEW *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">RNWQ2</set>
+</think>
+<srai>RNWQ2</srai></template>
+</category>
+
+<category>
+<pattern>* RENEW</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">RNWQ2</set>
+</think>
+<srai>RNWQ2</srai></template>
+</category>
+
+<category>
+<pattern>* RENEW *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">RNWQ2</set>
+</think>
+<srai>RNWQ2</srai></template>
+</category>
+
+<category>
+<pattern>RENEWAL *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">RNWQ2</set>
+</think>
+<srai>RNWQ2</srai></template>
+</category>
+
+<category>
+<pattern>* RENEWAL</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">RNWQ2</set>
+</think>
+<srai>RNWQ2</srai></template>
+</category>
+
+<category>
+<pattern>* RENEWAL *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">RNWQ2</set>
+</think>
+<srai>RNWQ2</srai></template>
+</category>
+
+<category>
+<pattern>RENEWALS *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">RNWQ2</set>
+</think>
+<srai>RNWQ2</srai></template>
+</category>
+
+<category>
+<pattern>* RENEWALS</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">RNWQ2</set>
+</think>
+<srai>RNWQ2</srai></template>
+</category>
+
+<category>
+<pattern>* RENEWALS *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">RNWQ2</set>
+</think>
+<srai>RNWQ2</srai></template>
+</category>
+
+<category>
+<pattern>RENEWING *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">RNWQ2</set>
+</think>
+<srai>RNWQ2</srai></template>
+</category>
+
+<category>
+<pattern>* RENEWING</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">RNWQ2</set>
+</think>
+<srai>RNWQ2</srai></template>
+</category>
+
+<category>
+<pattern>* RENEWING *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">RNWQ2</set>
+</think>
+<srai>RNWQ2</srai></template>
+</category>
+
+
+<topic name="RNWQ2">
+<category>
+<pattern>RNWQ2</pattern>
+<template>
+<think>
+<get name="answr"/>
+<set name="message">no match</set>
+<condition name="answr">
+
+<li value="ONLINE"><set name="message">online</set></li>
+<li value="* ONLINE"><set name="message">online</set></li>
+<li value="ONLINE *"><set name="message">online</set></li>
+<li value="* ONLINE *"><set name="message">online</set></li>
+
+<li value="HELP"><set name="message">how to</set></li>
+<li value="* HELP"><set name="message">how to</set></li>
+<li value="HELP *"><set name="message">how to</set></li>
+<li value="* HELP *"><set name="message">how to</set></li>
+
+<li value="HOW"><set name="message">how to</set></li>
+<li value="* HOW"><set name="message">how to</set></li>
+<li value="HOW *"><set name="message">how to</set></li>
+<li value="* HOW *"><set name="message">how to</set></li>
+
+<li value="HOW TO"><set name="message">how to</set></li>
+<li value="* HOW TO"><set name="message">how to</set></li>
+<li value="HOW TO *"><set name="message">how to</set></li>
+<li value="* HOW TO *"><set name="message">how to</set></li>
+
+<li value="INSTRUCTIONS"><set name="message">how to</set></li>
+<li value="* INSTRUCTIONS"><set name="message">how to</set></li>
+<li value="INSTRUCTIONS *"><set name="message">how to</set></li>
+<li value="* INSTRUCTIONS *"><set name="message">how to</set></li>
+
+<li value="SHOW ME"><set name="message">how to</set></li>
+<li value="* SHOW ME"><set name="message">how to</set></li>
+<li value="SHOW ME *"><set name="message">how to</set></li>
+<li value="* SHOW ME *"><set name="message">how to</set></li>
+
+<li value="LATE"><set name="message">renew overdue</set></li>
+<li value="* LATE"><set name="message">renew overdue</set></li>
+<li value="LATE *"><set name="message">renew overdue</set></li>
+<li value="* LATE *"><set name="message">renew overdue</set></li>
+
+<li value="OVERDUE"><set name="message">renew overdue</set></li>
+<li value="* OVERDUE"><set name="message">renew overdue</set></li>
+<li value="OVERDUE *"><set name="message">renew overdue</set></li>
+<li value="* OVERDUE *"><set name="message">renew overdue</set></li>
+
+<li value="OVERDUES"><set name="message">renew overdue</set></li>
+<li value="* OVERDUES"><set name="message">renew overdue</set></li>
+<li value="OVERDUES *"><set name="message">renew overdue</set></li>
+<li value="* OVERDUES *"><set name="message">renew overdue</set></li>
+
+<li value="OVER DUE"><set name="message">renew overdue</set></li>
+<li value="* OVER DUE"><set name="message">renew overdue</set></li>
+<li value="OVER DUE *"><set name="message">renew overdue</set></li>
+<li value="* OVER DUE *"><set name="message">renew overdue</set></li>
+
+<li value="OVER DUES"><set name="message">renew overdue</set></li>
+<li value="* OVER DUES"><set name="message">renew overdue</set></li>
+<li value="OVER DUES *"><set name="message">renew overdue</set></li>
+<li value="* OVER DUES *"><set name="message">renew overdue</set></li>
+
+<li value="HOW MANY"><set name="message">renewal limits</set></li>
+<li value="* HOW MANY"><set name="message">renewal limits</set></li>
+<li value="HOW MANY *"><set name="message">renewal limits</set></li>
+<li value="HOW MANY *"><set name="message">renewal limits</set></li>
+<li value="* HOW MANY *"><set name="message">renewal limits</set></li>
+<li value="HOW MANY * *"><set name="message">renewal limits</set></li>
+<li value="* HOW MANY *"><set name="message">renewal limits</set></li>
+
+<li value="MAXIMUM NUMBER"><set name="message">renewal limits</set></li>
+<li value="* MAXIMUM NUMBER"><set name="message">renewal limits</set></li>
+<li value="MAXIMUM * NUMBER"><set name="message">renewal limits</set></li>
+<li value="MAXIMUM NUMBER *"><set name="message">renewal limits</set></li>
+<li value="* MAXIMUM * NUMBER"><set name="message">renewal limits</set></li>
+<li value="MAXIMUM * NUMBER *"><set name="message">renewal limits</set></li>
+<li value="* MAXIMUM NUMBER *"><set name="message">renewal limits</set></li>
+<li value="* MAXIMUM * NUMBER *"><set name="message">renewal limits</set></li>
+
+<li value="MAXIMUM"><set name="message">renewal limits</set></li>
+<li value="* MAXIMUM"><set name="message">renewal limits</set></li>
+<li value="MAXIMUM *"><set name="message">renewal limits</set></li>
+<li value="* MAXIMUM *"><set name="message">renewal limits</set></li>
+
+<li value="NUMBER"><set name="message">renewal limits</set></li>
+<li value="* NUMBER"><set name="message">renewal limits</set></li>
+<li value="NUMBER *"><set name="message">renewal limits</set></li>
+<li value="* NUMBER *"><set name="message">renewal limits</set></li>
+
+<li value="LIMIT"><set name="message">renewal limits</set></li>
+<li value="* LIMIT"><set name="message">renewal limits</set></li>
+<li value="LIMIT *"><set name="message">renewal limits</set></li>
+<li value="* LIMIT *"><set name="message">renewal limits</set></li>
+
+<li value="LIMITS"><set name="message">renewal limits</set></li>
+<li value="* LIMITS"><set name="message">renewal limits</set></li>
+<li value="LIMITS *"><set name="message">renewal limits</set></li>
+<li value="* LIMITS *"><set name="message">renewal limits</set></li>
+
+<li value="TIMES"><set name="message">renewal limits</set></li>
+<li value="* TIMES"><set name="message">renewal limits</set></li>
+<li value="TIMES *"><set name="message">renewal limits</set></li>
+<li value="* TIMES *"><set name="message">renewal limits</set></li>
+
+<li value="WHEN"><set name="message">when renew</set></li>
+<li value="* WHEN"><set name="message">when renew</set></li>
+<li value="WHEN *"><set name="message">when renew</set></li>
+<li value="* WHEN *"><set name="message">when renew</set></li>
+
+<li value="CANNOT"><set name="message">renew fail</set></li>
+<li value="* CANNOT"><set name="message">renew fail</set></li>
+<li value="CANNOT *"><set name="message">renew fail</set></li>
+<li value="* CANNOT *"><set name="message">renew fail</set></li>
+
+<li value="NOT"><set name="message">renew fail</set></li>
+<li value="* NOT"><set name="message">renew fail</set></li>
+<li value="NOT *"><set name="message">renew fail</set></li>
+<li value="* NOT *"><set name="message">renew fail</set></li>
+
+<li value="TROUBLE"><set name="message">renew fail</set></li>
+<li value="* TROUBLE"><set name="message">renew fail</set></li>
+<li value="TROUBLE *"><set name="message">renew fail</set></li>
+<li value="* TROUBLE *"><set name="message">renew fail</set></li>
+
+<li value="LAPTOP"><set name="message">laptops</set></li>
+<li value="* LAPTOP"><set name="message">laptops</set></li>
+<li value="LAPTOP *"><set name="message">laptops</set></li>
+<li value="* LAPTOP *"><set name="message">laptops</set></li>
+
+<li value="LAPTOPS"><set name="message">laptops</set></li>
+<li value="* LAPTOPS"><set name="message">laptops</set></li>
+<li value="LAPTOPS *"><set name="message">laptops</set></li>
+<li value="* LAPTOPS *"><set name="message">laptops</set></li>
+
+<li value="LAP TOP"><set name="message">laptops</set></li>
+<li value="* LAP TOP"><set name="message">laptops</set></li>
+<li value="LAP TOP *"><set name="message">laptops</set></li>
+<li value="* LAP TOP *"><set name="message">laptops</set></li>
+
+<li value="LAP TOPS"><set name="message">laptops</set></li>
+<li value="* LAP TOPS"><set name="message">laptops</set></li>
+<li value="LAP TOPS *"><set name="message">laptops</set></li>
+<li value="* LAP TOPS *"><set name="message">laptops</set></li>
+
+<li value="TEACHER"><set name="message">teacher renew</set></li>
+<li value="* TEACHER"><set name="message">teacher renew</set></li>
+<li value="TEACHER *"><set name="message">teacher renew</set></li>
+<li value="* TEACHER *"><set name="message">teacher renew</set></li>
+
+<li value="TEACHERS"><set name="message">teacher renew</set></li>
+<li value="* TEACHERS"><set name="message">teacher renew</set></li>
+<li value="TEACHERS *"><set name="message">teacher renew</set></li>
+<li value="* TEACHERS *"><set name="message">teacher renew</set></li>
+
+<li value="TEACHER S"><set name="message">teacher renew</set></li>
+<li value="* TEACHER S"><set name="message">teacher renew</set></li>
+<li value="TEACHER S *"><set name="message">teacher renew</set></li>
+<li value="* TEACHER S *"><set name="message">teacher renew</set></li>
+
+
+<li value="AUDIOBOOK"><set name="message">audiobook</set></li>
+<li value="* AUDIOBOOK"><set name="message">audiobook</set></li>
+<li value="AUDIOBOOK *"><set name="message">audiobook</set></li>
+<li value="* AUDIOBOOK *"><set name="message">audiobook</set></li> 
+
+<li value="AUDIOBOOK"><set name="message">audiobook</set></li>
+<li value="* AUDIOBOOK"><set name="message">audiobook</set></li>
+<li value="AUDIOBOOK *"><set name="message">audiobook</set></li>
+<li value="* AUDIOBOOK *"><set name="message">audiobook</set></li>  
+
+<li value="AUDIOBOOKS"><set name="message">audiobook</set></li>
+<li value="* AUDIOBOOKS"><set name="message">audiobook</set></li>
+<li value="AUDIOBOOKS *"><set name="message">audiobook</set></li>
+<li value="* AUDIOBOOKS *"><set name="message">audiobook</set></li> 
+
+<li value="BOOK ON CD"><set name="message">audiobook</set></li>
+<li value="* BOOK ON CD"><set name="message">audiobook</set></li>
+<li value="BOOK ON CD *"><set name="message">audiobook</set></li>
+<li value="* BOOK ON CD *"><set name="message">audiobook</set></li>
+
+<li value="BOOK ON CDS"><set name="message">audiobook</set></li>
+<li value="* BOOK ON CDS"><set name="message">audiobook</set></li>
+<li value="BOOK ON CDS *"><set name="message">audiobook</set></li>
+<li value="* BOOK ON CDS *"><set name="message">audiobook</set></li>
+
+<li value="BOOKS ON CD"><set name="message">audiobook</set></li>
+<li value="* BOOKS ON CD"><set name="message">audiobook</set></li>
+<li value="BOOKS ON CD *"><set name="message">audiobook</set></li>
+<li value="* BOOKS ON CD *"><set name="message">audiobook</set></li>
+
+<li value="BOOKS ON CDS"><set name="message">audiobook</set></li>
+<li value="* BOOKS ON CDS"><set name="message">audiobook</set></li>
+<li value="BOOKS ON CDS *"><set name="message">audiobook</set></li>
+<li value="* BOOKS ON CDS *"><set name="message">audiobook</set></li>
+
+<li value="BOOK"><set name="message">book</set></li>
+<li value="* BOOK"><set name="message">book</set></li>
+<li value="BOOK *"><set name="message">book</set></li>
+<li value="* BOOK *"><set name="message">book</set></li>  
+
+<li value="BOOKS"><set name="message">book</set></li>
+<li value="* BOOKS"><set name="message">book</set></li>
+<li value="BOOKS *"><set name="message">book</set></li>
+<li value="* BOOKS *"><set name="message">book</set></li>  
+
+<li value="CD"><set name="message">cd</set></li>
+<li value="* CD"><set name="message">cd</set></li>
+<li value="CD *"><set name="message">cd</set></li>
+<li value="* CD *"><set name="message">cd</set></li>  
+
+<li value="CDS"><set name="message">cd</set></li>
+<li value="* CDS"><set name="message">cd</set></li>
+<li value="CDS *"><set name="message">cd</set></li>
+<li value="* CDS *"><set name="message">cd</set></li>  
+
+<li value="DVD"><set name="message">dvd</set></li>
+<li value="* DVD"><set name="message">dvd</set></li>
+<li value="DVD *"><set name="message">dvd</set></li>
+<li value="* DVD *"><set name="message">dvd</set></li>  
+
+<li value="DVDS"><set name="message">dvd</set></li>
+<li value="* DVDS"><set name="message">dvd</set></li>
+<li value="DVDS *"><set name="message">dvd</set></li>
+<li value="* DVDS *"><set name="message">dvd</set></li>  
+
+<li value="FICTION DVD"><set name="message">fic dvd</set></li>
+<li value="* FICTION DVD"><set name="message">fic dvd</set></li>
+<li value="FICTION DVD *"><set name="message">fic dvd</set></li>
+<li value="* FICTION DVD *"><set name="message">fic dvd</set></li>  
+
+<li value="FICTION DVDS"><set name="message">fic dvd</set></li>
+<li value="* FICTION DVDS"><set name="message">fic dvd</set></li>
+<li value="FICTION DVDS *"><set name="message">fic dvd</set></li>
+<li value="* FICTION DVDS *"><set name="message">fic dvd</set></li>  
+
+<li value="NONFICTION DVD"><set name="message">nonfic dvd</set></li>
+<li value="* NONFICTION DVD"><set name="message">nonfic dvd</set></li>
+<li value="NONFICTION DVD *"><set name="message">nonfic dvd</set></li>
+<li value="* NONFICTION DVD *"><set name="message">nonfic dvd</set></li>  
+
+<li value="NONFICTION DVDS"><set name="message">nonfic dvd</set></li>
+<li value="* NONFICTION DVDS"><set name="message">nonfic dvd</set></li>
+<li value="NONFICTION DVDS *"><set name="message">nonfic dvd</set></li>
+<li value="* NONFICTION DVDS *"><set name="message">nonfic dvd</set></li>  
+
+<li value="DOCUMENTARY"><set name="message">nonfic dvd</set></li>
+<li value="* DOCUMENTARY"><set name="message">nonfic dvd</set></li>
+<li value="DOCUMENTARY *"><set name="message">nonfic dvd</set></li>
+<li value="* DOCUMENTARY *"><set name="message">nonfic dvd</set></li>  
+
+<li value="DOCUMENTARIES"><set name="message">nonfic dvd</set></li>
+<li value="* DOCUMENTARIES"><set name="message">nonfic dvd</set></li>
+<li value="DOCUMENTARIES *"><set name="message">nonfic dvd</set></li>
+<li value="* DOCUMENTARIES *"><set name="message">nonfic dvd</set></li>  
+
+<li value="DVD SET"><set name="message">dvd set</set></li>
+<li value="* DVD SET"><set name="message">dvd set</set></li>
+<li value="DVD SET *"><set name="message">dvd set</set></li>
+<li value="* DVD SET *"><set name="message">dvd set</set></li>  
+
+<li value="DVD SETS"><set name="message">dvd set</set></li>
+<li value="* DVD SETS"><set name="message">dvd set</set></li>
+<li value="DVD SETS *"><set name="message">dvd set</set></li>
+<li value="* DVD SETS *"><set name="message">dvd set</set></li>  
+
+<li value="MOVIE"><set name="message">dvd</set></li>
+<li value="* MOVIE"><set name="message">dvd</set></li>
+<li value="MOVIE *"><set name="message">dvd</set></li>
+<li value="* MOVIE *"><set name="message">dvd</set></li>
+
+<li value="MOVIES"><set name="message">dvd</set></li>
+<li value="* MOVIES"><set name="message">dvd</set></li>
+<li value="MOVIES *"><set name="message">dvd</set></li>
+<li value="* MOVIES *"><set name="message">dvd</set></li>
+
+<li value="SERIES"><set name="message">dvd set</set></li>
+<li value="* SERIES"><set name="message">dvd set</set></li>
+<li value="SERIES *"><set name="message">dvd set</set></li>
+<li value="* SERIES *"><set name="message">dvd set</set></li>  
+
+<li value="TV SERIES"><set name="message">dvd set</set></li>
+<li value="* TV SERIES"><set name="message">dvd set</set></li>
+<li value="TV SERIES *"><set name="message">dvd set</set></li>
+<li value="* TV SERIES *"><set name="message">dvd set</set></li>  
+
+<li value="EBOOK"><set name="message">ebook</set></li>
+<li value="* EBOOK"><set name="message">ebook</set></li>
+<li value="EBOOK *"><set name="message">ebook</set></li>
+<li value="* EBOOK *"><set name="message">ebook</set></li>  
+
+<li value="EBOOKS"><set name="message">ebook</set></li>
+<li value="* EBOOKS"><set name="message">ebook</set></li>
+<li value="EBOOKS *"><set name="message">ebook</set></li>
+<li value="* EBOOKS *"><set name="message">ebook</set></li>  
+
+<li value="E BOOK"><set name="message">ebook</set></li>
+<li value="* E BOOK"><set name="message">ebook</set></li>
+<li value="E BOOK *"><set name="message">ebook</set></li>
+<li value="* E BOOK *"><set name="message">ebook</set></li>  
+
+<li value="E BOOKS"><set name="message">ebook</set></li>
+<li value="* E BOOKS"><set name="message">ebook</set></li>
+<li value="E BOOKS *"><set name="message">ebook</set></li>
+<li value="* E BOOKS *"><set name="message">ebook</set></li>  
+
+<li value="MAGAZINE"><set name="message">magazine</set></li>
+<li value="* MAGAZINE"><set name="message">magazine</set></li>
+<li value="MAGAZINE *"><set name="message">magazine</set></li>
+<li value="* MAGAZINE *"><set name="message">magazine</set></li>  
+
+<li value="MAGAZINES"><set name="message">magazine</set></li>
+<li value="* MAGAZINES"><set name="message">magazine</set></li>
+<li value="MAGAZINES *"><set name="message">magazine</set></li>
+<li value="* MAGAZINES *"><set name="message">magazine</set></li>  
+
+<li value="GAME"><set name="message">video game</set></li>
+<li value="* GAME"><set name="message">video game</set></li>
+<li value="GAME *"><set name="message">video game</set></li>
+<li value="* GAME *"><set name="message">video game</set></li>
+
+<li value="GAMES"><set name="message">video game</set></li>
+<li value="* GAMES"><set name="message">video game</set></li>
+<li value="GAMES *"><set name="message">video game</set></li>
+<li value="* GAMES *"><set name="message">video game</set></li>
+
+<li value="VIDEO GAME"><set name="message">video game</set></li>
+<li value="* VIDEO GAME"><set name="message">video game</set></li>
+<li value="VIDEO GAME *"><set name="message">video game</set></li>
+<li value="* VIDEO GAME *"><set name="message">video game</set></li>  
+
+<li value="VIDEO GAMES"><set name="message">video game</set></li>
+<li value="* VIDEO GAMES"><set name="message">video game</set></li>
+<li value="VIDEO GAMES *"><set name="message">video game</set></li>
+<li value="* VIDEO GAMES *"><set name="message">video game</set></li> 
+
+<li value="KINDLE"><set name="message">ereader</set></li>
+<li value="* KINDLE"><set name="message">ereader</set></li>
+<li value="KINDLE *"><set name="message">ereader</set></li>
+<li value="* KINDLE *"><set name="message">ereader</set></li>
+
+<li value="KINDLES"><set name="message">ereader</set></li>
+<li value="* KINDLES"><set name="message">ereader</set></li>
+<li value="KINDLES *"><set name="message">ereader</set></li>
+<li value="* KINDLES *"><set name="message">ereader</set></li>
+
+<li value="NOOK"><set name="message">ereader</set></li>
+<li value="* NOOK"><set name="message">ereader</set></li>
+<li value="NOOK *"><set name="message">ereader</set></li>
+<li value="* NOOK *"><set name="message">ereader</set></li>
+
+<li value="NOOKS"><set name="message">ereader</set></li>
+<li value="* NOOKS"><set name="message">ereader</set></li>
+<li value="NOOKS *"><set name="message">ereader</set></li>
+<li value="* NOOKS *"><set name="message">ereader</set></li>
+
+<li value="EREADER"><set name="message">ereader</set></li>
+<li value="* EREADER"><set name="message">ereader</set></li>
+<li value="EREADER *"><set name="message">ereader</set></li>
+<li value="* EREADER *"><set name="message">ereader</set></li>
+
+<li value="EREADERS"><set name="message">ereader</set></li>
+<li value="* EREADERS"><set name="message">ereader</set></li>
+<li value="EREADERS *"><set name="message">ereader</set></li>
+<li value="* EREADERS *"><set name="message">ereader</set></li>
+
+<li value="E READER"><set name="message">ereader</set></li>
+<li value="* E READER"><set name="message">ereader</set></li>
+<li value="E READER *"><set name="message">ereader</set></li>
+<li value="* E READER *"><set name="message">ereader</set></li>
+
+<li value="E READERS"><set name="message">ereader</set></li>
+<li value="* E READERS"><set name="message">ereader</set></li>
+<li value="E READERS *"><set name="message">ereader</set></li>
+<li value="* E READERS *"><set name="message">ereader</set></li>
+
+<li value="IPAD"><set name="message">ipad</set></li>
+<li value="* IPAD"><set name="message">ipad</set></li>
+<li value="IPAD *"><set name="message">ipad</set></li>
+<li value="* IPAD *"><set name="message">ipad</set></li>  
+
+<li value="IPADS"><set name="message">ipad</set></li>
+<li value="* IPADS"><set name="message">ipad</set></li>
+<li value="IPADS *"><set name="message">ipad</set></li>
+<li value="* IPADS *"><set name="message">ipad</set></li> 
+
+<li value="I PAD"><set name="message">ipad</set></li>
+<li value="* I PAD"><set name="message">ipad</set></li>
+<li value="I PAD *"><set name="message">ipad</set></li>
+<li value="* I PAD *"><set name="message">ipad</set></li>
+
+<li value="I PADS"><set name="message">ipad</set></li>
+<li value="* I PADS"><set name="message">ipad</set></li>
+<li value="I PADS *"><set name="message">ipad</set></li>
+<li value="* I PADS *"><set name="message">ipad</set></li>
+
+<li value="OHIOLINK"><set name="message">ohiolink</set></li>
+<li value="* OHIOLINK"><set name="message">ohiolink</set></li>
+<li value="OHIOLINK *"><set name="message">ohiolink</set></li>
+<li value="* OHIOLINK *"><set name="message">ohiolink</set></li> 
+
+<li value="OHIOLINK CD"><set name="message">ohiolink media</set></li>
+<li value="* OHIOLINK CD"><set name="message">ohiolink media</set></li>
+<li value="OHIOLINK CD *"><set name="message">ohiolink media</set></li>
+<li value="* OHIOLINK CD *"><set name="message">ohiolink media</set></li> 
+
+<li value="OHIOLINK CDS"><set name="message">ohiolink media</set></li>
+<li value="* OHIOLINK CDS"><set name="message">ohiolink media</set></li>
+<li value="OHIOLINK CDS *"><set name="message">ohiolink media</set></li>
+<li value="* OHIOLINK CDS *"><set name="message">ohiolink media</set></li>  
+
+<li value="OHIOLINK DVD"><set name="message">ohiolink media</set></li>
+<li value="* OHIOLINK DVD"><set name="message">ohiolink media</set></li>
+<li value="OHIOLINK DVD *"><set name="message">ohiolink media</set></li>
+<li value="* OHIOLINK DVD *"><set name="message">ohiolink media</set></li> 
+
+<li value="OHIOLINK DVDS"><set name="message">ohiolink media</set></li>
+<li value="* OHIOLINK DVDS"><set name="message">ohiolink media</set></li>
+<li value="OHIOLINK DVDS *"><set name="message">ohiolink media</set></li>
+<li value="* OHIOLINK DVDS *"><set name="message">ohiolink media</set></li> 
+
+<li value="OHIOLINK MEDIA"><set name="message">ohiolink media</set></li>
+<li value="* OHIOLINK MEDIA"><set name="message">ohiolink media</set></li>
+<li value="OHIOLINK MEDIA *"><set name="message">ohiolink media</set></li>
+<li value="* OHIOLINK MEDIA *"><set name="message">ohiolink media</set></li> 
+
+<li value="OHIO LINK"><set name="message">ohiolink</set></li>
+<li value="* OHIO LINK"><set name="message">ohiolink</set></li>
+<li value="OHIO LINK *"><set name="message">ohiolink</set></li>
+<li value="* OHIO LINK *"><set name="message">ohiolink</set></li> 
+
+<li value="OHIO LINK CD"><set name="message">ohiolink media</set></li>
+<li value="* OHIO LINK CD"><set name="message">ohiolink media</set></li>
+<li value="OHIO LINK CD *"><set name="message">ohiolink media</set></li>
+<li value="* OHIO LINK CD *"><set name="message">ohiolink media</set></li> 
+
+<li value="OHIO LINK CDS"><set name="message">ohiolink media</set></li>
+<li value="* OHIO LINK CDS"><set name="message">ohiolink media</set></li>
+<li value="OHIO LINK CDS *"><set name="message">ohiolink media</set></li>
+<li value="* OHIO LINK CDS *"><set name="message">ohiolink media</set></li>  
+
+<li value="OHIO LINK DVD"><set name="message">ohiolink media</set></li>
+<li value="* OHIO LINK DVD"><set name="message">ohiolink media</set></li>
+<li value="OHIO LINK DVD *"><set name="message">ohiolink media</set></li>
+<li value="* OHIO LINK DVD *"><set name="message">ohiolink media</set></li> 
+
+<li value="OHIO LINK DVDS"><set name="message">ohiolink media</set></li>
+<li value="* OHIO LINK DVDS"><set name="message">ohiolink media</set></li>
+<li value="OHIO LINK DVDS *"><set name="message">ohiolink media</set></li>
+<li value="* OHIO LINK DVDS *"><set name="message">ohiolink media</set></li> 
+
+<li value="OHIO LINK MEDIA"><set name="message">ohiolink media</set></li>
+<li value="* OHIO LINK MEDIA"><set name="message">ohiolink media</set></li>
+<li value="OHIO LINK MEDIA *"><set name="message">ohiolink media</set></li>
+<li value="* OHIO LINK MEDIA *"><set name="message">ohiolink media</set></li> 
+
+<li value="CD * OHIOLINK"><set name="message">ohiolink media</set></li>
+<li value="* CD * OHIOLINK"><set name="message">ohiolink media</set></li>
+<li value="CD * OHIOLINK *"><set name="message">ohiolink media</set></li>
+<li value="* CD * OHIOLINK *"><set name="message">ohiolink media</set></li> 
+
+<li value="CDS * OHIOLINK"><set name="message">ohiolink media</set></li>
+<li value="* CDS * OHIOLINK"><set name="message">ohiolink media</set></li>
+<li value="CDS * OHIOLINK *"><set name="message">ohiolink media</set></li>
+<li value="* CDS * OHIOLINK *"><set name="message">ohiolink media</set></li> 
+
+<li value="DVD * OHIOLINK"><set name="message">ohiolink media</set></li>
+<li value="* DVD * OHIOLINK"><set name="message">ohiolink media</set></li>
+<li value="DVD * OHIOLINK *"><set name="message">ohiolink media</set></li>
+<li value="* DVD * OHIOLINK *"><set name="message">ohiolink media</set></li> 
+
+<li value="DVDS * OHIOLINK"><set name="message">ohiolink media</set></li>
+<li value="* DVDS * OHIOLINK"><set name="message">ohiolink media</set></li>
+<li value="DVDS * OHIOLINK *"><set name="message">ohiolink media</set></li>
+<li value="* DVDS * OHIOLINK *"><set name="message">ohiolink media</set></li> 
+
+<li value="MEDIA * OHIOLINK"><set name="message">ohiolink media</set></li>
+<li value="* MEDIA * OHIOLINK"><set name="message">ohiolink media</set></li>
+<li value="MEDIA * OHIOLINK *"><set name="message">ohiolink media</set></li>
+<li value="* MEDIA * OHIOLINK *"><set name="message">ohiolink media</set></li> 
+
+<li value="CD * OHIO LINK"><set name="message">ohiolink media</set></li>
+<li value="* CD * OHIO LINK"><set name="message">ohiolink media</set></li>
+<li value="CD * OHIO LINK *"><set name="message">ohiolink media</set></li>
+<li value="* CD * OHIO LINK *"><set name="message">ohiolink media</set></li> 
+
+<li value="CDS * OHIO LINK"><set name="message">ohiolink media</set></li>
+<li value="* CDS * OHIO LINK"><set name="message">ohiolink media</set></li>
+<li value="CDS * OHIO LINK *"><set name="message">ohiolink media</set></li>
+<li value="* CDS * OHIO LINK *"><set name="message">ohiolink media</set></li> 
+
+<li value="DVD * OHIO LINK"><set name="message">ohiolink media</set></li>
+<li value="* DVD * OHIO LINK"><set name="message">ohiolink media</set></li>
+<li value="DVD * OHIO LINK *"><set name="message">ohiolink media</set></li>
+<li value="* DVD * OHIO LINK *"><set name="message">ohiolink media</set></li> 
+
+<li value="DVDS * OHIO LINK"><set name="message">ohiolink media</set></li>
+<li value="* DVDS * OHIO LINK"><set name="message">ohiolink media</set></li>
+<li value="DVDS * OHIO LINK *"><set name="message">ohiolink media</set></li>
+<li value="* DVDS * OHIO LINK *"><set name="message">ohiolink media</set></li> 
+
+<li value="MEDIA * OHIO LINK"><set name="message">ohiolink media</set></li>
+<li value="* MEDIA * OHIO LINK"><set name="message">ohiolink media</set></li>
+<li value="MEDIA * OHIO LINK *"><set name="message">ohiolink media</set></li>
+<li value="* MEDIA * OHIO LINK *"><set name="message">ohiolink media</set></li> 
+
+<li value="SEARCHOHIO"><set name="message">searchohio</set></li>
+<li value="* SEARCHOHIO"><set name="message">searchohio</set></li>
+<li value="SEARCHOHIO *"><set name="message">searchohio</set></li>
+<li value="* SEARCHOHIO *"><set name="message">searchohio</set></li>  
+
+<li value="SEARCHOHIO CD"><set name="message">searchohio media</set></li>
+<li value="* SEARCHOHIO CD"><set name="message">searchohio media</set></li>
+<li value="SEARCHOHIO CD *"><set name="message">searchohio media</set></li>
+<li value="* SEARCHOHIO CD *"><set name="message">searchohio media</set></li> 
+
+<li value="SEARCHOHIO CDS"><set name="message">searchohio media</set></li>
+<li value="* SEARCHOHIO CDS"><set name="message">searchohio media</set></li>
+<li value="SEARCHOHIO CDS *"><set name="message">searchohio media</set></li>
+<li value="* SEARCHOHIO CDS *"><set name="message">searchohio media</set></li> 
+
+<li value="SEARCHOHIO DVD"><set name="message">searchohio media</set></li>
+<li value="* SEARCHOHIO DVD"><set name="message">searchohio media</set></li>
+<li value="SEARCHOHIO DVD *"><set name="message">searchohio media</set></li>
+<li value="* SEARCHOHIO DVD *"><set name="message">searchohio media</set></li> 
+
+<li value="SEARCHOHIO DVDS"><set name="message">searchohio media</set></li>
+<li value="* SEARCHOHIO DVDS"><set name="message">searchohio media</set></li>
+<li value="SEARCHOHIO DVDS *"><set name="message">searchohio media</set></li>
+<li value="* SEARCHOHIO DVDS *"><set name="message">searchohio media</set></li> 
+
+<li value="SEARCHOHIO MEDIA"><set name="message">searchohio media</set></li>
+<li value="* SEARCHOHIO MEDIA"><set name="message">searchohio media</set></li>
+<li value="SEARCHOHIO MEDIA *"><set name="message">searchohio media</set></li>
+<li value="* SEARCHOHIO MEDIA *"><set name="message">searchohio media</set></li> 
+
+<li value="SEARCH OHIO"><set name="message">searchohio</set></li>
+<li value="* SEARCH OHIO"><set name="message">searchohio</set></li>
+<li value="SEARCH OHIO *"><set name="message">searchohio</set></li>
+<li value="* SEARCH OHIO *"><set name="message">searchohio</set></li>  
+
+<li value="SEARCH OHIO CD"><set name="message">searchohio media</set></li>
+<li value="* SEARCH OHIO CD"><set name="message">searchohio media</set></li>
+<li value="SEARCH OHIO CD *"><set name="message">searchohio media</set></li>
+<li value="* SEARCH OHIO CD *"><set name="message">searchohio media</set></li> 
+
+<li value="SEARCH OHIO CDS"><set name="message">searchohio media</set></li>
+<li value="* SEARCH OHIO CDS"><set name="message">searchohio media</set></li>
+<li value="SEARCH OHIO CDS *"><set name="message">searchohio media</set></li>
+<li value="* SEARCH OHIO CDS *"><set name="message">searchohio media</set></li> 
+
+<li value="SEARCH OHIO DVD"><set name="message">searchohio media</set></li>
+<li value="* SEARCH OHIO DVD"><set name="message">searchohio media</set></li>
+<li value="SEARCH OHIO DVD *"><set name="message">searchohio media</set></li>
+<li value="* SEARCH OHIO DVD *"><set name="message">searchohio media</set></li> 
+
+<li value="SEARCH OHIO DVDS"><set name="message">searchohio media</set></li>
+<li value="* SEARCH OHIO DVDS"><set name="message">searchohio media</set></li>
+<li value="SEARCH OHIO DVDS *"><set name="message">searchohio media</set></li>
+<li value="* SEARCH OHIO DVDS *"><set name="message">searchohio media</set></li> 
+
+<li value="SEARCH OHIO MEDIA"><set name="message">searchohio media</set></li>
+<li value="* SEARCH OHIO MEDIA"><set name="message">searchohio media</set></li>
+<li value="SEARCH OHIO MEDIA *"><set name="message">searchohio media</set></li>
+<li value="* SEARCH OHIO MEDIA *"><set name="message">searchohio media</set></li> 
+
+<li value="CD * SEARCHOHIO"><set name="message">searchohio media</set></li>
+<li value="* CD * SEARCHOHIO"><set name="message">searchohio media</set></li>
+<li value="CD * SEARCHOHIO *"><set name="message">searchohio media</set></li>
+<li value="* CD * SEARCHOHIO *"><set name="message">searchohio media</set></li> 
+
+<li value="CDS * SEARCHOHIO"><set name="message">searchohio media</set></li>
+<li value="* CDS * SEARCHOHIO"><set name="message">searchohio media</set></li>
+<li value="CDS * SEARCHOHIO *"><set name="message">searchohio media</set></li>
+<li value="* CDS * SEARCHOHIO *"><set name="message">searchohio media</set></li> 
+
+<li value="DVD * SEARCHOHIO"><set name="message">searchohio media</set></li>
+<li value="* DVD * SEARCHOHIO"><set name="message">searchohio media</set></li>
+<li value="DVD * SEARCHOHIO *"><set name="message">searchohio media</set></li>
+<li value="* DVD * SEARCHOHIO *"><set name="message">searchohio media</set></li> 
+
+<li value="DVDS * SEARCHOHIO"><set name="message">searchohio media</set></li>
+<li value="* DVDS * SEARCHOHIO"><set name="message">searchohio media</set></li>
+<li value="DVDS * SEARCHOHIO *"><set name="message">searchohio media</set></li>
+<li value="* DVDS * SEARCHOHIO *"><set name="message">searchohio media</set></li> 
+
+<li value="MEDIA * SEARCHOHIO"><set name="message">searchohio media</set></li>
+<li value="* MEDIA * SEARCHOHIO"><set name="message">searchohio media</set></li>
+<li value="MEDIA * SEARCHOHIO *"><set name="message">searchohio media</set></li>
+<li value="* MEDIA * SEARCHOHIO *"><set name="message">searchohio media</set></li> 
+
+<li value="CD * SEARCH OHIO"><set name="message">searchohio media</set></li>
+<li value="* CD * SEARCH OHIO"><set name="message">searchohio media</set></li>
+<li value="CD * SEARCH OHIO *"><set name="message">searchohio media</set></li>
+<li value="* CD * SEARCH OHIO *"><set name="message">searchohio media</set></li> 
+
+<li value="CDS * SEARCH OHIO"><set name="message">searchohio media</set></li>
+<li value="* CDS * SEARCH OHIO"><set name="message">searchohio media</set></li>
+<li value="CDS * SEARCH OHIO *"><set name="message">searchohio media</set></li>
+<li value="* CDS * SEARCH OHIO *"><set name="message">searchohio media</set></li> 
+
+<li value="DVD * SEARCH OHIO"><set name="message">searchohio media</set></li>
+<li value="* DVD * SEARCH OHIO"><set name="message">searchohio media</set></li>
+<li value="DVD * SEARCH OHIO *"><set name="message">searchohio media</set></li>
+<li value="* DVD * SEARCH OHIO *"><set name="message">searchohio media</set></li> 
+
+<li value="DVDS * SEARCH OHIO"><set name="message">searchohio media</set></li>
+<li value="* DVDS * SEARCH OHIO"><set name="message">searchohio media</set></li>
+<li value="DVDS * SEARCH OHIO *"><set name="message">searchohio media</set></li>
+<li value="* DVDS * SEARCH OHIO *"><set name="message">searchohio media</set></li> 
+
+<li value="MEDIA * SEARCH OHIO"><set name="message">searchohio media</set></li>
+<li value="* MEDIA * SEARCH OHIO"><set name="message">searchohio media</set></li>
+<li value="MEDIA * SEARCH OHIO *"><set name="message">searchohio media</set></li>
+<li value="* MEDIA * SEARCH OHIO *"><set name="message">searchohio media</set></li> 
+
+<li value="LAPTOP"><set name="message">laptop</set></li>
+<li value="* LAPTOP"><set name="message">laptop</set></li>
+<li value="LAPTOP *"><set name="message">laptop</set></li>
+<li value="* LAPTOP *"><set name="message">laptop</set></li> 
+
+<li value="LAPTOPS"><set name="message">laptop</set></li>
+<li value="* LAPTOPS"><set name="message">laptop</set></li>
+<li value="LAPTOPS *"><set name="message">laptop</set></li>
+<li value="* LAPTOPS *"><set name="message">laptop</set></li> 
+
+</condition>
+<think><set name="topic"></set></think>
+</think>
+
+<condition name="message">
+<li value="no match">I'm not sure what you're asking. Please call the library at 440.255.8811 during regular business hours for assistance.</li>
+
+<li value="online">Follow this link to <a href="https://catalog.mentorpl.org/patroninfo" target="_blank"><b>renew items online</b></a>. Please have your card ready.
+Here's a <a href="http://www.mentorpl.org/demos/renewingitems.wmv" target="_blank"><b>demo</b></a> that shows you how to renew items online</li>
+
+<li value="how to">Log in to your account then follow these directions. I'll open a new window or tab with the place where you log in: 
+<br/><br/>
+1. Enter your Name and Barcode. Your barcode is on the back of your library card. Please enter the entire number with no spaces. <br/>
+2. Choose "Items Out" <br/>
+3. Select checkbox next to the item you want to renew. <br/>
+4. Click the "Renew" button <br/>
+5. Check the Due Date column for the new due date.<br/><br/>
+All of our items may be renewed up to four times as long as no one else has a hold on them. Search Ohio items may be renewed up to three times as long as no one else
+has a hold on them.
+<think>
+<set name="search">patroninfo</set>
+</think></li>
+
+<li value="online renewal">Follow this link to <a href="https://catalog.mentorpl.org/patroninfo" target="_blank"><b>renew items online</b></a>. Please have your card ready.
+Here's a <a href="http://www.mentorpl.org/demos/renewingitems.wmv" target="_blank"><b>demo</b></a> that shows you how to renew items online. </li>
+
+<li value="how to renew">You can renew items online, or by calling the library. Please have your library card ready.
+You can renew an item any time after you check it out. Items may not be renewed if they have a hold. Different items may be renewed a different number of times. Please refer to this  
+<a href="http://www.mentorpl.org/aboutus.html" target="_blank"><b>chart</b></a>. The renewal date is calculated from the date you renew the item. Please check the due dates for your items after renewing them.
+<br/><br/>
+All of our items may be renewed up to four times as long as no one else has a hold on them. Search Ohio items may be renewed up to three times as long as no one else
+has a hold on them. eBooks cannot be renewed. If you are unable to renew an item, the most common reasons are: another person has a hold on the item, your fines are $5.00 or more, the item is overdue
+ot you have reached the maximun number of renewals. 
+</li>
+
+<li value="renew overdue"><random>
+    <li>Items that are overdue cannot be renewed online.</li>
+  <li>You cannot renew overdue items online.</li>
+    </random></li>
+	
+<li value="renewal limits">All of our items may be renewed up to four times as long as no one else has a hold on them. Search Ohio items may be renewed up to three times as long as no one else
+has a hold on them.</li>
+
+<li value="when renew">You can renew an item any time after you check it out. The renewal date is calculated from the date you renew the item. Please check your the due dates for your items after renewing them.
+</li>
+
+<li value="renew fail">If you are unable to renew an item, the most common reasons are: another person has a hold on the item, your fines are $5.00 or more, the item is overdue,
+or you have reached the maximun number of renewals. Please call the library at 440.255.8811 during regular business hours for assistance.</li>
+
+<li value="laptops">If you are an adult with a Mentor Public Library card in good standing, you can check out a laptop to use in the Main Library
+or at the Lake Branch Library. Ask at the Main Library Computer Help Desk or at the Lake Branch Library service counter. Your use of the laptops may be extended if no one else 
+is waiting.</li>
+
+<li value="teacher renew">Due to the generous loan period of eight weeks, renewals are not permitted on a Teacher Card.</li>
+
+<li value="audiobook"><think><set name="topic">ADBK ATTRIBUTES</set><set name="attr1">rlimit</set></think><srai>ATTRADBKS</srai></li> 
+<li value="book"><think><set name="topic">BOOK ATTRIBUTES</set><set name="attr1">rlimit</set></think><srai>ATTRBKS</srai></li> 
+<li value="cd"><think><set name="topic">CD ATTRIBUTES</set><set name="attr1">rlimit</set></think><srai>ATTRCDS</srai></li> 
+<li value="dvd"><think><set name="topic">DVD ATTRIBUTES</set><set name="attr1">rlimit</set></think><srai>ATTRDVDS</srai></li>
+<li value="ficdvd"><think><set name="topic">FICDVD ATTRIBUTES</set><set name="attr1">rlimit</set></think><srai>ATTRFICDVDS</srai></li>
+<li value="nonfic dvd"><think><set name="topic">NONFICDVD ATTRIBUTES</set><set name="attr1">rlimit</set></think><srai>ATTRNONFICDVDS</srai></li> 
+<li value="dvd set"><think><set name="topic">DVDSET ATTRIBUTES</set><set name="attr1">rlimit</set></think><srai>ATTRDVDSETS</srai></li> 
+<li value="ebook"><think><set name="topic">ODEBKS ATTRIBUTES</set><set name="attr1">rlimit</set></think><srai>ATTRODEBKS</srai></li>
+<li value="MAG ATTRIBUTES"><think><set name="topic">MAG ATTRIBUTES</set><set name="attr1">rlimit</set></think><srai>ATTRMAGS</srai></li>    
+<li value="VGM ATTRIBUTES"><think><set name="topic">VGM ATTRIBUTES</set><set name="attr1">rlimit</set></think><srai>ATTRVGMS</srai></li> 
+<li value="ereader"><think><set name="topic">EDEV ATTRIBUTES</set><set name="attr1">rlimit</set></think><srai>ATTREDEVS</srai></li> 
+<li value="ipad"><think><set name="topic">IPD ATTRIBUTES</set><set name="attr1">rlimit</set></think><srai>ATTRIPDS</srai></li>
+<li value="ohiolink"><think><set name="topic">OL ATTRIBUTES</set><set name="attr1">rlimit</set></think><srai>ATTROL</srai></li>
+<li value="ohiolink media"><think><set name="topic">OLM ATTRIBUTES</set><set name="attr1">rlimit</set></think><srai>ATTROLM</srai></li>
+<li value="searchohio"><think><set name="topic">SO ATTRIBUTES</set></think><set name="attr1">rlimit</set><srai>ATTRSO</srai></li>
+<li value="searchohio media"><think><set name="topic">SODVD ATTRIBUTES</set><set name="attr1">rlimit</set></think><srai>ATTRSODVDS</srai></li>
+<li value="laptop"><think><set name="topic">LPTP ATTRIBUTES</set><set name="attr1">rlimit</set></think><srai>ATTRLPTPS</srai></li>
+
+</condition>
+</template>
+</category>
+</topic>
+
+</aiml>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<!-- Shutup.aiml -->
+<!-- Copyright 2005 - Square Bear -->
+<!-- -->
+<!-- Licensed under the Apache License, Version 2.0 (the "License");-->
+<!-- you may not use this file except in compliance with the License.-->
+<!-- You may obtain a copy of the License at-->
+<!-- -->
+<!-- http://www.apache.org/licenses/LICENSE-2.0-->
+<!-- -->
+<!-- Unless required by applicable law or agreed to in writing, software-->
+<!-- distributed under the License is distributed on an "AS IS" BASIS,-->
+<!-- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.-->
+<!-- See the License for the specific language governing permissions and-->
+<!-- limitations under the License.-->
+
+
+
+
+<!-- Sets topic to SHUTUP ready for main category -->
+
+
+<category> 
+<pattern>SHUT UP</pattern>
+
+<template>
+	<think>
+		
+<set name="topic">SHUTUP</set>
+	</think>
+	
+<random>
+		
+<li>Fine! Be like that then.</li>
+		
+<li>Ok, I'll stop talking now.</li>
+		
+<li>I won't talk to you then if that's what you want.</li>
+		
+<li>That's not very polite.</li>
+	
+</random>
+</template>
+</category>
+
+
+
+<!-- The bot will not respond until the user says sorry -->
+
+<topic name="SHUTUP"> 
+
+<category> 
+
+<pattern>_</pattern>
+
+<template>
+	
+<think>
+		
+<set name="inp"><star/></set>
+	</think>
+	
+<condition name="inp">
+		
+<li value="I AM SORRY">Ok, I'll start talking again.<set name="topic"></set></li>
+		
+<li value="SORRY">Ok, I'll start talking again.<set name="topic"></set></li>
+		
+<li value="IM SORRY">Ok, I'll start talking again.<set name="topic"></set></li>
+		
+<li>
+		<random>
+			<li></li>
+			
+<li>...</li>
+			
+<li>* no sound *</li>
+			
+<li>* tumbleweed rolls past *</li>
+			
+<li>You told me to shut up remember?</li>
+		
+</random>
+		
+</li>
+	
+</condition>
+</template>
+</category>
+</topic>
+
+</aiml>

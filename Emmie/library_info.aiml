@@ -1,0 +1,3329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<!--Copyright 2011-2012 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+
+<!--ACCOUNT INFO-->  
+
+<category>
+<pattern>ABOUTACCTS</pattern>
+<template>You may get a card, open an acccount, at the Main Library Circulation Desk or at either Branch. You can also get a <a href="https://catalog.mentorpl.org/selfreg" target="_blank"><b>temporary card online</b></a>. There is no charge to get a card.
+You must present identification showing your current address. Any Ohio resident can get a card, you do not need to live in Mentor. What is your question about accounts?
+</template>
+</category>
+
+<category>
+<pattern>BGS</pattern>
+<template>You can select a number of items in our catalog then press the "Add marked to bag" to add all of them to your bag. You can then 
+go to "view bag" and save or request the items it contains. It's a bit hard to explain. If you have further questions, please call
+the library at 555.555.5555 during regular business hours.</template>
+</category>
+
+<category>
+<pattern>GTCRD</pattern>
+<template>You may apply for a library card at the Main Library Circulation Desk or at either Branch. You can also get a <a href="https://catalog.mentorpl.org/selfreg" target="_blank"><b>temporary card online</b></a>. There is no charge to get a card.
+You must present identification showing your current address. Any Ohio resident can get a card, you do not need to live in Mentor. If your photo ID does not have your current address, a personal check, utility bill, envelope or post card with a recent postmark showing your current address is required. 
+You must be 18 years of age to get an Adult card; Children cards require a guardian's signature. Once you have your card, you can use it at any of our locations.
+Please call us immediately if your card
+is lost or stolen. If you're getting a message that your card is going to expire, please call the library at 555.555.5555.</template>
+</category>
+
+<category>
+<pattern>OLREG</pattern>
+<template>You can get a <a href="https://catalog.xxxxxxxxxx.org/selfreg" target="_blank"><b>temporary card online</b></a>. Here, I'll open the form for you.
+Once you have filled out the form, you must show photo identification and proof of current address to a staff member at the Circulation Desk to receive your library card
+You may use your new temporary account to place 5 holds on items in the Metro Public Library catalog. Once you get your permanent card, you may place up to 35 holds, including holds on 
+OhioLINK or SearchOhio items, and also use our databases and downloadable media. </template>
+</category>
+
+<category>
+<pattern>ACCTLOGIN</pattern>
+<template>Here's where you log in. If you don't see it, turn off your pop up blocker and ask again. Enter your name in the upper field and your library card number in the lower field. You can enter just your last name if you'd like.
+<think>
+<set name="search">patroninfo</set>
+</think></template>
+</category>
+
+<category>
+<pattern>ACCTSTATUS</pattern>
+<template>To see a list of the items you've checked out, items you have on hold, or any fines you might have, log in to <a href="https://catalog.xxxxxxxxxx.org/patroninfo" target="_blank"><b>your account</b></a>.</template>
+</category>
+
+<category>
+<pattern>ACCTSTATUSHLD</pattern>
+<template>you may have a total of 35 items on hold, including SearchOhio items. You may have up to 5 OhioLINK items on hold. To see a list of the items you have on hold, log in to <a href="https://catalog.xxxxxxxxxx.org/patroninfo" target="_blank"><b>your account</b></a>.</template>
+</category>
+
+
+<category>
+<pattern>CHKDOUT</pattern>
+<template>To see a list of the items you've checked out, log in to <a href="https://catalog.xxxxxxxxxx.org/patroninfo" target="_blank"><b>your account</b></a>. You'll find a list there.</template>
+</category>
+
+<category>
+<pattern>LNKDACCTS</pattern>
+<template>Accounts may be linked for the purposes of renewing, paying fines, or checking out holds on another account. To link adult accounts, a permission slip must 
+be signed by all those being linked. These slips are available at the Main Library and both branches. Signed permission is not required to link children's accounts with those of their parents.</template>
+</category>
+
+<category>
+<pattern>SHRDACCTS</pattern>
+<template>It's best not to share library cards or accounts, but it may be desirable for you to link accounts. Accounts may be linked for the purposes of renewing, paying fines, or checking out holds on another account. To link adult accounts, a permission slip must 
+be signed by all those being linked. These slips are available at the Main Library and both branches. Signed permission is not required to link children's accounts with those of their parents.</template>
+</category>
+
+<category>
+<pattern>EXPACCT</pattern>
+<template><random><li>
+If you haven't used your card in a year or so, there's a good chance that it's expired. Try logging in to <a href="https://catalog.xxxxxxxxxx.org/patroninfo" target="_blank">
+<b>your account</b>
+</a> using the card. If you can't log in, call us to check your card's status. At this time, it is not possible to renew or reactivate your card online.</li>
+<li>If library cards are not used for a year, they will expire. You can test a card by logging in to <a href="https://catalog.xxxxxxxxxx.org/patroninfo" target="_blank">
+<b>your account</b>
+</a> using the card. If you can't log in, call us to check your card's status.</li>
+</random></template>
+</category>
+
+<category>
+<pattern>ACCTFAIL</pattern>
+<template>If you're having trouble logging on to your account, here are some tips. Enter all 14 digits of you card number without spaces.
+If you're using IE, please try Firefox. If you still can't log into your account, call us at 555.555.5555. If you haven't used your card in some time, you may need to get a new one.</template>
+</category>
+
+<category>
+<pattern>RECINUSE</pattern>
+<template>If you see the message "record in use," please call the library at 555.555.5555 for assistance. If you're already in the library, ask one of the staff for assistance.
+If you receive this message after regular business hours, please call us when we reopen.</template>
+</category>
+
+<category>
+<pattern>NOACCT</pattern>
+<template>No, you cannot access your account without your card number. I cannot look up your number for you. Please stop in the library for assistance or call us at 555.555.5555.</template>
+</category>
+
+<category>
+<pattern>CHKFNS</pattern>
+<template>Log in to <a href="https://catalog.xxxxxxxxxx.org/patroninfo" target="_blank"><b>your account</b></a> to see if you have any fines. If you have fines of $5.00 or more, you cannot check out items, place holds, or use our internet computers.
+Please call our circulation department at 555.555.5555 during regular business hours if you have questions about fines.</template>
+</category>
+
+<category>
+<pattern>INVALIDBC</pattern>
+<template>If you've gotten a message that your card number is invalid, please check the following. First, make sure you are using a Mentor
+Public Library card. You cannot log in using Greater Access, Cuyahoga County, CLEVNET, or other library cards. Second, please omit any spaces when
+your enter your 14 digit card number. If you still can't log in, call the library at 555.555.5555. If you haven't used your card in some time, you may need
+to get a new one. You cannot get a new card online.</template>
+</category>
+
+<category>
+<pattern>GOODST</pattern>
+<template>Accounts are in good standing when any fines or charges are less than $5.00.</template>
+</category>
+
+<category>
+<pattern>MYACCT</pattern>
+<template>Here's where you log in. If you don't see it, turn off your pop up blocker and ask again. Enter your name in the upper field and your library card number in the lower field. You can enter just your last name if you'd like.
+I can't give you your account number. Call the library if you need help with that.<br/>
+If you're having trouble logging on to your account, here are some tips. Enter all 14 digits of you card number without spaces.
+If you're using IE, please try Firefox. If you still can't log into your account, call us at 555.555.5555. If you haven't used your card in some time, you may need to get a new one.
+<think>
+<set name="search">patroninfo</set>
+</think></template>
+</category>
+
+<category>
+<pattern>NOTFAIL</pattern>
+<template>If you're not receiving email notices from us, it may be that our emails are getting caught in your spam filter. You need to "white list" our email address: mcirc@xxxxxxxxxx.org. You can find help with "white listing" <a href="http://www.quiltbus.com/whitelist.htm"><b>here</b></a>.
+If that doesn't help, please call the library at 555.555.5555 or email xxx.xxxxxx@xxxxxxxxxx.org.</template>
+</category>
+
+<category>
+<pattern>CONFID</pattern>
+<template>All adult records are protected under Ohio statute. If an adult or child wishes to pick up an item that was reserved with an adult library card, 
+they must present the library card that was used to place the hold, or a "linked" card before the item can be released. The same policy applies to renewal of items 
+checked out on an adult library card. The adult library card used to check-out the items, or a "linked" card must be presented for renewals, whether by phone or in person. 
+The library cannot make any exceptions to these rules. This policy was implemented on September 1, 2007 but does not pertain to juvenile records. 
+If you have any further questions please visit the Circulation Desk or call the library at 555.555.5555.</template>
+</category>
+
+<category>
+<pattern>SPM</pattern>
+<template>If you're not receiving email notices from us, it may be that our emails are getting caught in your spam filter. You need to "white list" our email address: mcirc@xxxxxxxxxx.org. 
+You can find help with "white listing" <a href="http://www.quiltbus.com/whitelist.htm"><b>here</b></a>.</template>
+</category>
+
+<category>
+<pattern>TXTNOT</pattern>
+<template>Sign up for Text Message Alerts by sending an email to <a href="mailto:xxxxxxx@xxxxxxxxxx.org" target="_blank"><b>xxxxxxx@xxxxxxxxxx.org</b></a> with the following info: 
+your email address (the one you'd like to use for library messages), your library card number (all 14 digits),
+your cell phone number, and your cell phone carrier. 
+After you sign up you'll start receiving short messages about items that are ready for pickup or due to be returned. (You cannot reply to these texts). 
+Texts will be sent daily at 11:00 am and at 7:00 pm, 7 days a week. 
+While this is a free service offered by the Library, you may incur per-message charges depending on your cell phone plan. Please contact your wireless provider for more details. 
+Library notices will still be sent by email, and the email notification will provide more detailed information about your items.</template>
+</category>
+
+<category>
+<pattern>EMAILNOT</pattern>
+<template>You can receive holds pickup, renewal, and other courtesy notices by email. Just send the
+email address you'd like to use for library messages and your library card number to <a href="mailto:xxxxxxx@xxxxxxxxxx.org" target="_blank"><b>xxxxxxx@xxxxxxxxxx.org</b></a>
+and we'll set up email notification for you.</template>
+</category>
+
+<category>
+<pattern>PRNTLSTS</pattern>
+<template>If you'd like to print a list of your holds or of the items you have checked out, use the print button near the top of the screen.</template>
+</category>
+
+<category>
+<pattern>XACCTINFO</pattern>
+<template>Account information such as your name, address, phone number, or email address can only be changed by a library staff member. Please call 555.555.5555 for assistance.</template>
+</category>
+
+<category>
+<pattern>RHIST</pattern>
+<template>You can keep a record of all the items you check out by activating your "Reading History."
+To do this, log into your account. To the right of your name is a series of buttons. Click the middle button
+marked "My Reading History" and opt in. You may opt out at any time. Once your reading history has been activated,
+your account will keep a record of all the items you check out.</template>
+</category>
+
+<category>
+<pattern>WHTDUE</pattern>
+<template>To see a list of the items you have checked out and when they're due, log in to <a href="https://catalog.xxxxxxxxxx.org/patroninfo" target="_blank"><b>your account</b></a>. 
+The items you have checked out and their due dates will be listed there.</template>
+</category>
+
+<category>
+<pattern>CANCO</pattern>
+<template>If you have a  Metro Public Library card in good standing, you can take out whatever you wish with the exception of reference materials, new magazines,
+and our laptop computers which are for library use only.</template>
+</category>
+
+<category>
+<pattern>ITMSONACCT</pattern>
+<template>Log in to <a href="https://catalog.xxxxxxxxxx.org/patroninfo" target="_blank"><b>Your Account</b></a>. After you've logged in, 
+you will be able to see your holds, fines, lists, and other information.</template>
+</category>
+
+<category>
+<pattern>LGOFF</pattern>
+<template>Don't forget to log out of your account when you are finished. This
+is especially important when you're using a computer in a public place. To log out of your account, click
+"log out" in the upper right corner of the screen.</template>
+</category>
+
+<category>
+<pattern>CLSTS</pattern>
+<template>You can create and save a list of titles for future request.</template>
+</category>
+
+<category>
+<pattern>RTNGS</pattern>
+<template>You can rate titles in our collection. We'll have a demo soon! In the meantime, ask one of the reference librarians
+to explain how to do this.</template>
+</category>
+
+<category>
+<pattern>SVSRCH</pattern>
+<template>You can set you account to remember your searches. We'll have a demo soon! In the meantime, ask one of the reference librarians
+to explain how to do this.
+</template>
+</category>
+
+<category>
+<pattern>SVACCTLOCALLY</pattern>
+<template>I think you would do that using your local browser settings. You should talk with Marlene Pelyhes about this. Her email address
+is xxx.xxxxxx@xxxxxxxxxx.org.
+</template>
+</category>
+
+<!--BESTSELLERS INFO-->
+
+<category>
+<pattern>BESTSLLRS</pattern>
+<template>You can find lists of best selling fiction and nonfiction <a href="http://www.booksite.com/texis/scripts/bookletter/fealists.html?sid=7353" target="_blank"><b>here</b></a>.
+You will also find award books for all ages and in many genres.
+</template>
+</category>
+
+<category>
+<pattern>OPRH BKS</pattern>
+<template>Follow the link for a list of <a href="http://library.booksite.com/xxxx/nl/?list=OPRAH1" target="_blank"><b>Oprah's books</b></a>.
+ Each title has a link, so you can check it's availability and place a hold.
+</template>
+</category>
+ 
+<category>
+<pattern>MPL CAT</pattern>
+<template>I'll open it for you. If you don't see our catalog, please turn off your pop-up blocker and ask me again.  
+Our catalog will open as a new window, or possibly as a new tab, depending on your browser settings.
+<think>
+<set name="search">mplcat</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>HOW2 CAT</pattern>
+<template>I suggest starting with a keyword search. Enter what you're looking for in a few words and press "submit."
+Follow this link if you'd like help <a href="http://catalog.xxxxxxxxxx.org/help" target="_blank"><b>using our catalog</b></a>.
+<br/>
+I'll open the catalog for you. If you don't see it, please turn off your pop-up blocker and ask me again.  
+Our catalog will open as a new window, or possibly as a new tab, depending on your browser settings.
+<think>
+<set name="search">mplcat</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>ITMDESCR</pattern>
+<template>You can get a basic description of each item in the item's record. The item record will have information such as
+the author, title, place and date of publication, size, ISBN, etc.
+</template>
+</category>
+
+<category>
+<pattern>SER</pattern>
+<template>I don't know every book in every series, but here's a website that can help you: <a href="http://ww2.kdl.org/libcat/whatsnext.asp" target="_blank"><b>KDL What's Next?</b></a>
+</template>
+</category>
+
+<!--CARD INFO-->
+
+<category>
+<pattern>CRDCOST</pattern>
+<template>There is no charge to get a library card, but replacement cards are $1.00.
+</template>
+</category>
+
+<category>
+<pattern>NEWCRD</pattern>
+<template>If you need to get a new library card, or a replacement card, please bring a photo ID and proof of address to the Main Library or either branch.
+There is no charge to get a card, replacement cards are $1.00.
+</template>
+</category>
+
+<category>
+<pattern>BCODE</pattern>
+<template>The barcode is on the back of your library card. lf you signed you card, the barcode is just below your signature.
+</template>
+</category>
+
+<category>
+<pattern>KIDSCRD</pattern>
+<template>Children of any age can get a library card; a parent or guardian's signature is required for everyone under 18 years old.
+</template>
+</category>
+
+<category>
+<pattern>LOSTCRD</pattern>
+<template>Card holders are responsible for all items borrowed unless the card is reported to the library as lost or stolen. If you lose your card, call the library immediately. You may get a replacement card for $1.00.
+Replacement cards are not available online.
+</template>
+</category>
+ 
+<category>
+<pattern>COWOCRD</pattern>
+<template>You must have your card to check out materials. We cannot look up your number for you; you cannot use a Drivers License to check out materials.
+</template>
+</category>
+
+<category>
+<pattern>TCRDS</pattern>
+<template>Please remember that the  Metro Public Library's Teacher card Program is a 
+Privilege allowing educators the opportunity to borrow materials for extended periods of time to accommodate their teaching needs. 
+Follow this link for more information about our <a href="http://www.xxxxxxxxxx.org/teachers.html" target="_blank"><b>loan policies for teacher's cards</b></a>. Apply for a teacher's card at the circulation desk - you must present identification showing your current address. 
+</template>
+</category>
+  
+<category>
+<pattern>AUTCOMP</pattern>
+<template>If you want to have your browser save your card number, try changing the autocomplete settings. Here are instructions for 
+<a href="http://www.computerhope.com/issues/ch000604.htm" target="_blank"><b>Internet Explorer</b></a>, here
+are instructions for <a href="http://support.mozilla.com/en-US/kb/Form%20autocomplete" target="_blank"><b>Firefox</b></a>. If you need more help, call the library at 555.555.5555.
+</template>
+</category>
+
+<category>
+<pattern>SHARECRDS</pattern>
+<template>You should not share your library card. All individuals wishing to use our library should have their own card. 
+</template>
+</category>
+
+<category>
+<pattern>APPTAB</pattern>
+<template>The application tab is a copy of your barcode that you can peal off
+and attach to the back of your driver's license or other convenient place. This may help to reduce the number of cards in your purse or wallet.
+</template>
+</category>
+
+<category>
+<pattern>NONMENT</pattern>
+<template>If you live in Ohio, you can get a library card. It doesn't matter if you live outside  or Lake County. Just stop in
+with your photo ID and proof of address. If you don't live in Ohio, you can still get a library card. A $10.00 deposit is required. Please stop in the library
+or call us at 555.555.5555 for more information. 
+</template>
+</category>
+
+<category>
+<pattern>NONMPLCRD</pattern>
+<template>You must have a  Metro Public Library card to use our services; 
+if you have a CLEVNET or Greater Access card, you must get a  Metro Public Library card to use our library.
+</template>
+</category>
+
+<category>
+<pattern>USELNKDCRD</pattern>
+<template>You can renew <star index="1"/> for your <star index="1"/><star index="2"/> if you have their card, or if your accounts are linked. To link adult accounts, a permission slip must 
+be signed by all those being linked. These slips are available at the Main Library and both branches. Signed permission is not required to link children's accounts with those of their parents. 
+</template>
+</category> 
+
+
+<!--CHILDREN'S SERVICES-->
+
+<category>
+<pattern>CHDEPT</pattern>
+<template>The Children's Department is on the second floor of the Main Library. All children's materials at the Main Library are on the second floor, 
+except for children's media which is in the ground floor Media Room. If you need help finding children's materials at one of our Branches,
+just ask one of our staff.
+</template>
+</category> 
+
+<category>
+<pattern>SRYTM</pattern>
+<template>
+<random>
+<li> Follow this link for a list of our current <a href="http://www.xxxxxxxxxx.org/pdfs/currentkids.pdf" target="_blank"><b>Children's Storytimes, Programs and Events</b></a>.
+You can sign up for these by using our <a href="http://www.xxxx.xxxx/evanced/lib/eventcalendar.asp?Lib=ALL" target="_blank"><b>Events Calendar</b></a>, or by calling us at 555.555.5555 extension 221.</li>
+<li>We have programs and Story Times for children of all ages.  Here's a <a href="http://www.xxxxxxxxxx.org/pdfs/currentkids.pdf"><b>complete schedule</b></a>. Sign up using the <a href="http://www.xxxx.xxxx/evanced/lib/eventcalendar.asp?Lib=ALL" target="_blank"><b>our calendar</b></a> or call us at 555.555.5555. 
+</li>
+</random>
+</template>
+</category> 
+
+<category>
+<pattern>P2R</pattern>
+<template>Children read to trained dogs. It's good practice for the kids because the dogs are nonjudgemental.
+Check our <a href="http://www.xxxxxxxxxx.org/children.html" target="_blank">
+<b>Children's pages</b></a> for the next Paws to Read.
+</template>
+</category> 
+  
+<category>
+<pattern>TDDLY</pattern>
+<template>Check our <a href="http://www.xxxxxxxxxx.org/children.html" target="_blank"><b>Children's pages</b></a> for Tiddlywinks times.
+</template>
+</category> 
+
+<category>
+<pattern>CHCONTESTS</pattern>
+<template>Check our <a href="http://www.xxxxxxxxxx.org/children.html" target="_blank">
+<b>Children's pages</b>
+</a> for information about Children's contests and events. You can also check <a href="http://www.xxxx.xxxx/evanced/lib/eventcalendar.asp?Lib=ALL" target="_blank"><b>our calendar</b></a>.
+</template>
+</category> 
+
+<category>
+<pattern>SRP</pattern>
+<template>You can find more info about our Reading Programs on our <a href="http://www.xxxxxxxxxx.org/children.html" target="_blank"><b>Children's pages</b></a>.
+</template>
+</category> 
+
+<category>
+<pattern>CHTHEATER</pattern>
+<template>The Children's Theater is on the second floor of the Main Library.
+</template>
+</category> 
+
+<category>
+<pattern>HMSCHL</pattern>
+<template>Our website has links that are useful for home schooling. You will find them <a href="http://www.xxxxxxxxxx.org/homeschoolers.html" target="_blank"><b>here</b></a>.
+</template>
+</category> 
+
+<category>
+<pattern>HMWRK</pattern>
+<template> <random>
+<li>Follow the link for <a href="http://www.xxxxxxxxxx.org/homework.html" target="_blank"><b>homework help</b></a>. If you're in the Main Library, we have a Homework Help area in our YA room. </li>
+<li>If you can't find what you need on our <a href="http://www.xxxxxxxxxx.org/homework.html" target="blank"><b>Homework Help Page</b></a>, call the library and ask for Reference.</li>
+<li>If you're in the Main Library, we have a Homework Help area in our YA room. If you need online help with your homework, start <a href="http://www.xxxxxxxxxx.org/homework.html" target="_blank"><b>here</b></a>.</li>
+<li>If you're in the Main Library, we have a Homework Help area in our YA room. If you're online, start <a href="http://www.xxxxxxxxxx.org/homework.html" target="_blank"><b>here</b></a>.</li>
+</random>
+</template>
+</category> 
+ 
+<category>
+<pattern>CHMEDIA</pattern>
+<template>When you are in the Main Library, all children's and family media is in the ground floor Media Room. If you're at one of our Branches, just ask one of the staff. If you are online, try looking in our <a href="http://catalog.xxxxxxxxxx.org" target="_blank"><b>catalog</b></a>.
+</template>
+</category> 
+
+<category>
+<pattern>CHMATS</pattern>
+<template>
+<random>
+<li>At the Main Library, all picture books are in the Children's Department on the second floor. The Branches also have picture
+books. Ask one of the Human Library Staff where they are.</li>
+<li>Picture books are in the Children's Department. That's the second floor of the Main Library. The Branches also have picture
+books. Ask one of the Branch Humans where they are.</li>
+</random>
+</template>
+</category> 
+
+<category>
+<pattern>ARLST</pattern>
+<template>
+<random>
+<li>We have reading lists from many of our local schools. 
+Here they are. If you don't see them, please turn off your pop-up blocker and ask me again. </li>
+<li>Here is a list of school reading lists. If you don't see them, please turn off your pop-up blocker and ask me again.</li>
+</random>
+<think>
+<set name="search">ARLSTs</set>
+</think>
+</template>
+</category> 
+
+<category>
+<pattern>TCHRSRC</pattern>
+<template>Try looking on our <a href="http://www.xxxxxxxxxx.org/teachers.html" target="blank"><b>teacher's page</b></a>. If you don't find anything there, ask one of the human librarians.
+</template>
+</category> 
+
+<category>
+<pattern>YAMAIN</pattern>
+<template>The Teen Area is on the first floor of the Main Library. All Teen or YA materials at the Main Library are on the first floor. We don't have separate YA areas at our Branches.
+If you need help finding YA materials at one of our Branches, just ask the staff. You can find programs for teens on our calendar.
+</template>
+</category> 
+
+<category>
+<pattern>UNATTKIDS</pattern>
+<template>Children who are eight years and younger must be accompanied at all times while visiting the library.
+Please see our <a href="http://www.xxxxxxxxxx.org/pdfs/MPL%20behavioral%20policy%20rev.%20Sept.2010.pdf" target="_blank"><b>Behavior Policy</b></a> for more information.
+</template>
+</category> 
+
+<category>
+<pattern>CALDCTT</pattern>
+<template>Follow this link for a list of <a href="http://library.booksite.com/xxxx/nl/?list=caldecott" target="_blank"><b>caldecott Award Winners</b></a> in our collection.
+</template>
+</category>
+
+<!--CIRC INFO-->
+
+<category>
+<pattern>WHERECO</pattern>
+<template>You can check out using the self checks or with the library staff at all of our locations. At the Main Library, you must check all media out in the Media Room.
+</template>
+</category>
+
+<category>
+<pattern>CO WFNS</pattern>
+<template>If you have fines of $5.00 or more, you cannot check out items, place holds, or use our internet computers.
+</template>
+</category>
+
+<category>
+<pattern>ACCT INUSE</pattern>
+<template>If you see the message "Account in use by system," please call the Main Library at 555.555.5555 as soon as possible. You may not be able to place 
+holds until this issue is corrected.
+</template>
+</category>
+
+<category>  
+<pattern>MYBCODE</pattern>
+<template>I cannot give you your library card number. Please call the library for assistance.
+</template>
+</category>
+
+<category>
+<pattern>PREF SRCHS</pattern>
+<template>You can set you account to remember your preferred searches. Call the library at 555.555.5555 for assistance.
+</template>
+</category>
+
+<category>
+<pattern>MY LSTS</pattern>
+<template>Log in to <a href="https://catalog.xxxxxxxxxx.org/patroninfo" target="_blank"><b>Your Account</b></a>. After you've logged in, click on the
+"My Lists" button.
+</template>
+</category>
+
+<category>
+<pattern>LST OF HLDS</pattern>
+<template>A list of the items you have on hold is in <a href="https://catalog.xxxxxxxxxx.org/patroninfo" target="_blank"><b>your account</b></a>. Log into <a href="https://catalog.xxxxxxxxxx.org/patroninfo" target="_blank"><b>your account</b></a> and you should see it on the first page.
+</template>
+</category>
+
+<category>
+<pattern>5DAYS</pattern>
+<template>Most holds are ready to pick up within five business days. There are many reasons why a hold may take longer than usual to be filled. 
+It would be best to speak with one of the library staff about this, either in person or by phone.
+</template>
+</category>
+
+<category>
+<pattern>TIME INTRANS</pattern>
+<template>Transit time depends on where the item is coming from. If it's coming from one of our branches, it could be as little as a day. 
+If it's an OhioLINK or SearchOhio item coming from another library in Ohio, it could be a week.
+</template>
+</category>
+
+<category>
+<pattern>BPU TIME</pattern>
+<template>You can have an item sent to any of our locations for pick up. When your holds are ready for pick up, you will receive a notice by phone, email, or text. You can specify the type of notice you receive
+by calling the library during regular business hours. If you are not receiving notices, please call us at 440.255.881.
+</template>
+</category>
+
+<category>
+<pattern>PU TIME</pattern>
+<template>You have one week to pick up items that are on the hold shelf. If you've requested a Kindle, Nook, or iPad, we'll hold it for you for three days.
+</template>
+</category>
+
+<category>
+<pattern>OVR RD RENWS</pattern>
+<template>If you have reached the maximum number of renewals, you'll have to return the item. We cannot override the maximum number of renewals.
+</template>
+</category>
+
+<category>
+<pattern>CHK DUE DATES</pattern>
+<template>To check the date that your items are due, log in to <a href="https://catalog.xxxxxxxxxx.org/patroninfo" target="_blank"><b>your account</b></a>. The items you have checked out and their due dates will be listed there.
+</template>
+</category> 
+
+<category>
+<pattern>MAXR</pattern>
+<template>If you have reached the maximum number of renewals, you'll have to return the item. We cannot override the maximum number of renewals.
+</template>
+</category> 
+
+<category>
+<pattern>LOANPERIODS</pattern>
+<template>Most  Metro Public Library items have a loan period of two weeks with four renewals, unless a hold has been placed on them. We do not have grace periods.
+Fiction DVDs circulate for one week and i Pads have a three day loan. Most Search Ohio items have a three week loan periods with three possible renewals.
+Search Ohio movies and DVDs have a one week loan period. Here's a <a href="http://www.xxxxxxxxxx.org/about.html" target="_blank"><b>nice chart</b></a>
+showing our loan periods and the number of renewals allowed for different types of items. You may renew online through the catalog or phone the library and ask for Circulation Services. 
+</template>
+</category> 
+
+<category>
+<pattern>CHCKDUEDATE</pattern>
+<template>To check the date that your items are due, log in to <a href="https://catalog.xxxxxxxxxx.org/patroninfo" target="_blank"><b>your account</b></a>. The items you have checked out and their due dates will be listed there.
+</template>
+</category> 
+
+<category>
+<pattern>GPERIODS</pattern>
+<template>We do not have have grace periods.
+</template>
+</category> 
+
+<category>
+<pattern>CIRCDEPT</pattern>
+<template>The Main Library Circulation Desk is on the ground floor. Their phone number is 555.555.5555 extension 251.
+</template>
+</category> 
+
+<category>
+<pattern>COQUANT</pattern>
+<template>The number of items you can check out depends on the kind of items that they are. There's a nice chart on <a href="http://www.xxxxxxxxxx.org/about.html" target="_blank"><b>this page</b></a> that will show you how
+many of each kind of item you can take out.
+</template>
+</category> 
+
+<category>
+<pattern>CIRCPOLICY</pattern>
+<template>Please follow this link for information about our <a href="http://www.xxxxxxxxxx.org/about.html" target="_blank"><b>circulation and library use policies</b></a>.
+</template>
+</category> 
+
+<category>
+<pattern>TCARDS</pattern>
+<template>Grab a cup of coffee, this is going to take a while. Please remember that the  Metro Public Library's Teacher Card Program is a Privilege allowing educators the opportunity to borrow materials for extended periods of time to accommodate their teaching needs. 
+The loan period for a teacher card is eight weeks. Items that can be circulated on a teacher card are as follows: <br/><br/>
+Print materials with the exception of Adult and YA fiction, <br/>
+Non- fiction or informational audiovisual materials,<br/>
+Books with Cassettes sets are permissible. <br/>
+Due to the generous loan period of eight weeks there are no renewals permitted on a Teacher Loan. Holiday books are available for the full six week period, however please be aware that the library managers reserve the right to limit the quantity taken during peak demand seasons.  
+If you have any other questions, please call the library at 555.555.5555.
+</template>
+</category> 
+
+<category>
+<pattern>VACEXT</pattern>
+<template><random>
+<li>If you are going on a vacation and would like to extended loan periods, please ask the Circulation Department before you check the items out.</li>
+<li>Ask at the circulation desk about extended loans. </li>
+</random>
+</template>
+</category> 
+ 
+<category> 
+<pattern>COLOC</pattern>
+<template>First, let's look at the Main Library. If you're checking out media, you must check it out in the Media Room. Nooks, i Pads, Laptops, and other electronic devices must be checked out
+and returned to the Computer Help Desk on the ground floor of the Main Library. Everything else may be checked out at circulation or at any of our self checks. At our Branches, you can either use 
+the self check or ask one of the humans to check out your items. Go ahead and ask them. They don't mind.
+</template>
+</category> 
+
+<category>
+<pattern>COMAGS</pattern>
+<template>You may check out magazines, but not the current issues. The current issues are in the binders.
+</template>
+</category> 
+
+<category>
+<pattern>COWOCRD</pattern>
+<template>You need to have your card in order to check out items. You cannot use your drivers license, credit card, or other object. We cannot look up your number for you.
+</template>
+</category> 
+
+<category>
+<pattern>LKUPCRD</pattern>
+<template>We cannot look up your number for you. If you need a new card, you can get one for $1.00.
+</template>
+</category> 
+
+<category>
+<pattern>DISPITEMS</pattern>
+<template>You may check out any items on display. You may not check out or remove any items in the display cases unless they are yours.
+</template>
+</category> 
+
+<category>
+<pattern>COPAPERS</pattern>
+<template>Newspapers do not circulate, you cannot check them out. We recycyle the old issues.
+</template>
+</category> 
+
+<category>
+<pattern>OFFCRT</pattern>
+<template>We cannot remove items from the carts behind the circulation desk. Taking random items from the carts will interrupt Circulation's workflow. In the end, this means slower delivery of services longer waiting times for everyone.
+</template>
+</category> 
+
+<category> 
+<pattern>COLPTP</pattern>
+<template>If you are an adult with a  Metro Public Library card in good standing, you can check out a laptop to use in the Main Library
+or at the Lake Branch Library. Ask at the Main Library Computer Help Desk or at the Lake Branch Library service counter.
+</template>
+</category> 
+
+<category>
+<pattern>SESSIONL</pattern>
+<template>You may use our computers for 60 minute sessions, with a maximum of 4 hours each day. The Main Library has several Express Terminals that are set for 20 minute sessions.
+Here's a link to our <a href="http://www.xxxxxxxxxx.org/internetpolicy.html"><b>computer and internet use policies</b></a>.
+</template>
+</category> 
+
+<category>
+<pattern>RNW4</pattern>
+<template>You can renew <star/> for another person if your accounts are linked. To link adult accounts, a permission slip must 
+be signed by all those being linked. These slips are available at the Main Library and both branches. Signed permission is not required to link children's accounts with those of their parents. 
+</template>
+</category> 
+
+<!--COMPUSE INFO-->
+
+<category>
+<pattern>COMPUSE</pattern>
+<template>You must have a  Metro Public Library card in good standing to use one of our computers. Use of the computers is on a first-come basis. You may use the computers for 60-minute sessions. If no other patrons are waiting, additional time may be granted up to a maximum of 4 hours per day. 
+At the Main Library, computers in the adult area are for those 14 years and older; computers in the children's area are for those under 14 years only. At the Branch Libraries, all computers may be
+used by any ages. 
+</template>
+</category>
+
+<category>
+<pattern>COMPAGE</pattern>
+<template>At the Main Library, computers in the adult area are for those 14 years and older; computers in the children's area are for those under 14 years only. Main Library laptops must be checked out by an adult. At the Branch Libraries, all computers may be
+used by all ages.
+</template>
+</category>
+
+<category>
+<pattern>COMPPOLICY</pattern>
+<template>Here's a link to our <a href="http://www.xxxxxxxxxx.org/internetpolicy.html"><b>computer and internet use policies</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>SESSIONL</pattern>
+<template>You may use our computers for 60 minute sessions, with a maximum of 4 hours each day. The Main Library has several Express Terminals that are set for 20 minute sessions.
+Here's a link to our <a href="http://www.xxxxxxxxxx.org/internetpolicy.html"><b>computer and internet use policies</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>COMPSU</pattern>
+<template>At the Main Library, you can sign in to an open computer yourself, or ask the staff to help you. At the Branches, the staff will have to scan your library card to assign 
+a computer to you. You can reserve a computer at the library or by phone, 555.555.5555. At this time, you cannot reserve a 
+computer online. You will need a library card in good standing to use our computers.
+</template>
+</category>
+
+<category>
+<pattern>COMPCO</pattern>
+<template>We do not have computers for you to check out and take home, they are for library use only. Even the laptops.
+</template>
+</category>
+
+<category>
+<pattern>COMPCLASS</pattern>
+<template>The Library holds regular computer classes at the Main Library and at the Lake Branch Library. It's best to call the library for details. We also offer basic computer classes through the <a href="http://www.connectohio.org/consumer_training/" target="_blank"><b>ECO grant</b></a>. For more information about 
+these classes, their content, and how to register for them, please call the Main Library at 555.555.5555. You may also be interested in Connect Ohio's "self paced"
+online computer classes. Follow <a href="http://eco.connectohio.org/" target="_blank"><b>this link</b></a> for more information. You must create a free account using a web form to take the online instruction.
+</template>
+</category>
+
+<category>
+<pattern>ECOTR</pattern>
+<template>We offer basic computer classes through the <a href="http://www.connectohio.org/consumer_training/" target="_blank"><b>ECO grant</b></a>. For more information about 
+these classes, their content, and how to register for them, please call the Main Library at 555.555.5555. 
+You may also be interested in Connect Ohio's "self paced"
+online computer classes. Follow <a href="http://eco.connectohio.org/" target="_blank"><b>this link</b></a> for more information. You must create a free account using a web form to take the online instruction.
+</template>
+</category>
+
+<category>
+<pattern>GSTPASS</pattern>
+<template>You can get a guest pass to use our computers if your residence is outside Ohio. Please have your out of state ID ready when asking for a guest pass.
+If you are a resident of Ohio, you must have a  Metro Public Library card to use our computers. 
+</template>
+</category>
+
+<category>
+<pattern>HTSPT</pattern>
+<template>The Hot Spot is an area on the ground floor of the Main Library. It is from this point that our wireless originates. You do not need to sit in the Hot Spot to connect with our wireless; the signal reaches throughout the building. 
+The signal is not so strong, however, that it will reheat your coffee or pop popcorn.
+</template>
+</category>
+
+<category>
+<pattern>LPTPS</pattern>
+<template>You are welcome to use your own laptop in the library. Please note that the Lake and Headlands Branches do not have wireless. The Main or Lake Branch Libraries have laptops you can check out and use in the library. 
+Ask at the Main Library Computer Help Desk on the ground floor near the public PC area or follow this link for more information about the <a href="http://www.xxxxxxxxxx.org/edevice.html" target="_blank"><b>library laptops</b></a>.
+You can print from the library laptops, but not from your personal laptop. Please do not allow laptop cords to become a tripping hazard if you are plugging in to an outlet.
+</template>
+</category>
+
+<category>
+<pattern>MOLLPTP</pattern>
+<template>The Lake Branch Library has laptop computers that you may check out and use in the library. These laptops will connect to the internet and you can print from them.
+You must have a  Metro Public Library card in good standing to check out a laptop.
+</template>
+</category>
+
+<category>
+<pattern>HDLSLPTP</pattern>
+<template>The Headlands Branch Library does not have laptop computers for you to check out at this time. Laptops are available at the Main Library or at the Lake Branch Library.
+</template>
+</category>
+ 
+<category>
+<pattern>MOFFICE</pattern>
+<template>We have Microsoft Office 2003 or 2007 on all of our desktop computers, and Office 2007 on all of our laptop computers. If you don't know how to use it, one of the humans may be able to help you.
+</template>
+</category>
+
+<category>
+<pattern>SFTWARE</pattern>
+<template>You may not download and install software on the library's computers. We have Microsoft Office 2003 or 2007 on all of our desktop computers, and Office 2007 on all of our laptop computers. If you don't know how to use it, one of the humans may be able to help you.
+</template>
+</category>
+
+<category>
+<pattern>TYPEWR</pattern>
+<template>We no longer have any typewriters. All of our computers have Microsoft Office 2003 or 2007 if you need to do word processing.
+</template>
+</category>
+
+<category>
+<pattern>EXTSESSIONS</pattern>
+<template>You can extend your session in 15 minute increments as long as there are no reservations on that computer.
+</template>
+</category>
+
+<category>
+<pattern>INSTALLSFTWARE</pattern>
+<template>You cannot install any software or applications onto our computers.
+</template>
+</category>
+
+<category>
+<pattern>WIFI</pattern>
+<template> Metro Public Library provides free wireless access during regular library hours at the Main Library.
+We currently do not offer wireless at the Lake or Headlands Branches. At this time, you can't print through the wireless network. 
+If you need help connecting, our staff can provide some assistance depending on your hardware and operating system. 
+You can find more information <a href="http://www.xxxxxxxxxx.org/internetpolicy.html" target="*blank"><b>here</b></a>.
+</template>
+</category>
+ 
+<category>
+<pattern>FLOPS</pattern>
+<template>At the Main Library you can check out an external floppy drive at the reference desk. 
+The Library no longer sells floppy discs.
+</template>
+</category>
+
+<category>
+<pattern>USBS</pattern>
+<template>All library computers have usb ports.
+</template>
+</category>
+
+<category>
+<pattern>FLSHDR</pattern>
+<template>All library computers have usb ports. You can purchase flash drives at the Main Library for $6.50.
+</template>
+</category>
+
+<category>
+<pattern>SKYP</pattern>
+<template>If you have Skype on your own laptop, you may use it at the Main Library. Please show consideration for others by using a head set and by keeping
+your conversation at a reasonable level. Skype is also available on the laptops you can check out at the Main or Lake Branch Libraries. Call us during regular business hours if you'd like 
+more information.
+</template>
+</category>
+
+<!--CONTACT INFO-->
+
+<category>
+<pattern>MAIN PHON</pattern>
+<template>The phone number for the Main Library is 555.555.5555.
+</template>
+</category>
+ 
+<category>
+<pattern>HDLS PHON</pattern>
+<template>The phone number for the Headlands Branch Library is 440.257.2000.
+</template>
+</category>
+
+<category>
+<pattern>MOL PHON</pattern>
+<template>The phone number for the Headlands Branch Library is 440.257.2000.
+</template>
+</category>
+
+<category>
+<pattern>LH CONTACT</pattern>
+<template>You may email Lynn Hawkins at lynn.hawkins@xxxxxxxxxx.org or call her at 555.555.5555 extension 232.
+</template>
+</category>
+
+<category>
+<pattern>MCH CONTACT</pattern>
+<template>You may phone the Children's Department at 555.555.5555 extension 221.
+</template>
+</category>
+
+<category>
+<pattern>MCIRC CONTACT</pattern>
+<template>You may phone the Circulation Department at 555.555.5555 extension 251.
+</template>
+</category>
+
+<category>
+<pattern>FO CONTACT</pattern>
+<template>You may phone the Finance Department at 555.555.5555 extension 2.
+</template>
+</category>
+
+<category>
+<pattern>FRNDS CONTACT</pattern>
+<template>You may phone our Friends Group at 555.555.5555 extension 236 or email them at friendsvolunteers@yahoo.com.
+</template>
+</category>
+
+<category>
+<pattern>HR CONTACT</pattern>
+<template>You may phone the Human Resources Department at 555.555.5555 extension 231.
+</template>
+</category>
+
+<category>
+<pattern>REF CONTACT</pattern>
+<template>You may contact the Reference Department by phone, 555.555.5555 extension 215 or email them a xxxxxxx@xxxxxxxxxx.org.
+</template>
+</category>
+
+<category>
+<pattern>DN CONTACT</pattern>
+<template>You can contact my creator by email. His email address is david.newyear@gmail.com.
+</template>
+</category>
+
+<category>
+<pattern>REFLIB CONTACT</pattern>
+<template>There are reference librarians at the Main Library during regular business hours, except on Sundays. You can call them at 555.555.5555 extension 215.
+If you need further assistance, follow this link to <a href="http://www.knowitnow.org/" target="_blank"><b>Know it Now</b></a> to reach a live human librarian anytime, day or night.
+</template>
+</category>
+
+<category>
+<pattern>WHO ORDERS *</pattern>
+<template>Members of the library staff order materials under the supervision of Barbara Hauer, our Collection Manager.</template>
+</category>
+
+<!--DAMAGED ITEM INFO-->
+
+<category>
+<pattern>DAMDVDCASE</pattern>
+<template>There is a $5.00 charge for locking DVD cases that are returned damaged.
+</template>
+</category>
+ 
+<category>
+<pattern>LSTITM</pattern>
+<template> If you lose or damage an item, please call us or stop in and let us know. The charge for lost items is the cost of the item, an additional $5.00 replacement and $5.00 billing fee.  </template>
+</category>
+
+<category>
+<pattern>RPLCE</pattern>
+<template>We are once again accepting replacement items for items that have been damaged or lost. 
+The only criteria for the replacement is that it must be the same format for the original item. 
+For example, if you are replacing a CD it must be with that CD, a book with a book, etc. 
+</template>
+</category>
+ 
+<!--DATABASE INFO-->
+
+<category>
+<pattern>ALLD</pattern>
+<template>We have AllData available at all of our locations. You have to be in the library to use it. We have auto repair manuals, too, take a look in our catalog.
+<think>
+<set name="searcharg">AUTO REPAIR</set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>ANCEST</pattern>
+<template>We have <a href="http://www.ancestrylibrary.com/default.aspx" target="blank"><b>Ancestry Library Edition</b></a>, but it's only for use in the library, at the Main Library or either branch. You can't use it from home. 
+</template>
+</category>
+
+<category>
+<pattern>BKFLX</pattern>
+<template>Yes, we have BookFlix. You'll need your library card to use it. You can get to BookFlix by following this <a href="http://auth.grolier.com/cgi-libscript/entrypoint.pl?118224andlink=bkflix.grolier.com" target="_blank"><b>link</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>CONRPTS</pattern>
+<template>I haven't been programmed to search Consumer Reports for you yet, but here's a link to their <a href="http://oplin.org/databases/proxy/proxy.php?qurl=http://search.ebscohost.com/
+login.aspx?authtype=ip,uid%26site=crcro%26return=y
+" target="_blank"><b>website</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>EBSCO</pattern>
+<template>Follow this link to the <a href="http://www.oplin.org/ebsco" target="_blank"><b>EBSCO database</b></a>. If you're using EBSCO from home,
+you'll have to type in your  Metro Public Library card number to gain access. Just typr it in, all 14 digits with no spaces.
+</template>
+</category>
+ 
+<category> 
+<pattern>KIN</pattern>
+<template>
+<random>
+<li>If you really want to converse with a human librarian, I'll open the interface for Know it Now. If you don't see it, turn off your popup blocker and ask me again.
+</li>
+<li>Looking for Know it Now? Here it is! If you don't see it, turn off your popup blocker and ask me again.
+</li>
+<li>I'll open Know it Now for you. If you don't see it, turn off your popup blocker and ask me again.
+</li>
+</random>
+<think>
+<set name="search">kin</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>LFORMS</pattern>
+<template>We have a legal form database. You can use it from home to find and print legal forms. I'll open it for you. If you don't see it, turn off your pop up blocker and ask me again. If you'd like help using the database, follow this link to watch a short <a href="http://www.gale.cengage.com/media/training/Legalforms_demo/Legalforms_demo.htm" target="_blank"><b>online tutorial</b></a>.
+<think>
+<set name="search">lglfrms</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>LRNEXP</pattern>
+<template>Follow this link to the <a href="http://www.learnatest.com/LEL/index.cfm/" target="_blank"><b>Learning Express Library</b></a>.
+</template>
+</category>  
+
+<category>
+<pattern>MNGO</pattern>
+<template>Here's the link to <a href="http://oplin.org/databases/proxy/proxy.php?qurl=http%3A%2F%2Foplin.org%2Fmango" target="_blank"><b>Mango Languages</b></a>. You'll have to create a profile to
+use it. Creating the profile takes a minute, but it's a great way to learn another language, and it's free.
+</template>
+</category>
+
+<category>
+<pattern>NEWSBNK2</pattern>
+<template>You can find many newspapers, newspaper articles, and obituaries in Newsbank. Follow this link to the <a href="http://www.xxxxxxxxxx.org/subjects.html#NEWS" target="_blank"><b>Newsbank Database</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>NEWSBNK</pattern>
+<template>Follow this link to the <a href="http://www.xxxxxxxxxx.org/subjects.html#NEWS" target="_blank"><b>Newsbank Database</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>NOVLST</pattern>
+<template>Follow this link to <a href="http://oplin.org/auth?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid%26profile=novplus" target="_blank"><b>NoveList Plus</b></a>
+or this link to <a href="http://oplin.org/auth?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid%26profile=novpk8" target="_blank"><b>NoveList K-8 Plus</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>REFUSA</pattern>
+<template>We have the Reference USA database and you can use it from home. I'll open it for you. If you don't see it, turn off your pop up blocker and ask me again.
+<think>
+<set name="search">refusa</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>RGUIDES</pattern>
+<template>Our library does not have any online research guides at this time, but Lakeland Community College has some that may be helpful. 
+Follow this <a href="http://library.lakelandcc.edu/findsources.html#SUBJ" target="_blank"><b>link</b></a> and pick your subject.
+</template>
+</category>
+
+<category>
+<pattern>RMATS</pattern>
+<template>We are a popular reading library and have limited research materials. You can find a list of our databases <a href="http://www.xxxxxxxxxx.org/find.html" target="_blank"><b>here</b></a>. If you do not see the database you're looking for on this list,
+our reference staff may be able to help you find the information you're looking for. Call them at 555.555.5555 extension 215 during regular business hours. Or for immediate
+assistance, follow this link to <a href="http://www.knowitnow.org/" target="_blank"><b>Know it Now</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>WALPH</pattern>
+<template>I can take you to Wolfram Alpha. It's an extraordinary database! I'll open it for you. If you don't see it, turn off your pop up blocker and ask me again.
+<think>
+<set name="search">walpha</set>
+</think>
+</template>
+</category>
+
+<!--DEWEY-->
+
+<category>
+<pattern>DEWEY</pattern>
+<template>Dewey is a good friend of mine. She is the Akron-Summit County Metro Public Library's cat bot. You can visit her <a href="http://www.akronlibrary.org/dewey.html" target="_blank"><b>here</b></a>. She'll be very glad to talk with you.</template>
+</category>
+ 
+<!--FINE INFO-->
+
+<category>
+<pattern>FINESMRY</pattern>
+<template>Fines are fifty cents per day for DVDs, DVD sets, OhioLINK and SearchOhio items. Overdue Nooks and i Pads are five dollars per day. The fine for everything else is ten cents per day. If you
+have a fine of $5.00 or more, you cannot place holds, check out items, or access the internet using our computers. Fine policies apply to everyone equally, regardless of age. You can pay your fines at any of our locations or online. You can pay with cash, check, or credit card. Here's a <a href="http://www.xxxxxxxxxx.org/demos/onlinepayment.wmv" target="_blank">
+<b>demo</b>
+</a> showing you
+how to pay online. You can log in to <a href="https://catalog.xxxxxxxxxx.org/patroninfo" target="_blank"><b>your account</b></a> to see if you have any fines or fees. 
+We are not currently offering fine forgiveness. If you have questions about fines, please call the library during regular business hours at 555.555.5555.</template>
+</category>
+
+<category>
+<pattern>FINESREDIRECT</pattern>
+<template>OK. What would you like to know about our fees or charges?
+<think><set name="topic">FEES</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>BNKRPT</pattern>
+<template>It would be best for you to contact our circulation department and discuss this with them. Their phone number is 555.555.5555 extension 251.</template>
+</category>
+
+<category>
+<pattern>SNFNS</pattern>
+<template>We do not have special loan periods or fine policies for seniors. Our circulation and fine policies apply to everyone equally, regardless of age.</template>
+</category>
+
+<category>
+<pattern>FNFRG</pattern>
+<template>We do not currently offer fine forgiveness, but our circulation department will try to work with you in special situations.</template>
+</category>
+
+<category>
+<pattern>FXING</pattern>
+<template>The charge to send faxes are $1.00 per page for local calls and $2.00 for the first page of a long distance call and $1.00 for additional pages. Charges for receiving faxes are $1.00 per page. 
+-on-the-Lake and Headlands Branches can send, but not receive, faxes.</template>
+</category>
+
+<category>
+<pattern>GPER</pattern>
+<template>There are no grace periods.</template>
+</category>
+
+<category>
+<pattern>ADBKFN</pattern>
+<template>Overdue audiobooks are .10 per day unless they are from SearchOhio. Overdue OhioLINK and SearchOhio audiobooks are .50 per day.
+You can log in to <a href="https://catalog.xxxxxxxxxx.org/patroninfo" target="_blank"><b>your account</b></a> to see if you have any fines or fees.</template>
+</category>
+
+<category>
+<pattern>BKFN</pattern>
+<template>Overdue books are .10 per day unless they are from OhioLINK or SearchOhio. Overdue OhioLINK or SearchOhio books are .50 per day. You can log in to <a href="https://catalog.xxxxxxxxxx.org/patroninfo" target="_blank"><b>your account</b></a> to see if you have any fines or fees.</template>
+</category>
+
+<category>
+<pattern>CDFN</pattern>
+<template>Overdue CDs are .10 per day. OhioLINK and SearchOhio CDs are .50 per day. You can log in to <a href="https://catalog.xxxxxxxxxx.org/patroninfo" target="_blank"><b>your account</b></a> to see if you have any fines or fees.</template>
+</category>
+
+<category>
+<pattern>DVDFN</pattern>
+<template>Overdue DVDs are .50 per day. That includes OhioLINK and SearchOhio DVDs. You can log in to <a href="https://catalog.xxxxxxxxxx.org/patroninfo" target="_blank"><b>your account</b></a> to see if you have any fines or fees.</template>
+</category>
+
+<category>
+<pattern>ERDRFN</pattern>
+<template>Overdue iPads, Kindles, and Nooks are $5.00 per day. You can log in to <a href="https://catalog.xxxxxxxxxx.org/patroninfo" target="_blank"><b>your account</b></a> to see if you have any fines or fees.</template>
+</category>
+
+<category>
+<pattern>EBKFN</pattern>
+<template>here are no late fees for eBooks. They just go away when their time is up. Pretty neat, huh?</template>
+</category>
+
+<category>
+<pattern>CHKFNS</pattern>
+<template>To check on your fines, log in to <a href="https://catalog.xxxxxxxxxx.org/patroninfo" target="_blank"><b>your account</b></a>. Any fines will be indicated there.</template>
+</category>
+
+<category>
+<pattern>LSTRPL</pattern>
+<template>If you lose or damage an item, you may have to pay for a replacement. We take cash, credit, or debit cards. Please speak with our circulation department during regular business hours at 555.555.5555 extension 251.  Please note that replacement charges for lost OhioLINK or SearchOhio items may be higher.</template>
+</category>
+
+<category>
+<pattern>OLFN</pattern>
+<template>Fines for all overdue OhioLINK items are fifty cents per day. Please note that, due to OhioLINK policy, the replacement charge for a lost OhioLINK item is $125.00.</template>
+</category>
+
+<category>
+<pattern>SOFN</pattern>
+<template>Fines for all overdue SearchOhio items are fifty cents per day.</template>
+</category>
+
+<category>
+<pattern>PYMT</pattern>
+<template>You can pay your fines at any of our locations using cash, check, or credit card. You can pay your fines online using a credit or debit card. Here's a 
+<a href="http://www.xxxxxxxxxx.org/demos/onlinepayment.wmv" target="_blank"><b>demo</b></a> showing you
+how to pay online. You can pay another person's fines online. You can pay their fines in person with their card, or in person without their card if your accounts are linked. To link adult accounts, a permission slip must 
+be signed by all those being linked. These slips are available at the Main Library and both branches. Signed permission is not required to link children's accounts with those of their parents.</template>
+</category>
+
+<category>
+<pattern>INCOLL</pattern>
+<template>If you have questions about a bill that you've received from Unique Management, please go to <a href="http://www.xxxxxxxxxx.org/fines.html" target="_blank"><b>this page</b></a> for more information. You can also call the Main Library at 555.555.5555 and ask for Pam Rose at extension 204.</template>
+</category>
+
+<category>
+<pattern>XPAY</pattern>
+<template>If your fines are more than $5.00, you will not be able to check out materials or use the computers. If your fines are over $25.00, we'll mail you a bill. If your account is still over $25.00 after 10 days, your account will go to collections. You can read more about the billing process <a href="http://www.xxxxxxxxxx.org/fines.html" target="_blank"><b>here</b></a>.</template>
+</category>
+
+<category>
+<pattern>XPAY JAIL</pattern>
+<template>We haven't had anyone thrown in jail. Yet...
+</template>
+</category>
+
+<!--FREEGAL-->
+
+<category>
+<pattern>FREEGL</pattern>
+<template>You can download up to five tracks each week using Freegal. Access Freegal Music by clicking any of the Freegal logos or links on our website, or by following <a href="http://www.freegalmusic.com/users/indlogin" target="_blank"><b>this link</b></a>.
+Once you are on the Freegal login page, please enter your  Metro Public Library card number, all fourteen digits with no spaces. 
+Your  Metro Public Library account must be in good standing (less than $5.00 in fines or fees) to use Freegal. 
+You can find more info about using Freegal on our <a href="http://www.xxxxxxxxxx.org/freegalintro.html" target="_blank"><b>Intro to Freegal</b></a> page. You can find solutions to the most common tech questions on our <a href="http://www.xxxxxxxxxx.org/freegalFAQs.html" target="_blank"><b>Freegal Troubleshooting</b></a> page.
+</template>
+</category>
+
+<category>
+<pattern>FREEGL CONT</pattern>
+<template>Freegal's content is based upon an agreement with Sony Music Entertainment, owner of many different music labels. 
+The Freegal website has over 100 genres of music, thousands of artists, tens of thousands of albums, and hundreds of thousands of songs.
+New material is added daily.
+</template>
+</category>
+
+<!--FRIENDS GROUP INFO-->
+
+<category>
+<pattern>JNFRNDS</pattern>
+<template> Check our Friends Page for information about what they do and how to join. You can go to the page
+<a href="http://www.xxxxxxxxxx.org/friends.html" target="_blank"><b>here</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>BKSALE</pattern>
+<template> Check our Friends Page for information about book sales. You can go to the page
+<a href="http://www.xxxxxxxxxx.org/friends.html" target="_blank"><b>here</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>DN8</pattern>
+<template>You are always welcome to donate your unwanted books, CDs, DVDs, or VHS tapes to our library. The items you donate may be added to our collection or 
+may be sold by the Friends. <b>Please note that we cannot accept sets of Encyclopedias published before 2007</b>. If you would like to make a monetary donation, please use this <a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_flowandSESSION=_zt2a2azxa9XVdxc9u2QB9PO6kSsI9kWZMszHdRh3MvdyGXnE5HN5sCwKHianddispatch=5885d80a13c0db1ffc45dc241d84e953c6c47237de2bc4f5b43fafc6513a8a86" target="_blank"><b>link</b></a>.
+All donations are tax deductible. </template>
+</category>
+
+<category>
+<pattern>GFTS</pattern>
+<template>You are always welcome to donate your unwanted books to our library. If you would like to make a monetary donation, please use this <a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_flowandSESSION=_zt2a2azxa9XVdxc9u2QB9PO6kSsI9kWZMszHdRh3MvdyGXnE5HN5sCwKHianddispatch=5885d80a13c0db1ffc45dc241d84e953c6c47237de2bc4f5b43fafc6513a8a86"><b>link</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>FFREEBKS</pattern>
+<template>If you're asking about printed items, there is a cart of free books in the Main Library lobby. You may take any of them you wish. Most of the free books are 
+donations and are placed in the lobby by the <a href="http://www.xxxxxxxxxx.org.friends.html" target="_blank"><b>Friends of  Metro Public Library</b></a>.</template>
+</category>
+
+<category>
+<pattern>FRNDSMPL</pattern>
+<template>The Friends of  Metro Public Library make possible our Summer Reading Programs, Children's events, wireless internet service, new furniture, and me! 
+If you believe in the library and its services, please consider becoming a Friend of the  Metro Public Library. Find out more on the <a href="http://www.xxxxxxxxxx.org/friends.html" target="_blank"><b>Friend's Page</b></a>.  </template>
+</category>
+
+<category>
+<pattern>FRNDSBKSTR</pattern> 
+<template>
+The Friend's book store is on the ground floor of the Main Library and has an assortment of books and media for all ages. The store is open
+from 4:00 pm to 8:00 pm on Mondays,
+2:00 pm to 6:00 pm on Tuesdays,
+3:00 pm to 5:00 pm on Wednesdays,
+12 to 4:00 pm and 6 to 8:00 pm on Thursdays,
+12:00 pm to 4:00 pm on Fridays,
+12:00 pm - 4:30 pm on Saturdays, and 
+1:30 pm - 3:30 pm on Sundays. 
+</template>
+</category>
+
+<category>
+<pattern>VOLNTR</pattern>
+<template>If you are interested in volunteering at the Library, please contact Sue Fram at 555.555.5555 extension 233. 
+</template>
+</category>
+
+<category>
+<pattern>* SELL BOOKS</pattern>
+<template>The Friends of  Metro Public Library sell books and other items in their book store and at their book sales. You can find more information about each on the <a href="http://www.xxxxxxxxxx.org/friends.html" target="_blank"><b>Friends page</b></a>. </template>
+</category>
+
+<!--GENERAL INFO-->
+
+<category>
+<pattern>WCS</pattern>
+<template>At the Main Library there are restrooms in the lobby and children's restrooms on the second floor.
+If you're at a Branch Library, just ask one of the staff.
+</template>
+</category>
+  
+<category>
+<pattern>BBRDS</pattern>
+<template>All material posted on the Library's bulletin boards must have prior approval by the Library. Material for consideration may be dropped off two weeks in advance.
+</template>
+</category>
+
+<category>
+<pattern>DISPC</pattern>
+<template>The Main Library has two lovely display cases in the foyer. Displays change at the beginning of each month. To inquire about putting up a display, please call the Library at 555.555.5555 between 8:30 am and 2:30 pm, 
+Monday through Friday, and ask for Sue Fram at extension 233. The Branch Libraries also have space for displays. Please call the individual Branch to inquire.
+</template>
+</category>
+
+<category>
+<pattern>PRNTNG</pattern>
+<template>You can make both black and white and color prints at the Main Library. The costs are $.10 per page for single sided black and white, 
+$.20 per page for double sided black and white, $.25 per page for single sided color, and $.50 per page for double sided color. Both Branch Libraries have single sided, 
+black and white printing only. The cost is $.10 per page. You can pay with coins or singles and may make as many prints as you wish to pay for.  
+If you need help using our printers or copiers, ask one of the library staff for assistance.
+</template>
+</category>
+
+<category>
+<pattern>XROX</pattern>
+<template>You can make both black and white and color copies at the Main Library. 
+The costs are $.10 per page for single sided black and white, $.20 per page for double sided black and white, $.25 per page for single sided color, 
+and $.50 per page for double sided color. Both Branch Libraries have single sided, black and white copying only. The cost is $.10 per page. 
+</template>
+</category>
+
+<category>
+<pattern>PSSPRTS</pattern>
+<template> Metro Public Library does not process passports. Follow this link for 
+<a href="http://travel.state.gov/passport" target="_blank"><b>Travel.State.gov</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>PROCT</pattern>
+<template>The library staff can proctor exams. Please call the library for details and to schedule a time for your exam.
+</template>
+</category>
+
+<category>
+<pattern>FX</pattern>
+<template>You may send and receive faxes at the Main Library. The Main Library fax number is 440.205.1153.
+The charge to send faxes are $1.00 per page for local calls and $2.00 for the first page of a long distance call and $1.00 for additional pages. Charges for receiving faxes are $1.00 per page. 
+-on-the-Lake and Headlands Branches can send, but not receive, faxes.
+</template>
+</category>
+
+<category>
+<pattern>HMBND</pattern>
+<template>We have a homebound delivery service. Please call Pam Rose at 555.555.5555 extension 204 for more information.
+</template>
+</category>
+
+<category>
+<pattern>MTRMS</pattern>
+<template>You can find information about our Meeting Rooms <a href="http://www.xxxxxxxxxx.org/facilities.html" target="_blank"><b>here</b></a> and the policies for their use <a href="http://www.xxxxxxxxxx.org/pdfs/Meeting%20Room%20Policy%202009.pdf"><b>here</b></a>. 
+Request a meeting room by using our calendar or phone Pam Rose at the Main Library at 555.555.5555 extension 204.
+</template>
+</category>
+
+<category>
+<pattern>MGARF</pattern>
+<template>The Garfield Room in the Main Library basement is the largest of our meeting rooms. It will hold approximately 50 people. You can find the policies for Meeting Room use <a href="http://www.xxxxxxxxxx.org/pdfs/Meeting%20Room%20Policy%202009.pdf"><b>here</b></a>. 
+Request a meeting room by using our calendar or phone Pam Rose at the Main Library at 555.555.5555 extension 204.
+</template>
+</category>
+
+<category>
+<pattern>MCLEVE</pattern>
+<template>The Cleveland Room is on the second floor of the Main Library and will hold 20 to 25 people. 
+You can find the policies for Meeting Room use <a href="http://www.xxxxxxxxxx.org/pdfs/Meeting%20Room%20Policy%202009.pdf"><b>here</b></a>. 
+Request a meeting room by using our calendar or phone Pam Rose at the Main Library at 555.555.5555 extension 204.
+</template>
+</category>
+
+<category>
+<pattern>QRMS</pattern>
+<template>We do not currently have any designated quiet or study rooms at the Main Library or at our Branches.
+You may use one of our meeting rooms as a study room if it is available. Meeting rooms may not be reserved for
+individual study purposes. For more information about our rooms, please call 555.555.5555.
+</template>
+</category>
+
+<category>
+<pattern>NTRY</pattern>
+<template>We have several notaries on our staff. Notary service is free. Please call ahead to make sure a notary is available.
+</template>
+</category>
+
+<category>
+<pattern>PRKING</pattern>
+<template>There is additional parking for the Main Library on Sharonlee Drive. 
+If you are attending a program at the <a href="http://www.xxxxxxxxxx.org/readhouse.html" target="_blank"><b>Read House</b></a>, 
+please use the Main Library parking lot.
+</template>
+</category>
+
+<category>
+<pattern>SELFCHK</pattern>
+<template>The self checks are friends of mine. I like them. They have unfailingly good manners. 
+If you need help using the self checks, ask one of the human librarians.
+</template>
+</category>
+
+<category>
+<pattern>SCNNER</pattern>
+<template>The Main Library has a xerox machine that can scan documents to email. The Branches do not have any way to scan documents at this time.
+</template>
+</category>
+
+<category>
+<pattern>TAXFRMS</pattern>
+<template>Many 2010 Tax Forms are now available at the Main Library and at our Branches. Please call ahead to check on the availability of specific forms. Follow these links for <a href="http://www.irs.gov/formspubs/"><b>Federal</b></a>, <a href="http://tax.ohio.gov/forms/index.stm"><b>State</b></a>, or <a href="http://www.rita.to/municipal/mentor.htm"><b>Local</b></a> tax forms.
+</template>
+</category>
+
+<category>
+<pattern>TUTRING</pattern>
+<template>The Library does not offer tutoring or instruction of any type at this time. If you are a tutor and would like to use the library, please contact
+our Reference Department. The Library does not have a designated quiet room, but you may be able to use one of our meeting rooms if it's available. Meeting rooms may not be booked for individual tutoring.
+</template>
+</category>
+
+<category>
+<pattern>VREG</pattern>
+<template>You may pick up a voter registration form at the Main Library, at either Branch, or <a href="http://www.sos.state.oh.us/sos/upload/publications/election/VRform.pdf" target="blank"><b>online</b></a>. We also have absentee ballot forms, as well. For more information about voter registration in Ohio, 
+follow this <a href="http://www.sos.state.oh.us/elections/voterInformation/regToVote.aspx" target="_blank"><b>link</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>ABSBALLOT</pattern>
+<template>You may pick up an absentee ballot form at the Main Library or at either Branch, or <a href="http://www.sos.state.oh.us/sos/upload/elections/forms/11-A.pdf" target="_blank"><b>online</b></a>. For more information about absentee voting in Ohio, follow this <a href="http://www.sos.state.oh.us/elections/voterInformation/absentee.aspx" target="_blank"><b>link</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>USB BUY</pattern>
+<template>You are welcome to use USB drives on our computers. If you don't have one,
+you can purchase one at the Main Library for $6.50.
+</template>
+</category>
+
+<category>
+<pattern>HEADPHN</pattern>
+<template>You are welcome to use your own headphones at the library. If you don't have your own, we have headphones for children to use in our Main Library Children's Department. We do not have headphones for adults to use, but we do have earbuds
+that you may purchase for $1.00.
+</template>
+</category>
+
+<category>
+<pattern>TBLS</pattern>
+<template>All of our locations have tables, chairs, and other assorted furniture. The furniture is available on a first come first served basis; you may not reserve any of it or check it out to take home. The Main Library
+has a number of study carrels on the ground floor. They are also available on a first come basis and may not be reserved.
+</template>
+</category>
+
+<category>
+<pattern>ADA</pattern>
+<template>All of our locations are A D A compliant and handicap accessible.
+</template>
+</category>
+
+<category>
+<pattern>L VTR</pattern>
+<template>The Main Library has an elevator serving all floors. There's nowhere to take an elevator at the branches, both have a single floor for the public. I suppose we could
+install them to go to the roof, but that would be silly.
+</template>
+</category>
+
+<category>
+<pattern>III ILS</pattern>
+<template>Our library uses the Millennium I L S software desinged by Innovative Interfaces.
+</template>
+</category>
+
+<category>
+<pattern>COLLDEVPOLICY</pattern>
+<template>Copies of our collection development policy are not currently available online. If you'd like a printed copy, ask at the Main Library reference desk.
+</template>
+</category>
+
+<category>
+<pattern>BEHAVIORPOLICY</pattern>
+<template>Here is a copy of our <a href="http://www.xxxxxxxxxx.org/pdfs/MPL%20behavioral%20policy%20rev.%20Sept.2010.pdf" target="_blank"><b>behavior policy</b></a>. You'll need Adobe Reader to view it.
+</template>
+</category>
+
+<category>
+<pattern>MPLBUDGET</pattern>
+<template>The Library's budget is not available online. If you would like detailed information about our budget,
+submit a public records request in writing and be specific.
+</template>
+</category>
+
+<category>
+<pattern>CELLPHNS</pattern>
+<template>All cell phones, beepers, and other communication devices should be set to vibrate or on low tones before
+entering the library, and extended conversations should be moved to the library foyer. There is a pay phone in the Main Library foyer.
+</template>
+</category>
+
+<category>
+<pattern>ANMLS</pattern>
+<template>Service dogs are allowed in all of the Library's locations. We request that you do not bring pets or other animals
+into the library. 
+</template>
+</category>
+
+<category>
+<pattern>HMSTR</pattern>
+<template>We no longer have a hamster. We have a hermit crab, instead. The crab doesn't
+have a name, we just refer to it as "the hermit crab."
+</template>
+</category>
+
+<category>
+<pattern>WRK MPL</pattern>
+<template>Information about employment, including openings at our library, is on our <a href="http://www.xxxxxxxxxx.org/employment.html" target="_blank"><b>employment page</b></a>.
+Our reference staff can offer limited resume assistance; we do not currently offer help with interview preparation.
+</template>
+</category>
+
+<category>
+<pattern>RES HELP</pattern>
+<template>Our reference staff can offer limited resume assistance; we do not currently offer help with interview preparation. I suggest you contact <a href="http://www.lake1stop.org/" target="_blank"><b>Lake One Stop</b></a>
+for these.
+</template>
+</category>
+
+<category>
+<pattern>FB</pattern>
+<template>Yes,  Metro Public Library is on Facebook. Here's the <a href="http://www.facebook.com/pages/-OH/-Public-Library/70568696904" target="_blank"><b>link</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>TWTTR</pattern>
+<template>Yes, the Library is on Twitter. Here's the <a href="http://twitter.com/MentorPL" target="_blank"><b>link</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>UTBE</pattern>
+<template>Yes, we have a YouTube Channel. Take a look <a href="http://www.youtube.com/MentorPublicLib" target="_blank"><b>here</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>BLGS</pattern>
+<template>We have a number of blogs at MPL. <a href="
+http://mplreader.blogspot.com/" target="_blank"><b>'s Reader</b></a> is a reader's advisory blog where you'll find good books off the beaten path.  
+<a href="http://mpltweens.blogspot.com/" target="_blank"><b>Totally Tweens</b></a> presents the freshest information and commentaries on books, 
+movies and music for tweens and teens. I have one of my own, too. You can see it <a href="http://emmathemplcatbot.blogspot.com/" target="_blank"><b>here</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>FD N LIB</pattern>
+<template>You may bring covered drinks into the Main Library. Food and drink are not allowed in the Branch Libraries. We do not have any vending machines. Please do not eat while using our computers. It's very hard to remove crumbs, cheeze-whiz, and egg salad from the keyboards.
+</template>
+</category>
+
+<category>
+<pattern>LST FND</pattern>
+<template>We have lost and found boxes at all of our locations. If you've lost something, ask one of the Library staff for assistance.
+</template>
+</category>
+
+<category>
+<pattern>MPL MISS</pattern>
+<template> Metro Public Library is your community library. We foster lifelong enrichment by providing materials, services, and programs for literacy, learning, and pleasure in an environment of intellectual freedom and confidentiality.
+</template>
+</category>
+
+<category>
+<pattern>STATNRY</pattern>
+<template>The library does not stock stationary items. We do have flash drives, ear buds, and CD-Rs 
+available for purchase at the Main Library. 
+</template>
+</category>
+
+<category>
+<pattern>SPEC COLL</pattern>
+<template>
+<random>
+<li>We are a popular reading library. We do not have any special collections. Not even local history.</li>
+<li>We do not have any special collections. We are a popular reading library.</li>
+<li>Our library does not have any special collections. We have a wide variety of popular materials.</li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern>PETITS</pattern>
+<template>Individuals or groups of individuals requesting signatures on petitions that are in the interest of the general public or for initiatives intended for the ballot in a general election are currently permitted by  Metro Public Library on the sidewalks and other outdoor public areas around the library as long as the activity does not interfere with patrons accessing the library entrances or library services. 
+Petitioners are not permitted to: <br/><br/>
+Block patron access to the library, <br/>
+Harass patrons in an effort to obtain signatures, <br/>
+Intimate that the  Metro Public Library endorses or supports their cause, or<br/>
+Gather signatures inside the library.<br/><br/>
+The presence of petitioners on library property does not confer the library's approval, endorsement, or support of the petitioner's cause!
+</template>
+</category>
+
+<category>
+<pattern>MRM POL</pattern>
+<template>Please see our <a href="http://www.xxxxxxxxxx.org/pdfs/Meeting%20Room%20Policy%202009.pdf" target="_blank"><b>Meeting Room Guidelines</b></a> or call Sue Fram at 555.555.5555 extension 231.
+</template>
+</category>
+
+<category>
+<pattern>MPL HIST</pattern>
+<template>
+<random>
+<li>The Library was formed formed on February 22, 1819. Our current building was constructed in 1990. You can read more about the Library's history <a href="http://en.wikipedia.org/wiki/Mentor_Public_Library" target="_blank"><b>here</b></a>.</li>
+<li> Library Company was formed on February 22, 1819 and was the earliest library association recorded in Lake County. The Main Library was built in 1990. You can read more about the Library's history <a href="http://en.wikipedia.org/wiki/Mentor_Public_Library" target="_blank"><b>here</b></a>.</li>
+</random>
+</template>
+</category>
+
+<!--HOLDS INFO-->
+
+<category>
+<pattern>2HOT</pattern>
+<template>Copies of our most popular titles may be marked "2 Hot 2 Hold." This means that a hold may not be placed on that copy nor may it be renewed.
+We want to keep a number of copies of the most popular titles available for our walk-in customers. If a "2 Hot 2 Hold" item is available, it should be on its display.
+</template>
+</category>
+
+<category>
+<pattern>RNW2HOT</pattern>
+<template>Copies of our most popular titles may be marked "2 Hot 2 Hold." This means that a hold may not be placed on that copy nor may it be renewed.
+We want to keep a number of copies of the most popular titles available for our walk-in customers. If a "2 Hot 2 Hold" item is available, it should be on its display.
+</template>
+</category>
+
+<category>
+<pattern>PLACEHLDS</pattern>
+<template>Once you have found the item you wish to request in our catalog, click "request" in the upper part of the screen. 
+Now log in to your account. Choose your pick up location and click "submit." 
+You do not need to set the "Cancel if not filled by" date unless you are going away and will not be able to pick up the item when it is ready.
+</template>
+</category>
+
+<category>
+<pattern>REQBUT</pattern>
+<template>Look for the red check mark near the top left of your screen. If you need more help, ask one of
+our human librarians.
+</template>
+</category>
+
+<category>
+<pattern>READY2PU</pattern>
+<template>Most holds are ready for pickup within five business days. There are many reasons why a hold may take longer than usual to be filled. 
+It would be best to speak with one of the library staff about this, either in person or by phone.
+</template>
+</category>
+
+<category>
+<pattern>HOLDWAIT</pattern>
+<template>There are many reasons why a hold may take longer than usual to be filled. 
+It would be best to speak with one of the library staff about this, either in person or by phone.
+</template>
+</category>
+
+<category>
+<pattern>WAITLST</pattern>
+<template>You can place a hold on any item in our catalog, even items currently on order. If an item is
+not in our catalog, we cannot place you on a waiting list for that item. For example, we cannot place you on
+a waiting list for a movie not yet released on DVD.
+</template>
+</category>
+
+<category>
+<pattern>CNCLINTRANS</pattern>
+<template>A hold cannot be cancelled once the item is "in transit." Please
+wait until the item is ready for you to pick up, then call us and we'll cancel your hold.
+</template>
+</category>
+
+<category>
+<pattern>NOTFBY</pattern>
+<template>Once a hold has been placed, you cannot change the "cancel if not filled by" date. You may, however, be able to freeze the hold.
+If you need help with this, ask one of the humans that works in the library.
+</template>
+</category>
+
+<category>
+<pattern>TOTHOLDS</pattern>
+<template>You may have a total of 35 items on hold. You probably have reached the maximum number of holds. Call the library during regular business
+hours at 555.555.5555 for additional information and assistance.
+</template>
+</category>
+
+<category>
+<pattern>MPLACEH</pattern>
+<template>I cannot place holds for you; you can do that yourself. It's easy. 
+Here's a <a href="http://www.xxxxxxxxxx.org/MPLrequests.wmv" target="_blank"><b>demo</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>HLDBRANCHITEMS</pattern>
+<template>You can place holds on items if they're at another branch. You can pick up and return your holds at any of our locations, too.
+</template>
+</category>
+
+<category>
+<pattern>HLD2HOTS</pattern>
+<template>You may not place a hold on an item that's "2 Hot 2 Hold." As long as the item isn't "2 Hot 2 Hold," you may place a hold on it. 
+It's easy. Here's a <a href="http://www.xxxxxxxxxx.org/MPLrequests.wmv" target="_blank"><b>demo</b></a>.
+</template>
+</category>
+ 
+<category>
+<pattern>HLDIPDS</pattern>
+<template>You can place a hold on an iPad just like any other item. It's easy. 
+Just follow this <a href="http://catalog.xxxxxxxxxx.org/record=b1230577~S12" target="_blank"><b>link</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>HLDKINDLES</pattern>
+<template>You can place a hold on a Kindle just like any other item, follow this <a href="http://catalog.xxxxxxxxxx.org/record=b1269854~S12" target="_blank"><b>link</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>HLDNOOKS</pattern>
+<template>You can place a hold on a Nook just like any other item. It's easy. 
+Just follow this <a href="http://catalog.xxxxxxxxxx.org/record=b1228721~S12" target="_blank"><b>link</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>HLDSTATUS</pattern>
+<template>Log in to your account. Your account should open to a list of your items on hold. Look for the heading marked "status." 
+That will indicate the status of the hold.
+</template>
+</category>
+
+<category>
+<pattern>TRANSTIME</pattern>
+<template>It depends where the item is coming from. If it's coming from one of our branches, it could be as little as a day. 
+If it's a SearchOhio item coming from another library in Ohio, it could be a week.
+</template>
+</category>
+
+<category>
+<pattern>PHSTATUS</pattern>
+<template>"Place hold" status means that the item is not available and you need to place a hold on it. The item should be available in a day or two.
+</template>
+</category>
+
+<category>
+<pattern>XHOLDS</pattern>
+<template>You can cancel a hold by logging in to your account and checking the "cancel" box on the left of the item. Now click on "Update List." 
+You can even cancel a hold that's ready for you to pick up, unless it's a SearchOhio item.
+</template>
+</category>
+  
+<category>
+<pattern>FNDHOLDS</pattern>
+<template>You should see your holds when you log in to your account. 
+Look for the hold status. If the status is "in transit," the item is on its way. 
+When the item is ready for you to pick up, the status will be "ready to pick up." If the status says "on holdshelf," 
+another person has a hold on the item and it's being held for them.
+</template>
+</category>
+
+<category>
+<pattern>CHPULOC</pattern>
+<template>You can change the pick up location of a request as long as the item is not yet ready to pick up. 
+You cannot change the pick up location of Search Ohio items. You can do this online. First, log in to your account. 
+Find the item. Use the drop down menu under "Pickup Location" to change the pickup location. That's it.
+</template>
+</category>
+
+<category>
+<pattern>MEDIAHLDS</pattern>
+<template>At the Main Library, all media holds are in the ground floor Media Room. By "media" I mean DVDs, CDs, audiobooks, play aways, and similar objects.
+At the Branches, please ask one of the human staff for your holds.
+</template>
+</category>
+
+<category>
+<pattern>MEDIAHLDS2</pattern>
+<template>Once you have found the item you wish to request in our catalog, click "request" in the upper part of the screen. 
+Now log in to your account. Choose your pick up location and click "submit." 
+You do not need to set the "Cancel if not filled by" date unless you are going away and will not be able to pick up the item when it is ready. If you're picking up your media at the Main Library, it will be in the ground floor Media Room. 
+At the Branches, please ask one of the human staff for your holds.</template>
+</category>
+
+<category>
+<pattern>SOHLDS</pattern>
+<template>To request an item in SearchOhio:
+Find the title you want in SearchOhio and click on it. 
+Click on "request this title, " which is below the title, author, and publisher information. 
+You will be asked to choose your library; choose " PL." 
+Type in your name and library card number and then click "submit." 
+Look at the next screen to see if your request was accepted.
+</template>
+</category>
+
+<category>
+<pattern>PUTIME</pattern>
+<template>You have one week to pick up items that are on the hold shelf. If you've requested a Kindle, Nook, Ipad, or other electronic device, we'll hold it for you for three days.
+</template>
+</category>
+
+<category>
+<pattern>FRZHLDS</pattern>
+<template>Freezing a hold means that your position on the hold list is skipped over until the hold is "unfrozen," or reactivated. This allows you to stay on the hold list while requests are filled for others who are further down in the list. 
+It's easy. Try watching our <a href="http://www.xxxxxxxxxx.org/freezing%20holds/freezing%20holds/freezing%20holds.html" target="blank">
+<b>demo</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>THAWHLDS</pattern>
+<template>Unfreezing holds is easy. Log into your account, go to your holds, then select the titles you wish to unfreeze. Try watching our <a href="http://www.xxxxxxxxxx.org/freezing%20holds/freezing%20holds/freezing%20holds.html" target="blank"><b>demo</b></a>. 
+</template>
+</category>
+
+<category>
+<pattern>HLDLOCS</pattern>
+<template>At the Main Library, all media holds are in the ground floor Media Room. Other holds, like books, are on the hold shelves in the Hot Spot.
+At the Branches, holds are behind the servce counters.
+</template>
+</category>
+
+<category>
+<pattern>HLDTOTS</pattern>
+<template>You may have a total of 35 items on hold. You may have up to five OhioLink items on hold.
+</template>
+</category>
+
+<category>
+<pattern>HLDSUCCESS</pattern>
+<template>After specifying your pickup location and pressing "Submit," you should get a message indicating whether your hold was successful or not. 
+All successful holds should appear in your account under "Holds." If you don't see an item, 
+you can refresh your holds list by clicking "Return to your Record."
+</template>
+</category>
+
+<category>
+<pattern>HLDSHLFSTATUS</pattern>
+<template>"On Holdshelf" means that the item is on the holdshelf for another person who requested it. The item is not ready for you to pick up. 
+When it is, the status will be "Ready to pickup."
+</template>
+</category>
+
+<category>
+<pattern>HLDEXPDATE</pattern>
+<template>You can't change the hold expiration date once the hold has been placed. The humans who work at the library may be able to help you,
+ but you may have to cancel the hold, then place it once again with a different cancel date.
+</template>
+</category>
+ 
+<category>
+<pattern>HLDFAIL</pattern>
+<template>There are a few reasons why you may not be able to place a request. If your fines are five dollars or more, you cannot request items. Some items, like reference materials, do not circulate and may not
+be requested. If you are trying to request an item through SearchOhio and no copies are available, you will not be able to request the item. If none of these conditions apply,
+please call the library at 555.555.5555 for assistance.
+</template>
+</category>
+
+<category>
+<pattern>VACHLDS</pattern>
+<template>If you're going on vacation, you should freeze your holds. Freezing a hold means that the your position on the hold list is skipped over until the hold is "unfrozen," or reactivated. 
+This allows you to stay on the hold list while requests are filled for others who are further down in the list. 
+</template>
+</category>
+
+<category>
+<pattern>MHSPU</pattern>
+<template>If you are a student at  High School, we can send materials for you to pick up your materials at the High School. If you would like to do this, select 
+"MHS - for students" as the pick up location when placing your holds.
+</template>
+</category>
+  
+<category>
+<pattern>HLDNOTS</pattern>
+<template>When your holds are ready for pick up, you will receive a notice by phone, email, or text. You can specify the type of notice you receive
+by calling the library during regular business hours. If you are not receiving notices, please call us at 440.255.881.
+</template>
+</category>
+
+<category>
+<pattern>PREREL</pattern>
+<template>If an item is not in the catalog, you cannot place a hold on it. You cannot place holds on future releases or pre-orders,
+unless the item is in the catalog.
+</template>
+</category>
+
+<category>
+<pattern>LPTPHLDS</pattern>
+<template>Since the library laptops are for use only in the Main Library, you can only place a hold
+on one of them if you are in the Main Library. You cannot place a hold on a laptop from home.
+</template>
+</category>
+
+<category>
+<pattern>HLDCO</pattern>
+<template>If you want to place a hold on an item that's checked out, just go ahead and place the hold.
+It doesn't matter if the item is checked out.
+</template>
+</category>
+
+<category>
+<pattern>XOFYHLDS</pattern>
+<template>It means you are in line for the item. The item is not ready for you to pick up, we'll notify you when it is.
+</template>
+</category>
+
+<category>
+<pattern>TCRDHLDS</pattern>
+<template>Teacher cards cannot be used to place holds on items through OhioLINK or SearchOhio. If you'd like more information about this, please call the
+library during regular business hours at 555.555.5555.
+</template>
+</category>
+
+<category>
+<pattern>MAXHLDS</pattern>
+<template>With a permanent card, you may place a maximum of 35 holds, including holds on OhioLINK or SearchOhio items. With a temporary card you can place 5 holds.
+</template>
+</category>
+
+<category>
+<pattern>XADDTLHLDS</pattern>
+<template>You've probably reached the maximum number of holds, which is 35 including OhioLINK and SearchOhio requests. Call the library during regular business
+hours at 555.555.5555 for additional information and assistance.
+</template>
+</category>
+
+<category>
+<pattern>OTHERLOC</pattern>
+<template>If it's an item in our collection, but at another branch, just place your hold as usual.
+</template>
+</category>
+
+<category>
+<pattern>ILLHLDS</pattern>
+<template>
+
+</template>
+</category>
+
+<!--ILL INFO-->
+
+<category>
+<pattern>INLIBLN</pattern>
+<template>If the item you want isn't in our collection, try looking in <a href="http://ohpir.westervillelibrary.org/" target="_blank"><b>SearchOhio</b></a>
+or in <a href="http://olc1.ohiolink.edu/search~S0/" target="_blank"><b>OhioLINK</b></a>. 
+Once you've found your item, just place your request as usual. Most OhioLINK and SearchOhio items arrive within five business days.<think>
+<set name="search">socat</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>CLEVNET</pattern>
+<template> We are not part of CLEVNET, we are part of SearchOhio.
+We cannot request CLEVNET items for you. Kirtland and Willoughby are the closest Clevnet Libraries, they can request CLEVNET items for you.
+</template>
+</category>
+
+<category>
+<pattern>OHLNK</pattern>
+<template>You can use your  Library Card to borrow items from college libraries in Ohio by using <a href="http://olc1.ohiolink.edu/search~S0/" target="_blank"><b>OhioLINK</b></a>. It's easy. Here's their catalog. If you don't see it, turn off your pop up blocker and ask me again. 
+<think>
+<set name="search">olcat</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>OHLNKLNPRDS</pattern>
+<template>OhioLINK DVDs, CDs, and most Books on CD circulate for 7 days with no renewals; OhioLINK books and <em>some</em> Books on CD circulate for
+21 days with four renewals.</template>
+</category>
+
+<category>
+<pattern>HWLNGOL</pattern>
+<template>
+Most items ordered through OhioLINK arrive within five business days.
+</template>
+</category>
+
+<category>
+<pattern>OLCAT</pattern>
+<template>I'll open the OhioLINK catalog for you. If you don't see it, turn off your pop up blocker and ask me again.<think>
+<set name="search">olcat</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>OHIOLINK</pattern>
+<template>OhioLINK gives you easy access to millions items from college and university libraries in Ohio. 
+Unlike traditional interlibrary loans, you place your requests online and the requests will be transmitted automatically to the other library. 
+You can get books, DVD's, CD's, and more through OhioLINK. Here's their <a href="http://olc1.ohiolink.edu/search~S0/" target="_blank"><b>catalog</b></a>.
+<think>
+<set name="search">olcat</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>SRCHOH</pattern>
+<template>You can use your  Library Card to borrow items from other Ohio libraries using SearchOhio. It's easy. Here's their catalog. If you don't see it, turn off your pop up blocker and ask me again. 
+<think>
+<set name="search">socat</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>SOLNPRDS</pattern>
+<template>SearchOhio DVDs and VHS tapes circulate for 7 days; all other SearchOhio items circulate for
+21 days. You may renew SearchOhio items online.</template>
+</category>
+
+<category>
+<pattern>ILLETA</pattern>
+<template>Most items ordered through OhioLINK or SearchOhio are ready to pick up within five business days.</template>
+</category>
+
+<category>
+<pattern>MPLNOGO</pattern>
+<template>
+<random>
+<li>You can request items that are not in our collection through <a href="http://olc1.ohiolink.edu/search~S0/" target="_blank"><b>OhioLINK</b></a> or though the <a href="http://ohpir.westervillelibrary.org/" target="_blank"><b>SearchOhio catalog</b></a>.</li>
+<li>Try looking in <a href="http://olc1.ohiolink.edu/search~S0/" target="_blank"><b>OhioLINK</b></a> or in the <a href="http://ohpir.westervillelibrary.org/" target="_blank"><b>SearchOhio catalog</b></a>.</li>
+<li><a href="http://olc1.ohiolink.edu/search~S0/" target="_blank"><b>OhioLINK</b></a> and <a href="http://ohpir.westervillelibrary.org/" target="_blank"><b>SearchOhio</b></a> are other places to find what you're looking for.</li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern>SOCAT</pattern>
+<template>I'll open the Search Ohio catalog for you. If you don't see it, turn off your pop up blocker and ask me again.<think>
+<set name="search">socat</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>SEARCHOHIO</pattern>
+<template>SearchOhio gives you easy access to millions items from sixteen other library systems: Akron-Summit County Metro Public Library, Cuyahoga County Metro Public Library, Greene County Metro Public Library, Kent Free Library, Louisville Metro Public Library, Massillon Metro Public Library,  Metro Public Library, Portage County District Library, Metro Public Library of Youngstown and Mahoning County, Reed Memorial Library, Rodman Metro Public Library, Stark County District Library, Toledo-Lucas County Metro Public Library, Wadsworth Metro Public Library, Warren-Trumbull County Metro Public Library, and Westerville Metro Public Library. Unlike traditional interlibrary loans, you place your requests online and the requests will be transmitted automatically to the other library. You can get books, DVD's, CD's, and more through SearchOhio.
+</template>
+</category>
+
+<category>
+<pattern>SOWIKI</pattern>
+<template>Follow this link to the <a href="http://searchohio.westervillelibrary.org/index.php/Main_Page" target="_blank"><b>SearchOhio Wiki</b></a></template>
+</category>
+
+<category>
+<pattern>WRLDCAT</pattern>
+<template>We are no longer able to make requests through WorldCat. 
+Lakeland Library may be able to help you with WorldCat requests. Their number is 440.525.7425.
+</template>
+</category>
+
+<category>
+<pattern>NOGOSO</pattern>
+<template>If OhioLINK and SearchOhio do not have the item you're looking for, please call us at 555.555.5555 during regular business hours and our staff will assist you. You
+might want to look in the <a href="http://www.clevnet.org/" target="_blank"><b>CLEVNET</b></a> catalog, too.</template>
+</category>
+
+<!--IPAD INFO-->
+
+<category>
+<pattern>ELDVLN</pattern>
+<template>You may find information about our electronic devices and their loan policies by following <a href="http://www.xxxxxxxxxx.org/pdfs/EDP.pdf" target="_blank">
+<b>this link</b>
+</a>.</template>
+</category>  
+
+<category>
+<pattern>* HAVE IPADS</pattern>
+<template>We have i Pads for you to check out and enjoy. You may check them out at the Main Library Computer Help Desk for three days at a time.  For more info about the i Pads, including a list of apps, please go to our <a href="http://www.xxxxxxxxxx.org/edevice.html" target="_blank">
+<b>Electronic Device Page</b>
+</a>.</template>
+</category>
+
+<category>
+<pattern>HOW MANY IPADS *</pattern>
+<template>We currently have six i Pads.</template>
+</category>
+
+<category>
+<pattern>IPAD CHECKOUT</pattern>
+<template>You may now check out i Pads for three days.</template>
+</category>
+
+<category>
+<pattern>IPAD</pattern>
+<template><random>
+<li>We have i Pads for you to check out and enjoy. You may check them out at the Main Library Computer Help Desk for three days with no renewals. For more info about the i Pads, including a list of apps, please go to our <a href="http://www.xxxxxxxxxx.org/edevice.html" target="_blank"><b>Electronic Device Page</b></a>. </li>
+<li>You may check out an i Pad at the Main Library Computer Help Desk for three days with no renewals. For more information about the i Pads, please go to our <a href="http://www.xxxxxxxxxx.org/edevice.html" target="_blank"><b>Electronic Device Page</b></a>. </li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern>IPDLN</pattern>
+<template>i Pads may be checked out for three days. They may not be renewed.</template>
+</category>
+
+<category>
+<pattern>IPDAPPS</pattern>
+<template>Here is a <a href="http://www.xxxxxxxxxx.org/ipadapps.html" target="_blank"><b>list of apps</b></a> loaded on our i Pads. All of our i Pads have the same apps.</template>
+</category>
+
+<category>
+<pattern>IPDDWNLDS</pattern>
+<template>At this time you cannot download anything onto the i Pads. If there's an app you'd like us to add, please tell one of the reference librarians.</template>
+</category>
+
+<category>
+<pattern>PUIPD</pattern>
+<template>You may pick up the i Pads at the Main Library Computer Help Desk. Please return them there as well. Don't forget to
+bring your  Metro Public Library card and photo ID when you come to pick it up. 
+</template>
+</category>
+
+<category>
+<pattern>IPDSPPRT</pattern>
+<template>If you need help with the i Pad, please go to our <a href="http://www.xxxxxxxxxx.org/edevice.html" target="_blank"><b>Electronic Device Page</b></a>. 
+</template>
+</category>
+
+<category>
+<pattern>IPDCHRG1</pattern>
+<template>There is no charge to use one of our i pads. Be advised, however, that when you check out an i pad you must agree to be financially responsible for the device. Please read our <a href="http://www.xxxxxxxxxx.org/pdfs/Electronic%20Device%20Agreement.pdf" target="_blank"><b>Electronic Device User Agreement</b></a>. 
+</template>
+</category>
+
+<category>
+<pattern>IPDCHRG2</pattern>
+<template>There is no charge to use one of our i pads. Be advised, however, that when you check out an i pad you must agree to be financially responsible for the device. Please read our <a href="http://www.xxxxxxxxxx.org/pdfs/Electronic%20Device%20Agreement.pdf" target="_blank"><b>Electronic Device User Agreement</b></a>. 
+If you're asking about "charging" the iPad when the battery is low, just plug it in.</template>
+</category>
+
+<category>
+<pattern>RTRNIPAD</pattern>
+<template>i Pads must be returned at the Main Library Computer Help Desk.</template>
+</category>
+
+<category>
+<pattern>IPOD</pattern>
+<template>We do not have circulating iPods at this time.
+</template>
+</category>
+
+<!--ITEM STATUS INFO-->
+ 
+<category>
+<pattern>CHKSHLF</pattern>
+<template>
+<random>
+<li>"Check Shelf" means that the item should be in its correct place on the shelf. If you need help finding something, please ask one of the librarians for assistance.</li>
+<li>"Check Shelf" means that the item should be on the shelf. If you need help finding something, please ask one of the librarians for assistance.</li>
+<li>"Check Shelf" means the item should be on the shelf. If you're not sure where that shelf is, or can't find the item, just ask one of the librarians for assistance.</li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern>DSPLY</pattern>
+<template>When an item's status is "Display," that item is on one of our display shelves. You are welcome to check it out. If you cannot find one of the displays, ask one of our librarians for assitance.</template>
+</category>
+
+<category>
+<pattern>ONHLDSHLF</pattern>
+<template>"On Holdshelf" means a patron has placed a hold on the item and it is ready for them to pickup.</template>
+</category>
+
+<category>
+<pattern>DUE DATE</pattern>
+<template>The due date is the date when the item is due.</template>
+</category>
+
+<category>
+<pattern>DUE *</pattern>
+<template>"Due <star/>" means that the item is checked out and is due on <star/>.</template>
+</category>
+
+<category>
+<pattern>LANDPD</pattern>
+<template>"Lost and Paid" means that the item was lost. It is no longer in our collection. Ask a librarian if we can get the item from 
+SearchOhio or purchase a replacement.
+</template>
+</category>
+
+<category>
+<pattern>PLACE HOLD</pattern>
+<template>"Place Hold" means that the item is not immediately available and you should place a hold on the item. (If you're asking how to place a hold, type "How do I place a hold.")
+</template>
+</category>
+
+<category>
+<pattern>DAMAGED</pattern>
+<template>"Damaged" means that the item was damaged. It is no longer in our collection. Ask a librarian if we can get the item from 
+SearchOhio or purchase a replacement.
+</template>
+</category>
+
+<category>
+<pattern>BILLED</pattern>
+<template>If an item's status is "Billed," it means that the item is no longer in our collection. If you have questions about an item for which you've been billed, please contact
+the library at 555.555.5555.
+</template>
+</category>
+
+<category>
+<pattern>ITMSTATQ</pattern>
+<template>Type in the item status and I'll tell you what it means
+</template>
+</category>
+
+<category>
+<pattern>SOREQ</pattern>
+<template>"S-OH REQUESTED" means that the item has been requested through SearchOhio. It is not yet on its way to the person who requested it. The item is on its way when the status is "in transit."</template>
+</category>
+
+<category>
+<pattern>PRCSS</pattern>
+<template>The item status "processing" means that the item has arrived from the vendor and is being prepared for circulation. You may place holds on items with this status.</template>
+</category>
+
+<category>
+<pattern>INTRNST</pattern>
+<template>The item status "in transit" means that the item is being moved from one location to another. If you're checking a hold and see that it's "in transit,"
+this usually means that the item is on it's way to your pick up location.</template>
+</category>
+
+<!--LIBRARY LOCATION INFO-->
+
+<category>
+<pattern>BRNCHHRS</pattern>
+<template>
+Both Branches are open from 1:00 pm to 9:00 pm on Mondays and Wednesdays, and from 9:00 am to 5:00 pm on Tuesdays, Thursdays, Fridays, and Saturdays.
+Both Branches are closed on Sundays.
+</template>
+</category>
+
+<category>
+<pattern>LIBLOC</pattern>
+<template>The Main Library is at 8215  Ave., , Ohio. Their phone number is 555.555.5555. Our Lake Branch is located at 5642 Andrews Road, -on-the-Lake, 
+Ohio 44060. Their phone number is 440.257.2512. Our Headlands Branch is located at 4669 Corduroy Road,
+ Headlands, Ohio 44060. Their phone number is 440.257.2000. 
+Follow this link for <a href="http://www.xxxxxxxxxx.org/hours"><b>
+hours, directions, maps, and phone numbers</b></a> for all of our locations.</template>
+</category>
+
+<category>
+<pattern>MAINLOC</pattern>
+<template>The Main Library is at 8215  Ave., , Ohio. Their phone number is 555.555.5555. You can find maps to the Main Library and both branches <a href="http://www.xxxxxxxxxx.org/hours"><b>
+here</b></a>.</template>
+</category>
+
+<category>
+<pattern>HEADLANDSDIR</pattern>
+<template>You can find maps and driving directions <a href="http://www.xxxxxxxxxx.org/hours.html" target="_blank"><b>on this page</b></a>
+</template>
+</category>
+
+<category>
+<pattern>LAKEDIR</pattern>
+<template>You can find maps and driving directions <a href="http://www.xxxxxxxxxx.org/hours.html" target="_blank"><b>on this page</b></a>
+</template>
+</category>
+
+<category>
+<pattern>MAINDIR</pattern>
+<template>You can find maps and driving directions <a href="http://www.xxxxxxxxxx.org/hours.html" target="_blank"><b>on this page</b></a>
+</template>
+</category>
+
+<category>
+<pattern>HDLSLOC</pattern>
+<template>Headlands Branch is located at 4669 Corduroy Road, 
+ Headlands. Their phone number is 440.257.2000. You can find information about their hours and a map to their location <a href="http://www.xxxxxxxxxx.org/hours"><b>here</b></a>.</template>
+</category>
+
+<category>
+<pattern>LAKELOC</pattern>
+<template>Lake Branch is located at 5642 Andrews Road, 
+-on-the-Lake. Their phone number is 440.257.2512. You can information about their hours and a map to their location <a href="http://www.xxxxxxxxxx.org/hours"><b>here</b></a>.</template>
+</category>
+
+<category>
+<pattern>LIBPHONE</pattern>
+<template>The Main Library's phone number is 555.555.5555. Lake Branch is 440.257.2512. Headlands Branch is 440.257.2000.
+If you're looking for your card number, it's on the back under the barcode. I'm not allowed to look up your number for you.
+</template>
+</category>
+
+<category>
+<pattern>MAINPHONE</pattern>
+<template>The phone number for the Main Library is 555.555.5555.</template>
+</category>
+
+<category>
+<pattern>HDLSPHONE</pattern>
+<template>The phone number for the Headlands Branch Library is 440.257.2000.</template>
+</category>
+
+<category>
+<pattern>MOLPHONE</pattern>
+<template>The phone number for the Lake Branch Library is 440.257.2512.</template>
+</category>
+
+<category>
+<pattern>MOLPHONE</pattern>
+<template>Pam Rose is the manager of the Lake Branch.</template>
+</category>
+
+<category>
+<pattern>READHSE</pattern>
+<template>The Read House in at 8245  Ave. Please park in the Main Library parking lot if you are going to an event at the Read House. You can find more information about this historic property <a href="http://www.xxxxxxxxxx.org/readhouse.html" target="_blank"><b>here</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>RHGHOST</pattern>
+<template>I'm not sure if the Read House is haunted. Some people think it is, but we don't have any evidence of paranormal activity.
+</template>
+</category>
+
+<!--LOST & FOUND-->
+
+<category>
+<pattern>LOSTITM</pattern>
+<template>If you lose or damage an item, please call us or stop in and let us know. The charge for lost items is the cost of the item, an additional $5.00 replacement and $5.00 billing fee.
+</template>
+</category>
+
+<category>
+<pattern>LOSTCRD</pattern>
+<template>Card holders are responsible for all items borrowed unless the card is reported to the library as lost or stolen. If you lose your card, call the library immediately. You may get a replacement card for $1.00. Replacement cards are not available online.
+</template>
+</category>
+
+<category>
+<pattern>LOSTMIND</pattern>
+<template>So you lost your mind, eh? I really can't help you with that.
+</template>
+</category>
+
+<!--MATERIAL LOCATION INFO-->
+
+<category>
+<pattern>LOCKIDSITMS</pattern>
+<template>If you're at our Main Library, you'll find Children's books on the second floor and all Children's DVDs in the ground floor Media Room. Here's a guide to the Main Library. If you don't see it, turn off your pop up blocker.
+If you need help finding something at one of our Branches, just ask one of the humans that work there.
+<think>
+<set name="search">mflplan</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>MABIOGLOC</pattern>
+<template>If you're at our Main Library, you'll find Biographies and Autobiographies on the first floor. 
+Biographies and Autobiographies for children are on the second floor. Here's a guide to the Main Library. If you don't see it, turn off your pop up blocker.
+If you need help finding something at one of our Branches, just ask one of the humans that work there.
+<think>
+<set name="search">mflplan</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>MBIOGLOC</pattern>
+<template>If you're at our Main Library, you'll find Biographies on the first floor. 
+The shelves with the Biographies are marked. Biographies for children are on the second floor. Here's a guide to the Main Library. If you don't see it, turn off your pop up blocker.
+If you need help finding something at one of our Branches, just ask one of the humans that work there.
+<think>
+<set name="search">mflplan</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>MFANLOC</pattern>
+<template>If you're at our Main Library, you'll find Fantasy and Science Fiction on the first floor. 
+Here's a guide to the Main Library. If you don't see it, turn off your pop up blocker.
+If you need help finding something at one of our Branches, just ask one of the humans that work there.
+<think>
+<set name="search">mflplan</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>MFICLOC</pattern>
+<template>If you're at our Main Library, you'll find adult fiction on the first floor. 
+The shelves with the fiction are marked. Children's fiction books are on the second floor. Here's a guide to the Main Library. If you don't see it, turn off your pop up blocker.
+If you need help finding something at one of our Branches, just ask one of the humans that work there.
+<think>
+<set name="search">mflplan</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>MLTLOC</pattern>
+<template>If you're at our Main Library, you'll find large type fiction and nonfiction on the first floor. 
+Children's large type books are on the second floor. Here's a guide to the Main Library. If you don't see it, turn off your pop up blocker.
+If you need help finding something at one of our Branches, just ask one of the humans that work there.
+<think>
+<set name="search">mflplan</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>MMAGSLOC</pattern>
+<template>If you're at our Main Library, you'll find adult and teen Magazines on the first floor, and children's magazines on the second floor. 
+Here's a guide to the Main Library. If you don't see it, turn off your pop up blocker.
+If you need help finding something at one of our Branches, just ask one of the humans that work there.
+<think>
+<set name="search">mflplan</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>MMYSTLOC</pattern>
+<template>If you're at our Main Library, you'll find Mysteries on the first floor. 
+The shelves with the Mysteries are marked. Here's a guide to the Main Library. If you don't see it, turn off your pop up blocker.
+If you need help finding something at one of our Branches, just ask one of the humans that work there.
+<think>
+<set name="search">mflplan</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>MNONFICLOC</pattern>
+<template>If you're at our Main Library, you'll find adult nonfiction on the first floor. 
+The shelves with the Nonfiction are marked. Children's nonfiction books are on the second floor. Here's a guide to the Main Library. If you don't see it, turn off your pop up blocker.
+If you need help finding something at one of our Branches, just ask one of the humans that work there.
+<think>
+<set name="search">mflplan</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>MSCIFILOC</pattern>
+<template>If you're at our Main Library, you'll find Science Fiction on the first floor. 
+The shelves with the Science Fiction are marked. Here's a guide to the Main Library. If you don't see it, turn off your pop up blocker.
+If you need help finding something at one of our Branches, just ask one of the humans that work there.
+<think>
+<set name="search">mflplan</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>MFLPLAN</pattern>
+<template>Here's a guide to the Main Library. If you don't see it, turn off your pop up blocker.
+If you need help finding something at one of our Branches, just ask one of the humans that work there.
+<think>
+<set name="search">mflplan</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>HLDSHLF</pattern>
+<template>If you're at our Main Library, the hold shelves are in the Hot Spot, just past circulation. Please note that at the Main Library all DVD and CD holds are in the ground floor Media Room.
+Here's a guide to the Main Library. If you don't see it, turn off your pop up blocker.
+If you need help finding something at one of our Branches, just ask one of the humans that work there.
+<think>
+<set name="search">mflplan</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>HDLSYA</pattern>
+<template>I don't have a floorplan for the Headlands Branch. Please ask one of the Headlands staff for assistance.</template>
+</category>
+
+<category>
+<pattern>LKYA</pattern>
+<template>I don't have a floorplan for the Lake Branch. Please ask one of the Lake staff for assistance.</template>
+</category>
+
+<!--MEDIA INFO-->
+
+<category>
+<pattern>MEDIA</pattern>
+<template>At the Main Library, all media is in the ground floor Media Room. This includes DVDs, CDs, audiobooks, and computer games. We do not have separate media rooms at our Branch locations.
+If you need help finding media at one of our branches, please ask one of the staff. If you're looking for media in our catalog, please use the search box above.
+</template>
+</category>
+
+<category>
+<pattern>AUDBKS</pattern>
+<template>At this time we do not have downloadable audiobooks. We have e Books for you to download using <a href="http://xxxx.xxxxoverdrive.com/" target="_blank"><b>Overdrive</b></a>. We do have a large collection of audiobooks on CD. Try looking in our <a href="http://catalog.xxxxxxxxxx.org/" target="_blank"><b>catalog</b></a> for a specific title,
+or enter the keyword "audiobook." You can see a list of our newest audiobooks <a href="http://catalog.xxxxxxxxxx.org/ftlist" target="_blank"><b>here</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>BKDISCKTS</pattern>
+<template>You can find a list of our book discussion kits <a href="http://catalog.xxxxxxxxxx.org/search/X?SEARCH=book+discussion+kits&amp;SORT=D&amp;searchscope=12" target="_blank"><b>here</b></a>. If the title you're looking for
+isn't on this list, our Reference Librarians may be able to order multiple copies from Search Ohio. Please call the library during regular business hours at 555.555.5555 for assistance. 
+</template>
+</category>
+
+<category>
+<pattern>BLRY</pattern>
+<template>We now have Blu Ray discs. Here is a <a href="http://catalog.xxxxxxxxxx.org/search/c?SEARCH=blu-rayandsortdropdown=-andsearchscope=12" target="_blank"><b>list</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>HNSDIR</pattern>
+<template>We have Haines directories, CRISS CROSS directories, for Lake and Geauga Counties and for Cleveland. These directories are for library use only, they maynot be checked out.
+</template>
+</category>
+
+<category>
+<pattern>MGZNS</pattern>
+<template>Our library subscribes to a number of magazines. Follow this link to see
+a <a href="https://catalog.xxxxxxxxxx.org/search~S12/d?Periodicals+Library+resources" target="_blank"><b>complete list</b></a> of the magazines we carry, or tell the name of the magazine you want and I'll see if we have it.
+</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>_ SEE IF WE HAVE IT</that>
+<template>Let's take a look in our catalog. You may check out as many magazines as you'd like for two weeks, but not the current issues. Those have to stay 
+in the library.
+<think>
+<set name="search">catkey</set>
+<set name="searcharg"><star/></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>MCROFRM</pattern>
+<template>Our library does not have any materials on microform or microfiche. If you're looking for old newspapers, try
+the <a href="http://www.morleylibrary.org" target="_blank"><b>Morley Library</b></a> or <a href="http://lakelandcc.edu/library/" target="_blank"><b>Lakeland Community College Library</b></a>.</template>
+</category>
+
+<category>
+<pattern>CLEVEPD</pattern>
+<template>Do you mean "Cleveland Plain Dealer?" We have a subscription, so we have the current issue and 11 months worth of back issues.</template>
+</category>
+
+<category>
+<pattern>LCNH</pattern>
+<template>We have the current issue and 11 months worth of back issues. We do not maintain a newspaper archive. You can try checking their website:
+<a href="http://www.news-herald.com/" target="_blank"><b>www.news-herald.com</b></a></template>
+</category>
+
+<category>
+<pattern>NWSPRS</pattern>
+<template>We subscribe to the following local papers: the News Herald, Plain Dealer, Lake County Tribune, Star Beacon, and the  Monitor. We also subscribe to the Sunday New York Times, USA Today, and the Wall Street Journal. Newspapers do not circulate. We maintain a 12 month collection of the News Herald and the Plain Dealer.
+We do not maintain a newspaper archive. If you're looking for older newspapers, call the library during regular business hours at 555.555.5555 for assistance.</template>
+</category>
+
+<category>
+<pattern>PLWYVW</pattern>
+<template>Playaway View is a simple idea for young children to watch educational and entertaining videos on the go. Each Playaway View comes with the video content already pre-loaded on it. Earphones are not required. You can check out Playaway Views for two weeks; you can renew and request them, too.  
+Due to high demand, you may only check out one Playaway View at a time so others may have a chance to enjoy them.
+Check our <a href="http://www.xxxxxxxxxx.org/children.html" target="_blank"><b>Kid's Page</b></a> for more information
+or follow this link for a <a href="http://catalog.xxxxxxxxxx.org/search~S12/?searchtype=X&amp;searcharg=playaway+view" target="_blank"><b>list of titles</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>PHNBKS</pattern>
+<template>We have phone books for many counties in Northeast Ohio. We have Haines directories, CRISS CROSS directories, for Lake and Geauga Counties and for Cleveland. You might like to try this <a href="http://www.theultimates.com/"><b>online phonebook</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>REFBKS</pattern>
+<template>At the Main Library, reference materials are shelved separately. Please ask one of the library staff if you need help finding them. 
+Reference materials do not circulate. You cannot check them out. You are welcome to xerox the pages you need.
+</template>
+</category>
+
+<category>
+<pattern>SFTWR</pattern>
+<template>We have very little circulating software, a few games and some language instruction. We do not have any Microsoft or Adobe products for you to check out, but we do have Office 2003 on our public computers for you to use in the library.</template>
+</category>
+
+<category>
+<pattern>WII</pattern>
+<template>Yes, we have many video games, but most are checked out. Please check our<a href="http://catalog.xxxxxxxxxx.org" target="_blank"><b>
+catalog</b></a>.</template>
+</category>
+
+<category>
+<pattern>RSTTA</pattern>
+<template>We do not have any Rosetta Stone language instruction materials. </template>
+</category>
+
+<category>
+<pattern>VHS</pattern>
+<template>We no longer have any VHS tapes. We may be able to get them for you from <a href="http://ohpir.westervillelibrary.org/" target="_blank"><b>Search Ohio</b></a>. Please call us.
+</template>
+</category>
+
+<category>
+<pattern>LSTDVDS</pattern>
+<template>Here you go. We have about 20,000. I can't put them in alphabetical order for you. If you don't see them, turn off your pop up blocker and submit your question again.
+<think>
+<set name="searcharg">*</set>
+<set name="search">dvdkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>LCKDDVD</pattern>
+<template>There is no way to unlock the DVD cases at home. If you forgot to unlock them, please bring
+them back to the library to be opened.</template>
+</category>
+
+<category>
+<pattern>MEDRM</pattern>
+<template>When you are in the Main Library, all media is in the ground floor Media Room. If you are at one of the Branches,
+please ask one of the humans that are working there.</template>
+</category>
+
+<category>
+<pattern>OLDMAGS</pattern>
+<template>We usually back issues of magazines for one year. After that, they are given to the Friends for sale or placed on the free cart in the Main Library 
+lobby. We cannot hold or mark back issues of magazines or newspapers for you to purchase when they are deselected.</template>
+</category>
+
+<category>
+<pattern>WHERE * MAGAZINES</pattern>
+<template>At the Main Library, adult and teen magazines are on the shelves near the Media Room. Children's magazines are in the Children's Department on the second floor.</template>
+</category>
+
+<category>
+<pattern>TXTBKS</pattern>
+<template>We have a few individual textbooks in our collection, but we do not maintain a set of the books and materials used at local area schools or at Lakeland Community College.
+If you are looking for a current textbook, please contact our reference department. Our librarians will try to locate a copy of the textbook and will discuss the item's loan options with you.</template>
+</category>
+
+<category>
+<pattern>YRBKS</pattern>
+<template>We have an in complete set of  High School Yearbooks at the Main Library. They are for library use only, they may not be checked out. I'll open our catalog for you. If you
+don't see it, turn off your popup blocker and ask me again.
+<think>
+<set name="searcharg">mentor high school yearbooks</set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>VIRTITEMS</pattern>
+<template>Our library offers downloadable music through <a href="https://www.freegalmusic.com/users/indlogin" target="_blank"><b>Freegal</b></a> and will have downloadable ePubs through <a href="http://xxxx.xxxxoverdrive.com/" target="_blank"><b>Overdrive</b></a>.
+To use either of these services you need to have a  Metro Public Library card in good standing. You can also get a <a href="https://catalog.xxxxxxxxxx.org/selfreg" target="_blank"><b>temporary library card online</b></a>.</template>
+</category>
+
+<category>
+<pattern>FICDVD</pattern>
+<template>Fiction DVDs are about imaginary things: imaginary people, imaginary events, imaginary places and imaginary writing. Most feature films are examples of fiction DVDs.
+Nonfiction DVDs are about real things: real people, real events, real places and real writing. Documentaries are examples of nonfiction DVDs. At the Main Library,
+all DVDs are in the ground floor Media Room. If your looking for them at one of our branches, ask one of the staff for assistance.</template>
+</category>
+
+<!--NEW ITEMS-->
+
+<category>
+<pattern>NWITMS</pattern>
+<template>Follow this link for lists of our <a href="http://catalog.xxxxxxxxxx.org/ftlist" target="_blank"><b>new items</b></a>. You may place a request for any regularly circulating items on 
+these lists. You cannot place a hold or reservation on an item if it is not in our catalog. You can, however, make a purchase request and we'll consider adding it to our collection. 
+Would you like to make a purchase request?</template>
+</category>
+
+<category>
+<pattern>NWADBKS</pattern>
+<template>Follow this link for a list of our <a href="http://catalog.xxxxxxxxxx.org/search~S12?/ftlist^bib28%2C1%2C0%2C84/mode=2" target="_blank"><b>new audiobooks</b></a>. You may place a request for any regularly circulating items on 
+these lists. You cannot place a hold or reservation on an item if it is not in our catalog. You can, however, make a purchase request and we'll consider adding it to our collection. 
+Would you like to make a purchase request?</template>
+</category>
+
+<category>
+<pattern>NWBKS</pattern>
+<template>Follow this link for lists of our <a href="http://catalog.xxxxxxxxxx.org/ftlist" target="_blank"><b>new fiction and nonfiction books</b></a>. You may place a request for any regularly circulating items on 
+these lists. You cannot place a hold or reservation on an item if it is not in our catalog. You can, however, make a purchase request and we'll consider adding it to our collection. 
+Would you like to make a purchase request?</template>
+</category>
+
+<category>
+<pattern>NWCDS</pattern>
+<template>Follow this link for a list of our <a href="http://catalog.xxxxxxxxxx.org/search~S12?/ftlist^bib29%2C1%2C0%2C113/mode=2" target="_blank"><b>new CDs</b></a> or <a href="http://catalog.xxxxxxxxxx.org/search~S12?/ftlist^bib28%2C1%2C0%2C84/mode=2" target="_blank"><b>new books on CD</b></a>. You may place a request for any regularly circulating items on 
+these lists. You cannot place a hold or reservation on an item if it is not in our catalog. You can, however, make a purchase request and we'll consider adding it to our collection. 
+Would you like to make a purchase request?</template>
+</category>
+
+<category>
+<pattern>NWDVDS</pattern>
+<template>Follow this link for a list of our <a href="http://catalog.xxxxxxxxxx.org/search~S12?/ftlist^bib27%2C1%2C0%2C70/mode=2" target="_blank"><b>new feature films</b></a>, or <a href="http://catalog.xxxxxxxxxx.org/search~S12?/ftlist^bib30%2C1%2C0%2C28/mode=2" target="_blank"><b>new TV shows</b></a>,
+or <a href="http://catalog.xxxxxxxxxx.org/search~S12?/ftlist^bib13%2C1%2C0%2C56/mode=2" target="_blank"><b>new nonfiction DVDs</b></a>. You may place a request for any regularly circulating items on 
+these lists. You cannot place a hold or reservation on an item if it is not in our catalog. You can, however, make a purchase request and we'll consider adding it to our collection. 
+Would you like to make a purchase request?</template>
+</category>
+
+<category>
+<pattern>NWKIDS</pattern>
+<template>Follow this link for a list of our <a href="http://catalog.xxxxxxxxxx.org/search~S12?/ftlist^bib09%2C1%2C0%2C303/mode=2" target="_blank"><b>new children's books</b></a>, or <a href="http://catalog.xxxxxxxxxx.org/search~S12?/ftlist^bib12%2C1%2C0%2C85/mode=2" target="_blank"><b>new children's audiovisual materials</b></a>. You may place a request for any regularly circulating items on 
+these lists. You cannot place a hold or reservation on an item if it is not in our catalog. You can, however, make a purchase request and we'll consider adding it to our collection. 
+Would you like to make a purchase request?</template>
+</category>
+
+<category>
+<pattern>NWYA</pattern>
+<template>Follow this link for a list of our <a href="http://catalog.xxxxxxxxxx.org/search~S12?/ftlist^bib08%2C1%2C0%2C64/mode=2" target="_blank"><b>new teen books</b></a>. You may place a request for any regularly circulating items on 
+these lists. You cannot place a hold or reservation on an item if it is not in our catalog. You can, however, make a purchase request and we'll consider adding it to our collection. 
+Would you like to make a purchase request?</template>
+</category>
+
+<category>
+<pattern>NWBKS</pattern>
+<template>Follow this link for a list of our <a href="http://catalog.xxxxxxxxxx.org/search~S12?/ftlist^bib26%2C1%2C0%2C486/mode=2" target="_blank"><b>new fiction books</b></a>, or <a href="http://catalog.xxxxxxxxxx.org/search~S12?/ftlist^bib25%2C1%2C0%2C437/mode=2" target="_blank"><b>new nonfiction books</b></a>,
+or <a href="http://catalog.xxxxxxxxxx.org/search~S12?/ftlist^bib24%2C1%2C0%2C56/mode=2" target="_blank"><b>new large print books</b></a>. You may place a request for any regularly circulating items on 
+these lists. You cannot place a hold or reservation on an item if it is not in our catalog. You can, however, make a purchase request and we'll consider adding it to our collection. 
+Would you like to make a purchase request?</template>
+</category>
+
+<category>
+<pattern>NWLTBKS</pattern>
+<template>Follow this link for a list of our <a href="http://catalog.xxxxxxxxxx.org/search~S12?/ftlist^bib24%2C1%2C0%2C56/mode=2" target="_blank"><b>new large print books</b></a>. You may place a request for any regularly circulating items on 
+these lists. You cannot place a hold or reservation on an item if it is not in our catalog. You can, however, make a purchase request and we'll consider adding it to our collection. 
+Would you like to make a purchase request?</template>
+</category>
+
+<!--NEWSLETTER INFO-->
+
+<category>
+<pattern>BKLTTRS</pattern>
+<template>BookLetters offers newsletters for a wide range of ages and reading interests. You can sign up to receive BookLetters by email <a href="http://www.booksite.com/texis/scripts/bookletter/addnluser.html?sid=xxxx" target="_blank"><b>here</b></a>. 
+</template>
+</category>
+
+<category>
+<pattern>CCSUBSCRIBE</pattern>
+<template>
+Follow this link to <a href="http://library.booksite.com/xxxx/signup/?list=NLSGN" target="_blank"><b>subscribe</b></a> to our newsletter. We'll email you a copy of <em>Cover to Cover</em> every month.
+</template>
+</category>
+
+<category>
+<pattern>C2CRESIZE</pattern>
+<template>Near the bottom of the email you should see the message, "We have provided a link to the PDF version for better viewing and printing." Click on the link directly below this
+to open a larger version of our newsletter.
+</template>
+</category>
+
+<category>
+<pattern>C2CSUBSCR</pattern>
+<template>Follow this link to <a href="http://library.booksite.com/xxxx/signup/?list=NLSGN" target="_blank"><b>subscribe</b></a> to our newsletter. 
+We'll email you a copy of <em>Cover to Cover</em> every month.
+</template>
+</category>
+
+<category>
+<pattern>C2CX</pattern>
+<template>There is an "unsubscribe" link in the emailed version of <em>Cover to Cover</em>. Just click on it and you won't get them anymore.
+</template>
+</category>
+
+<category>
+<pattern>C2CFAIL</pattern>
+<template>If you've stopped receiving <em>Cover to Cover</em>, it could be for a number of reasons. 
+If your email has changed, follow <a href="http://library.booksite.com/xxxx/signup/?list=NLSGN" target="_blank"><b>this link</b></a> and resubscribe. If your email address hasn't changed,
+you may need to "white list" our newsletter. 
+</template>
+</category>
+ 
+<category>
+<pattern>C2C</pattern>
+<template>Here is the link to the current issue of <a href="http://www.xxxxxxxxxx.org/pdfs/currentc2c.pdf" target="_blank"><b>Cover to Cover</b></a>.
+If you'd like to receive our Newsletter by email, you can sign up <a href="http://www.booksite.com/texis/scripts/bookletter/addnluser.html?sid=xxxx" target="_blank"><b>here</b></a>. 
+You'll find all our news and events there!
+<br/><br/>
+Do have have any other questions about our newsletter?
+<think>
+<set name="topic">COVERTOCOVER</set>
+</think>
+</template>
+</category>
+
+<!--OVERDRIVE INFO-->
+
+<category>
+<pattern>CIRC EDEVS</pattern>
+<template>The Library has Kindle Fires, Nooks, Nook Simple Touches, and iPads that you may check out. Call the library for more information!
+</template>
+</category>
+
+<category>
+<pattern>CIRC IPDS</pattern>
+<template>We have iPads for you to check out and enjoy. For more info about the i{Pads, including loan, renewal, and fine policies, please go to our <a href="http://www.xxxxxxxxxx.org/edevice.html" target="_blank"><b>eDevice Page</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>CIRC KINDLS</pattern>
+<template>We have Kindle Fires that you may check out for two weeks. Follow this link to <a href="http://catalog.xxxxxxxxxx.org/record=b1269854~S12" target="_blank"><b>place one on hold</b></a>. You can also download eBooks to your own Kindle using Overdrive. Follow this link for information about <a href="http://help.overdrive.com/?Sup=http://xxxx.xxxxoverdrive.com/Support.htm" target="_blank"><b>downloading eBooks to your Kindle</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>CIRC NKS</pattern>
+<template>We have Nook e readers for you to check out and enjoy. For more info about the Nooks, including a title list, loan and renewal, and fine policies, please go to our <a href="http://www.xxxxxxxxxx.org/edevice.html" target="_blank"><b>Nook Page</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>EBKS</pattern>
+<template>Now you can check out and download eBooks and audiobooks anytime, anywhere using <a href="http://xxxx.xxxxoverdrive.com/" target="_blank"><b>Overdrive</b></a>. All you need is your  Metro Public Library card. 
+Follow this link for <a href="http://xxxx.xxxxoverdrive.com/D5DE83A9-D933-4EC1-830F-9FEA2A82C69E/10/806/en/Help-Policies-Borrowing.htm" target="_blank"><b>more information on downloading, reading, and returning eBooks</b></a> using OverDrive. 
+You can get even more downloadable books free from <a href="http://openlibrary.org/" target="_blank"><b>Open Library</b>
+</a> or from <a href="http://books.google.com/" target="_blank"><b>Google Books</b>
+</a>. We don't have downloadable audio books or movies at this time. <br/><br/>
+What would you like to know about downloading eBooks from our library?
+<think>
+<set name="search">overdrive</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>ADEHELP</pattern>
+<template><a href="http://xxxx.xxxxoverdrive.com/45F71616-F20B-407A-BC2B-045D63735BA1/10/806/en/Help-Reader-ADE.htm" target="_blank"><b>Follow this link</b></a> for help downloading or using Adobe Digital Editions.
+If you don't find what you are looking for there, please call the library during regular business hours at 555.555.5555.
+</template>
+</category>
+
+<category>
+<pattern>ODHELP</pattern>
+<template>If you have questions about downloading eBooks, please follow this link for <a href="http://help.overdrive.com" target="_blank"><b>Overdrive Help</b></a>.
+We also have a number of <a href="http://www.overdrive.com/Solutions/Libraries/tour/Main.html" target="_blank"><b>short demos</b></a> that will answer many of your questions about this service. 
+If you need further assistance, please call the library at 555.555.5555 during regular business hours.
+</template>
+</category>
+
+<category>
+<pattern>COMPATDEVS</pattern>
+<template>You can download eBooks to a wide variety of eReaders. Please follow these links for a list of
+<a href="http://www.overdrive.com/resources/drc/Default.aspx?type=ebook" target="_blank"><b>compatible devices</b></a> or for general
+<a href="http://xxxx.xxxxoverdrive.com/65024B84-DC2B-4A8C-917F-CC8FAC78F5C9/10/806/en/Help.htm" target="_blank"><b>Overdrive Help</b></a>.
+If you need further assistance, please call the library at 555.555.5555 during regular business hours.
+</template>
+</category>
+
+<category>
+<pattern>ODDEMOS</pattern>
+<template>We have online demos and tutorials to help you use Overdrive. 
+Follow this link to watch the <a href="http://www.overdrive.com/Solutions/Libraries/tour/Main.html" target="_blank"><b>Overdrive Tutorials</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>EBKRETURN</pattern>
+<template>You can return your eBooks at any time using Adobe Digital Editions. Here's a <a href="http://www.xxxxxxxxxx.org/picts/earlyreturn.png" target="_blank"><b>picture</b></a> showing you how. Follow this link for <a href="http://xxxx.xxxxoverdrive.com/D55CB037-B262-4855-A70D-BBA5B36CF67E/10/806/en/Help-Policies-Borrowing.htm#question-124" target="_blank"><b>more information about returning your eBooks</b></a>, or call the library at 555.555.5555
+during regular business hours.
+</template>
+</category>
+
+<category>
+<pattern>EBKRENEW</pattern>
+<template>eBooks cannot be renewed. If you haven't finished an eBook by the time it expires, you'll have to check it out again.
+If it's a popular title, that means you'll have to place it on hold.
+</template>
+</category>
+
+<category>
+<pattern>SRCHEBKS</pattern>
+<template>I'm not able to search for eBooks for you. Not yet, but perhaps soon. 
+In the meantime, follow this link to our <a href="http://xxxx.xxxxoverdrive.com" target="_blank"><b>OverDrive page</b></a>, 
+then look at the left hand column to browse fiction or nonfiction eBook titles.
+</template>
+</category>
+
+<category>
+<pattern>EBKLIST</pattern>
+<template>Overdrive doesn't have a list, per se, 
+but you can follow this link to browse all of our <a href="http://xxxx.xxxxoverdrive.com/04958E51-F7EC-4E7E-8DEE-401C67C34B66/10/806/en/BrowseCollections.htm" target="_blank"><b>eBook titles</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>FREE EBKS</pattern>
+<template>You can find over a million free eBooks at <a href="http://openlibrary.org/subjects/accessible_book" target="_blank"><b>Open Library</b></a>. 
+Overdrive also has many free <a href="http://xxxx.xxxxoverdrive.com/D840E1EF-B2AF-48C5-84BB-790050B31264/10/806/en/PublicDomainCollection.htm" target="_blank"><b>eBook titles</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>PUBDOM EBKS</pattern>
+<template><a href="http://openlibrary.org/" target="_blank"><b>Open Library</b></a> has more than a million free ebook titles for you to download. You should
+also try <a href="http://books.google.com/books" target="_blank"><b>Google Books</b></a>. They have even more free ebooks.
+</template>
+</category>
+
+<category>
+<pattern>DWNLDS</pattern>
+<template>We have downloadable eBooks through <a href="http://xxxx.xxxxoverdrive.com/" target="_blank"><b>Overdrive</b></a>. We also have free music downloads through <a href="http://www.freegalmusic.com/users/indlogin" target="_blank"><b>Freegal</b></a>. 
+All you need is your  Metro Public Library card to use both! You can get even more downloadable books free from <a href="http://openlibrary.org/" target="_blank"><b>Open Library</b>
+</a> or from <a href="http://books.google.com/" target="_blank"><b>Google Books</b>
+</a>. We don't have downloadable movies at this time.
+</template>
+</category>
+
+<category>
+<pattern>DWN IPDS</pattern>
+<template>To download eBooks to your i Pad, you need to do two things: <br/>
+1. install the OverDrive Media Console, and <br/>
+2. create and activate your Adobe ID. Follow this link for more information and assistance on <a href="http://help.overdrive.com/MyHelpMH22" target="_blank"><b>using OverDrive with your i Pad</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>DWN KINDL</pattern>
+<template>Overdrive eBooks are now compatible with Kindles. My good friend Lyndsey made a nice guide to <a href="http://www.xxxxxxxxxx.org/pdfs/Kindle_download_guide.pdf" target="_blank"><b>downloading eBooks to your Kindle</b></a>.
+Click on the link to see it.
+</template>
+</category>
+
+<category>
+<pattern>DWN NKS</pattern>
+<template>My good friend Lyndsey made a nice guide to <a href="http://www.xxxxxxxxxx.org/pdfs/KINDLE_download_guide.pdf" target="_blank"><b>downloading eBooks to your Kindle</b></a>.
+Click on the link and take a look. She did a great job. You can find additional about downloading eBooks to your Kindle <a href="http://help.overdrive.com/?Sup=http://xxxx.xxxxoverdrive.com/Support.htm" target="_blank"><b>here</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>GENINFO IPD</pattern>
+<template>To download eBooks to your i Pad, you need to do two things: <br/>
+1. install the OverDrive Media Console, and <br/>
+2. create and activate your Adobe ID. Follow this link for more information and assistance on <a href="http://help.overdrive.com/MyHelpMH22" target="_blank"><b>using OverDrive with your i Pad</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>GENINFO KINDL</pattern>
+<template>We have Kindle Fires that you may check out for two weeks. Follow this link to <a href="http://catalog.xxxxxxxxxx.org/record=b1269854~S12" target="_blank"><b>place one on hold</b></a>. 
+You can also download eBooks to your own Kindle using Overdrive. 
+Follow this link for information about <a href="http://help.overdrive.com/?Sup=http://xxxx.xxxxoverdrive.com/Support.htm" target="_blank"><b>downloading eBooks to your Kindle</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>GENINFO NKS</pattern>
+<template>My good friend Lyndsey made a nice guide to <a href="http://www.xxxxxxxxxx.org/pdfs/KINDLE_download_guide.pdf" target="_blank"><b>downloading eBooks to your Kindle</b></a>.
+Click on the link and take a look. She did a great job. 
+You can find additional about downloading eBooks to your Kindle <a href="http://help.overdrive.com/?Sup=http://xxxx.xxxxoverdrive.com/Support.htm" target="_blank"><b>here</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>EBKS READY</pattern>
+<template>If you have an eBook on hold, you'll receive an email when it's ready for you to download.
+</template>
+</category>
+
+<category>
+<pattern>DWN MEDIA</pattern>
+<template>We have downloadable eBooks through <a href="http://xxxx.xxxxoverdrive.com/" target="_blank"><b>Overdrive</b></a>. We also have free music downloads through <a href="http://www.freegalmusic.com/users/indlogin" target="_blank"><b>Freegal</b></a>. 
+All you need is your  Metro Public Library card to use both! You can get even more downloadable books free from <a href="http://openlibrary.org/" target="_blank"><b>Open Library</b>
+</a> or from <a href="http://books.google.com/" target="_blank"><b>Google Books</b>
+</a>. We don't have downloadable audio books or movies at this time.
+</template>
+</category>
+
+<category>
+<pattern>OPNLIB</pattern>
+<template><a href="http://openlibrary.org/" target="_blank"><b>Open Library</b></a> has more than a million free ebook titles for you to download. You should
+also try <a href="http://books.google.com/books" target="_blank"><b>Google Books</b></a>. They have even more free ebooks.
+</template>
+</category>
+
+<category>
+<pattern>EDEV WRECK</pattern>
+<template>The borrower assumes full responsibility for the device and its contents upon checkout. 
+If you lose or damage one of the library's iPads, Kindles, or Nooks, you will be charged the replacement cost for that device. 
+Please call the library for more information.
+</template>
+</category>
+
+<!--PROGRAM INFO-->
+
+<category>
+<pattern>BTALKS</pattern>
+<template> Metro Public Library offers a variety of book discussion groups. To see the full listing and learn more about each group, 
+go to our <a href="http://www.xxxxxxxxxx.org/readers.html" target="_blank"><b>Reader's Page</b></a>.<br/>
+What would you like to know about our book talks?
+<think><set name="topic">BOOKTALKS</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>BCCAL</pattern>
+<template>You can find dates and times of meetings on our Events Calendar.
+</template>
+</category>  
+
+<category>
+<pattern>BCSU</pattern>
+<template>You do not need to sign up in advance for most discussions.
+</template>
+</category>  
+
+<category>
+<pattern>BCCOPY</pattern>
+<template>For a copy of a discussion book, ask at the Main Library Reference Desk.
+</template>
+</category>  
+
+<category>
+<pattern>OLBKDISC</pattern>
+<template> Metro Public Library offers a number of online book discussion groups. Follow the link to sign up for our <a href="http://www.supportlibrary.com/su/su.cfm?q=6474252" target="_blank"><b>online book clubs</b></a>. 
+</template>
+</category>  
+  
+<category>
+<pattern>BKDISCKITS</pattern>
+<template>The library has sets of books that you can check out to use with your own book discussion group. You can find a list of book discussion kits <a href="http://catalog.xxxxxxxxxx.org/search/X?SEARCH=book+discussion+kits&amp;SORT=D&amp;searchscope=12" target="_blank"><b>here</b></a>.
+</template>
+</category>  
+
+<category>
+<pattern>MNBD</pattern>
+<template>Librarian XXX XXXXX leads the Monday Night Book Discussion. It's a stimulating discussion of bestsellers, classics, and more. This group
+usually meets on the first Monday of every month. Please see our <a href="http://www.xxxxxxxxxx.org/readers.html" target="_blank"><b>Reader's Page</b></a> for details, including lists of past and future titles, or call XXX XXXXX
+at 555.555.5555 extension 210.
+</template>
+</category>  
+  
+<category>
+<pattern>SENIORBC</pattern>
+<template>Librarian XXX XXXXX leads our Senior Citizen Book Discussion Group. This group meets at the  Senior Center on the second Wednesday of each month at 1:30 pm. To learn more, contact XXX XXXXX at 555.555.5555 extension 210,
+or see our <a href="http://www.xxxxxxxxxx.org/readers.html" target="_blank"><b>Reader's Page</b></a>.
+</template>
+</category>  
+
+<category>
+<pattern>BCM</pattern>
+<template>XXX XXXXX leads our Book Club for Men. This group meets at the Main Library on the third Monday of each month at 7:00 pm. To learn more, contact Steve at 555.555.5555,
+or see our <a href="http://www.xxxxxxxxxx.org/readers.html" target="_blank"><b>Reader's Page</b></a>.
+</template>
+</category>  
+ 
+<category>
+<pattern>BKBRUSH</pattern>
+<template>Explore the fine arts through reading and discussing art historical novels with librarian XXX XXXXX. The Book and Brush Club meets at the Main Library on the last Wednesday of each month at the Main Library. To learn more, contact Barb at 555.555.5555
+extension 210, or see our <a href="http://www.xxxxxxxxxx.org/readers.html" target="_blank"><b>Reader's Page</b></a>.
+</template>
+</category>  
+ 
+<category>
+<pattern>PROFLRS</pattern>
+<template>Profilers investigates crime related genres, such as: thriller, suspense, true crime, noir, detective, and mystery.
+This group meets on the last Thursday of each month at the Main Library. To learn more, contact the library at 555.555.5555
+extension 214, or see our <a href="http://www.xxxxxxxxxx.org/readers.html" target="_blank"><b>Reader's Page</b></a>.
+</template>
+</category>  
+  
+<category>
+<pattern>2030S</pattern>
+<template>The Twenty Something Readers are now the  20's / 30's Readers. 
+To learn more, contact Adult Information Services at 555.555.5555
+extension 214,
+or see our <a href="http://www.xxxxxxxxxx.org/readers.html" target="_blank"><b>Reader's Page</b></a>.
+</template>
+</category>    
+  
+<category>
+<pattern>BC4TEENS</pattern>
+<template>We don't have a teen book club at the moment, but that's a good idea. I'll make sure the correct person gets your suggestion.
+</template>
+</category>  
+
+<category>
+<pattern>EVNTS</pattern>
+<template>You can find library events and programs on our calendar. I'll open it for you. Unless noted, all library events are free.
+<br/>
+What else would you like to know about our programs or events?
+<think>
+<set name="search">eventcalendar</set>
+<set name="topic">EVENTS</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>MPLCAL</pattern>
+<template>You can find library events and programs on our calendar. I'll open it for you. Just pick your month and you'll see the programs that are scheduled.
+<think><set name="search">eventcalendar</set></think>
+</template>
+</category>
+
+<category>
+<pattern>AUTHVSTS</pattern>
+<template>All author visits and book signings will be on our calendar. They will also be listed on our home page.
+<think><set name="search">eventcalendar</set></think>
+</template>
+</category>
+
+<category>
+<pattern>MPLCAL2</pattern>
+<template>We have programs and events for all ages. Unless noted, all library events are free. 
+Here is our calendar. 
+<think><set name="search">eventcalendar</set></think>
+</template>
+</category>
+
+<category>
+<pattern>PROGREG</pattern>
+<template>You can register for a program by following the "register online" link in the program desciption, or by clicking on the program title in our calendar (I'll open it for you). 
+Or you can call the library and register over the phone. 
+<think><set name="search">eventcalendar</set></think>
+</template>
+</category>
+
+<category>
+<pattern>PROGCOST</pattern>
+<template>Unless noted, all Library programs are free.
+</template>
+</category>
+
+<category>
+<pattern>CHPROGS</pattern>
+<template>
+<random>
+<li> Follow this link for a list of our current <a href="http://www.xxxxxxxxxx.org/pdfs/currentkids.pdf" target="_blank"><b>Children's Storytimes, Programs and Events</b></a>.
+You can sign up for these by using our <a href="http://www.xxxx.xxxx/evanced/lib/eventcalendar.asp?Lib=ALL" target="_blank"><b>Events Calendar</b></a>, or by calling us at 555.555.5555 extension 221.</li>
+<li>We have programs and Story Times for children of all ages.  Here's a <a href="http://www.xxxxxxxxxx.org/pdfs/currentkids.pdf"><b>complete schedule</b></a>. Sign up using the <a href="http://www.xxxx.xxxx/evanced/lib/eventcalendar.asp?Lib=ALL" target="_blank"><b>our calendar</b></a> or call us at 555.555.5555. 
+</li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern>CHCONTESTS</pattern>
+<template>Check our <a href="http://www.xxxxxxxxxx.org/children.html" target="_blank">
+<b>Children's pages</b>
+</a> for information about Children's contests and events. You can also check <a href="http://www.xxxx.xxxx/evanced/lib/eventcalendar.asp?Lib=ALL" target="_blank"><b>our calendar</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>YAPROGS</pattern>
+<template>You can find programs for teens on our calendar. On the left.
+If you'd like to present a program at the Library, please call us at 555.555.5555.
+</template>
+</category>
+
+<!--RETURN INFO-->
+
+<category>
+<pattern>RTNS</pattern>
+<template>I'm often asked about returning items, it seems to be a favorite topic. 
+What would you like to know about returning items?
+<think>
+<set name="topic">RETURNS</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>LATE RTRN</pattern>
+<template>If you return an item late, you'll be charged an overdue fine. <srai>FNSMRY</srai>
+</template>
+</category>
+
+<category>
+<pattern>MPL RTRN</pattern>
+<template>You can return any of our items to any of our locations.  Materials may be returned to the branch closest to you. If the library is closed, please use the book drop. 
+Nooks, Kindles, and iPads are the only exception and must be returned to the same place you got them, either the Main Library Computer Help Desk or to the Lake Branch Service Desk. OhioLINK or SearchOhio items that you borrowed through us may also be returned at any of our locations.
+</template>
+</category>
+
+<category>
+<pattern>NONMPL RTRN</pattern>
+<template>If you accidentally return another library's items to the  Metro Public Library, we will do our best to return those items to the owning library.
+It might take a while, though, and we can't guarantee that you won't be charged late fees.
+</template>
+</category>
+
+<category>
+<pattern>RENT RTRN</pattern>
+<template>If you return rental DVDs and games (from Hollywood Video, Blockbuster, etc.) to  Metro Public Library, we will keep them behind the circulation desk for two weeks for you to pick up. 
+We cannot keep these items beyond two weeks due to lack of space. The library is not able to return rental DVDs and games for you. 
+</template>
+</category>
+
+<category>
+<pattern>CLMSRTRN</pattern>
+<template>"Claims returned" is a one time courtesy given to patrons. For more information, please call our Circulation Department at 555.555.5555.
+</template>
+</category>
+
+<category>
+<pattern>RTRN ON REC</pattern>
+<template>If an item you returned is still on your record, please call our Circulation Department at 555.555.5555 
+during regular business hours or email us at xxxxxxx@xxxxxxxxxx.org.
+</template>
+</category>
+
+<category>
+<pattern>EDEVRTRN</pattern>
+<template>Nooks, Kindles, and iPads must be returned to the same place you got them, either the Main Library Computer Help Desk or to the Lake Branch Service Desk.
+<srai>EBKRETURN</srai>
+</template>
+</category>
+
+<category>
+<pattern>BKDRPS</pattern>
+<template>There are book drops at all of our locations. Some of our
+book drops are for books and some are for DVDs and CDs. Please use the appropriate
+drop for your items. You may return any item using the outside book drops unless the item you are returning is an electronic device.
+Those must be returned to the same place you got them, either the Main Library Computer Help Desk or to the Lake Branch Service Desk.
+</template>
+</category>
+
+<!--YA INFO-->
+
+<category>
+<pattern>TNBKCLB</pattern>
+<template>We don't have a teen book club at the moment, but that's a good idea. I'll make sure the correct person gets your suggestion.</template>
+</category>
+
+<category>
+<pattern>TNPRGRMS</pattern>
+<template>You can find programs for teens on our calendar. On the left.
+If you'd like to present a program at the Library, please call us at 555.555.5555.</template>
+</category>
+
+<category>
+<pattern>TNSDEPT</pattern>
+<template>The Teen Area is on the first floor of the Main Library. 
+All Teen or YA materials at the Main Library are on the first floor.
+</template>
+</category>
+
+<category>
+<pattern>* BOOKS * TEENS *</pattern>
+<template>You might want to call Amy or Mary D. at the library. They know which books teens like.</template>
+</category>
+
+</aiml>

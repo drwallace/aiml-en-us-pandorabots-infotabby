@@ -1,0 +1,1004 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<!--Copyright 2011 David W. Newyear
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+      http://www.apache.org/licenses/LICENSE-2.0
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<category>
+<pattern>COMPUTER</pattern>
+<template>
+<srai>CMPTR</srai>
+</template>
+</category>
+
+<category>
+<pattern>COMPUTERS</pattern>
+<template>
+<srai>CMPTR</srai>
+</template>
+</category>
+
+<category>
+<pattern>INTERNET</pattern>
+<template>
+<srai>CMPTR</srai>
+</template>
+</category>
+
+<category>
+<pattern>ONLINE</pattern>
+<template>
+<srai>CMPTR</srai>
+</template>
+</category>
+
+<category>
+<pattern>PC</pattern>
+<template>
+<srai>CMPTR</srai>
+</template>
+</category>
+
+<category>
+<pattern>PCS</pattern>
+<template>
+<srai>CMPTR</srai>
+</template>
+</category>
+
+<category>
+<pattern>CMPTR</pattern>
+<template>
+I'm often asked about this topic. What would you like to know about using the library's computer or the internet?
+<think>
+<set name="topic">COMPUSE</set>
+</think>
+</template>
+</category>
+
+<topic name="COMPUSE">
+<category>
+<pattern>_</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">COMPUSE2</set>
+</think>
+<srai>COMPUSE2</srai></template>
+</category>
+</topic>
+
+<category>
+<pattern>* COMPUTER</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">COMPUSE2</set>
+</think>
+<srai>CMPUSE2</srai>
+</template>
+</category>
+
+<category>
+<pattern>COMPUTER *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">COMPUSE2</set>
+</think>
+<srai>CMPUSE2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* COMPUTER *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">COMPUSE2</set>
+</think>
+<srai>CMPUSE2</srai>
+</template>
+</category>>
+
+<category>
+<pattern>* COMPUTERS</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">COMPUSE2</set>
+</think>
+<srai>CMPUSE2</srai>
+</template>
+</category>
+
+<category>
+<pattern>COMPUTERS *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">COMPUSE2</set>
+</think>
+<srai>CMPUSE2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* COMPUTERS *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">COMPUSE2</set>
+</think>
+<srai>CMPUSE2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* INTERNET</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">COMPUSE2</set>
+</think>
+<srai>CMPUSE2</srai>
+</template>
+</category>
+
+<category>
+<pattern>INTERNET *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">COMPUSE2</set>
+</think>
+<srai>CMPUSE2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* INTERNET *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">COMPUSE2</set>
+</think>
+<srai>CMPUSE2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* ONLINE</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">COMPUSE2</set>
+</think>
+<srai>CMPUSE2</srai>
+</template>
+</category>
+
+<category>
+<pattern>ONLINE *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">COMPUSE2</set>
+</think>
+<srai>CMPUSE2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* ONLINE *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">COMPUSE2</set>
+</think>
+<srai>CMPUSE2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* PC</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">COMPUSE2</set>
+</think>
+<srai>CMPUSE2</srai>
+</template>
+</category>
+
+<category>
+<pattern>PC *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">COMPUSE2</set>
+</think>
+<srai>CMPUSE2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* PC *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">COMPUSE2</set>
+</think>
+<srai>CMPUSE2</srai>
+</template>
+</category>
+
+
+<category>
+<pattern>* PCS</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">COMPUSE2</set>
+</think>
+<srai>CMPUSE2</srai>
+</template>
+</category>
+
+
+<category>
+<pattern>PCS *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">COMPUSE2</set>
+</think>
+<srai>CMPUSE2</srai>
+</template>
+</category>
+
+
+<category>
+<pattern>* PCS *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">COMPUSE2</set>
+</think>
+<srai>CMPUSE2</srai>
+</template>
+</category>
+
+
+<topic name="COMPUSE2">
+<category>
+<pattern>COMPUSE2</pattern>
+<template>
+<think>
+<get name="answr"/>
+<set name="message">no match</set>
+<condition name="answr">
+
+<li value="STOP"><set name="message">stop</set></li>
+
+<li value="CARD"><set name="message">computer use</set></li>
+<li value="* CARD"><set name="message">computer use</set></li>
+<li value="CARD *"><set name="message">computer use</set></li>
+<li value="* CARD *"><set name="message">computer use</set></li>
+
+<li value="CARDS"><set name="message">computer use</set></li>
+<li value="* CARDS"><set name="message">computer use</set></li>
+<li value="CARDS *"><set name="message">computer use</set></li>
+<li value="* CARDS *"><set name="message">computer use</set></li>
+
+<li value="GET ON"><set name="message">computer use</set></li>
+<li value="* GET ON"><set name="message">computer use</set></li>
+<li value="GET ON *"><set name="message">computer use</set></li>
+<li value="* GET ON *"><set name="message">computer use</set></li>
+
+<li value="GET ONLINE"><set name="message">computer use</set></li>
+<li value="* GET ONLINE"><set name="message">computer use</set></li>
+<li value="GET ONLINE *"><set name="message">computer use</set></li>
+<li value="* GET ONLINE *"><set name="message">computer use</set></li>
+
+<li value="GO ON"><set name="message">computer use</set></li>
+<li value="* GO ON"><set name="message">computer use</set></li>
+<li value="GO ON *"><set name="message">computer use</set></li>
+<li value="* GO ON *"><set name="message">computer use</set></li>
+
+<li value="GO ONLINE"><set name="message">computer use</set></li>
+<li value="* GO ONLINE"><set name="message">computer use</set></li>
+<li value="GO ONLINE *"><set name="message">computer use</set></li>
+<li value="* GO ONLINE *"><set name="message">computer use</set></li>
+
+<li value="HAVE"><set name="message">computer use</set></li>
+<li value="* HAVE"><set name="message">computer use</set></li>
+<li value="HAVE *"><set name="message">computer use</set></li>
+<li value="* HAVE *"><set name="message">computer use</set></li>
+
+<li value="NEED"><set name="message">computer use</set></li>
+<li value="* NEED"><set name="message">computer use</set></li>
+<li value="NEED *"><set name="message">computer use</set></li>
+<li value="* NEED *"><set name="message">computer use</set></li>
+
+<li value="NEEDED"><set name="message">computer use</set></li>
+<li value="* NEEDED"><set name="message">computer use</set></li>
+<li value="NEEDED *"><set name="message">computer use</set></li>
+<li value="* NEEDED *"><set name="message">computer use</set></li>
+
+<li value="REQUIRE"><set name="message">computer use</set></li>
+<li value="* REQUIRE"><set name="message">computer use</set></li>
+<li value="REQUIRE *"><set name="message">computer use</set></li>
+<li value="* REQUIRE *"><set name="message">computer use</set></li>
+
+<li value="REQUIRED"><set name="message">computer use</set></li>
+<li value="* REQUIRED"><set name="message">computer use</set></li>
+<li value="REQUIRED *"><set name="message">computer use</set></li>
+<li value="* REQUIRED *"><set name="message">computer use</set></li>
+
+<li value="REQUIREMENT"><set name="message">computer use</set></li>
+<li value="* REQUIREMENT"><set name="message">computer use</set></li>
+<li value="REQUIREMENT *"><set name="message">computer use</set></li>
+<li value="* REQUIREMENT *"><set name="message">computer use</set></li>
+
+<li value="REQUIREMENTS"><set name="message">computer use</set></li>
+<li value="* REQUIREMENTS"><set name="message">computer use</set></li>
+<li value="REQUIREMENTS *"><set name="message">computer use</set></li>
+<li value="* REQUIREMENTS *"><set name="message">computer use</set></li>
+
+<li value="ADULT"><set name="message">age restrictions</set></li>
+<li value="* ADULT"><set name="message">age restrictions</set></li>
+<li value="ADULT *"><set name="message">age restrictions</set></li>
+<li value="* ADULT *"><set name="message">age restrictions</set></li>
+
+<li value="ADULTS"><set name="message">age restrictions</set></li>
+<li value="* ADULTS"><set name="message">age restrictions</set></li>
+<li value="ADULTS *"><set name="message">age restrictions</set></li>
+<li value="* ADULTS *"><set name="message">age restrictions</set></li>
+
+<li value="AGE"><set name="message">age restrictions</set></li>
+<li value="* AGE"><set name="message">age restrictions</set></li>
+<li value="AGE *"><set name="message">age restrictions</set></li>
+<li value="* AGE *"><set name="message">age restrictions</set></li>
+
+<li value="AGES"><set name="message">age restrictions</set></li>
+<li value="* AGES"><set name="message">age restrictions</set></li>
+<li value="AGES *"><set name="message">age restrictions</set></li>
+<li value="* AGES *"><set name="message">age restrictions</set></li>
+
+<li value="CHILD"><set name="message">age restrictions</set></li>
+<li value="* CHILD"><set name="message">age restrictions</set></li>
+<li value="CHILD *"><set name="message">age restrictions</set></li>
+<li value="* CHILD *"><set name="message">age restrictions</set></li>
+
+<li value="CHILDREN"><set name="message">age restrictions</set></li>
+<li value="* CHILDREN"><set name="message">age restrictions</set></li>
+<li value="CHILDREN *"><set name="message">age restrictions</set></li>
+<li value="* CHILDREN *"><set name="message">age restrictions</set></li>
+
+<li value="KID"><set name="message">age restrictions</set></li>
+<li value="* KID"><set name="message">age restrictions</set></li>
+<li value="KID *"><set name="message">age restrictions</set></li>
+<li value="* KID *"><set name="message">age restrictions</set></li>
+
+<li value="KIDS"><set name="message">age restrictions</set></li>
+<li value="* KIDS"><set name="message">age restrictions</set></li>
+<li value="KIDS *"><set name="message">age restrictions</set></li>
+<li value="* KIDS *"><set name="message">age restrictions</set></li>
+
+<li value="OLD"><set name="message">age restrictions</set></li>
+<li value="* OLD"><set name="message">age restrictions</set></li>
+<li value="OLD *"><set name="message">age restrictions</set></li>
+<li value="* OLD *"><set name="message">age restrictions</set></li>
+
+<li value="ALLOW"><set name="message">policies</set></li>
+<li value="* ALLOW"><set name="message">policies</set></li>
+<li value="ALLOW *"><set name="message">policies</set></li>
+<li value="* ALLOW *"><set name="message">policies</set></li>
+
+<li value="ALLOWED"><set name="message">policies</set></li>
+<li value="* ALLOWED"><set name="message">policies</set></li>
+<li value="ALLOWED *"><set name="message">policies</set></li>
+<li value="* ALLOWED *"><set name="message">policies</set></li>
+
+<li value="ALLOWS"><set name="message">policies</set></li>
+<li value="* ALLOWS"><set name="message">policies</set></li>
+<li value="ALLOWS *"><set name="message">policies</set></li>
+<li value="* ALLOWS *"><set name="message">policies</set></li>
+
+<li value="POLICIES"><set name="message">policies</set></li>
+<li value="* POLICIES"><set name="message">policies</set></li>
+<li value="POLICIES *"><set name="message">policies</set></li>
+<li value="* POLICIES *"><set name="message">policies</set></li>
+
+<li value="POLICY"><set name="message">policies</set></li>
+<li value="* POLICY"><set name="message">policies</set></li>
+<li value="POLICY *"><set name="message">policies</set></li>
+<li value="* POLICY *"><set name="message">policies</set></li>
+
+<li value="HOW LONG"><set name="message">session length</set></li>
+<li value="* HOW LONG"><set name="message">session length</set></li>
+<li value="HOW LONG *"><set name="message">session length</set></li>
+<li value="* HOW LONG *"><set name="message">session length</set></li>
+
+<li value="LIMIT"><set name="message">session length</set></li>
+<li value="* LIMIT"><set name="message">session length</set></li>
+<li value="LIMIT *"><set name="message">session length</set></li>
+<li value="* LIMIT *"><set name="message">session length</set></li>
+
+<li value="LIMITED"><set name="message">session length</set></li>
+<li value="* LIMITED"><set name="message">session length</set></li>
+<li value="LIMITED *"><set name="message">session length</set></li>
+<li value="* LIMITED *"><set name="message">session length</set></li>
+
+<li value="LIMITS"><set name="message">session length</set></li>
+<li value="* LIMITS"><set name="message">session length</set></li>
+<li value="LIMITS *"><set name="message">session length</set></li>
+<li value="* LIMITS *"><set name="message">session length</set></li>
+
+<li value="HOW LONG"><set name="message">session length</set></li>
+<li value="* HOW LONG"><set name="message">session length</set></li>
+<li value="HOW LONG *"><set name="message">session length</set></li>
+<li value="* HOW LONG *"><set name="message">session length</set></li>
+
+<li value="LONG"><set name="message">session length</set></li>
+<li value="* LONG"><set name="message">session length</set></li>
+<li value="LONG *"><set name="message">session length</set></li>
+<li value="* LONG *"><set name="message">session length</set></li>
+
+<li value="STAY ON"><set name="message">session length</set></li>
+<li value="* STAY ON"><set name="message">session length</set></li>
+<li value="STAY ON *"><set name="message">session length</set></li>
+<li value="* STAY ON *"><set name="message">session length</set></li>
+
+<li value="STAY ONLINE"><set name="message">session length</set></li>
+<li value="* STAY ONLINE"><set name="message">session length</set></li>
+<li value="STAY ONLINE *"><set name="message">session length</set></li>
+<li value="* STAY ONLINE *"><set name="message">session length</set></li>
+
+
+<li value="TIME"><set name="message">session length</set></li>
+<li value="* TIME"><set name="message">session length</set></li>
+<li value="TIME *"><set name="message">session length</set></li>
+<li value="* TIME *"><set name="message">session length</set></li>
+
+<li value="RESERVATION"><set name="message">sign up</set></li>
+<li value="* RESERVATION"><set name="message">sign up</set></li>
+<li value="RESERVATION *"><set name="message">sign up</set></li>
+<li value="* RESERVATION *"><set name="message">sign up</set></li>
+
+<li value="RESERVATIONS"><set name="message">sign up</set></li>
+<li value="* RESERVATIONS"><set name="message">sign up</set></li>
+<li value="RESERVATIONS *"><set name="message">sign up</set></li>
+<li value="* RESERVATIONS *"><set name="message">sign up</set></li>
+
+<li value="RESERVE"><set name="message">sign up</set></li>
+<li value="* RESERVE"><set name="message">sign up</set></li>
+<li value="RESERVE *"><set name="message">sign up</set></li>
+<li value="* RESERVE *"><set name="message">sign up</set></li>
+
+<li value="SIGN"><set name="message">sign up</set></li>
+<li value="* SIGN"><set name="message">sign up</set></li>
+<li value="SIGN *"><set name="message">sign up</set></li>
+<li value="* SIGN *"><set name="message">sign up</set></li>
+
+<li value="CHECK OUT"><set name="message">comp check out</set></li>
+<li value="* CHECK OUT"><set name="message">comp check out</set></li>
+<li value="CHECK OUT *"><set name="message">comp check out</set></li>
+<li value="* CHECK OUT *"><set name="message">comp check out</set></li>
+
+<li value="RENT"><set name="message">comp check out</set></li>
+<li value="* RENT"><set name="message">comp check out</set></li>
+<li value="RENT *"><set name="message">comp check out</set></li>
+<li value="* RENT *"><set name="message">comp check out</set></li>
+
+<li value="RENTING"><set name="message">comp check out</set></li>
+<li value="* RENTING"><set name="message">comp check out</set></li>
+<li value="RENTING *"><set name="message">comp check out</set></li>
+<li value="* RENTING *"><set name="message">comp check out</set></li>
+
+<li value="RENTED"><set name="message">comp check out</set></li>
+<li value="* RENTED"><set name="message">comp check out</set></li>
+<li value="RENTED *"><set name="message">comp check out</set></li>
+<li value="* RENTED *"><set name="message">comp check out</set></li>
+
+<li value="101"><set name="message">tech training</set></li>
+<li value="* 101"><set name="message">tech training</set></li>
+<li value="101 *"><set name="message">tech training</set></li>
+<li value="* 101 *"><set name="message">tech training</set></li>
+
+<li value="COURSE"><set name="message">tech training</set></li>
+<li value="* COURSE"><set name="message">tech training</set></li>
+<li value="COURSE *"><set name="message">tech training</set></li>
+<li value="* COURSE *"><set name="message">tech training</set></li>
+
+<li value="COURSES"><set name="message">tech training</set></li>
+<li value="* COURSES"><set name="message">tech training</set></li>
+<li value="COURSES *"><set name="message">tech training</set></li>
+<li value="* COURSES *"><set name="message">tech training</set></li>
+
+<li value="CLASS"><set name="message">tech training</set></li>
+<li value="* CLASS"><set name="message">tech training</set></li>
+<li value="CLASS *"><set name="message">tech training</set></li>
+<li value="* CLASS *"><set name="message">tech training</set></li>
+
+<li value="CLASSES"><set name="message">tech training</set></li>
+<li value="* CLASSES"><set name="message">tech training</set></li>
+<li value="CLASSES *"><set name="message">tech training</set></li>
+<li value="* CLASSES *"><set name="message">tech training</set></li>
+
+<li value="INSTRUCTION"><set name="message">tech training</set></li>
+<li value="* INSTRUCTION"><set name="message">tech training</set></li>
+<li value="INSTRUCTION *"><set name="message">tech training</set></li>
+<li value="* INSTRUCTION *"><set name="message">tech training</set></li>
+
+<li value="TRAINING"><set name="message">tech training</set></li>
+<li value="* TRAINING"><set name="message">tech training</set></li>
+<li value="TRAINING *"><set name="message">tech training</set></li>
+<li value="* TRAINING *"><set name="message">tech training</set></li>
+
+<li value="ECO"><set name="message">eco</set></li>
+<li value="* ECO"><set name="message">eco</set></li>
+<li value="ECO *"><set name="message">eco</set></li>
+<li value="* ECO *"><set name="message">eco</set></li>
+
+<li value="EVERY CITIZEN ONLINE"><set name="message">eco</set></li>
+<li value="* EVERY CITIZEN ONLINE"><set name="message">eco</set></li>
+<li value="EVERY CITIZEN ONLINE *"><set name="message">eco</set></li>
+<li value="* EVERY CITIZEN ONLINE *"><set name="message">eco</set></li>
+
+<li value="EVERY COMMUNITY ONLINE"><set name="message">eco</set></li>
+<li value="* EVERY COMMUNITY ONLINE"><set name="message">eco</set></li>
+<li value="EVERY COMMUNITY ONLINE *"><set name="message">eco</set></li>
+<li value="* EVERY COMMUNITY ONLINE *"><set name="message">eco</set></li>
+
+<li value="GUEST"><set name="message">guest passes</set></li>
+<li value="* GUEST"><set name="message">guest passes</set></li>
+<li value="GUEST *"><set name="message">guest passes</set></li>
+<li value="* GUEST *"><set name="message">guest passes</set></li>
+
+<li value="GUESTS"><set name="message">guest passes</set></li>
+<li value="* GUESTS"><set name="message">guest passes</set></li>
+<li value="GUESTS *"><set name="message">guest passes</set></li>
+<li value="* GUESTS *"><set name="message">guest passes</set></li>
+
+<li value="PASS"><set name="message">guest passes</set></li>
+<li value="* PASS"><set name="message">guest passes</set></li>
+<li value="PASS *"><set name="message">guest passes</set></li>
+<li value="* PASS *"><set name="message">guest passes</set></li>
+
+<li value="PASSES"><set name="message">guest passes</set></li>
+<li value="* PASSES"><set name="message">guest passes</set></li>
+<li value="PASSES *"><set name="message">guest passes</set></li>
+<li value="* PASSES *"><set name="message">guest passes</set></li>
+
+<li value="HOTSPOT"><set name="message">hotspot</set></li>
+<li value="* HOTSPOT"><set name="message">hotspot</set></li>
+<li value="HOTSPOT *"><set name="message">hotspot</set></li>
+<li value="* HOTSPOT *"><set name="message">hotspot</set></li>
+
+<li value="HOT SPOT"><set name="message">hotspot</set></li>
+<li value="* HOT SPOT"><set name="message">hotspot</set></li>
+<li value="HOT SPOT *"><set name="message">hotspot</set></li>
+<li value="* HOT SPOT *"><set name="message">hotspot</set></li>
+
+<li value="LAPTOP"><set name="message">laptop</set></li>
+<li value="* LAPTOP"><set name="message">laptop</set></li>
+<li value="LAPTOP *"><set name="message">laptop</set></li>
+<li value="* LAPTOP *"><set name="message">laptop</set></li>
+
+<li value="LAPTOPS"><set name="message">laptop</set></li>
+<li value="* LAPTOPS"><set name="message">laptop</set></li>
+<li value="LAPTOPS *"><set name="message">laptop</set></li>
+<li value="* LAPTOPS *"><set name="message">laptop</set></li>
+
+<li value="LAP TOP"><set name="message">laptop</set></li>
+<li value="* LAP TOP"><set name="message">laptop</set></li>
+<li value="LAP TOP *"><set name="message">laptop</set></li>
+<li value="* LAP TOP *"><set name="message">laptop</set></li>
+
+<li value="LAP TOPS"><set name="message">laptop</set></li>
+<li value="* LAP TOPS"><set name="message">laptop</set></li>
+<li value="LAP TOPS *"><set name="message">laptop</set></li>
+<li value="* LAP TOPS *"><set name="message">laptop</set></li>
+
+<li value="LAKE LAPTOP"><set name="message">lake laptop</set></li>
+<li value="* LAKE LAPTOP"><set name="message">lake laptop</set></li>
+<li value="LAKE * LAPTOP"><set name="message">lake laptop</set></li>
+<li value="LAKE LAPTOP *"><set name="message">lake laptop</set></li>
+<li value="* LAKE * LAPTOP"><set name="message">lake laptop</set></li>
+<li value="LAKE * LAPTOP *"><set name="message">lake laptop</set></li>
+<li value="* LAKE LAPTOP *"><set name="message">lake laptop</set></li>
+<li value="* LAKE * LAPTOP *"><set name="message">lake laptop</set></li>
+
+<li value="LAKE LAPTOPS"><set name="message">lake laptop</set></li>
+<li value="* LAKE LAPTOPS"><set name="message">lake laptop</set></li>
+<li value="LAKE * LAPTOPS"><set name="message">lake laptop</set></li>
+<li value="LAKE LAPTOPS *"><set name="message">lake laptop</set></li>
+<li value="* LAKE * LAPTOPS"><set name="message">lake laptop</set></li>
+<li value="LAKE * LAPTOPS *"><set name="message">lake laptop</set></li>
+<li value="* LAKE LAPTOPS *"><set name="message">lake laptop</set></li>
+<li value="* LAKE * LAPTOPS *"><set name="message">lake laptop</set></li>
+
+<li value="LAKE LAP TOP"><set name="message">lake laptop</set></li>
+<li value="* LAKE LAP TOP"><set name="message">lake laptop</set></li>
+<li value="LAKE * LAP TOP"><set name="message">lake laptop</set></li>
+<li value="LAKE LAP TOP *"><set name="message">lake laptop</set></li>
+<li value="* LAKE * LAP TOP"><set name="message">lake laptop</set></li>
+<li value="LAKE * LAP TOP *"><set name="message">lake laptop</set></li>
+<li value="* LAKE LAP TOP *"><set name="message">lake laptop</set></li>
+<li value="* LAKE * LAP TOP *"><set name="message">lake laptop</set></li>
+
+<li value="LAKE LAP TOPS"><set name="message">lake laptop</set></li>
+<li value="* LAKE LAP TOPS"><set name="message">lake laptop</set></li>
+<li value="LAKE * LAP TOPS"><set name="message">lake laptop</set></li>
+<li value="LAKE LAP TOPS *"><set name="message">lake laptop</set></li>
+<li value="* LAKE * LAP TOPS"><set name="message">lake laptop</set></li>
+<li value="LAKE * LAP TOPS *"><set name="message">lake laptop</set></li>
+<li value="* LAKE LAP TOPS *"><set name="message">lake laptop</set></li>
+<li value="* LAKE * LAP TOPS *"><set name="message">lake laptop</set></li>
+
+<li value="MOL LAP TOP"><set name="message">lake laptop</set></li>
+<li value="* MOL LAP TOP"><set name="message">lake laptop</set></li>
+<li value="MOL * LAP TOP"><set name="message">lake laptop</set></li>
+<li value="MOL LAP TOP *"><set name="message">lake laptop</set></li>
+<li value="* MOL * LAP TOP"><set name="message">lake laptop</set></li>
+<li value="MOL * LAP TOP *"><set name="message">lake laptop</set></li>
+<li value="* MOL LAP TOP *"><set name="message">lake laptop</set></li>
+<li value="* MOL * LAP TOP *"><set name="message">lake laptop</set></li>
+
+<li value="MOL LAP TOPS"><set name="message">lake laptop</set></li>
+<li value="* MOL LAP TOPS"><set name="message">lake laptop</set></li>
+<li value="MOL * LAP TOPS"><set name="message">lake laptop</set></li>
+<li value="MOL LAP TOPS *"><set name="message">lake laptop</set></li>
+<li value="* MOL * LAP TOPS"><set name="message">lake laptop</set></li>
+<li value="MOL * LAP TOPS *"><set name="message">lake laptop</set></li>
+<li value="* MOL LAP TOPS *"><set name="message">lake laptop</set></li>
+<li value="* MOL * LAP TOPS *"><set name="message">lake laptop</set></li>
+
+<li value="LAPTOP LAKE"><set name="message">lake laptop</set></li>
+<li value="* LAPTOP LAKE"><set name="message">lake laptop</set></li>
+<li value="LAPTOP * LAKE"><set name="message">lake laptop</set></li>
+<li value="LAPTOP LAKE *"><set name="message">lake laptop</set></li>
+<li value="* LAPTOP * LAKE"><set name="message">lake laptop</set></li>
+<li value="LAPTOP * LAKE *"><set name="message">lake laptop</set></li>
+<li value="* LAPTOP LAKE *"><set name="message">lake laptop</set></li>
+<li value="* LAPTOP * LAKE *"><set name="message">lake laptop</set></li>
+
+<li value="LAPTOPS LAKE"><set name="message">lake laptop</set></li>
+<li value="* LAPTOPS LAKE"><set name="message">lake laptop</set></li>
+<li value="LAPTOPS * LAKE"><set name="message">lake laptop</set></li>
+<li value="LAPTOPS LAKE *"><set name="message">lake laptop</set></li>
+<li value="* LAPTOPS * LAKE"><set name="message">lake laptop</set></li>
+<li value="LAPTOPS * LAKE *"><set name="message">lake laptop</set></li>
+<li value="* LAPTOPS LAKE *"><set name="message">lake laptop</set></li>
+<li value="* LAPTOPS * LAKE *"><set name="message">lake laptop</set></li>
+
+<li value="LAP TOP LAKE"><set name="message">lake laptop</set></li>
+<li value="* LAP TOP LAKE"><set name="message">lake laptop</set></li>
+<li value="LAP TOP * LAKE"><set name="message">lake laptop</set></li>
+<li value="LAP TOP LAKE *"><set name="message">lake laptop</set></li>
+<li value="* LAP TOP * LAKE"><set name="message">lake laptop</set></li>
+<li value="LAP TOP * LAKE *"><set name="message">lake laptop</set></li>
+<li value="* LAP TOP LAKE *"><set name="message">lake laptop</set></li>
+<li value="* LAP TOP * LAKE *"><set name="message">lake laptop</set></li>
+
+<li value="LAP TOPS LAKE"><set name="message">lake laptop</set></li>
+<li value="* LAP TOPS LAKE"><set name="message">lake laptop</set></li>
+<li value="LAP TOPS * LAKE"><set name="message">lake laptop</set></li>
+<li value="LAP TOPS LAKE *"><set name="message">lake laptop</set></li>
+<li value="* LAP TOPS * LAKE"><set name="message">lake laptop</set></li>
+<li value="LAP TOPS * LAKE *"><set name="message">lake laptop</set></li>
+<li value="* LAP TOPS LAKE *"><set name="message">lake laptop</set></li>
+<li value="* LAP TOPS * LAKE *"><set name="message">lake laptop</set></li>
+
+<li value="LAPTOP MOL"><set name="message">lake laptop</set></li>
+<li value="* LAPTOP MOL"><set name="message">lake laptop</set></li>
+<li value="LAPTOP * MOL"><set name="message">lake laptop</set></li>
+<li value="LAPTOP MOL *"><set name="message">lake laptop</set></li>
+<li value="* LAPTOP * MOL"><set name="message">lake laptop</set></li>
+<li value="LAPTOP * MOL *"><set name="message">lake laptop</set></li>
+<li value="* LAPTOP MOL *"><set name="message">lake laptop</set></li>
+<li value="* LAPTOP * MOL *"><set name="message">lake laptop</set></li>
+
+<li value="LAPTOPS MOL"><set name="message">lake laptop</set></li>
+<li value="* LAPTOPS MOL"><set name="message">lake laptop</set></li>
+<li value="LAPTOPS * MOL"><set name="message">lake laptop</set></li>
+<li value="LAPTOPS MOL *"><set name="message">lake laptop</set></li>
+<li value="* LAPTOPS * MOL"><set name="message">lake laptop</set></li>
+<li value="LAPTOPS * MOL *"><set name="message">lake laptop</set></li>
+<li value="* LAPTOPS MOL *"><set name="message">lake laptop</set></li>
+<li value="* LAPTOPS * MOL *"><set name="message">lake laptop</set></li>
+
+<li value="LAP TOP MOL"><set name="message">lake laptop</set></li>
+<li value="* LAP TOP MOL"><set name="message">lake laptop</set></li>
+<li value="LAP TOP * MOL"><set name="message">lake laptop</set></li>
+<li value="LAP TOP MOL *"><set name="message">lake laptop</set></li>
+<li value="* LAP TOP * MOL"><set name="message">lake laptop</set></li>
+<li value="LAP TOP * MOL *"><set name="message">lake laptop</set></li>
+<li value="* LAP TOP MOL *"><set name="message">lake laptop</set></li>
+<li value="* LAP TOP * MOL *"><set name="message">lake laptop</set></li>
+
+<li value="LAP TOPS MOL"><set name="message">lake laptop</set></li>
+<li value="* LAP TOPS MOL"><set name="message">lake laptop</set></li>
+<li value="LAP TOPS * MOL"><set name="message">lake laptop</set></li>
+<li value="LAP TOPS MOL *"><set name="message">lake laptop</set></li>
+<li value="* LAP TOPS * MOL"><set name="message">lake laptop</set></li>
+<li value="LAP TOPS * MOL *"><set name="message">lake laptop</set></li>
+<li value="* LAP TOPS MOL *"><set name="message">lake laptop</set></li>
+<li value="* LAP TOPS * MOL *"><set name="message">lake laptop</set></li>
+
+<li value="HEADLANDS LAPTOP"><set name="message">lake laptop</set></li>
+<li value="* HEADLANDS LAPTOP"><set name="message">lake laptop</set></li>
+<li value="HEADLANDS * LAPTOP"><set name="message">lake laptop</set></li>
+<li value="HEADLANDS LAPTOP *"><set name="message">lake laptop</set></li>
+<li value="* HEADLANDS * LAPTOP"><set name="message">lake laptop</set></li>
+<li value="HEADLANDS * LAPTOP *"><set name="message">lake laptop</set></li>
+<li value="* HEADLANDS LAPTOP *"><set name="message">lake laptop</set></li>
+<li value="* HEADLANDS * LAPTOP *"><set name="message">lake laptop</set></li>
+
+<li value="HEADLANDS LAPTOPS"><set name="message">lake laptop</set></li>
+<li value="* HEADLANDS LAPTOPS"><set name="message">lake laptop</set></li>
+<li value="HEADLANDS * LAPTOPS"><set name="message">lake laptop</set></li>
+<li value="HEADLANDS LAPTOPS *"><set name="message">lake laptop</set></li>
+<li value="* HEADLANDS * LAPTOPS"><set name="message">lake laptop</set></li>
+<li value="HEADLANDS * LAPTOPS *"><set name="message">lake laptop</set></li>
+<li value="* HEADLANDS LAPTOPS *"><set name="message">lake laptop</set></li>
+<li value="* HEADLANDS * LAPTOPS *"><set name="message">lake laptop</set></li>
+
+<li value="HEADLANDS LAP TOP"><set name="message">lake laptop</set></li>
+<li value="* HEADLANDS LAP TOP"><set name="message">lake laptop</set></li>
+<li value="HEADLANDS * LAP TOP"><set name="message">lake laptop</set></li>
+<li value="HEADLANDS LAP TOP *"><set name="message">lake laptop</set></li>
+<li value="* HEADLANDS * LAP TOP"><set name="message">lake laptop</set></li>
+<li value="HEADLANDS * LAP TOP *"><set name="message">lake laptop</set></li>
+<li value="* HEADLANDS LAP TOP *"><set name="message">lake laptop</set></li>
+<li value="* HEADLANDS * LAP TOP *"><set name="message">lake laptop</set></li>
+
+<li value="HEADLANDS LAP TOPS"><set name="message">lake laptop</set></li>
+<li value="* HEADLANDS LAP TOPS"><set name="message">lake laptop</set></li>
+<li value="HEADLANDS * LAP TOPS"><set name="message">lake laptop</set></li>
+<li value="HEADLANDS LAP TOPS *"><set name="message">lake laptop</set></li>
+<li value="* HEADLANDS * LAP TOPS"><set name="message">lake laptop</set></li>
+<li value="HEADLANDS * LAP TOPS *"><set name="message">lake laptop</set></li>
+<li value="* HEADLANDS LAP TOPS *"><set name="message">lake laptop</set></li>
+<li value="* HEADLANDS * LAP TOPS *"><set name="message">lake laptop</set></li>
+
+<li value="LAPTOP HEADLANDS"><set name="message">lake laptop</set></li>
+<li value="* LAPTOP HEADLANDS"><set name="message">lake laptop</set></li>
+<li value="LAPTOP * HEADLANDS"><set name="message">lake laptop</set></li>
+<li value="LAPTOP HEADLANDS *"><set name="message">lake laptop</set></li>
+<li value="* LAPTOP * HEADLANDS"><set name="message">lake laptop</set></li>
+<li value="LAPTOP * HEADLANDS *"><set name="message">lake laptop</set></li>
+<li value="* LAPTOP HEADLANDS *"><set name="message">lake laptop</set></li>
+<li value="* LAPTOP * HEADLANDS *"><set name="message">lake laptop</set></li>
+
+<li value="LAPTOPS HEADLANDS"><set name="message">lake laptop</set></li>
+<li value="* LAPTOPS HEADLANDS"><set name="message">lake laptop</set></li>
+<li value="LAPTOPS * HEADLANDS"><set name="message">lake laptop</set></li>
+<li value="LAPTOPS HEADLANDS *"><set name="message">lake laptop</set></li>
+<li value="* LAPTOPS * HEADLANDS"><set name="message">lake laptop</set></li>
+<li value="LAPTOPS * HEADLANDS *"><set name="message">lake laptop</set></li>
+<li value="* LAPTOPS HEADLANDS *"><set name="message">lake laptop</set></li>
+<li value="* LAPTOPS * HEADLANDS *"><set name="message">lake laptop</set></li>
+
+<li value="LAP TOP HEADLANDS"><set name="message">lake laptop</set></li>
+<li value="* LAP TOP HEADLANDS"><set name="message">lake laptop</set></li>
+<li value="LAP TOP * HEADLANDS"><set name="message">lake laptop</set></li>
+<li value="LAP TOP HEADLANDS *"><set name="message">lake laptop</set></li>
+<li value="* LAP TOP * HEADLANDS"><set name="message">lake laptop</set></li>
+<li value="LAP TOP * HEADLANDS *"><set name="message">lake laptop</set></li>
+<li value="* LAP TOP HEADLANDS *"><set name="message">lake laptop</set></li>
+<li value="* LAP TOP * HEADLANDS *"><set name="message">lake laptop</set></li>
+
+<li value="LAP TOPS HEADLANDS"><set name="message">lake laptop</set></li>
+<li value="* LAP TOPS HEADLANDS"><set name="message">lake laptop</set></li>
+<li value="LAP TOPS * HEADLANDS"><set name="message">lake laptop</set></li>
+<li value="LAP TOPS HEADLANDS *"><set name="message">lake laptop</set></li>
+<li value="* LAP TOPS * HEADLANDS"><set name="message">lake laptop</set></li>
+<li value="LAP TOPS * HEADLANDS *"><set name="message">lake laptop</set></li>
+<li value="* LAP TOPS HEADLANDS *"><set name="message">lake laptop</set></li>
+<li value="* LAP TOPS * HEADLANDS *"><set name="message">lake laptop</set></li>
+
+<li value="EXCEL"><set name="message">office</set></li>
+<li value="* EXCEL"><set name="message">office</set></li>
+<li value="EXCEL *"><set name="message">office</set></li>
+<li value="* EXCEL *"><set name="message">office</set></li>
+
+<li value="MICROSOFT"><set name="message">office</set></li>
+<li value="* MICROSOFT"><set name="message">office</set></li>
+<li value="MICROSOFT *"><set name="message">office</set></li>
+<li value="* MICROSOFT *"><set name="message">office</set></li>
+
+<li value="OFFICE"><set name="message">office</set></li>
+<li value="* OFFICE"><set name="message">office</set></li>
+<li value="OFFICE *"><set name="message">office</set></li>
+<li value="* OFFICE *"><set name="message">office</set></li>
+
+<li value="WORD"><set name="message">office</set></li>
+<li value="* WORD"><set name="message">office</set></li>
+<li value="WORD *"><set name="message">office</set></li>
+<li value="* WORD *"><set name="message">office</set></li>
+
+<li value="TYPEWRITER"><set name="message">typewriter</set></li>
+<li value="* TYPEWRITER"><set name="message">typewriter</set></li>
+<li value="TYPEWRITER *"><set name="message">typewriter</set></li>
+<li value="* TYPEWRITER *"><set name="message">typewriter</set></li>
+
+<li value="TYPEWRITERS"><set name="message">typewriter</set></li>
+<li value="* TYPEWRITERS"><set name="message">typewriter</set></li>
+<li value="TYPEWRITERS *"><set name="message">typewriter</set></li>
+<li value="* TYPEWRITERS *"><set name="message">typewriter</set></li>
+
+<li value="EXTEND"><set name="message">extend session</set></li>
+<li value="* EXTEND"><set name="message">extend session</set></li>
+<li value="EXTEND *"><set name="message">extend session</set></li>
+<li value="* EXTEND *"><set name="message">extend session</set></li>
+
+<li value="EXTENDED"><set name="message">extend session</set></li>
+<li value="* EXTENDED"><set name="message">extend session</set></li>
+<li value="EXTENDED *"><set name="message">extend session</set></li>
+<li value="* EXTENDED *"><set name="message">extend session</set></li>
+
+<li value="EXTENDING"><set name="message">extend session</set></li>
+<li value="* EXTENDING"><set name="message">extend session</set></li>
+<li value="EXTENDING *"><set name="message">extend session</set></li>
+<li value="* EXTENDING *"><set name="message">extend session</set></li>
+
+<li value="EXTENSION"><set name="message">extend session</set></li>
+<li value="* EXTENSION"><set name="message">extend session</set></li>
+<li value="EXTENSION *"><set name="message">extend session</set></li>
+<li value="* EXTENSION *"><set name="message">extend session</set></li>
+
+<li value="EXTENSIONS"><set name="message">extend session</set></li>
+<li value="* EXTENSIONS"><set name="message">extend session</set></li>
+<li value="EXTENSIONS *"><set name="message">extend session</set></li>
+<li value="* EXTENSIONS *"><set name="message">extend session</set></li>
+
+<li value="MORE TIME"><set name="message">extend session</set></li>
+<li value="* MORE TIME"><set name="message">extend session</set></li>
+<li value="MORE TIME *"><set name="message">extend session</set></li>
+<li value="* MORE TIME *"><set name="message">extend session</set></li>
+
+<li value="INSTALL"><set name="message">install</set></li>
+<li value="* INSTALL"><set name="message">install</set></li>
+<li value="INSTALL *"><set name="message">install</set></li>
+<li value="* INSTALL *"><set name="message">install</set></li>
+
+<li value="WIFI"><set name="message">wifi</set></li>
+<li value="* WIFI"><set name="message">wifi</set></li>
+<li value="WIFI *"><set name="message">wifi</set></li>
+<li value="* WIFI *"><set name="message">wifi</set></li>
+
+<li value="WI FI"><set name="message">wifi</set></li>
+<li value="* WI FI"><set name="message">wifi</set></li>
+<li value="WI FI *"><set name="message">wifi</set></li>
+<li value="* WI FI *"><set name="message">wifi</set></li>
+
+<li value="WIRELESS"><set name="message">wifi</set></li>
+<li value="* WIRELESS"><set name="message">wifi</set></li>
+<li value="WIRELESS *"><set name="message">wifi</set></li>
+<li value="* WIRELESS *"><set name="message">wifi</set></li>
+
+<li value="FLOPPY"><set name="message">floppy discs</set></li>
+<li value="* FLOPPY"><set name="message">floppy discs</set></li>
+<li value="FLOPPY *"><set name="message">floppy discs</set></li>
+<li value="* FLOPPY *"><set name="message">floppy discs</set></li>
+
+<li value="USB"><set name="message">usb</set></li>
+<li value="* USB"><set name="message">usb</set></li>
+<li value="USB *"><set name="message">usb</set></li>
+<li value="* USB *"><set name="message">usb</set></li>
+
+<li value="FLASH DRIVE"><set name="message">flash drives</set></li>
+<li value="* FLASH DRIVE"><set name="message">flash drives</set></li>
+<li value="FLASH DRIVE *"><set name="message">flash drives</set></li>
+<li value="* FLASH DRIVE *"><set name="message">flash drives</set></li>
+
+<li value="FLASH DRIVES"><set name="message">flash drives</set></li>
+<li value="* FLASH DRIVES"><set name="message">flash drives</set></li>
+<li value="FLASH DRIVES *"><set name="message">flash drives</set></li>
+<li value="* FLASH DRIVES *"><set name="message">flash drives</set></li>
+
+<li value="THUMB DRIVE"><set name="message">flash drives</set></li>
+<li value="* THUMB DRIVE"><set name="message">flash drives</set></li>
+<li value="THUMB DRIVE *"><set name="message">flash drives</set></li>
+<li value="* THUMB DRIVE *"><set name="message">flash drives</set></li>
+
+<li value="THUMB DRIVES"><set name="message">flash drives</set></li>
+<li value="* THUMB DRIVES"><set name="message">flash drives</set></li>
+<li value="THUMB DRIVES *"><set name="message">flash drives</set></li>
+<li value="* THUMB DRIVES *"><set name="message">flash drives</set></li>
+
+<li value="ZIP DRIVE"><set name="message">flash drives</set></li>
+<li value="* ZIP DRIVE"><set name="message">flash drives</set></li>
+<li value="ZIP DRIVE *"><set name="message">flash drives</set></li>
+<li value="* ZIP DRIVE *"><set name="message">flash drives</set></li>
+
+<li value="ZIP DRIVES"><set name="message">flash drives</set></li>
+<li value="* ZIP DRIVES"><set name="message">flash drives</set></li>
+<li value="ZIP DRIVES *"><set name="message">flash drives</set></li>
+<li value="* ZIP DRIVES *"><set name="message">flash drives</set></li>
+
+<li value="SKYPE"><set name="message">skype</set></li>
+<li value="* SKYPE"><set name="message">skype</set></li>
+<li value="SKYPE *"><set name="message">skype</set></li>
+<li value="* SKYPE *"><set name="message">skype</set></li>
+
+<li value="SKYPING"><set name="message">skype</set></li>
+<li value="* SKYPING"><set name="message">skype</set></li>
+<li value="SKYPING *"><set name="message">skype</set></li>
+<li value="* SKYPING *"><set name="message">skype</set></li>
+
+</condition>
+<think><set name="topic"></set></think>
+</think>
+
+<condition name="message">
+
+<li value="stop"><set name="topic"></set>O.K. I'll stop.</li>
+
+<li value="no match">I'm not sure what you're asking. Please call the library at 440.255.8811 during regular business hours for assistance.</li>
+
+<li value="computer use"><srai>COMPUSE</srai></li>
+
+<li value="age restrictions"><srai>COMPAGE</srai></li>
+
+<li value="policies"><srai>COMPPOLICY</srai></li>
+
+<li value="session length"><srai>SESSIONL</srai></li>
+
+<li value="sign up"><srai>COMPSU</srai></li>
+
+<li value="comp check out"><srai>COMPCO</srai></li>
+
+<li value="tech training"><srai>COMPCLASS</srai></li>
+
+<li value="eco"><srai>ECOTR</srai></li>
+
+<li value="guest passes"><srai>GSTPASS</srai></li>
+
+<li value="hotspot"><srai>HTSPT</srai></li>
+
+<li value="laptop"><srai>LPTPS</srai></li>
+
+<li value="lake laptop"><srai>MOLLPTP</srai></li>
+
+<li value="headlands laptop"><srai>HDLSLPTP</srai></li>
+ 
+<li value="office"><srai>MOFFICE</srai></li>
+
+<li value="software"><srai>SFTWARE</srai></li>
+
+<li value="typewriter"><srai>TYPEWR</srai></li>
+
+<li value="extend session"><srai>EXTSESSIONS</srai></li>
+
+<li value="install"><srai>INSTALLSFTWARE</srai></li>
+
+<li value="wifi"><srai>WIFI</srai></li>
+ 
+<li value="floppy discs"><srai>FLOPS</srai></li>
+
+<li value="usb"><srai>USBS</srai></li>
+
+<li value="flash drives"><srai>FLSHDR</srai></li>
+
+<li value="skype"><srai>SKYP</srai></li>
+
+</condition>
+</template>
+</category>
+</topic>
+
+</aiml>

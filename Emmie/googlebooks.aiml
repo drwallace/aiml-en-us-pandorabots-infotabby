@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<!--Copyright 2011-2012 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+
+
+
+<!--GOOGLE BOOKS & OPEN LIBRARY-->
+
+<category>
+<pattern>GOOGLE BOOKS</pattern>
+<template><srai>GGLBKSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* GOOGLE BOOKS</pattern>
+<template><srai>GGLBKSRCH</srai></template>
+</category>
+
+<category>
+<pattern>GOOGLE BOOKS *</pattern>
+<template><srai>GGLBKSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* GOOGLE BOOKS *</pattern>
+<template><srai>GGLBKSRCH</srai></template>
+</category>
+  
+
+<category>
+<pattern>OPNLIB</pattern>
+<template><a href="http://openlibrary.org/" target="_blank"><b>Open Library</b></a> is one of my favorite websites!
+You have the world's classic literature at your fingertips; over a million free eBook titles are available. 
+I'll be happy to search the Open Library for you. Please enter an author and/or title, or your topic.
+<think>
+<set name="topic">OPNLIBBKS</set>
+</think>
+</template>
+</category>
+
+<category>
+  <pattern>OPEN LIBRARY</pattern>
+  <template><srai>OPNLIB</srai></template>
+</category>
+
+<category>
+  <pattern>* OPEN LIBRARY</pattern>
+  <template><srai>OPNLIB</srai></template>
+</category>
+
+<category>
+  <pattern>OPEN LIBRARY *</pattern>
+  <template><srai>OPNLIB</srai></template>
+</category>
+
+<category>
+  <pattern>* OPEN LIBRARY *</pattern>
+  <template><srai>OPNLIB</srai></template>
+</category>
+
+<topic name="OPNLIBBKS">
+<category>
+<pattern>*</pattern>
+<template>Let's see what we find in the Open Library.
+<think>
+<set name="search">opnlib</set>
+<set name="searcharg"><star/></set>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+</topic>  
+
+<category>
+<pattern>OPENLIB EBKS</pattern>
+<template>I'll be happy to search for eBooks in the Open Library for you. Please enter an author and/or title, or your topic.
+<think>
+<set name="topic">OPNLIBEBKS</set>
+</think>
+</template>
+</category>
+
+<topic name="OPNLIBEBKS">
+<category>
+<pattern>*</pattern>
+<template>Let's see what eBooks we find in the Open Library.
+<think>
+<set name="search">opnlibe</set>
+<set name="searcharg"><star/></set>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+</topic>  
+  
+<category>
+<pattern>GGLBKSRCH</pattern>
+<template>I'll be delighted to search Google Books for you. Please enter an author and/or title, or your topic.
+<think>
+<set name="topic">GBSRCH</set>
+</think>
+</template>
+</category>
+
+<topic name="GBSRCH">
+<category>
+<pattern>*</pattern>
+<template>Excellent! Let's see what we find in Google Books.
+<think>
+<set name="search">googlebooks</set>
+<set name="searcharg"><star/></set>
+<set name="topic"></set>
+</think>
+</template>
+</category>
+</topic>  
+
+</aiml>  

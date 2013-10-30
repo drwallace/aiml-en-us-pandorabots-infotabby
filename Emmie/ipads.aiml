@@ -1,0 +1,1459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<!--Copyright 2011-2012 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+
+
+<category>
+<pattern>ELECTRONIC DEVICE LOAN</pattern>
+<template><srai>ELDVLN</srai></template>
+</category>
+
+<category>
+<pattern>* ELECTRONIC DEVICE LOAN</pattern>
+<template><srai>ELDVLN</srai></template>
+</category>
+
+<category>
+<pattern>* ELECTRONIC DEVICE LOAN *</pattern>
+<template><srai>ELDVLN</srai></template>
+</category>
+
+<category>
+<pattern>ELECTRONIC DEVICE LOAN *</pattern>
+<template><srai>ELDVLN</srai></template>
+</category>
+
+<category>
+<pattern>* IPAD</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>IPAD *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* IPAD *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>I PAD</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* I PAD</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>I PAD *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* I PAD *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>IPADS</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* IPADS</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>IPADS *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* IPADS *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>I PADS</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* I PADS</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>I PADS *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* I PADS *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>BORROW * IPAD</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* BORROW * IPAD</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>BORROW * IPAD *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* BORROW * IPAD *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* BORROW IPADS</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* BORROW * IPADS</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>BORROW * IPADS *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* BORROW * IPADS *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>BORROWING IPADS</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>BORROWING * IPADS</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* BORROWING * IPADS</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>BORROWING * IPADS *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* BORROWING * IPADS *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* IPADS * BORROWING</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* IPAD * BORROWING</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* IPADS * BORROW</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* IPAD * BORROW</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>_ OUT IPAD</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>_ OUT * IPAD *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>_ OUT IPAD *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>_ OUT * IPAD *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>_ OUT I PAD</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>_ OUT * I PAD *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>_ OUT I PAD *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>_ OUT * I PAD *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>_ OUT IPADS</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>_ OUT * IPADS *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>_ OUT IPADS *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>_ OUT * IPADS *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>_ OUT I PADS</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>_ OUT * I PADS *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>_ OUT I PADS *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>_ OUT * I PADS *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* IPADS * CHECK OUT </pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* IPAD * CHECK OUT </pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>IPAD CIRCULATION</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* IPAD CIRCULATION</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>IPAD CIRCULATION *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* IPAD CIRCULATION *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* KEEP * IPADS</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* KEEP * IPADS *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* ABOUT * IPADS</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>CHECK OUT IPAD</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>CHECK OUT * IPAD</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* CHECK OUT * IPAD</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>CHECK OUT * IPAD *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* CHECK OUT * IPAD *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>CHECK IPAD OUT</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>CHECK * IPAD OUT</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* CHECK * IPAD OUT</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* CHECK * IPAD OUT *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>CHECKING OUT IPAD</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>CHECKING OUT * IPAD</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* CHECKING OUT * IPAD</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>CHECKING OUT * IPAD *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* CHECKING OUT * IPAD *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>CHECKING IPAD OUT</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>CHECKING * IPAD OUT</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* CHECKING * IPAD OUT</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* CHECKING * IPAD OUT *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>CHECK OUT IPADS</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>CHECK OUT * IPADS</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* CHECK OUT * IPADS</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>CHECK OUT * IPADS *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* CHECK OUT * IPADS *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>CHECK IPADS OUT</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>CHECK * IPADS OUT</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* CHECK * IPADS OUT</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* CHECK * IPADS OUT *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>CHECKING OUT IPADS</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>CHECKING OUT * IPADS</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* CHECKING OUT * IPADS</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>CHECKING OUT * IPADS *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* CHECKING OUT * IPADS *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>CHECKING IPADS OUT</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>CHECKING * IPADS OUT</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* CHECKING * IPADS OUT</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* CHECKING * IPADS OUT *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>LOAN * IPAD</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* LOAN * IPAD</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>LOAN * IPAD *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* LOAN * IPAD *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* LOAN IPADS</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* LOAN * IPADS</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>LOAN * IPADS *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* LOAN * IPADS *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>LOANING IPADS</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>LOANING * IPADS</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* LOANING * IPADS</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>LOANING * IPADS *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* LOANING * IPADS *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* IPADS * LOANING </pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* IPAD * LOANING </pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* IPADS * LOAN </pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* IPAD * LOAN </pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>LOAN * IPAD</pattern>
+<template><srai>IPDLN</srai></template>
+</category>
+
+<category>
+<pattern>* LOAN  * IPAD</pattern>
+<template><srai>IPDLN</srai></template>
+</category>
+
+<category>
+<pattern>* LOAN  * IPAD *</pattern>
+<template><srai>IPDLN</srai></template>
+</category>
+
+<category>
+<pattern>LOAN * IPAD *</pattern>
+<template><srai>IPDLN</srai></template>
+</category>
+
+<category>
+<pattern>LOAN * IPADS</pattern>
+<template><srai>IPDLN</srai></template>
+</category>
+
+<category>
+<pattern>* LOAN  * IPADS</pattern>
+<template><srai>IPDLN</srai></template>
+</category>
+
+<category>
+<pattern>* LOAN  * IPADS *</pattern>
+<template><srai>IPDLN</srai></template>
+</category>
+
+<category>
+<pattern>LOAN * IPADS *</pattern>
+<template><srai>IPDLN</srai></template>
+</category>
+
+<category>
+<pattern>IPAD APPS</pattern>
+<template><srai>IPDAPPS</srai></template>
+</category>
+
+<category>
+<pattern>_ IPAD APPS</pattern>
+<template><srai>IPDAPPS</srai></template>
+</category>
+
+<category>
+<pattern>_ IPAD APPS *</pattern>
+<template><srai>IPDAPPS</srai></template>
+</category>
+
+<category>
+<pattern>IPAD APPS *</pattern>
+<template><srai>IPDAPPS</srai></template>
+</category>
+
+<category>
+<pattern>IPAD TITLE</pattern>
+<template><srai>IPDAPPS</srai></template>
+</category>
+
+<category>
+<pattern>_ IPAD TITLE</pattern>
+<template><srai>IPDAPPS</srai></template>
+</category>
+
+<category>
+<pattern>_ IPAD TITLE *</pattern>
+<template><srai>IPDAPPS</srai></template>
+</category>
+
+<category>
+<pattern>IPAD TITLE *</pattern>
+<template><srai>IPDAPPS</srai></template>
+</category>
+
+<category>
+<pattern>WHAT * ON * IPADS</pattern>
+<template><srai>IPDAPPS</srai></template>
+</category>
+
+<category>
+<pattern>IPAD DOWNLOADS</pattern>
+<template><srai>IPDDWNLDS</srai></template>
+</category>
+
+<category>
+<pattern>* DOWNLOAD * IPAD</pattern>
+<template><srai>IPDDWNLDS</srai></template>
+</category>
+
+<category>
+<pattern>* DOWNLOAD * IPADS</pattern>
+<template><srai>IPDDWNLDS</srai></template>
+</category>
+
+<category>
+<pattern>IPAD TITLE REQUESTS</pattern>
+<template><srai>IPDDWNLDS</srai></template>
+</category>
+
+<category>
+<pattern>* REQUEST * IPADS</pattern>
+<template><srai>IPDDWNLDS</srai></template>
+</category>
+
+<category>
+<pattern>* REQUEST * IPAD</pattern>
+<template><srai>IPDDWNLDS</srai></template>
+</category>
+
+<category>
+<pattern>ADDING * IPADS</pattern>
+<template><srai>IPDDWNLDS</srai></template>
+</category>
+
+<category>
+<pattern>* ADDING * IPADS</pattern>
+<template><srai>IPDDWNLDS</srai></template>
+</category>
+
+<category>
+<pattern>BUYING * IPADS</pattern>
+<template><srai>IPDDWNLDS</srai></template>
+</category>
+
+<category>
+<pattern>* BUYING * IPADS</pattern>
+<template><srai>IPDDWNLDS</srai></template>
+</category>
+
+<category>
+<pattern>HOLD IPAD</pattern>
+<template><srai>HLDIPAD</srai></template>
+</category>
+
+<category>
+<pattern>HOLD IPADS</pattern>
+<template><srai>HLDIPAD</srai></template>
+</category>
+
+<category>
+<pattern>HOLD * IPAD</pattern>
+<template><srai>HLDIPAD</srai></template>
+</category>
+
+<category>
+<pattern>* HOLD * IPAD</pattern>
+<template><srai>HLDIPAD</srai></template>
+</category>
+
+<category>
+<pattern>* HOLD * IPAD *</pattern>
+<template><srai>HLDIPAD</srai></template>
+</category>
+
+<category>
+<pattern>REQUEST * IPAD</pattern>
+<template><srai>HLDIPAD</srai></template>
+</category>
+
+<category>
+<pattern>* REQUEST * IPAD</pattern>
+<template><srai>HLDIPAD</srai></template>
+</category>
+
+<category>
+<pattern>* REQUEST * IPAD *</pattern>
+<template><srai>HLDIPAD</srai></template>
+</category>
+
+<category>
+<pattern>RESERVE * IPAD</pattern>
+<template><srai>HLDIPAD</srai></template>
+</category>
+
+<category>
+<pattern>* RESERVE * IPAD</pattern>
+<template><srai>HLDIPAD</srai></template>
+</category>
+
+<category>
+<pattern>* RESERVE * IPAD *</pattern>
+<template><srai>HLDIPAD</srai></template>
+</category>
+
+<category>
+<pattern>RESERVATION * IPAD</pattern>
+<template><srai>HLDIPAD</srai></template>
+</category>
+
+<category>
+<pattern>* RESERVATION * IPAD</pattern>
+<template><srai>HLDIPAD</srai></template>
+</category>
+
+<category>
+<pattern>* RESERVATION * IPAD *</pattern>
+<template><srai>HLDIPAD</srai></template>
+</category>
+
+<category>
+  <pattern>PICK UP * IPAD</pattern>
+  <template><srai>PUIPD</srai></template>
+</category>
+
+<category>
+  <pattern>* PICK UP * IPAD</pattern>
+  <template><srai>PUIPD</srai></template>
+</category>
+
+<category>
+  <pattern>* PICK UP * IPAD *</pattern>
+  <template><srai>PUIPD</srai></template>
+</category>
+
+<category>
+  <pattern>PICK * IPAD UP</pattern>
+  <template><srai>PUIPD</srai></template>
+</category>
+
+<category>
+  <pattern>* PICK * IPAD UP</pattern>
+  <template><srai>PUIPD</srai></template>
+</category>
+
+<category>
+  <pattern>* PICK * IPAD UP *</pattern>
+  <template><srai>PUIPD</srai></template>
+</category>
+
+<category>
+<pattern>IPAD SUPPORT</pattern>
+<template><srai>IPDSPPRT</srai></template>
+</category>
+
+<category>
+<pattern>* IPAD SUPPORT</pattern>
+<template><srai>IPDSPPRT</srai></template>
+</category>
+
+<category>
+<pattern>* IPAD SUPPORT *</pattern>
+<template><srai>IPDSPPRT</srai></template>
+</category>
+
+<category>
+<pattern>SUPPORT IPAD</pattern>
+<template><srai>IPDSPPRT</srai></template>
+</category>
+
+<category>
+<pattern>* SUPPORT * IPAD</pattern>
+<template><srai>IPDSPPRT</srai></template>
+</category>
+
+<category>
+<pattern>* SUPPORT * IPAD *</pattern>
+<template><srai>IPDSPPRT</srai></template>
+</category>
+
+<category>
+<pattern>HELP * IPAD</pattern>
+<template><srai>IPDSPPRT</srai></template>
+</category>
+
+<category>
+<pattern>* HELP * IPAD</pattern>
+<template><srai>IPDSPPRT</srai></template>
+</category>
+
+<category>
+<pattern>* HELP * IPAD *</pattern>
+<template><srai>IPDSPPRT</srai></template>
+</category>
+
+<category>
+<pattern>_ IPAD FREE</pattern>
+<template><srai>IPDCHRG1</srai>
+</template>
+</category>
+
+<category>
+<pattern>_ IPAD * FREE *</pattern>
+<template><srai>IPDCHRG1</srai>
+</template>
+</category>
+
+<category>
+<pattern>_ IPADS FREE</pattern>
+<template><srai>IPDCHRG1</srai>
+</template>
+</category>
+
+<category>
+<pattern>_ IPADS * FREE *</pattern>
+<template><srai>IPDCHRG1</srai>
+</template>
+</category>
+
+<category>
+<pattern>CHARGE * IPAD</pattern>
+<template><srai>IPDCHRG2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* CHARGE * IPAD</pattern>
+<template><srai>IPDCHRG2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* CHARGE * IPAD *</pattern>
+<template><srai>IPDCHRG2</srai>
+</template>
+</category>
+
+<category>
+<pattern>COST * IPAD</pattern>
+<template><srai>IPDCHRG1</srai>
+</template>
+</category>
+
+<category>
+<pattern>* COST * IPAD</pattern>
+<template><srai>IPDCHRG1</srai>
+</template>
+</category>
+
+<category>
+<pattern>* COST * IPAD *</pattern>
+<template><srai>IPDCHRG1</srai>
+</template>
+</category>
+
+<category>
+<pattern>CHARGE * IPADS</pattern>
+<template><srai>IPDCHRG2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* CHARGE * IPADS</pattern>
+<template><srai>IPDCHRG2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* CHARGE * IPADS *</pattern>
+<template><srai>IPDCHRG2</srai>
+</template>
+</category>
+
+<category>
+<pattern>COST * IPADS</pattern>
+<template><srai>IPDCHRG1</srai>
+</template>
+</category>
+
+<category>
+<pattern>* COST * IPADS</pattern>
+<template><srai>IPDCHRG1</srai>
+</template>
+</category>
+
+<category>
+<pattern>* COST * IPADS *</pattern>
+<template><srai>IPDCHRG1</srai>
+</template>
+</category>
+
+<category>
+<pattern>BORROW * I PAD</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* BORROW * I PAD</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>BORROW * I PAD *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* BORROW * I PAD *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* BORROW I PADS</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* BORROW * I PADS</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>BORROW * I PADS *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* BORROW * I PADS *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>BORROWING I PADS</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>BORROWING * I PADS</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* BORROWING * I PADS</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>BORROWING * I PADS *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* BORROWING * I PADS *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* KEEP * I PADS</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* KEEP * I PADS *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* ABOUT * I PADS</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>CHECK OUT I PAD</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>CHECK OUT * I PAD</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* CHECK OUT * I PAD</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>CHECK OUT * I PAD *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* CHECK OUT * I PAD *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>CHECK I PAD OUT</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>CHECK * I PAD OUT</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* CHECK * I PAD OUT</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* CHECK * I PAD OUT *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>CHECKING OUT I PAD</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>CHECKING OUT * I PAD</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* CHECKING OUT * I PAD</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>CHECKING OUT * I PAD *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* CHECKING OUT * I PAD *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>CHECKING I PAD OUT</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>CHECKING * I PAD OUT</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* CHECKING * I PAD OUT</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>* CHECKING * I PAD OUT *</pattern>
+<template><srai>IPAD</srai></template>
+</category>
+
+<category>
+<pattern>RETURN I PAD</pattern>
+<template><srai>RTRNIPAD</srai></template>
+</category>
+
+<category>
+<pattern>RETURN * I PAD</pattern>
+<template><srai>RTRNIPAD</srai></template>
+</category>
+
+<category>
+<pattern>RETURN * I PAD *</pattern>
+<template><srai>RTRNIPAD</srai></template>
+</category>
+
+<category>
+<pattern>* RETURN * I PAD</pattern>
+<template><srai>RTRNIPAD</srai></template>
+</category>
+
+<category>
+<pattern>* RETURN * I PAD *</pattern>
+<template><srai>RTRNIPAD</srai></template>
+</category>
+
+<category>
+<pattern>RETURN I PADS</pattern>
+<template><srai>RTRNIPAD</srai></template>
+</category>
+
+<category>
+<pattern>RETURN * I PADS</pattern>
+<template><srai>RTRNIPAD</srai></template>
+</category>
+
+<category>
+<pattern>RETURN * I PADS *</pattern>
+<template><srai>RTRNIPAD</srai></template>
+</category>
+
+<category>
+<pattern>* RETURN * I PADS</pattern>
+<template><srai>RTRNIPAD</srai></template>
+</category>
+
+<category>
+<pattern>* RETURN * I PADS *</pattern>
+<template><srai>RTRNIPAD</srai></template>
+</category>
+
+<category>
+<pattern>* I PAD * BOOKDROP</pattern>
+<template>No. Do not place the i Pad in a bookdrop.</template>
+</category>
+
+<category>
+<pattern>* I PAD * BOOK DROP</pattern>
+<template>No. Do not place the i Pad in a bookdrop.</template>
+</category>
+
+<category>
+  <pattern>PICK UP * I PAD</pattern>
+  <template><srai>PUIPD</srai></template>
+</category>
+
+<category>
+  <pattern>* PICK UP * I PAD</pattern>
+  <template><srai>PUIPD</srai></template>
+</category>
+
+<category>
+  <pattern>* PICK UP * I PAD *</pattern>
+  <template><srai>PUIPD</srai></template>
+</category>
+
+<category>
+  <pattern>PICK * I PAD UP</pattern>
+  <template><srai>PUIPD</srai></template>
+</category>
+
+<category>
+  <pattern>* PICK * I PAD UP</pattern>
+  <template><srai>PUIPD</srai></template>
+</category>
+
+<category>
+  <pattern>* PICK * I PAD UP *</pattern>
+  <template><srai>PUIPD</srai></template>
+</category>
+
+<category>
+<pattern>I PAD SUPPORT</pattern>
+<template><srai>IPDSPPRT</srai></template>
+</category>
+
+<category>
+<pattern>* I PAD SUPPORT</pattern>
+<template><srai>IPDSPPRT</srai></template>
+</category>
+
+<category>
+<pattern>* I PAD SUPPORT *</pattern>
+<template><srai>IPDSPPRT</srai></template>
+</category>
+
+<category>
+<pattern>SUPPORT I PAD</pattern>
+<template><srai>IPDSPPRT</srai></template>
+</category>
+
+<category>
+<pattern>* SUPPORT * I PAD</pattern>
+<template><srai>IPDSPPRT</srai></template>
+</category>
+
+<category>
+<pattern>* SUPPORT * I PAD *</pattern>
+<template><srai>IPDSPPRT</srai></template>
+</category>
+
+<category>
+<pattern>HELP * I PAD</pattern>
+<template><srai>IPDSPPRT</srai></template>
+</category>
+
+<category>
+<pattern>* HELP * I PAD</pattern>
+<template><srai>IPDSPPRT</srai></template>
+</category>
+
+<category>
+<pattern>* HELP * I PAD *</pattern>
+<template><srai>IPDSPPRT</srai></template>
+</category>
+
+<category>
+<pattern>* I PAD FREE</pattern>
+<template><srai>IPDCHRG1</srai>
+</template>
+</category>
+
+<category>
+<pattern>* I PAD  * FREE *</pattern>
+<template><srai>IPDCHRG1</srai>
+</template>
+</category>
+
+<category>
+<pattern>* I PADS FREE</pattern>
+<template><srai>IPDCHRG1</srai>
+</template>
+</category>
+
+<category>
+<pattern>* I PADS  * FREE *</pattern>
+<template><srai>IPDCHRG1</srai>
+</template>
+</category>
+
+<category>
+<pattern>CHARGE * I PAD</pattern>
+<template><srai>IPDCHRG2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* CHARGE * I PAD</pattern>
+<template><srai>IPDCHRG2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* CHARGE * I PAD *</pattern>
+<template><srai>IPDCHRG2</srai>
+</template>
+</category>
+
+<category>
+<pattern>COST * I PAD</pattern>
+<template><srai>IPDCHRG1</srai>
+</template>
+</category>
+
+<category>
+<pattern>* COST * I PAD</pattern>
+<template><srai>IPDCHRG1</srai>
+</template>
+</category>
+
+<category>
+<pattern>* COST * I PAD *</pattern>
+<template><srai>IPDCHRG1</srai>
+</template>
+</category>
+
+<category>
+<pattern>CHARGE * I PADS</pattern>
+<template><srai>IPDCHRG2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* CHARGE * I PADS</pattern>
+<template><srai>IPDCHRG2</srai>
+</template>
+</category>
+
+<category>
+<pattern>* CHARGE * I PADS *</pattern>
+<template><srai>IPDCHRG2</srai>
+</template>
+</category>
+
+<category>
+<pattern>COST * I PADS</pattern>
+<template><srai>IPDCHRG1</srai>
+</template>
+</category>
+
+<category>
+<pattern>* COST * I PADS</pattern>
+<template><srai>IPDCHRG1</srai>
+</template>
+</category>
+
+<category>
+<pattern>* COST * I PADS *</pattern>
+<template><srai>IPDCHRG1</srai>
+</template>
+</category>
+
+<!--IPODS-->
+
+<category>
+<pattern>* IPOD</pattern>
+<template><srai>IPOD</srai>
+</template>
+</category>
+
+<category>
+<pattern>IPOD *</pattern>
+<template><srai>IPOD</srai>
+</template>
+</category>
+
+<category>
+<pattern>* IPOD *</pattern>
+<template><srai>IPOD</srai>
+</template>
+</category>
+
+<category>
+<pattern>IPODS</pattern>
+<template><srai>IPOD</srai>
+</template>
+</category>
+
+<category>
+<pattern>* IPODS</pattern>
+<template><srai>IPOD</srai>
+</template>
+</category>
+
+<category>
+<pattern>IPODS *</pattern>
+<template><srai>IPOD</srai>
+</template>
+</category>
+
+<category>
+<pattern>* IPODS *</pattern>
+<template><srai>IPOD</srai>
+</template>
+</category>
+
+<category>
+<pattern>I POD</pattern>
+<template><srai>IPOD</srai>
+</template>
+</category>
+
+<category>
+<pattern>* I POD</pattern>
+<template><srai>IPOD</srai>
+</template>
+</category>
+
+<category>
+<pattern>I POD *</pattern>
+<template><srai>IPOD</srai>
+</template>
+</category>
+
+<category>
+<pattern>* I POD *</pattern>
+<template><srai>IPOD</srai>
+</template>
+</category>
+
+<category>
+<pattern>I PODS</pattern>
+<template><srai>IPOD</srai>
+</template>
+</category>
+
+<category>
+<pattern>* I PODS</pattern>
+<template><srai>IPOD</srai>
+</template>
+</category>
+
+<category>
+<pattern>I PODS *</pattern>
+<template><srai>IPOD</srai>
+</template>
+</category>
+
+<category>
+<pattern>* I PODS *</pattern>
+<template><srai>IPOD</srai>
+</template>
+</category>
+
+</aiml>

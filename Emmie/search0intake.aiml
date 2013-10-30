@@ -1,0 +1,3591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<!--Copyright 2011-2012 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+  
+<!--NO MATCH FROM CONDITIONS-->
+
+<category>
+<pattern>NOMATCH</pattern>
+<template>
+<random>
+<li>I think it best if you call the library at 440.255.8811 during regular business hours with this question.</li>
+<li>I'm not sure what you're asking. Please call the library at 440.255.8811 during regular business hours for assistance.</li>  
+<li>I don't understand your question. Please call the library at 440.255.8811 during regular business hours for assistance.</li> 
+<li>Your input doesn't match anything in my knowledge base. Please call the library at 440.255.8811 during regular business hours for assistance.</li> 
+</random>
+</template>
+</category>
+
+<!--CAN YOU ANSWER QUESTIONS-->
+
+<category>
+<pattern>CAN YOU *</pattern>
+<template><srai><star/></srai>
+</template>
+</category>
+
+
+<category>
+<pattern>CAN YOU *</pattern>
+<template><srai><star/></srai>
+</template>
+</category>
+
+
+<category>
+<pattern>ANSWRQ</pattern>
+<template>I can answer many questions about the library and our services. I can help you find items in our catalog, on our website, and in selected databases. 
+How can I assist you?
+<think>
+<set name="topic">UDCSRCH2</set>
+</think>
+</template>
+</category>
+<category>
+<pattern>ANSWER QUESTION</pattern>
+<template><srai>ANSWRQ</srai></template>
+</category>
+
+<category>
+<pattern>* ANSWER QUESTION</pattern>
+<template><srai>ANSWRQ</srai></template>
+</category>
+
+<category>
+<pattern>ANSWER * QUESTION</pattern>
+<template><srai>ANSWRQ</srai></template>
+</category>
+
+<category>
+<pattern>ANSWER QUESTION *</pattern>
+<template><srai>ANSWRQ</srai></template>
+</category>
+
+<category>
+<pattern>* ANSWER * QUESTION</pattern>
+<template><srai>ANSWRQ</srai></template>
+</category>
+
+<category>
+<pattern>ANSWER * QUESTION *</pattern>
+<template><srai>ANSWRQ</srai></template>
+</category>
+
+<category>
+<pattern>* ANSWER QUESTION *</pattern>
+<template><srai>ANSWRQ</srai></template>
+</category>
+
+<category>
+<pattern>* ANSWER * QUESTION *</pattern>
+<template><srai>ANSWRQ</srai></template>
+</category>
+
+<category>
+<pattern>ANSWER QUESTIONS</pattern>
+<template><srai>ANSWRQ</srai></template>
+</category>
+
+<category>
+<pattern>* ANSWER QUESTIONS</pattern>
+<template><srai>ANSWRQ</srai></template>
+</category>
+
+<category>
+<pattern>ANSWER * QUESTIONS</pattern>
+<template><srai>ANSWRQ</srai></template>
+</category>
+
+<category>
+<pattern>ANSWER QUESTIONS *</pattern>
+<template><srai>ANSWRQ</srai></template>
+</category>
+
+<category>
+<pattern>* ANSWER * QUESTIONS</pattern>
+<template><srai>ANSWRQ</srai></template>
+</category>
+
+<category>
+<pattern>ANSWER * QUESTIONS *</pattern>
+<template><srai>ANSWRQ</srai></template>
+</category>
+
+<category>
+<pattern>* ANSWER QUESTIONS *</pattern>
+<template><srai>ANSWRQ</srai></template>
+</category>
+
+<category>
+<pattern>* ANSWER * QUESTIONS *</pattern>
+<template><srai>ANSWRQ</srai></template>
+</category>
+<category>
+<pattern>ANSWERS</pattern>
+<template><srai>ANSWRQ</srai></template>
+</category>
+
+<category>
+<pattern>_ ANSWERS</pattern>
+<template><srai>ANSWRQ</srai></template>
+</category>
+
+<category>
+<pattern>ANSWERS *</pattern>
+<template><srai>ANSWRQ</srai></template>
+</category>
+
+<category>
+<pattern>_ ANSWERS *</pattern>
+<template><srai>ANSWRQ</srai></template>
+</category>
+
+
+<category>
+<pattern>ASKQ</pattern>
+<template>Ask away! I can answer many questions about the library and our services. I can help you find items in our catalog, on our website, and in selected databases. 
+How can I assist you?
+<think>
+<set name="topic">UDCSORT1</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>ASK QUESTION</pattern>
+<template><srai>ASKQ</srai></template>
+</category>
+
+<category>
+<pattern>* ASK QUESTION</pattern>
+<template><srai>ASKQ</srai></template>
+</category>
+
+<category>
+<pattern>ASK * QUESTION</pattern>
+<template><srai>ASKQ</srai></template>
+</category>
+
+<category>
+<pattern>ASK QUESTION *</pattern>
+<template><srai>ASKQ</srai></template>
+</category>
+
+<category>
+<pattern>* ASK * QUESTION</pattern>
+<template><srai>ASKQ</srai></template>
+</category>
+
+<category>
+<pattern>ASK * QUESTION *</pattern>
+<template><srai>ASKQ</srai></template>
+</category>
+
+<category>
+<pattern>* ASK QUESTION *</pattern>
+<template><srai>ASKQ</srai></template>
+</category>
+
+<category>
+<pattern>* ASK * QUESTION *</pattern>
+<template><srai>ASKQ</srai></template>
+</category>
+
+<category>
+<pattern>ASK QUESTIONS</pattern>
+<template><srai>ASKQ</srai></template>
+</category>
+
+<category>
+<pattern>* ASK QUESTIONS</pattern>
+<template><srai>ASKQ</srai></template>
+</category>
+
+<category>
+<pattern>ASK * QUESTIONS</pattern>
+<template><srai>ASKQ</srai></template>
+</category>
+
+<category>
+<pattern>ASK QUESTIONS *</pattern>
+<template><srai>ASKQ</srai></template>
+</category>
+
+<category>
+<pattern>* ASK * QUESTIONS</pattern>
+<template><srai>ASKQ</srai></template>
+</category>
+
+<category>
+<pattern>ASK * QUESTIONS *</pattern>
+<template><srai>ASKQ</srai></template>
+</category>
+
+<category>
+<pattern>* ASK QUESTIONS *</pattern>
+<template><srai>ASKQ</srai></template>
+</category>
+
+<category>
+<pattern>* ASK * QUESTIONS *</pattern>
+<template><srai>ASKQ</srai></template>
+</category>
+
+
+<category>
+<pattern>FIND</pattern>
+<template><srai>FIND4ME</srai></template>
+</category>
+
+<category>
+<pattern>FINDING</pattern>
+<template><srai>FIND4ME</srai></template>
+</category>
+
+<category> 
+<pattern>HELP</pattern> 
+<template><srai>ANSWRQ</srai></template> 
+</category>  
+
+<category>
+<pattern>INFORMATION</pattern>
+<template><srai>FIND4ME</srai></template>
+</category>
+
+<category>
+<pattern>LOOK FOR</pattern>
+<template><srai>FIND4ME</srai></template>
+</category>
+
+<category>
+<pattern>LOOK UP</pattern>
+<template><srai>FIND4ME</srai></template>
+</category>
+
+<category>
+<pattern>SEARCH</pattern>
+<template><srai>FIND4ME</srai></template>
+</category>
+
+<category>
+<pattern>SEARCHING</pattern>
+<template><srai>FIND4ME</srai></template>
+</category>
+
+<category>
+<pattern>FIND4ME</pattern>
+<template>I can help you find items in our catalog and all sorts of information. What are you looking for?
+<think>
+<set name="topic">SRCH1</set>
+</think>
+</template>
+</category>
+
+<topic name="SRCH1">
+<category>
+<pattern>_</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category>
+</topic>
+
+<category>
+<pattern>INFORMATION *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category>
+
+<category>
+<pattern>* INFORMATION *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category>
+
+
+<category>
+<pattern>LOOKING * UP *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category>
+
+<category>
+<pattern>* LOOKING * UP *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/><star index="3"/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category>
+
+
+<category>
+<pattern>* SEARCH</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category>
+
+<category>
+<pattern>SEARCH *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category>
+
+<category>
+<pattern>* SEARCH *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category>
+
+<category>
+<pattern>* SEARCHING</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category>
+
+<category>
+<pattern>FIND *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category>
+
+<category>
+<pattern>* FIND *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category>
+
+<category>
+<pattern>FINDING *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category>
+
+<category>
+<pattern>* FINDING *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category>
+
+<category> 
+<pattern>* HELP</pattern> 
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category> 
+
+<category> 
+<pattern>HELP *</pattern> 
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category> 
+
+<category> 
+<pattern>* HELP *</pattern> 
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category>
+
+
+<category> 
+<pattern>HELP ME FIND *</pattern> 
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category>
+
+<category> 
+<pattern>* HELP ME FIND *</pattern> 
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category>
+
+<category> 
+<pattern>HELP * LOOK *</pattern> 
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category>  
+
+<category> 
+<pattern>* HELP * LOOK *</pattern> 
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/><star index="3"/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category>
+
+<category> 
+<pattern>HELP * FINDING *</pattern> 
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category> 
+
+<category> 
+<pattern>* HELP * FINDING *</pattern> 
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/><star index="3"/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category>
+
+<category> 
+<pattern>HELP * LOOKING *</pattern> 
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category>  
+
+<category> 
+<pattern>* HELP * LOOKING *</pattern> 
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/><star index="3"/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category>
+
+<category> 
+<pattern>HELP * SEARCH *</pattern> 
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category> 
+
+<category> 
+<pattern>* HELP * SEARCH *</pattern> 
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/><star index="3"/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category>
+
+<category> 
+<pattern>HELP * SEARCHING *</pattern> 
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category>
+
+<category> 
+<pattern>* HELP * SEARCHING *</pattern> 
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/><star index="3"/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category>
+
+<category>
+<pattern>LOOK FOR *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category>
+
+<category>
+<pattern>* LOOK FOR *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category>
+
+<category>
+<pattern>LOOK UP *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category>
+
+<category>
+<pattern>* LOOK UP *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category>
+
+<category>
+<pattern>LOOK * UP *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category>
+
+<category>
+<pattern>* LOOK * UP *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/><star index="3"/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category>
+
+<category>
+<pattern>SEARCH *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category>
+
+<category>
+<pattern>* SEARCH *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category>
+
+<category>
+<pattern>SEARCHING *</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category>
+
+<category>
+<pattern>* SEARCHING *</pattern>
+<template>
+<think>
+<set name="answr"><star index="1"/><star index="2"/></set>
+<set name="topic">UDCSORT</set>
+</think>
+<srai>UDCSORT</srai>
+</template> 
+</category>
+
+
+<category>
+<pattern>AUDIO</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* AUDIO</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>AUDIO *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* AUDIO *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>AUDIOBOOK</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* AUDIOBOOK</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>AUDIOBOOKS</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* AUDIOBOOKS</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE AUDIOBOOK</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE AUDIOBOOK</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE * AUDIOBOOK</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE AUDIOBOOK *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE * AUDIOBOOK</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE * AUDIOBOOK *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE * AUDIOBOOK *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE AUDIOBOOKS</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE AUDIOBOOKS</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE * AUDIOBOOKS</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE AUDIOBOOKS *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE * AUDIOBOOKS</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE * AUDIOBOOKS *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE * AUDIOBOOKS *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category> 
+<pattern>I * AUDIOBOOK</pattern> 
+<template><srai>CATSRCH</srai></template> 
+</category> 
+
+<category> 
+<pattern>I * AUDIOBOOK*</pattern> 
+<template><srai>CATSRCH</srai></template> 
+</category> 
+
+<category> 
+<pattern>I * AUDIOBOOKS</pattern> 
+<template><srai>CATSRCH</srai></template> 
+</category>  
+
+<category> 
+<pattern>I * AUDIOBOOKS *</pattern> 
+<template><srai>CATSRCH</srai></template> 
+</category>  
+
+<category>
+<pattern>AUDIO BOOK</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>AUDIO BOOKS</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+<category>
+<pattern>HAVE AUDIO BOOK</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE AUDIO BOOK</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE * AUDIO BOOK</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE AUDIO BOOK *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE * AUDIO BOOK</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE * AUDIO BOOK *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE * AUDIO BOOK *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE AUDIO BOOKS</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE AUDIO BOOKS</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE * AUDIO BOOKS</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE AUDIO BOOKS *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE * AUDIO BOOKS</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE * AUDIO BOOKS *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE * AUDIO BOOKS *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category> 
+<pattern>I * AUDIO BOOK</pattern> 
+<template><srai>CATSRCH</srai></template> 
+</category> 
+
+<category> 
+<pattern>I * AUDIO BOOK*</pattern> 
+<template><srai>CATSRCH</srai></template> 
+</category> 
+
+<category> 
+<pattern>I * AUDIO BOOKS</pattern> 
+<template><srai>CATSRCH</srai></template> 
+</category>  
+
+<category> 
+<pattern>I * AUDIO BOOKS *</pattern> 
+<template><srai>CATSRCH</srai></template> 
+</category>  
+
+<!--BOOK/S-->
+
+<category>
+<pattern>BOOK</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* BOOK</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>BOOKS</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* BOOKS</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE BOOK</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE BOOK</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE * BOOK</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE BOOK *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE * BOOK</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE * BOOK *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE * BOOK *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE BOOKS</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE BOOKS</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE * BOOKS</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE BOOKS *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE * BOOKS</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE * BOOKS *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE * BOOKS *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category> 
+<pattern>I * BOOK</pattern> 
+<template><srai>CATSRCH</srai></template> 
+</category> 
+
+<category> 
+<pattern>I * BOOK *</pattern> 
+<template><srai>CATSRCH</srai></template> 
+</category> 
+
+<category> 
+<pattern>I * BOOKS</pattern> 
+<template><srai>CATSRCH</srai></template> 
+</category>  
+
+<category> 
+<pattern>I * BOOKS ON *</pattern> 
+<template>
+<think>
+<set name="searcharg"><star index="2"/></set>
+</think>
+<srai>DIRCATSRCH</srai></template> 
+</category>  
+
+<category> 
+<pattern>I * BOOKS ABOUT *</pattern> 
+<template>
+<think>
+<set name="searcharg"><star index="2"/></set>
+</think>
+<srai>DIRCATSRCH</srai></template> 
+</category>  
+
+<!--BOOKS ON CD-->
+
+<category>
+<pattern>BOOK ON CD</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* BOOK ON CD</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>BOOKS ON CD</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* BOOKS ON CD</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+<category>
+<pattern>HAVE BOOK ON CD</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE BOOK ON CD</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE * BOOK ON CD</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE BOOK ON CD *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE * BOOK ON CD</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE * BOOK ON CD *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE * BOOK ON CD *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE BOOKS ON CD</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE BOOKS ON CD</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE * BOOKS ON CD</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE BOOKS ON CD *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE * BOOKS ON CD</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE * BOOKS ON CD *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE * BOOKS ON CD *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+<category> 
+<pattern>I * BOOK ON CD</pattern> 
+<template><srai>CATSRCH</srai></template> 
+</category> 
+
+<category> 
+<pattern>I * BOOK ON CD*</pattern> 
+<template><srai>CATSRCH</srai></template> 
+</category> 
+
+<category> 
+<pattern>I * BOOKS ON CD</pattern> 
+<template><srai>CATSRCH</srai></template> 
+</category>  
+
+<category> 
+<pattern>I * BOOKS ON CD *</pattern> 
+<template><srai>CATSRCH</srai></template> 
+</category>  
+
+<!--PASS SEARCH FOR CDS-->
+
+<category>
+<pattern>CD</pattern>
+<template>
+<srai>CATSRCH</srai>
+</template>
+</category>
+
+<category>
+<pattern>CDS</pattern>
+<template>
+<srai>CATSRCH</srai>
+</template>
+</category>
+<category>
+<pattern>HAVE CD</pattern>
+<template>
+<srai>CATSRCH</srai>
+</template>
+</category>
+
+<category>
+<pattern>* HAVE CD</pattern>
+<template>
+<srai>CATSRCH</srai>
+</template>
+</category>
+
+<category>
+<pattern>HAVE * CD</pattern>
+<template>
+<srai>CATSRCH</srai>
+</template>
+</category>
+
+<category>
+<pattern>HAVE CD *</pattern>
+<template>
+<srai>CATSRCH</srai>
+</template>
+</category>
+
+<category>
+<pattern>* HAVE * CD</pattern>
+<template>
+<srai>CATSRCH</srai>
+</template>
+</category>
+
+<category>
+<pattern>HAVE * CD *</pattern>
+<template>
+<srai>CATSRCH</srai>
+</template>
+</category>
+
+<category>
+<pattern>* HAVE CD *</pattern>
+<template>
+<srai>CATSRCH</srai>
+</template>
+</category>
+
+<category>
+<pattern>* HAVE * CD *</pattern>
+<template>
+<srai>CATSRCH</srai>
+</template>
+</category>
+
+
+<category>
+<pattern>HAVE CDS</pattern>
+<template>
+<srai>CATSRCH</srai>
+</template>
+</category>
+
+<category>
+<pattern>* HAVE CDS</pattern>
+<template>
+<srai>CATSRCH</srai>
+</template>
+</category>
+
+<category>
+<pattern>HAVE * CDS</pattern>
+<template>
+<srai>CATSRCH</srai>
+</template>
+</category>
+
+<category>
+<pattern>HAVE CDS *</pattern>
+<template>
+<srai>CATSRCH</srai>
+</template>
+</category>
+
+<category>
+<pattern>* HAVE * CDS</pattern>
+<template>
+<srai>CATSRCH</srai>
+</template>
+</category>
+
+<category>
+<pattern>HAVE * CDS *</pattern>
+<template>
+<srai>CATSRCH</srai>
+</template>
+</category>
+
+<category>
+<pattern>* HAVE CDS *</pattern>
+<template>
+<srai>CATSRCH</srai>
+</template>
+</category>
+
+<category>
+<pattern>* HAVE * CDS *</pattern>
+<template>
+<srai>CATSRCH</srai>
+</template>
+</category>
+<category> 
+<pattern>I * CD</pattern> 
+<template><srai>CATSRCH</srai></template> 
+</category> 
+
+<category> 
+<pattern>I * CD *</pattern> 
+<template><srai>CATSRCH</srai></template> 
+</category> 
+
+<category> 
+<pattern>I * CDS</pattern> 
+<template><srai>CATSRCH</srai></template> 
+</category> 
+
+<category> 
+<pattern>I * CDS *</pattern> 
+<template><srai>CATSRCH</srai></template> 
+</category>
+
+<category>
+<pattern>WHERE * FIND * CD</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>WHERE * FIND * CD *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>WHERE * FIND * CDS</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>WHERE * FIND * CDS *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+
+<!--DVD-->
+
+<category>
+<pattern>DVD</pattern>
+<template>
+<srai>CATSRCH</srai>
+</template>
+</category>
+
+<category>
+<pattern>* DVD</pattern>
+<template>
+<srai>CATSRCH</srai>
+</template>
+</category>
+
+<category>
+<pattern>DVDS</pattern>
+<template>
+<srai>CATSRCH</srai>
+</template>
+</category>
+
+<category>
+<pattern>* DVDS</pattern>
+<template>
+<srai>CATSRCH</srai>
+</template>
+</category>
+
+<category>
+<pattern>HAVE DVD</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE DVD</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE * DVD</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE DVD *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE * DVD</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE * DVD *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE DVD *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE * DVD *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE DVDS</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE DVDS</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE * DVDS</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE DVDS *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE * DVDS</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE * DVDS *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE DVDS *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE * DVDS *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+<!--MOVIE-->
+
+<category>
+<pattern>MOVIE</pattern>
+<template>
+<srai>CATSRCH</srai>
+</template>
+</category>
+
+<category>
+<pattern>* MOVIE</pattern>
+<template>
+<srai>CATSRCH</srai>
+</template>
+</category>
+
+<category>
+<pattern>MOVIES</pattern>
+<template>
+<srai>CATSRCH</srai>
+</template>
+</category>
+
+<category>
+<pattern>* MOVIES</pattern>
+<template>
+<srai>CATSRCH</srai>
+</template>
+</category>
+<category>
+<pattern>HAVE MOVIE</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE MOVIE</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE * MOVIE</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE MOVIE *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE * MOVIE</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE * MOVIE *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE MOVIE *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE * MOVIE *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE MOVIES</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE MOVIES</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE * MOVIES</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE MOVIES *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE * MOVIES</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>HAVE * MOVIES *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE MOVIES *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE * MOVIES *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
+
+<!--EBOOKS-->
+
+<category>
+<pattern>HAVE EBOOK</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE EBOOK</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>HAVE * EBOOK</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>HAVE EBOOK *</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE * EBOOK</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>HAVE * EBOOK *</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE * EBOOK *</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>HAVE EBOOKS</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE EBOOKS</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>HAVE * EBOOKS</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>HAVE EBOOKS *</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE * EBOOKS</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>HAVE * EBOOKS *</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE * EBOOKS *</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>HAVE E BOOK</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE E BOOK</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>HAVE * E BOOK</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>HAVE E BOOK *</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE * E BOOK</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>HAVE * E BOOK *</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE * E BOOK *</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>HAVE E BOOKS</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE E BOOKS</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>HAVE * E BOOKS</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>HAVE E BOOKS *</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE * E BOOKS</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>HAVE * E BOOKS *</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<category>
+<pattern>* HAVE * E BOOKS *</pattern>
+<template><srai>EBKS</srai></template>
+</category>
+
+<!--REPEAT SEARCH-->
+
+<category>
+<pattern>AGAIN</pattern>
+<that>* IN OUR CATALOG</that>
+<template>Did you turn off your pop up blocker? Let's try again!
+<think>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>_ AGAIN</pattern>
+<that>* IN OUR CATALOG</that>
+<template>Did you turn off your pop up blocker? Let's try again!
+<think>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>AGAIN *</pattern>
+<that>* IN OUR CATALOG</that>
+<template>Did you turn off your pop up blocker? Let's try again!
+<think>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>_ AGAIN *</pattern>
+<that>* IN OUR CATALOG</that>
+<template>Did you turn off your pop up blocker? Let's try again!
+<think>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>WHERE</pattern>
+<that>* IN OUR CATALOG</that>
+<template>Did you turn off your pop up blocker? Let's try again!
+<think>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>_ WHERE</pattern>
+<that>* IN OUR CATALOG</that>
+<template>Did you turn off your pop up blocker? Let's try again!
+<think>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>WHERE *</pattern>
+<that>* IN OUR CATALOG</that>
+<template>Did you turn off your pop up blocker? Let's try again!
+<think>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>_ WHERE *</pattern>
+<that>* IN OUR CATALOG</that>
+<template>Did you turn off your pop up blocker? Let's try again!
+<think>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<!--WHAT DO YOU DO-->
+
+<category> 
+<pattern>WHAT * YOU DO</pattern> 
+<template><srai>ANSWRQ</srai></template> 
+</category> 
+
+<category> 
+<pattern>WHAT * YOU DO *</pattern> 
+<template><srai>ANSWRQ</srai></template> 
+</category> 
+
+<category> 
+<pattern>WHAT * YOU DOING</pattern> 
+<template><srai>ANSWRQ</srai></template> 
+</category> 
+
+<category> 
+<pattern>WHAT * YOU DOING *</pattern> 
+<template><srai>ANSWRQ</srai></template> 
+</category> 
+
+<!--AU SEARCH MPL CAT-->
+
+<category>
+<pattern>AUTHOR IS *</pattern>
+<template>
+Let's take a look in our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>_ AUTHOR IS *</pattern>
+<template>
+Let's take a look in our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>AUTHOR OF *</pattern>
+<template>
+Let's take a look in our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>_ AUTHOR OF *</pattern>
+<template>
+Let's take a look in our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+
+<!--AUTOBIOGRAPHY SEARCH MPL CAT-->
+
+<category>
+<pattern>AUTOBIOGRAPHY ABOUT *</pattern>
+<template>
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>_ AUTOBIOGRAPHY ABOUT *</pattern>
+<template>
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>AUTOBIOGRAPHY OF *</pattern>
+<template>
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>_ AUTOBIOGRAPHY OF *</pattern>
+<template>
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>AUTOBIOGRAPHY ON *</pattern>
+<template>
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>_ AUTOBIOGRAPHY ON *</pattern>
+<template>
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>AUTOBIOGRAPHIES ABOUT *</pattern>
+<template>
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>_ AUTOBIOGRAPHIES ABOUT *</pattern>
+<template>
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>AUTOBIOGRAPHIES OF *</pattern>
+<template>
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>_ AUTOBIOGRAPHIES OF *</pattern>
+<template>
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>AUTOBIOGRAPHIES ON *</pattern>
+<template>
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>_ AUTOBIOGRAPHIES ON *</pattern>
+<template>
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<!--BIOGRAPHY SEARCH MPL CAT-->
+
+<category>
+<pattern>BIOGRAPHY ABOUT *</pattern>
+<template>
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>_ BIOGRAPHY ABOUT *</pattern>
+<template>
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>BIOGRAPHY OF *</pattern>
+<template>
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>_ BIOGRAPHY OF *</pattern>
+<template>
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>BIOGRAPHY ON *</pattern>
+<template>
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>_ BIOGRAPHY ON *</pattern>
+<template>
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>BIOGRAPHIES ABOUT *</pattern>
+<template>
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>_ BIOGRAPHIES ABOUT *</pattern>
+<template>
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>BIOGRAPHIES OF *</pattern>
+<template>
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>_ BIOGRAPHIES OF *</pattern>
+<template>
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>BIOGRAPHIES ON *</pattern>
+<template>
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>_ BIOGRAPHIES ON *</pattern>
+<template>
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<!--CALL NO SEARCH MPL CAT-->
+
+<category>
+<pattern>CALL NUMBER IS *</pattern>
+<template>
+Let's see what's in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catcall</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>ISBN IS *</pattern>
+<template>
+Let me check our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catisbn</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>KEYWORD IS *</pattern>
+<template>
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>KEYWORDS ARE *</pattern>
+<template>
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>SUBJECT IS *</pattern>
+<template>
+You're looking for materials about <star/>. Let me check our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catsubj</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>TITLE IS *</pattern>
+<template>
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">cattitle</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>TOPIC IS *</pattern>
+<template>
+You've entered <star/> as your topic. Let me check our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<!--WHO WROTE-->
+
+<category>
+<pattern>WHO WROTE *</pattern>
+<template>
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">cattitle</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>_ WHO WROTE *</pattern>
+<template>
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">cattitle</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>_ AUTHOR OF *</pattern>
+<template>
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">cattitle</set>
+</think>
+</template>
+</category>
+
+
+<!--X BY Y-->
+<!--
+<category>
+<pattern>_ BY *</pattern>
+<template>
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+-->
+
+<!--HAVE IN STOCK-->
+
+<category>
+<pattern>_ HAVE * IN *</pattern>
+<template>
+Let's check our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>_ HAVE * ON *</pattern>
+<template>
+Let's check our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<!--do you have any-->
+
+<category>
+<pattern>* HAVE ANY * BOOKS </pattern>
+<template>
+Let me check our catalog for <star index="2"/> books. If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* HAVE ANY * BOOKS *</pattern>
+<template>
+Let me check our catalog for <star index="2"/> books. If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* HAVE ANY * CDS </pattern>
+<template>
+Let me check our catalog for <star index="2"/> books. If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* HAVE ANY * CDS *</pattern>
+<template>
+Let me check our catalog for <star index="2"/> books. If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* HAVE ANY * DVDS </pattern>
+<template>
+Let me check our catalog for <star index="2"/> books. If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* HAVE ANY * DVDS *</pattern>
+<template>
+Let me check our catalog for <star index="2"/> books. If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+
+
+<category>
+<pattern>DO YOU HAVE BOOKS ABOUT * </pattern>
+<template>
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU HAVE A BOOK ABOUT * </pattern>
+<template>
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU HAVE BOOKS ON * </pattern>
+<template>
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU HAVE A BOOK ON * </pattern>
+<template>
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU HAVE A COPY OF * </pattern>
+<template>
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU HAVE A COPY OF THE BOOK * </pattern>
+<template>
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU HAVE THE BOOK * </pattern>
+<template>
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU HAVE * ON CD</pattern>
+<template>
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU HAVE A COPY OF * ON CD</pattern>
+<template>
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU HAVE A COPY OF THE CD *</pattern>
+<template>
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU HAVE * ON CD *</pattern>
+<template>
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU HAVE A COPY OF * ON CD *</pattern>
+<template>
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU HAVE * ON DVD</pattern>
+<template>
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU HAVE A COPY OF * ON DVD</pattern>
+<template>
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU HAVE A COPY OF DVD *</pattern>
+<template>
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU HAVE * ON DVD *</pattern>
+<template>
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>DO YOU HAVE A COPY OF * ON DVD *</pattern>
+<template>
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+
+
+<category>
+<pattern>DO YOU * DVD * </pattern>
+<template>
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+
+<category>
+<pattern>DO YOU * MOVIE * </pattern>
+<template>
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<!--CAN YOU LOOK FOR-->
+
+<category>
+<pattern>LOOK FOR * BOOK</pattern>
+<template>
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* LOOK FOR * BOOK</pattern>
+<template>
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* LOOK FOR * BOOK *</pattern>
+<template>
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>LOOK * BOOK ABOUT *</pattern>
+<template>
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* LOOK * BOOK ABOUT *</pattern>
+<template>
+Let me check our catalog for <star index="3"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="3"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+
+<category>
+<pattern>LOOKING * BOOK ABOUT *</pattern>
+<template>
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* LOOKING * BOOK ABOUT *</pattern>
+<template>
+Let me check our catalog for <star index="3"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="3"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>LOOK FOR * BOOKS</pattern>
+<template>
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* LOOK FOR * BOOKS</pattern>
+<template>
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* LOOK FOR * BOOKS *</pattern>
+<template>
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>LOOK * BOOKS ABOUT *</pattern>
+<template>
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* LOOK * BOOKS ABOUT *</pattern>
+<template>
+Let me check our catalog for <star index="3"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="3"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+
+<category>
+<pattern>LOOKING * BOOKS ABOUT *</pattern>
+<template>
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* LOOKING * BOOKS ABOUT *</pattern>
+<template>
+Let me check our catalog for <star index="3"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="3"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>SEARCH FOR * BOOKS</pattern>
+<template>
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* SEARCH FOR * BOOKS</pattern>
+<template>
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* SEARCH FOR * BOOKS *</pattern>
+<template>
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* FIND A BOOK ABOUT * </pattern>
+<template>
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* FIND BOOKS ABOUT * </pattern>
+<template>
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* FIND A BOOK ON * </pattern>
+<template>
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* FIND BOOKS ON * </pattern>
+<template>
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<!--audiobooks about-->
+
+<category>
+<pattern>AUDIOBOOK ABOUT *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>AUDIOBOOKS ABOUT *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>* AUDIOBOOK ABOUT *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>* AUDIOBOOKS ABOUT *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>AUDIOBOOK BY *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>AUDIOBOOKS BY *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>* AUDIOBOOK BY *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>* AUDIOBOOKS BY *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>AUDIOBOOK ON *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>AUDIOBOOKS ON *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>* AUDIOBOOK ON *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>* AUDIOBOOKS ON *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<!--audio books about-->
+
+<category>
+<pattern>AUDIO BOOK ABOUT *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>AUDIO BOOKS ABOUT *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>* AUDIO BOOK ABOUT *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>* AUDIO BOOKS ABOUT *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>AUDIO BOOK BY *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>AUDIO BOOKS BY *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>* AUDIO BOOK BY *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>* AUDIO BOOKS BY *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>AUDIO BOOK ON *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>AUDIO BOOKS ON *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>* AUDIO BOOK ON *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>* AUDIO BOOKS ON *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+
+<!--Books about-->
+
+<category>
+<pattern>BOOK ABOUT *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>BOOKS ABOUT *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>* BOOK ABOUT *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>* BOOKS ABOUT *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>BOOK BY *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>BOOKS BY *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* BOOK BY *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* BOOKS BY *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>BOOK ON *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>BOOKS ON *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>* BOOK ON *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>* BOOKS ON *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<!--CDs by-->
+
+<category>
+<pattern>CD BY *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>CDS BY *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>* CD BY *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>* CDS BY *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<!--CD books about-->
+
+<category>
+<pattern>CD BOOK ABOUT *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>CD BOOKS ABOUT *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>* CD BOOK ABOUT *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>* CD BOOKS ABOUT *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>CD BOOK BY *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>CD BOOKS BY *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>* CD BOOK BY *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>* CD BOOKS BY *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>CD BOOK ON *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>CD BOOKS ON *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>* CD BOOK ON *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<category>
+<pattern>* CD BOOKS ON *</pattern>
+<template>
+Here are the closest matches based on this input.
+<think>
+<set name="searcharg"><star index="2"/></set>
+<set name="search">catkey</set></think>
+</template>
+</category>
+
+<!--GOOGLE-->
+
+<category>
+<pattern>OPEN GOOGLE</pattern> 
+<template>
+ Here you go. If you don't see Google, turn off your pop-up blocker and ask again.
+<think>
+<set name="search">google</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>OPEN GOOGLE *</pattern> 
+<template>
+ Here you go. If you don't see Google, turn off your pop-up blocker and ask again.
+<think>
+<set name="search">google</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>GGLE</pattern>
+<template>I'll be happy to Google something for you. If your pop up blocker is on, please turn it off now.
+<random>
+<li>Using the fewest possible words, tell me what would you like me to Google.</li>
+<li>Using just a few words, tell me what do you want to Google.</li>
+<li>What are you looking for on Google?</li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>WHAT * GOOGLE</that>
+<template>
+Let's see what we can find. If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">google</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>GOOGLE</pattern>
+<template><srai>GGLE</srai></template>
+</category>
+
+<category>
+<pattern>* GOOGLE</pattern>
+<template><srai>GGLE</srai></template>
+</category>
+
+<category>
+<pattern>GOOGLE *</pattern>
+<template><srai>GGLE</srai></template>
+</category>
+
+<category>
+<pattern>* GOOGLE *</pattern>
+<template><srai>GGLE</srai></template>
+</category>
+
+<!--Ohio Web Library-->
+
+<category>
+<pattern>OHIO WEB LIBRARY SEARCH IS *</pattern> 
+<template>
+I'm opening a link to The Ohio Web Library which contains a variety of magazine and journal articles to help you.  If you don't see the results, please turn off your pop-up blocker and ask me again. You may also want to check with a librarian during our regular hours of business, or, if you need an immediate answer try <a href="http://www.knowitnow.org/" target="_blank" ><b>Know it Now</b></a>, which is available 24 hours a day.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">ohweblib</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>OHIO WEB LIBRARY SEARCH *</pattern> 
+<template>
+I'm opening a link to The Ohio Web Library which contains a variety of magazine and journal articles to help you.  If you don't see the results, please turn off your pop-up blocker and ask me again. You may also want to check with a librarian during our regular hours of business, or, if you need an immediate answer try <a href="http://www.knowitnow.org/" target="_blank" ><b>Know it Now</b></a>, which is available 24 hours a day.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">ohweblib</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>OWL SEARCH IS *</pattern> 
+<template>
+I'm opening a link to The Ohio Web Library which contains a variety of magazine and journal articles to help you.  If you don't see the results, please turn off your pop-up blocker and ask me again. You may also want to check with a librarian during our regular hours of business, or, if you need an immediate answer try <a href="http://www.knowitnow.org/" target="_blank" ><b>Know it Now</b></a>, which is available 24 hours a day.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">ohweblib</set>
+</think>
+</template>
+</category>
+
+<!--Wolfram Alpha-->
+
+<category>
+<pattern>WA SEARCH IS *</pattern>
+<template>
+Let me check Wolfram Alpha. If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">wolframalpha</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>WOLFRAM ALPHA SEARCH IS *</pattern>
+<template>
+Let me check Wolfram Alpha. If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">wolframalpha</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>WOLFRAM ALPHA SEARCH *</pattern>
+<template>
+Let me check Wolfram Alpha. If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">wolframalpha</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>EQUATION IS *</pattern>
+<template>
+Let me check Wolfram Alpha. If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">wolframalpha</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>MATH PROBLEM IS *</pattern>
+<template>
+Let me check Wolfram Alpha. If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">wolframalpha</set>
+</think>
+</template>
+</category>
+
+<!--HOMEWORK HELP-->
+
+<category>
+<pattern>WRTPPR</pattern>
+<template>I can't write papers for you, but here's a link to the library's <a href="http://www.mentorpl.org/homework.html" target="_blank"><b>Homework Help Page</b></a>. If you need more help, please call 
+our Reference Staff at 440.255.8811 extension 215 during regular business hours, or follow this link to <a href="http://www.knowitnow.org/" target="_blank"><b>Know it Now</b></a> to chat with a live, human librarian for around the
+clock help.</template>
+</category>
+
+<category>
+<pattern>* WRITE * PAPER</pattern>
+<template><srai>WRTPPR</srai></template>
+</category>
+
+<category>
+<pattern>* WRITING * PAPER</pattern>
+<template><srai>WRTPPR</srai></template>
+</category>
+
+<category>
+<pattern>* WRITE * PAPERS</pattern>
+<template><srai>WRTPPR</srai></template>
+</category>
+
+<category>
+<pattern>* WRITING * PAPERS</pattern>
+<template><srai>WRTPPR</srai></template>
+</category>
+
+<!--PROXY ERROR-->
+
+<category>
+<pattern>PRXYERR</pattern>
+<template>We're having some network problems. If you're getting a "proxy error" or "bad request" message, please talk to me using Internet Explorer. We're working to get this corrected.</template>
+</category>
+
+<category>
+<pattern>PROXY ERROR</pattern>
+<template><srai>PRXYERR</srai></template>
+</category>
+
+<category>
+<pattern>_ PROXY ERROR</pattern>
+<template><srai>PRXYERR</srai></template>
+</category>
+
+<category>
+<pattern>_ PROXY ERROR *</pattern>
+<template><srai>PRXYERR</srai></template>
+</category>
+
+<category>
+<pattern>PROXY ERROR *</pattern>
+<template><srai>PRXYERR</srai></template>
+</category>
+
+<category>
+<pattern>400 BAD REQUEST</pattern>
+<template><srai>PRXYERR</srai></template>
+</category>
+
+<category>
+<pattern>_ 400 BAD REQUEST</pattern>
+<template><srai>PRXYERR</srai></template>
+</category>
+
+<category>
+<pattern>_ 400 BAD REQUEST *</pattern>
+<template><srai>PRXYERR</srai></template>
+</category>
+
+<category>
+<pattern>400 BAD REQUEST *</pattern>
+<template><srai>PRXYERR</srai></template>
+</category>
+ 
+<category>
+<pattern>UNSUPPORTED METHOD</pattern>
+<template><srai>PRXYERR</srai></template>
+</category>
+
+<category>
+<pattern>_ UNSUPPORTED METHOD</pattern>
+<template><srai>PRXYERR</srai></template>
+</category>
+
+<category>
+<pattern>_ UNSUPPORTED METHOD *</pattern>
+<template><srai>PRXYERR</srai></template>
+</category>
+
+<category>
+<pattern>UNSUPPORTED METHOD *</pattern>
+<template><srai>PRXYERR</srai></template>
+</category>
+  
+</aiml>  

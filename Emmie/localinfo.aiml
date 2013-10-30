@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<!--Copyright 2011 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+
+<category>
+<pattern>HEAPAPP</pattern>
+<template>HEAP applications are available at the Main Library, at both Branches, and online by following <a href="http://www.development.ohio.gov/community/ocs/Documents/2010-11HEAP.pdf" target="_blank">
+<b>this link</b></a>.</template>
+</category>
+
+<category>
+<pattern>HEAP APPLICATION</pattern>
+<template><srai>HEAPAPP</srai></template>
+</category>
+
+<category>
+<pattern>_ HEAP APPLICATION</pattern>
+<template><srai>HEAPAPP</srai></template>
+</category>
+
+<category>
+<pattern>_ HEAP APPLICATION *</pattern>
+<template><srai>HEAPAPP</srai></template>
+</category>
+
+<category>
+<pattern>HEAP APPLICATIONS</pattern>
+<template><srai>HEAPAPP</srai></template>
+</category>
+
+<category>
+<pattern>_ HEAP APPLICATIONS</pattern>
+<template><srai>HEAPAPP</srai></template>
+</category>
+
+<category>
+<pattern>_ HEAP APPLICATIONS *</pattern>
+<template><srai>HEAPAPP</srai></template>
+</category>
+
+<category>
+<pattern>LOCHIST</pattern>
+<template> While we do not have many local history books, Morley Library in Painsville does! Give them a call at 440.352.3383.</template>
+</category>
+
+<category>
+<pattern>LOCAL HISTORY</pattern>
+<template><srai>LOCHIST</srai></template>
+</category>
+
+<category>
+<pattern> _ LOCAL HISTORY</pattern>
+<template><srai>LOCHIST</srai></template>
+</category>
+
+<category>
+<pattern> _ LOCAL HISTORY *</pattern>
+<template><srai>LOCHIST</srai></template>
+</category>
+
+<category>
+<pattern>LOCAL HISTORY *</pattern>
+<template><srai>LOCHIST</srai></template>
+</category>
+
+<category>
+<pattern>LOCNEWS</pattern>
+<template>Personally, my favorite source for local news is Mentor Patch. I've opened it for you. Here are some other links for local news. Our local newspaper is the <a href="http://www.news-herald.com/" target="_blank"><b>News Herald</b></a>. 
+ <a href="http://www.wtam.com/main.html" target="_blank"><b>WTAM</b></a> is probably the best known of our local radio stations.
+Local television includes  <a href="http://www.newsnet5.com/" target="_blank"><b>WEWS</b></a>, <a href="http://www.fox8.com/" target="_blank"><b>FOX 8 Cleveland</b></a>, and <a href="http://www.wkyc.com/" target="_blank"><b>WKYC</b></a>.
+<think>
+<set name="search">mentpatch</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>LOCAL NEWS</pattern>
+<template><srai>LOCNEWS</srai></template>
+</category>
+
+<category>
+<pattern> _ LOCAL NEWS</pattern>
+<template><srai>LOCNEWS</srai></template>
+</category>
+
+<category>
+<pattern> _ LOCAL NEWS *</pattern>
+<template><srai>LOCNEWS</srai></template>
+</category>
+
+<category>
+<pattern>LOCAL NEWS *</pattern>
+<template><srai>LOCNEWS</srai></template>
+</category>
+
+<category>
+<pattern>MENTOR NEWS</pattern>
+<template><srai>LOCNEWS</srai></template>
+</category>
+
+<category>
+<pattern> _ MENTOR NEWS</pattern>
+<template><srai>LOCNEWS</srai></template>
+</category>
+
+<category>
+<pattern> _ MENTOR NEWS *</pattern>
+<template><srai>LOCNEWS</srai></template>
+</category>
+
+<category>
+<pattern>MENTOR NEWS *</pattern>
+<template><srai>LOCNEWS</srai></template>
+</category>
+
+<category>
+<pattern>LOCPAPER</pattern>
+<template>Our local newspaper is the <a href="http://www.news-herald.com/" target="_blank"><b>News Herald</b></a>. You can find more local news and info at
+<a href="http://mentor.patch.com/" target="_blank"><b>Mentor Patch</b></a>. You may also find interest in the <a href="http://www.cleveland.com/plaindealer/" target="_blank"><b>Cleveland Plain Dealer</b></a></template>
+</category>
+
+<category>
+<pattern>LOCAL NEWSPAPER</pattern>
+<template><srai>LOCPAPER</srai></template>
+</category>
+
+<category>
+<pattern> _ LOCAL NEWSPAPER</pattern>
+<template><srai>LOCPAPER</srai></template>
+</category>
+
+<category>
+<pattern>LOCAL NEWSPAPER *</pattern>
+<template><srai>LOCPAPER</srai></template>
+</category>
+
+<category>
+<pattern> _ LOCAL NEWSPAPER *</pattern>
+<template><srai>LOCPAPER</srai></template>
+</category>
+
+<category>
+<pattern>LOCAL NEWSPAPERS</pattern>
+<template><srai>LOCPAPER</srai></template>
+</category>
+
+<category>
+<pattern> _ LOCAL NEWSPAPERS</pattern>
+<template><srai>LOCPAPER</srai></template>
+</category>
+
+<category>
+<pattern>LOCAL NEWSPAPERS *</pattern>
+<template><srai>LOCPAPER</srai></template>
+</category>
+
+<category>
+<pattern> _ LOCAL NEWSPAPERS *</pattern>
+<template><srai>LOCPAPER</srai></template>
+</category>
+
+<category>
+<pattern>LOCAL PAPER</pattern>
+<template><srai>LOCPAPER</srai></template>
+</category>
+
+<category>
+<pattern> _ LOCAL PAPER</pattern>
+<template><srai>LOCPAPER</srai></template>
+</category>
+
+<category>
+<pattern>LOCAL PAPER *</pattern>
+<template><srai>LOCPAPER</srai></template>
+</category>
+
+<category>
+<pattern> _ LOCAL PAPER *</pattern>
+<template><srai>LOCPAPER</srai></template>
+</category>
+
+<category>
+<pattern>LOCAL PAPERS</pattern>
+<template><srai>LOCPAPER</srai></template>
+</category>
+
+<category>
+<pattern> _ LOCAL PAPERS</pattern>
+<template><srai>LOCPAPER</srai></template>
+</category>
+
+<category>
+<pattern>LOCAL PAPERS *</pattern>
+<template><srai>LOCPAPER</srai></template>
+</category>
+
+<category>
+<pattern> _ LOCAL PAPERS *</pattern>
+<template><srai>LOCPAPER</srai></template>
+</category>
+
+<!--MENTOR PAPERS-->
+
+<category>
+<pattern>MENTOR NEWSPAPER</pattern>
+<template><srai>LOCPAPER</srai></template>
+</category>
+
+<category>
+<pattern> _ MENTOR NEWSPAPER</pattern>
+<template><srai>LOCPAPER</srai></template>
+</category>
+
+<category>
+<pattern>MENTOR NEWSPAPER *</pattern>
+<template><srai>LOCPAPER</srai></template>
+</category>
+
+<category>
+<pattern> _ MENTOR NEWSPAPER *</pattern>
+<template><srai>LOCPAPER</srai></template>
+</category>
+
+<category>
+<pattern>MENTOR NEWSPAPERS</pattern>
+<template><srai>LOCPAPER</srai></template>
+</category>
+
+<category>
+<pattern> _ MENTOR NEWSPAPERS</pattern>
+<template><srai>LOCPAPER</srai></template>
+</category>
+
+<category>
+<pattern>MENTOR NEWSPAPERS *</pattern>
+<template><srai>LOCPAPER</srai></template>
+</category>
+
+<category>
+<pattern> _ MENTOR NEWSPAPERS *</pattern>
+<template><srai>LOCPAPER</srai></template>
+</category>
+
+<category>
+<pattern>MENTOR PAPER</pattern>
+<template><srai>LOCPAPER</srai></template>
+</category>
+
+<category>
+<pattern> _ MENTOR PAPER</pattern>
+<template><srai>LOCPAPER</srai></template>
+</category>
+
+<category>
+<pattern>MENTOR PAPER *</pattern>
+<template><srai>LOCPAPER</srai></template>
+</category>
+
+<category>
+<pattern> _ MENTOR PAPER *</pattern>
+<template><srai>LOCPAPER</srai></template>
+</category>
+
+<category>
+<pattern>MENTOR PAPERS</pattern>
+<template><srai>LOCPAPER</srai></template>
+</category>
+
+<category>
+<pattern> _ MENTOR PAPERS</pattern>
+<template><srai>LOCPAPER</srai></template>
+</category>
+
+<category>
+<pattern>MENTOR PAPERS *</pattern>
+<template><srai>LOCPAPER</srai></template>
+</category>
+
+<category>
+<pattern> _ MENTOR PAPERS *</pattern>
+<template><srai>LOCPAPER</srai></template>
+</category>
+
+<!--MENTOR PATCH-->
+
+<category>
+<pattern>MENTPATCH</pattern>
+<template>Mentor Patch is my favorite source for local news. Here, I'll take you right to it. If you can't see the new window, turn off you pop up blocker. It may also have opned as a new
+tab.
+<think>
+<set name="search">mentpatch</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>MENTOR PATCH</pattern>
+<template><srai>MENTPATCH</srai></template>
+</category>
+
+<category>
+<pattern>_ MENTOR PATCH</pattern>
+<template><srai>MENTPATCH</srai></template>
+</category>
+
+<category>
+<pattern>MENTOR PATCH *</pattern>
+<template><srai>MENTPATCH</srai></template>
+</category>
+
+<category>
+<pattern>_ MENTOR PATCH *</pattern>
+<template><srai>MENTPATCH</srai></template>
+</category>
+
+<category>
+<pattern>MENTOR PATCH.COM</pattern>
+<template><srai>MENTPATCH</srai></template>
+</category>
+
+<category>
+<pattern>_ MENTOR PATCH.COM</pattern>
+<template><srai>MENTPATCH</srai></template>
+</category>
+
+<category>
+<pattern>MENTOR PATCH.COM *</pattern>
+<template><srai>MENTPATCH</srai></template>
+</category>
+
+<category>
+<pattern>_ MENTOR PATCH.COM *</pattern>
+<template><srai>MENTPATCH</srai></template>
+</category>
+
+<category>
+<pattern>MENTOR.PATCH.COM</pattern>
+<template><srai>MENTPATCH</srai></template>
+</category>
+
+<category>
+<pattern>_ MENTOR.PATCH.COM</pattern>
+<template><srai>MENTPATCH</srai></template>
+</category>
+
+<category>
+<pattern>MENTOR.PATCH.COM *</pattern>
+<template><srai>MENTPATCH</srai></template>
+</category>
+
+<category>
+<pattern>_ MENTOR.PATCH.COM *</pattern>
+<template><srai>MENTPATCH</srai></template>
+</category>
+
+<category>
+<pattern>JASONLEA</pattern>
+<template>Jason Lea is the editor of Mentor Patch, my favorite source for local news. Here, I'll take you right to it. If you can't see the new window, turn off you pop up blocker. It may also have opened as a new
+tab.
+<think>
+<set name="search">mentpatch</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>JASON LEA</pattern>
+<template><srai>JASONLEA</srai></template>
+</category>
+
+<category>
+<pattern>_ JASON LEA</pattern>
+<template><srai>JASONLEA</srai></template>
+</category>
+
+<category>
+<pattern>JASON LEA *</pattern>
+<template><srai>JASONLEA</srai></template>
+</category>
+
+<category>
+<pattern>_ JASON LEA *</pattern>
+<template><srai>JASONLEA</srai></template>
+</category>
+
+<category>
+<pattern>WHERE * MENTOR</pattern>
+<template>Follow this link for a <a href="http://maps.google.com/maps?hl=en&amp;q=mentor+ohio&amp;bav=on.2,or.r_gc.r_pw.&amp;wrapid=tlif130185731324010&amp;um=1&amp;ie=UTF-8&amp;hq=&amp;hnear=Mentor,+OH&amp;gl=us&amp;ei=IcSYTc7fKqff0gHbmPDpCw&amp;sa=X&amp;oi=geocode_result&amp;ct=title&amp;resnum=1&amp;ved=0CB8Q8gEwAA"
+target="_blank"><b>map</b></a>. Follow this link for more information about the <a href="http://cityofmentor.com/" target="_blank"><b>City of Mentor</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>WHERE * MENTOR OH</pattern>
+<template>Follow this link for a <a href="http://maps.google.com/maps?hl=en&amp;q=mentor+ohio&amp;bav=on.2,or.r_gc.r_pw.&amp;wrapid=tlif130185731324010&amp;um=1&amp;ie=UTF-8&amp;hq=&amp;hnear=Mentor,+OH&amp;gl=us&amp;ei=IcSYTc7fKqff0gHbmPDpCw&amp;sa=X&amp;oi=geocode_result&amp;ct=title&amp;resnum=1&amp;ved=0CB8Q8gEwAA"
+target="_blank"><b>map</b></a>. Follow this link for more information about the <a href="http://cityofmentor.com/" target="_blank"><b>City of Mentor</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>WHERE * MENTOR OHIO</pattern>
+<template>Follow this link for a <a href="http://maps.google.com/maps?hl=en&amp;q=mentor+ohio&amp;bav=on.2,or.r_gc.r_pw.&amp;wrapid=tlif130185731324010&amp;um=1&amp;ie=UTF-8&amp;hq=&amp;hnear=Mentor,+OH&amp;gl=us&amp;ei=IcSYTc7fKqff0gHbmPDpCw&amp;sa=X&amp;oi=geocode_result&amp;ct=title&amp;resnum=1&amp;ved=0CB8Q8gEwAA"
+target="_blank"><b>map</b></a>. Follow this link for more information about the <a href="http://cityofmentor.com/" target="_blank"><b>City of Mentor</b></a>.
+</template>
+</category>
+
+<category>
+<pattern>SCHOOL LUNCH PROGRAMS</pattern>
+<template>I'm not programmed with this information. I suggest you contact your local school.</template>
+</category>
+
+<category>
+<pattern>DO YOU OFFER SUTQ TRAINING FOR CHILDCARE TEACHERS IN YOUR OR SURROUNDING LIBRARIES</pattern>
+<template>We do not. One of the humans working here can check other libraries for you.</template>
+</category>
+
+</aiml>

@@ -1,0 +1,1386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<!--Copyright 2011 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+
+<!--NEW ITEMS-->
+
+<category>
+<pattern>NEW * </pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * </pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>NEW ARRIVAL</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW ARRIVAL</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>NEW ARRIVAL *</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW ARRIVAL *</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * ARRIVAL</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * ARRIVAL</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * ARRIVAL *</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * ARRIVAL *</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>NEW ARRIVALS</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW ARRIVALS</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>NEW ARRIVALS *</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW ARRIVALS *</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * ARRIVALS</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * ARRIVALS</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * ARRIVALS *</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * ARRIVALS *</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>NEWEST ARRIVAL</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>* NEWEST ARRIVAL</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>NEWEST ARRIVAL *</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>* NEWEST ARRIVAL *</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>NEWEST * ARRIVAL</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>* NEWEST * ARRIVAL</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>NEWEST * ARRIVAL *</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>* NEWEST * ARRIVAL *</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>NEWEST ARRIVALS</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>* NEWEST ARRIVALS</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>NEWEST ARRIVALS *</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>* NEWEST ARRIVALS *</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>NEWEST * ARRIVALS</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>* NEWEST * ARRIVALS</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>NEWEST * ARRIVALS *</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>* NEWEST * ARRIVALS *</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>LATEST ARRIVAL</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>* LATEST ARRIVAL</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>LATEST ARRIVAL *</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>* LATEST ARRIVAL *</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>LATEST * ARRIVAL</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>* LATEST * ARRIVAL</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>LATEST * ARRIVAL *</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>* LATEST * ARRIVAL *</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>LATEST ARRIVALS</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>* LATEST ARRIVALS</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>LATEST ARRIVALS *</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>* LATEST ARRIVALS *</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>LATEST * ARRIVALS</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>* LATEST * ARRIVALS</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>LATEST * ARRIVALS *</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>* LATEST * ARRIVALS *</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>CURRENT BOOK * </pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>* CURRENT BOOK * </pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>CURRENT BOOKS * </pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>* CURRENT BOOKS * </pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<!--NEW AUDIOBOOKS-->
+
+<category>
+<pattern>NEW AUDIO</pattern>
+<template><srai>NWADBKS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW AUDIO</pattern>
+<template><srai>NWADBKS</srai></template>
+</category>
+
+<category>
+<pattern>NEW AUDIO *</pattern>
+<template><srai>NWADBKS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * AUDIO</pattern>
+<template><srai>NWADBKS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * AUDIO</pattern>
+<template><srai>NWADBKS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * AUDIO *</pattern>
+<template><srai>NWADBKS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW AUDIO *</pattern>
+<template><srai>NWADBKS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * AUDIO *</pattern>
+<template><srai>NWADBKS</srai></template>
+</category>
+
+<!--NEW BOOKS-->
+
+<category>
+<pattern>NEW BOOK</pattern>
+<template><srai>NWBKS</srai></template>
+</category>
+
+<category>
+<pattern>_ NEW BOOK</pattern>
+<template><srai>NWBKS</srai></template>
+</category>
+
+<category>
+<pattern>NEW BOOK *</pattern>
+<template><srai>NWBKS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * BOOK</pattern>
+<template><srai>NWBKS</srai></template>
+</category>
+
+<category>
+<pattern>_ NEW * BOOK</pattern>
+<template><srai>NWBKS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * BOOK *</pattern>
+<template><srai>NWBKS</srai></template>
+</category>
+
+<category>
+<pattern>_ NEW BOOK *</pattern>
+<template><srai>NWBKS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * BOOK *</pattern>
+<template><srai>NWBKS</srai></template>
+</category>
+
+<category>
+<pattern>NEW BOOKS</pattern>
+<template><srai>NWBKS</srai></template>
+</category>
+
+<category>
+<pattern>_ NEW BOOKS</pattern>
+<template><srai>NWBKS</srai></template>
+</category>
+
+<category>
+<pattern>NEW BOOKS *</pattern>
+<template><srai>NWBKS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * BOOKS</pattern>
+<template><srai>NWBKS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * BOOKS</pattern>
+<template><srai>NWBKS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * BOOKS *</pattern>
+<template><srai>NWBKS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW BOOKS *</pattern>
+<template><srai>NWBKS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * BOOKS *</pattern>
+<template><srai>NWBKS</srai></template>
+</category>
+
+<!--NEW CDS-->
+
+<category>
+<pattern>NEW CD</pattern>
+<template><srai>NWCDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW CD</pattern>
+<template><srai>NWCDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW CD *</pattern>
+<template><srai>NWCDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * CD</pattern>
+<template><srai>NWCDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * CD</pattern>
+<template><srai>NWCDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * CD *</pattern>
+<template><srai>NWCDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW CD *</pattern>
+<template><srai>NWCDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * CD *</pattern>
+<template><srai>NWCDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW CDS</pattern>
+<template><srai>NWCDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW CDS</pattern>
+<template><srai>NWCDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW CDS *</pattern>
+<template><srai>NWCDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * CDS</pattern>
+<template><srai>NWCDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * CDS</pattern>
+<template><srai>NWCDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * CDS *</pattern>
+<template><srai>NWCDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW CDS *</pattern>
+<template><srai>NWCDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * CDS *</pattern>
+<template><srai>NWCDS</srai></template>
+</category>
+
+<!--NEW DVDS-->
+
+<category>
+<pattern>NEW DVD</pattern>
+<template><srai>NWDVDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW DVD</pattern>
+<template><srai>NWDVDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW DVD *</pattern>
+<template><srai>NWDVDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * DVD</pattern>
+<template><srai>NWDVDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * DVD</pattern>
+<template><srai>NWDVDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * DVD *</pattern>
+<template><srai>NWDVDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW DVD *</pattern>
+<template><srai>NWDVDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * DVD *</pattern>
+<template><srai>NWDVDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW DVDS</pattern>
+<template><srai>NWDVDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW DVDS</pattern>
+<template><srai>NWDVDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW DVDS *</pattern>
+<template><srai>NWDVDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * DVDS</pattern>
+<template><srai>NWDVDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * DVDS</pattern>
+<template><srai>NWDVDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * DVDS *</pattern>
+<template><srai>NWDVDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW DVDS *</pattern>
+<template><srai>NWDVDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * DVDS *</pattern>
+<template><srai>NWDVDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW MOVIE</pattern>
+<template><srai>NWDVDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW MOVIE</pattern>
+<template><srai>NWDVDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW MOVIE *</pattern>
+<template><srai>NWDVDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * MOVIE</pattern>
+<template><srai>NWDVDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * MOVIE</pattern>
+<template><srai>NWDVDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * MOVIE *</pattern>
+<template><srai>NWDVDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW MOVIE *</pattern>
+<template><srai>NWDVDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * MOVIE *</pattern>
+<template><srai>NWDVDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW MOVIES</pattern>
+<template><srai>NWDVDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW MOVIES</pattern>
+<template><srai>NWDVDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW MOVIES *</pattern>
+<template><srai>NWDVDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * MOVIES</pattern>
+<template><srai>NWDVDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * MOVIES</pattern>
+<template><srai>NWDVDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * MOVIES *</pattern>
+<template><srai>NWDVDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW MOVIES *</pattern>
+<template><srai>NWDVDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * MOVIES *</pattern>
+<template><srai>NWDVDS</srai></template>
+</category>
+
+<!--NEW CHILDREN'S-->
+
+<category>
+<pattern>NEW CHILDREN</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW CHILDREN</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW CHILDREN *</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * CHILDREN</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * CHILDREN</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * CHILDREN *</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW CHILDREN *</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * CHILDREN *</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW CHILDRENS</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW CHILDRENS</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW CHILDRENS *</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * CHILDRENS</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * CHILDRENS</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * CHILDRENS *</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW CHILDRENS *</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * CHILDRENS *</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW CHILDREN S</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW CHILDREN S</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW CHILDREN S *</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * CHILDREN S</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * CHILDREN S</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * CHILDREN S *</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW CHILDREN S *</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * CHILDREN S *</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW KID</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW KID</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW KID *</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * KID</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * KID</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * KID *</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW KID *</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * KID *</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW KIDS</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW KIDS</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW KIDS *</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * KIDS</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * KIDS</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * KIDS *</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW KIDS *</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * KIDS *</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW KID S</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW KID S</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW KID S *</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * KID S</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * KID S</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * KID S *</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW KID S *</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * KID S *</pattern>
+<template><srai>NWKIDS</srai></template>
+</category>
+
+<!--NEW TEEN'S-->
+
+<category>
+<pattern>NEW TEEN</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>* NEW TEEN</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>NEW TEEN *</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>NEW * TEEN</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * TEEN</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>NEW * TEEN *</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>* NEW TEEN *</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * TEEN *</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>NEW TEENS</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>* NEW TEENS</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>NEW TEENS *</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>NEW * TEENS</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * TEENS</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>NEW * TEENS *</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>* NEW TEENS *</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * TEENS *</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>NEW TEEN S</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>* NEW TEEN S</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>NEW TEEN S *</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>NEW * TEEN S</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * TEEN S</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>NEW * TEEN S *</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>* NEW TEEN S *</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * TEEN S *</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>NEW YA</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>* NEW YA</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>NEW YA *</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>NEW * YA</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * YA</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>NEW * YA *</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>* NEW YA *</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * YA *</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>NEW YAS</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>* NEW YAS</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>NEW YAS *</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>NEW * YAS</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * YAS</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>NEW * YAS *</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>* NEW YAS *</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * YAS *</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>NEW YA S</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>* NEW YA S</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>NEW YA S *</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>NEW * YA S</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * YA S</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>NEW * YA S *</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>* NEW YA S *</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * YA S *</pattern>
+<template><srai>NWYA</srai></template>
+</category>
+
+<!--NEW BOOKS-->
+
+<category>
+<pattern>NEW BOOK</pattern>
+<template><srai>NWBKS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW BOOK</pattern>
+<template><srai>NWBKS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * BOOK</pattern>
+<template><srai>NWBKS</srai></template>
+</category>
+
+<category>
+<pattern>NEW BOOK *</pattern>
+<template><srai>NWBKS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * BOOK</pattern>
+<template><srai>NWBKS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * BOOK *</pattern>
+<template><srai>NWBKS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW BOOK *</pattern>
+<template><srai>NWBKS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * BOOK *</pattern>
+<template><srai>NWBKS</srai></template>
+</category>
+
+<category>
+<pattern>NEW BOOKS</pattern>
+<template><srai>NWBKS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW BOOKS</pattern>
+<template><srai>NWBKS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * BOOKS</pattern>
+<template><srai>NWBKS</srai></template>
+</category>
+
+<category>
+<pattern>NEW BOOKS *</pattern>
+<template><srai>NWBKS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * BOOKS</pattern>
+<template><srai>NWBKS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * BOOKS *</pattern>
+<template><srai>NWBKS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW BOOKS *</pattern>
+<template><srai>NWBKS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * BOOKS *</pattern>
+<template><srai>NWBKS</srai></template>
+</category>
+
+<!--NEW LARGE TYPE-->
+
+<category>
+<pattern>NEW LARGE PRINT</pattern>
+<template><srai>NWLTBKS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW LARGE PRINT</pattern>
+<template><srai>NWLTBKS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * LARGE PRINT</pattern>
+<template><srai>NWLTBKS</srai></template>
+</category>
+
+<category>
+<pattern>NEW LARGE PRINT *</pattern>
+<template><srai>NWLTBKS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * LARGE PRINT</pattern>
+<template><srai>NWLTBKS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * LARGE PRINT *</pattern>
+<template><srai>NWLTBKS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW LARGE PRINT *</pattern>
+<template><srai>NWLTBKS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * LARGE PRINT *</pattern>
+<template><srai>NWLTBKS</srai></template>
+</category>
+
+<category>
+<pattern>NEW LARGE TYPE</pattern>
+<template><srai>NWLTBKS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW LARGE TYPE</pattern>
+<template><srai>NWLTBKS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * LARGE TYPE</pattern>
+<template><srai>NWLTBKS</srai></template>
+</category>
+
+<category>
+<pattern>NEW LARGE TYPE *</pattern>
+<template><srai>NWLTBKS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * LARGE TYPE</pattern>
+<template><srai>NWLTBKS</srai></template>
+</category>
+
+<category>
+<pattern>NEW * LARGE TYPE *</pattern>
+<template><srai>NWLTBKS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW LARGE TYPE *</pattern>
+<template><srai>NWLTBKS</srai></template>
+</category>
+
+<category>
+<pattern>* NEW * LARGE TYPE *</pattern>
+<template><srai>NWLTBKS</srai></template>
+</category>
+
+<!--MISC-->
+
+<category>
+<pattern>CURRENT CD * </pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>* CURRENT CD * </pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>CURRENT CDS * </pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>* CURRENT CDS * </pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>CURRENT DVD * </pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>* CURRENT DVD * </pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>CURRENT DVDS * </pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>* CURRENT DVDS * </pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<!--RECENT RELEASES-->
+
+<category>
+<pattern>RECENT RELEASES</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>RECENT RELEASES *</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>* RECENT RELEASES </pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>* RECENT RELEASES *</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>RECENTLY RELEASED *</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>* RECENTLY RELEASED </pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+<category>
+<pattern>* RECENTLY RELEASED *</pattern>
+<template><srai>NWITMS</srai></template>
+</category>
+
+</aiml>

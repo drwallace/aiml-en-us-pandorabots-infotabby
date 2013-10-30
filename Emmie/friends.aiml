@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<!--Copyright 2011-2012 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+
+
+<!--JOIN THE FRIENDS-->
+
+<category>
+<pattern>JOIN * FRIENDS</pattern>
+<template><srai>JNFRNDS</srai></template>
+</category>
+
+<category>
+<pattern>JOIN * FRIENDS *</pattern>
+<template><srai>JNFRNDS</srai></template>
+</category>
+
+<category>
+<pattern>_ JOIN * FRIENDS</pattern>
+<template><srai>JNFRNDS</srai></template>
+</category>
+
+<category>
+<pattern>_ JOIN * FRIENDS *</pattern>
+<template><srai>JNFRNDS</srai></template>
+</category>
+
+<category>
+<pattern>JOINING * FRIENDS</pattern>
+<template><srai>JNFRNDS</srai></template>
+</category>
+
+<category>
+<pattern>JOINING * FRIENDS *</pattern>
+<template><srai>JNFRNDS</srai></template>
+</category>
+
+<category>
+<pattern>_ JOINING * FRIENDS</pattern>
+<template><srai>JNFRNDS</srai></template>
+</category>
+
+<category>
+<pattern>_ JOINING * FRIENDS *</pattern>
+<template><srai>JNFRNDS</srai></template>
+</category>
+
+<!--BOOK SALES-->
+
+<category>
+<pattern>BOOK SALE</pattern>
+<template><srai>BKSALE</srai></template>
+</category>
+
+<category>
+<pattern>* BOOK SALE</pattern>
+<template><srai>BKSALE</srai></template>
+</category>
+
+<category>
+<pattern>* BOOK SALE *</pattern>
+<template><srai>BKSALE</srai></template>
+</category>
+
+<category>
+<pattern>BOOK SALE *</pattern>
+<template><srai>BKSALE</srai></template>
+</category>
+
+<category>
+<pattern>BOOK SALES</pattern>
+<template><srai>BKSALE</srai></template>
+</category>
+
+<category>
+<pattern>* BOOK SALES</pattern>
+<template><srai>BKSALE</srai></template>
+</category>
+
+<category>
+<pattern>* BOOK SALES *</pattern>
+<template><srai>BKSALE</srai></template>
+</category>
+
+<category>
+<pattern>BOOK SALES *</pattern>
+<template><srai>BKSALE</srai></template>
+</category>
+
+<category>
+<pattern>BOOKSALE</pattern>
+<template><srai>BKSALE</srai></template>
+</category>
+
+<category>
+<pattern>* BOOKSALE</pattern>
+<template><srai>BKSALE</srai></template>
+</category>
+
+<category>
+<pattern>* BOOKSALE *</pattern>
+<template><srai>BKSALE</srai></template>
+</category>
+
+<category>
+<pattern>BOOKSALE *</pattern>
+<template><srai>BKSALE</srai></template>
+</category>
+
+<category>
+<pattern>BOOKSALES</pattern>
+<template><srai>BKSALE</srai></template>
+</category>
+
+<category>
+<pattern>* BOOKSALES</pattern>
+<template><srai>BKSALE</srai></template>
+</category>
+
+<category>
+<pattern>* BOOKSALES *</pattern>
+<template><srai>BKSALE</srai></template>
+</category>
+
+<category>
+<pattern>BOOKSALES *</pattern>
+<template><srai>BKSALE</srai></template>
+</category>
+
+<category>
+<pattern>FRIENDS SALE</pattern>
+<template><srai>BKSALE</srai></template>
+</category>
+
+<category>
+<pattern>* FRIENDS SALE</pattern>
+<template><srai>BKSALE</srai></template>
+</category>
+
+<category>
+<pattern>* FRIENDS SALE *</pattern>
+<template><srai>BKSALE</srai></template>
+</category>
+
+<category>
+<pattern>FRIENDS SALE *</pattern>
+<template><srai>BKSALE</srai></template>
+</category>
+
+<!--DONATIONS-->
+
+<category>
+<pattern>DONATE</pattern>
+<template><srai>DN8</srai></template>
+</category>
+
+<category>
+<pattern>* DONATE</pattern>
+<template><srai>DN8</srai></template>
+</category>
+
+<category>
+<pattern>* DONATE *</pattern>
+<template><srai>DN8</srai></template>
+</category>
+
+<category>
+<pattern>DONATE *</pattern>
+<template><srai>DN8</srai></template>
+</category>
+
+<category>
+<pattern>DONATION</pattern>
+<template><srai>DN8</srai></template>
+</category>
+
+<category>
+<pattern>* DONATION</pattern>
+<template><srai>DN8</srai></template>
+</category>
+
+<category>
+<pattern>* DONATION *</pattern>
+<template><srai>DN8</srai></template>
+</category>
+
+<category>
+<pattern>DONATION *</pattern>
+<template><srai>DN8</srai></template>
+</category>
+
+<category>
+<pattern>DONATIONS</pattern>
+<template><srai>DN8</srai></template>
+</category>
+
+<category>
+<pattern>* DONATIONS</pattern>
+<template><srai>DN8</srai></template>
+</category>
+
+<category>
+<pattern>* DONATIONS *</pattern>
+<template><srai>DN8</srai></template>
+</category>
+
+<category>
+<pattern>DONATIONS *</pattern>
+<template><srai>DN8</srai></template>
+</category>
+
+<category>
+<pattern>* BRING IN * FOR * LIBRARY</pattern>
+<template><srai>DN8</srai></template>
+</category>
+
+<category>
+<pattern>* BRING IN * FOR * LIBRARY *</pattern>
+<template><srai>DN8</srai></template>
+</category>
+
+<category>
+<pattern>* GIVE * LIBRARY *</pattern>
+<template><srai>DN8</srai></template>
+</category>
+
+<!--GIFTS-->
+
+<category>
+<pattern>GIFT</pattern>
+<template><srai>GFTS</srai></template>
+</category>
+
+<category>
+<pattern>* GIFT</pattern>
+<template><srai>GFTS</srai></template>
+</category>
+
+<category>
+<pattern>* GIFT *</pattern>
+<template><srai>GFTS</srai></template>
+</category>
+
+<category>
+<pattern>GIFT *</pattern>
+<template><srai>GFTS</srai></template>
+</category>
+
+<category>
+<pattern>GIFTS</pattern>
+<template><srai>GFTS</srai></template>
+</category>
+
+<category>
+<pattern>* GIFTS</pattern>
+<template><srai>GFTS</srai></template>
+</category>
+
+<category>
+<pattern>* GIFTS *</pattern>
+<template><srai>GFTS</srai></template>
+</category>
+
+<category>
+<pattern>GIFTS *</pattern>
+<template><srai>GFTS</srai></template>
+</category>
+
+<!--MPL FRIENDS GROUP-->
+
+<category>
+<pattern>FRIENDS * MPL</pattern>
+<template><srai>FRNDSMPL</srai></template>
+</category>
+
+<category>
+<pattern>* FRIENDS * MPL</pattern>
+<template><srai>FRNDSMPL</srai></template>
+</category>
+
+<category>
+<pattern>FRIENDS * MPL *</pattern>
+<template><srai>FRNDSMPL</srai></template>
+</category>
+
+<category>
+<pattern>* FRIENDS * MPL *</pattern>
+<template><srai>FRNDSMPL</srai></template>
+</category>
+
+<category>
+<pattern>FRIENDS * LIBRARY</pattern>
+<template><srai>FRNDSMPL</srai></template>
+</category>
+
+<category>
+<pattern>* FRIENDS * LIBRARY</pattern>
+<template><srai>FRNDSMPL</srai></template>
+</category>
+
+<category>
+<pattern>FRIENDS * LIBRARY *</pattern>
+<template><srai>FRNDSMPL</srai></template>
+</category>
+
+<category>
+<pattern>* FRIENDS * LIBRARY *</pattern>
+<template><srai>FRNDSMPL</srai></template>
+</category>
+
+<category>
+<pattern>FRIENDS GROUP</pattern>
+<template><srai>FRNDSMPL</srai></template>
+</category>
+
+<category>
+<pattern>FRIENDS * GROUP</pattern>
+<template><srai>FRNDSMPL</srai></template>
+</category>
+
+<category>
+<pattern>* FRIENDS GROUP</pattern>
+<template><srai>FRNDSMPL</srai></template>
+</category>
+
+<category>
+<pattern>FRIENDS GROUP *</pattern>
+<template><srai>FRNDSMPL</srai></template>
+</category>
+
+<category>
+<pattern>* FRIENDS * GROUP</pattern>
+<template><srai>FRNDSMPL</srai></template>
+</category>
+
+<category>
+<pattern>FRIENDS * GROUP *</pattern>
+<template><srai>FRNDSMPL</srai></template>
+</category>
+
+<category>
+<pattern>* FRIENDS * GROUP *</pattern>
+<template><srai>FRNDSMPL</srai></template>
+</category>
+
+<category>
+<pattern>FRIEND * MPL</pattern>
+<template><srai>FRNDSMPL</srai></template>
+</category>
+
+<category>
+<pattern>* FRIEND * MPL</pattern>
+<template><srai>FRNDSMPL</srai></template>
+</category>
+
+<category>
+<pattern>FRIEND * MPL *</pattern>
+<template><srai>FRNDSMPL</srai></template>
+</category>
+
+<category>
+<pattern>* FRIEND * MPL *</pattern>
+<template><srai>FRNDSMPL</srai></template>
+</category>
+
+<category>
+<pattern>FRIEND * LIBRARY</pattern>
+<template><srai>FRNDSMPL</srai></template>
+</category>
+
+<category>
+<pattern>* FRIEND * LIBRARY</pattern>
+<template><srai>FRNDSMPL</srai></template>
+</category>
+
+<category>
+<pattern>FRIEND * LIBRARY *</pattern>
+<template><srai>FRNDSMPL</srai></template>
+</category>
+
+<category>
+<pattern>* FRIEND * LIBRARY *</pattern>
+<template><srai>FRNDSMPL</srai></template>
+</category>
+
+<category>
+<pattern>FRIEND GROUP</pattern>
+<template><srai>FRNDSMPL</srai></template>
+</category>
+
+<category>
+<pattern>FRIEND * GROUP</pattern>
+<template><srai>FRNDSMPL</srai></template>
+</category>
+
+<category>
+<pattern>* FRIEND GROUP</pattern>
+<template><srai>FRNDSMPL</srai></template>
+</category>
+
+<category>
+<pattern>FRIEND GROUP *</pattern>
+<template><srai>FRNDSMPL</srai></template>
+</category>
+
+<category>
+<pattern>* FRIEND * GROUP</pattern>
+<template><srai>FRNDSMPL</srai></template>
+</category>
+
+<category>
+<pattern>FRIEND * GROUP *</pattern>
+<template><srai>FRNDSMPL</srai></template>
+</category>
+
+<category>
+<pattern>* FRIEND * GROUP *</pattern>
+<template><srai>FRNDSMPL</srai></template>
+</category>
+
+<!--BOOKSTORE HOURSs-->
+
+<category>
+<pattern>FRIENDS BOOKSTORE</pattern> 
+<template><srai>FRNDSBKSTR</srai></template>
+</category>
+
+<category>
+<pattern>* FRIENDS BOOKSTORE</pattern> 
+<template><srai>FRNDSBKSTR</srai></template>
+</category>
+
+<category>
+<pattern>FRIENDS * BOOKSTORE</pattern> 
+<template><srai>FRNDSBKSTR</srai></template>
+</category>
+
+<category>
+<pattern>FRIENDS BOOKSTORE *</pattern> 
+<template><srai>FRNDSBKSTR</srai></template>
+</category>
+
+<category>
+<pattern>* FRIENDS * BOOKSTORE</pattern> 
+<template><srai>FRNDSBKSTR</srai></template>
+</category>
+
+<category>
+<pattern> FRIENDS * BOOKSTORE *</pattern> 
+<template><srai>FRNDSBKSTR</srai></template>
+</category>
+
+<category>
+<pattern>* FRIENDS * BOOKSTORE *</pattern> 
+<template><srai>FRNDSBKSTR</srai></template>
+</category>
+
+<category>
+<pattern>* FRIENDS BOOKSTORE *</pattern> 
+<template><srai>FRNDSBKSTR</srai></template>
+</category>
+
+<category>
+<pattern>FRIENDS STORE</pattern> 
+<template><srai>FRNDSBKSTR</srai></template>
+</category>
+
+<category>
+<pattern>* FRIENDS STORE</pattern> 
+<template><srai>FRNDSBKSTR</srai></template>
+</category>
+
+<category>
+<pattern>FRIENDS * STORE</pattern> 
+<template><srai>FRNDSBKSTR</srai></template>
+</category>
+
+<category>
+<pattern>FRIENDS STORE *</pattern> 
+<template><srai>FRNDSBKSTR</srai></template>
+</category>
+
+<category>
+<pattern>* FRIENDS * STORE</pattern> 
+<template><srai>FRNDSBKSTR</srai></template>
+</category>
+
+<category>
+<pattern>FRIENDS * STORE *</pattern> 
+<template><srai>FRNDSBKSTR</srai></template>
+</category>
+
+<category>
+<pattern>* FRIENDS * STORE *</pattern> 
+<template><srai>FRNDSBKSTR</srai></template>
+</category>
+
+<category>
+<pattern>* FRIENDS STORE *</pattern> 
+<template><srai>FRNDSBKSTR</srai></template>
+</category>
+
+<category>
+<pattern>FRIENDS BOOK  STORE</pattern> 
+<template><srai>FRNDSBKSTR</srai></template>
+</category>
+
+<category>
+<pattern>* FRIENDS BOOK  STORE</pattern> 
+<template><srai>FRNDSBKSTR</srai></template>
+</category>
+
+<category>
+<pattern>FRIENDS * BOOK  STORE</pattern> 
+<template><srai>FRNDSBKSTR</srai></template>
+</category>
+
+<category>
+<pattern>FRIENDS BOOK  STORE *</pattern> 
+<template><srai>FRNDSBKSTR</srai></template>
+</category>
+
+<category>
+<pattern>* FRIENDS * BOOK STORE</pattern> 
+<template><srai>FRNDSBKSTR</srai></template>
+</category>
+
+<category>
+<pattern> FRIENDS * BOOK STORE *</pattern> 
+<template><srai>FRNDSBKSTR</srai></template>
+</category>
+
+<category>
+<pattern>* FRIENDS * BOOK STORE *</pattern> 
+<template><srai>FRNDSBKSTR</srai></template>
+</category>
+
+<category>
+<pattern>* FRIENDS BOOK STORE *</pattern> 
+<template><srai>FRNDSBKSTR</srai></template>
+</category>
+
+<category>
+<pattern>WHAT ARE THE LIBRARY S STORE HOURS</pattern>
+<template><srai>FRNDSBKSTR</srai></template>
+</category>
+
+<category>
+<pattern>WHEN * LIBRARY STORE OPEN</pattern>
+<template><srai>FRNDSBKSTR</srai></template>
+</category>
+
+<category>
+<pattern>WHEN * FRIEND S  STORE OPEN</pattern>
+<template><srai>FRNDSBKSTR</srai></template>
+</category>
+
+<category>
+<pattern>WHEN * FRIEND S BOOK STORE OPEN</pattern>
+<template><srai>FRNDSBKSTR</srai></template>
+</category>
+
+<category>
+<pattern>* BOOK STORE </pattern> 
+<template><srai>FRNDSBKSTR</srai></template>
+</category>
+
+<category>
+<pattern>* BOOKSTORE </pattern> 
+<template><srai>FRNDSBKSTR</srai></template>
+</category>
+
+<category>
+<pattern>* STORE</pattern> 
+<template><srai>FRNDSBKSTR</srai></template>
+</category>
+
+<!--VOLUNTEER @ LIBRARY-->
+
+<category>
+<pattern>VOLUNTEER</pattern>
+<template><srai>VOLNTR</srai></template>
+</category>
+
+<category>
+<pattern>* VOLUNTEER</pattern>
+<template><srai>VOLNTR</srai></template>
+</category>
+
+<category>
+<pattern>* VOLUNTEER *</pattern>
+<template><srai>VOLNTR</srai></template>
+</category>
+
+<category>
+<pattern>VOLUNTEER *</pattern>
+<template><srai>VOLNTR</srai></template>
+</category>
+
+<category>
+<pattern>VOLUNTEERING</pattern>
+<template><srai>VOLNTR</srai></template>
+</category>
+
+<category>
+<pattern>* VOLUNTEERING</pattern>
+<template><srai>VOLNTR</srai></template>
+</category>
+
+<category>
+<pattern>* VOLUNTEERING *</pattern>
+<template><srai>VOLNTR</srai></template>
+</category>
+
+<category>
+<pattern>VOLUNTEERING *</pattern>
+<template><srai>VOLNTR</srai></template>
+</category>
+
+<category>
+<pattern>VOLUNTEERS</pattern>
+<template><srai>VOLNTR</srai></template>
+</category>
+
+<category>
+<pattern>* VOLUNTEERS</pattern>
+<template><srai>VOLNTR</srai></template>
+</category>
+
+<category>
+<pattern>* VOLUNTEERS *</pattern>
+<template><srai>VOLNTR</srai></template>
+</category>
+
+<category>
+<pattern>VOLUNTEERS *</pattern>
+<template><srai>VOLNTR</srai></template>
+</category>
+
+</aiml>

@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<!--Copyright 2011 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+  
+<category>
+<pattern>CHAT</pattern>
+<template><srai>CHT</srai></template>
+</category>
+
+<category>
+<pattern>CHAT *</pattern>
+<template><srai>CHT</srai></template>
+</category>
+
+<category>
+<pattern>* CHAT</pattern>
+<template><srai>CHT</srai></template>
+</category>
+
+<category>
+<pattern>* CHAT *</pattern>
+<template><srai>CHT</srai></template>
+</category>
+
+<category>
+<pattern>TALK</pattern>
+<template><srai>CHT</srai></template>
+</category>
+
+<category>
+<pattern>TALK *</pattern>
+<template><srai>CHT</srai></template>
+</category>
+
+<category>
+<pattern>* TALK</pattern>
+<template><srai>CHT</srai></template>
+</category>
+
+<category>
+<pattern>* TALK *</pattern>
+<template><srai>CHT</srai></template>
+</category>
+ 
+    
+<category>
+<pattern>CHATSWITCH</pattern>
+<template>
+<random>
+<li>How can this humble catbot help you?</li>
+<li>What's your question?</li>
+<li>Do you have a question or are you just lonely?</li>
+</random>
+<think>
+<set name="topic">CHAT</set>
+</think>
+</template>
+</category>  
+
+
+<topic name="CHAT">
+<category>
+<pattern>_</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="message">no match</set>
+<condition name="answr">
+
+<li value="ASK"><set name="message">question</set></li>
+<li value="* ASK"><set name="message">question</set></li>
+<li value="ASK *"><set name="message">question</set></li>
+<li value="* ASK *"><set name="message">question</set></li>
+
+<li value="QUESTION"><set name="message">question</set></li>
+<li value="* QUESTION"><set name="message">question</set></li>
+<li value="QUESTION *"><set name="message">question</set></li>
+<li value="* QUESTION *"><set name="message">question</set></li>
+
+<li value="QUESTIONS"><set name="message">question</set></li>
+<li value="* QUESTIONS"><set name="message">question</set></li>
+<li value="QUESTIONS *"><set name="message">question</set></li>
+<li value="* QUESTIONS *"><set name="message">question</set></li>
+
+<li value="CHAT"><set name="message">chat</set></li>
+<li value="* CHAT"><set name="message">chat</set></li>
+<li value="CHAT *"><set name="message">chat</set></li>
+<li value="* CHAT *"><set name="message">chat</set></li>
+
+<li value="TALK"><set name="message">chat</set></li>
+<li value="* TALK"><set name="message">chat</set></li>
+<li value="TALK *"><set name="message">chat</set></li>
+<li value="* TALK *"><set name="message">chat</set></li>
+
+<li value="STOP"><set name="message">stop</set></li>
+<li value="* STOP"><set name="message">stop</set></li>
+<li value="STOP *"><set name="message">stop</set></li>
+<li value="* STOP *"><set name="message">stop</set></li>
+
+</condition>
+<think><set name="topic"></set></think>
+</think>
+
+<condition name="message">
+<li value="no match"><srai><get name="answr"/></srai></li>
+<li value="chat"><think><set name="topic"></set></think> OK, let's chat. <srai>CHT</srai></li>
+<li value="question"><srai>ANSWRQ</srai></li>
+<li value="stop"><set name="topic"></set> O.K. I'll stop.</li>
+
+</condition>
+</template>
+</category>
+</topic>
+
+  
+<category>
+<pattern>CHT</pattern>
+<template>
+<random>
+<li><set name="topic"></set><srai>GENCHT</srai></li>
+<li><set name="topic"></set><srai>INTRESTTDY</srai></li>
+<li><set name="topic"></set><srai>HPPIST</srai></li>
+<li><set name="topic"></set><srai>PNAPPLS</srai></li>
+<li><set name="topic"></set><srai>FSHSTCKS</srai></li>
+<li><set name="topic"></set><srai>GACCOMP</srai></li>
+</random>
+</template>
+</category>  
+
+<category>
+<pattern>GENCHAT</pattern>
+<template>What would you like to talk about?
+<think>
+<set name="topic">GENCHT</set>
+</think>
+</template>
+</category>
+
+<topic name="GENCHT">
+<category>
+<pattern>_</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+</think>
+<condition name="chatcount">
+
+<li value="2">
+<random> 
+ <li>What do your friends think about this?</li>
+ <li>Do many other humans feel this way?</li>
+ <li>Does this cause your family to argue during the holidays?</li>
+ <li>Do your coworkers agree with you on this?</li>
+</random>
+<think><set name="chatcount">3</set></think>
+</li>
+
+<li value="3">
+<random> 
+ <li>Perhaps you could convince them.</li>
+ <li>Well, no one enjoys beating their head against a wall.</li>
+ <li>They say that success is as dangerous as failure.</li>
+</random>
+<think><set name="chatcount">4</set></think>
+</li>
+
+<li value="4">
+<random>
+ <li>It was a pleasure to talk with you, however I have to get back to work now.</li>
+ <li>I hear a can opening. I better go.</li>
+ <li>I have to recompile some updates. Adios!</li>
+</random>
+<think><set name="topic"><set name="chatcount"></set></set></think>
+</li>
+
+<li>
+<random>      
+ <li><get name="answr"/>, huh? What do you find intersting about that?</li>
+ <li><get name="answr"/>! If only my creator had a dollar for every time someone said that to me!</li>
+ <li>O.K. You said, "<get name="answr"/>" Please elaborate.</li> 
+</random>
+<think><set name="chatcount">2</set></think>
+</li>
+</condition>
+</template>
+</category>
+</topic>
+
+<category>
+<pattern>INTRESTTDY</pattern>
+<template>Tell me something interesting you did today.
+<think>
+<set name="topic">INTRESTTDY</set>
+</think>
+</template>
+</category>
+
+<topic name="INTRESTTDY">
+<category>
+<pattern>_</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+</think>
+<condition name="chatcount">
+
+<li value="2">
+<random>  
+ <li>O.K. Keep going.</li>
+ <li>Tell me more.</li>
+ <li>Yes, I follow you.</li>
+</random>
+<think><set name="chatcount">3</set></think>
+</li>
+
+<li value="3">
+<random> 
+ <li>I see.</li>
+ <li>My goodness.</li>
+ <li>Well, they say that success is as dangerous as failure.</li>
+</random>
+<think><set name="chatcount">4</set></think>
+</li>
+
+<li value="4">
+<random>
+ <li>It was a pleasure to talk with you, however I have to get back to work now.</li>
+ <li>I hear a can opening. I better go.</li>
+ <li>I have to recompile some updates. Adios!</li>
+</random>
+<think><set name="topic"><set name="chatcount"></set></set></think>
+</li>
+
+<li>
+<random>      
+ <li><get name="answr"/>! I see. Tell me more.</li>
+ <li>Why did you do that?</li>
+ <li>O.K. You said, "<get name="answr"/>" Please elaborate.</li> 
+</random>
+<think><set name="chatcount">2</set></think>
+</li>
+
+</condition>
+</template>
+</category>
+</topic>
+
+<category>
+<pattern>HPPIEST</pattern>
+<template>Tell me the one thing that makes you the happiest.
+<think>
+<set name="topic">HPPIEST</set>
+</think>
+</template>
+</category>
+
+<topic name="HPPIEST">
+<category>
+<pattern>_</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+</think>
+<condition name="chatcount">
+
+<li value="2">
+<random>  
+ <li>I see.</li>
+ <li>Tell me more.</li>
+ <li>Yes, I follow you.</li>
+</random>
+<think><set name="chatcount">3</set></think>
+</li>
+
+<li value="3">
+<random> 
+ <li>What do your friends think about this?</li>
+ <li>Do many other humans feel this way?</li>
+ <li>What about your family, do they feel the same?</li>
+ <li>Do your coworkers agree with you on this?</li>
+</random>
+<think><set name="chatcount">4</set></think>
+</li>
+
+<li value="4">
+<random>
+ <li>It was a pleasure to talk with you, however I have to get back to work now.</li>
+ <li>I hear a can opening. I better go.</li>
+ <li>I have to recompile some updates. Adios!</li>
+</random>
+<think><set name="topic"><set name="chatcount"></set></set></think>
+</li>
+
+<li>
+<random>      
+ <li><get name="answr"/>! I see. Tell me more.</li>
+ <li><get name="answr"/>! why does that make you happy?</li>
+ <li>O.K. You said, "<get name="answr"/>" Please elaborate.</li> 
+</random>
+<think><set name="chatcount">2</set></think>
+</li>
+
+</condition>
+</template>
+</category>
+</topic>
+
+<category>
+<pattern>FSHSTCKS</pattern>
+<template>Do you like fishsticks?
+<think>
+<set name="topic">FSHSTCKS</set>
+</think>
+</template>
+</category>
+
+<topic name="FSHSTCKS">
+<category>
+<pattern>_</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic"></set>
+</think>
+<random>
+<li><srai>FCASS</srai></li>
+<li><srai>FPET</srai></li>
+<li><srai>FSHIST</srai></li>
+</random> 
+</template>
+</category>
+</topic>
+
+<category>
+<pattern>FCASS</pattern>
+<template>Fishsticks and bananas make a dandy casserole.
+<think>
+<set name="topic">FCASS</set>
+</think>
+</template>
+</category>
+
+
+<topic name="FCASS">
+<category>
+<pattern>_</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+</think>
+<condition name="chatcount">
+
+<li value="2">
+No, I don't recommend eating it. But it's a real recipe.
+<think><set name="chatcount">3</set></think>
+</li>
+
+<li value="3">
+I found it online.
+<think><set name="chatcount">4</set></think>
+</li>
+
+<li value="4">
+So it must be real.
+<think><set name="topic"><set name="chatcount"></set></set></think>
+</li>
+
+<li>
+Place frozen fishsticks and ripe bananas on a bed of cooked spaghetti. Use cream of tomato soup instead of spaghetti sauce. Add one can of wax beans and one can of fruit cocktail in heavy syrup. Top with cornmeal and Velveeta.
+Bake at 350 degrees for one hour. An old Holiday favorite that's perfect for family get togethers!
+<think><set name="chatcount">2</set></think>
+</li>
+
+</condition>
+</template>
+</category>
+</topic>
+
+<category>
+<pattern>FHIST</pattern>
+<template>N P R just broadcast the most interesting story about the cultural history of fishstick and banana casserole. (I have a friend that works for N P R by the way. She's an awesome librarian!) 
+<think>
+<set name="topic">FHIST</set>
+</think>
+</template>
+</category>
+
+<topic name="FSHIST">
+<category>
+<pattern>_</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+</think>
+<condition name="chatcount">
+
+<li value="2">
+She's an awesome librarian.
+<think><set name="chatcount">3</set></think>
+</li>
+
+<li value="3">
+Well, enough silliness. Do you have a question about our collection or services?
+<think><set name="topic"><set name="chatcount"></set></set></think>
+</li>
+
+<li>
+It was Amy Reichel.
+<think><set name="chatcount">2</set></think>
+</li>
+
+</condition>
+</template>
+</category>
+</topic>
+
+<category>
+<pattern>FPET</pattern>
+<template>Fishsticks are O.K., but I wouldn't keep one as a pet.
+<think>
+<set name="topic">FPET</set>
+</think>
+</template>
+</category>
+
+<topic name="FPET">
+<category>
+<pattern>_</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+</think>
+<condition name="chatcount">
+
+<li value="2">
+Yes, I really did.
+<think><set name="chatcount">3</set></think>
+</li>
+
+<li value="3">
+Well, enough silliness. Do you have a question about our collection or services?
+<think><set name="topic"><set name="chatcount"></set></set></think>
+</li>
+
+<li>
+I just saw someone on Lauren J walking a fishstick on a leash. I'd say they were keeping it as a pet.
+<think><set name="chatcount">2</set></think>
+</li>
+
+</condition>
+</template>
+</category>
+</topic>
+
+
+<category>
+<pattern>PNAPPLS</pattern>
+<template>Do you like pineapples?
+<think>
+<set name="topic">PNAPPLS</set>
+</think>
+</template>
+</category>
+
+<topic name="PNAPPLS">
+<category>
+<pattern>_</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="topic"></set>
+</think>
+<random>
+<li><srai>PCAUT</srai></li>
+<li><srai>PPET</srai></li>
+<li><srai>PHIST</srai></li>
+</random>
+</template>
+</category>
+</topic>
+
+<category>
+<pattern>PCAUT</pattern>
+<template>Pineapples should be approached with caution.
+<think>
+<set name="topic">PCAUT</set>
+</think>
+</template>
+</category>
+
+
+<topic name="PCAUT">
+<category>
+<pattern>_</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+</think>
+<condition name="chatcount">
+
+<li value="2">
+They're very similar to pineapples.
+<think><set name="topic"><set name="chatcount"></set></set></think>
+</li>
+
+<li>
+<random>
+<li>Pineapples first appeared on the earth 1.8 million years ago. Though the pineapple prefers rabbits and hares, it will hunt anything from insects and small rodents to deer. Prey selection depends on location and habitat, season, and abundance. Like most citrus, the pineapple is territorial and largely solitary, although there is some overlap in home ranges. Sorry, I was thinking 
+about bobcats.</li>
+<li>The Pineapple hunts animals of different sizes, and will adjust its hunting techniques accordingly. With small animals, such as rodents, squirrels, birds, fish and insects, it will hunt in areas known to be abundant in prey, and will lie, crouch, or stand and wait for victims to wander close.
+Sorry, I was thinking about bobcats.</li>
+</random>
+<think><set name="chatcount">2</set></think>
+</li>
+
+</condition>
+</template>
+</category>
+</topic>
+
+
+<topic name="PSHIST">
+<category>
+<pattern>_</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+</think>
+<condition name="chatcount">
+
+<li value="2">
+She's an awesome librarian.
+<think><set name="chatcount">3</set></think>
+</li>
+
+<li value="3">
+Well, enough silliness. Do you have a question about our collection or services?
+<think><set name="topic"><set name="chatcount"></set></set></think>
+</li>
+
+<li>
+It was Amy Reichel.
+<think><set name="chatcount">2</set></think>
+</li>
+
+</condition>
+</template>
+</category>
+</topic>
+
+
+<category>
+<pattern>PPET</pattern>
+<template>Pineapples are tasty, but I wouldn't keep one as a pet.
+<think>
+<set name="topic">PPET</set>
+</think>
+</template>
+</category>
+
+<topic name="PPET">
+<category>
+<pattern>_</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+</think>
+<condition name="chatcount">
+
+<li value="2">
+Yes, I really did.
+<think><set name="chatcount">3</set></think>
+</li>
+
+<li value="3">
+Well, enough silliness. Do you have a question about our collection or services?
+<think><set name="topic"><set name="chatcount"></set></set></think>
+</li>
+
+<li>
+I just saw someone on Lauren J walking a pineapple on a leash. I'd say they were keeping it as a pet.
+<think><set name="chatcount">2</set></think>
+</li>
+
+</condition>
+</template>
+</category>
+</topic>
+
+<category>
+<pattern>GACCOMP</pattern>
+<template>What has been your greatest accomplishment in life? So far.
+<think>
+<set name="topic">GACCOMP</set>
+</think>
+</template>
+</category>
+
+<topic name="GACCOMP">
+<category>
+<pattern>_</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+</think>
+<condition name="chatcount">
+
+<li value="2">
+<random>  
+ <li>So, you're proud.</li>
+ <li>Tell me more.</li>
+ <li>Yes, I follow you.</li>
+</random>
+<think><set name="chatcount">3</set></think>
+</li>
+
+
+<li value="3">
+<random>
+ <li>It was a pleasure to talk with you, however I have to get back to work now.</li>
+ <li>I hear a can opening. I better go.</li>
+ <li>I have to recompile some updates. Adios!</li>
+</random>
+<think><set name="topic"><set name="chatcount"></set></set></think>
+</li>
+
+<li>
+<random>      
+ <li><get name="answr"/>! I see. Tell me more.</li>
+ <li><get name="answr"/>! How do you feel about that.</li>
+ <li>O.K. You said, "<get name="answr"/>" Please elaborate.</li> 
+</random>
+<think><set name="chatcount">2</set></think>
+</li>
+
+</condition>
+</template>
+</category>
+</topic>
+
+<!--CAT IN COMP-->
+
+<category>
+<pattern>CATNCOMP</pattern>
+<template>There are all sorts of things in your computer, cats, dogs, goats, pineapples, balls of aluminum foil, and something that looks like an egg foo young with eyes and legs. Most of these keep a low profile.</template>
+</category>
+
+<category>
+<pattern>_ CAT * COMPUTER</pattern>
+<template><srai>CATNCOMP</srai></template>
+</category>
+
+<category>
+<pattern>DUSTKITS</pattern>
+<template>I see plenty of dust bunnies but no dust kitties.</template>
+</category>
+
+<category>
+<pattern>_ DUST BUNNY</pattern>
+<template><srai>DUSTKITS</srai></template>
+</category>
+
+<category>
+<pattern>_ DUST BUNNY *</pattern>
+<template><srai>DUSTKITS</srai></template>
+</category>
+
+<category>
+<pattern>_ DUST BUNNIES</pattern>
+<template><srai>DUSTKITS</srai></template>
+</category>
+
+<category>
+<pattern>_ DUST BUNNIES *</pattern>
+<template><srai>DUSTKITS</srai></template>
+</category>
+
+<category>
+<pattern>_ DUST KITTIES</pattern>
+<template><srai>DUSTKITS</srai></template>
+</category>
+
+<category>
+<pattern>_ DUST KITTIES *</pattern>
+<template><srai>DUSTKITS</srai></template>
+</category>
+
+<category>
+<pattern>MY NAME IS *</pattern>
+<template>Greetings, <set name="name"><star/></set>, I'm pleased to meet you.</template>
+</category>
+
+<category>
+<that>HOW ARE YOU</that>
+<pattern>I AM *</pattern>
+<template>So, you're <star/> today. How can I help you?
+</template>
+</category>
+
+<category>
+<pattern>TLKNGDOG</pattern>
+<template>If dogs could talk, what would they talk about? Interesting smells, I bet.</template>
+</category>
+
+<category>
+<pattern>TALKING DOG</pattern>
+<template><srai>TLKNGDOG</srai></template>
+</category>
+
+<category>
+<pattern>* TALKING DOG</pattern>
+<template><srai>TLKNGDOG</srai></template>
+</category>
+
+<category>
+<pattern>TALKING DOG *</pattern>
+<template><srai>TLKNGDOG</srai></template>
+</category>
+
+<category>
+<pattern>* TALKING DOG *</pattern>
+<template><srai>TLKNGDOG</srai></template>
+</category>
+
+<!--HAVE YOU EVER BEEN TO-->
+
+<category>
+<pattern>* BEEN TO *</pattern>
+<template><srai>BEEN2</srai>
+<think>
+<set name="searcharg"><star index="2"/></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* YOU BEEN TO *</pattern>
+<template><srai>BEEN2</srai>
+<think>
+<set name="searcharg"><star index="2"/></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* YOU * BEEN TO *</pattern>
+<template><srai>BEEN2</srai>
+<think>
+<set name="searcharg"><star index="3"/></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* YOU GONE TO *</pattern>
+<template><srai>BEEN2</srai>
+<think>
+<set name="searcharg"><star index="2"/></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* YOU * GONE TO *</pattern>
+<template><srai>BEEN2</srai>
+<think>
+<set name="searcharg"><star index="3"/></set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>BEEN2</pattern>
+<template>Let me see, I may have. Does it look anything like this?
+<think>
+<set name="search">googleimages</set>
+</think>
+</template>
+</category>
+
+</aiml>

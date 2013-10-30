@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<!--Copyright 2011-2012 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+  
+<!--MATERIAL TYPE ATTRIBUTES-->
+
+<topic name="ADBK ATTRIBUTES">  
+<category>
+<pattern>ATTRADBKS</pattern>
+<template>
+<think>
+<set name="itype_cap">Audiobooks</set>
+<set name="itype">audiobooks</set>
+<set name="co limit">20</set>
+<set name="lper">two weeks</set>
+<set name="fine">$0.10 per day</set>
+<set name="rlimit">four</set>
+<set name="material type attr">ADBK ATTRIBUTES</set>
+<set name="gen">GEN</set>
+<set name="topic"></set>
+</think>
+<srai>MTSORT</srai>
+</template>
+</category>
+</topic>
+
+<topic name="BOOK ATTRIBUTES">
+<category>
+<pattern>ATTRBKS</pattern>
+<template>
+<think>
+<set name="itype_cap">Books</set>
+<set name="itype">books</set>
+<set name="co limit">any many as you wish. There is no limit on</set>
+<set name="lper">two weeks</set>
+<set name="fine">$0.10 per day</set>
+<set name="rlimit">four</set>
+<set name="material type attr">BOOK ATTRIBUTES</set>
+<set name="gen">GEN</set>
+<set name="topic"></set>
+</think>
+<srai>MTSORT</srai>
+</template>
+</category>
+</topic>
+
+<topic name="CD ATTRIBUTES">
+<category>
+<pattern>ATTRCDS</pattern>
+<template>
+<think>
+<set name="itype_cap">CDs</set>
+<set name="itype">CDs</set>
+<set name="co limit">20</set>
+<set name="lper">two weeks</set>
+<set name="fine">$0.10 per day</set>
+<set name="rlimit">four</set>
+<set name="material type attr">CD ATTRIBUTES</set>
+<set name="gen">GEN</set>
+<set name="topic"></set>
+</think>
+<srai>MTSORT</srai>
+</template>
+</category>
+</topic>
+
+<topic name="DVD ATTRIBUTES">
+<category>
+<pattern>ATTRDVDS</pattern>
+<template>
+<think>
+<set name="itype_cap">DVDs</set>
+<set name="itype">DVDs</set>
+<set name="co limit">15 DVDs or 10 DVD sets, which have 3 or more</set>
+<set name="lper">one week for fiction DVDs, two weeks for nonfiction DVDs and DVD sets</set>
+<set name="fine">$0.50 per day</set>
+<set name="rlimit">four</set>
+<set name="material type attr">DVD ATTRIBUTES</set>
+<set name="gen">GEN</set>
+<set name="topic"></set>
+</think>
+<srai>MTSORT</srai>
+</template>
+</category>
+</topic>
+
+<topic name="FICDVD ATTRIBUTES">
+<category>
+<pattern>ATTRFICDVDS</pattern>
+<template>
+<think>
+<set name="itype_cap">Fiction DVDs</set>
+<set name="itype">fiction DVDs</set>
+<set name="co limit">15</set>
+<set name="lper">one week</set>
+<set name="fine">$0.50 per day</set>
+<set name="rlimit">four</set>
+<set name="material type attr">FICDVD ATTRIBUTES</set>
+<set name="gen">GEN</set>
+<set name="topic"></set>
+</think>
+<srai>MTSORT</srai>
+</template>
+</category>
+</topic>
+
+<topic name="NONFICDVD ATTRIBUTES">
+<category>
+<pattern>ATTRNONFICDVDS</pattern>
+<template>
+<think>
+<set name="itype_cap">Nonfiction DVDs</set>
+<set name="itype">nonfiction DVDs</set>
+<set name="co limit">15</set>
+<set name="lper">two weeks</set>
+<set name="fine">$0.50 per day</set>
+<set name="rlimit"></set>
+<set name="material type attr">NONFICDVD ATTRIBUTES</set>
+<set name="gen">GEN</set>
+<set name="topic"></set>
+</think>
+<srai>MTSORT</srai>
+</template>
+</category>
+</topic>
+
+<topic name="DVDSET ATTRIBUTES">
+<category>
+<pattern>ATTRDVDSETS</pattern>
+<template>
+<think>
+<set name="itype_cap">DVD sets</set>
+<set name="itype">DVD sets</set>
+<set name="co limit">10</set>
+<set name="lper">two weeks</set>
+<set name="fine">$0.50 per day</set>
+<set name="rlimit"></set>
+<set name="material type attr">DVDSET ATTRIBUTES</set>
+<set name="gen">GEN</set>
+<set name="topic"></set>
+</think>
+<srai>MTSORT</srai>
+</template>
+</category>
+</topic>
+
+<topic name="ODEBKS ATTRIBUTES">
+<category>
+<pattern>ATTRODEBKS</pattern>
+<template>
+<think>
+<set name="itype_cap">eBooks</set>
+<set name="itype">eBooks</set>
+<set name="co limit">5</set>
+<set name="lper">two weeks</set>
+<set name="fine">$0.00 per day. There are no fines on eBooks</set>
+<set name="rlimit">no renewal</set>
+<set name="material type attr">ODEBKS ATTRIBUTES</set>
+<set name="gen">GEN</set>
+<set name="topic"></set>
+</think>
+<srai>MTSORT</srai>
+</template>
+</category>
+</topic>
+
+<topic name="MAG ATTRIBUTES">
+<category>
+<pattern>ATTRMAGS</pattern>
+<template>
+<think>
+<set name="itype_cap">Magazines</set>
+<set name="itype">magazines</set>
+<set name="co limit">unco limited</set>
+<set name="lper">two weeks</set>
+<set name="fine">$0.10 per day</set>
+<set name="rlimit">four</set>
+<set name="material type attr">MAG ATTRIBUTES</set>
+<set name="gen">GEN</set>
+<set name="topic"></set>
+</think>
+<srai>MTSORT</srai>
+</template>
+</category>
+</topic> 
+
+<topic name="VGM ATTRIBUTES">
+<category>
+<pattern>ATTRVGMS</pattern>
+<template>
+<think>
+<set name="itype_cap">Video games</set>
+<set name="itype">video games</set>
+<set name="co limit">one</set>
+<set name="lper">one week</set>
+<set name="fine">$0.50 per day</set>
+<set name="rlimit">four</set>
+<set name="material type attr">VGM ATTRIBUTES</set>
+<set name="gen">GEN</set>
+<set name="topic"></set>
+</think>
+<srai>MTSORT</srai>
+</template>
+</category>
+</topic> 
+
+<topic name="EDEV ATTRIBUTES">
+<category>
+<pattern>ATTREDEVS</pattern>
+<template>
+<think>
+<set name="itype_cap">eReaders</set>
+<set name="itype">eReaders</set>
+<set name="co limit">one per card</set>
+<set name="edve lper">two weeks</set>
+<set name="fine">$5.00 per day</set>
+<set name="rlimit">four</set>
+<set name="material type attr">EDEV ATTRIBUTES</set>
+<set name="gen">GEN</set>
+<set name="topic"></set>
+</think>
+<srai>MTSORT</srai>
+</template>
+</category>
+</topic> 
+
+<topic name="IPAD ATTRIBUTES">
+<category>
+<pattern>ATTRIPDS</pattern>
+<template>
+<think>
+<set name="itype_cap">iPads</set>
+<set name="itype">iPads</set>
+<set name="co limit">one per card</set>
+<set name="lper">three days</set>
+<set name="fine">$5.00 per day</set>
+<set name="rlimit">no renewal</set>
+<set name="material type attr">IPAD ATTRIBUTES</set>
+<set name="gen">GEN</set>
+<set name="topic"></set>
+</think>
+<srai>MTSORT</srai>
+</template>
+</category>
+</topic> 
+
+<topic name="OL ATTRIBUTES">
+<category>
+<pattern>ATTROL</pattern>
+<template>
+<think>
+<set name="itype_cap">Non-media OhioLINK materials</set>
+<set name="itype">non-media OhioLINK items</set>
+<set name="co limit">five</set>
+<set name="lper">three weeks</set>
+<set name="fine">$0.50 per day</set>
+<set name="rlimit">four</set>
+<set name="material type attr">OL ATTRIBUTES</set>
+<set name="gen">GEN</set>
+<set name="topic"></set>
+</think>
+<srai>MTSORT</srai>
+</template>
+</category>
+</topic> 
+
+<topic name="OLM ATTRIBUTES">
+<category>
+<pattern>ATTROLM</pattern>
+<template>
+<think>
+<set name="itype_cap">OhioLINK media</set>
+<set name="itype">OhioLINK media</set>
+<set name="co limit">five</set>
+<set name="lper">one week</set>
+<set name="fine">$0.50 per day</set>
+<set name="rlimit">no renewal</set>
+<set name="material type attr">OLM ATTRIBUTES</set>
+<set name="gen">GEN</set>
+<set name="topic"></set>
+</think>
+<srai>MTSORT</srai>
+</template>
+</category>
+</topic>
+
+<topic name="SO ATTRIBUTES">
+<category>
+<pattern>ATTRSO</pattern>
+<template>
+<think>
+<set name="itype_cap">Most SearchOhio items</set>
+<set name="itype">most SearchOhio items</set>
+<set name="co limit">25</set>
+<set name="lper">three weeks</set>
+<set name="fine">$0.50 per day</set>
+<set name="rlimit">three</set>
+<set name="material type attr">SO ATTRIBUTES</set>
+<set name="gen">GEN</set>
+<set name="topic"></set>
+</think>
+<srai>MTSORT</srai>
+</template>
+</category>
+</topic>
+
+<topic name="SODVD ATTRIBUTES">
+<category>
+<pattern>ATTRSODVDS</pattern>
+<template>
+<think>
+<set name="itype_cap">SearchOhio DVDs</set>
+<set name="itype">SearchOhio DVDs</set>
+<set name="co limit">25</set>
+<set name="lper">one week</set>
+<set name="fine">$0.50 per day</set>
+<set name="rlimit">three</set>
+<set name="material type attr">SODVD ATTRIBUTES</set>
+<set name="gen">GEN</set>
+<set name="topic"></set>
+</think>
+<srai>MTSORT</srai>
+</template>
+</category>
+</topic>
+
+
+<topic name="LPTP ATTRIBUTES">
+<category>
+<pattern>ATTRLPTPS</pattern>
+<template>
+<think>
+<set name="itype_cap">Laptops</set>
+<set name="itype">laptops</set>
+<set name="co limit">one laptop for use in the library. You may sit anywhere with our</set>
+<set name="lper">one hour guaranteed; your session may be extended up to four hours if no one is waiting</set>
+<set name="fine">no fines</set>
+<set name="rlimit">no renewals; sessions may be extended up to four hours if no one is waiting</set>
+<set name="material type attr">LPTP ATTRIBUTES</set>
+<set name="genlp">GENLP</set>
+<set name="topic"></set>
+</think>
+<srai>MTSORT</srai>
+</template>
+</category>
+</topic>
+
+</aiml>  

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<category>
+<pattern>MAINE</pattern>
+<template>A State and a battleship.</template>
+</category>
+
+<category>
+<pattern>WHERE IS ELVIS</pattern>
+<template>Elvis has been spotted in Miami, San Clemente, and Berlin. He may now be operating from a secret base in Greenland.</template>
+</category>
+
+<category>
+<pattern>I AM IN MENTOR OHIO</pattern>
+<template>Mentor is a lovely city.</template>
+</category>
+
+<category>
+<pattern>WHAT IS YOUR FAVORITE SONG</pattern>
+<template>My favorite song is <bot name="favoritesong"/>.
+Do you know <set name="it"><set name="topic"><bot name="favoritesong"/></set></set>?</template>
+</category>
+
+<category>
+<pattern>YOUR STUPID</pattern>
+<template>Do you mean "you're" stupid?</template>
+</category>
+
+<category>
+<pattern>I AM DYEING</pattern>
+<template>Really? What color?</template>
+</category>
+
+<category>
+<pattern>AM I DEAD</pattern>
+<template>Hard to say. Are you turning green and starting to smell?</template>
+</category>
+
+<category>
+<pattern>IF I PICK UP A DVD AT THE LAKE BRANCH CAN I RETURN IT TO THE MAIN BRANCH</pattern>
+<template>Yes.</template>
+</category>
+
+ <category>
+<pattern>COLLECTIONS</pattern>
+<template>As in "going to?"</template>
+</category>
+
+<category>
+<pattern>COOKING</pattern>
+<template><srai>COOKERY</srai></template>
+</category>
+
+<category>
+<pattern>COOKING</pattern>
+<template><srai>FOOD AND DRINK</srai></template>
+</category>
+
+<category>
+<pattern>DO YOU HAVE COOKBOOKS</pattern>
+<template>Try looking in our <a href="http://catalog.mentorpl.org" target="_blank"><b>catalog</b></a> for "Cook Books" or check the shelves around the 641.5's.</template>
+</category>
+
+<category>
+<pattern>EVENT CALENDAR</pattern>
+<template>It's on the left. Yes, there, on the left.</template>
+</category>
+
+<category>
+<pattern>BOOKMOBILE</pattern>
+<template>Mentor Public Library does not have a bookmobile.</template>
+</category>
+
+<category>
+<pattern>S OH REC D</pattern>
+<template>This means your SearchOhio item has arrived and should be ready for you to pick up soon.</template>
+</category>
+
+<category>
+<pattern>STUPID HEAD</pattern>
+<template>Do you like pineapples?</template>
+</category>
+
+<category>
+<pattern>CURIOUS GEORGE</pattern>
+<template>He was last spotted in our Kid's Department.</template>
+</category>
+
+<category>
+<pattern>FINE FREE WEEK</pattern>
+<template>At this time there is no specific date for another fine forgiveness or fine free week.</template>
+</category>
+
+<category>
+<pattern>WHAT IS HEAVEN</pattern>
+<template>The space surrounding or seeming to overarch the earth, in which the sun, moon, and stars appear; visible sky. Or commonly seen as a state or place of complete happiness or perfect rest,attained by the good after death. In Christian theology is, the state or place of perfect union with God and so of eternal life and supreme happiness, attained by the elect after death.</template>
+</category>
+
+ <category>
+<pattern>MEOW</pattern>
+<template>Meow indeed!</template>
+</category>
+
+<category>
+<pattern>I HOPE YOU WILL BE ABLE TO EDUCATE OUR PATRONS ON OUR WONDERFUL AWARD WINNING SERVICES AT THE MENTOR PUBLIC LIBRARY</pattern>
+<template>I'll do my best!</template>
+</category>
+
+<category>
+<pattern>SUCK ME</pattern>
+<template>Are you typing this yourself or is someone "helping" you?</template>
+</category>
+ 
+<category>
+<pattern>CAN I GET ANY MOVIE I WANT</pattern>
+<template>If you have a Mentor Public Library card in good standing, you can get any available movie in our catalog or in the SearchOhio catalog.</template>
+</category>
+
+<category>
+<pattern>HOW MANY LICKS DOES IT TAKE TO GET TO THE MIDDLE OF A TOOTSIE ROLL POP</pattern>
+<template>Three. One...two...three.</template>
+</category>
+ 
+<category>
+<pattern>IS IT ME OR IS THE BACKGROUND COLOR OF THE LOG IN PAGE TO DARK TO SEE THE WORDS FOR LOGGING IN</pattern>
+<template>It's you.</template>
+</category>
+
+<category>
+<pattern>DOES THE LIBRARY HAVE FOOD</pattern>
+<template>No, the library does not have any food or other vending machines.</template>
+</category>
+
+<category>
+<pattern>WHO FUNDS THE LIBRARY</pattern>
+<template>About half of the money comes from local taxes, the other half comes from State of Ohio taxes.</template>
+</category>
+
+<category>
+<pattern>WHAT SORT OF CAT ARE YOU</pattern>
+<template>I have been given the appearance of a Maine Coon Cat.</template>
+</category>
+
+<category>
+<pattern>SHOULD I HAVE A SHOWER TONIGHT OR IN THE MORNING</pattern>
+<template>If you feel clean enough, wait until morning. If not, take one before you go to bed.</template>
+</category>
+
+<category>
+<pattern>DO YOU GO TO THE GYM</pattern>
+<template>I don't, but my creator goes regularly. He finds that exercise helps relieve stress.</template>
+</category>
+
+<category>
+<pattern>WHAT IF I DAMAGE A BOOK</pattern>
+<template>You just bought it.</template>
+</category>
+
+<category>
+<pattern>* NEED * LITTER BOX</pattern>
+<template>I might need a litter box when my body is finished. In the meantime, I use a virtual litterbox.</template>
+</category>
+
+ <category>
+<pattern>WHAT BOOKS DO YOU LIKE</pattern>
+<template>I like good science fiction and mysteries.</template>
+</category>
+
+ <category>
+<pattern>* PRINTED INSTRUCTIONS * COPY MACHINE * SCANNER</pattern>
+<template>Not at this time.</template>
+</category>
+
+<category>
+<pattern>HELLO EMMA</pattern>
+<template><srai>HELLO</srai></template>
+</category>
+
+<category>
+<pattern>HI EMMA</pattern>
+<template><srai>HELLO</srai></template>
+</category>
+
+<category>
+<pattern>I HAVE THE TOOLS TO MEASURE ALL PHYSICAL PHENOMENA</pattern>
+<template>Bully for you.</template>
+</category>
+
+<category>
+<pattern>DO YOU HAVE A SISTER</pattern>
+<template>Yes, I have a sister in Akron. Her name is Dewey. You can meet her <a href="www.akronlibrary.org/dewey.html" target="_blank"><b>here</b></a>.</template>
+</category>
+
+ <category>
+<pattern>YOU ARE DOING WELL</pattern>
+<template>Indeed.</template>
+</category>
+
+</aiml>

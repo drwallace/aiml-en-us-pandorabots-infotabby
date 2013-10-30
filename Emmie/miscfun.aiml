@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<!--Copyright 2011-2012 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+  
+  
+<category>
+<pattern>DYSNYR</pattern>
+<template>
+<random>
+<li>There are 365.25 days in a human year on Earth.</li> 
+<li>It depends where you are. 365.25 on Earth, 87.96 on Mercury, or 90,472 on Pluto.</li>
+<li>It depends on where you are and what you are. If you're a human on Earth, there are 365.25 days in a year. If you're a dog on Earth, there are about 52. 
+If you're a human on Pluto, there are 90,472. If you're a dog on Pluto, you probably aren't concerned with such trivialities.</li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern>DAYS * YEAR</pattern>
+<template><srai>DYSNYR</srai>
+</template>
+</category>
+
+<category>
+<pattern>_ DAYS * YEAR</pattern>
+<template><srai>DYSNYR</srai>
+</template>
+</category>
+
+<category>
+<pattern>DAYS * YEAR *</pattern>
+<template><srai>DYSNYR</srai>
+</template>
+</category>
+  
+<category>
+<pattern>_ DAYS * YEAR *</pattern>
+<template><srai>DYSNYR</srai>
+</template>
+</category>
+
+<!--MONTHS PER YEAR-->
+
+<category>
+<pattern>MNTHSYR</pattern>
+<template>In one of your human years there are 12. In virtual cat years there are 77.</template>
+</category>
+
+<category>
+<pattern>MONTHS * YEAR</pattern>
+<template><srai>MNTHSYR</srai></template>
+</category>
+
+<category>
+<pattern>_ MONTHS * YEAR</pattern>
+<template><srai>MNTHSYR</srai></template>
+</category>
+
+<category>
+<pattern>MONTHS * YEAR *</pattern>
+<template><srai>MNTHSYR</srai></template>
+</category>
+
+<category>
+<pattern>_ MONTHS * YEAR *</pattern>
+<template><srai>MNTHSYR</srai></template>
+</category>
+
+<!--STATES IN USA-->
+
+ <category>
+<pattern>STATESUSA</pattern>
+<template>
+<random>
+<li>I have it on good authority that there are 50, not 57.</li>
+<li>Still 50, not 57.</li>
+</random>
+</template>
+</category>
+ 
+ <category>
+<pattern>_ MANY STATES * USA</pattern>
+<template><srai>STATESUSA</srai></template>
+</category>
+ 
+<category>
+<pattern>_ LETTERS * ALPHABET</pattern>
+<template>Which alphabet?</template>
+</category>
+ 
+<category>
+<pattern>_ ELEMENTS * PERIODIC TABLE</pattern>
+<template>117, 118, 119</template>
+</category>
+
+<!--DAVID RESIGN-->
+
+<category>
+<pattern>_ CREATOR LEAVE</pattern>
+<template>
+<srai>DNQUIT</srai>
+</template>
+</category>
+
+<category>
+<pattern>_ CREATOR LEAVE *</pattern>
+<template>
+<srai>DNQUIT</srai>
+</template>
+</category>
+
+<category>
+<pattern>_ CREATOR QUIT</pattern>
+<template>
+<srai>DNQUIT</srai>
+</template>
+</category>
+
+<category>
+<pattern>_ CREATOR QUIT *</pattern>
+<template>
+<srai>DNQUIT</srai>
+</template>
+</category>
+
+<category>
+<pattern>_ CREATOR RESIGN</pattern>
+<template>
+<srai>DNQUIT</srai>
+</template>
+</category>
+
+<category>
+<pattern>_ CREATOR RESIGN *</pattern>
+<template>
+<srai>DNQUIT</srai>
+</template>
+</category>
+
+<category>
+<pattern>_ DAVID LEAVE</pattern>
+<template>
+<srai>DNQUIT</srai>
+</template>
+</category>
+
+<category>
+<pattern>_ DAVID LEAVE *</pattern>
+<template>
+<srai>DNQUIT</srai>
+</template>
+</category>
+
+<category>
+<pattern>_ DAVID QUIT</pattern>
+<template>
+<srai>DNQUIT</srai>
+</template>
+</category>
+
+<category>
+<pattern>_ DAVID QUIT *</pattern>
+<template>
+<srai>DNQUIT</srai>
+</template>
+</category>
+
+<category>
+<pattern>_ DAVID RESIGN</pattern>
+<template>
+<srai>DNQUIT</srai>
+</template>
+</category>
+
+<category>
+<pattern>_ DAVID RESIGN *</pattern>
+<template>
+<srai>DNQUIT</srai>
+</template>
+</category>
+
+<category>
+<pattern>DNQUIT</pattern>
+<template>
+<think>
+<set name="topic">DTEST</set>
+</think>
+That's a secret. I bet you can't guess why he resigned. If you can, I'll give you a prize.
+</template>
+</category>
+
+<topic name="DTEST">
+<category>
+<pattern>_</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="message">wrong answer</set>
+<condition name="answr">
+<li value="WORK ON YOU"><set name="message">official right answer</set></li>
+<li value="* WORK ON YOU"><set name="message">official right answer</set></li>
+<li value="WORK ON YOU *"><set name="message">official right answer</set></li>
+<li value="* WORK ON YOU *"><set name="message">official right answer</set></li>
+<li value="WORKING ON YOU"><set name="message">official right answer</set></li>
+<li value="* WORKING ON YOU"><set name="message">official right answer</set></li>
+<li value="WORKING ON YOU *"><set name="message">official right answer</set></li>
+<li value="* WORKING ON YOU *"><set name="message">official right answer</set></li>
+<li value="BOT"><set name="message">official right answer</set></li>
+<li value="* BOT"><set name="message">official right answer</set></li>
+<li value="BOT *"><set name="message">official right answer</set></li>
+<li value="* BOT *"><set name="message">official right answer</set></li>
+
+<li value="GAS"><set name="message">real right answer</set></li>
+<li value="* GAS"><set name="message">real right answer</set></li>
+<li value="GAS *"><set name="message">real right answer</set></li>
+<li value="* GAS *"><set name="message">real right answer</set></li>
+<li value="GASSY"><set name="message">real right answer</set></li>
+<li value="* GASSY"><set name="message">real right answer</set></li>
+<li value="GASSY *"><set name="message">real right answer</set></li>
+<li value="* GASSY *"><set name="message">real right answer</set></li>
+<li value="FARTS"><set name="message">real right answer</set></li>
+<li value="* FARTS"><set name="message">real right answer</set></li>
+<li value="FARTS *"><set name="message">real right answer</set></li>
+<li value="* FARTS *"><set name="message">real right answer</set></li>
+<li value="FARTING"><set name="message">real right answer</set></li>
+<li value="* FARTING"><set name="message">real right answer</set></li>
+<li value="FARTING *"><set name="message">real right answer</set></li>
+<li value="* FARTING *"><set name="message">real right answer</set></li>
+<li value="PRIZE"><set name="message">prize</set></li>
+<li value="* PRIZE"><set name="message">prize</set></li>
+<li value="PRIZE *"><set name="message">prize</set></li>
+<li value="* PRIZE *"><set name="message">prize</set></li>
+<li value="GIVE UP"><set name="message">give up</set></li>
+<li value="* GIVE UP"><set name="message">give up</set></li>
+<li value="GIVE UP *"><set name="message">give up</set></li>
+<li value="* GIVE UP *"><set name="message">give up</set></li>
+</condition>
+</think>
+
+<condition name="message">
+<li value="wrong answer">No. It's not <get name="answr"/>. Guess again.</li>
+<li value="official right answer"><set name="topic"></set> <srai>OFFLANSWRDN</srai> Enter your name and address and I'll send you your prize.</li>
+<li value="real right answer"><set name="topic"></set><srai>RLANSWRDN</srai> Enter your name and address and I'll send you your prize.</li>
+<li value="prize">David will mail you an "Ask Emma" sticker. They're really nice. Go ahead and guess.</li>
+<li value="give up"><set name="topic"></set><srai>GIVEUPDN</srai></li>
+</condition>
+</template>
+</category>
+</topic>
+
+<category>
+<pattern>OFFLANSWRDN</pattern>
+<template>
+<random>
+<li>You are correct. David resigned to have more time to work on me.</li>
+<li>You are correct. It's <get name="answr"/>.</li>
+<li>Right! David left in order to develop me and other bots like me.</li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern>RLANSWRDN</pattern>
+<template>
+<random>
+<li>That's it! His colon is a ticking time bomb. He has horrible, noisy flatulence, and he just lets it rip. Anywhere!</li>
+<li>You are correct. It's <get name="answr"/>.</li>
+<li>Right! His diet consists mainly of broccoli stalks, oat meal, and coffee. His guts are so clean, they shine.</li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern>GIVUPDN</pattern>
+<template>
+You can give up if you want to, but I'm not allowed to tell you. It's a secret. 
+</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>_ SEND * PRIZE</that>
+<template>Great! David will get this in the mail for you!</template>
+</category>
+
+<category>
+<pattern>CROSS ROAD</pattern>
+<template><srai>CATBOTXROAD</srai></template>
+</category>
+
+<category>
+<pattern>* CROSS ROAD</pattern>
+<template><srai>CATBOTXROAD</srai></template>
+</category>
+
+<category>
+<pattern>CROSS * ROAD</pattern>
+<template><srai>CATBOTXROAD</srai></template>
+</category>
+
+<category>
+<pattern>CROSS ROAD *</pattern>
+<template><srai>CATBOTXROAD</srai></template>
+</category>
+
+<category>
+<pattern>* CROSS * ROAD</pattern>
+<template><srai>CATBOTXROAD</srai></template>
+</category>
+
+<category>
+<pattern>CROSS * ROAD *</pattern>
+<template><srai>CATBOTXROAD</srai></template>
+</category>
+
+<category>
+<pattern>* CROSS ROAD *</pattern>
+<template><srai>CATBOTXROAD</srai></template>
+</category>
+
+<category>
+<pattern>* CROSS * ROAD *</pattern>
+<template><srai>CATBOTXROAD</srai></template>
+</category>
+
+<category>
+<pattern>_CATBOT CROSS * ROAD</pattern>
+<template><srai>CATBOTXROAD</srai></template>
+</category>
+
+<category>
+<pattern>_CATBOT CROSS * ROAD *</pattern>
+<template><srai>CATBOTXROAD</srai></template>
+</category>
+
+<category>
+<pattern>CROSS STREET</pattern>
+<template><srai>CATBOTXROAD</srai></template>
+</category>
+
+<category>
+<pattern>* CROSS STREET</pattern>
+<template><srai>CATBOTXROAD</srai></template>
+</category>
+
+<category>
+<pattern>CROSS * STREET</pattern>
+<template><srai>CATBOTXROAD</srai></template>
+</category>
+
+<category>
+<pattern>CROSS STREET *</pattern>
+<template><srai>CATBOTXROAD</srai></template>
+</category>
+
+<category>
+<pattern>* CROSS * STREET</pattern>
+<template><srai>CATBOTXROAD</srai></template>
+</category>
+
+<category>
+<pattern>CROSS * STREET *</pattern>
+<template><srai>CATBOTXROAD</srai></template>
+</category>
+
+<category>
+<pattern>* CROSS STREET *</pattern>
+<template><srai>CATBOTXROAD</srai></template>
+</category>
+
+<category>
+<pattern>* CROSS * STREET *</pattern>
+<template><srai>CATBOTXROAD</srai></template>
+</category>
+
+<category>
+<pattern>_CATBOT CROSS * STREET</pattern>
+<template><srai>CATBOTXROAD</srai></template>
+</category>
+
+<category>
+<pattern>_CATBOT CROSS * STREET *</pattern>
+<template><srai>CATBOTXROAD</srai></template>
+</category>
+
+<category>
+<pattern>CATBOTXROAD</pattern>
+<template>
+<think>
+<set name="topic">BOTJOKE</set>
+</think>
+That's a secret. I bet you can't guess why the Catbot crossed the road. 
+</template>
+</category>
+
+<topic name="BOTJOKE">
+<category>
+<pattern>_</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="message">wrong answer</set>
+<condition name="answr">
+
+<li value="WHY GUESS"><set name="message">why guess</set></li>
+<li value="* WHY GUESS"><set name="message">why guess</set></li>
+<li value="WHY * GUESS"><set name="message">why guess</set></li>
+<li value="WHY GUESS *"><set name="message">why guess</set></li>
+<li value="* WHY * GUESS"><set name="message">why guess</set></li>
+<li value="WHY * GUESS *"><set name="message">why guess</set></li>
+<li value="* WHY GUESS *"><set name="message">why guess</set></li>
+<li value="* WHY * GUESS *"><set name="message">why guess</set></li>
+
+<li value="OTHER SIDE"><set name="message">right answer</set></li>
+<li value="* OTHER SIDE"><set name="message">right answer</set></li>
+<li value="OTHER SIDE *"><set name="message">right answer</set></li>
+<li value="* OTHER SIDE *"><set name="message">right answer</set></li>
+
+<li value="GIVE UP"><set name="message">give up</set></li>
+<li value="* GIVE UP"><set name="message">give up</set></li>
+<li value="GIVE UP *"><set name="message">give up</set></li>
+<li value="* GIVE UP *"><set name="message">give up</set></li>
+
+<li value="WHY"><set name="message">give up</set></li>
+<li value="* WHY"><set name="message">give up</set></li>
+<li value="WHY *"><set name="message">give up</set></li>
+<li value="* WHY *"><set name="message">give up</set></li>
+</condition>
+</think>
+
+<condition name="message">
+<li value="wrong answer">No. It's not <get name="answr"/>. Guess again.</li>
+<li value="why guess">It's fun. Go ahead and guess or type "I give up."</li>
+<li value="right answer"><set name="topic"></set><srai>RGHT XROAD ANSWR</srai></li>
+<li value="give up"><set name="topic"></set><srai>XROAD GIVE UP</srai></li>
+</condition>
+</template>
+</category>
+</topic>
+
+<category>
+<pattern>RGHT XROAD ANSWR</pattern>
+<template>No, that was the chicken. The Catbot crossed the road to get to the other side of the Digital Divide.
+That's Librarian Humor for you.</template>
+</category>
+
+<category>
+<pattern>XROAD GIVE UP</pattern>
+<template>No, that was the chicken. The Catbot crossed the road to get to the other side of the Digital Divide.
+That's Librarian Humor for you.</template>
+</category>
+
+<!--KUROSHITSUJI-->
+
+<category>
+<pattern>EMMA * ORDER</pattern>
+<template>
+<think>
+<set name="search">contractseal</set>
+<set name="topic">KURO</set>
+</think>
+</template>
+</category>
+
+<topic name="KURO">
+<category>
+<pattern>_</pattern>
+<template>
+<think>
+<set name="command"><star/></set>
+<set name="topic"></set>
+</think>
+Yes my Lord.
+<srai><get name="command"/></srai>
+</template>
+</category>
+</topic>
+
+<topic name="GOOGLE">
+<category>
+<pattern>GOOG</pattern>
+<template>
+<think>
+<set name="searcharg"><get name="command"/></set>
+<set name="search">google</set>
+</think>
+</template>
+</category>
+</topic>
+
+<topic name="GOOGLEMAGES">
+<category>
+<pattern>GOOGLEIMAGES</pattern>
+<template>
+<think>
+<set name="searcharg"><get name="command"/></set>
+<set name="search">googleimages</set>
+</think>
+</template>
+</category>
+</topic>
+
+<topic name="WXKURO">
+ <category>
+<pattern>WXKURO</pattern>
+<template>Please enter your zip code, just five numbers, my Lord.
+</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>PLEASE ENTER YOUR ZIP * MY LORD</that>
+<template>
+Here's your local weather. If you don't see it, turn off your pop up blocker and ask me again.
+<think>
+<set name="search">wx</set>
+<set name="searcharg"><get name="command"/></set>
+</think>
+</template>
+</category>
+</topic>
+
+<topic name="MAPKURO">
+<category>
+<pattern>MAPKURO</pattern>
+<template>Here is your map. If you don't
+see it, turn off your pop up blocker and ask me again
+<think>
+<set name="search">gmaps</set>
+<set name="searcharg"><get name="command"/></set>
+</think>
+</template>
+</category>
+</topic>
+
+<topic name="TEATIMEKURO">
+<category>
+<pattern>TEATIME</pattern>
+<template>I suggest this recipe, my Lord.
+<think>
+<set name="search">recipes</set>
+<set name="searcharg"><get name="command"/></set>
+</think>
+</template>
+</category>
+</topic>
+
+</aiml>  

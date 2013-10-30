@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<!--Copyright 2011 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+
+<!--RECOMMEND A FILL IN THE BLANK-->
+
+<category>
+<pattern>* GOOD BOOK</pattern>
+<template>What do you like to read?</template>
+</category>
+
+<category>
+<pattern>* GOOD BOOK *</pattern>
+<template>What do you like to read?</template>
+</category>
+
+<category>
+<pattern>* GOOD BOOKS</pattern>
+<template>What do you like to read?</template>
+</category>
+
+<category>
+<pattern>* GOOD BOOKS *</pattern>
+<template>What do you like to read?</template>
+</category>
+
+<category>
+<pattern>* BOOK * RECOMMEND</pattern>
+<template>What do you like to read?</template>
+</category>
+
+<category>
+<pattern>* BOOKS * RECOMMEND</pattern>
+<template>What do you like to read?</template>
+</category>
+
+<category>
+<pattern>* RECOMMEND * BOOK</pattern>
+<template>What do you like to read?</template>
+</category>
+
+<category>
+<pattern>* RECOMMEND * BOOK *</pattern>
+<template>What do you like to read?</template>
+</category>
+
+<category>
+<pattern>* RECOMMEND BOOKS</pattern>
+<template>What do you like to read?</template>
+</category>
+
+<category>
+<pattern>* RECOMMEND BOOKS *</pattern>
+<template>What do you like to read?</template>
+</category>
+
+<category>
+<pattern>* RECOMMEND * BOOKS</pattern>
+<template>What do you like to read?</template>
+</category>
+
+<category>
+<pattern>* RECOMMEND * BOOKS *</pattern>
+<template>What do you like to read?</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>WHAT DO YOU LIKE TO READ</that>
+<template>Try looking for <star/> in our <a href="http://www.catalog.mentorpl.org" target="_blank"><b>catalog</b></a>.</template>
+</category>
+
+<category>
+<pattern>2RDRSAD</pattern>
+<template>I'm still learning how to do readers advisory, so I can only give you partial help. I'll look in Google for books like <star index="2"/>. This should open 
+in a new window or tab. If you don't see the results, turn off your pop up blocker and ask me again.
+<think>
+<set name="searcharg"><star index="2"/> readalikes</set>
+<set name="search">google</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* AUTHORS LIKE *</pattern>
+<template><srai>2RDRSAD</srai>
+</template>
+</category>
+
+<category>
+<pattern>* AUTHORS SIMILAR TO *</pattern>
+<template><srai>2RDRSAD</srai>
+</template>
+</category>
+
+<category>
+<pattern>* BOOK LIKE *</pattern>
+<template><srai>2RDRSAD</srai>
+</template>
+</category>
+
+<category>
+<pattern>* BOOK SIMILAR TO *</pattern>
+<template><srai>2RDRSAD</srai>
+</template>
+</category>
+
+<category>
+<pattern>* BOOKS LIKE *</pattern>
+<template><srai>2RDRSAD</srai>
+</template>
+</category>
+
+<category>
+<pattern>* BOOKS SIMILAR TO *</pattern>
+<template><srai>2RDRSAD</srai>
+</template>
+</category>
+
+<category>
+<pattern>3RDRSAD</pattern>
+<template>I'm still learning how to do readers advisory, so I can only give you partial help. I'll look in Google for books like <star index="3"/>. This should open 
+in a new window or tab. If you don't see the results, turn off your pop up blocker and ask me again.
+<think>
+<set name="searcharg"><star index="3"/> readalikes</set>
+<set name="search">google</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* FIND * BOOK LIKE *</pattern>
+<template><srai>3RDRSAD</srai>
+</template>
+</category>
+
+<category>
+<pattern>* FIND * BOOKS LIKE *</pattern>
+<template><srai>3RDRSAD</srai>
+</template>
+</category>
+
+<category>
+<pattern>* RECOMMEND * BOOK LIKE *</pattern>
+<template><srai>3RDRSAD</srai>
+</template>
+</category>
+
+<category>
+<pattern>* RECOMMEND * BOOKS LIKE *</pattern>
+<template><srai>3RDRSAD</srai>
+</template>
+</category>
+
+<!--blank is my favorite author-->
+
+<category>
+<pattern>* FAVORITE AUTHOR</pattern>
+<template>Yes, <star/>'s books are of interest to many humans. Try looking in our <a href="http://catalog.mentorpl.org" target="_blank"><b>catalog</b></a> for <star/>.
+We might have some that you haven't read yet and would like.
+</template>
+</category>
+
+<category>
+<pattern>SUGGESTFOR</pattern>
+<template>I'm still learning about this. Please ask one of our human librarians, they will be able to help you. </template>
+</category>
+
+<category>
+<pattern>SUGGEST * FOR * </pattern>
+<template><srai>SUGGESTFOR</srai></template>
+</category>
+
+<category>
+<pattern>* SUGGEST * FOR * </pattern>
+<template><srai>SUGGESTFOR</srai></template>
+</category>
+
+<!--BEST BOOKS-->
+
+<category>
+<pattern>* BEST BOOKS </pattern>
+<template>Best for what purpose? Building a deck? Feeding your parrot?
+Using as a doorstop?</template>
+</category>
+
+<!--More Strange questions-->
+
+<category>
+<pattern>BKSILIKE</pattern>
+<template>Tell me what kind of books you like in no more than three words
+</template>
+</category>
+
+<category>
+<pattern>BOOKS I LIKE</pattern>
+<template><srai>BKSILIKE</srai>
+</template>
+</category>
+
+<category>
+<pattern>BOOKS * I LIKE</pattern>
+<template><srai>BKSILIKE</srai>
+</template>
+</category>
+
+<category>
+<pattern>_ BOOKS I LIKE</pattern>
+<template><srai>BKSILIKE</srai>
+</template>
+</category>
+
+<category>
+<pattern>_ BOOKS * I LIKE</pattern>
+<template><srai>BKSILIKE</srai>
+</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>TELL ME WHAT KIND OF BOOKS YOU LIKE IN NO MORE THAN THREE WORDS</that>
+<template>You entered <b><star/></b>. Let's see what's in our catalog. You should see 
+the results as a new window or tab. If you don't, turn off your pop up blocker and ask me again.
+<think>
+<set name="searcharg"><star/></set>
+<set name="search">bookkey</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>* OTHER WRITERS * SUGGEST</pattern>
+<template>I'm still learning how to do readers advisory, so I can only give you partial help. Please enter a favorite author
+or title now.</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>PLEASE ENTER A FAVORITE AUTHOR OR TITLE NOW</that>
+<template>
+I'll look in Google for <star/> read alikes. This should open 
+in a new window or tab. If you don't see the results, turn off your pop up blocker and ask me again.
+<think>
+<set name="searcharg"><star/> readalikes</set>
+<set name="search">google</set>
+</think>
+</template>
+</category>
+
+<!--MYSTERIES-->
+
+<category>
+<pattern>NVLST</pattern>
+<template>Try looking in <a href="http://oplin.org/auth?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid%26profile=novplus" target="_blank"><b>Novelist</b></a>.
+Look for the "Recommended Reads Lists" on the left.
+</template>
+</category>
+
+<category>
+<pattern>GOOD MYSTERY</pattern>
+<template><srai>NVLST</srai></template>
+</category>
+
+<category>
+<pattern>* GOOD MYSTERY</pattern>
+<template><srai>NVLST</srai></template>
+</category>
+
+<category>
+<pattern>GOOD MYSTERY *</pattern>
+<template><srai>NVLST</srai></template>
+</category>
+
+<category>
+<pattern>* GOOD MYSTERY *</pattern>
+<template><srai>NVLST</srai></template>
+</category>
+
+<category>
+<pattern>GOOD MYSTERIES</pattern>
+<template><srai>NVLST</srai></template>
+</category>
+
+<category>
+<pattern>* GOOD MYSTERIES</pattern>
+<template><srai>NVLST</srai></template>
+</category>
+
+<category>
+<pattern>GOOD MYSTERIES *</pattern>
+<template><srai>NVLST</srai></template>
+</category>
+
+<category>
+<pattern>* GOOD MYSTERIES *</pattern>
+<template><srai>NVLST</srai></template>
+</category>
+
+</aiml>

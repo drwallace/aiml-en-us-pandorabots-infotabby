@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<!--Copyright 2011-2012 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+
+<topic name="COVERTOCOVER">
+<category>
+<pattern>_</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="message">no match</set>
+<condition name="answr">
+
+<li value="BIG"><set name="message">resize</set></li>
+<li value="* BIG"><set name="message">resize</set></li>
+<li value="BIG *"><set name="message">resize</set></li>
+<li value="* BIG *"><set name="message">resize</set></li>  
+
+<li value="BIGGER"><set name="message">resize</set></li>
+<li value="* BIGGER"><set name="message">resize</set></li>
+<li value="BIGGER *"><set name="message">resize</set></li>
+<li value="* BIGGER *"><set name="message">resize</set></li>
+
+<li value="LARGE"><set name="message">resize</set></li>
+<li value="* LARGE"><set name="message">resize</set></li>
+<li value="LARGE *"><set name="message">resize</set></li>
+<li value="* LARGE *"><set name="message">resize</set></li>  
+
+<li value="LARGER"><set name="message">resize</set></li>
+<li value="* LARGER"><set name="message">resize</set></li>
+<li value="LARGER *"><set name="message">resize</set></li>
+<li value="* LARGER *"><set name="message">resize</set></li>
+
+<li value="SMALL"><set name="message">resize</set></li>
+<li value="* SMALL"><set name="message">resize</set></li>
+<li value="SMALL *"><set name="message">resize</set></li>
+<li value="* SMALL *"><set name="message">resize</set></li>
+
+<li value="SMALLER"><set name="message">resize</set></li>
+<li value="* SMALLER"><set name="message">resize</set></li>
+<li value="SMALLER *"><set name="message">resize</set></li>
+<li value="* SMALLER *"><set name="message">resize</set></li>
+
+<li value="SEND"><set name="message">subscribe</set></li>
+<li value="* SEND"><set name="message">subscribe</set></li>
+<li value="SEND *"><set name="message">subscribe</set></li>
+<li value="* SEND *"><set name="message">subscribe</set></li>
+
+<li value="SIGN UP"><set name="message">subscribe</set></li>
+<li value="* SIGN UP"><set name="message">subscribe</set></li>
+<li value="SIGN UP *"><set name="message">subscribe</set></li>
+<li value="* SIGN UP *"><set name="message">subscribe</set></li>
+
+<li value="SIGNING UP"><set name="message">subscribe</set></li>
+<li value="* SIGNING UP"><set name="message">subscribe</set></li>
+<li value="SIGNING UP *"><set name="message">subscribe</set></li>
+<li value="* SIGNING UP *"><set name="message">subscribe</set></li>
+
+<li value="START"><set name="message">subscribe</set></li>
+<li value="* START"><set name="message">subscribe</set></li>
+<li value="START *"><set name="message">subscribe</set></li>
+<li value="* START *"><set name="message">subscribe</set></li>
+
+<li value="SUBSCRIBE"><set name="message">subscribe</set></li>
+<li value="* SUBSCRIBE"><set name="message">subscribe</set></li>
+<li value="SUBSCRIBE *"><set name="message">subscribe</set></li>
+<li value="* SUBSCRIBE *"><set name="message">subscribe</set></li>
+
+<li value="SUBSCRIBES"><set name="message">subscribe</set></li>
+<li value="* SUBSCRIBES"><set name="message">subscribe</set></li>
+<li value="SUBSCRIBES *"><set name="message">subscribe</set></li>
+<li value="* SUBSCRIBES *"><set name="message">subscribe</set></li>
+
+<li value="NOT WANT"><set name="message">unsubscribe</set></li>
+<li value="* NOT WANT"><set name="message">unsubscribe</set></li>
+<li value="NOT WANT *"><set name="message">unsubscribe</set></li>
+<li value="* NOT WANT *"><set name="message">unsubscribe</set></li>
+
+<li value="OFF"><set name="message">unsubscribe</set></li>
+<li value="* OFF"><set name="message">unsubscribe</set></li>
+<li value="OFF *"><set name="message">unsubscribe</set></li>
+<li value="* OFF *"><set name="message">unsubscribe</set></li>
+
+<li value="STOP"><set name="message">unsubscribe</set></li>
+<li value="* STOP"><set name="message">unsubscribe</set></li>
+<li value="STOP *"><set name="message">unsubscribe</set></li>
+<li value="* STOP *"><set name="message">unsubscribe</set></li>
+
+<li value="UNSUBSCRIBE"><set name="message">unsubscribe</set></li>
+<li value="* UNSUBSCRIBE"><set name="message">unsubscribe</set></li>
+<li value="UNSUBSCRIBE *"><set name="message">unsubscribe</set></li>
+<li value="* UNSUBSCRIBE *"><set name="message">unsubscribe</set></li>
+
+<li value="BOOKLETTERS"><set name="message">bookletters</set></li>
+<li value="* BOOKLETTERS"><set name="message">bookletters</set></li>
+<li value="BOOKLETTERS *"><set name="message">bookletters</set></li>
+<li value="* BOOKLETTERS *"><set name="message">bookletters</set></li>
+
+<li value="BOOK LETTERS"><set name="message">bookletters</set></li>
+<li value="* BOOK LETTERS"><set name="message">bookletters</set></li>
+<li value="BOOK LETTERS *"><set name="message">bookletters</set></li>
+<li value="* BOOK LETTERS *"><set name="message">bookletters</set></li>
+
+</condition>
+<think><set name="topic"></set></think>
+</think>
+ 
+<condition name="message">  
+
+<li value="no match">O.K. If you have any other questions, call the library at 440.255.8811 during regular business hours.</li>
+
+<li value="resize"><srai>C2CRESIZE</srai></li>
+
+<li value="subscribe"><srai>C2CSUBSCR</srai></li>
+<li value="unsubscribe"><srai>C2CX</srai></li>
+<li value="not receiving"><srai>C2CFAIL</srai></li>
+
+<li value="bookletters"><srai>BKLTTRS</srai></li>
+
+</condition>
+</template>
+</category>
+</topic>   
+
+<category>
+  <pattern>BOOKLETTERS</pattern>
+<template><srai>BKLTTRS</srai></template>
+</category>
+
+<category>
+  <pattern>* BOOKLETTERS</pattern>
+<template><srai>BKLTTRS</srai></template>
+</category>
+
+<category>
+  <pattern>BOOKLETTERS *</pattern>
+<template><srai>BKLTTRS</srai></template>
+</category>
+
+<category>
+  <pattern>* BOOKLETTERS *</pattern>
+<template><srai>BKLTTRS</srai></template>
+</category>
+
+
+<category>
+  <pattern>BOOK LETTERS</pattern>
+<template><srai>BKLTTRS</srai></template>
+</category>
+
+<category>
+  <pattern>* BOOK LETTERS</pattern>
+<template><srai>BKLTTRS</srai></template>
+</category>
+
+<category>
+  <pattern>BOOK LETTERS *</pattern>
+<template><srai>BKLTTRS</srai></template>
+</category>
+
+<category>
+  <pattern>* BOOK LETTERS *</pattern>
+<template><srai>BKLTTRS</srai></template>
+</category>
+
+<category>
+  <pattern>COVER TO COVER</pattern>
+<template><srai>C2C</srai></template>
+</category>
+
+<category>
+<pattern>* COVER TO COVER</pattern>
+<template><srai>C2C</srai></template>
+</category>
+
+<category>
+<pattern>COVER TO COVER *</pattern>
+<template><srai>C2C</srai></template>
+</category>
+
+<category>
+<pattern>* COVER TO COVER *</pattern>
+<template><srai>C2C</srai></template>
+</category>
+
+<category>
+  <pattern>NEWSLETTER</pattern>
+<template><srai>C2C</srai></template>
+</category>
+
+<category>
+  <pattern>* NEWSLETTER</pattern>
+  <template><srai>C2C</srai></template>
+</category>
+
+<category>
+  <pattern>* NEWSLETTER *</pattern>
+  <template><srai>C2C</srai></template>
+</category>
+
+<category>
+  <pattern>NEWSLETTER *</pattern>
+  <template><srai>C2C</srai></template>
+</category>
+
+<category>
+  <pattern>NEWS LETTER</pattern>
+   <template><srai>C2C</srai></template>
+</category>
+
+<category>
+  <pattern>* NEWS LETTER</pattern>
+   <template><srai>C2C</srai></template>
+</category>
+
+<category>
+  <pattern>* NEWS LETTER *</pattern>
+   <template><srai>C2C</srai></template>
+</category>
+
+<category>
+  <pattern>NEWS LETTER *</pattern>
+  <template><srai>C2C</srai></template>
+</category>
+
+<category>
+  <pattern>NEWSLETTERS</pattern>
+  <template><srai>C2C</srai></template>
+</category>
+
+<category>
+  <pattern>* NEWSLETTERS</pattern>
+   <template><srai>C2C</srai></template>
+</category>
+
+<category>
+  <pattern>* NEWSLETTERS *</pattern>
+   <template><srai>C2C</srai></template>
+</category>
+
+<category>
+  <pattern>NEWSLETTERS *</pattern>
+   <template><srai>C2C</srai></template>
+</category>
+
+<category>
+  <pattern>NEWS LETTERS</pattern>
+   <template><srai>C2C</srai></template>
+</category>
+
+<category>
+  <pattern>* NEWS LETTERS</pattern>
+   <template><srai>C2C</srai></template>
+</category>
+
+<category>
+  <pattern>* NEWS LETTERS *</pattern>
+   <template><srai>C2C</srai></template>
+</category>
+
+<category>
+  <pattern>NEWS LETTERS *</pattern>
+  <template><srai>C2C</srai></template>
+</category>
+
+<category>
+<pattern>SUBSCRIBE</pattern>
+<template><srai>CCSUBSCRIBE</srai></template>
+</category>
+
+<category>
+<pattern>* SUBSCRIBE</pattern>
+<template><srai>CCSUBSCRIBE</srai></template>
+</category>
+
+<category>
+<pattern>* SUBSCRIBE</pattern>
+<template><srai>CCSUBSCRIBE</srai></template>
+</category>
+
+<category>
+<pattern>SUBSCRIBE *</pattern>
+<template><srai>CCSUBSCRIBE</srai></template>
+</category>
+
+<category>
+<pattern>* SUBSCRIBE *</pattern>
+<template><srai>CCSUBSCRIBE</srai></template>
+</category>
+
+
+</aiml>  

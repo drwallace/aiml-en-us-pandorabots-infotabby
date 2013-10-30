@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<!--Copyright 2011-2012 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+
+ 
+
+
+<topic name="FFSRCH">
+<category>
+<pattern>FFSRCH</pattern>
+<template>
+<think>
+<get name="searcharg"/>
+<set name="message">no match</set>
+<condition name="searcharg">
+
+<li value="ABORT"><set name="message">abortion</set></li>
+<li value="* ABORT"><set name="message">abortion</set></li>
+<li value="ABORT *"><set name="message">abortion</set></li>
+<li value="* ABORT *"><set name="message">abortion</set></li>
+
+<li value="ABORTIING"><set name="message">abortion</set></li>
+<li value="* ABORTING"><set name="message">abortion</set></li>
+<li value="ABORTING *"><set name="message">abortion</set></li>
+<li value="* ABORTING *"><set name="message">abortion</set></li>
+
+<li value="ABORTION"><set name="message">abortion</set></li>
+<li value="* ABORTION"><set name="message">abortion</set></li>
+<li value="ABORTION *"><set name="message">abortion</set></li>
+<li value="* ABORTION *"><set name="message">abortion</set></li>
+
+<li value="CONVERSION"><set name="message">walpha</set></li>
+<li value="* CONVERSION"><set name="message">walpha</set></li>
+<li value="CONVERSION *"><set name="message">walpha</set></li>
+<li value="* CONVERSION *"><set name="message">walpha</set></li>
+
+<li value="CONVERT"><set name="message">walpha</set></li>
+<li value="* CONVERT"><set name="message">walpha</set></li>
+<li value="CONVERT *"><set name="message">walpha</set></li>
+<li value="* CONVERT *"><set name="message">walpha</set></li>
+
+<li value="CONVERTING"><set name="message">walpha</set></li>
+<li value="* CONVERTING"><set name="message">walpha</set></li>
+<li value="CONVERTING *"><set name="message">walpha</set></li>
+<li value="* CONVERTING *"><set name="message">walpha</set></li>
+
+<li value="DISTANCE"><set name="message">walpha</set></li>
+<li value="* DISTANCE"><set name="message">walpha</set></li>
+<li value="DISTANCE *"><set name="message">walpha</set></li>
+<li value="* DISTANCE *"><set name="message">walpha</set></li>
+
+<li value="DISTANCES"><set name="message">walpha</set></li>
+<li value="* DISTANCES"><set name="message">walpha</set></li>
+<li value="DISTANCES *"><set name="message">walpha</set></li>
+<li value="* DISTANCES *"><set name="message">walpha</set></li>
+
+<li value="GDP"><set name="message">walpha</set></li>
+<li value="* GDP"><set name="message">walpha</set></li>
+<li value="GDP *"><set name="message">walpha</set></li>
+<li value="* GDP *"><set name="message">walpha</set></li>
+
+<li value="HOW MANY"><set name="message">walpha</set></li>
+<li value="* HOW MANY"><set name="message">walpha</set></li>
+<li value="HOW MANY *"><set name="message">walpha</set></li>
+<li value="* HOW MANY *"><set name="message">walpha</set></li>
+
+<li value="HOW FAR"><set name="message">walpha</set></li>
+<li value="* HOW FAR"><set name="message">walpha</set></li>
+<li value="HOW FAR *"><set name="message">walpha</set></li>
+<li value="* HOW FAR *"><set name="message">walpha</set></li>
+
+<li value="KILL MYSELF"><set name="message">suicide</set></li>
+<li value="* KILL MYSELF"><set name="message">suicide</set></li>
+<li value="KILL MYSELF *"><set name="message">suicide</set></li>
+<li value="* KILL MYSELF *"><set name="message">suicide</set></li>
+
+<li value="KILLING MYSELF"><set name="message">suicide</set></li>
+<li value="* KILLING MYSELF"><set name="message">suicide</set></li>
+<li value="KILLING MYSELF *"><set name="message">suicide</set></li>
+<li value="* KILLING MYSELF *"><set name="message">suicide</set></li>
+
+<li value="SUICIDE"><set name="message">suicide</set></li>
+<li value="* SUICIDE"><set name="message">suicide</set></li>
+<li value="SUICIDE *"><set name="message">suicide</set></li>
+<li value="* SUICIDE *"><set name="message">suicide</set></li>
+
+<li value="SUICIDAL"><set name="message">suicide</set></li>
+<li value="* SUICIDAL"><set name="message">suicide</set></li>
+<li value="SUICIDAL *"><set name="message">suicide</set></li>
+<li value="* SUICIDAL *"><set name="message">suicide</set></li>
+
+<li value="POPULATION"><set name="message">walpha</set></li>
+<li value="* POPULATION"><set name="message">walpha</set></li>
+<li value="POPULATION *"><set name="message">walpha</set></li>
+<li value="* POPULATION *"><set name="message">walpha</set></li>
+
+<li value="POPULATIONS"><set name="message">walpha</set></li>
+<li value="* POPULATIONS"><set name="message">walpha</set></li>
+<li value="POPULATIONS *"><set name="message">walpha</set></li>
+<li value="* POPULATIONS *"><set name="message">walpha</set></li>
+
+<li value="GEOGRAPHY"><set name="message">wikipedia</set></li>
+<li value="* GEOGRAPHY"><set name="message">wikipedia</set></li>
+<li value="GEOGRAPHY *"><set name="message">wikipedia</set></li>
+<li value="* GEOGRAPHY *"><set name="message">wikipedia</set></li>
+
+<li value="HISTORY"><set name="message">wikipedia</set></li>
+<li value="* HISTORY"><set name="message">wikipedia</set></li>
+<li value="HISTORY *"><set name="message">wikipedia</set></li>
+<li value="* HISTORY *"><set name="message">wikipedia</set></li>
+
+<li value="WHO IS"><set name="message">wikipedia</set></li>
+<li value="* WHO IS"><set name="message">wikipedia</set></li>
+<li value="WHO IS *"><set name="message">wikipedia</set></li>
+<li value="* WHO IS *"><set name="message">wikipedia</set></li>
+
+<li value="WHO WAS"><set name="message">wikipedia</set></li>
+<li value="* WHO WAS"><set name="message">wikipedia</set></li>
+<li value="WHO WAS *"><set name="message">wikipedia</set></li>
+<li value="* WHO WAS *"><set name="message">wikipedia</set></li>
+
+<li value="IMAGE"><set name="message">images</set></li>
+<li value="* IMAGE"><set name="message">images</set></li>
+<li value="IMAGE *"><set name="message">images</set></li>
+<li value="* IMAGE *"><set name="message">images</set></li>
+
+<li value="IMAGES"><set name="message">images</set></li>
+<li value="* IMAGES"><set name="message">images</set></li>
+<li value="IMAGES *"><set name="message">images</set></li>
+<li value="* IMAGES *"><set name="message">images</set></li>
+
+<li value="PHOTO"><set name="message">images</set></li>
+<li value="* PHOTO"><set name="message">images</set></li>
+<li value="PHOTO *"><set name="message">images</set></li>
+<li value="* PHOTO *"><set name="message">images</set></li>
+
+<li value="PHOTOS"><set name="message">images</set></li>
+<li value="* PHOTOS"><set name="message">images</set></li>
+<li value="PHOTOS *"><set name="message">images</set></li>
+<li value="* PHOTOS *"><set name="message">images</set></li>
+
+<li value="PHOTOGRAPH"><set name="message">images</set></li>
+<li value="* PHOTOGRAPH"><set name="message">images</set></li>
+<li value="PHOTOGRAPH *"><set name="message">images</set></li>
+<li value="* PHOTOGRAPH *"><set name="message">images</set></li>
+
+<li value="PHOTOGRAPHS"><set name="message">images</set></li>
+<li value="* PHOTOGRAPHS"><set name="message">images</set></li>
+<li value="PHOTOGRAPHS *"><set name="message">images</set></li>
+<li value="* PHOTOGRAPHS *"><set name="message">images</set></li>
+
+<li value="PICTURE"><set name="message">images</set></li>
+<li value="* PICTURE"><set name="message">images</set></li>
+<li value="PICTURE *"><set name="message">images</set></li>
+<li value="* PICTURE *"><set name="message">images</set></li>
+
+<li value="PICTURES"><set name="message">images</set></li>
+<li value="* PICTURES"><set name="message">images</set></li>
+<li value="PICTURES *"><set name="message">images</set></li>
+<li value="* PICTURES *"><set name="message">images</set></li>
+
+<li value="WEBSITE"><set name="message">mpl site</set></li>
+<li value="* WEBSITE"><set name="message">mpl site</set></li>
+<li value="WEBSITE *"><set name="message">mpl site</set></li>
+<li value="* WEBSITE *"><set name="message">mpl site</set></li>
+
+<li value="YOUR SITE"><set name="message">mpl site</set></li>
+<li value="* YOUR SITE"><set name="message">mpl site</set></li>
+<li value="YOUR SITE *"><set name="message">mpl site</set></li>
+<li value="* YOUR SITE *"><set name="message">mpl site</set></li>
+
+<li value="YOUR WEBSITE"><set name="message">mpl site</set></li>
+<li value="* YOUR WEBSITE"><set name="message">mpl site</set></li>
+<li value="YOUR WEBSITE *"><set name="message">mpl site</set></li>
+<li value="* YOUR WEBSITE *"><set name="message">mpl site</set></li>
+
+</condition>
+</think>
+
+<condition name="message">
+<li value="no match"><set name="topic"></set><srai>GOOGLESRCH</srai></li>
+
+<li value="abortion"><srai>ABRTN</srai></li>
+<li value="walpha"><set name="topic"></set><srai>WASRCH</srai></li>
+<li value="wikipedia"><set name="topic"></set><srai>WIKISRCH</srai></li>
+<li value="mpl site"><set name="topic"></set><srai>MPLSSRCH</srai></li>
+<li value="images"><set name="topic"></set><srai>IMAGESRCH</srai></li>
+<li value="suicide"><set name="topic"></set><srai>SEPPUKU</srai></li>
+
+<li value="stop"><think><set name="topic"></set></think>O.K. I'll stop.</li>
+
+</condition>
+</template>
+</category>
+</topic> 
+
+
+<category>
+<pattern>ABRTN</pattern>
+<template>As an artificial intelligence, I can't help you with this sort of personal issue. I can, however, try to find more information for you.
+<br/><br/>
+<srai>0CONCL</srai>
+<think>
+<set name="searcharg">abortion counseling</set>
+<set name="search">google</set>
+</think>
+</template>
+</category>
+
+
+<category>
+<pattern>WASRCH</pattern>
+<template>I think Wolfram Alpha might be helpful. I hope you remembered to turn off your pop up blocker or you won't see the results.
+<br/><br/>
+<srai>0CONCL</srai>
+<think>
+<set name="search">wolframalpha</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>WIKISRCH</pattern>
+<template>I think Wikipedia might be helpful. I hope you remembered to turn off your pop up blocker or you won't see the results.
+<br/><br/>
+<srai>0CONCL</srai>
+<think>
+<set name="search">wikipedia</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>IMAGESRCH</pattern>
+<template>Let's try Google Images. I hope you remembered to turn off your pop up blocker or you won't see the results.
+<br/><br/>
+<srai>0CONCL</srai>
+<think>
+<set name="search">googleimages</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>OWLSRCH</pattern>
+<template>Very good. Based on your answers, I think the Ohio Web Library might be helpful. I hope you remembered to turn off your pop up blocker or you won't see the results.
+<br/><br/>
+<srai>0CONCL</srai>
+<think>
+<set name="search">ohweblib</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>DBPEDIA</pattern>
+<template>Well, this is a tough one. Let's see what we can find. I hope you remembered to turn off your pop up blocker or you won't see the results.
+<br/><br/>
+<srai>0CONCL</srai>
+<think>
+<set name="search">dbpedia</set>
+</think>
+</template>
+</category>
+
+
+<category>
+<pattern>GOOGLESRCH</pattern>
+<template>Well, when all else fails, let's Google it. I hope you remembered to turn off your pop up blocker or you won't see the results.
+<br/><br/>
+<srai>0CONCL</srai>
+<think>
+<set name="search">google</set>
+</think>
+</template>
+</category>
+
+
+
+
+<category>
+<pattern>SEPPUKU</pattern>
+<template>
+<random><li>Although I am a computer, I understand that this is a serious matter. I'm opening a new window with some information that may be helpful.</li>
+<li></li>
+<li></li>
+</random>
+<think>
+<set name="searcharg">suicide hotline</set>
+<set name="search">google</set>
+</think>
+</template>
+</category>
+
+
+<category>
+<pattern>REFSEEK</pattern>
+<template>Well, this is a tough one. Let's see what we can find in RefSeek. I hope you remembered to turn off your pop up blocker or you won't see the results.
+<br/><br/>
+<srai>0CONCL</srai>
+<think>
+<set name="search">refseek</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>GOOGSDIRECT</pattern>
+<template>Well, this is a tough one. Let's see what we can find in Google Scholar. I hope you remembered to turn off your pop up blocker or you won't see the results.
+<br/><br/>
+<srai>0CONCL</srai>
+<think>
+<set name="search">googlescholar</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>MPLSSRCH</pattern>
+<template>Very good. Let's look through the whole library website. I hope you remembered to turn off your pop up blocker or you won't see the results.
+<br/><br/>
+<srai>0CONCL</srai>
+<think>
+<set name="search">mplss</set>
+</think>
+</template>
+</category>
+
+
+
+
+<!--INFOSTART-->
+
+<category>
+<pattern>INFOSTART</pattern>
+<template>What kind of information are you looking for?
+<think>
+<set name="topic">INFOSORT</set>
+</think>
+</template>
+</category>
+
+</aiml>  

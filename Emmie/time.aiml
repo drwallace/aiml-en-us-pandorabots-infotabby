@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<!--Copyright 2011-2012 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+  
+
+<category> 
+<pattern>WHAT TIME IS IT</pattern> 
+<template>The current time in our library's location is <date locale="en_US" timezone="-5" format="%I:%M %p"/>
+</template> 
+</category>   
+
+<category> 
+<pattern>GMT</pattern> 
+<template>The Greenwich Mean Time is <date locale="en_US" timezone="0" format="%H%M Z"/>
+</template> 
+</category>   
+
+<category>
+<pattern>_ GMT</pattern>
+<template><srai>GMT</srai></template>
+</category>
+
+<category>
+<pattern>GMT *</pattern>
+<template><srai>GMT</srai></template>
+</category>
+
+<category>
+<pattern>_ GMT *</pattern>
+<template><srai>GMT</srai></template>
+</category>
+
+<category>
+<pattern>GREENWICH MEAN TIME</pattern>
+<template><srai>GMT</srai></template>
+</category>
+
+<category>
+<pattern>_ GREENWICH MEAN TIME</pattern>
+<template><srai>GMT</srai></template>
+</category>
+
+<category>
+<pattern>GREENWICH MEAN TIME *</pattern>
+<template><srai>GMT</srai></template>
+</category>
+
+<category>
+<pattern>_ GREENWICH MEAN TIME *</pattern>
+<template><srai>GMT</srai></template>
+</category>
+
+<category>
+<pattern>ZULU</pattern>
+<template><srai>GMT</srai></template>
+</category>
+
+<category>
+<pattern>_ ZULU</pattern>
+<template><srai>GMT</srai></template>
+</category>
+
+<category>
+<pattern>ZULU *</pattern>
+<template><srai>GMT</srai></template>
+</category>
+
+<category>
+<pattern>_ ZULU *</pattern>
+<template><srai>GMT</srai></template>
+</category>
+
+</aiml>
+  

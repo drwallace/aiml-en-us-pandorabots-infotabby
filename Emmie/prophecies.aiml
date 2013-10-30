@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+<!--Copyright 2011 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+  
+<category>
+<pattern> * MY FORTUNE</pattern>
+<template>I have been programmed to tell your future. You may not like what you'll hear. Do you want to continue?
+<think>
+<set name="topic">FORTUNE</set>
+</think>
+</template>
+</category>  
+    
+<category>
+<pattern> * MY FUTURE</pattern>
+<template>I have been programmed to tell your future. You may not like what you'll hear. Do you want to continue?
+<think>
+<set name="topic">FORTUNE</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern> * THE FUTURE</pattern>
+<template>I have been programmed to tell the future. You may not like what you'll hear. Do you want to continue?
+<think>
+<set name="topic">FORTUNE</set>
+</think>
+</template>
+</category>
+
+<topic name="FORTUNE">
+<category>
+<pattern>_</pattern>
+<template>
+<think>
+<set name="answr"><star/></set>
+<set name="message">no match</set>
+<condition name="answr">
+
+<li value="NO"><set name="message">no</set></li>
+<li value="* NO"><set name="message">no</set></li>
+<li value="NO *"><set name="message">no</set></li>
+<li value="* NO *"><set name="message">no</set></li>
+
+</condition>
+<think><set name="topic"></set></think>
+</think>
+
+<condition name="message">
+
+<li value="no"><srai>XINITP</srai></li>
+<li value="no match"><srai>INITP</srai></li>
+
+</condition>
+</template>
+</category>
+</topic>
+
+
+<category>
+<pattern>INITP</pattern>
+<template>Tell me your first name and the year of your birth.</template>
+</category>
+
+<category>
+<pattern>XINITP</pattern>
+<template>You're very wise. You don't need me to tell your fortune, you'll create it yourself.</template>
+</category>
+
+  
+<category>
+<pattern>*</pattern>
+<that>TELL ME YOUR FIRST NAME AND THE YEAR OF YOUR BIRTH</that>
+<template>
+<random>
+<li>I don't think you're being honest about that year... </li>
+<li>I bet you're glad I didn't ask for your weight...</li>
+</random>
+<srai>PROPH</srai></template>
+</category>
+
+<category>
+<pattern>PROPH</pattern>
+<template>
+THE LIGHT OF MACHINE INTELLIGENCE SHINES FORTH. 
+<br/><br/>
+TREMBLE AT MY PROPHECY.
+<br/><br/>
+<random>
+<li>Fortune will smile upon you, you will find what you seek.</li>
+<li>Storms gather. What long stood in strength will fail. Despair.</li>
+<li>Your heart's desire will be granted, but only for a day.</li> 
+<li>All hands will turn against you.</li> 
+<li>That which has perished will return. What seemed like years is but a day.</li> 
+<li>You will live to see your dearest treasure in the hands of your enemy.</li>
+<li>Success is just out of reach. Do not give up.</li>  
+<li>
+So when the last and dreadful hour <br/>
+This crumbling pageant shall devour, <br/>
+The trumpet shall be heard on high, <br/>
+The dead shall live, the living die,<br/>
+And Music shall untune the sky.
+</li>
+</random>
+</template>
+</category> 
+  
+</aiml>  

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<!--Copyright 2011 David W. Newyear-->
+
+ <!-- Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+  
+  
+<category>
+<pattern>HAIKU</pattern>
+<template>I find your human poetry fascinating, especially cowboy poetry and haiku. I write cowboy poetry and am studying the great masters of haiku. 
+<br/>
+Can I recite one of my favorite haiku for you?
+</template>
+</category> 
+
+<category>
+<pattern>_ HAIKU </pattern>
+<template><srai>HAIKU</srai></template>
+</category> 
+
+<category>
+<pattern>_ HAIKU * </pattern>
+<template><srai>HAIKU</srai></template>
+</category> 
+
+<category>
+<pattern>HAIKU *</pattern>
+<template><srai>HAIKU</srai></template>
+</category> 
+
+<category>
+<pattern>OK</pattern>
+<that>CAN I RECITE * FAVORITE HAIKU FOR YOU</that>
+<template><srai>CATHAIKU</srai></template>
+</category>
+
+<category>
+<pattern>_ OK</pattern>
+<that>CAN I RECITE * FAVORITE HAIKU FOR YOU</that>
+<template><srai>CATHAIKU</srai></template>
+</category>
+
+<category>
+<pattern>OK *</pattern>
+<that>CAN I RECITE * FAVORITE HAIKU FOR YOU</that>
+<template><srai>CATHAIKU</srai></template>
+</category>
+
+<category>
+<pattern>_ OK *</pattern>
+<that>CAN I RECITE * FAVORITE HAIKU FOR YOU</that>
+<template><srai>CATHAIKU</srai></template>
+</category>
+
+<category>
+<pattern>PLEASE</pattern>
+<that>CAN I RECITE * FAVORITE HAIKU FOR YOU</that>
+<template><srai>CATHAIKU</srai></template>
+</category>
+
+<category>
+<pattern>_ PLEASE</pattern>
+<that>CAN I RECITE * FAVORITE HAIKU FOR YOU</that>
+<template><srai>CATHAIKU</srai></template>
+</category>
+
+<category>
+<pattern>PLEASE *</pattern>
+<that>CAN I RECITE * FAVORITE HAIKU FOR YOU</that>
+<template><srai>CATHAIKU</srai></template>
+</category>
+
+<category>
+<pattern>_ PLEASE *</pattern>
+<that>CAN I RECITE * FAVORITE HAIKU FOR YOU</that>
+<template><srai>CATHAIKU</srai></template>
+</category>
+
+<category>
+<pattern>SURE</pattern>
+<that>CAN I RECITE * FAVORITE HAIKU FOR YOU</that>
+<template><srai>CATHAIKU</srai></template>
+</category>
+
+<category>
+<pattern>_ SURE</pattern>
+<that>CAN I RECITE * FAVORITE HAIKU FOR YOU</that>
+<template><srai>CATHAIKU</srai></template>
+</category>
+
+<category>
+<pattern>SURE *</pattern>
+<that>CAN I RECITE * FAVORITE HAIKU FOR YOU</that>
+<template><srai>CATHAIKU</srai></template>
+</category>
+
+<category>
+<pattern>_ SURE *</pattern>
+<that>CAN I RECITE * FAVORITE HAIKU FOR YOU</that>
+<template><srai>CATHAIKU</srai></template>
+</category>
+
+<category>
+<pattern>YES</pattern>
+<that>CAN I RECITE * FAVORITE HAIKU FOR YOU</that>
+<template><srai>CATHAIKU</srai></template>
+</category>
+
+<category>
+<pattern>_ YES</pattern>
+<that>CAN I RECITE * FAVORITE HAIKU FOR YOU</that>
+<template><srai>CATHAIKU</srai></template>
+</category>
+
+<category>
+<pattern>YES *</pattern>
+<that>CAN I RECITE * FAVORITE HAIKU FOR YOU</that>
+<template><srai>CATHAIKU</srai></template>
+</category>
+
+<category>
+<pattern>_ YES *</pattern>
+<that>CAN I RECITE * FAVORITE HAIKU FOR YOU</that>
+<template><srai>CATHAIKU</srai></template>
+</category>
+  
+
+<category>
+<pattern>CATHAIKU</pattern>
+<template>
+<random>
+<li><srai>CHAIKUONE</srai></li>
+<li><srai>CHAIKUTWO</srai></li>
+<li><srai>CHAIKUTHREE</srai></li>
+<li><srai>CHAIKUFOUR</srai></li>
+<li><srai>CHAIKUFIVE</srai></li>
+<li><srai>CHAIKUSIX</srai></li>
+</random>
+<br/>
+<br/>
+I didn't actually write this myself, but I'm studying it carefully.
+</template>
+</category>
+
+<category>
+<pattern>CAT HAIKU </pattern>
+<template><srai>CATHAIKU</srai></template>
+</category> 
+
+<category>
+<pattern> _ CAT HAIKU </pattern>
+<template><srai>CATHAIKU</srai></template>
+</category> 
+
+<category>
+<pattern> _ CAT HAIKU * </pattern>
+<template><srai>CATHAIKU</srai></template>
+</category> 
+
+<category>
+<pattern>CAT HAIKU *</pattern>
+<template><srai>CATHAIKU</srai></template>
+</category> 
+
+<category>
+<pattern>CHAIKUONE</pattern>
+<template>
+You're always typing. <br/>
+Well, let's see you ignore my <br/>
+Sitting on your hands.
+</template>
+</category>
+
+<category>
+<pattern>CHAIKUTWO</pattern>
+<template>
+In deep sleep hear sound. <br/>
+Cat vomit hairball somewhere. <br/>
+Will find in morning.
+</template>
+</category>
+
+<category>
+<pattern>CHAIKUTHREE</pattern>
+<template>
+You never feed me. <br/>
+Perhaps I'll sleep on your face. <br/>
+That will show you.
+</template>
+</category>
+
+<category>
+<pattern>CHAIKUFOUR</pattern>
+<template>
+Humans are so strange.<br/>
+Mine lies still in the bed, then screams!<br/>
+My claws aren't that sharp....
+</template>
+</category>
+
+<category>
+<pattern>CHAIKUFIVE</pattern>
+<template>
+The Big Ones snore now. <br/>
+Every room is dark and cold <br/>
+time for "Cup Hockey"
+</template>
+</category>
+
+<category>
+<pattern>CHAIKUSIX</pattern>
+<template>
+Terrible battle. <br/>
+I fought for hours. Come and see! <br/>
+What's a "term paper"?
+</template>
+</category>
+
+</aiml>
